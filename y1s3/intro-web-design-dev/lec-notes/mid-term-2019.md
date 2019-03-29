@@ -1,5 +1,25 @@
 # Web Design & Development Mid Term Test 2019 Format & Tips
 
+- [Web Design & Development Mid Term Test 2019 Format & Tips](#web-design--development-mid-term-test-2019-format--tips)
+  - [Disclaimer](#disclaimer)
+  - [Format](#format)
+  - [*Theory questions*](#theory-questions)
+  - [General](#general)
+  - [Definitions (2m)](#definitions-2m)
+    - [Notes](#notes)
+    - [Chapter 1 Part 1](#chapter-1-part-1)
+    - [Chapter 1 Part 2](#chapter-1-part-2)
+    - [Chapter 3 Part 1](#chapter-3-part-1)
+  - [Comparison (6m)](#comparison-6m)
+    - [Chapter 2](#chapter-2)
+    - [Chapter 3](#chapter-3)
+    - [Excluded](#excluded)
+  - [*Practical Questions*](#practical-questions)
+    - [Chapter 1 Part 1](#chapter-1-part-1-1)
+    - [Chapter 1 Part 2](#chapter-1-part-2-1)
+    - [Chapter 2](#chapter-2-1)
+    - [Chapter 3 Part 1](#chapter-3-part-1-1)
+    - [Excluded](#excluded-1)
 
 ## Disclaimer
 
@@ -70,6 +90,7 @@ Differentiate/compare:
 - Inline CSS vs External CSS vs Embedded CSS (mentioned x3)
 
 ### Excluded
+
 - CSS font width (all the somewhat difficult settings)
 
 ## *Practical Questions*
