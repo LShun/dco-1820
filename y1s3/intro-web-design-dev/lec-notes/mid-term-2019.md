@@ -145,6 +145,16 @@ None as far as I know.
 - Contextual selectors
   - Scope
     - ![Contextual selector scopes](./static/mid-term-19/c-select-scope.png "Contextual selectors scoping rules")
+
+      | Selector            | Description                                                                     |
+      |---------------------|---------------------------------------------------------------------------------|
+      | *                   | Match all element                                                               |
+      | `elem`              | Match all `elem` in document                                                    |
+      | `parent descendant` | Match all `descendant` element nested within `parent`                           |
+      | `parent` > `child`  | Match all `child` element directly under `parent`                               |
+      | `left` + `right`    | Match `right` element directly preceded by `left` sibling element horizontally. |
+      | `left` ~ `right`    | Match `right` element that follows `left` sibling element horizontally.         |
+
   - Pattern
     - ![Contextual selector patterns](./static/mid-term-19/c-select-pattern.png "Contextual selectors pattern")
   - Classes & IDs
