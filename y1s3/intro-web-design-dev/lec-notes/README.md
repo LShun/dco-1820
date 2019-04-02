@@ -17,6 +17,7 @@ TL:DR - When there are .md files, use them instead of .pdf version.
 ## Notes
 
 [Mid Term 2019 Notes](mid-term-2019.md)
+
 [C1P1 - Quick Notes](C1P1%20-%20Quick%20Notes.pdf)
 
 [C1P2 - Quick Notes](C1P1%20-%20Quick%20Notes.pdf)
