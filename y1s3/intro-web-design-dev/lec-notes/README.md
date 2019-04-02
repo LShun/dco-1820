@@ -21,6 +21,7 @@ TL:DR - When there are .md files, use them instead of .pdf version.
 ### Practice notes
 
 - [Mid Term Notes](mid-term-2019.md)
+- [Mid Term Practice Questions](mid-term-practice-q.pdf)
 - [Mid Term Practice Material Answers](webdev-prac-ans.md)
 
 
