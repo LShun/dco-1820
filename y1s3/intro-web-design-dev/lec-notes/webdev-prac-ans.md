@@ -9,6 +9,7 @@
   - [b) Create image map](#b-create-image-map)
   - [c) Write relative path](#c-write-relative-path)
   - [d) Differentiate between](#d-differentiate-between)
+    - [Insert diagram of linear and hiearchical structures](#insert-diagram-of-linear-and-hiearchical-structures)
 
 ## Prac. Ques.
 
@@ -58,14 +59,15 @@
 1. Inline CSS vs Embedded CSS
 
 Differences:
-1. Inline CSS is located inside the element tag, while embedded CSS is located in the document's <HEAD> tag.
-2. Inline CSS can only be appled within 1 element, which embedded CSS can be applied to multiple unrelated elements with the same tag.
-3. Inline CSS can contain only styling for 1 element, wile embedded CSS can contain styling for multiple different elements.
-4. Inline CSS is specified as an attributte, while embedded CSS is specified in an opening and closing <STYLE> tag.
+
+   1. Inline CSS is located inside the element tag, while embedded CSS is located in the document's <HEAD> tag.
+   2. Inline CSS can only be appled within 1 element, which embedded CSS can be applied to multiple unrelated elements with the same tag.
+   3. Inline CSS can contain only styling for 1 element, wile embedded CSS can contain styling for multiple different elements.
+   4. Inline CSS is specified as an attributte, while embedded CSS is specified in an opening and closing <STYLE> tag.
 
 2. Linear and hiearchical structures
 
-*Insert diagram of linear and hiearchical structures*
+#### Insert diagram of linear and hiearchical structures
 
 1. Linear structure allows navigation in a sequential order. Hiearchical structure allows navigation anywhere in the website.
 2. Linear structure requires a user to go through all of the pages whether necessary or not. Hiearchical structure allows a user to skip through unnecessary pages.
