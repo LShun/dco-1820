@@ -51,7 +51,7 @@ Pay attention to the text highlighted in red color throughout the lecture notes,
 
 - **Web Browser (NPD)**: software that allows a user to locate, access, and display web pages
 
-**Recommended**: Go through this [C1P1 Quick Notes]("C1P1 - Quick Notes.pdf").
+**Recommended**: Go through this - [C1P1 - Quick Notes](C1P1%20-%20Quick%20Notes.pdf).
 
 ### Chapter 1 Part 2
 
