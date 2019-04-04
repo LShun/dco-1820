@@ -166,7 +166,7 @@ None as far as I know.
   - `background-color`
   - `font-size`
   - `font-family`
-  - `font-color`
+  - `font-color` (difference with `color` is that it only apply color to fonts, and not other elements like borders)
   - `position` & the positioning properties: `top`, `bottom`, `left`, `right`
   - `text-align`
 
