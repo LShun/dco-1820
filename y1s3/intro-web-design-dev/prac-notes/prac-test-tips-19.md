@@ -25,6 +25,7 @@ Its not actually tips given by the teacher, but some tips-and-tricks I discovere
 
 1. Utilize your toolbox
 2. Instead of trying to make all the tags align up, right-click inside your coding area, scroll down, click `Reformat HTML` and see the magic.
+3. Note that the line separating the `attributes` from the values inside the `Tag properties` and `CSS properties` can be adjusted to reduce mousing over.
 
 ## Chapter 1 - Basic HTML
 
