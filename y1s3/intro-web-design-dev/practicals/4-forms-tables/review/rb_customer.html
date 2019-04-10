@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Review Assignment
+
+      Red Ball Pizza Customer Information
+      Author: ...
+      Date:   ...
+
+      Filename:   rb_customer.html
+
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Red Ball Pizza Customer Form</title>
+   <link href="rb_base.css" rel="stylesheet" />
+   <link href="rb_styles2.css" rel="stylesheet" />
+   <link href="rb_forms2.css" rel="stylesheet">
+   <link href="rb_validate.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <img src="rb_logo2.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav> <a id="navicon" href="#"><img src="rb_navicon2.png" alt="" /></a>
+         <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">directions</a></li>
+            <li><a href="#">coupons</a></li>
+            <li><a href="#">orders</a></li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">reviews</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h1>Customer Information</h1>
+      <p>Thank you for using our online ordering form for quick and easy
+         orders. Please enter your name and phone number and whether you
+         want to place an order for delivery or pickup. Note that required
+         values are marked by an asterisk (*). If you
+         want to place your order over the phone, call us at
+         <a href="tel:+13865557499">(386) 555-7499</a>.</p>
+      <form action="http://www.example.com/redball/customer" method="POST">
+         <div>
+            <label for="nameBox">Name*</label>
+            <input type="text" id="nameBox" name="custName" placeholder="First and Last Name" required>
+         </div>
+         <div>
+            <label for="phoneBox">Phone*</label>
+            <input type="text" id="phoneBox" name="custPhone" placeholder="(nnn) nnn-nnnn" required
+               pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+         </div>
+         <div>
+            <input type="radio" name="orderType" id="orderType" value="delivery">
+            <label for="delivery">Delivery</label>
+            <input type="radio" name="orderType" id="orderType" value="pickup">
+            <label for="pickup">Pickup</label>
+         </div>
+         <fieldset id="deliveryInfo">
+            <legend>Delivery Options</legend>
+            <textarea name="delAddress" id="addressBox" cols="30" rows="10"
+               placeholder="Enter delivery address"></textarea>
+            <label for="delBox">Delivery Time (leave blank for earliest delivery)</label>
+            <input type="time" id="delBox" name="delTime">
+         </fieldset>
+         <fieldset id="pickupInfo">
+            <legend>Pickup Options</legend>
+            <label for="pickupBox">Pickup Time (leave blank for earliest pickup)</label>
+            <input type="time" id="pickupBox" name="pickupTime" disabled>
+         </fieldset>
+         <div>
+            <button type="submit">Begin Building your Order</button>
+         </div>
+      </form>
+   </section>
+
+   <footer>
+      <h1>ORDER</h1>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a>
+      <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <h1>ABOUT US</h1>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="#">Gluten Free Crusts</a> <a href="#">Contact Us</a> <a href="#">FAQs</a>
+      <h1>MY ACCOUNT</h1>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a> <a href="#">Order Status</a>
+      <h1>NUTRITION</h1>
+      <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+      <h1>POLICIES</h1>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+         Red Ball Pizza <br />
+         811 Beach Drive <br />
+         Ormond Beach, FL 32175 <br />
+         (386) 555 - 7499
+      </address>
+   </footer>
+</body>
+
+</html>
