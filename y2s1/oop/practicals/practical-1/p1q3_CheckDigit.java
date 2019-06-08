@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class p1q3_CheckDigit {
-    public static void main() {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a credit card number: ");
         int cc = sc.nextInt();
@@ -15,6 +15,7 @@ public class p1q3_CheckDigit {
         else {
             System.out.println("Credit card is not valid");
         }
+        sc.close();
     }
 
     // Integer -> Boolean

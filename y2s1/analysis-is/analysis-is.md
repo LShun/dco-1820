@@ -57,8 +57,15 @@
 
 - **System Request**
   - [ ] System Request Form
+    - [ ] Use template from lecture notes
   - [ ] Reason of Request (3 reasons)
+    - [ ] Users needs. (Need for new features to support new roles)
+      - [ ] New features for *ticket processing* (ticket purchase system).
+      - [ ] Unhappy with existing system performance.
+      - [ ] Growth of the organization or new requirements.
   - [ ] Types of improvement requested*
+    - [ ] Improved performance
+    - [ ] Better service
 
 ***Based on Case Study Organisation (Week 2) and the problems** faced in using the current system, briefly describe the type of improvement requested. Use theories learnt in the lecture as guide.
 
@@ -103,3 +110,44 @@ Tip: Choose an "outdated" or "lousy" company, to improve, so that will have more
 ## Snippets
 
 **4.1:** The costs elements may be categorised into hardware, software, and Network Infrastructure, and each of these may be further be broken down into: hardware (eg. server, terminals, printers, ports, hubs, modem etc) and software (eg. browser, OS, network OS, development tools etc).
+
+## System request form
+
+1. Form
+
+Need to fill up by company for system request
+
+General information
+Submitted by:
+Department
+Date Submitted
+OPTIONAL
+Critical rating
+Email
+Phone
+Title
+
+Reuest information
+Report type"
+New system
+Existing system enhancement
+Modification
+Reports
+Others, please specify
+
+Reasons of request
+
+Expected/SUggested solution (describe ideal solution(s) for tyour request)
+
+Action (to be completed by comitee member)
+Request approved
+Request rejected
+Keep as now
+Further investigation needed
+
+Personnel
+ Date
+Signature
+Time
+
+Also sample form
