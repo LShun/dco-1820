@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MonetaryUnits",
+            "request": "launch",
+            "mainClass": "MonetaryUnits"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - c1ApA2pg49",
+            "request": "launch",
+            "mainClass": "c1ApA2pg49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main"
+        }
+    ]
+}

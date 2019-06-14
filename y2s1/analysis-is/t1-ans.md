@@ -7,8 +7,8 @@
 | Hardware    | Computer, Number pad, Auto teller card scanner, Receipt printer                                      | Barcode Scanner, Computer, Receipt printer            |
 | Software    | Auto Teller operating system                                                                 | POS system operating system                           |
 | Data stored | Transaction history, User PIN, User account balance                                          | Bar-code database, Product price, transaction history |
-| Processes   | Authentication process, Cash withdrawal process, Cash deposit process, Account query process | Purchase process, refund process                      |
-| People      | Auto Teller account holder, Auto Teller service personnel                                    | Cashier, Customer                                     |
+| Processes   | Authentication process, Cash withdrawal process, Cash deposit process, Account query process | Purchase process, refund process. *Note: Need to elaborate if unsure if it is correct* |
+| People      | Auto Teller Machine account holder, Auto Teller service personnel                                    | Cashier, Customer                                     |
 
 ## Q2
 
@@ -16,15 +16,17 @@
 
 1. Production system
 2. Computer-aided design system
-3. Human Resource system
+3. Human Resource system (try to give something more related)
 4. Inventory management system
 5. Accounting system
+6. Purchasing system
 
 ### (b)
 
 1. Human Resource system
    1. Attendance system
    2. Recruitment system
+   3. Reporting system/module (ALWAYS correct)
 
 ### (c)
 
@@ -49,3 +51,4 @@
 - **Data input:** Information of goods received
 - **Information output:** Total new quantity of the goods added
 - **Data stored:** Total quantity of the goods received
+
