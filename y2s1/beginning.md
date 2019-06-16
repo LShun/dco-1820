@@ -15,10 +15,12 @@
 
 Coursework/Final = 50/50 marks
 
-Mid-term test: 60%
+Mid-term test: 60% (Week 7)
 
 - Functions and graph
 - Limits and continuity
+
+Assignment: Week 10
 
 Assignment: 40%
 
@@ -28,8 +30,20 @@ Assignment: 40%
 ### Database
 
 Final: 50%
-Assessment: 50%
-Test: 25% (week 8)
+Assessment: 50% (submission: week 12)
+Lab Test: Week 11 (as per course file)
+Test: 25% (Week 8)
+
+C2,3,4,5: 90% of questions
+C1,6,7: 10% of questions
+
+Marking guide:
+- Giving mark when you write
+- Not giving mark when didn't write
+- No extra mark when you write more
+- Deduct mark when you write less
+- Not giving mark when simply write
+- Free some mark when you create own logic theory.
 
 ### AACS2183 ADIS
 
@@ -53,20 +67,8 @@ Final exam (50%)
 ### OOP
 
 1. Final exam : 50%
-2. Assignment : 50%
-
-### DBMS
-
-C2,3,4,5: 90% of questions
-C1,6,7: 10% of questions
-
-Marking guide:
-- Giving mark when you write
-- Not giving mark when didn't write
-- No extra mark when you write more
-- Deduct mark when you write less
-- Not giving mark when simply write
-- Free some mark when you create own logic theory.
+2. Assignment + Mid Term Test: 50% (Assignment submission: Week 12)
+3. Mid term test: Week 9
 
 ## Rooms
 
