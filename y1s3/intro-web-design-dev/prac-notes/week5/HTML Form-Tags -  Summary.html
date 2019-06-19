@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+
+<body>
+
+    <form id="reg" name="reg" action="www.ppp.com" method="post" enctype="multipart/form-data">
+    
+     <table border="1" width="100%">
+     
+     <colgroup span="3">
+       <col width="15%" style="background-color:aqua"/>
+	   <col width="2%" style="background-color:lime"/>
+	   <col width="73%" style="background-color:silver"/>
+     </colgroup>
+     
+     	<tr>
+     		<td>
+     		     <label id="" name=""> First Name <br/> [Using Input Text]</label>  		
+     		</td>
+     		<td> : </td>
+     		<td>
+     		     <b><u>Simple Text input</u></b>
+     		     <br/>
+     		     <input type="text"/>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Text input with maxlength</u></b>
+     		     <br/>
+     		     <input type="text" maxlength="10"/>
+     		     <br/>
+     		     <hr/>
+     		     
+     		     <b><u>Text input with size</u></b>
+     		     <br/>
+     		     <input type="text" size="50"/>
+     		     <br/>
+     		     <hr/>
+     		     
+     		     <b><u>Simple Text input with value</u></b>
+     		     <br/>
+     		     <input type="text" value="David Johnson"/>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Text input with placeholder</u></b>
+     		     <br/>
+     		     <input type="text" placeholder="(dd/mm/yyyy)"/>
+     		     <br/>
+     		     <hr/>
+     		     
+     		     <b><u>Text input with Color</u></b>
+     		     <br/>
+     		     <input type="text" style="background-color:aqua;color:fuchsia"/>
+     		     <br/>
+     		     <hr/>
+
+
+     		     
+     		</td>
+     	</tr>
+     
+     	<tr>
+     		<td> State <br/> [Using Data List / Selection options (option list) 
+			input] </td>
+     		<td> : </td>
+     		<td>
+     		    <b><u>Data list - Text Input</u></b> <br/>
+     		    <input type="text" list="stateList"/>
+     		  
+     		    <datalist id="stateList">
+     		       	<option value="Johor"/>
+				    <option value="Perak"/>
+				    <option value="Ipoh"/>
+     		    </datalist>
+     		     <br/>
+     		     <hr/>
+
+     		     <b><u>Selection List / Option List - Basic</u></b>
+     		     <br/>
+     		     	<select name="state">
+					     <option value="-" >---- Please select ----</option>
+					     <option value="Perak" >Perak</option>
+					     <option value="Ipoh"  >Ipoh</option>
+                         <option value="Johor" >Johor</option>
+					     <option value="Perak" >Perak</option>
+					     <option value="Ipoh"  >Ipoh</option>
+			  		</select>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Selection List / Option List - with size</u></b>
+     		     <br/>
+     		     	<select name="state" size="3">
+					     <option value="-" >---- Please select ----</option>
+					     <option value="Perak" >Perak</option>
+					     <option value="Ipoh"  >Ipoh</option>
+                         <option value="Johor" >Johor</option>
+					     <option value="Perak" >Perak</option>
+					     <option value="Ipoh"  >Ipoh</option>
+			  		</select>
+     		     <br/>
+     		     <hr/>
+
+     		     <b><u>Selection List / Option List - with multiple selection</u></b>
+     		     <br/>
+     		     	<select name="state" size="3" multiple="multiple">
+					     <option value="-" >---- Please select ----</option>
+					     <option value="Perak" >Perak</option>
+					     <option value="Ipoh"  >Ipoh</option>
+                         <option value="Johor" >Johor</option>
+					     <option value="Perak" >Perak</option>
+					     <option value="Ipoh"  >Ipoh</option>
+			  		</select>
+     		     <br/>
+     		     <hr/>
+     		     
+     		     
+     		     <b><u>Selection List / Option List - with option groups</u></b>
+     		     <br/>
+			  <select name="state">
+			     <optgroup label="Perak">
+                       <option value="Ipoh" >Ipoh</option>
+					   <option value="Taiping" >Taiping</option>
+					   <option value="Parit Puntar"  >Parit Puntar</option>
+			     </optgroup>
+			     
+			     <optgroup label="Kuala Lumpur">
+			     	<option value="Ampang">Ampang</option>
+			     	<option value="Gombak">Gombak</option>
+			     	<option value="Setapak">Setapak</option>
+			     </optgroup>
+			  </select> 
+     		     <br/>
+     		     <hr/>
+     		     
+     		     <b><u>Selection List / Option List - selected certain value</u></b>
+     		     <br/>
+     		     	<select name="state">
+					     <option value="-" >---- Please select ----</option>
+					     <option value="Perak" >Perak 1</option>
+					     <option value="Ipoh"  >Ipoh 1</option>
+                         <option value="Johor" selected="selected">Johor 2</option>
+					     <option value="Perak" >Perak 2</option>
+					     <option value="Ipoh"  >Ipoh 2</option>
+			  		</select>
+     		     <br/>
+     		     <hr/>
+    		
+     		</td>
+     	</tr>
+
+     	<tr>
+     		<td>Gender<br /> [Using radio buttons input]
+			</td>
+     		<td> : </td>
+     		<td>
+     		    <h5><u>Incorrect - Reasons: using different name's value</u></h5>		     
+			    <input type="radio" value="female" name="aa"/> Female
+			    <input type="radio" value="male" name="bb"/> Male
+			    <br/>
+			    <hr/>
+			    <h5><u>Correct - Using same name's value</u></h5>
+			    <input type="radio" value="female" name="gender"/> Female
+			    <input type="radio" value="male" name="gender"/> Male
+			    <br/>
+			    <hr/>
+			    <h5><u>Correct (Radion buttons - with checked selection)</u></h5>
+			    <input type="radio" value="female" name="gender" checked="checked"/> Female
+			    <input type="radio" value="male" name="gender"/> Male
+			    <br/>
+			    <hr/>
+			    <h5><u>Correct (Radio button with Clickable labels)</u></h5>	
+			    <label><input type="radio" value="female" name="gender"/> Female</label>
+			    <label><input type="radio" value="male" name="gender"/> Male</label>
+			    <br/>
+				<br/>
+     		</td>
+     	</tr>
+
+     	<tr>
+     		<td>Birthdate <br/> [Using date input]</td>
+     		<td> : </td>
+     		<td>
+     		
+     		     <b><u>Basic Date</u></b>
+     		     <br/>
+     		     <input type="date" name="bday"/>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Date with restriction date</u></b>
+     		     <br/>
+     		       Enter a date before 1980-01-01:
+  				   <input type="date" name="bday" max="1979-12-31"/><br/>
+				   Enter a date after 2000-01-01:
+				   <input type="date" name="bday" min="2000-01-02"/><br/>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Date with Datetime-local format</u></b>
+     		     <br/>
+     		     Birthday (date and time):
+                 <input type="datetime-local" name="bdaytime"/>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Month and Year Format</u></b>
+     		     <br/>
+				Birthday (month and year):
+  				<input type="month" name="bdaymonth"/>
+     		</td>
+     	</tr>
+     	
+      	<tr>
+     		<td>Language <br/> [Using Checkbox input]</td>
+     		<td> : </td>
+     		<td> 
+     		   <b><u>Checkboxes <span style="color:red">without </span>checked function</u></b>
+     		   <br/>
+     		<input type="checkbox" name="Malay" value="Malay" /> Malay
+			<br/>
+			<input type="checkbox" name="Chinese" value="Chinese" /> Chinese
+			<br/>
+			<input type="checkbox" name="Eng" value="Eng"/> English		
+     		<br/>
+     		<hr/>
+     		   <b><u>Checkboxes <span style="color:red">with</span> selected function</u></b>
+     		   <br/>
+     		<input type="checkbox" name="Malay" value="Malay" /> Malay
+			<br/>
+			<input type="checkbox" name="Chinese" value="Chinese" /> Chinese
+			<br/>
+			<input type="checkbox" name="Eng" value="Eng" checked="checked"/> English	
+     		
+     		
+     		</td>
+     	</tr>
+        <tr>
+     		<td>Height <br/> [Using Number input]</td>
+     		<td> : </td>
+     		<td>
+     		     <b><u>Basic Number</u></b>
+     		     <br/>
+     		     <input type="number" name="height"/>
+	     		<br/>
+	     		<hr/>
+	     		<b><u>Basic Number with value</u></b>
+     		     <br/>
+     		     <input type="number" name="height" value="30"/>
+	     		<br/>
+	     		<hr/>
+
+     		     <b><u>Number with min and max properties</u></b>
+     		     <br/>
+     		     <input type="number" name="height" min="100" maxlength="200"/> [Min:100 / Max:200]
+	     		<br/>
+	     		<hr/>
+     		     <b><u>Number with step properties</u></b>
+     		     <br/>
+     		     <input type="number" name="height" step="2"/>  [Step value:2]
+     		     <br/>
+     		     <input type="number" name="height" step="4"/>  [Step value:4]
+     		
+     		</td>
+     	</tr>
+     	
+     	<tr>
+     		<td>Vote <br/> [Using Range input]</td>
+     		<td> : </td>
+     		<td>
+     		<b><u>Basic Range</u></b>
+     		     <br/>
+     		     <input type="range" name="vote"/>
+	     		<br/>
+	     		<hr/>
+	     		<b><u>Basic Range with value</u></b>
+     		     <br/>
+     		     <input type="range" name="vote" value="30"/>
+	     		<br/>
+	     		<hr/>
+     		    <b><u>Range with min and max properties</u></b>
+     		     <br/>
+     		     1 <input type="range" name="vote" min="1" maxlength="200"/> 200
+	     		<br/>
+	     		<hr/>
+     		     <b><u>Range with step properties</u></b>
+     		     <br/>
+     		     <input type="range" name="vote" step="2"/>  [Step value:2]
+     		     <br/>
+     		     <input type="range" name="vote" step="4"/>  [Step value:4]
+     		
+
+     		
+     		
+     		
+     		</td>
+     	</tr>
+      	<tr>
+     		<td>Subject <br/> [Using Fieldset and legend tags]</td>
+     		<td> : </td>
+     		<td>
+     			<fieldset>
+     			   <legend>Subject</legend>
+     		<input type="checkbox" name="Math" value="Math" /> Math
+			<br/>
+			<input type="checkbox" name="English" value="English" /> English
+			<br/>
+			<input type="checkbox" name="History" value="History"/> History	
+
+  
+     			</fieldset>
+     		
+     		</td>
+     	</tr>
+      	<tr>
+     		<td> Comments <br/> [Using Textarea]</td>
+     		<td> : </td>
+     		<td> 
+     		     <b><u>Basic Text area</u></b>
+     		     <br/>
+     			<textarea name="comments">Please comments here
+			    </textarea>
+     		    <br/>
+     		    <hr/>
+     		   <b><u>Text area cols and rows attributes</u></b>
+     		   <br/>
+     			<textarea name="comments" cols="50" rows="10">Please comments here
+			    </textarea>
+     		</td>
+     	</tr>
+      	<tr>
+     		<td style="height: 62px">Validation <br/> [Using URL properties]</td>
+     		<td style="height: 62px"> : </td>
+     		<td style="height: 62px"> 
+     		Homepage: <input type="url" name="website" pattern="https?://.+" title="Include http://"/>
+     		
+  
+     		</td>
+     	</tr>
+     	
+     	
+     	<tr>
+     		<td>Validation <br/> [Using email properties]</td>
+     		<td> : </td>
+     		<td>
+     		      <b><u>Basic email</u></b>
+     		     <br/>
+     		     Email:<input type="email" name="email"/>
+     			<br/>
+	     		<hr/>
+       		      <b><u>Email with pattern properties</u></b>
+     		     <br/>     		
+     		E-mail: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+     		
+     		</td>
+     	</tr>
+
+
+      	<tr>
+     		<td>Validation <br/> [Using Password input]</td>
+     		<td> : </td>
+     		<td>
+ 			    <b><u>Basic Password</u></b>
+     		    <br/>
+     		     Password: <input type="password" name="password"/>
+     		     <br/>
+     		     <hr/>
+     		     <b><u>Password with pattern properties</u></b>
+                 <br/>
+     		Password: <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+     		</td>
+     	</tr>
+
+      	<tr>
+     		<td>Validation <br/>[Using Text input]</td>
+     		<td> : </td>
+     		<td>
+     		
+     		Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"/>
+
+     		</td>
+     	</tr>
+     
+     </table>
+    <br/>
+	<h5>Correct (Note: inside the form)</h5>
+	<input type="submit" value="Save"/>  <input type="reset" />
+
+    </form>
+<br/>
+<h5>Wrong (Note: outside the form)</h5>
+<input type="submit" value="Save"/>  <input type="reset" />
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+
+</html>

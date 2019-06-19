@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    thead, tfoot {
+        background-color: lightgray;
+    }
+    td[rowspan="2"] {
+        background-color: lightgoldenrodyellow;
+    }
+</style>
+
+<html>
+    <head>Time table</head>
+    <body>
+        <table border="1">
+            <caption>TIME TABLE</caption>
+            <colgroup>
+                <col style="background-color: lightblue;">
+            </colgroup>
+            <thead>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6.00</td>
+                    <td colspan="8" style="background-color: lightcoral">National News</td>
+                </tr>
+                <tr>
+                    <td>6.00</td>
+                    <td colspan="8" style="background-color: plum">National News</td>
+                </tr>
+                <tr>
+                    <td>6.00</td>
+                    <td rowspan="2">National News</td>
+                    <td rowspan="2">National News</td>
+                    <td rowspan="2">National News</td>
+                    <td rowspan="2">National News</td>
+                    <td style="background-color: lightgoldenrodyellow">National News</td>
+                    <td style="background-color: lightgoldenrodyellow">National News</td>
+                    <td rowspan="2">National News</td>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td style="background-color: lightgoldenrodyellow">National News</td>
+                    <td style="background-color: lightgoldenrodyellow">National News</td>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td rowspan="3" colspan="4" style="background-color: greenyellow">National News</td>
+                    <td style="background-color: lightcyan">National News</td>
+                    <td rowspan="4" style="background-color: skyblue">National we</td>
+                    <td rowspan="4" style="background-color: skyblue">National we</td>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td style="background-color: lightcyan">National News</td>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td rowspan="2" style="background-color: lightcyan">National News</td>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td colspan="4" style="background-color: lightcyan">National News</td>
+                </tr>
+                <tfoot>
+                    <th colspan="8">TV Station</th>
+                </tfoot>                             
+            </tbody>
+        </table>
+    </body>
+</html>
