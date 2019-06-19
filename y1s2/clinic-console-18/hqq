@@ -1,0 +1,37 @@
+[33meb208c3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m ms: undefine macros, dup. delete, purge verifyFP
+[33m05551b2[m si: Fix invalid function name & escape sequence
+[33m86201e8[m ms: Add handling of duplicate entries for modifications
+[33m18ac27e[m si: Remove invalid escape sequence '\|'
+[33mf602389[m ms: Add modifySupplies() to handle duplicate entries
+[33mba10809[m Optimize formatting of spaces
+[33m1cd680b[m ms: Add fOpenVerify() to replace verifyFp()
+[33m4862dfd[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m si: Add Identification structure & parameter
+[33m5a5bcf6[m ms: Change exit in msMenu() to return instead
+[33m744e2ef[m Resolve mainMenu conflict
+[33m66d4a28[m Removed duplicate Date structure
+[33m2b1bb78[m si: Fix non-existant escape sequence
+[33ma7fd98c[m Change module names for control prog. use
+[33m038b55f[m Add control program, correct name of modules
+[33mda7c65e[m ms: Add date logical verification
+[33m7311ee7[m ms: Add tableHeader()
+[33m2e8b658[m ms: Update modifyMenu() text
+[33m6400390[m ms: Fix modifySupplies() cancel selection
+[33m6b0e1e0[m ms: Add expiry date entry checking for adding medicine
+[33ma7e6d71[m ms: Block negative stock count for adding stock
+[33m2b97fa5[m ms: Fix modSup 'rec. !found' & add medExpCheck
+[33md8ac6de[m ms: make prompt more user friendly
+[33m61aab3f[m medicalSupplies: Add extra functions documentation in C program
+[33m5524b3f[m MedicalSupplies: Implemented search by description, search by keyword
+[33mfe2c863[m Add incomplete search to medicalSupplies.c
+[33m4f1a6c1[m Merge branch 'master' into 'master'
+[33mf5447fd[m Merge branch 'master' into 'master'
+[33m4dbc76c[m Add staff information module
+[33m12aca61[m add shannen.c
+[33m8ffa67a[m Add medicalSupplies.c
+[33m942e47a[m Add medical supplies data structures
+[33m7d39e46[m Added ms-flow-chart.vsdx
+[33mcde62c2[m Added ms-structure-chart.vsdx
+[33mbae7fc5[m Adds .gitignore file
+[33m59ba5b0[m Add new directory LS-Project
+[33mdbd1e2e[m Add LICENSE
+[33m89f226d[m Initial commit

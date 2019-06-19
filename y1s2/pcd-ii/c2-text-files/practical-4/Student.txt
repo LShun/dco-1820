@@ -1,0 +1,4 @@
+WWA1234DIA|Opteron Lee|3.95
+WAC1235DIM|SquirrleFox|2.13
+WAC1239DIM|Tantaline Fox|3.50
+WAC1239DIM|Orange 3Fox|3.49

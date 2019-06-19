@@ -1,0 +1,8 @@
+Singular             Plural              
+======               ====                
+cat                  cats                
+dogs                 dogses              
+pig                  pigs                
+orange               oranges             
+sun                  suns                
+watch                watches             

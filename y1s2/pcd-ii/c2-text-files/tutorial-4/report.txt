@@ -1,0 +1,5 @@
+NAME:               MARKS:              AVERAGE:            
+
+Tan Ah Beng         50 70 55 60         58.75%
+Lee Ah Lian         72 80 65 85         75.50%
+Jackson Ngo         43 64 79 31         54.25%
