@@ -86,7 +86,6 @@ Keywords (total 5, 2 are covered in exams):
 1. `try`
 2. `catch`
 3. `finally`, located after `try` and `catch`, execute regardless of what happens
-4. 
 
 `try` and `catch` works together as two seperate blocks, when `try` fails, `catch` starts its work.
 

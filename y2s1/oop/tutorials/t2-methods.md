@@ -3,7 +3,7 @@
 1. Define and provide an illustration for each of the following:
 (a) Parameter
 
-```
+```md
 A parameter is a value that you can pass to a method in Java. Then the method can use the parameter as though it were a local variable initialized with the value of the variable passed to it by the calling method.
 ```
 
@@ -15,7 +15,7 @@ public static void main(String args[]);
 
 (b) Argument
 
-```
+```md
 The arguments are the data you pass into the method's parameters.
 ```
 
@@ -27,7 +27,7 @@ calculateTax(500);
 
 (c) Method signature
 
-```
+```md
 A method signature is the method name and the number, type and order of its parameters.
 ```
 
@@ -43,13 +43,13 @@ public void setMapReference(int xCoordinate, int yCoordinate)
 
 (d) Method overloading
 
-```
+```md
 Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
 ```
 
 (e) Method abstraction
 
-```
+```md
 Method abstraction refers to the design of a method where there is no default implementation for it and a separate implementing class will provide the details.
 ```
 
