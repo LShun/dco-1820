@@ -25,3 +25,13 @@ CREATE TABLE <name of table>
 PRIMARY KEY (attribute name, . . ., attribute name)
 );
 ```
+### Increase column width
+
+```sql
+SQL> COLUMN ENAME FORMAT A4
+SQL> /
+```
+
+`SQL>` is part of the terminal, no need to include
+
+`/` is used to request the last query

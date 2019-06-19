@@ -9,10 +9,10 @@
 
 ## Application Areas of Database
 
-- Airways and railways: use online database to display  schdule information.
-- Banking: Customer inquiry, acocunts, loans
+- Airways and railways: use online database to display scheduled information.
+- Banking: Customer inquiry, accounts, loans
 - Education: course registration
-- Telecommunications: Store information on record on calls
+- Telecommunications: Store call history
 
 ## Main use of DBMS
 
@@ -34,7 +34,7 @@
 
 - Persistent
   - Last a long time
-  - Data stored to persistent media for retrival when required
+  - Data stored to persistent media for retrieval when required
 - Inter-related
   - stores entities & their relationships
   - entity: cluster of data about a topic (ex: customer, student)

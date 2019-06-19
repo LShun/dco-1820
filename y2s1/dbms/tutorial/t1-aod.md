@@ -10,7 +10,8 @@ Keywords in italics
 
 - What kind of software would you need to detect trends and make projections about customer activities?
 
-> Database Management System.
+> (Note: Answer verified)
+> Data Warehouse, Analytical Processing, CRM
 
 1. Explain why a comprehensive and effective information system cannot be built with software such as MS Word, MS Excel and MS PowerPoint.
 

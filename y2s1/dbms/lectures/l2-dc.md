@@ -7,7 +7,7 @@
 - Information
   - Data processed to reveal meaning
 
-Data + Grouping -> Information + Context -> Knowledge
+Data + `Grouping` -> Information + `Context` -> Knowledge
 
 ## Why process data
 
@@ -43,7 +43,6 @@ End user <-> DBMS <-> Database Structure
 - Enterprise
   - Multi user, large group users/company
 
-
 ## Location of Database
 
 - Centralized:
@@ -58,7 +57,6 @@ End user <-> DBMS <-> Database Structure
   - Data massaging
     - Store data used to generate information
   - Store historical data
-
 
 ## Why database design important
 
