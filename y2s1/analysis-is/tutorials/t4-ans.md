@@ -1,0 +1,5 @@
+# Tutorial 4
+
+## Q2
+
+The following describes the business process of an estate agent. When potential buyers phone in for information about properties available, a Property Interest card will be completed. The potential buyer’s details (eg. name, address) will be recorded. At the same time, a mailing list will be created and stored for future use, example sending out monthly magazine and news on properties. Potential sellers of properties will also have their details recorded onto a Property Details card. This gives the name and address of the seller and the details of the property or land they wish to sell. On a weekly basis, the buyers’ interests and the sellers’ interest will be matched. This can be carried out by matching the Property Interest cards details with the details on the Property Details cards. When there is a good match, letters will be sent to the potential buyers with details of the relevant properties. In order to generate interest, on a monthly basis (last day of a month), a list of properties (from the Property Details cards) will be created and posted to potential buyers on the mailing list.
