@@ -25,6 +25,7 @@ CREATE TABLE <name of table>
 PRIMARY KEY (attribute name, . . ., attribute name)
 );
 ```
+
 ### Increase column width
 
 ```sql
@@ -35,3 +36,15 @@ SQL> /
 `SQL>` is part of the terminal, no need to include
 
 `/` is used to request the last query
+
+### Inserting records
+
+1. Even if you are `ACCEPT`ing a char, you must add single quotes (`''`) when `INSERT`ing them into a table, as they are passed without being enclosed by them.
+2. For most values (unless a constrant is added), it is safe to igore preceding zeroes.
+
+## Error Codes
+
+ORA-00001: unique constraint (SYSTEM.SYS_C007911) violated
+
+> Means a duplicate row is attempted to be inserted
+

@@ -245,6 +245,8 @@ FROM    employees
 
 ## `GROUP BY`
 
+GROUP BY returns one row for each unique combination of fields in the GROUP BY clause. To ensure only one row, you would have to use an aggregate function - COUNT, SUM, MAX - without a GROUP BY clause.
+
 ```sql
 SELECT    column, group_function(column)
 FROM      table
@@ -254,4 +256,466 @@ FROM      table
 ```
 
 - columns in `SELECT` that are not in group functions (eg. `AVG`) must be in `GROUP BY` clause
-- columns in `GROUP
+- columns in `GROUP`
+
+## Illegal queries using group functions
+
+- Any column or expression in the `SELECT` which is not in an aggregating function must be in `GROUP BY`, otherwise the DBMS do not know how to combine details which are aggregated and non-grouped together.
+
+## Restricting group results
+
+`HAVING` clause:
+
+1. Rows are grouped.
+2. The group function is applied.
+3. Group matching the `HAVING` clause are displayed
+
+## Inserting Values
+
+### Inserting new rows
+
+- List value in default order:
+
+Basic syntax: 
+
+```sql
+INSERT INTO `table`(`table_fields`)
+VALUES (70, 'Public Relations', 100, 1700);
+```
+
+### Inserting with null values
+
+- **Implicit method**: Omit from column list
+  - Exclude the table fields & values related when using `INSERT INTO`
+- **Explicit method**: Specify `NULL` keywords in the `VALUES`
+
+### Inserting special values
+
+- `SYSDATE`
+  - records current date & time
+  - Entered inside `VALUES` list
+
+- `TO_DATE('MON DD, YYYY')`
+  - specific date & time values
+
+### Copying rows from another table
+
+Write `INSERT` statement with subquery:
+
+Syntax:
+
+```sql
+
+INSERT INTO `table2`
+SELECT `fields` FROM `table1`
+WHERE `condition`;
+
+```
+
+Note:
+`table2` refers to your destination table
+`fields` refer to the fields you want to copy (along with their values)
+`table1` refers to your source table
+`condition` refers to...well 'only copy if this is true'.
+
+## `UPDATE`
+
+- Modify existing values
+- Syntax:
+
+```sql
+UPDATE  table
+SET     column = value[, column = value, ...]
+[WHERE  condition];
+```
+
+Notes:
+`table` refers to the table you intend to update
+`column` refers to a column name
+`value` refers to the value you want to set the column to.
+`[]` represents optional values
+
+### Updating rows in the table
+
+- Caution: If `WHERE` is ommited, all values are modified
+  `SET column_name=NULL` to update to `NULL`
+
+### Updating Multiple column with subquery
+
+Same as syntax, but for the `value`, use a `SELECT` statement instead.
+
+## `DELETE` statement
+
+Syntax:
+
+```sql
+DELETE [FROM] table
+[WHERE        condition];
+```
+
+### Deleting rows from tables
+
+Syntax:
+
+same as the original `DELETE`, but for the condition:
+
+`WHERE column_name = value`
+
+Notes:
+`column_name` is the column storing the value you are looking for.
+`value` is the matching value.
+
+### Deleting rows based on another table
+
+Syntax: same as the original `DELETE`, but for condition's value, you want to put another `SELECT` statement in. Note that it should only return 1 value, therefore, using `*` is a silly idea.
+
+## Extra Notes
+
+```sql
+SELECT display columns
+FROM some table
+WHERE single row condition
+GROUP BY group the same item together
+HAVING sum(salary) > 10000 (group condition)
+ORDER BY arrange for columns ASC (A -> Z) / DESC (Z->A) [Note: if put and question dont ask, will not help you get marks]
+```
+
+Sum the total survey for each branch:
+
+`group by`
+
+Sum the total survey for each branch which salary > 10000:
+
+`having`
+
+If question have `each`, need to use `group by`
+If how many person, then use `count`
+If `count` or `sum up` keywords then use `group by`
+If have condition, then use `having`
+
+### SQL Q&A
+
+Q1
+
+```sql
+SELECT *
+FROM staff;
+```
+
+Q2
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM staff;
+```
+
+Q3
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM staff
+WHERE Sno = 'SL21';
+```
+
+Q4
+
+```sql
+SELECT Sno, FName, LName, Salary/12 AS Monthly_Salary
+FROM staff
+```
+
+Q5
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM staff
+ORDER BY Salary;
+```
+
+Q6
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM staff
+ORDER BY Salary DESC;
+```
+
+Q7
+
+Produce an abbreviated list of properties arranged in order of property type and in descending order
+of rent within the same property type
+
+```sql
+SELECT Pos, Type, Rooms, Rent
+FROM Property_For_Rent
+ORDER BY Type, Rent DESC;
+```
+
+Q8
+
+List the names of all renters who have viewed a property along any comment supplied.
+
+```sql
+SELECT R.Rno, FName, LName, Pno, VComment
+FROM Renter R, Viewing V
+WHERE R.Rno = V.Rno;
+```
+
+Why need `R.`?
+
+Note:
+
+Foreign Key join Foreign Key = Nothing
+PK join FK get something
+
+Because the field clash, other didn't problem.
+
+Q9
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM Staff S, Branch B
+WHERE S.Bno = B.Bno AND street = '163 Main St'
+```
+
+Or, the subquery way:
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM Staff S
+WHERE Bno = (SELECT Bno
+             FROM Branch
+             WHERE street = '163 Main St');
+```
+
+Or the multiple-answer way:
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM Staff S
+WHERE Bno IN (SELECT Bno
+             FROM Branch
+             WHERE street = '163 Main St');
+```
+
+Q10
+
+For each branch office, list the names of staff who manage properties, and the properties
+they manage. Arrange the branch number, staff number and property number in ascending
+order.
+
+```sql
+SELECT Sno, S.Sno, FName, LName, Pno
+FROM Staff S, Property_For_Rent P
+WHERE S.Sno = P.Sno
+ORDER BY S.Bno, S.Sno, Pno;
+```
+
+Q11
+
+```sql
+SELECT B.Bno, B.City, S.Sno, FName, LName, Pno
+FROM Branch B, Staff S, Property_For_Rent P
+WHERE B.Bno = S.Bno AND S.Sno = P.Sno
+ORDER BY B.Bno, S.Sno, Pno;
+```
+
+Q12
+
+```sql
+SELECT *
+FROM staff
+WHERE Sno <= 'SG37';
+```
+
+Q13
+
+```sql
+SELECT *
+FROM staff
+WHERE Salary => '10000';
+```
+
+Note: Don't put dollar sign, because store in column no dollar sign.
+
+Q14
+
+```sql
+SELECT *
+FROM Viewing
+WHERE VDate >= '01-May-1998' OR VDate <= '31-May-1998';
+```
+
+```sql
+SELECT *
+FROM Viewing
+WHERE VDate BETWEEN '01-May-1998' AND VDate '31-May-1998';
+```
+
+Q15
+
+```sql
+SELECT Bno, Street, Area, City, Pcode
+FROM branch
+WHERE City = 'London' OR City = 'Glasgow';
+```
+
+```sql
+SELECT Bno, Street, Area, City, Pcode
+FROM Branch
+WHERE City IN ('London', 'Glasgow');
+```
+
+Q16
+
+```sql
+SELECT Bno, Street, Area, City, Pcode
+FROM Branch
+WHERE City = 'London' AND Area = 'Sidcup';
+```
+
+Since `Sidcup` is a subset of `London`
+
+```sql
+SELECT Bno, Street, Area, City, Pcode
+FROM Branch
+WHERE Area = 'Sidcup';
+```
+
+Q17
+
+```sql
+SELECT Sno, FName, LName, Salary
+FROM Staff
+WHERE Sno NOT LIKE 'SG37';
+
+WHERE Sno <> 'SG37';
+
+WHERE Sno != 'SG37';
+```
+
+Q18
+
+```sql
+SELECT *
+FROM Staff
+WHERE Sex = 'F' AND Position IN ('Manager', 'Assistant');
+```
+
+```sql
+SELECT *
+FROM Staff
+WHERE Sex = 'F' AND (Position = 'Manager' OR Position = 'Assistant');
+```
+
+Note: Sequence >> brackets first, then `AND`, and `OR`
+
+```sql
+(SELECT *
+FROM Staff
+WHERE Sex = 'F' AND Position = 'Manager';)
+UNION
+(SELECT *
+FROM Staff
+WHERE Sex = 'F' AND Position = 'Assistant';)
+```
+
+```sql
+SELECT *
+FROM (SELECT Sno, FName, LName, Salary
+      FROM Staff
+      WHERE Position IN ('Manager', 'Assistant'))
+WHERE Sex = 'F';
+```
+
+Q19
+
+```sql
+SELECT DISTINCT Pno
+FROM Property_For_Rent P, Viewing V
+WHERE V.Rno = P.Rno
+```
+
+`DISTINCT` eliminates duplicate values
+
+Extra Notes:
+
+If question ask for count, then use `COUNT`
+
+Q20
+
+```sql
+SELECT *
+FROM Staff
+WHERE Salary BETWEEN 20000 AND 30000;
+```
+
+```sql
+SELECT *
+FROM Staff
+WHERE Salary >= 20000 AND Salary <= 30000;
+```
+
+Q21
+
+```sql
+SELECT *
+FROM Staff
+WHERE Salary NOT BETWEEN 20000 AND 30000;
+```
+
+```sql
+SELECT *
+FROM Staff
+WHERE NOT(Salary BETWEEN 20000 AND 30000);
+```
+
+```sql
+SELECT *
+FROM Staff
+WHERE Salary < 20000 OR Salary > 30000;
+```
+
+```sql
+SELECT *
+FROM Staff
+WHERE NOT(Salary <= 20000 AND Salary <= 30000);
+```
+
+Q22
+
+```sql
+SELECT *
+FROM Viewing
+WHERE Pno = 'PG4' AND VComment IS NULL;
+```
+
+Q23
+
+```sql
+SELECT *
+FROM Viewing
+WHERE Pno = 'PG4' AND VComment IS NOT NULL;
+```
+
+Q24
+
+```sql
+SELECT Sno, FName, LName, Address
+FROM Staff
+WHERE Address LIKE '%Glassglow%';
+```
+
+```sql
+SELECT Sno, FName, LName, Address
+FROM Staff
+WHERE UPPER(Address) LIKE '%GLASSGLOW%';
+```
+
+Q25
+
+```sql
+SELECT *
+FROM Owner
+WHERE Tel_No NOT LIKE '0141-%';
+```
