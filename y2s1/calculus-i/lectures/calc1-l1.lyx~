@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -38,7 +29,6 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -54,7 +44,6 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -1931,9 +1920,6 @@ Example
 \begin_layout Standard
 \begin_inset Graphics
 	filename lyx-images/example1.20.png
-	width 100text%
-	height 100text%
-	keepAspectRatio
 
 \end_inset
 
@@ -1979,9 +1965,6 @@ Sketch the graph of
 \begin_layout Standard
 \begin_inset Graphics
 	filename lyx-images/example1.21.png
-	width 100text%
-	height 100text%
-	keepAspectRatio
 
 \end_inset
 

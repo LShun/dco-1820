@@ -354,9 +354,42 @@ Find the limit.
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Squeeze theorem
 \begin_inset Formula 
 \begin{align*}
-\lt x{\infty}{\frac{\sin^{2}x}{x}} & =\frac{sin^{2}\infty}{\infty},sin\,range=\left[-1,1\right]\\
+-1 & <sin\left(x\right)<1\\
+0 & <sin^{2}\left(x\right)<1\\
+0 & <\frac{sin^{2}\left(x\right)}{x}<\frac{1}{x}\\
+\lim_{x\to\infty}0 & <\lim_{x\to\infty}\frac{sin^{2}\left(x\right)}{x}<\lim_{x\to\infty}\frac{1}{x}\\
+0 & <\lim_{x\to\infty}\frac{sin^{2}\left(x\right)}{x}<0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore\lim_{x\to\infty}\frac{sin^{2}\left(x\right)}{x}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{\infty}{\frac{\sin^{2}x}{x}} & =\frac{0}{\infty}\\
  & =0
 \end{align*}
 
@@ -365,6 +398,7 @@ Find the limit.
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\lt x{\infty}{\tan^{-1}\left(x^{4}-x^{2}\right)}$
 \end_inset

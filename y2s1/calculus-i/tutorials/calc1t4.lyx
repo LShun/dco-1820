@@ -81,7 +81,7 @@ Calc 1:Tutorial 4
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lt}[3]{}
+\newcommand{\lt}[3]{\lim_{#1\to#2}#3}
 {\lim_{#1\to#2}#3}
 \end_inset
 

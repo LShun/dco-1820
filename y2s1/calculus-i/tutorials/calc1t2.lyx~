@@ -655,7 +655,6 @@ D\left(f-g\right) & =-1\le x\le1
 fg & =\sqrt{x+1}\cdot\sqrt{1-x}\\
  & =\sqrt{\left(x+1\right)\left(1-x\right)}\\
  & =\sqrt{1-x^{2}}\\
-D_{fg} & =\left\{ x\epsilon D_{f}\cap D_{g}|g\left(x\right)\neq0\right\} \\
  & =[-1,1]
 \end{align*}
 

@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -76,16 +78,16 @@
 \begin_body
 
 \begin_layout Title
+Calculus L2 - LIMITS AND CONTINUITY
+\end_layout
+
+\begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lt}[3]{}
+\newcommand{\lt}[3]{\lim_{#1\to#2}\left(#3\right)}
 {\lim_{#1\to#2}\left(#3\right)}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Title
-Calculus L2 - LIMITS AND CONTINUITY
 \end_layout
 
 \begin_layout Section

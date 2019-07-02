@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -76,16 +78,16 @@
 \begin_body
 
 \begin_layout Title
+Calculus L2 - LIMITS AND CONTINUITY
+\end_layout
+
+\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\lt}[3]{}
 {\lim_{#1\to#2}\left(#3\right)}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Title
-Calculus L2 - LIMITS AND CONTINUITY
 \end_layout
 
 \begin_layout Section
@@ -173,13 +175,13 @@ Example 2.1
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\lt x1{\frac{x-1}{x^{2}-1}}$
+\begin_inset Formula $\lt x1\frac{x-1}{x^{2}-1}$
 \end_inset
 
 
 \begin_inset Formula 
 \begin{align*}
-\lt x2{\frac{x-1}{x^{2}-1}} & =\lt x1{\frac{x-1}{x^{2}-1}}\\
+\lt x2\frac{x-1}{x^{2}-1} & =\lt x1\frac{x-1}{x^{2}-1}\\
  & =\frac{0}{0}\left(indeterminant\right)
 \end{align*}
 
@@ -188,9 +190,9 @@ Example 2.1
 
 \begin_inset Formula 
 \begin{align*}
-\lt x2{\frac{x-1}{x^{2}-1}} & =\lt x1{\frac{\cancel{x-1}}{\cancel{\left(x-1\right)}\left(x+1\right)}}\\
- & =\lt x1{\frac{1}{\left(x+1\right)}}\\
-\boldsymbol{\lt x2{\frac{x-1}{x^{2}-1}}} & \boldsymbol{=\frac{1}{2}}
+\lt x2\frac{x-1}{x^{2}-1} & =\lt x1\frac{\cancel{x-1}}{\cancel{\left(x-1\right)}\left(x+1\right)}\\
+ & =\lt x1\frac{1}{\left(x+1\right)}\\
+\boldsymbol{\lt x2\frac{x-1}{x^{2}-1}} & \boldsymbol{=\frac{1}{2}}
 \end{align*}
 
 \end_inset
@@ -249,9 +251,94 @@ Example 2.1
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Formula $\lt x8{\sqrt{x+1}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x8{\sqrt{x+1}} & =\sqrt{8+1}\\
+ & =\sqrt{9}\\
+ & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x1{\frac{7+6x}{3x-2}}^{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x1{\frac{7+6x}{3x-2}}^{4} & =\left(\frac{7+6\left(1\right)}{3\left(1\right)-2}\right)^{4}\\
+ & =\left(\frac{13}{1}\right)^{4}\\
+ & =28561
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x0{\frac{x}{1-\sqrt{1+x}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x0{\frac{x}{1-\sqrt{1+x}}} & =\lt x0{\frac{x}{1-\sqrt{1+x}}}\cdot\left(\frac{1+\sqrt{1+x}}{1+\sqrt{1+x}}\right)\\
+ & =\lt x0{\frac{x\left(1+\sqrt{1+x}\right)}{1^{2}-\left(1+x\right)}}\\
+ & =\lt x0{\frac{\cancel{x}\left(1+\sqrt{1+x}\right)}{-\cancel{x}}}\\
+ & =\lt x0{-\left(1+\sqrt{1+x}\right)}\\
+ & =-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x0{\frac{\sqrt{1+x^{2}}-1}{x^{2}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x0{\frac{\sqrt{1+x^{2}}-1}{x^{2}}} & =\lt x0{\frac{\sqrt{1+x^{2}}-1}{x^{2}}}*\left(\frac{\sqrt{1+x^{2}}+1}{\sqrt{1+x^{2}}+1}\right)\\
+ & =\lt x0{\frac{1+x^{2}-1^{2}}{x^{2}\left(\sqrt{1+x^{2}}+1\right)}}\\
+ & =\lt x0{\frac{\cancel{x^{2}}}{\cancel{x^{2}}\left(\sqrt{1+x^{2}}+1\right)}}\\
+ & =\lt x0{\frac{1}{\sqrt{1+x^{2}}+1}}\\
+ & =\frac{1}{\sqrt{1+0^{2}}+1}\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
 
 \end_layout
 
 \end_deeper
+\begin_layout Section
+Example 2.2
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $\lt x0{u\left(x\right)}$
+\end_inset
+
+is between the functions
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
