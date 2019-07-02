@@ -37,7 +37,7 @@ A software system is to be developed to automate various operations of a library
 
 For the facilities mentioned above, identify and describe THREE (3) most important non-functional requirements.
 
-> **Archiving, backup and recovery requirements**. The system must be able to backup in anticipation of future failure or corruption to ensure that the most recently usable copy of the book data can be retrieved and restored.
+> **Archiving, backup and recovery requirements**. The library system must be able to anticipate future failure or corruption to ensure that the most recently usable copy of the book data can be retrieved and restored in case of any problemss.
 > **Usability requirements**. The system should be user-friendly, efficient, and have safeguards from errors to ensure the librarians who have weaker computer skills can easily get comfortable with the system.
 > **Reliability**. The system should be able to process library transactions with nonexistant errors and proper error mitigation built-in to ensure that all transactions can be made smoothly.
 

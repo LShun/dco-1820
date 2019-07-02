@@ -475,7 +475,7 @@ Q9
 ```sql
 SELECT Sno, FName, LName, Salary
 FROM Staff S, Branch B
-WHERE S.Bno = B.Bno AND street = '163 Main St'
+WHERE S.Bno = B.Bno AND street = '163 Main St';
 ```
 
 Or, the subquery way:
@@ -719,3 +719,191 @@ SELECT *
 FROM Owner
 WHERE Tel_No NOT LIKE '0141-%';
 ```
+
+Q26
+
+```sql
+SELECT      Sno, Fname, LName, Position
+FROM        Staff
+WHERE       Bno IN
+            (     SELECT      C.Bno
+                  FROM        Branch
+                  WHERE Street IN ('163 Main St', '22 Deer Rd'));
+```
+
+```SQL
+SELECT      Sno, Fname, LName, Position
+FROM        Staff S
+WHERE       EXISTS
+            (     SELECT      *
+                  FROM        Branch B
+                  WHERE       S.Bno = B.Bno     AND
+                              Street            IN    ('163 Main St', '22 Deer Rd'));
+```
+
+Q27
+
+Note: If have `EXISTS` must have join condition
+
+```sql
+SELECT      Sex, FName, LName, Position
+FROM        Staff
+WHERE       Sno   NOT   IN    (SELECT     DISTINCT    Sno
+                               FROM                   Property_For_Rent);
+```
+
+```sql
+SELECT      Sno, FName, LName, Position
+FROM        Staff S,
+WHERE       NOT   EXISTS      (SELECT *
+                               FROM   Property_For_Rent P
+                               WHERE  S.Sno = P.Sno);
+```
+
+Q28
+
+```sql
+SELECT      COUNT(*)    AS    PropertyCount
+FROM        Property_For_Rent
+WHERE       RENT  >  350;
+```
+
+```sql
+SELECT      COUNT(Pno)  AS    PropertyCount
+FROM        Property_For_Rent
+WHERE       RENT  >  350;
+```
+
+Note:
+COUNT(*)    = count number of rows in table
+COUNT(Pno)  = count number of rows in Pno attribute (skip the `NULL` values)
+
+Q29
+
+```sql
+SELECT      COUNT(DISTINCT Pno)  AS DifferentPropertyCount
+FROM        Viewing
+WHERE       VDate BETWEEN '01-MAY-98' AND '31-May-98'
+```
+
+Q30
+
+```sql
+SELECT      COUNT(Sno)  AS ManagerCount, SUM(Salary) AS SumSalary
+FROM        Staff
+WHERE       Position = 'Manager';
+```
+
+Q31
+
+Note, when question is "projection", then don't update. If `UPDATE`, then use `INSERT`
+
+```sql
+SELECT      SUM(Rent)         AS CollectionBeforeIncrement,
+            SUM(Rent*1.1)     AS CollectionAfterIncrement,
+            SUM(Rent*1.1) - SUM(Rent) AS DifferentValue
+FROM        Property_For_Rent;
+```
+
+Q32
+
+```sql
+SELECT      MIN(Salary) AS MinSalary,
+            MAX(Salary) AS MaxSalary,
+            AVG(Salary) AS AverageSalary
+FROM        Staff;
+```
+
+Q33
+
+```sql
+SELECT      Sno, FName, LName, Position, Salary
+FROM        Staff
+WHERE       Salary = (SELECT MAX(Salary) FROM Staff);
+```
+
+Q34
+
+```sql
+SELECT      Sno, FName, LName, Salary/12 AS Monthly_Salary
+FROM        Staff
+WHERE       Salary = (SELECT  MIN(salary) FROM Staff);
+```
+
+Q35
+
+```sql
+SELECT      Sno, FName, LName, Position,
+            Salary = (SELECT  AVG(Salary)
+                      FROM    Staff) AS Set_Diff;
+FROM        Staff
+WHERE       Salary = (SELECT  AVG(Salary)
+                      FROM    Staff);
+```
+
+Q36
+
+Keyword: Each branch
+
+```sql
+SELECT      Bno, COUNT(Sno) AS StaffCount, SUM(Salary) AS SumSalary
+FROM        Staff
+GROUP BY    Bno
+ORDER BY    Bno;
+```
+
+Note: Everything in front, without an aggregate function in `SELECT` must be placed inside `GROUP BY`
+
+Q37
+
+```sql
+SELECT      S.Bno, P.Sno, COUNT(Pno) AS PHCount
+FROM        Staff S, Property_For_Rent P
+WHERE       S.Sno = P.Sno
+GROUP BY    S.Bno, P.Sno
+ORDER BY    S.Bno, P.Sno;
+```
+
+Q38
+
+Keyword: Because "each branch" and must more than 1 people, so need `HAVING`
+
+```sql
+SELECT      Bno, COUNT(Sno) AS StaffCount, SUM(Salary) AS SumSalary,
+FROM        Staff
+GROUP BY    Bno
+HAVING      COUNT(Sno) = 1
+ORDER BY    Bno;
+```
+
+Q39 (Not coming out in final)
+
+Note: Use `TRUNCATE` to cut off decimal point
+
+```sql
+SELECT      FName, LName, TRUNC((SYSDATE - DOB) / 365.25) AS Age
+FROM        Staff
+WHERE       (TRUNC((SYSDATE - DOB) / 365.25) BETWEEN 30 AND 50);
+```
+
+Q40
+
+```sql
+SELECT      FName || '' || LName AS "Full Name"
+            EXTRACT(YEAR FROM (SYSDATE - DOB) YEAR TO MONTH) AS Age
+FROM        Staff
+WHERE       EXTRACT(YEAR FROM (SYSDATE- DOB) YEAR TO MONTH) > 21;
+```
+
+Q41
+
+```sql
+SELECT      *
+FROM        (SELECT     Sno, FName, LName, Salary
+             FROM       Staff
+             ORDER BY   Salary DESC)
+WHERE       ROWNUM <= 3;
+```
+
+EXTRA EXERCISE (Homework): 
+

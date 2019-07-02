@@ -1,0 +1,1735 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+AAMS3113 Calculus I - Tutorial 2
+\end_layout
+
+\begin_layout Enumerate
+Suppose the graph of 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ is given.
+ Write equations for the graphs that are obtained from the graph of f as
+ follows.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Shift 3 units upward
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=f(x)+3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=f(x)-3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=f(x-3)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=f(x+3)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=-f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=f(-x)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=3f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{1}{3}f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=cos\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3ai.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Continue by inversing the equation, 
+\begin_inset Formula $y=-cos\,x$
+\end_inset
+
+, then finally shift the entire graph by 2 to become 
+\begin_inset Formula $y=-cos+2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3aii.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $y=\sqrt[3]{x+2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=-2sin\pi x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=sin\,x$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+then increase the frequency of the cycles for the entire equation by 
+\begin_inset Formula $\pi$
+\end_inset
+
+, or 
+\begin_inset Formula $y=sin\,\pi x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Afterwards, invert the entire graph by multiplying with 
+\begin_inset Formula $-1$
+\end_inset
+
+, making it 
+\begin_inset Formula $y=-sin\,\pi x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Finally, stretch the graph vertically by a factor of 2, to make it 
+\begin_inset Formula $y=-2sin\,\pi x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3c.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=-\frac{1}{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3d.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Push the entire graph to the right by 
+\begin_inset Formula $3$
+\end_inset
+
+ units
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3e.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=sin\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Push the graph forward by 
+\begin_inset Formula $\frac{\pi}{6}$
+\end_inset
+
+units to make it 
+\begin_inset Formula $y=sin\left(x-\frac{\pi}{6}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Squeeze the graph vertically to transform the graph into 
+\begin_inset Formula $y=\frac{1}{3}\sin\left(x-\frac{\pi}{6}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The graph
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3f.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=sin\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Take the absolute value of the 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ by modulus-ing the entire 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3g.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=x^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Shift the graph forward by 1 units horizontally, to transform the graph
+ into 
+\begin_inset Formula $y=\left(x-1\right)^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Shift the graph up vertically by 2 units to transform the graph into 
+\begin_inset Formula $y=\left(x-1\right)^{3}+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The graph:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3h.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Push the entire graph down, left by making the graph cross 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=2$
+\end_inset
+
+ to make the graph into 
+\begin_inset Formula $y=x^{2}+2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Shift the entire graph upwards by 3 units to 
+\begin_inset Formula $y=x^{2}+2x+3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q3i.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $f\left(x\right)=\sqrt{x+1},g\left(x\right)=\sqrt{1-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f+g & =\sqrt{x+1}+\sqrt{1-x}\\
+D\left(f+g\right) & =D\left(f\right)\cap D\left(g\right)\\
+ & =-1\le x\le1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f-g & =\sqrt{x+1}-\sqrt{1-x}\\
+D\left(f-g\right) & =-1\le x\le1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+fg & =\sqrt{x+1}\cdot\sqrt{1-x}\\
+ & =\sqrt{\left(x+1\right)\left(1-x\right)}\\
+ & =\sqrt{1-x^{2}}\\
+D_{fg} & =\left\{ x\epsilon D_{f}\cap D_{g}|g\left(x\right)\neq0\right\} \\
+ & =[-1,1]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{f}{g} & =\frac{\sqrt{x+1}}{\sqrt{1-x}}\\
+ & =\sqrt{\frac{x+1}{1-x}}\\
+ & =-1\le x<1,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\circ g$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+D_{f} & =\mathbb{R}-\left\{ 0\right\} \\
+R_{f} & =\mathbb{R}-\left\{ 0\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+D_{g} & =\mathbb{R}-\left\{ -2\right\} \\
+ & =\mathbb{R}-\left\{ 0\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\circ g & =f\left(\frac{x+1}{x+2}\right)\\
+ & =\left(\frac{x+1}{x+2}\right)+\frac{1}{\left(\frac{x+1}{x+2}\right)}\\
+ & =\left(\frac{x+1}{x+2}\right)+\left(\frac{x+2}{x+1}\right)\\
+ & =\frac{\left(x+1\right)\left(x+1\right)+\left(x+2\right)\left(x+2\right)}{\left(x+2\right)\left(x+1\right)}\\
+ & =\frac{\left(x+1\right)^{2}+\left(x+2\right)^{2}}{\left(x+2\right)\left(x+1\right)}\\
+ & =\frac{x^{2}+2x+1+x^{2}+4x+2}{x^{2}+3x+2}\\
+ & =\frac{2x^{2}+6x+3}{x^{2}+3x+2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D_{f\circ g}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\neq-2,-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D_{f\circ g}=\mathbb{R}-\left\{ -2,-1,0\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R_{f\circ g}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R_{f\circ g}=\mathbb{R}-[-2,2]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g\circ f$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+g\left(x+\frac{1}{x}\right) & =\frac{x+\frac{1}{x}+1}{x+\frac{1}{x}+2}\\
+ & =\frac{\frac{x^{2}+1+x}{x}}{\frac{x^{2}+1+2x}{x}}\\
+ & =\frac{x^{2}+1+x}{x^{2}+1+2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D_{g\circ f}=\mathbb{R}-\left\{ -1,0\right\} $
+\end_inset
+
+, note: 0 is from 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+and 
+\begin_inset Formula $D_{g}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\circ g\circ h & =f\left(g\left(h\left(x\right)\right)\right)\\
+ & =f\left(cos\left(\sqrt{x+3}\right)\right)\\
+ & =\frac{2}{cos\left(\sqrt{x+3}\right)+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=4^{x}-3$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q7a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=4^{x-3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q7b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=1+2e^{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q7c.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt{10-3x}$
+\end_inset
+
+, let 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =10-3x\\
+y^{2} & =10-3x\\
+y^{2}-10 & =-3x\\
+y^{2}-10 & =-3x\\
+x & =\frac{10-y^{2}}{3}\\
+f^{-1}\left(x\right) & =\frac{10-x^{2}}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\ln\left(x+3\right)$
+\end_inset
+
+, let 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\ln\left(x+3\right)\\
+e^{y} & =x+3\\
+x & =e^{y}-3\\
+f^{-1}\left(x\right) & =e^{x}-3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=e^{x^{3}}$
+\end_inset
+
+, let 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =e^{x^{3}}\\
+\ln y & =x^{3}\\
+\sqrt[3]{\ln y} & =x\\
+f^{-1}\left(x\right) & =\frac{1}{3}\ln y
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $log\left(x+5\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $log\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Shift the graph horizontally, 5 units to the right/
+\begin_inset Quotes erd
+\end_inset
+
+earlier
+\begin_inset Quotes erd
+\end_inset
+
+ to find 
+\begin_inset Formula $log\left(x+5\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Graph
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q10a.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=-\ln\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $\ln\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Invert the graph with respect to the y-axis to arrive at 
+\begin_inset Formula $-\ln\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Graph
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q10b.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=1+\sqrt{t}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.4142
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.732
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.236
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=t^{2}-4t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q11a.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="10">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{4}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{4}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{5}{4}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{2}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{7}{4}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=2\cos t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7853
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5707
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.3561
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1415
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9269
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.7123
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.4977
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.2831
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=t-\cos t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9998
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9992
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9983
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9969
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9953
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9932
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9907
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9879
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename G:/My Drive/DCO/DCO2 2019/DCO2S1 [Public]/Calculus 1/lyx-imgs/t2q11b.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =2t+4\\
+x-4 & =2t\\
+t & =\frac{x-4}{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =t-1\\
+ & =\left(\frac{x-4}{2}\right)-1\\
+ & =\frac{x}{2}-2-1\\
+y & =\frac{1}{2}x-3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =4\cos\theta\\
+\theta & =\cos^{-1}\left(\frac{1}{4}x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =5\sin\theta\\
+ & =5\sin\left(cos^{-1}\left(\frac{1}{4}x\right)\right)\\
+\boldsymbol{y} & \boldsymbol{=5\tan\left(\frac{1}{4}x\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =\ln t\\
+t & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\sqrt{t}\\
+ & =\sqrt{e^{x}}\\
+\boldsymbol{y} & \boldsymbol{=e^{\frac{x}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

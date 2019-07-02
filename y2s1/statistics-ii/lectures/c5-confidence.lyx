@@ -1,0 +1,1872 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Chapter 5: Estimation of Mean and Population
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The general rule for estimation in confidence interval, is to have the range
+ narrower.
+ Maximize the precision without missing too much confidence.
+\end_layout
+
+\begin_layout Standard
+This can be controlled with the sample size.
+\begin_inset Formula 
+\[
+Example=2000\pm\frac{\sigma}{\sqrt{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the formula, you notice that you cannot change your variance, and you
+ cannot change your initial value.
+ What you can manipulate to maximize the confidence while minimizing the
+ range is through manipulating the sample size.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c5-confidence-interval.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+To determine the mean waiting time for his customers, a bank manager took
+ a random sample of 50 customers and found that the mean waiting time was
+ 7.2 minutes.
+ Assuming that the population standard deviation is known to be 5 minutes,
+ find the 90% confidence interval of the mean waiting time for all of the
+ bank’s customers.
+\end_layout
+
+\begin_layout Enumerate
+Sample size, 
+\begin_inset Formula $n=50$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+Population 
+\begin_inset Formula $\sigma=5$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+Sample mean 
+\begin_inset Formula $\bar{x}=7.2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Confidence
+\begin_inset Formula 
+\begin{align*}
+1-\alpha & =0.9\\
+\alpha & =0.1\\
+\frac{\alpha}{2} & =0.05
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z=\frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N\left(0,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+From the table
+\begin_inset Formula 
+\begin{align*}
+P\left(-1.6449<\frac{7.2-\mu}{\frac{5}{\sqrt{50}}}<1.6449\right) & =0.9\\
+\mu<7.2+1.6449*\frac{5}{\sqrt{50}} & ,\mu>7.2-1.6449*\frac{5}{\sqrt{50}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion: 
+\begin_inset Formula $6.037<\mu<8.363$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+The temperature in C o at ten points chosen at random in a large building
+ is measured, giving the following list of readings:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+18,16.5,17.5,18,19.5,16.5,18,17,19,17.5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The standard deviation of temperature through the building is known from
+ past experience to be 1 
+\begin_inset Formula $\textdegree C$
+\end_inset
+
+.
+ Find a 90% confidence interval for the mean temperature in the building.
+\end_layout
+
+\begin_layout Enumerate
+Sample size, 
+\begin_inset Formula $n=10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sample mean, 
+\begin_inset Formula $\bar{x}=\frac{\sum x}{n}=\frac{177.5}{10}=17.75$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sample standard deviation 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+, assume known
+\end_layout
+
+\begin_layout Enumerate
+Confidence: 
+\begin_inset Formula $90\%$
+\end_inset
+
+, or 0.9,
+\end_layout
+
+\begin_layout Enumerate
+Calculation:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+90% C.I.
+ for 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mu & =\bar{X}\pm Z_{0.05}\frac{\sigma}{\sqrt{n}}\\
+ & =17.75\pm1.6449*\frac{1}{\sqrt{10}}\\
+ & =17.75\pm0.52
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+17.23<\mu<18.263\,or\,\mu\epsilon\left(19.23,18.27\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A random sample of 35 drums of a wax-base floor cleaner, has a standard
+ deviation of 12 pounds and a mean weight of 240 pounds.
+ Construct a 95% C.I.
+ for the actual mean weight of all these drums.
+\end_layout
+
+\begin_layout Enumerate
+Notes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The example earlier is not realistic because the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is usually unknown, when we don't know the mean
+\end_layout
+
+\begin_layout Enumerate
+We can find the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ by finding 
+\begin_inset Formula $s$
+\end_inset
+
+, however, 
+\begin_inset Formula $s$
+\end_inset
+
+ is also a random variable.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+This is he original formula, when we have 
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z=\frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N\left(0,1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The new formula, which utilizes 
+\begin_inset Formula $s$
+\end_inset
+
+ will be more spread away from the 0, and therefore, it is no longer a normal
+ distribution
+\begin_inset Formula 
+\[
+Z=\frac{\bar{X}-\mu}{\frac{s}{\sqrt{n}}}\sim t_{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 
+\begin_inset Formula $n-1$
+\end_inset
+
+ is the degree of freedom.
+ Basically, the sample estimate uses 
+\begin_inset Formula $n-1$
+\end_inset
+
+ because the sample has a tendency to underestimate
+\end_layout
+
+\begin_layout Enumerate
+The sample size directly affects the spread of the 
+\begin_inset Formula $t$
+\end_inset
+
+ distribution, until the sample size is equal to the size of the population,
+ where it will become the 
+\begin_inset Formula $Z=\frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Example
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=35;S=12;\bar{X}=240;\alpha=0.05;Z_{\frac{\alpha}{2}}=Z_{0.025}=1.96$
+\end_inset
+
+
+\begin_inset Formula $\left(from\,table\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The 95% C.I.
+ for the actual mean weight of all these drums is: 
+\begin_inset Formula 
+\begin{align*}
+\bar{X}\pm Z_{\frac{\alpha}{2}}\frac{S}{\sqrt{n}} & =240\pm1.96\frac{12}{\sqrt{35}}\\
+ & =240\pm3.98\\
+ & =(236.02,243.98)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Measurements of the diameters of a random sample of 200 ball bearings made
+ by a certain machine during 1 week showed a mean of 8.24 mm and a standard
+ deviation of 0.42 mm.
+ Find the 95% and 99% confident interval for the mean diameter of all the
+ ball bearings.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=35;S=12;\bar{X}=240;\alpha=0.05;Z_{\frac{\alpha}{2}}=Z_{0.005}=1.96$
+\end_inset
+
+
+\begin_inset Formula $\left(from\,table\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The 95% C.I.
+ for the actual mean weight of all these drums is: 
+\begin_inset Formula 
+\begin{align*}
+\bar{X}\pm Z_{\frac{\alpha}{2}}\frac{S}{\sqrt{n}} & =8.24\pm1.96\frac{0.42}{\sqrt{200}}\\
+ & =8.24\pm0.0582\\
+ & =\left(8.1818,8.2982\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+99% C.I.
+ 
+\begin_inset Formula $Z_{\frac{}{}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\bar{X}\pm Z_{\frac{\alpha}{2}}\frac{S}{\sqrt{n}} & =8.24\pm2.5758\frac{0.42}{\sqrt{200}}\\
+ & =8.24\pm0.0765\\
+ & =\left(8.1635,8.3165\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+The measured lifetimes of a sample of 20 electronic components gave an average
+ of 1250h, with a sample standard deviation of 96h.
+ Assuming that the lifetime has a normal distribution, find a 95% confidence
+ interval for the mean lifetime of the population.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+n=20,\bar{X}=1250,s=96,\alpha=0.05;t_{\frac{a}{2};n-1}=t_{\frac{0.05}{2};19}=2.093
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\bar{X}\pm t_{\frac{A}{2};n-1}\frac{S}{\sqrt{n}} & =1250\pm2.093\frac{96}{\sqrt{20}}\\
+ & =1250\pm44.928\\
+ & =\left(1205.07,1294.93\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A random sample of 32 items is taken from a population which has a population
+ variance of 93.
+ The resulting sample mean is 45.6.
+ A random sample of 37 items is taken from another population which has
+ a population variance of 88.
+ The resulting sample mean is 49.4.
+ Construct a 98% confidence interval to estimate the difference in means
+ of these two populations.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Population 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Population 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{1}=32$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{2}=37$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{X}=45.6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{X}=49.4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma^{2}=93$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma_{2}^{2}=88$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 98% of C.I.
+ for the difference in means of these two populations is
+\begin_inset Formula 
+\begin{align*}
+\left(\bar{X}_{1}-\bar{X}_{2}\right)\pm Z_{\frac{a}{1}}\sqrt{\frac{a_{1}^{2}}{n_{1}}+\frac{a_{2}^{2}}{n_{2}}} & =\left(45.6-49.4\right)\pm2.3263\sqrt{\frac{93}{32}+\frac{88}{37}}\\
+ & =-3.8\pm5.35
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+or 
+\begin_inset Formula $-9.1478<\mu_{1}-\mu_{2}<1.5478$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion: We are 98% confident that the actual difference in means of
+ these two popualtions is between -9.11478 and 1.5478.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A consumer test group wants to determine the difference in gasoline mileage
+ of cars using regular unleaded gas and cars using premium unleaded gas.
+ Researchers for the group divided a fleet of 100 cars of the same make
+ in half and tested each car on one tank of gas.
+ Fifty of the cars were filled with regular unleaded gas and 50 were filled
+ with premium unleaded gas.
+ The sample average for the regular gasoline group was 21.45 mpg, with a
+ standard deviation of 3.46 mpg.
+ The sample average for the premium gasoline group was 24.6 mpg, with a standard
+ deviation of 2.99 mpg.
+ Construct a 95% confidence interval to estimate the difference in the mean
+ gas mileage between the cars using regular gasoline and the cars using
+ premium gasoline.
+\end_layout
+
+\begin_layout Enumerate
+Regular petrol sample: 
+\begin_inset Formula $n_{1}=59,\bar{X_{1}}=21.45,S_{1}=3.46$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Premium petrol sample: 
+\begin_inset Formula $n_{2}=50,\bar{X_{2}}=24.6,S_{2}=2.99$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+mpg = miles per gallon
+\end_layout
+
+\begin_layout Enumerate
+Calculation
+\begin_inset Formula 
+\begin{align*}
+95\%\,of\,C.I. & =\left(\bar{X_{2}}-\bar{X_{1}}\right)\pm Z_{0.025}\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}}\\
+ & =\left(24.6-21.45\right)\pm1.960\sqrt{\frac{3.46^{2}}{50}+\frac{2.99^{2}}{50}}\\
+ & =3.15\pm1.27\\
+ & =\left(1.88,4.42\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Two kinds of a new plastic material are to be compared for strength.
+ From tensile strength measurements of 10 similar pieces of each type, the
+ sample averages and standard deviations were as follows: 78 3 1 X = .
+ , 5 6 1
+\end_layout
+
+\begin_layout Standard
+S = .
+ , 84 2 2 X = .
+ , 6 3 2 S = .
+\end_layout
+
+\begin_layout Standard
+Assume both new plastic materials having same variances.
+ Construct a 95% confidence interval to estimate the difference in the mean
+ strengths between the two kinds of a new plastic material.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{X_{1}}=78.3,S_{1}=5.6,n=10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{X_{2}=84.2},S_{2}=6.3,n=10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Assume that two of them have the same variances (inside question)
+\end_layout
+
+\begin_layout Enumerate
+Calculation
+\begin_inset Formula 
+\begin{align*}
+S_{p} & =\sqrt{\frac{\left(n_{1}-1\right)S_{1}^{2}+\left(n_{2}-1\right)S_{2}^{2}}{n_{1}+n_{2}-2}}\\
+ & =\sqrt{\frac{\left(10-1\right)5.6^{2}+\left(10-1\right)6.3^{2}}{20-2}}\\
+ & =5.9603
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t_{\frac{a}{2};n_{1}+n_{2}-2}=t_{0.025;18}=2.101
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The 95% confidence interval to estimate the difference inthe mean strengths
+ between the two kidns of a new plastic material is 
+\begin_inset Formula 
+\begin{align*}
+\left(\bar{X}_{1}-\bar{X_{2}}\right)\pm t_{\frac{a}{2};n_{1}+n_{2}-2}S_{p}\left(\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right) & =\left(78.3-84.2\right)\pm\left(2.101\right)\left(5.9603\right)\left(\sqrt{\frac{1}{10}+\frac{1}{10}}\right)\\
+ & =\text{−}5.9\pm5.6003\\
+ & =\left(\text{−}11.5003,\text{−}0.2997\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A major oil company has developed a new gasoline additive that is supported
+ to increase mileage.
+ To test that hypothesis, 10 cars are randomly selected.
+ Each car sampled is driven both with and without the additive.
+ The resulting gas mileages, in miles per gallon, are displayed in the second
+ and third columns of table below.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Paired difference D=
+\begin_inset Formula $X_{1}-X_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Paired difference sum = 
+\begin_inset Formula $D=6.6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Mean=
+\begin_inset Formula $\frac{6.6}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Paired difference squared sum = 
+\begin_inset Formula $D_{2}=6.12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum D^{2}=6.12;\sum D=6.6;n=10;t_{\frac{a}{2};n-1}=t_{\frac{0.1}{2};10-1}=1.833$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}=\frac{\sum D}{n}=\frac{6.6`}{10}=0.66
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{D}=\sqrt{\frac{6.2-\frac{6.6^{2}}{10}}{10-1}}=0.4427
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 90% confidence interval for 
+\begin_inset Formula $\mu_{2}-\mu_{1}\,is$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\bar{D}\pm t_{\frac{\alpha}{2};n-1} & =0.66\pm1.833\frac{0.4427}{\sqrt{10}}\\
+ & =0.66\pm0.257
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0.403<\mu_{1}-\mu_{2}<0.917
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+In an opinion poll conducted with a sampled of 1000 people chosen at random,
+ 30% said that they support a certain political party.
+ Find a 95% confidence interval for the actual proportion of the population
+ who supports this party.
+\end_layout
+
+\begin_layout Subsection
+Steps to find the confidence interval
+\end_layout
+
+\begin_layout Enumerate
+Check the conditions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Is it random? 
+\begin_inset Formula $YES$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $n>30$
+\end_inset
+
+? Or if not, is it normally distributed? YES to Q1.
+ 
+\begin_inset Formula $n=1000>30$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, which is 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+for the given confidence level
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\hat{p}=0.3,\hat{q}=0.7,n=1000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}} & =\left(Z>\frac{\left(1-0.95\right)}{2}\right)\\
+ & =\left(Z>0.025\right)\\
+\boldsymbol{Z_{\frac{\alpha}{2}}} & \boldsymbol{=1.6449}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the margin of error, which is 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}\hat{q}}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\hat{p}=0.3,\hat{q}=0.7,n=1000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}\hat{q}}{n}} & =\left(Z>\frac{\left(1-0.95\right)}{2}\right)\sqrt{\frac{0.3*0.7}{1000}}\\
+ & =\left(Z>0.025\right)\sqrt{\frac{0.3*0.7}{1000}}\\
+ & =1.6449\sqrt{\frac{0.3*0.7}{1000}}\\
+\boldsymbol{Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}\hat{q}}{n}}} & \boldsymbol{=0.02384}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Confidence interval
+\begin_inset Formula 
+\[
+\hat{P}-E<P<\hat{P}+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0.3-0.02384<P<0.3+0.02384
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{0.2762<P<0.3+0.3238}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A manufacturer wants to assess the proportion of defective items in a large
+ batch produced by a particular machine.
+ He tests a random sample of 300 items and finds that 45 are defective.
+ Calculate a 98% confidence interval for the proportion of defective items
+ in the complete batch.
+\end_layout
+
+\begin_layout Subsection
+Steps
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\hat{p},\hat{q},n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{p} & =\frac{45}{300}=0.15\left(Point\,estimate\right)\\
+\hat{q} & =\left(1-0.15\right)=0.85\\
+n & =300
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value which is 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+for the given confidence level
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{\left(1-0.98\right)}{2}\right)\\
+ & =P\left(Z>0.01\right)\\
+\boldsymbol{Z_{\frac{\alpha}{2}}} & \boldsymbol{=2.3263}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, E
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}\hat{q}}{n}}\\
+ & =2.3263*\sqrt{\frac{\left(0.15\right)\left(0.85\right)}{300}}\\
+ & =0.04796
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\hat{P}-E<P<\hat{P}+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0.15-0.04796<P<0.15+0.04796
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{0.1020<P<0.1980}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+One hundred samples of an alloy are tested for resistance to fatigue.
+ Half have been prepared using a new process and the other half by a standard
+ process.
+ Of those prepared by the new process, 35 exhibit good fatigue resistance,
+ whereas only 25 of those prepared in the standard way show the same performance.
+ Calculate the 95% confidence interval to estimate the difference in actual
+ proportion between the new process and the standard process.
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\hat{p}_{1},\hat{p}_{2},\hat{q}_{1},\hat{q}_{2},n_{1},n_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{p}_{1}, & \frac{35}{50}\\
+\hat{q}_{1}, & \frac{15}{50}\\
+n_{1}, & 50\\
+\hat{p}_{2}, & \frac{25}{50}\\
+\hat{q}_{2}, & \frac{25}{50}\\
+n_{2} & 50
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value which is 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+for the given confidence level
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{\left(1-0.95\right)}{2}\right)\\
+ & =P\left(Z>0.025\right)\\
+\boldsymbol{Z_{\frac{\alpha}{2}}} & \boldsymbol{=1.96}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, E
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_{1}\hat{q}_{1}}{n_{1}}+\frac{\hat{p}_{1}\hat{q}_{1}}{n_{1}}}\\
+ & =1.96*\sqrt{\frac{\frac{35}{50}\cdot\frac{15}{50}}{50}+\frac{\frac{25}{50}\cdot\frac{25}{50}}{50}}\\
+\boldsymbol{E} & \boldsymbol{=0.1880}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\left(\hat{P}_{1}-\hat{P}_{2}\right)-E<P_{1}-P_{2}<\left(\hat{P}_{1}-\hat{P}_{2}\right)+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0.7-0.5\right)-0.1880<P<\left(0.7-0.5\right)+0.1880
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{0.1120<P<0.388}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Independent random sample of 21,150 American males and 22,852 American females
+ were selected in order to compare the percentage of males who smoke cigarettes
+ to the percentage of females who smoke cigarettes.
+ Of the males sampled, 6598 were found to be cigarette smokers; and of the
+ females sampled, 6147 were found to be cigarette smokers.
+ Use the sample data to obtain a 90% confidence interval for the difference,
+ between the proportion of all American males who smoke cigarettes and the
+ proportion of all American females who smoke cigarettes.
+\end_layout
+
+\begin_layout Enumerate
+Let American males be Sample 1, and American females be sample 2
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\hat{p}_{1},\hat{p}_{2},\hat{q}_{1},\hat{q}_{2},n_{1},n_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{p}_{1}, & \frac{6598}{21150}=0.3120\\
+\hat{q}_{1}, & 0.6880\\
+n_{1}, & 21150\\
+\hat{p}_{2}, & \frac{6147}{22852}=0.2690\\
+\hat{q}_{2}, & 0.7310\\
+n_{2} & 22852
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value which is 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+for the given confidence level
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{\left(1-0.90\right)}{2}\right)\\
+ & =P\left(Z>0.05\right)\\
+\boldsymbol{Z_{\frac{\alpha}{2}}} & \boldsymbol{=1.645}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, E
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_{1}\hat{q}_{1}}{n_{1}}+\frac{\hat{p}_{1}\hat{q}_{1}}{n_{1}}}\\
+ & =1.645*\sqrt{\frac{0.3120\cdot0.6880}{21150}+\frac{0.2690\cdot0.7310}{22852}}\\
+\boldsymbol{E} & \boldsymbol{=0.0071}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\left(\hat{P}_{1}-\hat{P}_{2}\right)-E<P_{1}-P_{2}<\left(\hat{P}_{1}-\hat{P}_{2}\right)+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0.3120-0.2690\right)-0.0071<P<\left(0.3120-0.2690\right)+0.0071
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{0.0359<P<0.0501}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A random sample of size n is taken from a Normal distribution with unknown
+ mean μ and variance 100 2
+\end_layout
+
+\begin_layout Standard
+σ = .
+ If X is the sample mean, find the sample size, n, so that
+\end_layout
+
+\begin_layout Standard
+X ± 0.5 is an approximate 95.4% confidence interval for μ
+\end_layout
+
+\begin_layout Enumerate
+Find all the required elements to substitute into the required formula
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formula:
+\begin_inset Formula 
+\begin{align*}
+n & =\left[\frac{Z_{\frac{\alpha}{2}}\cdot\sigma}{E}\right]^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Parts
+\begin_inset Formula 
+\begin{align*}
+n & =?\\
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.954}{2}\right)=P\left(Z>0.023\right)=1.9954\\
+\sigma & =\sqrt{100}=10\\
+E & =0.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+n & =\left[\frac{Z_{\frac{\alpha}{2}}\cdot\sigma}{E}\right]^{2}\\
+ & =\left[\frac{1.9954\cdot10}{0.5}\right]^{2}\\
+ & =1592.65\\
+\boldsymbol{n} & \boldsymbol{=1593samples}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Suppose that we wished to find a 90% confidence interval for the purchase
+ price of TVs in various retail stores in a given area such that the sample
+ mean X will differ by no more than $25.
+ Assume that σ is known and equal to $35.
+ How large should n be to satisfy these requirements?
+\end_layout
+
+\begin_layout Enumerate
+Find all the required elements to substitute into the required formula
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formula:
+\begin_inset Formula 
+\begin{align*}
+n & =\left[\frac{Z_{\frac{\alpha}{2}}\cdot\sigma}{E}\right]^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Parts
+\begin_inset Formula 
+\begin{align*}
+n & =?\\
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.9}{2}\right)=P\left(Z>0.05\right)=1.6449\\
+\sigma & =35\\
+E & =25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+n & =\left[\frac{Z_{\frac{\alpha}{2}}\cdot\sigma}{E}\right]^{2}\\
+ & =\left[\frac{1.6449\cdot35}{25}\right]^{2}\\
+ & =5.3031\\
+\boldsymbol{n} & \boldsymbol{=6\,samples}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A manufacturer wishes to estimate the proportion of defective components.
+ He would be satisfied if he obtained an estimate within 0.5% of the true
+ proportion, and was 99% confident of his result.
+ An initial (large) sample indicated that 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ = 0.02.
+ What is the size of the sample he should examine?
+\end_layout
+
+\begin_layout Enumerate
+Find all the required elements to substitute into the required formula
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formula:
+\begin_inset Formula 
+\begin{align*}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Parts
+\begin_inset Formula 
+\begin{align*}
+n & =?\\
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.01}{2}\right)=P\left(Z>0.005\right)=2.5758\\
+\hat{p} & =0.02\\
+\hat{q} & =0.98\\
+E & =0.005
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}\\
+ & =\frac{\left(2.5758\right)^{2}*0.02*0.98}{0.005^{2}}\\
+ & =5201.64\\
+\boldsymbol{n} & =\boldsymbol{5202\,samples}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Suppose that we want to estimate what proportion of all drivers exceed the
+ maximum speed limit on a certain road.
+ How large a sample will we need so that the error of our estimate is at
+ most 0.04 if the desired level of confidence is (a) 95% (b) 99%
+\end_layout
+
+\begin_layout Enumerate
+Find all the required elements to substitute into the required formula
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formula:
+\begin_inset Formula 
+\begin{align*}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Parts
+\begin_inset Formula 
+\begin{align*}
+n & =?\\
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.01}{2}\right)=P\left(Z>0.005\right)=2.5758\\
+\hat{p} & =0.02\\
+\hat{q} & =0.98\\
+E & =0.005
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}\\
+ & =\frac{\left(2.5758\right)^{2}*0.02*0.98}{0.005^{2}}\\
+ & =5201.64\\
+\boldsymbol{n} & =\boldsymbol{5202\,samples}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A random sample of 100 items taken from a large batch of articles of 2696
+ items contains 5 defective items.
+ Set up 95% confidence interval for the proportion of defective items.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A sample survey conducted in a certain town in 1997 showed that 200 families
+ spent on the average RM 85.44 per week on food with a standard deviation
+ of RM 9.12.
+ Construct a 99% confidence interval for the actual average weekly food
+ expenditures of the 1,000 families in this town.
+\end_layout
+
+\end_body
+\end_document

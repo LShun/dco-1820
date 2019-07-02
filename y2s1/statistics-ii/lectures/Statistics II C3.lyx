@@ -1,0 +1,328 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Chapter 3: Continuous Probability Distribution
+\end_layout
+
+\begin_layout Section
+First of all, what is e?
+\end_layout
+
+\begin_layout Standard
+If you give me 1 dollar, and I offer annual interest rate of 100%, compounded
+ annually, at the end of the year, you'll get 2 dollars.
+ If i compound twice a year, you'll get 1.5*.5 (interest from the second half
+ of the year)+$1 (your original amount),+$0.5 (the interest earned for the
+ first half of the year)=$2.25.
+ The general formula for this is (1+1/n)n, where n is how many times a year
+ you'll compound your interest.
+ If you compound your money monthly, N=12, and the amount of money you'll
+ have by the end of the year is ~2.6.
+
+\series bold
+ Now, if you make N=infinity, meaning that your are constantly compounding
+ the interest, you get e, or euler's number.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Because it's the number at which infinite compounding happens, ex increases
+ at the rate of ex, which means it's derivative and integral are both the
+ same ex.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Example 12
+\end_layout
+
+\begin_layout Standard
+Example 12 The number of calls received by an office switchboard per hour
+ follows a Poisson distribution with parameter 30.
+ Using the normal approximation to the Poisson distribution, find the probabilit
+y that in one hour, there are
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+= no.
+ of calls in one hour 
+\begin_inset Formula $\sim$
+\end_inset
+
+Possion with 
+\begin_inset Formula $\lambda=30$
+\end_inset
+
+, big
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sim$
+\end_inset
+
+Approximately normal with 
+\begin_inset Formula $\mu=\lambda=30$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma^{2}=\lambda=30$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+P\left(X>23\right) & =P\left(X>23.5\right)=P\left(\frac{x-\mu}{\sigma}>\frac{23.5-30}{\sqrt{30}}\right)\\
+ & =P\left(Z>-1.19\right)\\
+ & =0.8830
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(25\le X\le28\right)=P\left(25\le X\le28\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\frac{24.5-30}{\sqrt{30}}<\frac{x-\mu}{\sigma}<\frac{28.5-30}{\sqrt{30}}\right) & =P\left(0.29<Z<1\right)\\
+ & =0.2349
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(X=34\right)=P\left(33.5\le X\le34.5\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\frac{33.5-30}{\sqrt{30}}\le Z\le\frac{34.5-30}{\sqrt{30}}\right) & =P\left(0.64\le Z\le0.82\right)\\
+ & =0.0550
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Example 13
+\end_layout
+
+\begin_layout Standard
+The reaction time to a certain psychological experiment is normally distributed
+ with a mean of 20 seconds and standard deviation of 4 seconds.
+ What is the reaction time for which only 1% of all subjects is faster?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=20,\sigma=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P\left(X\le a\right) & =0.01\\
+P\left(Z\le\frac{a-20}{4}\right) & =0.01\\
+\frac{a-20}{4} & =-2.3263\\
+a & =10.6948seconds
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Example 14
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=0.36
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=400
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ASK HOW TO WRITE THIS
+\end_layout
+
+\begin_layout Standard
+X 
+\begin_inset Formula $\sim B\left(n=400,p=0.36\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since n is very big ( n > 50)
+\end_layout
+
+\begin_layout Standard
+np = 144, nq = 256 (both 
+\begin_inset Formula $\ge5$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+We can use a normal approximation, with 
+\begin_inset Formula $X\sim N\left(144\left(np\right),92.16\left(npq\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P\left(X125\right) & \thickapprox P\left(X>125.5\right)\\
+ & =P\left(Z>\frac{125.5-144}{\sqrt{92.16}}\right)\\
+ & =P\left(Z>\frac{125.5-144}{\sqrt{92.16}}\right)\\
+ & =P\left(Z>-1.93\right)\\
+ & =0.9372
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

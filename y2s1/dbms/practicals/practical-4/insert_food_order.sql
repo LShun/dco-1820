@@ -43,7 +43,7 @@ PRO[MPT] text_to_be_displayed
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY';
 
 cl scr
-PROMPT 'Data entry for CUSTOMER table'
+PROMPT 'Data entry for FOOD_ORDER table'
 PROMPT
 PROMPT
 

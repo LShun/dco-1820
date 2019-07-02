@@ -76,14 +76,15 @@ WHERE (postal_code LIKE '%18') OR
       (postal_code LIKE '%38');
 ```
 
+Note: Multiple conditions can also be used without parenthesis -- `()`.
+
 h. List all employees between the ages of 45 to 50 years old
 
 ```sql
 SELECT *
-FROM LOCATIONS
-WHERE postal_code LIKE '%18'
-      OR postal_code LIKE '%28'
-      OR postal_code LIKE '%38';
+FROM EMPLOYEES
+WHERE   (age >= 45) AND
+        (age <= 50);
 ```
 
-Note: example of the use of multiple conditions without parenthesis `()`.
+*Note: Assuming that `age` is a field

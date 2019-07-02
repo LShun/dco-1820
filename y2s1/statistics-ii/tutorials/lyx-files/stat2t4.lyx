@@ -1,0 +1,1083 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Statistics II: TUTORIAL 4 - Sampling Distribution
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $X\sim N(200,80)$
+\end_inset
+
+ and a random sample of size 5 is taken from the distribution, find the
+ probability that the sample mean
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+is greater than 207,
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+be the random sample of size 5 taken from the distribution with 
+\begin_inset Formula $X_{1}\sim N\left(200,\frac{80}{5}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X_{1}>207\right) & =P\left(Z>\frac{207-200}{\sqrt{\frac{80}{5}}}\right)\\
+ & =P\left(Z>\frac{207-200}{\sqrt{\frac{80}{5}}}\right)\\
+ & =P\left(Z>1.75\right)\\
+ & =0.040059
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+lies between 201 and 209.
+\begin_inset Formula 
+\begin{align*}
+P\left(201\le X_{1}\le209\right) & =P\left(\frac{201-200}{\sqrt{\frac{80}{5}}}\le Z\le\frac{209-200}{\sqrt{\frac{80}{5}}}\right)\\
+ & =P\left(0.25\le Z\le2.25\right)\\
+ & =0.38907
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The heights of a new variety of sunflower are normally distributed with
+ mean 2m (2 meters) and standard deviation 40cm.
+ 100 samples of 50 flowers each are measured.
+ How many samples with the sample mean
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+between 195cm and 205cm? 
+\begin_inset Newline newline
+\end_inset
+
+Let X be the height of a new variety of sunflower with 
+\begin_inset Formula $X\sim N\left(200,40^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=50$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{\bar{X}}=\mu=200$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma_{\bar{X}}=\frac{\sigma}{\sqrt{n}}=\frac{40}{\sqrt{50}}=5.6569$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(195<\bar{X}<205\right) & =P\left(\frac{195-200}{5.6569}<\frac{\bar{X}-\mu_{\bar{x}}}{\sigma_{\bar{x}}}<\frac{205-200}{5.6569}\right)\\
+ & =P\left(-0.88<Z<0.88\right)\\
+ & =1-P\left(Z>0.88\right)-P\left(Z<-0.88\right)\\
+ & =1-2\cdot P\left(Z>0.88\right)\\
+ & =1-2\cdot\left(0.1894\right)\\
+ & =0.6212
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Samples = 
+\begin_inset Formula $0.6212*100=62.12\approx62samples$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\bar{X}<197\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(Z<\frac{197-200}{5.6569}\right) & =P\left(Z<-0.53\right)\\
+ & =P\left(Z>0.53\right)\\
+ & =0.2981
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Samples = 
+\begin_inset Formula $0.2981*100=29.81\approx30samples$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+If large number of samples size n are taken from a population which follows
+ a normal distribution with mean 74 and standard deviation 6, find n if
+ the probability that the sample mean
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+exceeds 75 is 0.281, 
+\begin_inset Newline newline
+\end_inset
+
+Let X be the sample mean taken from a population with size n where 
+\begin_inset Formula $\bar{X}\sim\left(74,\frac{6^{2}}{n}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}>75\right) & =0.281\\
+P\left(Z>\frac{75-74}{\frac{6}{\sqrt{n}}}\right) & =0.281\\
+\frac{\sqrt{n}}{6} & =0.58\\
+\sqrt{n} & =3.48\\
+n & =12.11\\
+n & \approx13
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+is less than 70.4 is 0.00135.
+ 
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}<70.4\right) & =0.00135\\
+-P\left(\bar{X}>70.4\right) & =0.00135\\
+-P\left(Z>\frac{70.4-74}{\frac{6}{\sqrt{n}}}\right) & =0.00135\\
+-\frac{70.4-74}{\frac{6}{\sqrt{n}}} & =3\\
+\frac{3.6\sqrt{n}}{6} & =3\\
+n & =\left(\frac{3*6}{3.6}\right)^{2}\\
+ & =25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=20,p=0.6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{\bar{x}}=np=12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma_{\bar{x}}=\sqrt{\frac{20*0.4*0.6}{100}}=0.2191$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\bar{X}>12.4\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}>12.4\right) & =P\left(Z>\frac{12.4-12}{0.2191}\right)\\
+ & =P\left(Z>1.83\right)\\
+ & =0.0336
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\bar{X}<12.2\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}<12.2\right) & =P\left(Z<\frac{12.2-12}{0.2191}\right)\\
+ & =P\left(Z<0.91\right)\\
+ & =1-P\left(Z>0.91\right)\\
+ & =1-0.1814\\
+ & =0.8186
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If a large number of samples of size n is taken from Bin ( 20 , 0.2 ) and
+ approximately 90% of the sample means are less than 4.354, estimate n.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since sample size is large 
+\begin_inset Formula $\left(n>30\right)$
+\end_inset
+
+, we can use Central Limit Theorem where 
+\begin_inset Formula $\bar{X}=N\left(4,3.2\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}<4.354\right) & =0.9\\
+P\left(\bar{X}\ge4.354\right) & =0.1\\
+P\left(Z>\frac{4.354-4}{\sqrt{\frac{3.2}{n}}}\right) & =0.1\\
+P\left(Z>\frac{0.354}{\sqrt{\frac{3.2}{n}}}\right) & =0.1\\
+\frac{0.354}{\sqrt{\frac{3.2}{n}}} & =1.28\\
+\sqrt{\frac{3.2}{n}} & =\frac{0.354}{1.28}\\
+\frac{3.2}{n} & =0.2765^{2}\\
+n & =\frac{3.2}{0.07649}\\
+ & =41.83\\
+ & \approx42
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu=2.9,\sigma=2.9$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{\bar{X}}=2.9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma_{\bar{X}}=\sqrt{\frac{2.9}{n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}>3.41\right) & =0.01\\
+P\left(Z>\frac{3.41-2.9}{\sqrt{\frac{2.9}{n}}}\right) & =0.01\\
+\frac{0.51}{\frac{1.7029}{\sqrt{n}}} & =2.33\\
+0.2995\sqrt{n} & =2.33\\
+\sqrt{n} & =7.7796\\
+n & =60.5227\\
+ & \approx61/
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mu=1.5,\sigma^{2}=\frac{\left(-1.5\right)^{2}+\left(-0.5\right)^{2}+\left(0.5\right)^{2}+\left(1.5\right)^{2}}{4}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{5}{4}=1.25$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=36$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{\bar{X}}=\mu=1.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma_{\bar{X}}=\frac{\sqrt{1.25}}{\sqrt{36}}=0.1863$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(1.4\le\bar{X}\le1.8\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\frac{1.4-1.5}{0.1863}\le\bar{X}\le\frac{1.8-1.5}{0.1863}\right) & =P\left(-0.5368\le Z\le1.6103\right)\\
+ & =1-P\left(Z\ge1.61\right)-P\left(Z\ge0.54\right)\\
+ & =1-0.0537-0.2946\\
+ & =0.6517
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=150$
+\end_inset
+
+, 
+\begin_inset Formula $p=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n$
+\end_inset
+
+ is big 
+\begin_inset Formula $\left(n>30\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $np>5,nq>5$
+\end_inset
+
+.
+ By Central Limit Theorem, we can use normal approximation.
+ Let X be the proportion of heads occuring in 150 throws with 
+\begin_inset Formula $X\sim N\left(0.5,\frac{0.25}{150}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}<0.4\right) & =P\left(Z<\frac{0.4-0.5}{\sqrt{\frac{0.25}{150}}}\right)\\
+ & =P\left(Z<-2.45\right)\\
+ & =P\left(Z>2.45\right)\\
+ & =0.00714
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(0.44<\hat{P}<0.56\right) & =P\left(\frac{0.44-0.5}{\sqrt{\frac{0.25}{150}}}<\hat{P}<\frac{0.56-0.5}{\sqrt{\frac{0.25}{150}}}\right)\\
+ & =P\left(-1.47<Z<1.47\right)\\
+ & =1-P\left(Z>1.47\right)-P\left(Z>1.47\right)\\
+ & =1-2\left(P\left(Z>1.47\right)\right)\\
+ & =1-2\left(0.0708\right)\\
+ & =0.8584
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the probability that the tools produced by a certain machine are defective,
+ where 
+\begin_inset Formula $p=0.05$
+\end_inset
+
+.
+ 
+\begin_inset Formula $n=400$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n>30,$
+\end_inset
+
+
+\begin_inset Formula $np>5,nq>5$
+\end_inset
+
+.
+ We can approximate the binomial distribution of 
+\begin_inset Formula $B\left(400,0.05\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $N\left(\mu_{\bar{x}}=p=0.02,\sigma_{\bar{x}}^{2}=\frac{pq}{n}=\frac{0.02*0.98}{400}\right)$
+\end_inset
+
+ using central limit theorem
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\hat{P}>0.03\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}>0.03\right) & =P\left(Z>\frac{0.03-0.02}{\sqrt{\frac{0.02*0.98}{400}}}\right)\\
+ & =P\left(Z>1.43\right)\\
+ & =0.0764
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\hat{P}<0.02\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}<0.02\right) & =\frac{0.02-0.02}{\sqrt{\frac{0.02*0.98}{400}}}\\
+ & =P\left(Z<0\right)\\
+ & =P\left(Z>0\right)\\
+ & =0.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A certain candidate standing for election is known to have the support of
+ proportion 0.46 of the electors.
+ Find the probability that the candidate will have a majority in a random
+ sample of
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $\hat{P}$
+\end_inset
+
+be the proportion of electors who support this candidate.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+200 electors,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+= probability of support, where 
+\begin_inset Formula $p=0.46$
+\end_inset
+
+.
+ 
+\begin_inset Formula $n=200$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n>30$
+\end_inset
+
+, 
+\begin_inset Formula $np>5,nq>5$
+\end_inset
+
+, we can approximate the binomial distribution of 
+\series bold
+
+\begin_inset Formula $B\left(200,0.46\right)$
+\end_inset
+
+ 
+\series default
+with 
+\begin_inset Formula $\hat{P}\sim N\left(\mu_{\bar{x}}=0.46,\sigma_{\bar{x}}^{2}=\frac{0.46*0.54}{200}=0.001242\right)$
+\end_inset
+
+.
+ Majority is considered where 
+\begin_inset Formula $\hat{P}>0.5$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}>0.5\right) & =P\left(Z>\frac{0.5-0.46}{\sqrt{0.001242}}\right)\\
+ & =P\left(Z>1.14\right)\\
+ & =0.1271
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+1000 electors.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ follow part (a) and 
+\begin_inset Formula $n=1000$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n$
+\end_inset
+
+ is bigger, we can still use Central Limit Theorem with 
+\begin_inset Formula $\hat{P}\sim N\left(\mu_{\bar{x}}=0.46,\sigma_{\bar{x}}^{2}=\frac{0.46*0.54}{1000}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}>0.5\right) & =P\left(Z>\frac{0.5-0.46}{\sqrt{\frac{0.46*0.54}{1000}}}\right)\\
+ & =P\left(Z>2.54\right)\\
+ & =0.00554
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Since they are normally distribution, 
+\begin_inset Formula $\bar{X}_{1}\sim N\left(57,\frac{12}{36}^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{X}_{2}\sim N\left(25,\frac{6}{36}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{\bar{X}_{1}-\bar{X}_{2}}=57-25=32$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sigma_{\bar{X_{1}}-\bar{X_{2}}}=\sqrt{\frac{12^{2}}{36}+\frac{6^{2}}{36}}=2.2361$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{X}_{1}-\bar{X}_{2}\sim N\left(32,5\right)$
+\end_inset
+
+, it is a normal distribution.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(29\le\bar{X}_{1}-\bar{X}_{2}\le31\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Answer
+\begin_inset Formula 
+\begin{align*}
+P\left(\frac{29-32}{2.2361}\le Z\le\frac{31-32}{2.2361}\right) & =P\left(-1.34\le Z\le-0.45\right)\\
+ & =P\left(Z\ge0.45\right)-P\left(Z\ge1.34\right)\\
+ & =0.3264-0.0901\\
+ & =0.2363
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let 
+\begin_inset Formula $\hat{P}$
+\end_inset
+
+be the proportion of the the mean of the sample differ
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\hat{P}\sim N\left(\mu=32,\sigma^{2}=2.2361^{2}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}>34\right) & =P\left(Z>\frac{34-32}{2.2361}\right)\\
+ & =P\left(Z>0.89\right)\\
+ & =0.1867
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Since 
+\begin_inset Formula $n_{1}>30$
+\end_inset
+
+, 
+\begin_inset Formula $n_{2}>30$
+\end_inset
+
+, we can use CLT
+\begin_inset Formula 
+\[
+\mu_{X_{1}}=0.12,\sigma_{X_{1}}=0.02,n=49
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu_{X_{2}}=0.13,\sigma_{X_{2}}=0.03,n=64
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $E\left(\bar{X}_{1}-\bar{X}_{2}\right)=0.12-0.13=-0.01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma_{X_{1}}-\sigma_{X_{2}}=\sqrt{\frac{0.02^{2}}{49}+\frac{0.03^{2}}{64}}=0.004714420994\approx0.004714$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{X}_{1}-\bar{X}_{2}\sim N\left(-0.01,0.004714^{2}\right).$
+\end_inset
+
+It is a normal distribution
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\bar{X_{2}}>\bar{X_{1}}\right)$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X_{1}}-\bar{X_{2}}<0\right) & =P\left(Z<\frac{0-\left(-0.01\right)}{0.004714}\right)\\
+ & =P\left(Z<2.12\right)\\
+ & =1-P\left(Z>2.12\right)\\
+ & =1-0.0170\\
+ & =0.983
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(\bar{X}_{1}-\bar{X_{2}}>-0.005\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\bar{X}_{1}-\bar{X_{2}}<-0.005\right) & =P\left(Z<\frac{-0.005-\left(-0.01\right)}{\left(0.004714\right)}\right)\\
+ & =P\left(Z<1.06\right)\\
+ & =1-P\left(Z>1.06\right)\\
+ & =1-0.1446\\
+ & =0.8554
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(DO THESE)
+\begin_inset Formula $p_{1}=0.80,n_{1}=0.20,n_{1}=80$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $p_{2}=0.72,n_{2}=0.28,n_{2}=60$
+\end_inset
+
+.
+ Since both 
+\begin_inset Formula $n_{1}\&n_{2}>30$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E\left(\hat{P}_{1}-\hat{P_{2}}\right) & =P_{1}-P_{2}\\
+ & =0.8-0.72\\
+ & =0.08
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Standard Deviation
+\begin_inset Formula 
+\begin{align*}
+\sigma_{\hat{P}_{1}-\hat{P}_{2}} & =\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}\\
+ & =\sqrt{\frac{67}{12500}}\\
+ & =0.07321
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\hat{P}_{1}-\hat{P}_{2}\ge0.1\right) & =P\left(Z>\frac{0.1-0.08}{\sqrt{\frac{67}{12500}}}\right)\\
+ & =P\left(Z>0.27\right)\\
+ & =0.3936
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(DO THESE) 
+\begin_inset Formula $p_{1}=0.3,n_{1}=80$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $p_{2}=0.18,n_{2}=70$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E\left(\hat{P_{1}}-\hat{P}_{2}\right) & =p_{1}-p_{2}\\
+ & =0.3-0.18\\
+ & =012
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sigma_{\hat{p}_{1}-\hat{p}_{2}} & =\sqrt{\frac{\left(0.3\right)\left(0.7\right)}{80}+\frac{\left(0.18\right)\left(0.82\right)}{70}}\\
+ & =0.0688
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{P}_{1}-\hat{P}_{2}\sim N\left(0.12,0.0688^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(0.1<\hat{P}_{1}-\hat{P}_{2}<0.2\right) & =P\left(\frac{0.1-0.12}{0.0688}<Z<\frac{0.2-0.12}{0.0688}\right)\\
+ & =P\left(-0.29<Z<1.16\right)\\
+ & =1-P\left(Z>0.29\right)-P\left(Z>1.16\right)\\
+ & =0.4911
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

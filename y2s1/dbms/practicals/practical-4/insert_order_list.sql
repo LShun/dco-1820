@@ -31,7 +31,7 @@ PRICE             NUMBER(6,2)
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY';
 
 cl scr;
-PROMPT 'Data entry for CUSTOMER table'
+PROMPT 'Data entry for ORDER_LIST table'
 PROMPT
 PROMPT
 

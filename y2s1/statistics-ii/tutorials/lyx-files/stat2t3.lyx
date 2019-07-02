@@ -1,0 +1,1039 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 3 - Continuous Probability Distribution
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Since the thickness is uniformly distributed, let X be the thickness of
+ photoresist where 
+\begin_inset Formula $X\sim U\left(0.2050,0.2150\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $P\left(X>0.2125\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\begin{cases}
+\frac{1}{0.01} & 0.2050\le x\le0.2150\\
+0 & otherwise
+\end{cases}\\
+c & =100
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>0.2125\right) & =1-P\left(X<0.2125\right)\\
+ & =1-\int_{0.2050}^{0.2125}100\,dx\\
+ & =1-100\left(0.2125-0.2050\right)\\
+ & =0.25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(X>a\right)=0.1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{0.2150}100\,dx & =0.1\\
+100\left(0.2150-a\right) & =0.1\\
+21.5-100a & =0.1\\
+100a & =21.4\\
+a & =0.2140\mu m
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mu & =\frac{0.2050+0.2150}{2}\\
+ & =0.21\mu m
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sigma & =\sqrt{\frac{\left(b-a\right)^{2}}{12}}\\
+ & =\sqrt{\frac{\left(0.2150-0.2050\right)^{2}}{12}}\\
+ & =0.002886\mu m
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let X be the lifetime of a mechanical assembly in a vibration test with
+ 
+\begin_inset Formula $X\sim E\left(400\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<100\right) & =\int_{0}^{100}\frac{1}{400}e^{-\frac{100}{400}}\\
+ & =P\left(Z<0.0019470\right)\\
+ & =
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+(Important notes: if don't know what to write the formulas, can just write
+ the number for Z scores)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Important note 2 (lol): Always ignore past 2 decimal places in tables, no
+ need to do interpolation, too small to matter
+\end_layout
+
+\begin_layout Enumerate
+P( Z < −0.6)
+\begin_inset Formula 
+\[
+X\sim N\left(1,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(Z>0.6\right)=0.27425
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $P\left(Z>-1.28\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1-P\left(Z>1.28\right) & =1-0.1003\\
+ & =0.8997
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(0.81<Z<1.94)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(Z<1.94\right)-P\left(Z<0.81\right)=0.18278
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P(-0.68 & <Z<0)=0.5-P\left(Z>0.68\right)\\
+ & =0.5-0.2483\\
+ & =0.2517
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(\text{−}0.46<Z<2.21)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-P\left(Z>0.46\right)-P\left(Z>2.21\right)=0.66365
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $P\left(0.81<Z<1.94\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(Z>0.81\right)-P\left(Z>1.94\right) & =0.209-0.0262\\
+ & =0.1828
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(-1.2\le Z\le K\right) & =0.523\\
+P\left(Z\le-1.2\right)+P\left(Z\ge K\right) & =1-0.523\\
+P\left(Z\le-1.2\right)+P\left(Z\ge K\right) & =0.477\\
+P\left(Z\ge K\right) & =0.477-0.11507\\
+ & =0.36193\\
+K & =0.35
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(K\le Z\le1.8\right) & =0.355\\
+P\left(Z>1.8\right)+P\left(Z<K\right) & =1-0.355\\
+P\left(Z>1.8\right)+P\left(Z<K\right) & =0.645\\
+P\left(Z<K\right) & =0.645-0.03593\\
+ & =0.60907\\
+P\left(Z>K\right) & =0.39093\\
+K & =0.27
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculuation
+\begin_inset Formula 
+\begin{align*}
+P\left(Z\le-0.8\right)+P\left(Z>K\right) & =0.616\\
+P\left(Z>K\right) & =0.616-0.21186\\
+ & =0.40414\\
+K & =0.24
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(Z\le K\right) & =4\cdot P\left(Z\le K\right)\\
+5\cdot P\left(Z\le K\right) & =1\\
+P\left(Z\le K\right) & =\frac{1}{5}\\
+\frac{1}{5} & =P\left(Z\ge-K\right)\\
+-K & =0.8\\
+K & =-0.84
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu=20.02,\sigma=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<19.9\right) & =P\left(Z<\frac{19.9-20.02}{0.05}\right)\\
+ & =P\left(Z<-2.4\right)\\
+ & =8.1974*10^{-3}\\
+Percentage & =8.1974*10^{-3}*100\%\\
+ & =0.82\%\,or\,0.0082
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>20.1\right) & =P\left(Z>\frac{20.1-20.02}{0.05}\right)\\
+ & =P\left(Z>1.6\right)\\
+ & =0.054799\\
+Percentage & =5.4799\%\,or\,0.0054779
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mu_{a}=1000,\sigma_{a}=100$
+\end_inset
+
+, 
+\begin_inset Formula $\mu_{b}=900,\sigma_{b}=50$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let X be the breaking strength of the rope with 
+\begin_inset Formula $X\sim N\left(1000,10000\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<750\right) & =P\left(Z<\frac{750-1000}{100}\right)\\
+ & =P\left(Z<-2.5\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ be the breaking strength of th rope with 
+\begin_inset Formula $X_{2}\sim N\left(900,2500\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X_{2}<750\right) & =P\left(Z<\frac{750-900}{50}\right)\\
+ & =P\left(Z<-3\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion.
+ All things considered, the company should pick supplier B, because the
+ ropes that are lower than 750kg of breaking strength are less
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu=5000,\sigma=1000$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(5500\le X\le6500\right) & =P\left(\frac{5500-5000}{1000}\le Z\le\frac{6500-5000}{1000}\right)\\
+ & =P\left(\frac{1}{2}\le Z\le\frac{3}{2}\right)\\
+ & =0.24173
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<5000\right) & =P\left(Z<0\right)\\
+ & =0.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<7500\right) & =P\left(Z<\frac{7500-5000}{1000}\right)\\
+ & =P\left(Z<\frac{2500}{1000}\right)\\
+ & =P\left(Z<\frac{5}{2}\right)\\
+ & =0.99379
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu=500,\sigma=20$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $n=2000$
+\end_inset
+
+, let X be the packets weight with 
+\begin_inset Formula $X\sim N\left(500,400\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>520\right) & =P\left(Z>\frac{520-500}{20}\right)\\
+ & =P\left(Z>1\right)\\
+ & =0.15866
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2000*0.15866\approx317\,packets$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<470\right) & =P\left(Z<\frac{470-500}{20}\right)\\
+ & =P\left(Z<-\frac{3}{2}\right)\\
+ & =0.066807
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2000*0.066807=133.614\approx134packets$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(520\le X\le530\right) & =P\left(\frac{520-500}{20}\le Z\le\frac{530-500}{20}\right)\\
+ & =P\left(1\le Z\le1.5\right)\\
+ & =0.09185
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2000*0.09185=183.7\approx184packets$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu=45minutes,\sigma=8minutes$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>50\right) & =P\left(Z>\frac{50-45}{8}\right)\\
+ & =P\left(Z>\frac{5}{8}\right)\\
+ & =0.26599
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(40\le X\le52\right) & =P\left(\frac{40-45}{8}\le X\le\frac{52-45}{8}\right)\\
+ & =P\left(-\frac{5}{8}\le Z\le\frac{7}{8}\right)\\
+ & =0.54322
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\le a\right) & =0.9\\
+P\left(Z\le\frac{a-45}{8}\right) & =0.9\\
+P\left(Z>\frac{a-45}{8}\right) & =0.1\\
+\frac{a-45}{8} & =1.2815\\
+a & =55.252minutes
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\le a\right) & =0.3\\
+P\left(Z\le\frac{a-45}{8}\right) & =0.3\\
+-P\left(Z\ge\frac{a-45}{8}\right) & =0.3\\
+\frac{a-45}{8} & =-0.52466\\
+a & =40.8027minutes
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $p=0.1,n=500$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ are the males out of 500 males who suffer from a certain disease with 
+\begin_inset Formula $X\sim B\left(500,0.1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cannot use Poisson because 
+\begin_inset Formula $np<5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+To approximate with normal, 
+\begin_inset Formula $np>5$
+\end_inset
+
+, 
+\begin_inset Formula $nq>5$
+\end_inset
+
+.
+ The rule is plus or minus to make it slightly bigger, dont need to remember
+ details\SpecialChar endofsentence
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>60\right) & =P\left(X>60.5\right)\\
+ & =P\left(Z>\frac{60.5-50}{\sqrt{45}}\right)\\
+ & =P\left(Z>\frac{10.5}{\sqrt{45}}\right)\\
+ & =P\left(Z>1.57\right)\\
+P\left(Z>1.57\right) & =\boldsymbol{0.058763}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+QUESTION: HOW TO KNOW IF WE SHOULD TAKE SAMPLE DISTRIBUTION?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=0.1$
+\end_inset
+
+, 
+\begin_inset Formula $n=1000,np=100,\mu=100,\sigma^{2}=npq=1000*0.1*0.9=90$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let X be the number of chocolates produced with mis-shapes such that 
+\begin_inset Formula $X\sim N\left(100,100\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<80\right) & =P\left(X<79.5\right)\text{make it slightly bigger}\\
+ & P\left(Z<\frac{79.5-100}{\sqrt{90}}\right)\\
+ & =P\left(Z<-2.16\right)\\
+ & =P\left(Z>2.16\right)\\
+ & =\boldsymbol{0.01539}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(90<X<115\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(90<X<115\right) & =P\left(89.5<X<115.5\right)\\
+ & =P\left(\frac{89.5-100}{\sqrt{90}}<X<\frac{115.5-100}{\sqrt{90}}\right)\\
+ & =P\left(-1.11<Z<1.63\right)\\
+ & 1-0.1335-0.0516\\
+ & =\boldsymbol{0.8149}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+P
+\begin_inset Formula $\left(X\ge120\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\ge120\right) & =P\left(X>119.5\right)\\
+ & =P\left(Z>\frac{119.5-100}{\sqrt{90}}\right)\\
+ & =P\left(Z>2.06\right)\\
+ & =\boldsymbol{0.0197}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+X is the number of bacteria on a plate viewed under a microscope where 
+\begin_inset Formula $X\sim P_{o}\left(\lambda=60\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\lambda>20$
+\end_inset
+
+, and n is unobtainable using 
+\begin_inset Formula $X\sim N\left(60,60\right)$
+\end_inset
+
+ as approximation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(55\le X\le75\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(55<X<75\right) & =P\left(55.5<X<74.5\right)\\
+ & =P\left(-0.5809<Z<1.8719\right)\\
+ & =0.68874
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(X<38\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<38\right) & =P\left(X<37.5\right)\\
+ & =P\left(Z<\frac{37.5-60}{\sqrt{60}}\right)\\
+ & =P\left(Z<-2.905\right)\\
+ & =P\left(Z>2.905\right)\\
+ & =0.00185
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Plates = 
+\begin_inset Formula $0.00185*2000\approx4$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Since a minute is an interval, and only the average rate is given.
+ Let X be the customers arrivig at a department store in any particular
+ minute, where 
+\begin_inset Formula $X\sim P_{o}\left(18.6\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\lambda$
+\end_inset
+
+is big (> 10), and 
+\begin_inset Formula $n$
+\end_inset
+
+ cannot be easily obtained, we can approximate it with 
+\begin_inset Formula $X\sim N\left(18.6,4.3128^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\le25\right) & =P\left(X<25.5\right)\\
+ & =P\left(Z<\frac{25.5-18.6}{4.3128}\right)\\
+ & =P\left(Z<1.5998\right)\\
+P\left(X\le25\right) & =\boldsymbol{0.94518}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

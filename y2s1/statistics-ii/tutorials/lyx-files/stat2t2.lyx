@@ -1,0 +1,940 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 2 - Discrete Probability Distribution
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x;25\right)=\frac{1}{25}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mu & =\frac{1}{25}*\left(1+2+3...+25\right)\\
+ & =\frac{1}{25}*\frac{25*\left(25+1\right)}{2}\\
+ & =\frac{325}{25}\\
+ & =13
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma^{2}=52
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Prime & =\left\{ 2,3,5,7,11,13,17,19,23\right\} \\
+ & =\frac{9}{25}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+(Geometric) Let X be the number of applicants interviewed until the first
+ applicant with advanced ytsininh in vompuyrt ptohtsmminh.
+ 
+\begin_inset Formula $X\sim Geometric(p=0.2)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(X=5\right)=g\left(5;0.2\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+g\left(5;0.2\right) & =\left(0.8\right)^{4}\left(0.2\right)\\
+ & =0.08192
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(X<5\right)=P\left(X=1\right)+P\left(X=2\right)+P\left(X=3\right)+P\left(X=4\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=5\right) & =0.2+0.8*0.2+0.8^{2}*0.2+0.8^{3}*0.2\\
+ & =0.5904
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Mean
+\begin_inset Formula 
+\begin{align*}
+\mu & =\frac{1}{0.2}\\
+ & =5tries
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Median
+\begin_inset Formula 
+\begin{align*}
+\sigma^{2} & =\frac{1-p}{p^{2}}\\
+ & =\frac{1-0.2}{0.2^{2}}\\
+ & =20tries^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\ge3\right) & =P\left(X=3\right)+P\left(X=4\right)\\
+ & =^{4}C_{3}*0.4^{3}*0.6+0.4^{4}\\
+ & =0.1792
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=0\right) & =^{4}C_{0}*0.6^{4}\\
+ & =0.1296
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=1,2\right) & =P\left(X=1\right)+P\left(X=2\right)\\
+ & =^{4}C_{1}*0.4^{1}*0.6^{3}+^{4}C_{2}*0.4^{2}*0.6^{2}\\
+ & =0.6912
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $p=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\le2\right) & =P\left(X=0\right)+P\left(X=1\right)+P\left(X=2\right)\\
+ & =\binom{10}{0}0.5^{10}+\binom{10}{1}0.5^{9}*0.5+\binom{10}{2}0.5^{8}*0.5^{2}\\
+ & =0.0546875
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>3\right) & =1-P\left(X=0\right)-P\left(X=1\right)-P\left(X=2\right)-P\left(X=3\right)\\
+ & =1-0.0546875-\binom{10}{3}0.5^{10}\\
+ & =0.9453125-0.1171875\\
+ & =0.828125
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(4<x<8\right) & =P\left(X=5\right)+P\left(X=6\right)+P\left(X=7\right)\\
+ & =\binom{10}{5}0.5^{10}+\binom{10}{6}0.5^{10}+\binom{10}{7}0.5^{10}\\
+ & =252*0.5^{10}+210*0.5^{10}+120*0.5^{10}\\
+ & =0.5684
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=0.3,q=0.7,n=20
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(3\le X\le6\right) & =P\left(X=3\right)+P\left(X=4\right)+P\left(X=5\right)+P\left(X=6\right)\\
+ & =\binom{20}{3}\cdot0.3^{3}\cdot0.7^{17}+\binom{20}{4}\cdot0.3^{4}\cdot0.7^{16}+\binom{20}{5}\cdot0.3^{5}\cdot0.7^{15}+\binom{20}{6}\cdot0.3^{6}\cdot0.7^{14}\\
+ & =0.57253
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mu & =np\\
+ & =20*0.3\\
+ & =6customers
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sigma^{2} & =np\left(1-p\right)\\
+ & =6*q\\
+ & =4.2customers^{2}\\
+\sigma & =2.0494customers
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=6\right) & =\binom{20}{6}*0.3^{6}*0.7^{14}\\
+ & =0.1916
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mu=2,\sigma^{2}=1.6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2 & =np\\
+1.6 & =np\left(1-p\right)\\
+ & =2\left(1-p\right)\\
+0.8 & =1-p\\
+-p & =-0.2\\
+p & =0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2 & =np\\
+2 & =0.2n\\
+n & =10
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=6\right) & =\binom{10}{6}*0.2^{6}*0.8^{4}\\
+ & =210*0.2^{6}*0.8^{4}\\
+ & =0.005505
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let X be the number of marriages that occur in June 
+\begin_inset Formula $X\sim P_{o}\left(5\right),x=0,1,2,3..$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<3\right) & =P_{o}\left(X=0\right)+P_{0}\left(X=1\right)+...+P_{o}\left(X=2\right)\\
+ & =e^{-5}\left(\frac{\lambda^{0}}{0!}+\frac{\lambda^{1}}{1!}+\frac{\lambda^{2}}{2!}\right),where\,\lambda=5\\
+ & =0.1246
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let X be the number of marriages that occur in July and August 
+\begin_inset Formula $X\sim P_{o}\left(10\right),x=0,1,2...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=10\right) & =e^{-10}\frac{\lambda^{10}}{10!}\\
+ & =0.1251
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let X be the number of marriages that occur between the 3 months 
+\begin_inset Formula $X\sim P_{o}\left(15\right),x=0,1,2...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(14\le X\leq18\right) & =P_{o}\left(X=14\right)+P_{0}\left(X=15\right)+...+P_{o}\left(X=18\right)\\
+ & =e^{-15}\left(\frac{15^{14}}{14!}+\frac{15^{15}}{15!}+\frac{15^{16}}{16!}+\frac{15^{17}}{17!}+\frac{15^{18}}{18!}\right)\\
+ & =0.45625\,\boldsymbol{Double\,check:true\,answer=0.4561}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+(in test, won't tell you Poisson, but will tell you week/duration)
+\begin_inset Formula 
+\[
+\lambda=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let X be the number of claims received per week such that 
+\begin_inset Formula $X\sim P_{o}\left(2\right),x=0,1,2,3....$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>3\right) & =1-P\left(X=0\right)-P\left(X=1\right)-P\left(X=2\right)-P\left(X=3\right)\\
+ & =1-e^{-2}\left(1+\frac{2^{1}}{1!}+\frac{2^{2}}{2!}+\frac{2^{3}}{3!}\right)\\
+ & =\boldsymbol{0.1429}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let X be the number of claims received per fortnight such that 
+\begin_inset Formula $X\sim P_{o}\left(4\right),x=0,1,2,3...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\ge2\right) & =1-P\left(0\right)-P\left(1\right)\\
+ & =1-e^{-4}\left(1+4\right)\\
+ & =\boldsymbol{0.9084}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let X be the number of claims received per 5 days such that 
+\begin_inset Formula $X\sim P_{o}\left(\frac{2}{5}\right),x=0,1,2,3...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=0\right) & =e^{-\frac{2}{5}}\left(1\right)\\
+ & =\boldsymbol{0.6703}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ be the number of cars arriving in a particular 5 minutes interval 
+\begin_inset Formula $X_{1}\sim P_{o}\left(2.5\right),x=1,2,3...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(0\right) & =P_{o}\left(X=0\right)\\
+ & =e^{-2.5}\left(\frac{2.5^{0}}{0!}\right)\\
+ & =0.08208
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ be the number of cars arriving in a particular 10 minutes interval 
+\begin_inset Formula $X_{2}\sim P_{o}\left(5\right),x=1,2,3...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<3\right) & =P_{o}\left(X=0\right)+P\left(X=1\right)+P\left(X=2\right)\\
+ & =0.1247
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let 
+\begin_inset Formula $X_{3}$
+\end_inset
+
+ be the number of cars arriving in a particular 15 minutes interval 
+\begin_inset Formula $X_{3}\sim P_{o}\left(7.5\right),x=1,2,3...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mu & =\lambda\\
+ & =7.5
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sigma^{2} & =\lambda\\
+ & =7.5\\
+\sigma & =2.7386
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\lambda=5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let X be the number of vegetables a salad contains in a tossed salad.
+ 
+\begin_inset Formula $X\sim P_{o}\left(5\right),x=0,1,2,3,...$
+\end_inset
+
+.
+ 
+\series bold
+Note: Salad can contain no vegetables (Darn it)
+\series default
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>5\right) & =1-P\left(X=1\right)-P\left(X=2\right)-P\left(X=3\right)-P\left(X=4\right)-P\left(X=5\right)\\
+ & =1-e^{-5}\left(\lambda+\frac{\lambda^{2}}{2!}+\frac{\lambda^{3}}{3!}+\frac{\lambda^{4}}{4!}+\frac{\lambda^{5}}{5!}\right)\\
+ & =1-e^{-5}\left(1+5+\frac{5^{2}}{2}+\frac{5^{3}}{6}+\frac{5^{4}}{24}+\frac{5^{5}}{120}\right)\\
+ & =0.3840
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Binomial (depends on Poisson) 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+is the number of days out of 4 days which the number of vegetables contained
+ in a tossed salad is 3.
+ 
+\begin_inset Formula $X\sim B\left(4,0.3840\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X_{1}=3\right) & =^{4}C_{3}\left(0.3840\right)^{3}\left(1-0.3840\right)^{1}\\
+ & =0.1395
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Geometric (depends on Poisson).
+ 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+is the numbers of days until the first day with a tossed salad containing
+ more than 5 vegetables
+\begin_inset Formula 
+\begin{align*}
+P\left(X_{2}=5\right) & =\left(1-0.3840\right)^{4}\left(0.3840\right)\\
+ & =0.0553
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $p=0.01,n=100$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n>50$
+\end_inset
+
+ and 
+\begin_inset Formula $np=1<5,$
+\end_inset
+
+Let X be the number of faulty light bults in a box 
+\begin_inset Formula $X\sim P_{o}\left(1\right),x=1,2,3...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=0\right) & =\frac{e^{-1}\lambda^{0}}{0!}\\
+ & =0.3679
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X=2\right) & =\frac{e^{-1}\lambda^{2}}{2!}\\
+ & =0.1839
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>3\right) & =1-P\left(X\leq3\right)\\
+ & =1-P\left(0\right)-P\left(1\right)-P\left(2\right)-P\left(3\right)\\
+ & =1-0.3679-\frac{e^{-1}}{1!}-0.1839-\frac{e^{-1}}{3!}\\
+ & =0.019007
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p & =0.005\left(Defective\right)\\
+n & =200
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+np & =1<5\\
+n & >50
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X\le2\right) & =P\left(X=0\right)+P\left(X=1\right)+P\left(X=2\right)\\
+ & =e^{-1}\left(1+1+\frac{1}{2}\right)\\
+ & =0.9197
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

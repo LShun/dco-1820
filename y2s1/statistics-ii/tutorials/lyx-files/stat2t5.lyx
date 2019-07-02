@@ -1,0 +1,2212 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+STAT II - T5: Estimation of Mean and Proportion
+\end_layout
+
+\begin_layout Section
+Notes (in tutorial)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../lyx-imgs/t5-mean-proportion-tree.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Answers
+\end_layout
+
+\begin_layout Enumerate
+An electrical firm manufactures light bulbs that have a length of life that
+ is approximately normally distributed with a standard deviation of 40 hours.
+ If a random sample of 30 bulbs has an average life of 780 hours, find a
+ 96% confidence interval for the population mean of all bulbs produced by
+ this firm.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check if it satisfy the conditions, where it is a random sample, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ given, and it is either normal or satisfy Central Limit Theorem.
+ 
+\begin_inset Formula $YES!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=2.0537
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} & =2.0537*\frac{40}{\sqrt{30}}\\
+ & =14.998
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\mu-E<\mu<\mu+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+780-14.998<\mu<780+14.998
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+765.002<\mu<794.998
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not sure what is the average life of all the light bulbs.
+ But I am 96% confident that it is between 765.002 hours and 794.998 hours.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A sample of 50 college students showed mean height of 167.16 cm and standard
+ deviation of 6.86 cm.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Estimate the mean height of all college students.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer (Point estimate)
+\begin_inset Formula 
+\[
+167.16cm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Construct a 98% confidence interval for the mean height of all college students.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check if it satisfy the conditions, where it is a random sample, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ given, and it is either normal or satisfy Central Limit Theorem.
+ 
+\begin_inset Formula $YES!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=2.3263
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma=6.86,n=50,\bar{X}=167.16
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} & =2.3263*\frac{6.86}{\sqrt{50}}\\
+ & =2.257
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\mu-E<\mu<\mu+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+167.16-2.257<\mu<167.16+2.257
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+164.903cm<\mu<169.417cm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not sure what the mean height all the college student is, but I am
+ 98% sure that it falls in between 164.903cm and 169.417cm
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A 
+\series bold
+random sample
+\series default
+ of eight cigarettes of a certain brand has average nicotine content of
+ 18.6 milligrams and a 
+\series bold
+standard deviation of 2.4 milligrams
+\series default
+.
+ Construct a 99% confidence interval for the true average nicotine content
+ of this particular brand of cigarettes, 
+\series bold
+assuming an approximately normal distribution
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check if it satisfy the conditions, where it is a random sample, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ given, and it is either normal or satisfy Central Limit Theorem.
+ 
+\begin_inset Formula $YES!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+, from the Normal Percentile table, where 
+\begin_inset Formula $\frac{a}{2}=0.005$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=2.5758
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma=2.4,n=8,\bar{X}=18.6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} & =2.5758*\frac{2.4}{\sqrt{8}}\\
+ & =2.186
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\mu-E<\mu<\mu+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+18.6-2.186<\mu<18.6+2.186
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+16.414mg<\mu<20.786mg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not sure what is the average nicotine content of all the cigarettes
+ of a certain brand.
+ But I am 99% sure, that it falls within the range of 16.414mg and 20.786mg.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A machine is producing metal pieces that are cylindrical in shape.
+ A 
+\series bold
+sample
+\series default
+ of pieces is taken and the diameters are 1.01, 0.97, 1.03, 1.04, 0.99, 0.98,
+ 0.99, 1.01 and 1.03 inches.
+ Find a 99% confidence interval for the mean diameter of all pieces from
+ this machine, 
+\series bold
+assuming a normal distribution.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check if it satisfy the conditions, where it is a random sample (since not
+ stated, assuming random), 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ given, and it is either normal or satisfy Central Limit Theorem.
+ 
+\series bold
+Everything except 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is not given, therefore, we are using 
+\begin_inset Formula $t-distribution$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $t_{\frac{a}{2};n-1}$
+\end_inset
+
+, from the t-distribution table, where 
+\begin_inset Formula $\frac{a}{2}=0.005$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+t_{\frac{a}{2};9-1} & =t_{0.005;8}\\
+ & =3.355
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n=9
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\bar{X} & =\frac{\sum x}{N}\\
+ & =\frac{9.05}{9}\\
+ & =1.0056
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S & =\sqrt{\frac{\sum X^{2}-\frac{\left(\sum\bar{X}\right)^{2}}{N}}{N-1}}\\
+ & =\sqrt{\frac{\sum X^{2}-\frac{\left(\sum\bar{X}\right)^{2}}{N}}{N-1}}\\
+ & =\sqrt{\frac{9.1051-\frac{9.05^{2}}{9}}{8}}\\
+ & =0.0246
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E & =t_{\frac{\alpha}{2};n-1}\frac{S}{\sqrt{n}}\\
+ & =3.355*\frac{0.0246}{\sqrt{9}}\\
+ & =0.0275
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\mu-E<\mu<\mu+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1.0056-0.0275<\mu<1.0056+0.0275
+\]
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Formula 
+\[
+\boldsymbol{0.9781inch<\mu<1.0331inch}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not sure what is the average diameter of all the cylindrical metal
+ pieces produced by the machine.
+ But I am 99% sure, that it falls within the range of 0.9781 inches, and
+ 1.0331 inches.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+According to a survey of 1500 adults conducted by the National Sleep Foundation,
+ 1125 of them said that they have symptoms of sleep problems such as frequent
+ walking during the night or snoring.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the 
+\series bold
+point estimate 
+\series default
+of the population proportion?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\series default
+
+\begin_inset Formula 
+\begin{align*}
+\hat{P} & =\frac{1125}{1500}\\
+\boldsymbol{\hat{P}} & \boldsymbol{=0.75}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find a 97% confidence interval for the percentage of all adults who have
+ such symptoms.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\hat{p},\hat{q},n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{\hat{p}} & \boldsymbol{=0.75,}\\
+\hat{q} & =1-\hat{p}\\
+\boldsymbol{\hat{q}} & \boldsymbol{=0.25}\\
+\boldsymbol{n} & \boldsymbol{=1500}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $Z_{\frac{\alpha}{2}}$
+\end_inset
+
+, from the Normal Percentile table, where 
+\begin_inset Formula $\frac{a}{2}=0.015$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=2.1701
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}*\sqrt{\frac{\hat{p}\hat{q}}{n}}\\
+ & =2.1701*\sqrt{\frac{0.75*0.25}{1500}}\\
+ & =0.0243
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\hat{p}-E<p<\hat{p}+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0.75-0.0243<\mu<0.75+0.0243
+\]
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Formula 
+\[
+0.7257<\mu<0.7743
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{72.57\%<\mu<77.43\%}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Layman Explanation: I am not sure what is the average proportion of adults
+ having sleep problems.
+ But I am 97% sure, that it falls within the range of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+72.57%
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+77.43%
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+NOTE: The above is NOT the correct way to describe (according to our lecturer).
+ It should be described as:
+\series bold
+ 
+\bar under
+A 97% confidence interval is 72.57% < p < 77.43%
+\series default
+\bar default
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A large corporation is concerned about the declining quality of medical
+ services provided by their group health insurance.
+ A 
+\series bold
+random sample
+\series default
+ of 100 office visits by employees of this corporation to primary care physician
+s
+\series bold
+ last year
+\series default
+ found that the doctors spent an 
+\series bold
+average of 19 minutes
+\series default
+ with each patient.
+ 
+\series bold
+This year a random sample of 108
+\series default
+ such visits showed that doctors spent an
+\series bold
+ average of 15.5 minutes
+\series default
+ with each patient.
+ Assume that the 
+\series bold
+population standard deviations are 2.7 and 2.1 minutes
+\series default
+ respectively.
+ Construct a 
+\series bold
+94% confidence interval
+\series default
+ for the 
+\series bold
+difference between the two population means
+\series default
+ for these two years.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check if it matches all conditions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+RANDOM sample.
+ 
+\begin_inset Formula $CHECK!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma$
+\end_inset
+
+/ population standard deviation is given.
+ 
+\begin_inset Formula $CHECK!,\sigma_{1}=2.7,\sigma_{2}=2.1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n>30$
+\end_inset
+
+ or it is a normal distribution.
+ 
+\begin_inset Formula $CHECK!,n_{1}=100,n_{2}=108$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $Z_{\frac{\alpha}{2}},$
+\end_inset
+
+for 
+\begin_inset Formula $\frac{a}{2}=0.03$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=1.8808
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}*\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\\
+ & =1.8808*\sqrt{\frac{2.7^{2}}{100}+\frac{2.1^{2}}{108}}\\
+ & =0.6343
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\left(\bar{X}_{1}-\bar{X}_{2}\right)-E<\left(\mu_{1}-\mu_{2}\right)<\left(\bar{X}_{1}-\bar{X}_{2}\right)+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(19-15.5\right)-0.6343<\left(\mu_{1}-\mu_{2}\right)<\left(19-15.5\right)+0.6343
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2.8657<\left(\mu_{1}-\mu_{2}\right)<4.1343
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not 100% sure what is the difference between the two population means
+ for these two years.
+ But I am 97% sure, that it falls within the range of 2.8657 minutes, and
+ 4.1343 minutes.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+To compare the starting salaries of graduates majoring in education and
+ accounting, 
+\series bold
+random samples of 50
+\series default
+ recent graduates jin each major were selected and the following information
+ was obtained:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Major
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Standard Deviation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Education
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RM 2,555.40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RM 222.50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Accounting
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RM 2,334.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RM 237.50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find a point estimate for the difference in the average starting salaries
+ of all graduates majoring in education and accounting.
+\begin_inset Formula 
+\begin{align*}
+\bar{X}_{1}-\bar{X}_{2} & =2555.40-2334.80\\
+ & =\boldsymbol{RM220.6}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Construct a 95% confidence interval for 
+\begin_inset Formula $μ_{1}$
+\end_inset
+
+ −
+\begin_inset Formula $μ_{2}$
+\end_inset
+
+, the difference in the average starting salaries.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check if it matches all conditions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+RANDOM sample.
+ 
+\begin_inset Formula $CHECK!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma$
+\end_inset
+
+/ population standard deviation is given.
+ 
+\begin_inset Formula $CHECK!,\sigma_{1}=222.50,\sigma_{2}=237.50$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n>30$
+\end_inset
+
+ or it is a normal distribution.
+ 
+\begin_inset Formula $CHECK!,n_{1}=50,n_{2}=50$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $Z_{\frac{\alpha}{2}},$
+\end_inset
+
+for 
+\begin_inset Formula $\frac{a}{2}=0.025$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=1.9600
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}*\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\\
+ & =1.9600*\sqrt{\frac{222.50^{2}}{50}+\frac{237.50^{2}}{50}}\\
+\boldsymbol{E} & \boldsymbol{=90.208}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\left(\bar{X}_{1}-\bar{X}_{2}\right)-E<\left(\mu_{1}-\mu_{2}\right)<\left(\bar{X}_{1}-\bar{X}_{2}\right)+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+220.6-90.208<\left(\mu_{1}-\mu_{2}\right)<220.6+90.208
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{RM130.392<\left(\mu_{1}-\mu_{2}\right)<RM310.808}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not 100% sure what is the difference between the two population means
+ for starting salaries of graduates majoring in education and accounting.
+ But I am 95% sure, that it falls within the range of RM130.392, and RM310.808.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A sample of 14 cans of Brand A diet soda gave the mean number of calories
+ of 23 per can with a standard deviation of 3 calories.
+ Another sample of 16 cans of Brand B diet soda gave the mean number of
+ calories of 25 per can with a standard deviation of 4 calories.
+ Assume that the calories per can of diet soda are 
+\series bold
+normally distributed
+\series default
+ for both brands with 
+\series bold
+equal standard deviations
+\series default
+.
+ Find the 98% confidence interval for the d
+\series bold
+ifference in the mean number of calories for these two brands of diet soda
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check the conditions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+RANDOM sample.
+ 
+\begin_inset Formula $CHECK!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma$
+\end_inset
+
+/ population standard deviation is given.
+ 
+\begin_inset Formula $CHECK!,$
+\end_inset
+
+NOT given, therefore, it is 
+\begin_inset Formula $t-distribution$
+\end_inset
+
+.
+ But mentioned that 
+\series bold
+both
+\series default
+ population standard deviation is the same.
+ Therefore, we also need to calculate 
+\begin_inset Formula $S_{p}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $t_{\frac{a}{2};n_{A}+n_{B}-2},$
+\end_inset
+
+for 
+\begin_inset Formula $\frac{a}{2}=0.01$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+t_{0.01;14+16-2}, & =t_{0.01;28}\\
+ & =2.467
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the pooled variance, 
+\begin_inset Formula $\sigma_{p}^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{A}^{2} & =3^{2}=9\\
+S_{B}^{2} & =4^{2}=16
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{p} & =\sqrt{\frac{\left(n_{A}-1\right)S_{A}^{2}+\left(n_{B}-1\right)S_{B}^{2}}{n_{A}+n_{B}-2}}\\
+ & =\sqrt{\frac{\left(14-1\right)9+\left(16-1\right)16}{14+16-2}}\\
+ & =\sqrt{\boldsymbol{12.75calories^{2}}}\\
+ & =3.571calories
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error
+\begin_inset Formula 
+\begin{align*}
+E & =t_{\frac{a}{2};n_{A}+n_{B}-2}*S_{p}*\sqrt{\frac{1}{n_{A}}+\frac{1}{n_{B}}}\\
+ & =2.467*3.571*\sqrt{\frac{1}{14}+\frac{1}{16}}\\
+\boldsymbol{E} & \boldsymbol{=3.224calories}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\[
+\left(\bar{X}_{A}-\bar{X}_{B}\right)-E<\left(\mu_{A}-\mu_{B}\right)<\left(\bar{X}_{A}-\bar{X}_{B}\right)+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(23-25\right)-3.224<\left(\mu_{A}-\mu_{B}\right)<\left(23-25\right)+3.224
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{-5.224calories<\left(\mu_{A}-\mu_{B}\right)<1.224calories}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not 100% sure what is the difference between the two population means
+ for 
+\series bold
+number of calories
+\series default
+.
+ But I am 98% sure, that it falls within the range of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-5.224calories
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1.224calories
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ten soldiers were selected at random from each of two companies to participate
+ in a rifle-shooting competition.
+ Their scores are listed in the table below.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="11">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Company 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+59
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Company 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Assume that the scores for both company having 
+\series bold
+equal variances
+\series default
+.
+ Construct a 90% confidence interval for the 
+\series bold
+difference between the mean scores
+\series default
+ for the two companies.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check the conditions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+RANDOM sample.
+ 
+\begin_inset Formula $CHECK!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma$
+\end_inset
+
+/ population standard deviation is given.
+ 
+\begin_inset Formula $CHECK!,$
+\end_inset
+
+
+\series bold
+NOT given
+\series default
+, therefore, it is 
+\begin_inset Formula $t-distribution$
+\end_inset
+
+.
+ But mentioned that 
+\series bold
+both
+\series default
+ population's variance is the same, but are unknown.
+ Therefore, we also need to calculate 
+\begin_inset Formula $S_{p}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $t_{\frac{a}{2};n_{A}+n_{B}-2},$
+\end_inset
+
+for 
+\begin_inset Formula $\frac{a}{2}=0.05$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+t_{0.05;10+10-2}, & =t_{0.05;18}\\
+t_{0.05;10+10-2} & =1.734
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the pooled variance, 
+\begin_inset Formula $\sigma_{p}^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{A}^{2} & =\frac{\sum x^{2}-\frac{\left(\sum x\right)^{2}}{n}}{n-1}=14.461^{2}=209.12\\
+S_{B}^{2} & =\frac{\sum x^{2}-\frac{\left(\sum x\right)^{2}}{n}}{n-1}=13.903^{2}=193.29
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{p} & =\sqrt{\frac{\left(n_{A}-1\right)S_{A}^{2}+\left(n_{B}-1\right)S_{B}^{2}}{n_{A}+n_{B}-2}}\\
+ & =\sqrt{\frac{9*209.12+9*193.29}{18}}\\
+\boldsymbol{S_{p}} & \boldsymbol{=14.185calories}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the margin of error
+\begin_inset Formula 
+\begin{align*}
+E & =t_{0.05;10+10-2}*S_{p}*\sqrt{\frac{1}{n_{A}}+\frac{1}{n_{B}}}\\
+ & =1.734*14.185*\sqrt{\frac{1}{10}+\frac{1}{10}}\\
+\boldsymbol{E} & \boldsymbol{=11.00calories}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the confidence interval
+\begin_inset Formula 
+\begin{align*}
+\bar{X}_{A} & =\frac{\sum x}{n}=57\\
+\bar{X}_{B} & =\frac{\sum x}{n}=62.2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(57-62.2\right)-E<\left(\mu_{A}-\mu_{B}\right)<\left(57-62.2\right)+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(57-62.2\right)-11.00<\left(\mu_{A}-\mu_{B}\right)<\left(57-62.2\right)+11.00
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{-16.2<\left(\mu_{A}-\mu_{B}\right)<5.8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I am not 100% sure what is the difference between the two population means
+ for 
+\series bold
+score
+\series default
+.
+ But I am 90% sure, that it falls within the range of -16.2 marks, and 5.8
+ marks.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A researcher wanted to find the effect of a special diet on systolic blood
+ pressure.
+ He selected a sample of seven adults and put them on this dietary plan
+ for three months.
+ The following table gives the systolic blood pressures of these seven adults
+ before and after the completion of this plan.
+\begin_inset Newline newline
+\end_inset
+
+Before
+\series bold
+ 210 180 195 220 231 199 224
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+After 
+\series bold
+193 186 186 223 220 183 233
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Construct a 95% confidence interval for the
+\series bold
+ mean reduction
+\series default
+ in the systolic blood pressures due to this special dietary plan for all
+ adults.
+ Assume that the population of paired differences is
+\series bold
+ approximately normally distributed.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check the conditions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+RANDOM SAMPLE
+\end_layout
+
+\begin_layout Enumerate
+POP.
+ STD DEV not given
+\end_layout
+
+\begin_layout Enumerate
+T-distribution, so no need to worry about 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Is it before - answer or vice versa? 
+\begin_inset Formula $Before-After$
+\end_inset
+
+, reason: Because reduction is considered 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+, and a 
+\begin_inset Quotes eld
+\end_inset
+
+downslope
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, 
+\begin_inset Formula $t_{\frac{a}{2};n-1},$
+\end_inset
+
+for 
+\begin_inset Formula $\frac{a}{2}=0.025$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t_{0.025;6}=2.447
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error
+\begin_inset Formula 
+\[
+E=t_{\frac{a}{2};n-1}*\frac{S_{D}}{\sqrt{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $S_{D}$
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../lyx-imgs/11a-sd-table.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{D} & =\sqrt{\frac{\sum D_{i}^{2}-\frac{\left(\sum D_{i}\right)^{2}}{n}}{n-1}}\\
+ & =10.786
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E & =2.447*\frac{10.786}{\sqrt{7}}\\
+ & =9.976
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the confidence interval
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{D}=5$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}-E<\mu_{\bar{D}}<\bar{D}+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+5-9.976 & <\mu_{D}<5+9.976\\
+-4.976 & <\mu_{D}<14.976
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Inference
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 95% confidence interval for 
+\begin_inset Formula $\mu_{1}-\mu_{2}=-4.976<\mu_{D}<14.976$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A certain geneticist is interested in the proportion of males and females
+ in the population that have a certain minor blood disorder.
+ In a random sample of 1000 males 250 are found to be afflicted, whereas
+ 275 of 1000 females tested appear to have the disorder.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Estimate the difference in the true proportion of males and females that
+ have the blood disorder.
+\end_layout
+
+\begin_layout Enumerate
+Compute a 95% confidence interval for the difference between the proportion
+ of males and females that have the blood disorder.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A marketing researcher wants to find a 95% confidence interval for the mean
+ amount that visitors to a theme park spend per person per day.
+ He knows that the standard deviation of the amounts spent per person per
+ day by all visitors to this park is RM11.
+ How large a sample should the researcher select so that the estimate will
+ be within RM2 of the population mean?
+\end_layout
+
+\begin_layout Enumerate
+Johnny’s Pizza guarantees all pizza deliveries within 30 minutes of the
+ placement of orders.
+ A researcher wants to estimate the proportion of all pizzas delivered within
+ 30 minutes by Johnny’s.
+ The 99% confidence interval for the population proportion has a margin
+ of error to within 0.02.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is the most conservative estimate of the sample size?
+\end_layout
+
+\begin_layout Enumerate
+Assume that a preliminary study has shown that 93% of all Johnny’s pizzas
+ are delivered within 30 minutes.
+ How large should the sample size?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A small insurance company has 1861 life insurance policyholders.
+ A random sample of 100 life insurance policyholders showed that the mean
+ premium they pay on their life insurance policies is RM685 per year with
+ a standard deviation of RM71.
+ Assuming that the life insurance policy premiums for all life insurance
+ policyholders have a normal distribution, construct a 92% confidence interval
+ for the population mean.
+\end_layout
+
+\begin_layout Enumerate
+In a large metropolitan area in which a total of 800 gasoline service stations
+ are located, a random sample of 36 gasoline service stations, 20 of the
+ stations carry a particular nationally advertised brand of oil.
+ Find a 95% confidence interval estimate for
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the proportion of all stations in the area which carry the oil,
+\end_layout
+
+\begin_layout Enumerate
+the total number of service stations in the area which carry the oil.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

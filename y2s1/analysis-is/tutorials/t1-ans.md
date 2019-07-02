@@ -2,6 +2,11 @@
 
 ## Q1
 
+An information system is said to have five main components, namely: hardware, software, stored data, people and processes. Identify all the five main components for each of the following information systems. (Note that each of the components is expected to contain a number of items).
+
+- Auto Teller System
+- Point of Sales (POS) System
+
 |             | Auto Teller System                                                                           | POS System                                            |
 |-------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | Hardware    | Computer, Number pad, Auto teller card scanner, Receipt printer                                      | Barcode Scanner, Computer, Receipt printer            |
@@ -12,7 +17,9 @@
 
 ## Q2
 
-### (a)
+Manufacturing firm is one of the many types of organization in the business world. Systems used in a manufacturing firm are for purposes of supporting their business processes or functions.
+
+### (a) Identify 5 systems (or modules) commonly used in a typical manufacturing firm.
 
 1. Production system
 2. Computer-aided design system
@@ -21,14 +28,14 @@
 5. Accounting system
 6. Purchasing system
 
-### (b)
+### (b) For any ONE of the systems identified in (a) above, list any 4 related subsystems (or sub-modules) involved
 
 1. Human Resource system
    1. Attendance system
    2. Recruitment system
    3. Reporting system/module (ALWAYS correct)
 
-### (c)
+### (c) Briefly describe 2 major functions (features) for any ONE of the subsystems in (b) above.
 
 1. Attendance system
    1. The attendance system keeps track of employee's presence in the company, and produce a summary for the management to monitor the employee's performance.
@@ -37,7 +44,9 @@
 
 ## Q3
 
-### (a)
+A factory has a warehouse which contains thousands of stock items to be used by the factory floor. An inventory Control System is used to monitor and control items movements in and out of the warehouse.
+
+### (a) Based on the four functions of any information system (input, process, output, and storage), describe each of the four functions performed when receiving goods from a supplier in an Inventory Control System.
 
 | Function | Description (Receiving goods, Inventory control system)                                                                     |
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -46,7 +55,7 @@
 | Output   | Notifies the user of the new total quantity of the goods added into the database, and show a success message when finished. |
 | Storage  | Store the new total quantity and product information of the goods received for future use.                                  |
 
-### (b)
+### (b) List ONE example of data input, information output and data stored in the above case.
 
 - **Data input:** Information of goods received
 - **Information output:** Total new quantity of the goods added

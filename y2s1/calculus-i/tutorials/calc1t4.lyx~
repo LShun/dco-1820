@@ -1,0 +1,807 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc 1:Tutorial 4
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lt}[3]{}
+{\lim_{#1\to#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use the Intermediate Value Theorem to show that there is a root of the given
+ equation in the specified interval.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{3}-3x+1=0,\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=x^{3}-3x+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+At 
+\begin_inset Formula $f\left(0.1\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+f\left(0\right) & =\left(0.1\right)^{3}-3\left(0.1\right)+1\\
+ & =0.701
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+At 
+\begin_inset Formula $f\left(0.9\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+f\left(1\right) & =\left(0.9\right)^{3}-3\left(0.9\right)+1\\
+ & =\text{−}0.971
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $f\left(0.1\right)>0$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(0.9\right)<0$
+\end_inset
+
+, by the intermediate value theorem we can conclude that there is a root
+ in the interval 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}=\sqrt{x+1},\left(1,2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{4} & =x+1\\
+x^{4}-x-1 & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=x^{4}-x-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+At 
+\begin_inset Formula $f\left(1.1\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(1,1\right) & =\left(1.1\right)^{4}-\left(1.1\right)-1\\
+ & =-0.6359
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+At 
+\begin_inset Formula $f\left(1.9\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(1.9\right) & =\left(1.9\right)^{4}-\left(1.1\right)-1\\
+ & =10.9321
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $f\left(1.1\right)<0$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(1.9\right)>0$
+\end_inset
+
+, by the intermediate value theorem we can conclude that there is a root
+ in the interval 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Find the limit.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{5^{-}}{\frac{e^{x}}{\left(x-5\right)^{3}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{5^{-}}{\left(x-5\right)^{3}} & =-0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lt x{5^{-}}{\frac{e^{x}}{\left(x-5\right)^{3}}}=-\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{5^{+}}{\ln\left(x-5\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{5^{+}}{\ln\left(x-5\right)} & =\ln\left(0^{+}\right)\\
+ & =+\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{\infty}{\frac{3x+5}{x+4}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{\infty}{\frac{3x+5}{x+4}} & =\lt x{\infty}{\frac{\frac{3x}{x}+\frac{5}{x}}{\frac{x}{x}+\frac{4}{x}}}\\
+ & =\lt x{\infty}{\frac{3+\frac{5}{x}}{1+\frac{4}{x}}}\\
+ & =\frac{3+\cancel{\frac{5}{\infty}}}{1+\cancel{\frac{4}{\infty}}}\\
+ & =\frac{3}{1}\\
+ & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt t{-\infty}{\frac{t^{2}+2}{t^{3}+t^{2}-1}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt t{-\infty}{\frac{t^{2}+2}{t^{3}+t^{2}-1}} & =\lt t{-\infty}{\frac{\frac{t^{2}}{t^{2}}+\frac{2}{t^{2}}}{\frac{t^{3}}{t^{2}}+\frac{t^{2}}{t^{2}}-\frac{1}{t^{2}}}}\\
+ & =\lt t{-\infty}{\frac{1+\frac{2}{t^{2}}}{t+1-\frac{1}{t^{2}}}}\\
+ & =\frac{1+0}{-\infty+1-0}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{\infty}{\frac{x+2}{\sqrt{9x^{2}+1}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{\infty}{\frac{x+2}{\sqrt{9x^{2}+1}}} & =\frac{\lt x{\infty}{x+2}}{\lt x{\infty}{\sqrt{9x^{2}+1}}}\\
+ & =\frac{\lt x{\infty}{1+\frac{2}{x}}}{\lt x{\infty}{\frac{\sqrt{9x^{2}+1}}{\sqrt{x^{2}}}}}\\
+ & =\frac{\lt x{\infty}{1+\frac{2}{x}}}{\lt x{\infty}{\sqrt{9+\frac{1}{x^{2}}}}}\\
+ & =\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{\infty}{\frac{\sin^{2}x}{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{\infty}{\frac{\sin^{2}x}{x}} & =\frac{sin^{2}\infty}{\infty},sin\,range=\left[-1,1\right]\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{\infty}{\tan^{-1}\left(x^{4}-x^{2}\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{\infty}{x^{4}-x^{2}} & =\infty\\
+\lt x{\infty}{\tan^{-1}\left(\infty\right)} & =\frac{\pi}{2}\text{(from the graph of inverse tangent)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{\infty}{e^{-x^{2}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{\infty}{e^{-x^{2}}} & =e^{-\infty^{2}}\\
+ & =\frac{1}{e^{\infty^{2}}}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the vertical and horizontal asymtotes of
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{1}{x-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=-\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{-\infty}{\frac{1}{x-1}} & =\frac{1}{-\infty-1}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=+\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{+\infty}{\frac{1}{x-1}} & =\frac{1}{+\infty-1}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+horizontal asymtote
+\series default
+ is 
+\begin_inset Formula $y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vertical asymtotes, when denominator = 0
+\begin_inset Formula 
+\begin{align*}
+x-1 & =0\\
+x & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+vertical asymtote
+\series default
+ is 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{x}{x-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Horizontal asymtote
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=-\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{-\infty}{\frac{x}{x-1}} & =\lt x{-\infty}{\frac{\frac{x}{x}}{\frac{x}{x}-\frac{1}{x}}}\\
+ & =\lt x{-\infty}{\frac{1}{1-\frac{1}{x}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=+\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{+\infty}{\frac{x}{x-1}} & =\lt x{+\infty}{\frac{\frac{x}{x}}{\frac{x}{x}-\frac{1}{x}}}\\
+ & =\lt x{+\infty}{\frac{1}{1-\frac{1}{x}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+horizontal asymtote
+\series default
+ is 
+\begin_inset Formula $y=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vertical asymtote, when denominator = 0
+\begin_inset Formula 
+\begin{align*}
+x-1 & =0\\
+x & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+vertical asymtote
+\series default
+ is 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{1}{\left(x-1\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Horizontal asymtote
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=-\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{-\infty}{\frac{1}{\left(x-1\right)^{2}}} & =\lt x{-\infty}{\frac{1}{x^{2}-2x+2}}\\
+ & =\lt x{-\infty}{\frac{1}{1-\frac{1}{x}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=+\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{+\infty}{\frac{x}{x-1}} & =\lt x{+\infty}{\frac{\frac{x}{x}}{\frac{x}{x}-\frac{1}{x}}}\\
+ & =\lt x{+\infty}{\frac{1}{1-\frac{1}{x}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+horizontal asymtote
+\series default
+ is 
+\begin_inset Formula $y=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vertical asymtote, when denominator = 0
+\begin_inset Formula 
+\begin{align*}
+x-1 & =0\\
+x & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+vertical asymtote
+\series default
+ is 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{x^{2}}{\left(x-1\right)\left(x-3\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=-\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{-\infty}{\frac{x^{2}}{\left(x-1\right)\left(x-3\right)}} & =\lt x{-\infty}{\frac{x^{2}}{x^{2}-4x+3}}\\
+ & =\lt x{-\infty}{\frac{\frac{x^{2}}{x^{2}}}{\frac{x^{2}}{x^{2}}-\frac{4x}{x^{2}}+\frac{3}{x^{2}}}}\\
+ & =\lt x{-\infty}{\frac{1}{1-\frac{4}{x}+\frac{3}{x^{2}}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=+\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt x{+\infty}{\frac{x^{2}}{\left(x-1\right)\left(x-3\right)}} & =\lt x{+\infty}{\frac{x^{2}}{x^{2}-4x+3}}\\
+ & =\lt x{+\infty}{\frac{\frac{x^{2}}{x^{2}}}{\frac{x^{2}}{x^{2}}-\frac{4x}{x^{2}}+\frac{3}{x^{2}}}}\\
+ & =\lt x{+\infty}{\frac{1}{1-\frac{4}{x}+\frac{3}{x^{2}}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the only 
+\series bold
+horizontal asymtote
+\series default
+ is 
+\begin_inset Formula $y=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vertical asymtote, when denominator = 0
+\begin_inset Formula 
+\begin{align*}
+\left(x-1\right)\left(x-3\right) & =0\\
+x & =1,3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence, the vertical asymtotes are 
+\begin_inset Formula $x=1,x=3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Find the derivative of the function using the definition of derivative.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=5-4x+3x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\lt h0{\frac{f\left(x+h\right)-f\left(x\right)}{h}}\\
+ & =\lt h0{\frac{5-4\left(x+h\right)+3\left(x+h\right)^{2}-5+4x-3x^{2}}{h}}\\
+ & =\lt h0{\frac{5-4x-4h+3\left(x^{2}+2hx+h^{2}\right)-5+4x-3x^{2}}{h}}\\
+ & =\lt h0{\frac{\cancel{5-5-4x+4x+3x^{2}-3x^{2}}+3h^{2}+6hx-4h}{h}}\\
+ & =\lt h0{\frac{3h^{2}+6hx-4h}{h}}\\
+ & =\lt h0{\frac{\cancel{h}\left(3h+6x-4\right)}{\cancel{h}}}\\
+ & =\lt h0{\left(3h+6x-4\right)}\\
+\boldsymbol{f'\left(x\right)} & \boldsymbol{=6x-4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{3}{x-2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\lim_{h\to0}\frac{f\left(x+h\right)-f\left(x\right)}{h}\\
+ & =\lim_{h\to0}\frac{\frac{3}{x+h-2}-\frac{3}{x-2}}{h}\\
+ & =\lim_{h\to0}\left(\frac{3}{x+h-2}*\frac{x-2}{x-2}-\frac{3}{x-2}*\frac{x+h-2}{x+h-2}\right)*\frac{1}{h}\\
+ & =\lim_{h\to0}\frac{3x-6-3x-3h+6}{\left(x+h-2\right)\left(x-2\right)}*\frac{1}{h}\\
+ & =\lim_{h\to0}\frac{\cancel{3x-3x}-3\cancel{h}\cancel{+6-6}}{\left(x+h-2\right)\left(x-2\right)}*\frac{1}{\cancel{h}}\\
+ & =\lim_{h\to0}\frac{-3}{\left(x+h-2\right)\left(x-2\right)}\\
+ & =\frac{-3}{\left(x-2\right)\left(x-2\right)}\\
+\boldsymbol{f'\left(x\right)} & \boldsymbol{=-\frac{3}{\left(x-2\right)^{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt{3x+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\lim_{h\to0}\frac{f\left(x+h\right)-f\left(x\right)}{h}\\
+ & =\lim_{h\to0}\frac{\sqrt{3\left(x+h\right)+1}-\sqrt{3x+1}}{h}\\
+ & =\lim_{h\to0}\frac{\sqrt{3\left(x+h\right)+1}-\sqrt{3x+1}}{h}*\frac{\sqrt{3\left(x+h\right)+1}+\sqrt{3x+1}}{\sqrt{3\left(x+h\right)+1}+\sqrt{3x+1}}\\
+ & =\lim_{h\to0}\frac{3\left(x+h\right)+1-\left(3x+1\right)}{h\sqrt{3\left(x+h\right)+1}+\sqrt{3x+1}}\\
+ & =\lim_{h\to0}\frac{\cancel{3x-3x+1-1}+3h}{h\sqrt{3\left(x+h\right)+1}+\sqrt{3x+1}}\\
+ & =\lim_{h\to0}\frac{3\cancel{h}}{\cancel{h}\sqrt{3\left(x+h\right)+1}+\sqrt{3x+1}}\\
+ & =\frac{3}{\sqrt{3x+1}+\sqrt{3x+1}}\\
+\boldsymbol{f'\left(x\right)} & \boldsymbol{=\frac{3}{2\sqrt{3x+1}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
