@@ -64,7 +64,7 @@ End user <-> DBMS <-> Database Structure
 - Correct approach
 - Know expected use
 
-## Manual FIle System
+## Manual File System
 
 - Organization within folders based on data expected use
 - Adequate for small amount of data

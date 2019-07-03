@@ -1277,7 +1277,7 @@ If
 
 \begin_inset Formula 
 \[
-f+g=\sqrt{x}+\sqrt{4-x^{2}}
+D\left(f+g\right)=0\le x\le2
 \]
 
 \end_inset
@@ -1285,49 +1285,14 @@ f+g=\sqrt{x}+\sqrt{4-x^{2}}
 
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $D\left(f\right)=[0,+\infty)$
+\begin_inset Formula $f-g$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $D\left(g\right)$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-4-x^{2} & >0\\
-x^{2}-4 & <0\\
-\left(x-2\right)\left(x+2\right) & <0\\
-\therefore & \boldsymbol{D\left(g\right)}\boldsymbol{=-2<x<2}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $D\left(f+g\right)=D\left(f\right)\cap D$
-\end_inset
-
-
-\begin_inset Formula $\left(g\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
 \begin_inset Formula 
 \[
-\boldsymbol{D\left(f\cap g\right)=-2<x<2}
+D\left(f-g\right)=0\le x\le2
 \]
 
 \end_inset
@@ -1335,7 +1300,36 @@ x^{2}-4 & <0\\
 
 \end_layout
 
-\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $fg$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D\left(fg\right)=0\le x\le2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D\left(\frac{f}{g}\right)=0\le x<2
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 \begin_inset space ~
 \end_inset

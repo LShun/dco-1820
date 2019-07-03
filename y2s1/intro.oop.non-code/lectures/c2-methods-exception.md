@@ -25,7 +25,7 @@ Examples:
 2. `private`
    1. Opposite of `public`
 3. `static`
-4. ``final`
+4. `final`: constants
 
 ## Method overloading
 
@@ -83,6 +83,7 @@ Think of it as a black box, you only know what to put in, not what's inside.
 **exception handler**: automatically executed when error occurs
 
 Keywords (total 5, 2 are covered in exams):
+
 1. `try`
 2. `catch`
 3. `finally`, located after `try` and `catch`, execute regardless of what happens

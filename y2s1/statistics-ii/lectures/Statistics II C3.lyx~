@@ -110,11 +110,7 @@ Because it's the number at which infinite compounding happens,
 \begin_inset Formula $e^{x}$
 \end_inset
 
-, which means it's derivative and integral are both the same 
-\begin_inset Formula $e^{x}$
-\end_inset
-
-.
+, which means it's derivative and integral are both the same ex.
 \end_layout
 
 \begin_layout Standard
