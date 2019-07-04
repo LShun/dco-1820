@@ -83,8 +83,8 @@ Calculus L2 - LIMITS AND CONTINUITY
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lt}[3]{\lim_{#1\to#2}#3}
-{\lim_{#1\to#2}#3}
+\newcommand{\lt}[3]{\lim_{#1\to#2}\left(#3\right)}
+{\lim_{#1\to#2}\left(#3\right)}
 \end_inset
 
 
@@ -1748,7 +1748,7 @@ Or, you can remember that after 2.7,
 
 \begin_layout Enumerate
 After that are just the digits of the angles 
-\begin_inset Formula $45\text{\textdegree},90\text{°},45\text{°}$
+\begin_inset Formula $45\text{°},90\text{°},45\text{°}$
 \end_inset
 
 (no real reason)
@@ -1915,10 +1915,6 @@ According to the intermediate value theorem, since
 \begin_inset Formula $f\left(c\right)=0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
