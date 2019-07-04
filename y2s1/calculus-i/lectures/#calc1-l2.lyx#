@@ -1795,8 +1795,78 @@ After that are just the digits of the angles
 \begin_inset Formula $e$
 \end_inset
 
- is defined as the value at Maximum, Continuous compounding, 100% growth,
- one time period.
+ is defined as the value at 
+\series bold
+Maximum
+\series default
+,
+\series bold
+ Continuous compounding
+\series default
+, 
+\series bold
+100% growth
+\series default
+, 
+\series bold
+one time period
+\series default
+
+\begin_inset Formula $\left(e\cdot1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Notes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lt x{\infty}{\frac{x^{2}-1}{x^{2}+1}=1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $y=1$
+\end_inset
+
+ is a horizontal asymtote.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt x{\infty}{\left(\frac{1}{x}-2\right)=-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=-2$
+\end_inset
+
+ is a horizontal asymtote.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is continous
 \end_layout
 
 \end_body
