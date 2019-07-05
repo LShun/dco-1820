@@ -19,3 +19,16 @@ C3 Insert Update Delete statements
 C4 - ERD
 
 Create table have foreign key, 6 marks, refer to the lecture notes table
+
+## Assignment
+
+System development methodologies
+
+1. Explan another 2 types of the system development methodologies.
+
+Need to find out 2 system development methodologies, find out the diagrams, and describe the stages/phases of development.
+
+Part II explain two system development methodologies.
+
+Need to talk about 2 strengths
+

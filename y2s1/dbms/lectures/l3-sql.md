@@ -905,5 +905,295 @@ FROM        (SELECT     Sno, FName, LName, Salary
 WHERE       ROWNUM <= 3;
 ```
 
-EXTRA EXERCISE (Homework): 
+EXTRA EXERCISE (Homework):
 
+E01. List all the staff with his/her staff number, staff name and position who work at London.
+
+ANSWER:
+
+```sql
+SELECT  Sno, FName, LName, Position
+FROM    Staff
+WHERE   Bno IN (SELECT Bno FROM Branch WHERE City = 'London');
+```
+
+NOTE: 2 branch where city is London
+
+E02. For each staff, list the staff number, first name, last name, number of property handled for those staff that handles any properties.
+
+```sql
+SELECT  P.Sno, FName, LName, COUNT(Pno) AS Property_Count
+FROM    Staff S, Property_For_Rent P
+WHERE   S.Sno = P.Pno
+GROUP BY P.Sno, FName, LName
+```
+
+E03. For **each** staff, list the staff number, first name, last name, number of property handled for those staff that handles **more than 1 property**.
+
+```sql
+SELECT  P.Sno, FName, LName, COUNT(Pno) AS Property_Count
+FROM    Staff S, Property_For_Rent P
+WHERE   S.Sno = P.Pno
+GROUP BY P.Sno, FName, LName
+HAVING COUNT(Pno) > 1
+```
+
+E04. For each staff, list the staff number, first name, last name for those staff that did not handles any properties.
+
+```sql  **ASK**
+SELECT  S.Sno, FName, LName, COUNT(Pno) AS "Property Handled"
+FROM    Staff S, Property_For_Rent P
+WHERE   S.Sno = P.Pno AND COUNT(Pno) = 0
+GROUP BY S.Sno, FName, LName
+```
+
+ANSWER:
+
+```sql
+SELECT  S.Sno, FName, LName
+FROM    Staff
+WHERE   S.Sno NOT IN (SELECT DISTINCT Sno FROM Property_For_Rent);
+```
+
+ANSWER 2:
+
+```sql
+SELECT      Sno, FName, LName
+FROM        Staff S
+WHERE NOT EXIST (SELECT * FROM Property_For_Rent P WHERE S.Sno = P.Pno);
+```
+
+E05. For each staff, list the staff number, first name, last name, number of property handled for those staff that handles any properties. Arrange your output for number of property handled in descending order.
+
+```sql
+SELECT  P.Sno, FName, LName, COUNT(Pno) AS Property_Count
+FROM    Staff S, Property_For_Rent P
+WHERE   S.Sno = P.Pno
+GROUP BY S.Sno, FName, LName
+ORDER BY COUNT(Pno) DESC;
+```
+
+E06. For **each** staff, list the staff number, first name, last name, number of property handled for those staff that handles **more than 1 property**. Arrange your output for first name in ascending order.
+
+```sql
+SELECT  S.Sno, FName, LName, COUNT(Pno) AS "Property Handled"
+FROM    Staff S, Property_For_Rent P
+WHERE   S.Sno = P.Pno
+GROUP BY S.Sno, FName, LName
+HAVING COUNT(Pno) > 1
+ORDER BY FName DESC
+```
+
+If got each, and also count and sum, at the same time having condition, then must use `HAVING`.
+
+E07. List the renter number, renter name, property number, property address, property owner name, date viewed and comment for property that being viewed.
+
+```sql
+SELECT  R.FName, R.LName, P.Pno, P.Street, P.Area, P.City, P.Pcode, O.FName, O.LName, V.VDate, V.VComment
+FROM    Renter R, Property_For_Rent P, Owner O, Viewing V
+WHERE   V.Rno = R.Rno AND
+        V.Pno = P.Pno AND
+        P.Ono = O.Ono
+
+```
+
+E08. For each branch, list the branch number, branch city and its total monthly salary for all its staff.
+
+```sql
+SELECT      B.Bno, B.City, SUM(S.Salary/12) AS Total_Monthly_Salary
+FROM        Branch B, Staff S
+WHERE       B.Bno = S.Bno
+GROUP BY    S.Bno, B.City
+```
+
+ASK: Can we use `B` instead of `S`? Answer: Yes.
+
+E09. For each branch, list the branch number, branch city and its total monthly salary for all its staff which more than 3000.
+
+```sql
+SELECT      B.Bno, B.City, SUM(S.Salary/12) AS Total_Monthly_Salary
+FROM        Branch B, Staff S
+WHERE       B.Bno = S.Bno
+GROUP BY    B.Bno, B.City
+HAVING      SUM(S.Salary/12) > 3000
+```
+
+E10. List all the staff name and his/her age between the age of 40 to 60 years old and the salary between 5,000 to 20,000.
+
+```sql
+SELECT      FName, LName, TRUNC((SYSDATE - DOB) / 365.25) AS AGE
+FROM        Staff
+WHERE       TRUNC((SYSDATE - DOB) / 365.25) BETWEEN 40 AND 60
+            AND Salary >= 5000 AND
+            Salary <= 20000
+```
+
+Note: `AGE` is a column name, not a formula, therefore, we cannot use it inside `WHERE`
+
+E11. List all the area and city of branch with post code that end with 'H','U','X'.
+
+```sql
+SELECT      Area, City
+FROM        Branch
+WHERE       Pcode LIKE IN ('%H', '%U', '%X')
+```
+
+Question: Can we use `IN`? 
+
+E12. List all staff details with the salary more than or equals to average.
+
+```sql
+SELECT *
+FROM Staff
+WHERE Salary >= (
+            SELECT AVG(Salary)
+            FROM   Staff
+);
+```
+
+E13. How many staff earn more than David Ford. ASK
+
+```sql
+SELECT COUNT(*) AS Staff_Count
+FROM Staff
+WHERE Salary > (
+            SELECT Salary
+            FROM   Staff
+            WHERE  FName = 'David' AND
+                   LName = 'Ford'
+)
+```
+
+E14. Find the different between the higher salary and lowest salary
+
+```sql
+SELECT MAX(Salary) - MIN(Salary) AS Diff
+FROM Staff
+```
+
+Q42
+
+```sql
+INSERT INTO Staff
+VALUES('SG16', 'Alan' 'Brown', '67 Endrick Rd, Glasglow G32XQX', '014-223-3333', 'Assistant', 'M', DATE '1987-05-255', 6300, 'WN848391R', 'B3');
+```
+
+Q43
+
+```sql
+INSERT INTO Staff(Sno, FName, LName, Position, Sex, Salary, Bno) VALUES ('SG44', 'Anne', 'Jones', 'Assistant', 'F', 8910, 'B3');
+```
+
+OR
+
+```sql
+INSERT INTO Staff
+VALUES ('SG44', 'Anne', 'Jones', NULL, NULL, 'Assistant', 'F', NULL, NULL, NULL, 'B3');
+```
+
+Q44 (WON'T COME OUT IN FINAL)
+
+```sql
+INSERT INTO Staff_Handling_Count(Sno, FName, LName, PCount)
+SELECT      P.Sno, FName, LName, COUNT(Pno)
+FROM        Staff S, Property_For_Rent P
+WHERE       S.Sno = P.Sno
+GROUP BY    P.Sno, FName, LName;
+```
+
+Note: Assume Staff_Handling_Count table already created in DreamHome database;
+
+Q45
+
+```sql
+UPDATE      STAFF
+SET         Salary = Salary * 1.03;
+```
+
+Q46
+
+```sql
+UPDATE      STAFF
+SET         Salary = Salary * 1.05;
+WHERE       Position = 'Manager';
+```
+
+NOTE: `AND` is only used in `WHERE`
+
+Q47
+
+```sql
+UPDATE      STAFF
+SET         Position = 'Manager', Salary = 18000
+WHERE       Sno = 'SG14';
+```
+
+Note: Update by reference and delete by reference very popular
+
+Q48
+
+```sql
+UPDATE Staff
+SET    Salary = Salary * 1.05
+WHERE Bno IN (SELECT Bno
+FROM Branch
+WHERE City = 'London');
+```
+
+Q49
+
+```sql
+DELETE FROM Viewing;
+```
+
+Q50
+
+```sql
+DELETE FROM Viewing
+WHERE Pno = 'PG4';
+```
+
+Q51
+
+```sql
+DELETE FROM Viewing
+WHERE Pno IN (SELECT    Pno
+              FROM      Property_For_Rent
+              WHERE     City = 'Glasglow');
+```
+
+Q52
+
+```sql
+ALTER TABLE Branch
+MODIFY      (Tel_No VARCHAR(14));
+```
+
+Note: You can only extend, cannot cut short
+
+Q53
+
+```sql
+ALTER TABLE Branch
+ADD (Branch_Email VARCHAR(50));
+```
+
+Q54
+
+```sql
+ALTER TABLE Branch
+DROP COLUMN Fax_No;
+```
+
+Q55
+
+```sql
+ALTER TABLE Staff
+MODIFY      Position SET DEFAULT 'Assistant';
+```
+
+Q56
+
+```sql
+DROP TABLE Branch;
+```

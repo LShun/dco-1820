@@ -1,3 +1,10 @@
+## Exam Date
+
+1. Week 7 Tuesday, 9/7/19
+2. DKZ - DCO2
+3. DKW - DCM2, DCN2, DST2
+4. 6.00-7.30pm
+
 Chapter 2
 Fact Gathering Techniques (High confidence)
 
@@ -22,7 +29,13 @@ Non-functional requirements:
 
 Q3: Fact finding technique - C3
 
-b) Chapter 4: DFD, Context Diagram, ERD
+b) Chapter 4: **DFD**, Context Diagram, ERD
+
+To Draw DFD:
+
+1. Context diagram
+2. Diagram 0 DFD
+3. Diagram 1 DFD
 
 Chapter 5:
 
