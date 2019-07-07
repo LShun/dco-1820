@@ -17,6 +17,13 @@ public class Airplane {
          */
     }
 
+    public Airplane(String id, double price, int yearOfPurchased, int numOfPassenger) {
+        this.id = id;
+        this.price = price;
+        this.yearOfPurchased = yearOfPurchased;
+        this.numOfPassenger = numOfPassenger;
+    }
+
     public void setId(String id) {
         this.id = id;
     }

@@ -74,6 +74,24 @@ GROUP BY    D.department_id, D.department_name
 HAVING      (Total_Employees > 5);
 ```
 
+Alternative answer:
+
+Subquery -- 
+
+```sql
+SELECT department_id, department_name, Employees
+FROM	(	SELECT	D.department_id,
+         			D.department_name, 		
+         			COUNT(*) AS Employees
+					FROM	EMPLOYEES E, DEPARTMENTS D
+                    WHERE	(E.department_id = D.department_id)
+         			GROUP BY	D.department_id, D.department_name
+					)
+WHERE	Employees >= 5;
+```
+
+Put it simply, the inner subquery fetches all the departments with their respective employee counts. The outer query filters the outputs from the inner subquery by only selecting those with employee count more than 5.
+
 22.	How many employees earn more salary than John Russel?
 
 ```sql

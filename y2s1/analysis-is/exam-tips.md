@@ -5,6 +5,8 @@
 3. DKW - DCM2, DCN2, DST2
 4. 6.00-7.30pm
 
+COVER UNTIL TUTORIAL 5
+
 Chapter 2
 Fact Gathering Techniques (High confidence)
 

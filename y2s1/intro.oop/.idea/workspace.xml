@@ -2,39 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8165e05c-5298-4328-b62e-adf08b918bc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dbms/exam-tips.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dbms/lectures/l4-dm.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dbms/tutorial/t4-v2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dbms/tutorial/t5-functions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practical4/CourseDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practical4/Q5/Registration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practical4/Q5/RegistrationTest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../analysis-is/exam-tips.md" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis-is/exam-tips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis-is/tutorials/t3-ans.md" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis-is/tutorials/t3-ans.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/lectures/l3-sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/lectures/l3-sql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/practicals/practical-4/insert_food_order.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/practicals/practical-4/insert_food_order.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/practicals/practical-4/insert_menu.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/practicals/practical-4/insert_menu_PRAC_DONE.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/practicals/practical-4/insert_order_list.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/practicals/practical-4/insert_order_list.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/practicals/practical-4/practical 4.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/practicals/practical-4/practical 4.doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/tutorial/t3sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/tutorial/t3sql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/appendix/chapter-1/ComputeLoanUsingInputDialog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/appendix/chapter-1/MonetaryUnits.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/appendix/chapter-1/c1ApA2pg40.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/appendix/chapter-1/c1ApA2pg49.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/appendix/chapter-1/c1ApA2pg49.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/assignment.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/lectures/1-intro-oop.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/lectures/c2-methods-exception.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/lectures/c3-arrays.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/practicals/practical-1/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/practicals/practical-1/testing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/practicals/practical-2/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/run-single-class.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/tutorials/t1-intro-oop.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/tutorials/t2-methods.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/tutorials/t3-arrays.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oop/tutorials/t4-objects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../analysis-is/past-year/past-year-1803.md" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis-is/past-year/past-year-1803.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dbms/exam-tips.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/exam-tips.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dbms/tutorial/t5-functions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/tutorial/t5-functions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../intro.oop.non-code/tutorials/t4-objects.md" beforeDir="false" afterPath="$PROJECT_DIR$/../intro.oop.non-code/tutorials/t4-objects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practical4/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practical4/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Practical4/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Practical4/Course.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,61 +30,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Practical4/StudentQ3Test.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/CarType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <folding>
+                <element signature="e#409#410#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Course.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/P4Q5Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="272">
+              <caret line="16" column="103" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/Registration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+              <folding>
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/Owner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+              <folding>
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Tutorial4/AirplaneDriver.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/RegistrationTest">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#1472#1473#0" expanded="true" />
-              </folding>
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -152,9 +137,17 @@
         <option value="$PROJECT_DIR$/src/test/java/Practical4/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/Practical4/Question.java" />
         <option value="$PROJECT_DIR$/src/main/java/Practical4/Airplane.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Practical4/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tutorial4/AirplaneDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/CourseDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/CarType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Q5/Owner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Q5/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Q5/Registration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Q5/CarType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Q5/P4Q5Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Practical4/Q5/RegistrationTest" />
       </list>
     </option>
   </component>
@@ -165,20 +158,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="276" />
-    <option name="y" value="11" />
-    <option name="width" value="1271" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -187,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,6 +206,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Practical4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intro.oop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intro.oop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Practical4" type="462c0819:PsiDirectoryNode" />
+              <item name="Q5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intro.oop" type="b2602c69:ProjectViewProjectNode" />
@@ -271,18 +261,47 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Practical5" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="intro.oop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intro.oop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intro.oop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intro.oop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intro.oop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intro.oop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Practical4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intro.oop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intro.oop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Practical4" type="462c0819:PsiDirectoryNode" />
+              <item name="Q5" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/dco1820" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -323,12 +342,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentQ3Test">
+  <component name="RunManager" selected="Application.P4Q5Driver">
+    <configuration name="CourseDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practical4.CourseDriver" />
+      <module name="intro.oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practical4.Q5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P4Q5Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practical4.Q5.P4Q5Driver" />
+      <module name="intro.oop" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/src/main/java/Practical4/Q5/RegistrationTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practical4.Q5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentQ3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intro.oop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practical4.*" />
+          <option name="PATTERN" value="Practical4.Q5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -343,7 +390,7 @@
       <module name="intro.oop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practical4.*" />
+          <option name="PATTERN" value="Practical4.Q5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -358,7 +405,7 @@
       <module name="intro.oop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practical4.*" />
+          <option name="PATTERN" value="Practical4.Q5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -370,44 +417,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest.setName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intro.oop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practical4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practical4" />
-      <option name="MAIN_CLASS_NAME" value="Practical4.StudentTest" />
-      <option name="METHOD_NAME" value="setName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="createEmployeeObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intro.oop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practical4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Practical4" />
-      <option name="MAIN_CLASS_NAME" value="Practical4.createEmployeeObjectTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.CourseDriver" />
+      <item itemvalue="Application.P4Q5Driver" />
+      <item itemvalue="JUnit.StudentQ3Test" />
+      <item itemvalue="JUnit.StudentTest" />
+      <item itemvalue="JUnit.StudentTest.addQuiz" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P4Q5Driver" />
+        <item itemvalue="Application.CourseDriver" />
         <item itemvalue="JUnit.StudentQ3Test" />
         <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="JUnit.StudentTest.addQuiz" />
-        <item itemvalue="JUnit.StudentTest.setName" />
-        <item itemvalue="JUnit.createEmployeeObjectTest" />
       </list>
     </recent_temporary>
   </component>
@@ -426,6 +449,8 @@
       <workItem from="1561786073920" duration="7188000" />
       <workItem from="1561819571442" duration="727000" />
       <workItem from="1562055180349" duration="21000" />
+      <workItem from="1562376176501" duration="11631000" />
+      <workItem from="1562472883426" duration="4558000" />
     </task>
     <servers />
   </component>
@@ -462,7 +487,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21739000" />
+    <option name="totallyTimeSpent" value="37928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,9 +499,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="276" y="11" width="1271" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17588769" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16565809" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -485,17 +511,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32784185" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.66187596" visible="true" weight="0.32784185" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.39868203" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3294893" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32608697" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" weight="0.3294893" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.33812407" side_tool="true" visible="true" weight="0.32784185" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32107022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -693,20 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -727,10 +739,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Tutorial4/AirplaneDriver.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+          <folding>
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/CourseDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="103" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/Owner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+          <folding>
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/CarType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/P4Q5Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Practical4/Q5/RegistrationTest">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>

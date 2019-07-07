@@ -10,6 +10,8 @@ Mid term test
 - UPDATE
 - DELETE
 
+- Week 8
+
 1 QUESTION - Drawing ERD diagram
 
 Altogether 50 marks
