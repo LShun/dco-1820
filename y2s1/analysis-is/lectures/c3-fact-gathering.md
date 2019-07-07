@@ -93,7 +93,123 @@ Good choice when:
 
 - **Better acceptance.** More acquainted with intended implementation audience.
 
-- **Environmental conditions.** Able to understand environmental factors that can affect implementation (dirt, dust).
+- **Environmental conditions.** Able to understand environmental factors that can affect implementation (dirt, dust). 
 
-   
+#### Disadvantages of Observation
+
+- **Time consuming**. 
+- **Need prior understanding of procedure.**
+- **Subconscious observation**. Observation might be biased due to local environment and past experiences.
+- **Hawthorne Effect**. Workers nervous under observation
+
+### Analysis of Existing Documents
+
+1. Collect documents from current system
+2. Make relevant copies
+3. Make analysis on them
+
+#### Advantages
+
+- **Detailed description of procedures.** More accurate and verbose compared to interviewing or questionnaire.
+- **Better understanding of procedures.**
+- **Guide to current practice.** 
+
+#### Disadvantages
+
+- **Not up to date.** System documentation might have implicit changes overtime.
+- **Document procedures modified**. Some procedures might have been changed/modified over the course of time.
+- **Current practice not following documentation.**
+- **Need careful selection of documents.** Requires good selection.
+
+### Joint Application Development (JAD)
+
+- **Definition**: A workshop for users to explore requirements, issues, and problems.
+- **Purpose:** Allow IT personnel to work with users to learn about requirements.
+- **Participants**: Headed by project leader
+- **Documentation:** Proceedings recorded
+
+### Background Research
+
+- Review journals, periodicals, and books with information relevant to task
+- Attend meetings & seminars
+- Formal and informal discussion
+- Visits to similar sites
+
+### Prototyping Approach
+
+- **Definition**. A model containing key features of the project, create using a 4GL or CASE tool.
+- **Purpose.** Allows user testing & feedback to know if requirements are met.
+- **Advantage: Speed**. Can be modified quickly.
+- **Advantage 2: Productivity.** Can be quickly developed into working program
+- **Steps**
+  1. Define Requirements
+  2. Build/modify prototype
+  3. Use & Test prototype
+  4. Check if user is okay with prototype
+     - If YES, continue
+     - otherwise, go to beginning
+  5. System Requirement Specification
+  6. System Design
+- Steps 1-4 is aka **System Analysis**
+
+## Functional Requirements
+
+- Describe functionality or services expected from the system.
+- Depends on:
+  - Software used
+  - Requirements
+- Examples:
+  - **Storage requirements**. Fast retrieval & entry.
+  - **User interface requirements** Automatic entry of data.
+  - **Processing requirements.** Automatic calculation.
+  - **Control requirements.** Input safeguards.
+
+## Non-functional requirements
+
+- Not directly related to a function.
+- Describes features, constraints, and characteristics of system.
+
+### Examples
+
+#### Interface with other systems
+
+- Receive & send information between systems.
+
+#### Audit Requirements
+
+- **Audit trail**. Records significant information on transactions.
+- Content must be agreed and defined in non-functional requirements. (Formatting is part of non-functional requirements).
+
+#### Legal issues
+
+- Support industry-wide legislation (e.g.: Data Protection Act)
+- Legislation might require users to satisfy requirements
+- The capability of the software to handle such needs is also part of non-functional requirements.
+
+#### Archiving, backup, and recovery
+
+- Backup and recovery routines
+  - Make copy in anticipation of future failure.
+  - Also part of non-functional requirements, as:
+    - it is not specific to any part of the system
+    - the method, and interval needs to be specified by the user
+- Archiving facilities
+  - Moving data from primary storage to long-term storage
+  - Purpose: to provide legally acceptable business history without filling up usable space.
+  - Length of retention depends on legal obligations and business needs
+
+#### Usability
+
+- **Definition**: How easy it is for the user to use the system and perform a task.
+- **Measuring/Describing Usability:**
+  - Learnability
+  - Efficiency
+  - Memorability
+  - Errors
+  - Satisfaction
+
+#### Reliability
+
+- Definition: A measure to know a system's ability to perform without failure.
+- Important because failures bring hardships to users
 

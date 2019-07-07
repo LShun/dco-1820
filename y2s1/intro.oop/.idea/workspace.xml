@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8165e05c-5298-4328-b62e-adf08b918bc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practical4/CourseDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practical4/Q5/Registration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practical4/Q5/RegistrationTest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis-is/exam-tips.md" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis-is/exam-tips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../analysis-is/past-year/past-year-1803.md" beforeDir="false" afterPath="$PROJECT_DIR$/../analysis-is/past-year/past-year-1803.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/exam-tips.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/exam-tips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbms/tutorial/t5-functions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dbms/tutorial/t5-functions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../intro.oop.non-code/tutorials/t4-objects.md" beforeDir="false" afterPath="$PROJECT_DIR$/../intro.oop.non-code/tutorials/t4-objects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practical4/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practical4/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tutorial4/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Practical4/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Practical4/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/y2s1.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
