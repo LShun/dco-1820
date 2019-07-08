@@ -75,7 +75,7 @@ Environmental conditions
 
 E: Customer
 Data store: Customer, order
-Processes: 
+Processes:
 
 - 2.1 (Receive customized bread order details/requests)
 - 2.2 (Verify customer information)
@@ -83,3 +83,14 @@ Processes:
 - 2.4 (Generate order confirmation note)
 
 Entities: Customer, purchase, delivery staff
+
+### Diagrams
+
+DFD
+
+![past-year-paper-1-dfd](adis-past-year-pics/past-year-paper-1-dfd.png)
+
+ERD
+
+![past-year-paper-1-erd](adis-past-year-pics/past-year-paper-1-erd.png)
+
