@@ -1838,7 +1838,7 @@ Solve for
 n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}\\
  & =\frac{\left(2.5758\right)^{2}*0.02*0.98}{0.005^{2}}\\
  & =5201.64\\
-\boldsymbol{n} & =\boldsymbol{5202\,samples}
+\hline \boldsymbol{n} & =\boldsymbol{5202\,samples}
 \end{align*}
 
 \end_inset
@@ -1856,6 +1856,49 @@ A random sample of 100 items taken from a large batch of articles of 2696
  Set up 95% confidence interval for the proportion of defective items.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=100,N=2696,\hat{p}=\frac{5}{100}=0.05,\hat{q}=0.95,\alpha=0.05
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{\frac{0.05}{2}}=1.96
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+E & =1.96*\sqrt{\frac{0.05\cdot0.95}{100}}*\sqrt{\frac{2696-100}{2096-1}}\\
+ & =0.0427
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0.05-0.0427 & <p<0.05+0.0427\\
+0.0073 & <p<0.0927
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Example
 \end_layout
@@ -1866,6 +1909,59 @@ A sample survey conducted in a certain town in 1997 showed that 200 families
  of RM 9.12.
  Construct a 99% confidence interval for the actual average weekly food
  expenditures of the 1,000 families in this town.
+\begin_inset Formula 
+\[
+\bar{X}=85.44,n=200,1000,\sigma=9.12,\alpha=0.01
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}} & =Z_{0.005}\\
+ & =2.5758
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{0.005}*\frac{\sigma}{\sqrt{n}}*\sqrt{\frac{1000-200}{1000-1}}\\
+ & =2.5758*\frac{9.12}{\sqrt{200}}*\sqrt{\frac{1000-200}{1000-1}}\\
+ & =1.486
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+85.44-1.486<\mu<85.44+1.486
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+83.954<\mu<86.926
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

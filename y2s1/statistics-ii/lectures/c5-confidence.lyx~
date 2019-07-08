@@ -1738,7 +1738,7 @@ Find all the required elements to substitute into the required formula
 Formula:
 \begin_inset Formula 
 \begin{align*}
-n & =\left[\frac{Z_{\frac{\alpha}{2}}\cdot\sigma}{E}\right]^{2}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}
 \end{align*}
 
 \end_inset
@@ -1751,9 +1751,10 @@ Parts
 \begin_inset Formula 
 \begin{align*}
 n & =?\\
-Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.9}{2}\right)=P\left(Z>0.05\right)=1.6449\\
-\sigma & =35\\
-E & =25
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.01}{2}\right)=P\left(Z>0.005\right)=2.5758\\
+\hat{p} & =0.02\\
+\hat{q} & =0.98\\
+E & =0.005
 \end{align*}
 
 \end_inset
@@ -1770,10 +1771,10 @@ Solve for
 
 \begin_inset Formula 
 \begin{align*}
-n & =\left[\frac{Z_{\frac{\alpha}{2}}\cdot\sigma}{E}\right]^{2}\\
- & =\left[\frac{1.6449\cdot35}{25}\right]^{2}\\
- & =5.3031\\
-\boldsymbol{n} & \boldsymbol{=6\,samples}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}\\
+ & =\frac{\left(2.5758\right)^{2}*0.02*0.98}{0.005^{2}}\\
+ & =5201.64\\
+\boldsymbol{n} & =\boldsymbol{5202\,samples}
 \end{align*}
 
 \end_inset
@@ -1792,6 +1793,59 @@ Suppose that we want to estimate what proportion of all drivers exceed the
  most 0.04 if the desired level of confidence is (a) 95% (b) 99%
 \end_layout
 
+\begin_layout Enumerate
+Find all the required elements to substitute into the required formula
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formula:
+\begin_inset Formula 
+\begin{align*}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Parts
+\begin_inset Formula 
+\begin{align*}
+n & =?\\
+Z_{\frac{\alpha}{2}} & =P\left(Z>\frac{1-0.01}{2}\right)=P\left(Z>0.005\right)=2.5758\\
+\hat{p} & =0.02\\
+\hat{q} & =0.98\\
+E & =0.005
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+n & =\frac{\left(Z_{\frac{\alpha}{2}}\right)^{2}*\hat{p}*\hat{q}}{E^{2}}\\
+ & =\frac{\left(2.5758\right)^{2}*0.02*0.98}{0.005^{2}}\\
+ & =5201.64\\
+\hline \boldsymbol{n} & =\boldsymbol{5202\,samples}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Example
 \end_layout
@@ -1800,6 +1854,24 @@ Example
 A random sample of 100 items taken from a large batch of articles of 2696
  items contains 5 defective items.
  Set up 95% confidence interval for the proportion of defective items.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=100,N=2696,\hat{p}=\frac{5}{100}=0.05,\hat{q}=0.95,\alpha=0.05
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

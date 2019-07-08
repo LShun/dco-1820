@@ -1,0 +1,3023 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Statistics II C6: Hypothesis Testing
+\end_layout
+
+\begin_layout Section
+Example 1 (Check with lecturer)
+\end_layout
+
+\begin_layout Enumerate
+For each of the statement given below, identify 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The mean height of females in a country is 156cm.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu=156cm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu\neq156cm$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The mean annual household income is at least $12,000.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\ge\$12000$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu<\$12000$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The mean life of a car battery is not more than 40 months.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\le40months$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu>40months$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The mean life of a car battery is above 40 months.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu>40months$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu\le40months$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A television executive claims that the majority of teenagers are in favor
+ of sport shows on television 
+\series bold
+(Something wrong?)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:p>0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:p\le0.5$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A maximum of 3% of mailing handled by mail order companies will be returned
+ as “address unknown” or “not known at this address”.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:p\le0.03$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:p>0.03$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A company markets car tyres.
+ Their lives are normally distributed with a 
+\series bold
+mean of 40,000 km
+\series default
+ and 
+\series bold
+standard deviation of 3,000 km
+\series default
+.
+ A change in the production process is believed to result in a better product.
+ A 
+\series bold
+test sample of 64 new tyres
+\series default
+ has a 
+\series bold
+mean life of 41,200 km
+\series default
+.
+ Can you conclude that the new product is 
+\series bold
+significantly better
+\series default
+ than the current one? (
+\begin_inset Formula $α$
+\end_inset
+
+ = 0.05)
+\end_layout
+
+\begin_layout Paragraph
+Answer:
+\begin_inset Formula 
+\[
+\mu_{o}=40000,\sigma=3000,n_{n}=64,\bar{X}_{n}=41200,S=0.05,D.O.F=64-1=63
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Identify the specific claim or hypothesis to be tested.
+ State the null and alternative hypothesis.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Specific claim/hypothesis: The mean life of the new product is significantly
+ better than the current one.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}$
+\end_inset
+
+(null hypothesis) 
+\begin_inset Formula $:\mu_{n}>\mu_{o}$
+\end_inset
+
+ (mean life of the new tyres is NOT better than the old tyres)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}$
+\end_inset
+
+(alternative hypothesis): 
+\begin_inset Formula $\mu_{n}\le\mu_{o}$
+\end_inset
+
+(mean life of the new tyres is better than the old tyres)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Select the distribution (test statistic) to use.
+ (Note: this book most probably inverted step 2 and 3, you can't find the
+ critical value without first knowing the type of test)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Right-tailed test.
+ 
+\series default
+(take note we are only testing the right tail, because we are 95% confident
+ it is better.
+ Testing the left tail is not done because the left tail indicates that
+ it is 
+\begin_inset Quotes eld
+\end_inset
+
+worse
+\begin_inset Quotes erd
+\end_inset
+
+, as in negative standard deviations away)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the significance level 
+\begin_inset Formula $α$
+\end_inset
+
+ and the critical value.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+significance level 
+\begin_inset Formula $α$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z_{\frac{\alpha}{2}}=Z_{0.05}=1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Determine the rejection and non-rejection regions.
+ Set up a decision rule based on the critical value.
+ Draw a distribution curve if necessary.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Determine the rejection and non-rejection regions.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Non-rejection (null hypothesis is TRUE, take note null hypothesis is the
+ hypothesis we hope to reject, that means we want it to be wrong): 
+\begin_inset Formula 
+\[
+Z_{0.05}\le1.6449
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection (alternative hypothesis is TRUE):
+\begin_inset Formula 
+\[
+Z_{0.05}>1.6449
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Decision rule
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+At 
+\begin_inset Formula $\alpha=0.05,$
+\end_inset
+
+critical value = 
+\begin_inset Formula $Z_{\alpha}$
+\end_inset
+
+=
+\begin_inset Formula $Z_{0.05}=1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Distribution curve
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename lyx-img/c6ex2.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Calculate the value of the test statistic
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\bar{X}-\mu_{o}}{\frac{\sigma}{\sqrt{n}}}\\
+ & =\frac{41200-4000}{\frac{3000}{\sqrt{64}}}\\
+ & =3.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Make a decision (reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ or fail to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ ).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=3.2<1.6449$
+\end_inset
+
+, the computed value of Z falls in the rejection region.
+ Therefore, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and accept 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+.
+ 
+\series bold
+Hence, we conclude that the new tyres is significantly better than the old
+ tyres.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Check with lecturer)
+\end_layout
+
+\begin_layout Standard
+The expected lifetime of electric light bulbs produced by a given process
+ was 1500 hours.
+ To test a new batch, a sample of 40 was taken which showed a mean lifetime
+ of 1410 hours.
+ The standard deviation is 90 hours.
+ Test the hypothesis that the mean lifetime of the electric light bulbs
+ has not changed, using a level of significance of 0.05.
+\end_layout
+
+\begin_layout Paragraph
+Answer
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu=1500,n=40,\bar{X}_{n}=1410,S=90,\alpha=0.05
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We are using a 
+\series bold
+two-tailed test
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{0.05}{2}} & =Z_{0.025}\\
+\boldsymbol{Z_{0.025}} & \boldsymbol{=1.96}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu=1500$
+\end_inset
+
+ (mean lifetime of the electric light bulbs has not changed)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu\neq1500$
+\end_inset
+
+ (mean lifetime of the electric light bulbs has changed)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{1410-1500}{\frac{90}{\sqrt{40}}}\\
+ & =-6.325
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-6.325<-1.96,$
+\end_inset
+
+the computed value of Z-score falls inside the rejection region.
+ Therefore, we reject the 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ and conclude that at 5% level of significance, there is some evidence to
+ suggest that the mean lifetime of the electric light bulbs has changed.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A large retailer wants to determine whether the mean income of families
+ living within two miles of a proposed building site exceeds RM14400.
+ What can he conclude at the 0.05 level of significance, if the mean income
+ of a random sample of 60 families living within two miles of the proposed
+ site is RM14524 and the standard deviation is RM763?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu=14400;n=60,\bar{X}=14524,S=763,\alpha=0.05
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We are using a 
+\series bold
+right-tail test.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Since 
+\begin_inset Formula $n>30$
+\end_inset
+
+, we can use a Normal distribution even if the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is not known.
+\begin_inset Formula 
+\[
+Z_{0.05}=1.6449
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Null hypothesis
+\series default
+: The mean income of families living within two miles of a proposed building
+ site 
+\series bold
+does not
+\series default
+ exceeds RM14400.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\le14400$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Alternative hypothesis: 
+\series default
+The mean income of families living within two miles of a proposed building
+ site exceeds RM14400
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu>14400$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\bar{X}-\mu}{\frac{S}{\sqrt{n}}}\\
+ & =\frac{14524-14400}{\frac{763}{\sqrt{60}}}\\
+ & =1.259
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=1.259<1.6449$
+\end_inset
+
+, the computed value of Z-score falls inside the non-rejection region.
+ Therefore, there is insufficient evidence to conclude that the mean income
+ of families living within two miles of a proposed building site exceeds
+ RM14400.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+It is thought that a certain Normal population has a mean of 1.6.
+ A sample of 50 gives a mean of 1.51 and a standard deviation of 0.3.
+ Does this provide evidence, at the 5% level, that the population mean is
+ less than 1.6?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu=1.5,\bar{X}=1.51,S=0.3,n=50
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We are using a 
+\series bold
+left-tail test
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n>30$
+\end_inset
+
+, we can use 
+\begin_inset Formula $Z-score$
+\end_inset
+
+ to estimate
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-Z_{\alpha}=-Z_{0.05}=-1.6449
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The rejection region is: 
+\begin_inset Formula $Z<-1.6449$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Null hypothesis, 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+: 
+\series default
+The population mean is more or equal to 1.6.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\ge1.6$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Alternate hypothesis, 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+: 
+\series default
+The population mean is less than 1.6.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu<1.6$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\bar{X}-\mu}{\frac{S}{\sqrt{n}}}\\
+ & =\frac{1.51-1.6}{\frac{0.3}{\sqrt{50}}}\\
+ & =-2.121
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Since 
+\begin_inset Formula $Z=-2.121<1.6$
+\end_inset
+
+, we reject the null hypothesis, 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at the 5% level of significance, and conclude that the population mean
+ is less than 1.6.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+The measured lifetimes of a sample of 20 electronic components gave an average
+ of 1250h, with a sample standard deviation of 96h.
+ Assuming that the lifetime has a normal distribution, test the hypothesis
+ that the mean lifetime of the population is not 1300h.
+ (
+\begin_inset Formula $α$
+\end_inset
+
+ = 0.05 ).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=20,\bar{X}=1250,S=96,\alpha=0.05,D.O.F.=19,\mu_{0}=1300$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We are using a 
+\series bold
+two-tail test.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n<30$
+\end_inset
+
+, but the distribution is still normal, we can use a 
+\begin_inset Formula $t-distribution$
+\end_inset
+
+ to test.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t_{\frac{\alpha}{2};n-1}=t_{0.025;19}=2.093$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The rejection region is 
+\begin_inset Formula $T<-2.093,T>-2.093$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ , the mean lifetime of the population is 1300h.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu=1300$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}$
+\end_inset
+
+, the mean lifetime of the population is not 1300h.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu>1300,\mu<1300$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\bar{X}-\mu_{0}}{\frac{S}{\sqrt{n}}}\\
+ & =\frac{1250-1300}{\frac{96}{\sqrt{20}}}\\
+ & =-2.33
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $T=-2.33\neq2.093$
+\end_inset
+
+, there is enough evidence to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at the 
+\begin_inset Formula $5\%$
+\end_inset
+
+ level of confidence.
+ Therefore, we conclude, at 5% level of confidence, the mean lifetime of
+ the electronic components is not 1300h.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+The following data were gathered from a random sample of 11 items.
+ Use these data and α = 0.05 to test the claim that it come from a normally
+ distributed population with mean greater than 1160
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1200,1175,1080,1275,1201,1387,1090,1280,1400,1287,1225
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+n=11,\alpha=0.05,\bar{X}=\frac{\sum x}{n}=1236.36,S^{2}=10776.855
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, the normally distributed population comes from a mean not greater than
+ 1160.
+ 
+\begin_inset Formula $H_{0}:\mu\le1160$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}$
+\end_inset
+
+,the normally distributed population comes from a mean greater than 1160.
+\begin_inset Formula $H_{1}:\mu>1160$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Right-tailed test
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Z_{a}=Z_{0.05}=1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Decision rule: 
+\begin_inset Formula $t_{0.05;11-1}=t_{0.05;10}=1.812$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $T>1.812$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\bar{X}-\mu_{o}}{\frac{S}{\sqrt{n}}}\\
+ & =\frac{1236.36-1160}{\sqrt{\frac{10776.855}{11}}}\\
+ & =2.440
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $T=2.440>1.812$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, and conclude that at the 5% level of significance, there is some evidence
+ to suggest that the population mean is greater than 1160.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A sample of 40 observations is selected from one population with standard
+ deviation 5.
+ The sample mean is 102.
+ A sample of 50 observations is selected from a second population with standard
+ deviation 6.
+ The sample mean is 99.
+ Test the hypothesis that the two populations having the same mean using
+ 
+\begin_inset Formula $α$
+\end_inset
+
+ = 0.04
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{1}=40,\sigma_{1}=5,\bar{X}_{1}=102
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{2}=50,\sigma_{2}=6,\bar{X}_{2}=99
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha=0.04
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{1}-\mu_{2}=0$
+\end_inset
+
+ (population having the same mean)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{1}-\mu_{2}\neq0$
+\end_inset
+
+ (population DO NOT having same mean)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Two-tail distribution
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.04$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Z_{\frac{a}{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{0.02}=2.0537
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region : 
+\begin_inset Formula $Z>2.0537$
+\end_inset
+
+ or 
+\begin_inset Formula $Z<-2.0537$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\left|102-99\right|-0}{\sqrt{\frac{5^{2}}{40}+\frac{6^{2}}{50}}}\\
+ & =2.587
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=2.587>2.0537$
+\end_inset
+
+, we can reject the 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and conclude that there is some evidence to show that the mean of both
+ the population are not the same.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Example 9 A sample of 40 homes sold recently in Rawang revealed that the
+ mean length of ownership was 7.6 years, with a standard deviation of 2.3
+ years.
+ A sample of 55 homes in Ijok revealed that the mean length of ownership
+ was 8.1 years, with a standard deviation of 2.9 years.
+ At the 0.05 significance level, can we conclude that the Rawang residents
+ owned their homes for a shorter period of time?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{X}_{R}=7.6,S_{R}=2.3,n_{R}=40,\bar{X_{I}}=8.1,S_{I}=2.9,n_{I}=55,\alpha=0.05
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Identify the specic claim or hypothesis to be tested.
+ State the null and alternative hypothesis.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\ge7.6$
+\end_inset
+
+ (the Rawang residents DO NOT owned their homes for a shorter period of
+ time)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu<7.6$
+\end_inset
+
+ (the Rawang residents owned their homes for a shorter period of time)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Select the distribution (test statistic) to use.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tailed test.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the signicance level 
+\begin_inset Formula $α$
+\end_inset
+
+ and the critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+significance level, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z_{0.05}=-1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Determine the rejection and non-rejection regions.
+ Set up a decision rule based on the critical value.
+ Draw a distribution curve if necessary.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z<-1.6449$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $Z\ge-1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate the value of the test statistic
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{7.6-8.1}{\sqrt{\frac{2.3^{2}}{40}+\frac{2.9^{2}}{55}}}\\
+ & =-0.94
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Make a decision
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-0.94>-1.6449$
+\end_inset
+
+, we can conclude that we cannot reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, hence, there is insufficient evidence to conclude that the Rawang residents
+ owned their homes for a shorter period of time.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Exercise
+\end_layout
+
+\begin_layout Standard
+Example 10 Two kinds of a new plastic material are to be compared for strength.
+ From tensile strength measurements of 10 similar pieces of each type, the
+ sample averages and standard deviations were as follows: 
+\begin_inset Formula 
+\[
+\bar{X_{1}}=78.3,S_{1}=5.6,\bar{X}_{2}=84.2,S_{2}=6.3
+\]
+
+\end_inset
+
+ Assume both new plastic materials having same variances.
+ Test the hypothesis that the two kinds of a new plastic material are equal
+ in mean strengths using 
+\begin_inset Formula $α=0.05$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{1}-\mu_{2}=0$
+\end_inset
+
+ (two kinds of a new plastic material are equal in mean strengths)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{1}-\mu_{2}\neq0$
+\end_inset
+
+ (two kinds of a new plastic material are NOT equal in mean strengths)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Two-tailed test
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t_{\frac{0.05}{2};10+10-2}=t_{0.025;18}=2.101$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $T>2.101$
+\end_inset
+
+ or 
+\begin_inset Formula $T<-2.101$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $T=2.101$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{p} & =\sqrt{\frac{\left(n_{1}-1\right)S_{1}^{2}+\left(n_{2}-1\right)S_{2}^{2}}{n_{1}+n_{2}-2}}\\
+ & =\sqrt{\frac{9*5.6^{2}+9*6.3^{2}}{20-2}}\\
+ & =5.960
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\left(78.3-84.2\right)-0}{5.960*\sqrt{\frac{1}{10}+\frac{1}{10}}}\\
+ & =\text{−}2.214
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $T=-2.214<2.101$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ Therefore, we have enough evidence to conclude that, at 5% significance,
+ the two kinds of a new plastic material are not equal in mean strengths.
+\end_layout
+
+\begin_layout Section
+Exercise
+\end_layout
+
+\begin_layout Standard
+Following the changes in the production of engineering parts in a manufacturing
+ company, a new training scheme has been introduced.
+ Before the first ten employees began the scheme their output in an hour
+ was noted and following completion of training, further data were taken
+ of an hour’s production.
+ The following table is available.
+\end_layout
+
+\begin_layout Standard
+TABLE HERE
+\end_layout
+
+\begin_layout Standard
+Is there any evidence from the above data suggested that there has been
+ a significant improvement in hourly output? (Use 5% significance level)
+\end_layout
+
+\begin_layout Enumerate
+Find all the relevant details & select hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S_{D}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{D} & =\sqrt{\frac{\sum D_{i}^{2}-\frac{\left(\sum D_{i}\right)^{2}}{n}}{n-1}}\\
+ & =\sqrt{\frac{23-\frac{\left(-11\right)^{2}}{10}}{10-1}}\\
+ & =1.1005
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\bar{D} & =\frac{\sum D_{i}}{n}\\
+ & =\frac{-11}{10}\\
+ & =-1.1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{B}-\mu_{A}\ge0$
+\end_inset
+
+ ( there has NOT been a significant improvement in hourly output after training)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{B}-\mu_{A}<0$
+\end_inset
+
+( there has been a significant improvement in hourly output after training)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail test
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha,-t_{0.05;9}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-t_{0.05;0}=-1.833
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection: 
+\begin_inset Formula $T<-1.833$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection: 
+\begin_inset Formula $T\ge1.833$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\bar{D}-\mu_{D}}{\frac{S_{D}}{\sqrt{n}}}\\
+ & =\frac{-1.1-0}{\frac{1.1005}{\sqrt{10}}}\\
+ & =-3.16
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $T=-3.16<-1.833$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ Therefore, we have enough evidence to conclude that, at 5% significance,
+ there has been a significant improvement in hourly output after training.
+\end_layout
+
+\begin_layout Subsection
+Notes
+\end_layout
+
+\begin_layout Standard
+For the paired difference
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=X_{B}-X_{a}\begin{cases}
+H_{0} & \mu_{D}\ge0\\
+H_{1} & \mu_{D}<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=X_{A}-X_{B}\begin{cases}
+H_{0} & \mu_{D}\le0\\
+H_{1} & \mu_{D}>0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Exercise
+\end_layout
+
+\begin_layout Standard
+It is claimed that brand Y of sleeping drug induces more hours of sleep
+ than the standard brand X.
+ 10 patients are selected randomly and are prescribed brand X or brand Y
+ by a toss of a fair coin (e.g.
+ ‘head’ for brand X, ‘tail’ for brand Y).
+ One month later, the 10 patients are given the alternative drug to those
+ they received earlier.
+ The number of hours of sleep are recorded:
+\end_layout
+
+\begin_layout Standard
+TABLE HERE
+\end_layout
+
+\begin_layout Standard
+At 1% significance level, can we claim that brand Y is more efficient inducing
+ sleep than brand X?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=10,\alpha=0.01
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{D}=\frac{\sum D_{i}}{n}=\frac{-26}{10}=-2.6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{p} & =\sqrt{\frac{\sum D_{i}^{2}-\frac{\left(\sum D_{i}\right)^{2}}{n}}{n-1}}\\
+ & =\sqrt{\frac{128-\frac{\left(-26\right)^{2}}{10}}{9}}\\
+ & =2.591
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{x}-\mu_{y}\ge0$
+\end_inset
+
+ (brand Y is NOT more efficient inducing sleep than brand X)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{x}-\mu_{y}<0$
+\end_inset
+
+ (brand Y is more efficient inducing sleep than brand X)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail test.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-t_{0.01;9}=2.821$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $T<2.821$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $T\ge2.821$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{-2.6-0}{\frac{2.591}{\sqrt{10}}}\\
+ & =-3.173
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $T=-3.173<2.821$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ Hence, we can conclude that we have sufficient evidence to conclude that
+ at 1% significant level, brand Y is more efficient inducing sleep than
+ brand X.
+\end_layout
+
+\begin_layout Section
+Exercise
+\end_layout
+
+\begin_layout Standard
+In an investigation into ownership of calculators, 200 randomly chosen school
+ students were interviewed, 163 of them owned a calculator.
+ Using the evidence of this sample, test at the 5% level of significance,
+ the hypothesis that the proportion of school students owning a calculator
+ is more than 80%.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=200,\hat{p}=\frac{163}{200},\hat{q}=\frac{37}{200},\alpha=0.05,P_{o}=0.8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:P\le0.8$
+\end_inset
+
+ (Proportion of owning a calculator is not more than 80%)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:P>0.8$
+\end_inset
+
+ (Proportion of owning a calculator is more than 80%)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+, critical value = 
+\begin_inset Formula $Z_{\alpha}=Z_{0.05}=1.6449$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z>1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\hat{p}-p}{\sqrt{\frac{\hat{p}\hat{q}}{n}}}\\
+ & =\frac{0.815-0.8}{\sqrt{\frac{0.8\left(0.2\right)}{200}}}\\
+ & =0.53
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=0.53\le0.8.$
+\end_inset
+
+Therefore, we do not reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and conclude that there is not sufficient evidence to suggest that the
+ proportion of students owning a calculator is more than 80%.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+An election candidate claims that 60 percent of the voters support him.
+ A random sample of 2500 voters shows that 1400 support him.
+ Test his claim at 0.10 level of significance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{o}=0.6,\hat{p}=\frac{1400}{2500}=0.56,\hat{q}=\frac{1100}{2500}=0.44,n=2500
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{0}:P=0.6$
+\end_inset
+
+ (60 percent of the voters support him)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{1}:P\neq0.6$
+\end_inset
+
+(The proportion of voters support him is not 60 percent)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.10,$
+\end_inset
+
+
+\begin_inset Formula $Z_{0.1}=1.6449$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection region:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z<1.6449\,or\,Z>1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\hat{p}-p_{o}}{\sqrt{\frac{p_{o}\left(1-p_{o}\right)}{2500}}}\\
+ & =-4.08
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-4.00<1.6449$
+\end_inset
+
+.
+ We reject 
+\begin_inset Formula $H_{o}$
+\end_inset
+
+and conclude that the election candidate claim is not true at 0.10 level
+ of significance.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A coin is tossed 100 times and 38 heads are obtained.
+ Is there evidence, at the 2% level that the coin is biased in favour of
+ tails?
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the proportion of hands obtained in the population
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=100;x=38;p_{o}=0.5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{p} & =\frac{x}{n}\\
+ & =\frac{38}{100}\\
+ & =0.38
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{o}=P\ge0.5$
+\end_inset
+
+ (The coin is not biased in favor of tails)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}=P<0.5$
+\end_inset
+
+ (The coin is biased in favor of tails)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+At 
+\begin_inset Formula $\alpha=0.02,$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Critical value: 
+\begin_inset Formula $-Z_{0.02}=-2.0537$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z<-2.0537$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\hat{p}-P_{o}}{\sqrt{\frac{P_{o}\left(1-P_{o}\right)}{n}}}\\
+ & =\frac{0.38-0.5}{\sqrt{\frac{0.5\left(0.5\right)}{100}}}\\
+ & =-2.4
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-2.4<-2.0537.$
+\end_inset
+
+ We reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+and conclude that there is sufficient evidence, at 2% level of significance,
+ the coin is biased towards the tails.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Sample of 1000 electric lamps was checked and the percentage of unsatisfactory
+ items was found to be 4.0%.
+ A later sample of 2000 items yielded 100 defective items.
+ Is the fraction defective found in this latter sample significantly different
+ from the original 4%? Use 5% significance level.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{1}=1000,\hat{p}=0.04,n_{2}=2000,x_{2}=100
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{p_{2}} & =\frac{x_{2}}{n_{2}}\\
+ & =\frac{100}{2000}\\
+ & =0.05
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{p} & =\frac{x_{1}+x_{2}}{n_{1}+n_{2}}\\
+ & =\frac{40+100}{1000+2000}\\
+ & =\frac{7}{150}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:P_{1}=P_{2}$
+\end_inset
+
+ (The fraction defective found in this latter sample is not significantly
+ different from the original 4%)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:P_{1}\neq P_{2}$
+\end_inset
+
+(The fraction defective found in this latter sample is significantly different
+ from the original 4%)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+At 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+, critical value = 
+\begin_inset Formula $Z_{0.05}=\pm1.96$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z<-1.96$
+\end_inset
+
+ or 
+\begin_inset Formula $Z>1.96$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\hat{p_{1}}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}\left(\frac{1}{n_{1}}+\frac{1}{n_{2}}\right)}}\\
+ & =\frac{0.04-0.05}{\sqrt{\frac{7}{150}\left(\frac{143}{150}\right)\left(\frac{1}{1000}+\frac{1}{2000}\right)}}\\
+ & =-1.22
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-1.22>-1.96$
+\end_inset
+
+ and 
+\begin_inset Formula $<1.96$
+\end_inset
+
+, we accept 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+, and conclude that the fraction defective in the latter sample is not significa
+ntly different from the original 4%
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+One hundred samples of an alloy are tested for resistance to fatigue.
+ Half have been prepared using a new process and the other half by a standard
+ process.
+ Of those prepared by the new process, 35 exhibit good fatigue resistance,
+ whereas only 25 of those prepared in the standard way show the same performance.
+ Is the new process better than the standard one? (
+\begin_inset Formula $α$
+\end_inset
+
+ = 0.05 )
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{1}=50,n_{2}=50,x_{1}=35,x_{2}=25
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{p_{1}}=\frac{x_{1}}{n_{1}}=\frac{35}{50}=0.7
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{p}_{2}=\frac{x_{2}}{n_{2}}=\frac{25}{50}=0.5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{p} & =\frac{x_{1}+x_{2}}{n_{1}+n_{2}}\\
+ & =\frac{35+25}{50+50}\\
+ & =\frac{60}{100}\\
+ & =0.6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}=p_{1}-p_{2}\le0$
+\end_inset
+
+ (the new process is not better than the standard one)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}=p_{1}-p_{2}>0$
+\end_inset
+
+ (the new process is better than the standard one)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+At 
+\begin_inset Formula $\alpha=0.05,$
+\end_inset
+
+critical values =
+\begin_inset Formula $Z_{\alpha}=Z_{0.05}=1.6449$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z>1.6449$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find Z
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\hat{p_{1}}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}\left(\frac{1}{n_{1}}+\frac{1}{n_{2}}\right)}}\\
+ & =\frac{0.7-0.5}{\sqrt{\left(0.6\right)\left(0.4\right)\left(\frac{1}{50}+\frac{1}{50}\right)}}\\
+ & =2.04
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=2.04>1.6449,$
+\end_inset
+
+ we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ and conclude that the new process shows better performance than the standard
+ performance with a significance of 5%.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A random sample of 100 recorded deaths in the United States during the past
+ year showed an average life span of 71.8 years.
+ Assuming a population standard deviation of 8.9 years, does this seem to
+ indicate that the average life span today is greater than 70 years? Use
+ a 0.05 level of significance.
+ Calculate the p-value for this test of hypothesis.
+ Use the p- value to dr aw conclusion regarding the statistical test.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=100,\bar{X}=71.8,\sigma=8.9,\mu_{o}=70,\alpha=0.05
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\le70$
+\end_inset
+
+ (average life span today is not greater than 70 years)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu>70$
+\end_inset
+
+(average life span today is greater than 70 years)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z=\frac{\bar{X}-\mu_{0}}{\frac{\sigma}{\sqrt{n}}}=\frac{71.8-70}{\frac{8.9}{\sqrt{100}}}=2.02$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p-value & =P\left(Z>2.02\right)\\
+ & =0.02169
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $p-value=0.02169\le\alpha=0.05$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ and conclude that the average life span today is greater than 70 years
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A standard intelligence examination has been given to the students for several
+ years and it is assumed that the scores are normally distributed with an
+ average of 80 and a standard deviation of 7.
+ A group of 25 students obtained a mean grade of 77 in the examination this
+ year.
+ Is this year’s student inferior in intelligence to the past years’ students?
+ Test at 
+\begin_inset Formula $α$
+\end_inset
+
+ = .05 .
+ Calculate the p-value.
+ Use the p-value to draw conclusion regarding the statistical test.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{o}=80,\sigma=7,\bar{X}=77,\alpha=0.05
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\ge80$
+\end_inset
+
+ (This year's student is not inferior to past year)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu<80$
+\end_inset
+
+ (This year's student is inferior to past year)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\bar{X}-\mu_{0}}{\frac{\sigma}{\sqrt{n}}}\\
+ & =\frac{77-80}{\frac{7}{\sqrt{25}}}\\
+ & =-2.14
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p-value$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(Z<-2.14\right) & =P\left(Z>2.14\right)\\
+ & =0.01618
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the 
+\begin_inset Formula $p-value=0.01518\le\alpha=0.05$
+\end_inset
+
+, then we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ and conclude that this year's student is inferior to past year at 5% level
+ of significance.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A company’s last year’s retailed sales records show that the average monthly
+ expenditure per person for a food product was $5.50.
+ This year in the first quarter a sample of 29 families was taken from which
+ the mean expenditure was calculated to be $5.10 with a standard deviation
+ of $0.90.
+ Is there evidence to show that there is a change in this average during
+ the first quarter of this year? Set 
+\begin_inset Formula $α$
+\end_inset
+
+ = 0.01.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{o}=5.50,n=29,\bar{X}=5.10,S=0.9,\alpha=0.01
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu=5.50$
+\end_inset
+
+ (No change in the average during the first quarter of this year)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu\neq5.50$
+\end_inset
+
+ (A change in the average during the first quarter of this year)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.01$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\bar{X}-\mu_{o}}{\frac{S}{\sqrt{n}}}\\
+ & =\frac{5.10-5.50}{\frac{0.9}{\sqrt{29}}}\\
+ & =-2.393
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P-value$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(\left|T\right|>-2.393\right) & =P\left(T<-2.393\,or\,T>2.393\right)\\
+ & =2P\left(T>2.393\right)\\
+ & =2\left(0.013\right)\\
+ & =0.026
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $P-value=0.026<\alpha=0.01,$
+\end_inset
+
+we failed to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+, and conclude that there is no evidence of change in this average during
+ the first quarter of this year.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+A commonly prescribed drug on the market for relieving nervous tension is
+ believed to be only 60% effective.
+ Experimental results with a new drug administered to a random sample of
+ 100 adults who were suffering from nervous tension showed that 70 received
+ relief.
+ Is this sufficient evidence to conclude that the new drug is superior to
+ the one commonly prescribed? Use a 0.05 level of significance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{o}=0.6,n=100,x=70,\alpha=0.05
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{p} & =\frac{x}{n}\\
+ & =\frac{70}{100}\\
+ & =0.7
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:p\le0.6$
+\end_inset
+
+ (New drug is not superior to the one commonly prescribed)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:p>0.6$
+\end_inset
+
+ (New drug is superior to the one commonly prescribed)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\hat{p}-P_{o}}{\sqrt{\frac{P_{o}\left(1-P_{o}\right)}{n}}}\\
+ & =\frac{0.7-0.6}{\sqrt{\frac{0.6\left(0.4\right)}{100}}}\\
+ & =2.04
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P-value & =P\left(Z>2.04\right)\\
+ & =0.02068
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $P-value=0.02068\le\alpha=0.05$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+at 
+\begin_inset Formula $\alpha=0.05,$
+\end_inset
+
+we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+ and there is sufficient evidence to conclude that he new drug is superior
+ to the one prescribed.
+\end_layout
+
+\end_body
+\end_document
