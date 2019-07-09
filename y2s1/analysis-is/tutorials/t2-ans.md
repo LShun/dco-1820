@@ -32,7 +32,7 @@ to the digital documents and the OMS for online marking.
 
 (c) Briefly explain what is meant by operational and social feasibility.
 
-> Operational and social feasibility assess whether the project can fit into the exiting social and operational structure of the organization.
+> Operational and social feasibility assess whether the project can fit into the existing social and operational structure of the organization.
 > Besides that, social and operational feasibility also identifies any additional costs that may be incurred or new benefits
 
 (d) Describe two operational or social feasibility issues that are likely to be considered in the OMS feasibility study.
