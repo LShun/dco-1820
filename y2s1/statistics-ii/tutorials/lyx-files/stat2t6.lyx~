@@ -1,0 +1,1502 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Statistics II T6 - Hypothesis Testing
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+TODO: REMOVE ALL RELEVANT SUBSCRIPTS 
+\series default
+The mean weekly sale of the Chocolate Bar in candy stores is 146.3 bars per
+ store with standard deviation of 17.2 bars.
+ After an advertising campaign, the mean weekly sale in 22 stores for a
+ typical week is 153.7 bars with a standard deviation of 16.7 bars.
+ Was the advertising campaign successful? Use 
+\begin_inset Formula $α=0.05$
+\end_inset
+
+.
+ 
+\series bold
+(check with teacher why not T-score)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{b}=146.3,\sigma_{b}=17.2,n_{a}=22,\bar{x}_{a}=153.7,s_{a}=16.7,\alpha=0.05,D=22-1=21$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{a}-\mu_{b}\le0$
+\end_inset
+
+ The advertising campaign is not successful, the mean weekly sales did not
+ increase
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{a}-\mu_{b}>0$
+\end_inset
+
+The advertising campaign is successful, the mean weekly sales increased
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Right-tail test
+\end_layout
+
+\begin_layout Enumerate
+Critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Z_{0.05}=1.721$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection & non-rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $T>1.721$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $T\le1.721$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the Z-score
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\bar{x}_{a}-\mu_{b}}{\frac{s_{a}}{\sqrt{n}}}\\
+ & =\frac{153.7-146.3}{\frac{16.7}{\sqrt{22}}}\\
+ & =2.078
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=2.078>1.721$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and conclude that, at 5% significance, the advertising campaign is successful,
+ the mean weekly sales increased.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The manufacturer of a certain brand of car batteries claims that the mean
+ life of these batteries is 45 months.
+ A consumer protection agency that wants to check this claim took a random
+ sample of 36 such batteries and found that the mean life for this sample
+ is 43.15 months.
+ The lives of all such batteries have a normal distribution with standard
+ deviation of 6.1 months.
+ Test the hypothesis that the mean life of these batteries is less than
+ 45 months at the 2.5% significance level.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let subscript-o referes to the original batteries claims, and subscript-s
+ refer to the sampled batteries
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{o}=45,n_{s}=36,\bar{x}_{s}=43.15,s_{s}=6.1,\alpha=0.025$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:$
+\end_inset
+
+ 
+\begin_inset Formula $\mu_{s}\ge45$
+\end_inset
+
+ The mean life of the batteries is 45 months or more
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{s}<45$
+\end_inset
+
+ The mean life of batteries is 45 months or less
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail test
+\end_layout
+
+\begin_layout Enumerate
+Find critical value (note, since 
+\begin_inset Formula $n>30$
+\end_inset
+
+, we can use 
+\begin_inset Formula $Z-score$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-Z_{0.025}=-1.96$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find rejection/non-rejection range
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection range: 
+\begin_inset Formula $Z<-1.96$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection range: 
+\begin_inset Formula $Z>-1.96$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find Z-score
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\bar{x}_{s}-\mu}{\frac{S}{\sqrt{n}}}\\
+ & =\frac{43.15-45}{\frac{6.1}{\sqrt{36}}}\\
+ & =-1.820
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-1.820>-1.96$
+\end_inset
+
+, we failed to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ Therefore, there is insufficient evidence to show that the mean life of
+ batteries is 45 months or less.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The manufacturer of a certain oil-additive claims that the mean net weight
+ of jars of his product is 1 kg.
+ A random sample of size 49 of a large consignment supplied to your company
+ is found to have a mean net weight of 0.99 kg with a standard deviation
+ of 0.02 kg.
+ Test the manufacturer’s claim at α = 0.05.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let subscript-o refers to the claim of the manufacturer.
+ Let subscript s refers to the sampled consignment.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{o}=1,n=49,\bar{x}_{s}=0.99,s_{s}=0.02,\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{s}=1$
+\end_inset
+
+ The mean net weight of jars of his product is 1kg.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{s}\neq1$
+\end_inset
+
+.
+ The mean net weight of jars of his product is NOT 1kg.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Two-tailed test
+\end_layout
+
+\begin_layout Enumerate
+Critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\alpha}{2}=0.025$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Z_{\frac{\alpha}{2}}=\pm1.96$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection & non-rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename ../lyx-imgs/t6q3e.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z<-1.96$
+\end_inset
+
+ or 
+\begin_inset Formula $Z>1.96$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $-1.96<Z<1.96$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find your Z-score
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z=\frac{\bar{X}_{s}-\mu_{o}}{\frac{S_{s}}{\sqrt{n}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{0.99-1}{\frac{0.02}{\sqrt{49}}}\\
+ & =\text{−}3.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-3.5<-1.96.$
+\end_inset
+
+ The event is rare enough for us to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, and conclude that the mean net weight of jars of his product is NOT 1kg.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The mean weight of all babies born at a hospital last year was 3.45 kg.
+ A random sample of 35 babies born at this hospital this year produced the
+ following data in kg.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+3.72 4.13 3.13 2.63 2.90 4.67 5.49 4.13 2.68 3.31 5.08 3.76 2.95 3.22 3.63 4.17 2.59 4.31
+ 3.76 2.86 2.22 3.45 4.58 4.17 3.81 3.40 3.27 3.76 3.27 4.40 2.72 3.67 2.77 3.76 3.04
+\end_layout
+
+\begin_layout Enumerate
+Test at the 3% significance level whether the mean weight of babies born
+ at this hospital this year is exceed last year.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Answer:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let subscript-o be the babies born in hospital last year, and let subscript-n
+ be the babies born at this hospital this year.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu_{o}=3.45,n_{n}=35,\bar{x}_{n}=3.5831,s_{n}=0.7487,\alpha=0.03$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{o}:\mu_{n}\le3.45$
+\end_inset
+
+ The mean weight of babies born at this hospital this year is equal or less
+ than last year.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{n}>3.45$
+\end_inset
+
+ The mean weight of babies born at this hospital this year is exceed last
+ year.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail
+\end_layout
+
+\begin_layout Enumerate
+Critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z_{0.03}=1.8808$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection & non-rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection: 
+\begin_inset Formula $Z\ge1.8808$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection: 
+\begin_inset Formula $Z<1.8808$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the Z-score
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{3.5831-3.45}{\frac{0.7487}{\sqrt{35}}}\\
+ & =1.0517
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion: Since 
+\begin_inset Formula $Z=1.0517<1.8808$
+\end_inset
+
+, failed to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A soft-drink vending machine is set to dispense 250 ml per cup.
+ If the machine is tested 25 times, yielding a mean cup fill of 241.80 ml
+ with a standard deviation of 6.67 ml, is this evidence at the 1% significance
+ level that the machine is underfilling?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mu=250ml,n=25,\bar{x}=241.80,s=6.67,\alpha=0.01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\ge250$
+\end_inset
+
+, The machine is not underfilling (sentence may not be required)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu<250$
+\end_inset
+
+, The machine is underfilling (sentence may not be required)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail
+\end_layout
+
+\begin_layout Enumerate
+Critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-t_{0.01;24}=-2.492$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection range
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T<-2.492$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Check Z-score
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{241.80-250}{\frac{6.67}{\sqrt{25}}}\\
+ & =-6.147
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the 
+\begin_inset Formula $T=-6.147<-2.3263$
+\end_inset
+
+, 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ has been rejected.
+ Therefore, we can conclude that the machine is underfilling at 1% significance
+ level.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A computer company that recently introduced a new software product claims
+ that the mean time it takes to learn how to use this software is not more
+ than 2 hours for people who are somewhat familiar with computers.
+ A random sample of 12 such persons was selected.
+ The following data give the times taken (in hours) by these persons to
+ learn how to use this software.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+1.75 2.25 2.40 1.90 1.50 2.75 2.15 2.25 1.80 2.20 3.25 2.60
+\end_layout
+
+\begin_layout Enumerate
+Test at the 1% significance level whether the company’s claim is true.
+ Assume that the times taken by all persons who are somewhat familiar with
+ computers to learn how to use this software are approximately normally
+ distributed.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu=2,n=12,\alpha=0.01,\bar{x}_{n}=2.2333,s=0.4807,\alpha=0.01,D.O.F=11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu\ge2$
+\end_inset
+
+ (the mean time it takes to learn how to use this software is more than
+ or equal to 2 hours)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu<2$
+\end_inset
+
+ (the mean time it takes to learn how to use this software is not more than
+ 2 hours for people)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail test
+\end_layout
+
+\begin_layout Enumerate
+Critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-t_{0.01;11}=-2.718$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection region & non-rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z<-2.3263$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $Z\ge-2.3263$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the T-score
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $-T=\frac{\bar{X}_{n}-\mu_{o}}{\frac{S}{\sqrt{n}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-T & =\frac{2.2333-2}{\frac{0.4807}{\sqrt{12}}}\\
+\boldsymbol{T} & \boldsymbol{=-1.681}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $T=-1.681\ge-2.3263$
+\end_inset
+
+, we are unable to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ Therefore, we do not have enough evidence to say that the mean time it
+ takes to learn how to use this software is not more than 2 hours for people.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A machine assesses the life of a ball-point pen, by measuring the length
+ of a continuous line drawn using the pen.
+ A random sample of 80 pens of brand X has a mean writing length of 1.21
+ km.
+ A random sample of 75 pens of brand Y has a mean writing length of 1.25
+ km.
+ Assuming that the standard deviation of the writing length of a single
+ pen is 0.15 km for both brands, test at the 5% level of significance, whether
+ the mean writing lengths of the two brands differ significantly.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n_{x}=80,\bar{x}_{x}=1.21,n_{y}=75,\sigma=0.15,\bar{x}_{y}=1.25,\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{1}-\mu_{2}=0$
+\end_inset
+
+.
+ The mean writing lengths of the two brands does not differ significantly
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{1}-\mu_{2}\neq0$
+\end_inset
+
+.
+ The mean writing lengths of the two brands differ significantly.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Two-tail test
+\end_layout
+
+\begin_layout Enumerate
+Find the critical point & the rejection range
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n$
+\end_inset
+
+ for both cases is more than 30, we can use Normal distribution
+\end_layout
+
+\begin_layout Enumerate
+Critical point: 
+\begin_inset Formula $Z_{\frac{a}{2}}=Z_{0.025}=\pm1.96$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection range: 
+\begin_inset Formula $Z\le-1.96$
+\end_inset
+
+ or 
+\begin_inset Formula $Z\ge1.96$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection range: 
+\begin_inset Formula $-1.96\le Z\le1.96$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $Z-score$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\left(\bar{x}_{1}-\bar{x}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{0.15\sqrt{\frac{1}{80}+\frac{1}{75}}}\\
+ & =\frac{\left(1.21-1.25\right)-0}{0.15\sqrt{\frac{1}{80}+\frac{1}{75}}}\\
+ & =-1.659
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Z=-1.659,$
+\end_inset
+
+
+\begin_inset Formula $-1.96\le Z\le1.96$
+\end_inset
+
+, we failed to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ Hence, we cannot conclude that the mean writing lengths of the two brands
+ differ significantly.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The management of a supermarket wanted to investigate whether the male customers
+ spend less money on average than the female customers.
+ A sample of 35 male customers who shopped at this supermarket showed that
+ they spent an average of RM80 with a standard deviation of RM17.50.
+ Another sample of 40 female customers who shopped at the same supermarket
+ showed that they spent an average of RM96 with a standard deviation of
+ RM14.40.
+ Using the 2% significance level, can you conclude that the mean amount
+ spent by all male customers at this supermarket is less than that spent
+ by all female customers?
+\begin_inset Formula 
+\[
+n_{m}=35,\bar{x}_{m}=80,S_{m}=17.50
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{f}=40,\bar{x}_{f}=96,S_{f}=14.40
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha=0.02
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{b}-\mu_{f}\ge0$
+\end_inset
+
+ the mean amount spent by all male customers at this supermarket is equal
+ to or more than that spent by all female customers.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{b}-\mu_{f}<0$
+\end_inset
+
+ the mean amount spent by all male customers at this supermarket is less
+ than that spent by all female customers.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Left-tail test
+\end_layout
+
+\begin_layout Enumerate
+Critical value, since both 
+\begin_inset Formula $n>30$
+\end_inset
+
+, we can use Normal approximation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-Z_{0.02} & =2.0537\\
+Z_{0.02} & =-2.0537
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection & non-rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection region: 
+\begin_inset Formula $Z<-2.0537$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection region: 
+\begin_inset Formula $Z\ge-2.0537$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate Z-score
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate Z-score (Note: don't pool the variance, only pool on 
+\begin_inset Formula $t-distribution$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+Z & =\frac{\left(\bar{x}_{m}-\bar{x}_{f}\right)-\left(\mu_{m}-\mu_{f}\right)}{\sqrt{\frac{S_{m}^{2}}{n_{m}}+\frac{S_{f}^{2}}{n_{f}}}}\\
+ & =\frac{\left(80-96\right)-0}{\sqrt{\frac{17.50^{2}}{35}+\frac{14.40^{2}}{40}}}\\
+ & =-4.286
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion: Since 
+\begin_inset Formula $Z=-4.286<-2.0537$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, and conclude that at 2% significance value, the mean amount spent by all
+ male customers at this supermarket is less than that spent by all female
+ customers.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The manager of a package courier service believes that packages shipped
+ at the end of the month are heavier than those shipped early in the month.
+ To test this, he weighed a random sample of 20 packages at the beginning
+ of the month.
+ He found that the mean weight was 20.25 kg with standard deviation was 5.84
+ kg.
+ Ten packages randomly selected at the end of the month had a mean weight
+ of 24.80 kg with standard deviation of 5.67 kg.
+ At the 0.05 significance level, can we conclude that the packages shipped
+ at the end of the month weigh more? Assume equal variances between the
+ packages shipped at the early of the month and at the end of the month.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n_{b}=20,\bar{x}_{b}=20.25,s_{b}=5.84$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n_{a}=10,\bar{x}_{a}=24.80,s_{a}=5.67$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H_{0}:\mu_{b}-\mu_{a}\le0$
+\end_inset
+
+ (packages shipped at the end of the month DO NOT weigh more)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}:\mu_{b}-\mu_{a}>0$
+\end_inset
+
+ (packages shipped at the end of the month weigh more)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Right-tail test
+\end_layout
+
+\begin_layout Enumerate
+Since both the 
+\begin_inset Formula $n$
+\end_inset
+
+ of the data are 
+\begin_inset Formula $<30$
+\end_inset
+
+, and we do not know 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, we must use 
+\begin_inset Formula $T-score$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $t-distribution$
+\end_inset
+
+ value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $t_{0.05;10+20-2}=t_{0.05;28}=1.701$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the rejection/non-rejection range
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rejection range: 
+\begin_inset Formula $T\le1.701$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-rejection range: 
+\begin_inset Formula $T>1.701$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the T-score
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S_{p}=\sqrt{\frac{\left(n_{b}-1\right)S_{b}^{2}*\left(n_{a}-1\right)S_{a}^{2}}{n_{b}+n_{a}-2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{p} & =\sqrt{\frac{\left(n_{b}-1\right)S_{b}^{2}+\left(n_{a}-1\right)S_{a}^{2}}{n_{b}+n_{a}-2}}\\
+ & =\sqrt{\frac{\left(20-1\right)5.84^{2}+\left(10-1\right)5.67^{2}}{20+10-2}}\\
+ & =5.7859
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T & =\frac{\left(20.25-24.80\right)-0}{5.7859\cdot\sqrt{\frac{1}{10}+\frac{1}{20}}}\\
+ & =-2.030
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the 
+\begin_inset Formula $T-score=-2.030\le1.701$
+\end_inset
+
+.
+ W reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, hence, at 5% significance level, we conclude that packages shipped at
+ the end of the month weigh more.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Computer response time is defined as the length of time a user has to wait
+ for the computer to access information on the disk.
+ Suppose a data center wants to compare the average response times of its
+ two computer disk drives.
+ To test this, independent random samples of 13 response times for disk
+ 1 and 15 response times for disk 2 were selected.
+ The data (recorded in milliseconds) are as follows.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Disk 1
+\series default
+: 59 73 74 61 92 60 84 33 54 73 47 102 75
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Disk 2
+\series default
+: 71 63 40 34 38 48 60 75 47 41 44 86 53 68 39
+\end_layout
+
+\begin_layout Enumerate
+Assume that the response times for both disks having same variances.
+ Test at the 1% significance, whether the mean response time of the two
+ disks differs significantly.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A company claims that its 12-week special exercise program significantly
+ reduces weight.
+ A random sample of six persons was selected and these persons were put
+ on this exercise program for 12 weeks.
+ The following table gives the weights (in kg) of those six persons before
+ and after the program.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Before the program 81.6 88.5 80.3 100.2 94.3 90.3 
+\begin_inset Newline newline
+\end_inset
+
+After the program 83.0 84.8 73.0 92.5 89.4 85.7
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Test the hypothesis that the 12-week special exercise program significantly
+ reduces weight at α = 0.01.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A coin is thrown 1000 times and 546 tails are obtained.
+ Test whether the coin is fair at α = 0.04.
+\end_layout
+
+\begin_layout Enumerate
+A manufacturer claimed that at least 95% of the equipment which he supplied
+ to a factory conformed to specifications.
+ An examination of a sample of 200 pieces of equipment revealed that 18
+ were faulty.
+ Test the manufacturer’s claim at a significance level of 0.05.
+\end_layout
+
+\begin_layout Enumerate
+The manager of a supermarket chain wants to determine the difference between
+ the proportion of morning shopper who are men and the proportion of afternoon
+ shoppers who are men.
+ Over a period of 2 weeks, the chain’s researchers conduct a systematic
+ random sample survey of 400 morning shoppers, which reveals that 352 are
+ women and 48 are men.
+ During this same period, a systematic random sample of 480 afternoon shoppers
+ reveals that 312 are women and 168 are men.
+ At the 1% significance level, is there a difference between the proportion
+ of men shopper during morning and afternoon period?
+\end_layout
+
+\begin_layout Enumerate
+One thousand items from factory B are examined and found to contain 3% defective
+s.
+ One thousands five hundred similar items from factory C are found to contain
+ only 2% defectives.
+ Can you conclude that the items of factory C are superior to those of factory
+ B? Use α = 0.05.
+\end_layout
+
+\begin_layout Enumerate
+Note:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+While writing the critical value for left-tailed test
+\begin_inset Formula 
+\begin{align*}
+-Z_{a} & =...\\
+Z_{a} & =-....
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT write:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-Z_{a}=-...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Because it will become 
+\begin_inset Formula $Z_{a}=....$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Accept if only draw/only write the critical value and rejection region part.
+ However, conclusion must be there
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

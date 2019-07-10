@@ -2174,6 +2174,24 @@ Johnny’s Pizza guarantees all pizza deliveries within 30 minutes of the
 What is the most conservative estimate of the sample size?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+The most conservation estimate is when 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{q}$
+\end_inset
+
+are both 
+\begin_inset Formula $=0.5$
+\end_inset
+
+, which is the largest yield possible for standard error.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Assume that a preliminary study has shown that 93% of all Johnny’s pizzas
  are delivered within 30 minutes.
@@ -2191,6 +2209,74 @@ A small insurance company has 1861 life insurance policyholders.
  for the population mean.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=1861,n=100,\bar{X}=685,S=71,\alpha=0.08
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{\frac{\alpha}{2}}=Z_{0.04}=2.6521
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{0.04}*\frac{S}{\sqrt{n}}*\sqrt{\frac{N-n}{N-1}}\\
+ & =1.7507*\frac{71}{\sqrt{100}}*\sqrt{\frac{1861-100}{1861-1}}\\
+ & =12.09
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+92% confidence interval
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{X}-E<\mu<\bar{X}+E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+685-12.09<\mu<685+12.09
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+672.91<\mu<697.09
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 In a large metropolitan area in which a total of 800 gasoline service stations
  are located, a random sample of 36 gasoline service stations, 20 of the
@@ -2203,10 +2289,90 @@ In a large metropolitan area in which a total of 800 gasoline service stations
 the proportion of all stations in the area which carry the oil,
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=800,n=36,x=20,\alpha=0.05,\hat{p}=\frac{20}{36}=\frac{5}{9}.\hat{q}=\frac{4}{9}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{\alpha}{2}} & =Z_{0.025}\\
+ & =1.96
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+E & =Z_{\frac{\alpha}{2}}*\sqrt{\frac{\hat{p}\hat{q}}{n}}*\sqrt{\frac{N-n}{N-1}}\\
+ & =1.96*\sqrt{\frac{\frac{5}{9}*\frac{4}{9}}{36}}*\sqrt{\frac{800-36}{800-1}}\\
+ & =0.1587
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{p}-E<p<\hat{p}+E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{5}{9}-0.1587<p<\frac{5}{9}+0.1587
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0.397<p<0.714
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 the total number of service stations in the area which carry the oil.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0.397*800 & <Service\,Stations<0.714*800\\
+317.6 & <Service\,Stations<571.2\\
+318 & <Service\,Stations<572
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document

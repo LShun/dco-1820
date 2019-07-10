@@ -24,7 +24,7 @@ Assignment: Week 10
 
 Assignment: 40%
 
-- DIfferentation
+- Differentation
 - Applications of differentiation
 
 ### Database
