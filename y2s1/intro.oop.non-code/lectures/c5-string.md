@@ -2,15 +2,15 @@
 
 - A string is: 
   - sequence of characters
-  - an immutable (unchangable) **object**. It can only be "copied" and "reassigned".
+  - an immutable (unchangeable) **object**. It can only be "copied" and "reassigned".
 
 ## Tech Jargons
 
-- String variable: In layman term, it is a "finger"
-- String object: In layman term, it is a "map".
-- String value: In layman term, it is the "drawings" on the map.
+- **String variable**: In layman term, it is a "finger"
+- **String object**: In layman term, it is a "map".
+- **String value**: In layman term, it is the "drawings" on the map.
 
-- String composition:
+- **String composition**:
   - A *string variable* "points" to a *string object*, which stores *string value*
   - In layman term, a "String" is a "finger" pointed to a "map" which contains "drawings" on it.
 
@@ -30,19 +30,19 @@ NOTE: `newString`, `stringLiteral` is user-defined.
 ### Comparison
 
 - `equals()`: check if ENTIRE string match with another
-  - Pitfall: `==` only checks if the pointer match.
+  - **Pitfall**: `==` only checks if the pointer match.
 - `compareTo()`: compares the string's first difference with another
-  - return > 0 if first difference is larger
-  - returns 0 if entire string same
-  - returns < 0 if first difference smaller
-  - NOTE: Check ASCII table to order
+  - return > 0 if first difference is **larger**
+  - returns 0 if entire string **same**
+  - returns < 0 if first difference **smaller**
+  - NOTE: Check **ASCII table** to order
 
 ### String Properties
 
-- `length()`: length of string (not address position)
+- `length()`: length of String (not address position)
 - `charAt()`: get one `char` at the location
   - `userString[0]` does NOT work because `String` is not an array, but an object.
-- `indexOf()`: overloaded. In general, returns index of first occurence of ___ in string. Returns -1 if not matched.
+- `indexOf()`: overloaded. In general, returns index of first occurrence of ___ in string. Returns -1 if not matched.
 - `lastIndexOf()`: overloaded. In general, same as `indexOf()` but returns last index
 
 ### String manipulation
@@ -62,3 +62,30 @@ NOTE: `newString`, `stringLiteral` is user-defined.
 
 ## `Character` class
 
+![](img/c5-character-reference.png)
+
+## `StringBuilder` and `StringBuffer` class
+
+- Can be used whenever a `String` can be used
+- More flexible, mutable class
+- Both have same exact methods, can be used interchangeably. 
+
+### `StringBuilder` constructors
+
+![](img/c5-StringBuilder-reference.png)
+
+### Modifying Strings in `StringBuilder`
+
+![1562825212400](img/c5-StringBuilder-class-reference.png)
+
+![c5-StringBuilder-class-reference-2](img/c5-StringBuilder-class-reference-2.png)
+
+## Command-Line Parameters
+
+- The main method gets the arguments from `args[0], args[1], args[2], ..., args[n]`, which corresponds to `arg0, arg1, arg2, ..., argn` in the command line.
+  - Example: `java TestMain “First Num” alpha 53`
+
+## Regex Syntax [Optional]
+
+- Not required for exams
+- 
