@@ -83,8 +83,8 @@ Calculus L2 - LIMITS AND CONTINUITY
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lt}[3]{\lim_{#1\to#2}#3}
-{\lim_{#1\to#2}#3}
+\newcommand{\lt}[3]{\lim_{#1\to#2}\left(#3\right)}
+{\lim_{#1\to#2}\left(#3\right)}
 \end_inset
 
 
