@@ -27,7 +27,7 @@ public class ValidatePassword {
     // String -> Boolean
     // returns true if the password is valid, else return false
     public static boolean isValid(String pw) {
-        if (true)
+        if (pw.length() >= 7 && containsAlNum(pw.toLowerCase()))
         {
             return true;
         }
@@ -35,5 +35,18 @@ public class ValidatePassword {
             return false;
         }
 
+    }
+
+    private static boolean containsAlNum(String pw) {
+        for (int i = 0; i < pw.length(); i++) {
+            if (pw.charAt(i) >= 'a' && pw.charAt(i) <= 'z') {
+                for (int j = 0; j < pw.length(); j++) {
+                    if (pw.charAt(j) >= '0' && pw.charAt(j) <= '9') {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

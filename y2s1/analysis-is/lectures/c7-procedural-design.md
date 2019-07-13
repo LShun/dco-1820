@@ -42,8 +42,6 @@ Subtract 1 from stock on hand
 Print customer invoice
 ```
 
-
-
 #### Repetition Blocks - Calculate daily total orders & updating customer records
 
 ```pseudocode
@@ -84,3 +82,66 @@ ENDIF
 
 - **Not easy to use.** Unrestricted, indiscriminate use of command borrowed.
 - **For small activities.** Only suitable for small & specific code
+
+### Pseudocode
+
+- **Borrowed vocabulary.** Similar to Programming Language (PL).
+- **Supplement.** Mix style and syntax from English & PL.
+- **Not language dependent.** Not language-dependent (no syntax error).
+- **More time.** No need to worry syntax error, more time to think about logic.
+- **No standard.** Follow programmer style.
+
+#### Advantages of Pseudocode
+
+- **Easy to Use/Understand.**
+- **Program Design.** Easy to translate to code.
+- **Supplement.** Use with natural language.
+- **Initialization.** Code details are wrote.
+- **Language independent.** Ignore language-dependent details.
+
+#### Disadvantages
+
+- **Double coding**. Might as well start with coding.
+- **Limit flexibility.** Cause programmer to bias to coding than design.
+- **Not suitable for control structures.** Control structures difficult to describe, eg. nested decisions.
+
+### Decision Table (:star: Very popular  :star:)
+
+#### Definition
+
+- Cause-effect charts
+
+- Describe action to be taken in different condition
+
+- Used in system testing
+
+- Typical format:
+
+  - | Condition Heading    | Decision Rule Number |
+    | -------------------- | -------------------- |
+    | Condition Statements | Condition Entries    |
+    | Action statements    | Action entries       |
+
+- Example:
+
+  |                    | 1    | 2    | 3    | 4    |
+  | ------------------ | ---- | ---- | ---- | ---- |
+  | Is it 8 o'clock?   | Y    | Y    | N    | N    |
+  | Is it the weekend? | Y    | N    | Y    | N    |
+  | Get up?            |      | :x:  |      |      |
+  | Don't get up?      | :x:  |      | :x:  | :x:  |
+
+### Decision Tree
+
+- A means to define complex relationships
+- Design tool, provide graphical representation in a tree form.
+- From left to right, :arrow_left: = conditions, :arrow_right: = actions.
+
+#### General Format - Decision Tree
+
+- Similar to Probability Tree, but the probability are replaced by Y/N.
+
+## Exam Tips
+
+- Conversion between Decision Table, Structured English, and Decision Tree.
+
