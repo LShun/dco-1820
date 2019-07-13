@@ -1,6 +1,15 @@
 # C5: Classes for Processing String
 
-- A string is: 
+## Exam tips
+
+- Exam important:
+charAt()
+toLowerCase()
+toUpperCase()
+
+## Definition
+
+- A string is:
   - sequence of characters
   - an immutable (unchangeable) **object**. It can only be "copied" and "reassigned".
 

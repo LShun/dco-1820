@@ -46,7 +46,7 @@ public class Q6Driver {
         for (int i = 0; i < cakeOrders.length; i++) {
             double price = cakeOrders[i].getCake().basePrice * cakeOrders[i].getWeight();
             double netTotal = cakeOrders[i].getQty() * price;
-            System.out.printf("%d\t%-19s %6d      %13.2f %10d    %14.2f\n", i+1, cakeOrders[i].getCake().getFlavor(), cakeOrders[i].getWeight(), price, cakeOrders[i].getQty(), cakeOrders[i].getQty() * cakeOrders[i].getCake().basePrice);
+            System.out.printf("%d\t%-19s %6d      %13.2f %10d    %14.2f\n", i+1, cakeOrders[i].getCake().getFlavor(), cakeOrders[i].getWeight(), price, cakeOrders[i].getQty(), cakeOrders[i].getQty() * price);
             grandTotal += netTotal;
         }
 

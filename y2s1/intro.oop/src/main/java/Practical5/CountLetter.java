@@ -13,6 +13,8 @@ public class CountLetter {
         word = in.nextLine();
         System.out.print("Enter the letter you want to count: ");
         letter = in.next().charAt(0);
+
+        System.out.println("The number of " + letter + " inside is: " + countLetter(word, letter));
     }
 
     // String Char -> Int

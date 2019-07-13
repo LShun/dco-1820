@@ -7,7 +7,7 @@ public class StaffCode {
         a = 2;
 
         a = 3;
-        System.out.println("Icorrect, ");
+        System.out.println("Incorrect, ");
     }
 
     public StaffCode(int a) {
