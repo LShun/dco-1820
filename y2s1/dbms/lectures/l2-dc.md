@@ -124,7 +124,7 @@ End user <-> DBMS <-> Database Structure
   Database
     Logically related data at single point
 
-### Database System Envionment
+### Database System Environment
 
 1. HW
 2. SW

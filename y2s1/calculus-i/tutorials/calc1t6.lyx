@@ -1,0 +1,761 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(t\right)=\sqrt[3]{1+\tan t}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(t\right) & =\sqrt[3]{1+\tan t}\\
+ & =\left(1+\tan t\right)^{\frac{1}{3}}\\
+f'\left(t\right) & =\frac{1}{3}\left(1+\tan t\right)^{-\frac{2}{3}}\cdot\sec^{2}t\\
+ & =\frac{\sec^{2}t}{3\sqrt[3]{\left(1+\tan t\right)^{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=4\sec5x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =4\left(\sec5x\tan5x\right)\cdot5\\
+ & =20\left(\sec5x\tan5x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=e^{-5x}\cos3x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{d}{dx}\left(e^{-5x}\right)\cdot\cos3x+e^{-5x}\cdot\frac{d}{dx}\left(\cos3x\right)\\
+ & =-5e^{-5x}\cdot\cos3x+e^{-5x}\cdot-3\sin3x\\
+ & =-e^{-5x}\left(5\cos3x+3\sin3x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=10^{1-x^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =10^{1-x^{2}}\ln\left(10\right)\cdot-2x\\
+ & =-2x\cdot\ln\left(10\right)\cdot10^{1-x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\tan^{2}\left(3\theta\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\left(\tan3\theta\right)^{2}\\
+ & =2\left(\tan3\theta\right)\cdot\frac{d}{dx}\left(\tan3\theta\right)\\
+ & =2\left(\tan3\theta\right)\cdot\sec^{2}3\theta\cdot3\\
+ & =6\tan3\theta\sec^{2}3\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=2\cos x+\sin^{2}x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =2\cos x+\left(\sin x\right)^{2}\\
+f'\left(x\right) & =2\left(-\sin x\right)+2\left(\sin x\right)\cdot\frac{d}{dx}\left(\sin x\right)\\
+ & =-2\sin x+2\sin x\cdot\cos x\\
+\boldsymbol{f'\left(x\right)} & =\boldsymbol{-2\sin x+\sin2x};\text{Note:}\text{2\ensuremath{\sin x\cos x=\sin2x}}\\
+f''\left(x\right) & =-2\left(\cos x\right)+\left(\cos2x\right)\left(2\right)\\
+\boldsymbol{f''\left(x\right)} & \boldsymbol{=2\left(\cos2x-\cos x\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(x-1\right)^{2},point\,\left(2,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the equation of the tangent line
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the gradient, 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =2\left(x-1\right)\cdot1\\
+ & =2\left(x-1\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(2\right) & =2\left(2-1\right)\\
+\boldsymbol{m} & \boldsymbol{=2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $y-intercept$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =mx+c\\
+y & =2x+c
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Substitute 
+\begin_inset Formula $x=2,y=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =2\left(2\right)+c\\
+c & =1-4\\
+\boldsymbol{c} & \boldsymbol{=-3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Form the equation of the tangent line, 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+
+\series bold
+
+\begin_inset Formula 
+\[
+\boldsymbol{y=2x-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the normal line
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the gradient, 
+\begin_inset Formula $m_{n}$
+\end_inset
+
+ (Note, 
+\begin_inset Formula $m_{n}$
+\end_inset
+
+ is perpendicular to the 
+\begin_inset Formula $m_{t}$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+m_{t}m_{n} & =-1\\
+m_{n} & =-\frac{1}{m_{t}}
+\end{align*}
+
+\end_inset
+
+ 
+\begin_inset Formula $m_{t}$
+\end_inset
+
+ is from tangent line part above, where 
+\begin_inset Formula $m_{t}=2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m_{n}=-\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $y-intercept,c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =mx+c\\
+y & =-\frac{1}{2}x+c
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Substitute 
+\begin_inset Formula $x=2,y=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =-\frac{1}{2}\left(2\right)+c\\
+c & =1+1\\
+\boldsymbol{c} & \boldsymbol{=2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Form the equation of the normal line to the tangent, 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+
+\series bold
+
+\begin_inset Formula 
+\[
+\boldsymbol{y=-\frac{1}{2}x+2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h\left(x\right)=\sqrt{1-4x},point\,\left(-2,3\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the equation of the tangent line
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the gradient, 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+h\left(x\right) & =\left(1-4x\right)^{\frac{1}{2}}\\
+h'\left(x\right) & =\frac{1}{2}\left(1-4x\right)^{-\frac{1}{2}}\cdot\left(-4\right)\\
+ & =-2\left(1-4x\right)^{-\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+h'\left(2\right) & =-\left(-2\right)\left(1-4\left(-2\right)\right)^{-\frac{1}{2}}\\
+m & =-\frac{2}{\sqrt{1+8}}\\
+ & =-\frac{2}{\sqrt{9}}\\
+\boldsymbol{m} & \boldsymbol{=-\frac{2}{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $y-intercept$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =mx+c\\
+y & =-\frac{2}{3}x+c
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Substitute 
+\begin_inset Formula $x=-2,y=3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3 & =-\frac{2}{3}\left(-2\right)+c\\
+c & =3-\frac{4}{3}\\
+\boldsymbol{c} & \boldsymbol{=\frac{5}{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Form the equation of the tangent line, 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+
+\series bold
+
+\begin_inset Formula 
+\[
+y=-\frac{2}{3}x+\frac{5}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the normal line
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the gradient, 
+\begin_inset Formula $m_{n}$
+\end_inset
+
+ (Note, 
+\begin_inset Formula $m_{n}$
+\end_inset
+
+ is perpendicular to the 
+\begin_inset Formula $m_{t}$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+m_{t}m_{n} & =-1\\
+m_{n} & =-\frac{1}{m_{t}}
+\end{align*}
+
+\end_inset
+
+ 
+\begin_inset Formula $m_{t}$
+\end_inset
+
+ is from tangent line part above, where 
+\begin_inset Formula $m_{t}=-\frac{2}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+m_{n} & =-\frac{1}{\left(-\frac{2}{3}\right)}\\
+ & =\frac{3}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $y-intercept,c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =mx+c\\
+y & =\frac{3}{2}x+c
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Substitute 
+\begin_inset Formula $x=-2,y=3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3 & =\frac{3}{2}\left(-2\right)+c\\
+c & =3+3\\
+\boldsymbol{c} & \boldsymbol{=6}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Form the equation of the normal line to the tangent, 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{y=\frac{3}{2}x+6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =\sin t\\
+y & =\cos2t\\
+t & =\frac{\pi}{6}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Differentiate the two equations separately, and find the gradient of each
+ part
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=\sin t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=\cos t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $t=\frac{\pi}{6}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =\cos\left(\frac{\pi}{6}\right)\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\cos2t$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dt} & =-\sin2t\cdot2\\
+ & =-2\sin2t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $t=\frac{\pi}{6}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dt} & =-2\sin\left(\frac{\pi}{3}\right)\\
+ & =-2\left(\frac{1}{2}\right)\\
+ & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Find the gradient of the tangent line 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ by using chain-rule
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{dy}{dt}*\frac{dt}{dx}\\
+ & =-1*\frac{1}{\frac{dx}{dt}}\\
+ & =-1*2\\
+\frac{dy}{dx} & =-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convert the coordinates from parametric to cartesian format
+\begin_inset Formula 
+\begin{align*}
+x & =\sin t\\
+ & =\sin\left(\frac{\pi}{6}\right)\\
+\boldsymbol{x} & \boldsymbol{=\frac{1}{2}}\\
+y & =\cos2t\\
+t & =\cos\left(\frac{\pi}{3}\right)\\
+\boldsymbol{y} & \boldsymbol{=\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $t=\frac{\pi}{6}\Rightarrow\left(\frac{1}{2},\frac{1}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the tangent line (this method bypasses the need to
+ find 
+\begin_inset Formula $c$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+y-y_{1} & =m\left(x-x_{1}\right)\\
+y-\frac{1}{2} & =-2\left(x-\frac{1}{2}\right)\\
+y & =-2x+1+\frac{1}{2}\\
+\boldsymbol{y} & \boldsymbol{=-2x+\frac{3}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

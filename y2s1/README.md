@@ -82,3 +82,10 @@ Pong Suk Fun (ADIS): Block A111 (1st floor)
 ## Reference books
 
 To be updated.
+
+### Statistics
+
+- Mid term text
+  - 22/7/2019
+  - Open book
+  - Tutorial 1-5

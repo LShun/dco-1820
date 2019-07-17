@@ -1,0 +1,673 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc 1: Tutorial 5
+\end_layout
+
+\begin_layout Title
+\begin_inset FormulaMacro
+\newcommand{\dydx}{\frac{dy}{dx}}
+{\frac{dy}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differentiate the following functions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{5}{x^{2}}-\frac{x^{4}}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{5}{x^{2}}-\frac{x^{4}}{3}\\
+ & =5x^{-2}-\frac{1}{3}x^{4}\\
+\frac{dy}{dx} & =-10x^{-3}-\frac{4}{3}x^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\sqrt{x^{3}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =x^{\frac{3}{2}}\\
+\dydx & =\frac{3}{2}x^{\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{6}{\sqrt{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =6*\frac{1}{\sqrt{x}}\\
+ & =6*x^{-\frac{1}{2}}\\
+\dydx & =6*-\frac{1}{2}*x^{-\frac{3}{2}}\\
+ & =-3x^{-\frac{3}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{e^{3x}}{16}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{1}{16}e^{3x}\\
+\dydx & =\frac{3}{16}e^{\frac{3}{x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=3\ln x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =3*\frac{1}{x}\\
+ & =\frac{3}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{x^{2}-1}{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =x-\frac{1}{x}\\
+ & =x-x^{-1}\\
+\dydx & =1-\left(-1\right)*x^{-2}\\
+ & =1+\frac{1}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=x\sqrt{x+3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =x\left(x+3\right)^{\frac{1}{2}}\\
+\dydx & =1\cdot\left(x+3\right)^{\frac{1}{2}}+x\cdot\frac{1}{2}\left(x+3\right)^{-\frac{1}{2}}\\
+ & =\left(x+3\right)^{\frac{1}{2}}+\frac{x}{2}\left(x+3\right)^{-\frac{1}{2}}\\
+ & =\left(x+3\right)^{-\frac{1}{2}}\left(x+3+\frac{1}{2}x\right)\\
+ & =\left(x+3\right)^{-\frac{1}{2}}\left(\frac{3}{2}x+3\right)\\
+ & =\frac{\frac{3}{2}x+3}{\sqrt{x+3}}\\
+ & =\frac{\frac{3}{2}\left(x+2\right)}{\sqrt{x+3}}\\
+ & =\frac{3\left(x+2\right)}{2\sqrt{x+3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\sqrt{x}\cdot e^{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =x^{\frac{1}{2}}e^{x}\\
+\dydx & =\frac{1}{2}x^{-\frac{1}{2}}*e^{x}+x^{\frac{1}{2}}*e^{x}\\
+ & =e^{x}x^{-\frac{1}{2}}\left(\frac{1}{2}+x\right)\\
+ & =\frac{e^{x}\left(2x+1\right)}{2\sqrt{x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\left(1+\sin x\right)\tan x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\left(\cos x\right)\left(\tan x\right)+\left(1+\sin x\right)\left(\sec^{2}x\right)\\
+ & =\left(\cos x\right)\left(\frac{\sin x}{\cos x}\right)+\left(1+\sin x\right)\left(\sec^{2}x\right)\\
+ & =\sin x+\sec^{2}x+\tan x\sec x\\
+ & =\sin x+\sec^{2}x+\frac{\tan x}{\cos x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\left(1-x^{3}\right)\left(1+x^{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Ans:-6x^{5}$
+\end_inset
+
+, note, the book answer is wrong
+\begin_inset Formula 
+\begin{align*}
+y & =-3x^{2}*\left(1+x^{3}\right)+\left(1-x^{3}\right)*3x^{2}\\
+ & =-3x^{2}-3x^{5}+3x^{2}-3x^{5}\\
+ & =-6x^{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Quotient rule
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{2x^{2}+1}{x-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{\left(x-1\right)\frac{d}{dx}\left(2x^{2}+1\right)-\left(2x^{2}+1\right)\frac{d}{dx}\left(x-1\right)}{\left(x-1\right)^{2}}\\
+ & =\frac{\left(x-1\right)\left(4x\right)-\left(2x^{2}+1\right)}{\left(x-1\right)^{2}}\\
+ & =\frac{4x^{2}-4x-2x^{2}-1}{\left(x-1\right)^{2}}\\
+ & =\frac{2x^{2}-4x-1}{\left(x-1\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{e^{x}}{x^{3}+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{\left(x^{3}+1\right)e^{x}-e^{x}\left(3x^{2}\right)}{\left(x^{3}+1\right)^{2}}\\
+ & =\frac{\left(x^{3}+1\right)e^{x}-e^{x}\left(3x^{2}\right)}{\left(x^{3}+1\right)^{2}}\\
+ & =e^{x}\left(\frac{x^{3}-3x^{2}+1}{\left(x^{3}+1\right)^{2}}\right)\\
+ & =\frac{e^{x}\left(x^{3}-3x^{2}+1\right)}{\left(x^{3}+1\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{\cos x}{\sin x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{\sin x\cdot\left(-\sin x\right)-\cos x\cdot\left(\cos x\right)}{\sin^{2}x}\\
+ & =\frac{-\sin^{2}x-\cos^{2}x}{\sin^{2}x}\\
+ & =\frac{-1}{\sin^{2}x}\\
+ & =-\csc^{2}x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $G\left(r\right)=\sqrt{r}+\sqrt[3]{r}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+G\left(r\right) & =r^{\frac{1}{2}}+r^{\frac{1}{3}}\\
+G'\left(r\right) & =\frac{1}{2}r^{-\frac{1}{2}}+\frac{1}{3}r^{-\frac{2}{3}}\\
+G''\left(r\right) & =-\frac{1}{4}r^{-\frac{3}{2}}-\frac{2}{9}r^{-\frac{5}{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $F\left(x\right)=f\left(x\right)g\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F\left(x\right) & =f\left(x\right)g\left(x\right)\\
+F'\left(x\right) & =f'\left(x\right)g\left(x\right)+f\left(x\right)g'\left(x\right)\\
+F''\left(x\right) & =\frac{d}{dx}\left(f'\left(x\right)g\left(x\right)\right)+\frac{d}{dx}\left(f\left(x\right)g'\left(x\right)\right)\\
+ & =f''\left(x\right)g\left(x\right)+f'\left(x\right)g'\left(x\right)+f'\left(x\right)g'\left(x\right)+f\left(x\right)g''\left(x\right)\\
+ & =f''g\left(x\right)+2f'g'\left(x\right)+fg''\left(x\right)\\
+ & =f''g+2f'g'+fg''
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x\sin x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\frac{d}{dx}\left(x\right)*\sin x+x*\frac{d}{dx}\left(\sin x\right)\\
+ & =\sin x+x*\left(\cos x\right)\\
+ & =\sin x+x\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(t\right)=4\sec t+\tan t$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dg}{dt} & =4\left(\sec x\tan x\right)+\sec^{2}x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=e^{u}\left(\cos u+cu\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =1*e^{u}*\left(\cos u+cu\right)+\left(e^{u}\right)*\left(-\sin u+c\right)\\
+ & =e^{u}\left(\cos u-\sin u+cu+c\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{\sin x}{1+\cos x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{\left(1+\cos x\right)\left(\cos x\right)-\left(\sin x\right)\left(-\sin x\right)}{\left(1+\cos x\right)^{2}}\\
+ & =\frac{\cos x+\cos^{2}x+\sin^{2}x}{\left(1+\cos x\right)^{2}}\\
+ & =\frac{\cos x+1}{\left(1+\cos x\right)^{2}},\text{note:}\text{\ensuremath{\sin^{2}x+\cos^{2}x=1}}\\
+ & =\frac{1}{1+\cos x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{\tan x-1}{\sec x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{\tan x}{\sec x}-\frac{1}{\sec x}\\
+ & =\frac{\frac{\sin x}{\cos x}}{\frac{1}{\cos x}}-\cos x\\
+ & =\frac{\sin x}{\cos x}*\cos x-\cos x\\
+ & =\sin x-\cos x\\
+\dydx & =\cos x-\left(-\sin x\right)\\
+ & =\sin x+\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Alternatively
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{\sec x\left(\sec^{2}x\right)-\left(\tan x-1\right)\left(\sec x\tan x\right)}{\left(\sec x\right)^{2}}\\
+ & =\frac{\sec^{3}x+\left(1-\tan x\right)\left(\sec x\tan x\right)}{\left(\sec x\right)^{2}}\\
+ & =\frac{\sec^{3}x+\left(\sec x\tan x-\sec x\tan^{2}x\right)}{\sec^{2}x}\\
+ & =\frac{\sec^{2}x+\tan x-\tan^{2}x}{\sec x}\\
+ & =\frac{1+\tan^{2}\left(x\right)+\tan x-\tan^{2}x}{\sec x};\text{Note:}\sec^{2}x=1+\tan^{2}\left(x\right)\\
+ & =\frac{1+\tan x}{\sec x}\\
+ & =\frac{\tan x+1}{\sec x}\\
+ & =\frac{\tan x}{\sec x}+\frac{1}{\sec x}\\
+ & =\sin x+\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the tangent line to the curve at the given point.
+ 
+\begin_inset Formula $y=e^{x}\cos x,\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The equation of a tangent line is 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+First, find 
+\begin_inset Formula $m$
+\end_inset
+
+, the gradient, or 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+, at point 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =e^{x}\cos x+e^{x}\left(-\sin x\right)\\
+ & =e^{0}\cos0+e^{0}\left(-\sin0\right)\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Second, find the 
+\begin_inset Formula $c$
+\end_inset
+
+, or the 
+\begin_inset Formula $y-intercept$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+y & =x+c\\
+1 & =0+c\\
+c & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Construct the complete equation
+\begin_inset Formula 
+\[
+y=x+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the tangent line to the curve 
+\begin_inset Formula $y=\sec x-2\cos x$
+\end_inset
+
+ at the point (
+\begin_inset Formula $\frac{\pi}{3}$
+\end_inset
+
+, 1).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The equation of a tangent line is 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+First, find 
+\begin_inset Formula $m$
+\end_inset
+
+, the gradient, or 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+, at point 
+\begin_inset Formula $\left(\frac{\pi}{3},1\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\sec x\tan x+2\sin x\\
+ & =\sec\frac{\pi}{3}\tan\frac{\pi}{3}+2\sin\frac{\pi}{3}\\
+ & =2\left(\sqrt{3}\right)+2\left(\frac{\sqrt{3}}{2}\right)\\
+ & =2\sqrt{3}+\sqrt{3}\\
+ & =3\sqrt{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Second, find the 
+\begin_inset Formula $c$
+\end_inset
+
+, or the 
+\begin_inset Formula $y-intercept$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+y & =\left(3\sqrt{3}\right)x+c\\
+1 & =\frac{\pi}{3}\left(3\sqrt{3}\right)+c\\
+c & =1-\pi\sqrt{3}\\
+ & =
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Construct the complete equation
+\begin_inset Formula 
+\[
+y=3\sqrt{3}x+1-\pi\sqrt{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
