@@ -192,9 +192,8 @@ Let X be the lifetime of a mechanical assembly in a vibration test with
 
 \begin_inset Formula 
 \begin{align*}
-P\left(X<100\right) & =\int_{0}^{100}\frac{1}{400}e^{-\frac{100}{400}}\\
- & =P\left(Z<0.0019470\right)\\
- & =
+P\left(X<100\right) & =\int_{0}^{100}\frac{1}{400}e^{-\frac{x}{400}}dx\\
+ & =0.2212
 \end{align*}
 
 \end_inset

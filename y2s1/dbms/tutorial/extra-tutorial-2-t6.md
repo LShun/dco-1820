@@ -1,0 +1,61 @@
+Extra Tutorial 2
+
+a)
+
+```sql
+SELECT	DocNum, Doc_FName, Doc_LName
+FROM	DOCTOR
+WHERE	DOC_FNAME = 'Fazura' AND
+		MONTHS_BETWEEN(SYSDATE, STARTDATE) > 60
+		AND YEARS_BETWEEN(SYSDATE,STARTDATE) > 5;
+```
+
+b)
+
+```sql
+SELECT	V.PatientNum, P.FName, P.LName
+FROM	PATIENT P, VISIT V
+WHERE	V.DateOfVisit
+	    BETWEEN '1 JAN 2017' AND
+	    '31 DEC 2017'
+LIKE	'%s2017';
+```
+
+c)
+
+```sql
+SELECT	UPPER(Doc_FName),
+		UPPER(Doc_LName),
+		Specialty
+FROM	DOCTOR
+WHERE	SPECIALTY = 'Surgery' OR
+		SPECIALTY = 'Cardiology' OR
+		SPECIALTY = 'Neurology'
+
+/*ALTERNATIVE
+SPECIALTY IN (..., ..., ...)*/
+```
+
+d)
+
+```sql
+SELECT	 *
+FROM	 PATIENT
+WHERE	 SUBSTR(LName, -4, 4) = 'LAFA';
+
+/* ALTERNATIVE
+LIKE '%LAFA'
+```
+
+e)
+
+```sql
+SELECT DOC_FName, DOC_LName, (SYSDATE - StartDate)
+FROM	DOCTOR
+WHERE	Doc_FName = 'Amin';
+```
+
+f) 
+
+Copy from teacher
+

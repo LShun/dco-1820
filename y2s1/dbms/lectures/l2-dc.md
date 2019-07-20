@@ -88,9 +88,10 @@ End user <-> DBMS <-> Database Structure
 
 ## Problem with File System Data Management
 
-- Every task need extensive programming
-  - 3GL (how it must be done)
-  - 4GL (specify what must be done)
+### Every task need extensive programming
+
+- 3GL (how it must be done)
+- 4GL (specify what must be done)
 
 ### Programming in 3GL
 
@@ -121,8 +122,8 @@ End user <-> DBMS <-> Database Structure
 
 - File system
   - Many separate and unrelated files
-  Database
-    Logically related data at single point
+- Database
+- Logically related data at single point
 
 ### Database System Environment
 
@@ -154,7 +155,7 @@ End user <-> DBMS <-> Database Structure
     - Create structure to allow multiple user to access data
   - **Backup and recovery management**
     - Provide backup and data recovery procedures
-  - **Data integrity management**
+    - **Data integrity management**
     - Promotes and enforces integrity rules
       - Integrity rules:
         - *Entity* (ID, primary key)

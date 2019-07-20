@@ -125,3 +125,52 @@ public static boolean validateCreditCardNumber(String ccNum) {
 }
 ```
 
+##  Question 6
+
+```JAVA
+public static boolean validateID(String loginID) {
+        // Has between 6 and 10 characters
+        if (loginID.length() < 6 || loginID.length() > 10) {
+            return false;
+        }
+        // Begins with an uppercase letter
+        if (Character.isUpperCase(loginID.charAt(0)) == false) {
+            return false;
+        }
+        // Consists of only letters and digits
+        for (int i = 0; i < loginID.length(); i++) {
+            if (Character.isLetter(loginID.charAt(i)) == false) {
+                if (Character.isDigit(loginID.charAt(i)) == false) {
+                    return false;
+                }
+            }
+        }
+        // Contains at least one lowercase letter and at least one digit
+        for (int i = 0; i < loginID.length(); i++) {
+            if (Character.isLowerCase(loginID.charAt(i))) {
+                for (int j = 0; j < loginID.length(); j++) {
+                    if (Character.isDigit(loginID.charAt(j))) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+```
+
+## Question 7
+
+| No.  | StringBuffer                                                 | StringBuilder                                                |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1)   | StringBuffer is *synchronized* i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously. | StringBuilder is *non-synchronized* i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously. |
+| 2)   | StringBuffer is *less efficient* than StringBuilder.         | StringBuilder is *more efficient* than StringBuffer.         |
+
+## Question 8
+
+```java
+// Output
+Java
+Java and HTML
+```
+

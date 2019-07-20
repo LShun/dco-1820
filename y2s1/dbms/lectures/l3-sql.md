@@ -543,7 +543,7 @@ Q14
 ```sql
 SELECT *
 FROM Viewing
-WHERE VDate >= '01-May-1998' OR VDate <= '31-May-1998';
+WHERE VDate >= '01-May-1998' AND VDate <= '31-May-1998';
 ```
 
 ```sql
@@ -633,7 +633,7 @@ Q19
 ```sql
 SELECT DISTINCT Pno
 FROM Property_For_Rent P, Viewing V
-WHERE V.Rno = P.Rno
+WHERE V.Rno = P.Rno;
 ```
 
 `DISTINCT` eliminates duplicate values
@@ -726,7 +726,7 @@ Q26
 SELECT      Sno, Fname, LName, Position
 FROM        Staff
 WHERE       Bno IN
-            (     SELECT      C.Bno
+            (     SELECT      Bno
                   FROM        Branch
                   WHERE Street IN ('163 Main St', '22 Deer Rd'));
 ```
@@ -834,7 +834,7 @@ Q35
 
 ```sql
 SELECT      Sno, FName, LName, Position,
-            Salary = (SELECT  AVG(Salary)
+            Salary - (SELECT  AVG(Salary)
                       FROM    Staff) AS Set_Diff;
 FROM        Staff
 WHERE       Salary = (SELECT  AVG(Salary)
@@ -872,7 +872,7 @@ Keyword: Because "each branch" and must more than 1 people, so need `HAVING`
 SELECT      Bno, COUNT(Sno) AS StaffCount, SUM(Salary) AS SumSalary,
 FROM        Staff
 GROUP BY    Bno
-HAVING      COUNT(Sno) = 1
+HAVING      COUNT(Sno) >= 1
 ORDER BY    Bno;
 ```
 
@@ -1189,7 +1189,10 @@ Q55
 
 ```sql
 ALTER TABLE Staff
-MODIFY      Position SET DEFAULT 'Assistant';
+MODIFY SEX DEFAULT NULL;
+
+ALTER TABLE Staff
+MODIFY      Position DEFAULT 'Assistant';
 ```
 
 Q56

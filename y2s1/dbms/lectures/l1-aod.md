@@ -41,7 +41,7 @@
   - relationship: connection among entities
 - Shared
   - multiple uses: multiple varieties data entry screens and reports
-  - multiple uses: supports simultaneous data access & modification
+  - multiple users: supports simultaneous data access & modification
 
 ## Database Technology Evolution
 

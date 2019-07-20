@@ -778,5 +778,957 @@ y & =u^{\frac{1}{2}}\\
 \end_layout
 
 \end_deeper
+\begin_layout Section
+Parametric Differentiation
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $x=t^{3},y=t^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Differentiate both parametric equations
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =3t^{2}\\
+\frac{dy}{dt} & =2t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize chain rule to find 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ (as for why 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+, simple, your cartesian plane only have 
+\begin_inset Formula $x-coordinate$
+\end_inset
+
+ and 
+\begin_inset Formula $y-coordinate$
+\end_inset
+
+, no 
+\begin_inset Formula $t-coordinate$
+\end_inset
+
+, so you need your gradient be a derivative of 
+\begin_inset Formula $y$
+\end_inset
+
+ (dy) with respect to x (dx).
+\begin_inset Formula 
+\begin{align*}
+\dx & =\frac{dy}{dt}*\frac{dt}{dx}\\
+ & =2t*\frac{1}{\frac{dx}{dt}}\\
+ & =2t*\frac{1}{3t^{2}}\\
+\dx & =\frac{2}{3t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=\cos2\theta,y=1+\sin2\theta,$
+\end_inset
+
+find 
+\begin_inset Formula $\dx$
+\end_inset
+
+ at 
+\begin_inset Formula $\theta=\frac{\pi}{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivative
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{d\theta} & =-\sin2\theta*2\\
+ & =-2\sin2\theta
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dy}{d\theta}=2\cos2\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{dy}{d\theta}*\frac{d\theta}{dx}\\
+ & =2\cos2\theta*\frac{1}{-2\sin2\theta}\\
+ & =-\cot2\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+At 
+\begin_inset Formula $\theta=\frac{\pi}{6}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dx & =-\cot\frac{\pi}{3}\\
+ & =\frac{-1}{\sqrt{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=\frac{2-3t}{1+t},y=\frac{3+2t}{1+t}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivative 
+\begin_inset Formula $\dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =\frac{\left(1+t\right)\cdot\left(-3\right)-\left(2-3t\right)\left(1\right)}{\left(1+t\right)^{2}}\\
+ & =\frac{-5}{\left(1+t\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dt} & =\frac{\left(1+t\right)\cdot\left(2\right)-\left(3+2\right)\left(1\right)}{\left(1+t\right)^{2}}\\
+ & =-\frac{1}{\left(1+t\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dx & =\frac{dy}{dt}*\frac{dt}{dx}\\
+ & =\frac{dy}{dt}*\frac{1}{\frac{dx}{dt}}\\
+ & =-\frac{1}{\cancel{\left(1+t\right)^{2}}}*-\frac{\cancel{\left(1+t\right)^{2}}}{5}\\
+ & =\frac{1}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Implicit Differentiation
+\end_layout
+
+\begin_layout Subsection
+Example 3.8
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $\dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+y^{2}-2x-6y+5=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{2}+y^{2}-2x-6y+5 & =0\\
+y^{2}-6y & =x^{2}-2x+5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hmm, we cannot separate completely (like 
+\begin_inset Formula $y=...$
+\end_inset
+
+ or 
+\begin_inset Formula $x=...$
+\end_inset
+
+ ), so lets try implicit differentation
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left(y^{2}-6y\right) & =\frac{d}{dx}\left(x^{2}-2x+5\right)\\
+\frac{dy}{dx}\left(2y\right)-6\dx & =2x-2\\
+\dx\left(2y-6\right) & =2x-2\\
+\dx & =\frac{2x-2}{2y-6}\\
+\dx & =\frac{x-1}{y-3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+y^{3}=xy$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hate at first sight, don't even think I can break them up well, so lets
+ try implicit differentiation again.
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left(x^{2}+y^{3}\right) & =\frac{d}{dx}\left(xy\right)\\
+2x+3y^{2}\cdot\frac{dy}{dx} & =1\cdot y+x\cdot\dx\\
+3y^{2}\cdot\frac{dy}{dx}-x\cdot\dx & =y-2x\\
+\frac{dy}{dx}\left(3y^{2}-x\right) & =y-2x\\
+\boldsymbol{\frac{dy}{dx}} & \boldsymbol{=\frac{y-2x}{3y^{2}-x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x}{y}+x^{2}=2y$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Okay screw this again, I mean you could potentially make them have the same
+ denominator, and then move the 
+\begin_inset Formula $y$
+\end_inset
+
+ to the opposite side, but you will be still stuck with 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ together.
+ Darned lovebirds.
+ Anyways, lets try implicit differentiation again.
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left(\frac{x}{y}+x^{2}\right) & =\frac{d}{dx}\left(2y\right)\\
+\frac{y-x\frac{dy}{dx}}{y^{2}}+2x & =2\dx\\
+\frac{1}{y}-\dx\left(\frac{x}{y^{2}}\right)+2x & =2\dx\\
+\frac{1}{y}+2x & =2\dx+\dx\left(\frac{x}{y^{2}}\right)\\
+ & =\frac{dy}{dx}\left(2+\frac{x}{y^{2}}\right)\\
+\dx & =\frac{\frac{1}{y}+2x}{2+\frac{x}{y^{2}}}\\
+ & =\frac{\frac{1}{y^{2}}\left(1+2xy^{2}\right)}{\frac{1}{y^{2}}\left(2y^{2}+x\right)}\\
+\boldsymbol{\dx} & \boldsymbol{=\frac{\left(1+2xy^{2}\right)}{\left(2y^{2}+x\right)}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sin xy=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left(\sin xy\right) & =1\\
+\cos xy\cdot\frac{d}{dx}\left(xy\right) & =\frac{d}{dx}\left(1\right)\\
+\cos xy\cdot\left(y+x\dx\right) & =0\\
+x\dx\cos xy+y\cos xy & =0\\
+x\dx\cos xy & =-y\cos xy\\
+\frac{dy}{dx}\left(x\cos xy\right) & =-y\cos xy\\
+\dx & =-\frac{y\cos xy}{x\cos xy}\\
+ & =-\frac{y}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Differentiation of Inverse Trigonometric Functions
+\end_layout
+
+\begin_layout Subsection
+Cheatsheet Prime
+\begin_inset Formula 
+\[
+\frac{d}{dx}\left(\sin^{-1}x\right)=\frac{1}{\sqrt{1-x^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left(\cos^{-1}x\right) & =-\left(\frac{d}{dx}\sin^{-1}x\right)\\
+ & =-\frac{1}{\sqrt{1-x^{2}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left(\tan^{-1}x\right) & =\frac{1}{1+x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Note: 
+\begin_inset Formula $\frac{d}{dx}\left(\cos^{-1}x\right)=-\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+ is not given in exams
+\end_layout
+
+\begin_layout Subsection
+Proofings
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{d}{dx}\left(\sin^{-1}x\right)=\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=\sin^{-1}\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(\sin x\right) & =\sin\left(\sin^{-1}x\right)\\
+ & =x\\
+f'\left(\sin x\right)\cos x & =1\\
+f'\left(\sin x\right) & =\frac{1}{\cos x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the identity 
+\begin_inset Formula $\sin^{2}x+\cos^{2}x=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos^{2}x & =1\\
+ & =1-\sin^{2}x\\
+\cos x & =\sqrt{1-\sin^{2}x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Remember earlier in 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ where we made our 
+\begin_inset Formula $x=\sin x$
+\end_inset
+
+?
+\begin_inset Formula 
+\begin{align*}
+x & =\sin x\\
+x^{2} & =\sin^{2}x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in
+\begin_inset Formula 
+\[
+\cos x=\sqrt{1-x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back into the original function, with 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ substituted by 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=\frac{1}{\sqrt{1-x^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Remember we made 
+\begin_inset Formula $f\left(x\right)=\sin^{-1}\left(x\right)$
+\end_inset
+
+? Now lets us turn it back, but now we have 
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+, therefore, its more like after 
+\begin_inset Formula $\dx$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dx\sin^{-1}\left(x\right)=\frac{1}{\sqrt{1-x^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{d}{dx}\left(\tan^{-1}x\right)=\frac{1}{1+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=\tan^{-1}\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(\tan\theta\right) & =\theta;f^{-1}f\left(x\right)=x\\
+f'\left(\tan\theta\right)\cdot\sec^{2}\theta & =1\\
+f'\left(\tan\theta\right) & =\frac{1}{\sec^{2}\theta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We will apply the following rules:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sec^{2}\theta=\tan^{2}\theta+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since our 
+\begin_inset Formula $\tan\theta$
+\end_inset
+
+ is made as our 
+\begin_inset Formula $x$
+\end_inset
+
+ inside 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+x & =\tan\theta\\
+x^{2} & =\left(\tan\theta\right)^{2}\\
+x^{2} & =\tan^{2}\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute it back in to i) and we will get 
+\begin_inset Formula 
+\[
+\sec^{2}\theta=x^{2}+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Subsitute back in and we will get:
+\begin_inset Formula 
+\[
+f'\left(x\right)=\frac{1}{1+x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $\frac{d}{dx}\tan^{-1}x=\frac{1}{1+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Examples 3.9
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\dx$
+\end_inset
+
+ of the following functions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\sin^{-1}\sqrt{x-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{1}{\sqrt{1-\left(\sqrt{x-1}\right)^{2}}}*\frac{d}{dx}\left(\sqrt{x-1}\right)\\
+ & =\frac{\frac{1}{2}\left(x-1\right)^{-\frac{1}{2}}\cdot1}{\sqrt{1-\left(\sqrt{x-1}\right)^{2}}}\\
+ & =\frac{\frac{1}{2}\left(x-1\right)^{-\frac{1}{2}}}{\sqrt{1-x+1}}\\
+\dx & =\frac{1}{2\sqrt{2-x}\sqrt{x-1}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\cos^{-1}\left(\frac{1-x}{1+x}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dx & =-\frac{1}{\sqrt{1-\left(\frac{1-x}{1+x}\right)^{2}}}*\frac{d}{dx}\left(\frac{1-x}{1+x}\right)\\
+ & =-\frac{1}{\sqrt{1-\frac{\left(1-x\right)^{2}}{\left(1+x\right)^{2}}}}*\frac{\left(1+x\right)\cdot\left(-1\right)-\left(1-x\right)\cdot1}{\left(1+x\right)^{2}}\\
+ & =-\frac{1}{\sqrt{\frac{\left(1+x\right)^{2}-\left(1-x\right)^{2}}{\left(1+x\right)^{2}}}}*\frac{-\left(1+x\right)-\left(1-x\right)}{\left(1+x\right)^{2}}\\
+ & =-\frac{1}{\sqrt{\frac{\left(1+x\right)^{2}-\left(1-x\right)^{2}}{\left(1+x\right)^{2}}}}*\frac{-2}{\left(1+x\right)^{2}}\\
+ & =-\frac{1}{\sqrt{\frac{\left(1+2x+x^{2}\right)-\left(1-2x+x^{2}\right)}{\left(1+x\right)^{2}}}}*\frac{-2}{\left(1+x\right)^{2}}\\
+ & =-\frac{1}{\sqrt{\frac{\cancel{1}+2x\cancel{+x^{2}}\cancel{-1}+2x\cancel{-x^{2}}}{\left(1+x\right)^{2}}}}*\frac{-2}{\left(1+x\right)^{2}}\\
+ & =-\frac{1}{\frac{\sqrt{4x}}{\sqrt{\left(1+x\right)^{2}}}}*\frac{-2}{\left(1+x\right)^{2}}\\
+ & =\cancel{-}\frac{\left(1+x\right)}{\cancel{2}\sqrt{x}}*\frac{\cancel{-2}}{\left(1+x\right)^{2}}\\
+ & =\frac{\left(1+x\right)}{\sqrt{x}\left(1+x\right)^{2}}\\
+ & =\frac{1}{\sqrt{x}\left(1+x\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=2\tan^{-1}\sqrt{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dx & =2\left(\frac{1}{1+\left(\sqrt{x}\right)^{2}}\right)\cdot\dx\sqrt{x}\\
+ & =\frac{2}{1+x}\cdot\frac{1}{2\sqrt{x}}\\
+ & =\frac{1}{\sqrt{x}\left(1+x\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\left(x^{2}+2\right)\tan^{-1}\left(2x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dx & =\frac{d}{dx}\left(x^{2}+2\right)\cdot\tan^{-1}\left(2x\right)+\left(x^{2}+2\right)\cdot\frac{d}{dx}\left(\tan^{-1}\left(2x\right)\right)\\
+ & =\frac{2x}{\tan\left(2x\right)}+\left(x^{2}+2\right)\cdot\frac{1}{1+\left(2x\right)^{2}}\cdot\frac{d}{dx}\left(2x\right)\\
+ & =\frac{2x}{\tan\left(2x\right)}+\frac{\left(x^{2}+2\right)}{1+\left(2x\right)^{2}}\cdot2\\
+ & =\frac{2x}{\tan\left(2x\right)}+\frac{2\left(x^{2}+2\right)}{1+4x^{2}}\\
+\dx & =2x\tan^{-1}\left(2x\right)+\frac{2\left(x^{2}+2\right)}{1+4x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Higher Derivatives
+\end_layout
+
+\begin_layout Subsection
+Examples 3.10
+\end_layout
+
+\begin_layout Enumerate
+Find the second derivatives of the following functions.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=2x^{4}-5x^{3}+3x^{2}-2x+4$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dx & =8x^{3}-15x^{2}+6x-2\\
+\frac{d^{2}y}{dx^{2}} & =24x^{2}-30x+6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=e^{-x}\sin2x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y' & =\frac{d}{dx}\left(e^{-x}\right)\cdot\sin2x+e^{-x}\cdot\frac{d}{dx}\left(\sin2x\right)\\
+ & =\frac{d}{dx}\left(e^{-x}\right)\cdot\sin2x+e^{-x}\cdot\frac{d}{dx}\left(\sin2x\right)\\
+ & =-e^{-x}\cdot\sin2x+e^{-x}\cdot\cos2x\cdot2\\
+ & =-e^{-x}\sin2x+2e^{-x}\cos2x\\
+ & =2e^{-x}\cos2x-e^{-x}\sin2x\\
+ & =e^{-x}\left(2\cos2x-\sin2x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y'' & =\frac{d}{dx}\left[e^{-x}\left(2\cos2x-\sin2x\right)\right]\\
+ & =\frac{d}{dx}\left[e^{-x}\right]*\left(2\cos2x-\sin2x\right)+e^{-x}\cdot\frac{d}{dx}\left[\left(2\cos2x-\sin2x\right)\right]\\
+ & =-e^{-x}\left(2\cos2x-\sin2x\right)+e^{-x}\left(2\left(\left(-\sin2x\right)\cdot2\right)-\left(\cos2x\right)\cdot2\right)\\
+ & =-e^{-x}\left(2\cos2x-\sin2x\right)+e^{-x}\left(-4\sin2x-2\cos2x\right)\\
+ & =-e^{-x}\left(2\cos2x-\sin2x\right)-2e^{-x}\left(2\sin2x+\cos2x\right)\\
+ & =-e^{-x}\left(2\cos2x-\sin2x+2\left(2\sin2x+\cos2x\right)\right)\\
+ & =-e^{-x}\left(2\cos2x-\sin2x+4\sin2x+2\cos2x\right)\\
+ & =-e^{-x}\left(4\cos2x+3\sin2x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\frac{\ln x}{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y' & =\frac{x\frac{d}{dx}\left(\ln x\right)-\ln x\frac{d}{dx}x}{x^{2}}\\
+ & =\frac{x\frac{1}{x}-\ln x\cdot1}{x^{2}}\\
+y' & =\frac{1-\ln x}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y'' & =\frac{x^{2}\frac{d}{dx}\left(1-\ln x\right)-\left(1-\ln x\right)\frac{d}{dx}\left(x^{2}\right)}{\left(x^{2}\right)^{2}}\\
+ & =\frac{x^{2}\left(-\frac{1}{x}\right)-\left(1-\ln x\right)2x}{x^{4}}\\
+ & =\frac{-x-\left(2x-2x\ln x\right)}{x^{4}}\\
+ & =\frac{-3x+2x\ln x}{x^{4}}\\
+ & =\frac{x\left(2\ln x-3\right)}{x^{4}}\\
+ & =\frac{\left(2\ln x-3\right)}{x^{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=t^{3},y=t^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First derivative
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =3t^{2}\\
+\frac{dy}{dt} & =2t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use chain rule
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{dy}{dt}*\frac{dt}{dx}\\
+ & =\frac{dy}{dt}*\frac{1}{\frac{dx}{dt}}\\
+ & =\frac{2t}{3t^{2}}\\
+\frac{dy}{dx} & =\frac{2}{3t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Second derivative
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{d}{dx}\left[\frac{2}{3t}\right]\\
+ & =\frac{2}{3}\frac{d}{dx}\left[t^{-1}\right]\\
+ & =\frac{2}{3}\cdot-t^{-2}\cdot\frac{dt}{dx}\\
+ & =-\frac{2}{3}t^{-2}\cdot\left(\frac{1}{\frac{dx}{dt}}\right)\\
+ & =-\frac{2}{3t^{2}}\cdot\left(\frac{1}{3t^{2}}\right)\\
+ & =-\frac{2}{9t^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+y^{2}-2x+2y=23$
+\end_inset
+
+at point 
+\begin_inset Formula $x=-2,y=3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left[x^{2}+y^{2}-2x+2y\right] & =\frac{d}{dx}\left[23\right]\\
+2x+2y\cdot\frac{dy}{dx}-2+\frac{dy}{dx}\cdot2 & =0\\
+2y\dx+2\dx & =-\left(2x-2\right)\\
+\dx\left(2y+2\right) & =2-2x\\
+\dx & =\frac{2-2x}{\left(2y+2\right)}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left[\frac{dy}{dx}\right] & =\frac{d}{dx}\left[\frac{2-2x}{\left(2y+2\right)}\right]\\
+\frac{d^{2}y}{dx^{2}} & =\frac{\left(2y+2\right)\frac{d}{dx}\left(2-2x\right)-\left(2-2x\right)\frac{d}{dx}\left(2y+2\right)}{\left(2y+2\right)^{2}}\\
+ & =\frac{\left(2y+2\right)\left(-2\right)-\left(2-2x\right)\left(2\dx\right)}{\left(2y+2\right)^{2}}\\
+ & =\frac{-4y-4+\left(4x-4\right)\left(\dx\right)}{\left(2y+2\right)^{2}}\\
+ & =\frac{-4y-4+\left(4x-4\right)\left(\frac{2-2x}{\left(2y+2\right)}\right)}{\left(2y+2\right)^{2}}\\
+ & =\frac{-4y-4+\left(\frac{\left(2-2x\right)\left(4x-4\right)}{\left(2y+2\right)}\right)}{\left(2y+2\right)^{2}}\\
+ & =\frac{-4y-4+\left(\frac{2\left(1-x\right)\left(4x-4\right)}{2\left(y+1\right)}\right)}{\left(2y+2\right)^{2}}\\
+ & =\frac{-4y-4+\left(\frac{\left(1-x\right)\left(4x-4\right)}{\left(y+1\right)}\right)}{\left(2y+2\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Substitute in the point 
+\begin_inset Formula $\left(-2,3\right)$
+\end_inset
+
+where 
+\begin_inset Formula $x=-2$
+\end_inset
+
+, 
+\begin_inset Formula $y=3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}}|_{x=-2,y=3} & =\frac{-4\left(3\right)-4+\left(\frac{\left(1-\left(-2\right)\right)\left(4\left(-2\right)-4\right)}{\left(3+1\right)}\right)}{\left(2\left(3\right)+2\right)^{2}}\\
+ & =\frac{-12-4+\left(\frac{3\left(-12\right)}{4}\right)}{\left(6+2\right)^{2}}\\
+ & =\frac{-16+\left(\frac{-36}{4}\right)}{\left(8\right)^{2}}\\
+ & =\frac{-16-9}{\left(8\right)^{2}}\\
+ & =\frac{-25}{64}\\
+ & =-\frac{25}{64}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Logarithmic Differentiation
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Section
+Exam Tips
+\end_layout
+
+\begin_layout Enumerate
+If the question ask you for simplest form of a trigonometric value, be careful
+ of common angles.
+ Always give common angles in fraction instead of decimals.
+ Otherwise might minus one mark.
+\begin_inset Formula 
+\begin{align*}
+Example & :\sin\left(\frac{\pi}{3}\right)=\frac{\sqrt{3}}{2}\\
+instead\,of & :\sin\left(\frac{\pi}{3}\right)=0.866...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

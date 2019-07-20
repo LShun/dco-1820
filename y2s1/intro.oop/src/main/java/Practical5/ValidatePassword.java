@@ -39,9 +39,9 @@ public class ValidatePassword {
 
     private static boolean containsAlNum(String pw) {
         for (int i = 0; i < pw.length(); i++) {
-            if (pw.charAt(i) >= 'a' && pw.charAt(i) <= 'z') {
+            if (Character.isAlphabetic(pw.charAt(i))) {
                 for (int j = 0; j < pw.length(); j++) {
-                    if (pw.charAt(j) >= '0' && pw.charAt(j) <= '9') {
+                    if (Character.isDigit(pw.charAt(j))) {
                         return true;
                     }
                 }
