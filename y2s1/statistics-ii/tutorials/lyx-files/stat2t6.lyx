@@ -1844,8 +1844,8 @@ Since
 \begin_inset Formula $H_{0}$
 \end_inset
 
-and conclude that at least 95% of the equipment which he supplied to a factory
- conformed to specifications.
+and DO NOT have enough evidence to conclude that at least 95% of the equipment
+ which he supplied to a factory conformed to specifications.
 \end_layout
 
 \end_deeper
@@ -2039,14 +2039,14 @@ Opp: the items of factory C are not superior to those of factory B.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $H_{0}:p_{C-B}\ge0$
+\begin_inset Formula $H_{1}:p_{C-B}<0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $H_{1}:p_{C-B}<0$
+\begin_inset Formula $H_{0}:p_{C-B}\ge0$
 \end_inset
 
 
@@ -2055,14 +2055,14 @@ Opp: the items of factory C are not superior to those of factory B.
 \begin_layout Enumerate
 
 \series bold
-Left-tail test
+Right-tail test
 \end_layout
 
 \begin_layout Enumerate
 Find the critical value
 \begin_inset Formula 
 \[
-Z_{0.05}=-1.6449
+Z_{0.05}=1.6449
 \]
 
 \end_inset
@@ -2076,7 +2076,7 @@ Rejection region:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $Z<-1.6449$
+\begin_inset Formula $Z>1.6449$
 \end_inset
 
 
@@ -2109,7 +2109,7 @@ Z & =\frac{\hat{p_{1}}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}\cdot\left(\frac{1}{\sqr
 
 \begin_layout Enumerate
 Since 
-\begin_inset Formula $Z=1.600>-1.6449$
+\begin_inset Formula $Z=1.600<1.6449$
 \end_inset
 
 , we failed to reject 

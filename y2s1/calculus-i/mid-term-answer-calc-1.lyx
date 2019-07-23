@@ -1,0 +1,489 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Mid-Term Answer (60% of coursework marks)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(x-1\right)^{2}-1-7=\left(x-1\right)^{2}-8$
+\end_inset
+
+ - 1 mark
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sketch these graphs side by side, they each compose of 1 mark
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\left(x-1\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\left(x-1\right)^{2}-8$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h\left(x\right)=-\sqrt{-2x+5}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-2x+5 & \ge0\\
+-2x & \ge-5\\
+x & \le\frac{5}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Domain: 
+\begin_inset Formula $x\le\frac{5}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Range: 
+\begin_inset Formula $h\left(x\right)\le0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x\right)=2e^{x}+1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Domain: 
+\begin_inset Formula $x\epsilon\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Range: 
+\begin_inset Formula $g\left(x\right)>1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $y=\frac{2x}{3x-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3xy-y & =2x\\
+3xy-2x & =y\\
+x & =\frac{y}{3y-2}\\
+f^{-1}\left(x\right) & =\frac{x}{3x-2},x\neq\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left[f^{-1}\left(x\right)\right]=\frac{-\frac{7}{x}}{3x-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g\left[f^{-1}\left(x\right)\right]=\frac{-\frac{7}{x}}{3x-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\circ f\left(x\right)=\frac{14-21x}{x},x\neq\left\{ 0,\frac{2}{3}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos t & =\frac{x}{2}\\
+\cos^{2}t & =\frac{x^{2}}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sin t & =y-1\\
+\sin^{2}t & =\left(y-1\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin^{2}t+\cos^{2}t=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y^{2}-2y+1+\frac{x^{2}}{4} & =1\\
+y^{2}-2y+\frac{x^{2}}{4} & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim\frac{\frac{2x^{4}}{x^{4}}}{\frac{x^{4}}{x^{4}}-\frac{5}{x^{4}}} & =\lim_{x\to\infty}\frac{2}{1-\frac{5}{2^{4}}}\\
+ & =2\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to2}\frac{\frac{x-2}{2x}}{2-x}=\lim_{x\to2}-\frac{1}{2x}=-\frac{1}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to3}\frac{-x^{2}-x+12}{x-3} & =\lim_{x\to3}\frac{\left(x-3\right)\left(-x-4\right)}{x-3}\\
+ & =\lim_{x\to3}\left(-x-4\right)\\
+ & =-7
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $x=3$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(3\right)=b=-7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+NOTE: If you plug directly into calculator, the calculator will solve it
+ = 0, which is wrong.
+ You only want to factorize it, not solve it = 0
+\begin_inset Formula 
+\begin{align*}
+-x^{2}-x+12 & =0\\
+x^{2}+x-12 & =0\\
+\left(x-3\right)\left(x+4\right) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Vertical asymptotes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Let 
+\begin_inset Formula $9x^{2}-25=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}=\frac{25}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\pm\frac{5}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore x=\frac{5}{2},-\frac{5}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Horizontal asymtote:
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to\infty}\frac{x+2}{4x^{2}-25} & =\lim_{x\to\infty}\frac{\frac{1}{x}+\frac{2}{x^{2}}}{4-\frac{25}{x^{2}}}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore y=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

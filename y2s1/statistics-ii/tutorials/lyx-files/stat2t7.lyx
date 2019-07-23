@@ -1908,7 +1908,7 @@ Test statistics:
 \end_deeper
 \begin_layout Enumerate
 Conclusion, since 
-\begin_inset Formula $\chi^{2}<7.378$
+\begin_inset Formula $\chi^{2}=4.125<7.378$
 \end_inset
 
 , we failed to reject 
@@ -1951,7 +1951,15 @@ Opposite: Not all four coins are fair.
 \begin_inset Formula $\left(H_{1}\right)$
 \end_inset
 
+ (Note: 
+\begin_inset Quotes eld
+\end_inset
 
+All four coins are not fair
+\begin_inset Quotes erd
+\end_inset
+
+ is NOT acceptable, because it can be 3 fair,1 not fair)
 \end_layout
 
 \end_deeper
