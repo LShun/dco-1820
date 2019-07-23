@@ -5,6 +5,15 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -29,6 +38,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +54,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -1909,7 +1920,7 @@ and hence do not have enough evidence to say that the recent sales DO NOT
 \begin_inset Formula $\left(H_{1}\right)$
 \end_inset
 
-.
+ at 2.5% significance level.
 \end_layout
 
 \end_deeper
@@ -2019,9 +2030,566 @@ Conclusion, since
 \end_inset
 
  and hence can say that we have sufficient evidence to say that not all
- four coins are fair.
+ four coins are fair at 2.5% significance level.
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Table
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename ../lyx-imgs/t7q6.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Claim: There is no evidence of significant association between the type
+ of flights and the intensity of bookings (
+\begin_inset Formula $H_{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Opposite: There is evidence of significant association between the type
+ of flights and the intensity of bookings (
+\begin_inset Formula $H_{1}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical value, at 
+\begin_inset Formula $\alpha=0.01$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\chi_{0.01;\left(2-1\right)\left(3-1\right)}^{2} & =\chi_{0.01;2}^{2}\\
+ & =9.210
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\chi^{2}>9.210$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the test statistics
+\begin_inset Formula 
+\begin{align*}
+\chi^{2} & =\sum_{i=1}^{r}\sum_{j=1}^{c}\frac{\left(O_{ij}-E_{ij}\right)^{2}}{E_{ij}}\\
+ & =\frac{\left(154-150\right)^{2}}{150}+\frac{\left(171-150\right)^{2}}{150}+\frac{\left(275-300\right)^{2}}{300}+\frac{\left(96-100\right)^{2}}{100}+\frac{\left(79-100\right)^{2}}{100}+\frac{\left(225-200\right)^{2}}{200}\\
+ & =12.825
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\chi^{2}=12.825>9.210$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ .
+ Hence, we have sufficient evidence to conclude that there is evidence of
+ significant association between the type of flights and the intensity of
+ bookings at 1% significance level.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../lyx-imgs/t7q7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Claim: the degree of defectiveness is independent from the types of machine.
+ 
+\begin_inset Formula $\left(H_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Oppo: the degree of defectiveness is NOT independent from the types of machine
+ 
+\begin_inset Formula $\left(H_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Critical value 
+\begin_inset Formula $\chi_{0.02;\left(3-1\right)\left(4-1\right)}^{2}=\chi_{0.02;6}^{2}=15.033$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection range:
+\begin_inset Formula 
+\[
+\chi^{2}>15.033
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Test statistics:
+\begin_inset Formula 
+\begin{align*}
+\chi^{2} & =\sum_{i=1}^{r}\sum_{j=1}^{c}\frac{\left(O_{ij}-E_{ij}\right)^{2}}{E_{ij}}\\
+ & =\frac{\left(22-19.8\right)^{2}}{19.8}+\frac{\left(74-79.2\right)^{2}}{79.2}+\frac{\left(102-99\right)^{2}}{99}+\frac{\left(31-27.6\right)^{2}}{27.6}+\frac{\left(102-110.4\right)^{2}}{110.4}+\frac{\left(143-138\right)^{2}}{138}+\frac{\left(7-12.6\right)^{2}}{12.6}+\frac{\left(64-50.4\right)^{2}}{50.4}+\frac{\left(55-63\right)^{2}}{63}\\
+ & =9.0905
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\chi^{2}=9.0905<15.033,$
+\end_inset
+
+we failed to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and hence do not have sufficient evidence to conclude thatthe degree of
+ defectiveness is NOT independent from the types of machine at 2% significance
+ level.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../lyx-imgs/t7q8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Claim: the level of productivity DO NOT depends on the method of training
+ 
+\begin_inset Formula $\left(H_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Opposite: the level of productivity depends on the method of training 
+\begin_inset Formula $\left(H_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Critical value at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\chi_{0.05;\left(3-1\right)\left(4-1\right)}^{2} & =\chi_{0.05;2\cdot3}^{2}\\
+ & =\chi_{0.05;6}^{2}\\
+ & =12.592
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rejection region
+\begin_inset Formula 
+\[
+\chi^{2}>12.592
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Test statistic
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename ../lyx-imgs/t7q8-ts.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\chi^{2} & =\sum_{i=0}^{r}\sum_{j=0}^{c}\frac{\left(O_{ij}-E_{ij}\right)^{2}}{E_{ij}}\\
+ & =17.080
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\chi^{2}=17.080>12.592$
+\end_inset
+
+.
+ We reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+and hence have sufficienct evidence to conclude that the level of productivity
+ depends on the method of training at 5% significance level.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+NOTE:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Slight difference in answer (at 3th decimal place onwards) due to possible
+ rounding errors
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Claim: The coin is fair 
+\begin_inset Formula $\left(H_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Opposite: The coin is not fair 
+\begin_inset Formula $\left(H_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the critical point at 
+\begin_inset Formula $\alpha=0.02$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\chi_{0.02;2-0-1}^{2}=\chi_{0.02;1}^{2}=5.412$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the rejection region:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\chi^{2}>5.412$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the test statistic
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\chi^{2} & =\sum_{i=1}^{m}\frac{\left(\left|O_{i}-E_{i}\right|-0.5\right)^{2}}{E_{i}}\\
+ & =\frac{\left(\left|454-500\right|-0.5\right)^{2}}{500}+\frac{\left(\left|546-500\right|-0.5\right)^{2}}{500}\\
+ & =8.281
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\chi^{2}=8.281>5.412$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and hence conclude that the coin is not fair at 2% significance level.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hypothesis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Claim: The vaccine do not have relationship with recovery from the disease
+ 
+\begin_inset Formula $\left(H_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Opposite: The vaccine have relationship with recovery from the disease 
+\begin_inset Formula $\left(H_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Critical value, 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\chi_{0.05;m-t-1}^{2}=\chi_{0.05;2-0-1}^{2}=\chi_{0.05;1}^{2}=3.841$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rejection region
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\chi^{2}>3.841$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Test-statistic (since degree of freedom is 1, we need to apply Yate's correction
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\chi^{2} & =\sum_{i=1}^{r}\frac{\left(\left|O_{i}-E_{i}\right|-0.5\right)^{2}}{E_{i}}\\
+ & =\frac{\left(\left|75-65\right|-0.5\right)^{2}}{65}+\frac{\left(\left|25-35\right|-0.5\right)^{2}}{35}\\
+ & =3.967
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\chi^{2}=3.967>3.841$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+and hence have sufficient evidence to conclude that the vaccine have relationshi
+p with recovery from the disease at 5% significance level.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document

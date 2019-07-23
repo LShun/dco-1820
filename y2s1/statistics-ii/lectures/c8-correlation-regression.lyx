@@ -221,5 +221,90 @@ r_{s}=1-\frac{6*42}{10\left(100-1\right)}=0.7435
 Example
 \end_layout
 
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e5-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Spearman's Rank Correlation Coefficient
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\sum d^{2}}{n\left(n^{2}-1\right)}\\
+ & =1-\frac{6\left(26\right)}{10\left(10^{2}-1\right)}\\
+ & =0.8424
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The result demonstrates relatively high positive correlation.
+ Thus, high rates tend to be paired with high rents and vice versa.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example 6
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e6-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Spearman's rank correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\sum d^{2}}{n\left(n^{2}-1\right)}\\
+ & =1-\frac{6\left(127\right)}{12\left(12^{2}-1\right)}\\
+ & =0.5559
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The results show that there is positive correlation
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
 \end_body
 \end_document

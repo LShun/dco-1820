@@ -75,6 +75,28 @@
 
 \begin_body
 
+\begin_layout Title
+Calc I - Tutorial 6
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ddx}{\frac{d}{dx}}
+{\frac{d}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dy}{\frac{dy}{dx}}
+{\frac{dy}{dx}}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 \begin_inset space ~
 \end_inset
@@ -756,6 +778,397 @@ y & =-2x+1+\frac{1}{2}\\
 
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\dy$
+\end_inset
+
+ by implicit differentiation,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}-2xy+y^{3}=c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{2}-2xy+y^{3} & =c\\
+\dy\left(x^{2}-2xy+y^{3}\right) & =\dy\left(c\right)\\
+2x-2\left(1\cdot y+x\cdot\dy\right)+3y^{2}\dy & =0\\
+2x-2y+2x\dy+3y^{2}\dy & =0\\
+2x\dy+3y^{2}\dy & =2x-2y\\
+\dy\left(2x+3y^{2}\right) & =2\left(x-y\right)\\
+\dy & =\frac{2\left(x-y\right)}{\left(2x+3y^{2}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt{1+x^{2}y^{2}}=2xy$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1+x^{2}y^{2} & =\left(2xy\right)^{2}\\
+1+x^{2}y^{2} & =4x^{2}y^{2}\\
+\dy\left(1+x^{2}y^{2}\right) & =\dy\left(4x^{2}y^{2}\right)\\
+2x*y^{2}+x^{2}*2y*\dy & =4\left(2x\cdot y^{2}+x^{2}\cdot2y\cdot\dy\right)\\
+2xy^{2}+x^{2}2y\dy & =8xy^{2}+x^{2}8y\dy\\
+2xy^{2}-8xy^{2} & =8x^{2}y\dy-2x^{2}y\dy\\
+-6xy^{2} & =\dy\left(6x^{2}y\right)\\
+\dy & =\frac{6x^{2}y}{-6xy^{2}}\\
+\dy & =-\frac{x}{y}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sin x+\cos y=\sin x\cos y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dy\left(\sin x+\cos y\right) & =\dy\left(\sin x\cos y\right)\\
+\cos x-\sin y\cdot\dy & =\cos x\cdot\cos y+\sin x\cdot\left(-\sin y\right)\cdot\dy\\
+\cos x-\cos x\cos y & =-\sin x\sin y\dy+\sin y\dy\\
+\cos x\left(1-\cos y\right) & =\dy\left(-\sin x\sin y+\sin y\right)\\
+\dy & =\frac{\cos x\left(1-\cos y\right)}{\left(-\sin x\sin y+\sin y\right)}\\
+ & =\frac{\cos x\left(1-\cos y\right)}{\sin y\left(1-\sin x\right)}\\
+ & =\frac{\cos x\left(\cos y-1\right)}{\sin y\left(\sin x-1\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\left(\sin^{-1}x\right)^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\left(\sin^{-1}x\right)^{2}\\
+\dy & =2\left(\sin^{-1}x\right)\cdot\dy\left[\left(\sin^{-1}x\right)\right]\\
+ & =2\left(\sin^{-1}x\right)\cdot\frac{1}{\sqrt{1-x^{2}}}\\
+\dy & =\frac{2\sin^{-1}x}{\sqrt{1-x^{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\tan^{-1}\left(2x^{2}+1\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dy & =\ddx\left[\tan^{-1}\left(2x^{2}+1\right)\right]\cdot\ddx\left[\left(2x^{2}+1\right)\right]\\
+ & =\frac{1}{1+\left(2x^{2}+1\right)^{2}}\cdot4x\\
+ & =\frac{4x}{1+\left(4x^{4}+4x^{2}+1\right)}\\
+ & =\frac{4x}{4x^{4}+4x^{2}+2}\\
+\dy & =\frac{2x}{2x^{4}+2x^{2}+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the equation for the slope, 
+\begin_inset Formula $\dy$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dy\left[x^{2}+y^{2}+3xy-11\right] & =0\\
+2x+2y\dy+3y+3x\dy & =0\\
+2x+3y & =-\left(2y\dy+3x\dy\right)\\
+-\left(2x+3y\right) & =\dy\left(2y+3x\right)\\
+\dy & =-\frac{2x+3y}{2y+3x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the gradient at the point of the slope where 
+\begin_inset Formula $x=1,y=2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dy & =-\frac{2\left(1\right)+3\left(2\right)}{2\left(2\right)+3}\\
+ & =-\frac{2+6}{4+3}\\
+ & =-\frac{8}{7}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the gradient of the normal
+\begin_inset Formula 
+\begin{align*}
+m_{n}m_{t} & =-1\\
+m_{n} & =-\frac{1}{m_{t}}\\
+ & =\frac{7}{8}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the equation of the normal
+\begin_inset Formula 
+\begin{align*}
+y-y_{1} & =m\left(x-x_{1}\right)\\
+y-2 & =\frac{7}{8}\left(x-1\right)\\
+y & =\frac{7}{8}x-\frac{7}{8}+2\\
+ & =\frac{7}{8}x+\frac{9}{8}\\
+y & =\frac{1}{8}\left(7x+9\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Differentiate the following function (NO ANSWER)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\cos\left(\ln x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =-\sin\left(\ln x\right)\cdot\frac{1}{x}\\
+ & =-\frac{1}{x}\sin\left(\ln x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(t\right)=\frac{1+\ln t}{1-\ln t}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(t\right) & =\frac{dt}{dx}\left[\frac{1+\ln t}{1-\ln t}\right]\\
+ & =\frac{\left(1-\ln t\right)\frac{d}{dx}\left(1+\ln t\right)-\left(1+\ln t\right)\frac{d}{dx}\left(1-\ln t\right)}{\left(1-\ln t\right)^{2}}\\
+ & =\frac{\left(1-\ln t\right)\frac{1}{t}+\left(1+\ln t\right)\frac{1}{t}}{\left(1-\ln t\right)^{2}}\\
+ & =\frac{\frac{1}{t}\left(1-\ln t+1+\ln t\right)}{\left(1-\ln t\right)^{2}}\\
+ & =\frac{2}{t\left(1-\ln t\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=\ln\left(\sec x+\tan x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y'$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y' & =\frac{1}{\left(\sec x+\tan x\right)}*\frac{d}{dx}\left(\sec x+\tan x\right)\\
+ & =\frac{1}{\left(\sec x+\tan x\right)}*\left(\sec x\tan x+\sec^{2}x\right)\\
+ & =\frac{1}{\cancel{\left(\sec x+\tan x\right)}}*\sec x\cancel{\left(\tan x+\sec x\right)}\\
+\boldsymbol{y'} & \boldsymbol{=\sec x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y'' & =\frac{d}{dx}\left[y'\right]\\
+ & =\ddx\left[\sec x\right]\\
+\boldsymbol{y''} & \boldsymbol{=\sec x\tan x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the tangent lines to 
+\begin_inset Formula $y=\frac{1}{x}\cdot\ln x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the equation of the slope to the tangent line
+\begin_inset Formula 
+\begin{align*}
+\dy & =-x^{-2}\cdot\ln x+x^{-1}\cdot\frac{1}{x}\\
+ & =-\frac{\ln x}{x^{2}}+\frac{1}{x^{2}}\\
+ & =\frac{1-\ln x}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the equation of the tangent line at 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the slope to the tangent line, 
+\begin_inset Formula $\dy$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dy & =\frac{1-\ln\left(1\right)}{1^{2}}\\
+ & =\frac{1-0}{1}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the equation to the tangent line
+\begin_inset Formula 
+\begin{align*}
+y-y_{1} & =m\left(x-x_{1}\right)\\
+y-0 & =1\left(x-1\right)\\
+\boldsymbol{y} & \boldsymbol{=x-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the equation of the tangent line at 
+\begin_inset Formula $\left(e,\frac{1}{e}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the slope to the tangent line, 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dy & =\frac{1-\ln\left(e\right)}{e^{2}}\\
+ & =\frac{1-1}{e^{2}}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the equation to the tangent line
+\begin_inset Formula 
+\begin{align*}
+y-\frac{1}{e} & =0\left(x-e\right)\\
+ & =0\\
+\boldsymbol{y} & \boldsymbol{=\frac{1}{e}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document

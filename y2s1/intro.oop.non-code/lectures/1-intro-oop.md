@@ -61,14 +61,14 @@ Final program: Collection of interacting objects
 `printf` syntax: `System.out.printf(format,items);`
 
 `format` is a string with format specifiers
-`items` comma seperated list of values following the order specified in the `format`
+`items` comma separated list of values following the order specified in the `format`
 
 Example: `System.out.printf(“Sales: Qty:%d, Amt:RM%.2f\n”, quantity, salesAmt);`
 Assuming that both `quantity` and `salesAmt` is defined
 
 ## Character Data Types
 
-- Java characters use **unicode**
+- Java characters use **Unicode**
 - Example `\u0041`
 
 ## Other data types

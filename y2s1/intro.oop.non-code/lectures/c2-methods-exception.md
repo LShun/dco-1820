@@ -73,7 +73,7 @@ Think of it as a black box, you only know what to put in, not what's inside.
       3. Rounding methods
       4. `min`, `max`, `abs`, `random` methods
       5. `pow`, `sqrt` methods
-3. `min`, `max` takes in 2 args
+3. `min`, `max` takes in 2 arguments
 4. `random` generates between 0<=x<1.0
    1. generally, `a + Math.random() * b`
       1. where `a` is the lowest value possible generated, and the highest value generated is always below `b`
@@ -88,6 +88,7 @@ Keywords (total 5, 2 are covered in exams):
 2. `catch`
 3. `finally`, located after `try` and `catch`, execute regardless of what happens
 
-`try` and `catch` works together as two seperate blocks, when `try` fails, `catch` starts its work.
+`try` and `catch` works together as two separate blocks, when `try` fails, `catch` starts its work.
 
 Exam usually won't ask `finally` (what a pun), just `try` and `catch`.
+

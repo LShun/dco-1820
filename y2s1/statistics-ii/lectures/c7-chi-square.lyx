@@ -2987,7 +2987,7 @@ Hypothesis
 \begin_deeper
 \begin_layout Enumerate
 Hypo: The coin is fair 
-\begin_inset Formula $\left(H_{1}\right)$
+\begin_inset Formula $\left(H_{0}\right)$
 \end_inset
 
 
@@ -2995,7 +2995,7 @@ Hypo: The coin is fair
 
 \begin_layout Enumerate
 Oppo: The coin is unfair 
-\begin_inset Formula $\left(H_{0}\right)$
+\begin_inset Formula $\left(H_{1}\right)$
 \end_inset
 
 
@@ -3042,6 +3042,24 @@ Test-statistics
 
 \end_layout
 
+\begin_layout Enumerate
+Conclusion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the 
+\begin_inset Formula $\chi^{2}=4.205>3.841$
+\end_inset
+
+, we reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+and hence conclude that the coin is unfair.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Example
 \end_layout

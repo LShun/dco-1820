@@ -146,7 +146,7 @@ Critical value
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $Z_{0.05}=1.721$
+\begin_inset Formula $Z_{0.05}=1.6449$
 \end_inset
 
 
@@ -160,7 +160,7 @@ Rejection & non-rejection region
 \begin_deeper
 \begin_layout Enumerate
 Rejection region: 
-\begin_inset Formula $T>1.721$
+\begin_inset Formula $T>1.6449$
 \end_inset
 
 
@@ -168,7 +168,7 @@ Rejection region:
 
 \begin_layout Enumerate
 Non-rejection region: 
-\begin_inset Formula $T\le1.721$
+\begin_inset Formula $T\le1.6449$
 \end_inset
 
 
@@ -196,7 +196,7 @@ Conclusion
 \begin_deeper
 \begin_layout Enumerate
 Since 
-\begin_inset Formula $Z=2.078>1.721$
+\begin_inset Formula $Z=2.078>1.6449$
 \end_inset
 
 , we reject 

@@ -37,8 +37,8 @@ Ignore all optional topics, they wont come out in exams
 
 ### Declaring arrays
 
-- `datatype[] arrayRefVar;` < preferred
-- `datatype arrayRefVar[];` < not preferred (the first option indicates the data type clearer)
+- `datatype[] arrayRefVar;` < preferred. Reading as: `arrayRefVar` is a variable with datatype of `datatype` array.
+- `datatype arrayRefVar[];` < not preferred (the first option indicates the data type clearer). Reading as: `arrayRefVar` is an array with `datatype`.
 
 ### Creating arrays
 
@@ -103,7 +103,7 @@ new dataType[]{contents,seperated,by,comma};
 
 where `dataType` is a valid data type.
 
-## `foreach` loop
+## `foreach` loop (This is so important that you can stick it on your refrigerator)
 
 Traverses entire array sequentially without index variable.
 
@@ -125,9 +125,9 @@ A "map" to the same copy is passed to a method.
 
 A computer has two main parts of memory, which are `Stack` and `Heap`.
 
-`Stack` is considered very fast, but small memory.
+`Stack` is considered very fast, but small memory. Put it this way, its easier to look for something within 10 numbers than within 100.
 
 `Heap` is considered slower, but larger memory.
 
-By default, all arrays are stored on the `heap`, while pointers, and other smaller data are stored on the `stack` to improve performance.
+By default, all arrays are stored on the `heap`, while pointers, and other smaller data are stored on the `stack` to improve performance. Because once you "locate" something, it takes the same amount of time to access it because they are still part of the computer memory.
 
