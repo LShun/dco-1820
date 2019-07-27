@@ -26,7 +26,7 @@ Each object contains
 
 Final program: Collection of interacting objects
 
-## OOD's 3 basic principles
+## OOP's 3 basic principles
 
 - **Encapsulation** - ability to combine data & operations in single unit (put data & operations into a capsule)
 - **Inheritance** - ability to create new types from existing types (child share parent properties)

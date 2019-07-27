@@ -22,7 +22,7 @@
 ```java
 import java.util.Scanner;
 
-public class showOldNumber {
+public class showOddNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         System.out.print("Enter the minimum number: ");

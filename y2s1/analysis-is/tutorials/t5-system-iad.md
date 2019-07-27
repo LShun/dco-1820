@@ -13,10 +13,12 @@ Note, all the modules must relate back to the library parts. Don't go too genera
 
 Example: Budgeting & Security is a little too general for Library. But Membership management and reporting is okay.
 
+Lucidchart Copy-able link: https://www.lucidchart.com/invitations/accept/870c9e70-db3a-4015-a492-36fc7fd67d80
+
 ## Q2
 
 An analyst has already completed analysis of the users’ requirements. He is now in the system design stage. The system involved is an inventory system (raw material) for a manufacturing firm. The analyst has been assigned the responsibility of designing suitable reports that could be useful for staff
-at all levels of the organisation. The users may also include those from other departments where their systems are linked and interfaced with the inventory system.
+at all levels of the organization. The users may also include those from other departments where their systems are linked and interfaced with the inventory system.
 
 Required:
 
@@ -58,35 +60,35 @@ Determine the type of data validation check based on the examples given below.
 
 (i) Check that the daily hours worked by an employee, for example, must fall within the range of 0 to 24.
 
-- Range check
+- *Range check*
 
 (ii) Check that a numeric field must have only numbers or numeric symbols, and an alphabetic field can contain only the characters A through Z or a through z
 
-- Data Type check
+- *Data Type check*
 
 (iii) Verify that a customer number on an order matches a customer number in the customer file.
 
-- Existence check
+- *Existence check*
 
 (iv) Check that the suitable values are entered in the required fields, and not left empty, or else the record would not be accepted or saved.
 
-- Null value check
+- *Null value check*
 
 (v) Check that transactions must be entered chronologically. A transaction with an out-of-sequence data indicates an error.
 
-- Sequence check
+- *Sequence check*
 
 (vi) Input payment values of $0.05 and $5,000,000.00 both pass a simple limit check for a payment value greater than zero, but the value of $5,000,001.00 is not able pass the $5,000,000.00 upper limit check.
 
-- Limit check
+- *Limit check*
 
 (vii) Check that the order input has an input discount rate applicable only for the determined purchased units.
 
-- Limit check
+- *Limit check*
 
 (viii) Check that the system totals do match the input totals, or else data entry error has occurred.
 
-- Batch total check
+- *Batch total check*
 
 ## Question 4
 

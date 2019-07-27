@@ -44,7 +44,7 @@ public void setMapReference(int xCoordinate, int yCoordinate)
 (d) Method overloading
 
 ```md
-Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
+Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. 
 ```
 
 (e) Method abstraction

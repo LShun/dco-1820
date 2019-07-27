@@ -107,6 +107,14 @@ where `dataType` is a valid data type.
 
 Traverses entire array sequentially without index variable.
 
+Syntax:
+
+```java
+for (dataType varName: array) {
+    ... varName;
+}
+```
+
 ## Pass by value and by reference
 
 ### Pass by value

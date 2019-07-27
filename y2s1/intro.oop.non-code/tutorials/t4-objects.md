@@ -20,7 +20,7 @@ public class Employee {
 
 ### Part B: Object and constructor
 
-Constructors are invoked using the new operator when an bject is created. Constructors plays the role of initializing objects.
+Constructors are invoked using the new operator when an object is created. Constructors plays the role of initializing objects.
 
 Example:
 
@@ -134,9 +134,9 @@ public class Q6b {
 
 ### Q7a
 
-| Instance Variable                                                                                                                                                      | Static variable                                                                     |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Instance variable can be accessed by calling the variable name inside the class. However, within static methods, they should be called using the fully qualified name. | Static variable can be accessed by calling with the cla name. Eg: Customer.num = 2; |
+| Instance Variable                                            | Static variable                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Instance variable can be accessed by calling the variable name inside the class. However, within static methods, they should be called using the fully qualified name. | Static variable can be accessed by calling with the class name. Eg: Customer.num = 2; |
 
 ### Q7b
 
@@ -148,7 +148,7 @@ If you put static, for the methods you also have to create as static. (Static mu
 
 For static, you need to use the objects to get it. For non-static, you can access it directly through the class.
 
-To put it simply. A variable should be implemented as an instance variable if we do not want the values to be inherited by the other objects with the same class. However a variable should be implemented as a static variable if we intend the values to be inherited by the other objects with the same class.
+*To put it simply. A variable should be implemented as an instance variable if we do not want the values to be inherited by the other objects with the same class. However a variable should be implemented as a static variable if we intend the values to be inherited by the other objects with the same class.*
 
 ## Question 9
 
@@ -306,11 +306,13 @@ The object-oriented approach organizes programs in a way that mirrors the real w
 |---|---|
 | Data and methods are loosely coupled | Couples data and methods together into objects. |
 | Software design focuses on designing methods | Software design focuses on objects and operation on objects |
-| As data and operations are seperate, this methodology requires sending data to methods. | Places data and the operations pertaining to the data within a single entity called an object. |
+| As data and operations are separate, this methodology requires sending data to methods. | Places data and the operations pertaining to the data within a single entity called an object. |
 
 ### Question 12b
 
 Describe any TWO (2) benefits of object-oriented programming over procedural programming.
+
+**Benefit 1:** Better access control compared to 
 
 ## Question 13
 

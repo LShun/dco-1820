@@ -2,7 +2,8 @@
 
 ## Objectives
 
-- Describe **objects and classes**.
+- Describe **objects**
+- ** and classes**.
 - Use **UML** graphical notations to model classes and objects.
 - Declare a class and create an object from a class.
 
@@ -28,7 +29,7 @@
 
 - **Constructs**, a template that define object of same type.
 - A **logical abstraction**, define data and actions.
-- Contains:
+-  Contains:
   - **Variables:** Data fields
     - AKA **Data members**
     - Nouns of class
@@ -169,13 +170,13 @@ class amazingClass {
 
 - Prevent misuse of objects
 
-| Modifiers   | Visibility         |                    |                    |                   |
-| ----------- | ------------------ | ------------------ | ------------------ | ----------------- |
-|             | In any package     | In same package    | In declaring class |                   |
-| `public`    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                   |
-| `default`   | :x:                | :heavy_check_mark: | :heavy_check_mark: |                   |
-| `private`   | :x:                | :x:                | :heavy_check_mark: |                   |
-| `protected` | :grey_question:    | :grey_question:    | :grey_question:    | Research yourself |
+| Modifiers   | Visibility         |                              |                    |                    |
+| ----------- | ------------------ | ---------------------------- | ------------------ | ------------------ |
+|             | In any package     | Subclasses (outside package) | In same package    | In declaring class |
+| `public`    | :heavy_check_mark: | :heavy_check_mark:           | :heavy_check_mark: | :heavy_check_mark: |
+| `protected` | :x:                | :heavy_check_mark:           | :heavy_check_mark: | :heavy_check_mark: |
+| `default`   | :x:                | :x:                          | :heavy_check_mark: | :heavy_check_mark: |
+| `private`   | :x:                | :x:                          | :x:                | :heavy_check_mark: |
 
 - Visibility modifiers:
   - `default`: can be accessed by all class in same package/folder
@@ -369,6 +370,12 @@ Common use:
 |                      <u>Data fields</u>                      |
 | <u>Constructors</u><br /><u>Getter & setters</u><br /><u>Other methods</u> |
 
+#### Example
+
+![c4-example-uml](img/c4-example-uml.png)
+
+- Take note that you don't have to write out the comments
+
 #### Data fields
 
 **Format**: `+/- fieldName : dataType [= defaultValue]`<br />**Example**:
@@ -379,9 +386,53 @@ Common use:
 **Definitions**
 
 - `+` or `-`: `+` represents `public`/`default`, `-` represents `private`
-
 - `fieldName` refers to the name of the data field` 
-
 - `dataType` refers to the data type of the field
-
 - `defaultValue` refers to the default value assigned (if no custom value) ``
+
+#### Constructors
+
+**Format:** `+/- className([parameters])`
+
+#### **Example:** 
+
+- `+ ball()`
+- `+ ball(size : int, color : String)`
+
+**Definitions:**
+
+- `+/-`: +` represents `public`/`default`, `-` represents `private. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
+- `className` is the name of the class. Constructor must have the same name as class name.
+- `[parameters]` is optional. Basically, if you don't have any parameters, it is a no-arg constructor, otherwise, it is a parameterized constructor.
+
+#### Getter/setters
+
+**Format:** `+/- get/setVariable([parameters]) : returnType`
+
+#### **Example:** 
+
+- `+ getSize() : int`
+- `+ setSize(size : int)`
+
+**Definitions:**
+
+- `+/-`: +` represents `public`/`default`, `-` represents `private. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
+- `get/setVariable` is split into two parts, `operation` + `entity`. The `get` / `set` is depending on what you are doing (getting, or setting), but one of the two must be present, but not two at the same time. The `Variable` is the entity you are trying to manipulate with.
+- `[parameters]` is usually not required for getters, but pretty much necessary for setters. 
+- `: returnType` is required for all functions with a return type other than `void`. For void you could also write `: void`, but generally we just leave it out. Usually, getters have a return type other than `void`, and setters have `void` as a return type.
+
+#### Other methods
+
+**Format:** `+/- methodName([parameters]) : returnType`
+
+#### **Example:** 
+
+- `+ convertSizeToCm() : int`
+- `scaleSizeBy(factor : int)`
+
+**Definitions:**
+
+- `+/-`: `+` represents `public`/`default, `-` represents `private. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
+- `methodName` is the method name.
+- `[parameters]` is optional depending on what you need.
+- `: returnType` is required for all functions with a return type other than `void`. For void you could also write `: void`, but generally we just leave it out. Usually, getters have a return type other than `void`, and setters have `void` as a return type
