@@ -20,11 +20,11 @@ Data + `Grouping` -> Information + `Context` -> Knowledge
   - **Raw facts**: End user data
   - **Metadata**: Data about data
 
-- **DBMS (database managment system)**: 
+- **DBMS (database management system)**: 
   - Collection of program managing database structure and control access to data
 
 - Why database?
-  - Better access to better-managed data
+  - **Better access to better-managed data**
     - Less errors
     - Data more consistent
     - Quicker answers
@@ -36,7 +36,7 @@ End user <-> DBMS <-> Database Structure
 ## Type of database
 
 - Single user
-- Desktop (difference is on a PC vs Server and etc)
+- Desktop (difference is on a PC vs Server and etc.)
 - Multi-user
 - Workgroup
   - Multi-user, small group users/department
@@ -45,16 +45,16 @@ End user <-> DBMS <-> Database Structure
 
 ## Location of Database
 
-- Centralized:
+- **Centralized**:
   - Data located in one space
-- Distributed:
+- **Distributed**:
   - Data distributed across several site
 
 ## Uses of database
 
 - Transactional/production
 - Data warehouse
-  - Data massaging
+  - **Data massaging**
     - Store data used to generate information
   - Store historical data
 
@@ -66,7 +66,7 @@ End user <-> DBMS <-> Database Structure
 
 ## Manual File System
 
-- Organization within folders based on data expected use
+- Organized within folders based on data expected use
 - Adequate for small amount of data
 - Finding in large sets of data is time-consuming
 
@@ -104,7 +104,7 @@ End user <-> DBMS <-> Database Structure
 
 - Structural dependence
   - Access to file based on structure
-- Data dependance
+- Data dependence
   - Change in DB structure change access way
     - Logical data format (How human see)
     - Physical data format (How computer see)
@@ -146,7 +146,7 @@ End user <-> DBMS <-> Database Structure
         - one-to-many
         - many-to-many
   - **Data storage management (DSM)**
-    - Store data & data information
+    - Store data & data information (metadata)
   - **Data transformation & presentation (DTP)**
     - Translate logical request into commands to get data
   - **Security management**
@@ -154,8 +154,8 @@ End user <-> DBMS <-> Database Structure
   - **Multi-user/Concurrency access control**
     - Create structure to allow multiple user to access data
   - **Backup and recovery management**
-    - Provide backup and data recovery procedures
-    - **Data integrity management**
+    - Provide backup and data recovery procedure
+  - **Data integrity management**
     - Promotes and enforces integrity rules
       - Integrity rules:
         - *Entity* (ID, primary key)

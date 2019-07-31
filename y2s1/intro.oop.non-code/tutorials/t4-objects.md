@@ -302,7 +302,7 @@ Explain clearly the following terms:
 
 The object-oriented approach organizes programs in a way that mirrors the real world, in which all objects are associated with both attributes and activities. Compare the object oriented and procedural paradigm.
 
-| Object Oriented | Procedural paradigm |
+| Procedural paradigm | Object Oriented |
 |---|---|
 | Data and methods are loosely coupled | Couples data and methods together into objects. |
 | Software design focuses on designing methods | Software design focuses on objects and operation on objects |

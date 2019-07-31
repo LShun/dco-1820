@@ -38,12 +38,12 @@ to the digital documents and the OMS for online marking.
 (d) Describe two operational or social feasibility issues that are likely to be considered in the OMS feasibility study.
 
 > **Employee Skills**: The OMS system will require new technical skills and attitude from the person who key in the marks. This might pose a problem especially in non-IT departments, who are not adept in using computers.
-> **Employee motiviation and resistance**: Some of the employees are fully satisfied with the current way of processing the answer booklets, changing it might cause some resistance, conflict, and employee turnover even if the new OMS system can bring new benefits.
+> **Employee motivation and resistance**: Some of the employees are fully satisfied with the current way of processing the answer booklets, changing it might cause some resistance, conflict, and employee turnover even if the new OMS system can bring new benefits.
 
 (e) List THREE (3) costs and THREE (3) benefits that you would expect to see in the assessment of the economic feasibility of the OMS. Actual values are not required, just broad headings.
 
 - Costs:
-  - Hardware and softwre costs
+  - Hardware and software costs
   - Installation costs
   - Development costs
   - EXTRA - Personnel costs
@@ -59,23 +59,23 @@ to the digital documents and the OMS for online marking.
    1. **Directives from top managements** to improve existing system.
    2. **Existing system.** Errors or inefficiencies within existing systems.
 2. Types of services requested
-   1. Improved performance. Current system performance might not be satisfactory.
-   2. Better service. Improving service to customers or end users.
+   1. **Improved performance**. Current system performance might not be satisfactory.
+   2. **Better service.** Improving service to customers or end users.
 
 ## Question 2
 
-The starting point for most system projects is called system request, which is a formal way in asking for IT support. Briefly explain any TWO (2) reasons for system request by an organisation’s top management?
+The starting point for most system projects is called system request, which is a formal way in asking for IT support. Briefly explain any TWO (2) reasons for system request by an organization's top management?
 
 Reasons:
 
-- Need new or additional information
+- **Need new or additional information**
   - The management might require additional information to plan for strategic decisions.
   - An example is customer average rating on products
-- New management (or style)
+- **New management (or style)**
   - The new management might want to implement their own way of managing
   - An example is conversion from offline to online business.
-- EXTRA - Meet a new organizational objectives (such as increased sales)
-- EXTRA - New activity in the business
+- EXTRA - **Meet a new organizational objectives (such as increased sales)**
+- EXTRA - **New activity in the business**
 
 ## Question 3
 
@@ -85,26 +85,26 @@ A supermarket is planning to implement a new POS system for its new and modern p
 
 Tangible benefits:
 
-- Reduced operating costs
-- Reduced staff costs
-- Increased sale revenue
+- **Reduced operating costs**
+- **Reduced staff costs**
+- **Increased sale revenue**
 
 (b) List THREE (3) tangible benefits of using this system from the point of view of the customers.
 
 Tangible benefits (customers point of view):
 
-- Decreased purchase price
-- Reduced mistakes
-- Improved productivity
+- **Decreased purchase price**
+- **Reduced mistakes**
+- **Improved productivity**
 
 (c) List TWO (2) intangible benefits of using this system from the point of view of the supermarket.
 
-- Faster response time
-- Better image
-- Improved quality of customer service or satisfaction
+- **Faster response time**
+- **Better image**
+- **Improved quality of customer service or satisfaction**
 
 (d) Identify THREE (3) non-functional requirements for a POS System.
 
-- Data integrity
-- Data retention
-- Fault tolerance
+- **Data integrity**
+- **Data retention**
+- **Fault tolerance**

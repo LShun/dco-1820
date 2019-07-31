@@ -11,7 +11,12 @@
 
 ## Main Techniques for Logic Definition
 
-- Highlighted
+- Program Flowchart
+- Box Diagram
+- Structured English :star:
+- Pseudocode
+- Decision Tables :star2:
+- Decision Trees :star:
 
 ### 1. Program Flowchart (Not covered)
 
@@ -60,8 +65,6 @@ REPEAT UNTIL (end of file)
 ENDREPEAT
 ```
 
-
-
 ####  Conditional Block - Decide % discount based on quantity
 
 ```pseudocode
@@ -76,12 +79,10 @@ ELSE (quantity ordered is >= 10 AND <= 49)
 ENDIF
 ```
 
-#### EXERCISE - Copy later
-
 ### Disadvantages of SE
 
 - **Not easy to use.** Unrestricted, indiscriminate use of command borrowed.
-- **For small activities.** Only suitable for small & specific code
+- **For small activities.** Only suitable for small & specific code.
 
 ### Pseudocode
 
@@ -115,6 +116,8 @@ ENDIF
 
 - Used in system testing
 
+- Note: Use the halving rule, to split Yes and No systematically.
+
 - Typical format:
 
   - | Condition Heading    | Decision Rule Number |
@@ -122,7 +125,7 @@ ENDIF
     | Condition Statements | Condition Entries    |
     | Action statements    | Action entries       |
 
-- Example:
+- Example (notice the halving effect, YYNN are halves, followed by YN and YN, another two halves):
 
   |                    | 1    | 2    | 3    | 4    |
   | ------------------ | ---- | ---- | ---- | ---- |
@@ -130,6 +133,8 @@ ENDIF
   | Is it the weekend? | Y    | N    | Y    | N    |
   | Get up?            |      | :x:  |      |      |
   | Don't get up?      | :x:  |      | :x:  | :x:  |
+
+
 
 ### Decision Tree
 
@@ -140,6 +145,37 @@ ENDIF
 #### General Format - Decision Tree
 
 - Similar to Probability Tree, but the probability are replaced by Y/N.
+
+## System Design Specification
+
+- Set documents, records design details.
+- Prepared by System Analysts
+
+## Good Design Characteristics
+
+### Modularity
+
+**Definition:** A system, partitioned into sub-systems/modules. Each module = 1 task.
+
+**Benefit:** Easy to understand, code, maintain.
+
+### Coupling
+
+**Definition:** Degree of dependence between modules. Highly-connected = high-coupling
+
+#### Disadvantages
+
+- A bug can infect another module.
+- Modification can easily cause side-effects.
+
+### Cohesion
+
+**Definition:** Measure the functional relationship between the codes inside a function.  Cohesive if every line accomplish one task.
+
+#### Advantages
+
+- More efficient
+- Easy to code & debug due to good structure
 
 ## Exam Tips
 

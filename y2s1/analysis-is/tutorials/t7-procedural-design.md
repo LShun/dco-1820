@@ -57,40 +57,44 @@ END
 
 ## Question 3
 
-Note: Use half-rule condition
+### Note: Use half-rule condition
 
-Basically first, break it into two equal parts
-
-YYYY NNNN
-
-then break them into 4 parts
-
-YYNN YYNN
-
-then break them again into another 4 parts
-
-YNYN YNYN
-
-The end result will be:
-
-YYYY NNNN
-
-YYNN YYNN
-
-YNYN YNYN
+> Basically first, break it into two equal parts
+>
+> > YYYY NNNN
+> >
+>
+> then break them into 4 parts
+>
+> > YYNN YYNN
+> >
+>
+> then break them again into another 4 parts
+>
+> > YNYN YNYN
+> >
+>
+> The end result will be:
+>
+> > YYYY NNNN
+> >
+> > YYNN YYNN
+> >
+> > YNYN YNYN
+> >
 
 ### Sales Promotion Policy Decision Table
 
-| Condition               | 1    | 2    | 3    | 4    | 5    |
-| ----------------------- | ---- | ---- | ---- | ---- | ---- |
-| Is Preferred Customer?  | Y    | Y    | Y    | Y    | N    |
-| Is Order > RM1000?      | Y    | Y    | N    | N    | `    |
-| Is Using a Change Card? | Y    | N    | Y    | N    | `    |
-| **Action**              |      |      |      |      |      |
-| 5% Discount             |      | X    |      |      |      |
-| 10% Discount            | X    |      |      |      |      |
-| RM25 Coupon             |      |      | X    | X    |      |
-| RM 5 Coupon             |      |      |      |      | X    |
+| Condition               | 1    | 2    | 3    | 4    |
+| ----------------------- | ---- | ---- | ---- | ---- |
+| Is Preferred Customer?  | Y    | Y    | Y    | N    |
+| Is Order > RM1000?      | Y    | Y    | N    | -    |
+| Is Using a Change Card? | Y    | N    | -    | -    |
+| **Action**              |      |      |      |      |
+| 5% Discount             |      | X    |      |      |
+| 10% Discount            | X    |      |      |      |
+| RM25 Coupon             |      |      | X    |      |
+| RM 5 Coupon             |      |      |      | X    |
 
 
 

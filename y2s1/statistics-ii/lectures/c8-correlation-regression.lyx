@@ -306,5 +306,416 @@ The results show that there is positive correlation
 Example
 \end_layout
 
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e7-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculate least square regressions line
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the gradient 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{5\left(8104\right)-\left(100\right)\left(400\right)}{5\left(2040\right)-\left(100\right)^{2}}\\
+\hat{b} & =2.6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+, which is the coefficient
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{400}{5}-2.6\left(\frac{100}{5}\right)\\
+\hat{a} & =28
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Least squares regression line (
+\begin_inset Formula $\hat{Y}=\hat{a}+\hat{b}X)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\hat{Y}=2.6X+28
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e8-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the least square regression line
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(10\right)\left(97650\right)-\left(300\right)\left(2970\right)}{\left(10\right)\left(12050\right)-\left(300\right)^{2}}\\
+ & =2.8033
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{2970}{10}-2.8033\left(\frac{300}{10}\right)\\
+ & =212.90
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =212.9+2.8033X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When X = 40
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =212.90+2.8033\left(40\right)\\
+ & =325.032
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The estimated maintenance cost for a similar machine which is 40 months
+ old is RM325.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8q9-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Plot the data on a scatter diagram and comment briefly
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8q9-scatter.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Product moment correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{8\left(154650\right)-\left(290\right)\left(3370\right)}{\sqrt{\left[8\left(12600\right)-\left(290\right)^{2}\right]\left[8\left(1950500\right)-\left(3370\right)^{2}\right]}}\\
+r & =0.9759
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Equation of the regression line
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(8\right)\left(154650\right)-\left(290\right)\left(3370\right)}{\left(8\right)\left(12600\right)-\left(290\right)^{2}}\\
+ & =15.5629
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{3370}{8}-\left(15.5629\right)\frac{290}{8}\\
+ & =-142.9051
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X\\
+ & =15.5629X-142.9051
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Estimate the total sales which had the advertising expenditure
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\$30,000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =15.5629\left(30\right)-142.9051\\
+ & =323.9819
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Conclusion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Total sales: 
+\begin_inset Formula $323981.9\$$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\$90,000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =15.5629\left(90\right)-142.9051\\
+ & =323.9819\\
+ & =1257.7559
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Conclusion: Total sales = 
+\begin_inset Formula $1257.7559*1000=\$1257755.9$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8q10-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the trend line using the method of least squares, and use the line
+ to estimate the sales of 2003
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{5\left(2617\right)-\left(10\right)\left(1055\right)}{\left(5\right)\left(30\right)^{2}-\left(10\right)^{2}}\\
+ & =0.5761
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{1055}{5}-\left(0.5761\right)\frac{\left(10\right)}{5}\\
+ & =209.8478
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example (Obtain from lecturer)
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{5\left(2617\right)-\left(10\right)\left(1055\right)}{5\left(30\right)-10^{2}}=50.7\\
+\hat{a} & =\frac{1055}{5}-50.7\left(\frac{10}{5}\right)=109.6\\
+\hat{Y} & =\hat{a}+\hat{b}X=109.6+50.7X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To estimate, sub 
+\begin_inset Formula $X=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =109.6+50.7\left(5\right)\\
+ & =363.1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estimated sales RM363,100
+\end_layout
+
+\begin_layout Section
+Note
+\end_layout
+
+\begin_layout Enumerate
+If in exam, better to write the calculations, and use calculator to calculate.
+ But keep calculations cause might make mistakes.
+\end_layout
+
+\begin_layout Enumerate
+As long as 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+is correct, even if 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+is wrong, your answer might not be wrong.
+ This is because it is dependent on what you put for the numbering system.
+\end_layout
+
 \end_body
 \end_document

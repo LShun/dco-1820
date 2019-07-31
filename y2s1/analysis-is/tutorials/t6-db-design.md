@@ -28,6 +28,8 @@ PLANE (PLANE_ID, NUMBER_OF_SEATS, PLANE_TYPE)
 **DESTINATION** (<u>DEST_CODE</u>, DESTINATION)
 **PLANE** (<u>PLANE_ID</u>, NUMBER_OF_SEATS, PLANE_TYPE)
 
+https://www.lucidchart.com/invitations/accept/b330a44e-75c3-43c7-9fa6-48d22bd757f1 [T5Q1B ERP page]
+
 ## Question 2
 
 The entity-relationship diagram (ERD) shown below has been drawn for an order processing system.
@@ -50,7 +52,7 @@ NOTE: Foreign key is always on the MANY table
 (b) Identify and list the attributes of each entity above. Show clearly both the primary and foreign
 keys. You should use the format shown in the example: Order (Order No, Date, Customer_ID*)
 
-https://www.lucidchart.com/invitations/accept/b330a44e-75c3-43c7-9fa6-48d22bd757f1
+https://www.lucidchart.com/invitations/accept/b330a44e-75c3-43c7-9fa6-48d22bd757f1 [On T5Q2a page]
 
 ## Question 3
 
@@ -71,7 +73,6 @@ Western Wear is a mail-order firm that offers an extensive selection of casual a
 
 (c) Suggest a code scheme that will identify each Western Wear customer.
 
-- Customer Number
 - Sequence Code
 - eg. C0001
 

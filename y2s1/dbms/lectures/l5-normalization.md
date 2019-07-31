@@ -86,15 +86,9 @@ This topic. Lets just say that I barely understand it, but I'm not even close to
 5. 2 code + 1 date
 6. 1 code + 1 date + 1 time
 
-- Simpler way to remember:
-  1. There are 3 options: Code, Date, Time, (CDT)
-  2. Time must go together with everyone
-  3. Code always first
-  4. Less keys first
-
 ### Foreign Keys
 
-**Foreign keys (FK) start to appear at 1NF**. They are indicated with an asterisk (*), note that it is possible for a key to be primary and foreign at the same time.
+**Foreign keys (FK) start to appear at 1NF**. Indicate with asterisk (*), can be primary & foreign together.
 
 ## Step 1: Source Document -> Unnormalized
 
@@ -107,11 +101,11 @@ This topic. Lets just say that I barely understand it, but I'm not even close to
 
 ![l5-0nf-source-to-table](../img/l5-0nf-source-to-table.png)
 
-- Convert source documents into unnormalized table
+- **Convert source documents into unnormalized table**
   - **DeliveryOrder**(DO_No, DelDate, CustNo, CustName, CustPhone, ItemNo, Desc, UnitPrice, Qty)
-- Find the appropriate PK
+- **Find the appropriate PK**
   - 1 code :heavy_check_mark: (DO_No)
-- End result:
+- **End result:**
   - **DeliveryOrder**(<u>DO_No</u>, DelDate, CustNo, CustName, CustPhone, ItemNo, Desc, UnitPrice, Qty)
 
 ## Problems with unnormalized table (Hot topic in exams, stick them up your refrigerator)                                                                                                                                                                                         
@@ -124,7 +118,7 @@ This topic. Lets just say that I barely understand it, but I'm not even close to
 
 ### Updating/Modification Anomalies :cyclone: (Solved at 2NF)
 
-- **Definition**: Unable to accurately and efficiently maintain data. Changing one record's attribute value will require change in multiple records.
+- **Definition**: Cannot maintain data accurately and efficiently. Multi-column changes are required for every change.
 - **Typical example:** When we update ... (record identifier) from .... to ...., we also need to update ... in another row, if not it will cause data inconsistency.
   - Replace ... with appropriate terms
   - Replace (record identifier) with appropriate record identifier, e.g. (DO001)
@@ -225,7 +219,7 @@ Becomes:
 
   > Column A in a table, determines column C
   >
-  > Eg: Book Determines author location
+  > Eg: Book determines author location
 
   
 

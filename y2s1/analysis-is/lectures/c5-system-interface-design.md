@@ -57,3 +57,79 @@
 | Areas       | Describe the functions & features        | Describe actual physical processes      |
 | Focus       | Define what must be done in the system   | Describe how system will be implemented |
 | Exampple    | Describes what data that must be entered | Describes how the data will be entered  |
+
+## Exercise for Student
+
+| Differences | Logical Design                    | Physical Design                    |
+| ----------- | --------------------------------- | ---------------------------------- |
+| Phase       | System Analysis                   | System Design                      |
+| Areas       | Describe the functions & features | Describe actual physical processes |
+| Focus       | Define what must be done          | Define how must be done            |
+| Example     | Describe what data entered        | Describe how data will be entered  |
+
+## Architectural Design
+
+- **Meaning:** 
+  - Gives big picture of objective, show the modules & relationships.
+- **Purpose:**
+  - Derive big picture to improve development & quality before software design.
+  - To develop modular program structure & control relationships in-between.
+  - To merge program and data structure, define interfaces to enable data to flow.
+
+## System Structure
+
+- Shows relationship between modules of system, and how information flow between them.
+
+## Functional Decomposition Diagram(Structure Chart)
+
+**Definition:** Top-down view of function. Shows system structured into sub-systems. 
+
+**Creating:** Start from DFD to create FDD. 
+
+- Diagram 0 = **Whole system.** 
+- Diagram 1 = **whole module**.
+- Identify communications between subsystems
+
+## Benefits of Functional Decomposition
+
+- Functions and processes broken down, more manageable.
+- Modules more cohesive, loosely coupled. Systems more stable, errors localized, system faults minimized.
+- Can concentrate on one area
+- Allow independent development of different subsystem, easier multitasking
+
+## User Interface Design
+
+### User Interface
+
+- **Meaning:** How user interact with system
+- Can be hardware or software.
+
+### Types (Just remember a few)
+
+- CLI (Command-line Interface)
+- Menu-Driven Interface
+- Improved Menu Interface
+  - Pop-up menu
+  - Pull-down & cascading menu
+- Toolbar & icon-based interface
+- Form-based Interface
+- Natural Language Interaction
+
+### Menu Building Tools
+
+- **Definition:** Allows programmer to design menu structure easily
+
+### HW Devices
+
+- Well, the usual stuff, just use your imagination if you can't figure.
+
+### User Interface Design Principles
+
+| Principles             | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| Consistent design      | Similar operations should be activated same way.             |
+| Familiarize users      | Use terms and concepts that users anticipate from past experiences. |
+| Guide users            | User guidance depending on situation.                        |
+| Reduce surprise        | Behavior of system shouldn't surprise user.                  |
+| Enhance recoverability | Allow user to recover from errors.                           |
+

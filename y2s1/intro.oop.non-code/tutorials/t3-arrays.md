@@ -112,8 +112,8 @@ public static double average(int[] aoi) {
 public static int largest(int[] aoi) {
     int largest = aoi[0];
     for (int i: aoi) {
-        if (largest < aoi[i]) {
-            largest = aoi[i];
+        if (largest < i) {
+            largest = i;
         }
     }
     return largest;
