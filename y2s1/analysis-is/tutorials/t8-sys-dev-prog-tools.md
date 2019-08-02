@@ -2,7 +2,7 @@
 
 ## Question 1
 
-a. Maximizing cohesion makes the instructions in the module jointly accomplish a single task. This makes the program more well structured. Minimizing coupling reduces the degree of dependence between the modules. This prevents a bug in one module from infecting another module, and reduce the need to modify multiple functions to resolve one issue due to side-effects. Both of this leads to a more maintainable program.
+a. Maximizing cohesion makes the instructions in the module **jointly accomplish a single task**. This makes the program **more well structured**. Minimizing coupling r**educes the degree of dependence between the modules**. This prevents a bug in one module from **infecting another module**, and reduce the need to **modify multiple functions to resolve one issue** due to side-effects. Both of this leads to a more maintainable program.
 
 Attribute 1: **Modularity**, the program is broken down into smaller pieces. They are independent of each other, which makes it easier to maintain the system.
 
@@ -19,7 +19,7 @@ Attribute 3: **Design simplicity.**  The design of the system will influence sys
 
 ## Question 2
 
-a. CASE tool is Computer Aided Software Engineering tool. It is a software that improves the efficiency of analysts in developing and maintaining the system.
+a. CASE tool is **Computer Aided Software Engineering tool**. It is a software that improves the efficiency of analysts in developing and maintaining the system.
 
 Extra Points:
 

@@ -160,7 +160,7 @@ Rejection & non-rejection region
 \begin_deeper
 \begin_layout Enumerate
 Rejection region: 
-\begin_inset Formula $T>1.6449$
+\begin_inset Formula $Z>1.6449$
 \end_inset
 
 
@@ -168,7 +168,7 @@ Rejection region:
 
 \begin_layout Enumerate
 Non-rejection region: 
-\begin_inset Formula $T\le1.6449$
+\begin_inset Formula $Z\le1.6449$
 \end_inset
 
 
@@ -179,7 +179,7 @@ Non-rejection region:
 Find the Z-score
 \begin_inset Formula 
 \begin{align*}
-T & =\frac{\bar{x}_{a}-\mu_{b}}{\frac{s_{a}}{\sqrt{n}}}\\
+Z & =\frac{\bar{x}_{a}-\mu_{b}}{\frac{s_{a}}{\sqrt{n}}}\\
  & =\frac{153.7-146.3}{\frac{16.7}{\sqrt{22}}}\\
  & =2.078
 \end{align*}

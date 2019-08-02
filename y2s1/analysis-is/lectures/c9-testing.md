@@ -23,13 +23,22 @@
 
 ## Types of Testing
 
+### TL;DR: Summary of Tests (at least read this)
+
+| Area           | Unit Test                                                    | System test                                        | UAT                                            |
+| -------------- | ------------------------------------------------------------ | -------------------------------------------------- | ---------------------------------------------- |
+| Purpose        | Ensure each function work correctly according to specifications. | Ensure all programs work correctly as one system.  | Ensure system meet Requirement Specifications. |
+| Who Perform    | Programmers                                                  | End-users, operations group, project team          | Users                                          |
+| Test-data Used | - Dummy/simulated data                                       | Live data                                          | Realistic Data                                 |
+| Areas Covered  | Identify & remove syntax, logic, runtime errors              | Verify all processing, input, and output functions | Usability, business flow, functions.           |
+
 ![Overview of Testing](lec-pics/c9/overview-testing.png)
+
+
 
 ### Unit Testing
 
 - **Purpose:** Ensure each individual unit works correctly
-- Eliminates syntax, logic, execution errors
-- Utilize **test data** to test program on input/output handling
 - **Stub testing:**
   - **Stub:** Piece of code to temporarily replace missing function.
   - **Purpose:** Test program individually before integration
@@ -38,13 +47,11 @@
 
 - **Purpose:** Ensure data passes between functions correctly.
 - Test multiple programs working together that interacts together.
-- **Test data:** Dummy data
 
 ### System Testing
 
 - **Purpose**: Ensure all programs work correctly as whole system.
-- **Who perform:** End-users, operations, **project team** (evaluates)
-- **Test data:** Live data supplied
+- **Who perform:** End-users, operations, **project team**
 
 #### Scope of system testing
 
@@ -66,6 +73,68 @@
 - **Examples:**
   - **Order online:** Test effects during peak hours
   - **POS System:** Test multiple simultaneous transactions
+
+### User Acceptance Testing
+
+- **Definition**: Test to ensure system meets requirements inside Requirements Specification.
+
+#### Types of Acceptance Testing
+
+- **Alpha Test:** In-house test for single client at company. Simulates real environment.
+- **Beta Test:** Carried out by customer at customer's place. Expose product to real use.
+- **Benchmark test:** Test cases to represent typical conditions, evaluate performance.
+- **Parallel Test:** New & old system run concurrently, and evaluate results. 
+
+## Use of Automation in Testing
+
+### Automated Testing Tools
+
+- **Importance:** Save cost, improve quality on tests
+- **Examples:** Computer Aided Software Testing (CAST) tools.
+- **Common Tasks:**
+  - Repeat tests
+  - Check performance
+  - Check results
+  - Simulate interface
+- **Advantages:**
+  - **Save time**: Multiple tests at one time
+  - **Predict performance**: Can easily stress test system
+  - **Diagnoses**: System designer/programmer get fast feedback.
+
+## Documentation
+
+### TL;DR
+
+| Differences                     | End User Doc.                                 | Operation Doc.                                               | System Doc.                                                  | Program Doc.                       |
+| ------------------------------- | --------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------- |
+| Prepared by                     | Analyst & Programmers                         | System Analyst                                               | System Analyst                                               | Programmers                        |
+| Used by                         | Users, trainers                               | Operation staff                                              | Designers, programmers                                       | Programmers                        |
+| Purpose                         | To train users to use software, self-learning | Assists  in operating the system, plan tasks, share printed outputs. | Describe features and their implementation in IS             | Maintenance/enhancement            |
+| Content (just remember any 2-3) | Input,output procedures, errors               | Backup & recovery procedures, security procedures, set-up procedures | Data dictionary entries, DFD, screen layouts, source documents, system request form. | Flowcharts, code, notes, test data |
+
+### 1. End user documentation
+
+- **Contents**:
+  - **Input**. Describe procedures to use.
+  - **Output:** Describe type and forms
+  - **File amendment procedures.** Explain requirements.
+  - **Error reports.** Explain on errors & action to be taken.
+
+### 2. Operation Documentation
+
+- **Contents:**
+  - System set-up procedures
+  - Security procedures
+  - Reconstruction control procedures (eg. file backup and recovery)
+  - System messages  & actions to be taken
+
+### 3. Program Documentation
+
+- Begins in System Analysis, complete after testing
+
+### 4. System Documentation
+
+- Begins in System Analysis, completes in System Development
 
 ## Exam Tips
 

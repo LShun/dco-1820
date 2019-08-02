@@ -30,7 +30,7 @@ SELECT  E.employee_id, E.first_name, E.last_name
 FROM    EMPLOYEES E, JOB_HISTORY JH, JOBS J
 WHERE   (E.employee_id  =   JH.employee_id)         AND
         (JH.job_id      =   J.job_id)               AND
-        (UPPER(J.job_title)   =   'SALES REPRESENTATIVE') AND
+        (UPPER(J.job_title)   =   'SALES REPRESENTATIVE');
 ```
 
 Note: Assuming that the JOB_HISTORY table only updates when the employee changes a job
@@ -38,7 +38,7 @@ Note: Assuming that the JOB_HISTORY table only updates when the employee changes
 12.  Show the salary details for the IT department.
 
 ```sql
-FROM DEAPARTMENTS D, EMPLOYEES E, JOBS J
+FROM 	DEPARTMENTS D, EMPLOYEES E, JOBS J
 WHERE   E.JOB_ID = L.JOB_ID AND
         E.department_id = D.department_id AND
         D.department_name = 'IT';

@@ -385,7 +385,7 @@ Common use:
 
 **Definitions**
 
-- `+` or `-`: `+` represents `public`/`default`, `-` represents `private`
+- `+/-`/`# `:+` represents ` public/default/protected.
 - `fieldName` refers to the name of the data field` 
 - `dataType` refers to the data type of the field
 - `defaultValue` refers to the default value assigned (if no custom value) ``
@@ -401,7 +401,7 @@ Common use:
 
 **Definitions:**
 
-- `+/-`: +` represents `public`/`default`, `-` represents `private. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
+- `+/-`/`# `:+` represents ` public/default/protected. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
 - `className` is the name of the class. Constructor must have the same name as class name.
 - `[parameters]` is optional. Basically, if you don't have any parameters, it is a no-arg constructor, otherwise, it is a parameterized constructor.
 
@@ -416,7 +416,7 @@ Common use:
 
 **Definitions:**
 
-- `+/-`: +` represents `public`/`default`, `-` represents `private. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
+- `+/-`/`# `:+` represents ` public/default/protected. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
 - `get/setVariable` is split into two parts, `operation` + `entity`. The `get` / `set` is depending on what you are doing (getting, or setting), but one of the two must be present, but not two at the same time. The `Variable` is the entity you are trying to manipulate with.
 - `[parameters]` is usually not required for getters, but pretty much necessary for setters. 
 - `: returnType` is required for all functions with a return type other than `void`. For void you could also write `: void`, but generally we just leave it out. Usually, getters have a return type other than `void`, and setters have `void` as a return type.
@@ -432,7 +432,7 @@ Common use:
 
 **Definitions:**
 
-- `+/-`: `+` represents `public`/`default, `-` represents `private. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
+- `+/-`/`# `:+` represents ` public/default/protected. Almost every time `+` is the correct choice. If you don't know which, `+` is always your best bet.
 - `methodName` is the method name.
 - `[parameters]` is optional depending on what you need.
 - `: returnType` is required for all functions with a return type other than `void`. For void you could also write `: void`, but generally we just leave it out. Usually, getters have a return type other than `void`, and setters have `void` as a return type
