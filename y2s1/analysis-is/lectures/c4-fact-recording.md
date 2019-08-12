@@ -161,7 +161,7 @@ When dealing with many-to-many relations, data are lost. Therefore, we need some
 - **Business Rules** - capture and describe business rules and relationship between the entities
 - **Modelling System** - describe the business system in diagrams
 - **Users** - communication system to the users for confirmation of requirements
-- **File design** - from the basis of subsequent data and file design as the entities become physical files or data base tables.
+- **File design** - from the basis of subsequent data and file design as the entities become physical files or database tables.
 
 ## Relationship between DFD and ERD
 

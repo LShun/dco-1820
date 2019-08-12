@@ -45,8 +45,8 @@
 
 ### Link / Integration Testing
 
-- **Purpose:** Ensure data passes between functions correctly.
-- Test multiple programs working together that interacts together.
+- **Purpose:** Ensure data passes between two or more functions correctly.
+- **Test multiple programs working together** that interacts together.
 
 ### System Testing
 
@@ -76,7 +76,7 @@
 
 ### User Acceptance Testing
 
-- **Definition**: Test to ensure system meets requirements inside Requirements Specification.
+- **Definition**: Test to ensure whole system meets requirements inside Requirements Specification.
 
 #### Types of Acceptance Testing
 

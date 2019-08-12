@@ -66,8 +66,8 @@ public class OverdraftAccount extends Account {
     }
 
     @Override
-    double calculateInterest() {
-        return super.getAccountBalance() * this.overdraftInterestRate;
+    public double calculateInterest() {
+        return super.calculateInterest();
     }
 
     @Override

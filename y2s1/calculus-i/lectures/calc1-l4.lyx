@@ -799,8 +799,1178 @@ y & =-\frac{15}{7}x+\frac{15}{7}+3\\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+(Rate of Change) Example
+\end_layout
 
+\begin_layout Enumerate
+Given:
+\begin_inset Formula 
+\[
+\frac{dr}{dt}=0.2cm/s,\frac{dA}{dt}=?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A = area
+\end_layout
+
+\begin_layout Enumerate
+r = radius
+\end_layout
+
+\begin_layout Enumerate
+t = time
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the formula for area:
+\begin_inset Formula 
+\begin{align*}
+A & =\pi r^{2}\\
+\frac{dA}{dr} & =2\pi r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $r=5$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dA}{dr} & =2\pi\left(5\right)\\
+ & =10\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dA}{dt}$
+\end_inset
+
+, when 
+\begin_inset Formula $r=5$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dA}{dt} & =\frac{dA}{dr}*\frac{dr}{dt}\\
+ & =10\pi*0.2\\
+ & =2\pi cm^{2}/s
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Let:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $V=volume$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r=radius$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t=time$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+List down terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dV}{dt}=10cm^{3}s^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dr}{dt}=?$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dV}{dr}$
+\end_inset
+
+, when 
+\begin_inset Formula $r=5$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V=\frac{4}{3}\pi r^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dV}{dr} & =4\pi r^{2}\\
+ & =4\pi\left(5\right)^{2}\\
+ & =100\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dr}{dt}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dr}{dt} & =\frac{dr}{dV}*\frac{dV}{dt}\\
+ & =\frac{1}{100\pi}*10\\
+ & =\frac{1}{10\pi}cms^{-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+List down the terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+y^{2}=5^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dx}{dt}=0.2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dy}{dt}=?$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{2}+\left(4\right)^{2} & =5^{2}\\
+x^{2} & =25-16\\
+ & =9\\
+x & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dy}{dt}$
+\end_inset
+
+, when 
+\begin_inset Formula 
+\begin{align*}
+x^{2}+y^{2} & =5\\
+\frac{d}{dt}\left[x^{2}+y^{2}\right] & =0\\
+2x\frac{dx}{dt}+2y\cdot\frac{dy}{dt} & =0\\
+\frac{dy}{dt} & =\frac{-2x}{2y}\frac{dx}{dt}\\
+ & =-\frac{x}{y}\cdot\frac{dx}{dt}\\
+\frac{dy}{dt}|_{x=3,y=4} & =-\frac{3}{4}\cdot\frac{2}{10}\\
+ & =-\frac{3}{20}\\
+ & =-0.15ms^{-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Define terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Revenue = 
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Sales=x=1000$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Formula: 
+\begin_inset Formula $R\left(x\right)=200x-3x^{\frac{2}{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dx}{dt}=10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dR}{dt}|_{x=1000}=?$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dR}{dx}$
+\end_inset
+
+, when 
+\begin_inset Formula $x=1000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dt}\left[R\left(x\right)\right] & =\frac{d}{dt}\left[200x-3x^{\frac{2}{3}}\right]\\
+\frac{dR}{dt} & =200\frac{dx}{dt}-2x^{-\frac{1}{3}}\cdot\frac{dx}{dt}\\
+ & =\frac{dx}{dt}\left[200-2x^{-\frac{1}{3}}\right]\\
+\frac{dR}{dt}|_{x=1000,\frac{dx}{dt}=10} & =10\left[200-2\left(1000\right)^{-\frac{1}{3}}\right]\\
+ & =10\left[200-\frac{2}{10}\right]\\
+ & =10\left[199.8\right]\\
+ & =1998dollars/month
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example (Linear Approximation & Differentials)
+\end_layout
+
+\begin_layout Enumerate
+List down the terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta r=0.01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta A=?$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dA}{dr}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & =\pi r^{2}\\
+\frac{dA}{dr} & =2\pi r\\
+\frac{dA}{dr}|_{r=5} & =10\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\delta r$
+\end_inset
+
+ is small, 
+\begin_inset Formula 
+\begin{align*}
+\frac{dA}{dr} & \approx\frac{\delta A}{\delta r}\\
+\delta A & \approx\frac{dA}{dr}*\delta r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\delta A$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\delta A|_{r=5,\delta r=0.01} & \approx10\pi*0.01\\
+\delta A & =0.1\pi cm^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The approximate increase in the area is 0.1 
+\begin_inset Formula $\pi cm^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+List down terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=sides=10cm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $V=volume$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\delta x=change\,in\,sides=-0.1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\delta V$
+\end_inset
+
+, change in volume
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dV}{dx}$
+\end_inset
+
+, when 
+\begin_inset Formula $x=10$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =x^{3}\\
+\frac{dV}{dx} & =3x^{2}\\
+\frac{dV}{dx}|_{x=10} & =3\left(10\right)^{2}\\
+ & =300
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\delta V$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\delta x$
+\end_inset
+
+ is small, 
+\begin_inset Formula 
+\begin{align*}
+\delta V & \approx\frac{dV}{dx}\cdot\delta x\\
+\delta V|_{\frac{dV}{dx}=300,\delta x=-0.1} & =300\cdot\left(-0.1\right)\\
+ & =-30cm^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The approximate decreas in the volume is 30 
+\begin_inset Formula $cm^{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Find linearization
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =x^{\frac{1}{2}}\\
+f'\left(x\right) & =\frac{1}{2\sqrt{x}}\\
+f\left(x+\delta x\right) & =\sqrt{x+\delta x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt{3.98}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=4,\delta x=-0.02$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x+\delta x\right) & \approx f\left(x\right)+f'\left(x\right)\delta x\\
+ & =x^{\frac{1}{2}}+\frac{1}{2\sqrt{x}}\cdot\delta x\\
+f\left(4+\left(-0.02\right)\right) & =4^{\frac{1}{2}}+\frac{1}{2\sqrt{4}}\cdot\left(-0.02\right)\\
+ & =2+\frac{1}{4}\cdot\left(-0.02\right)\\
+\sqrt{3.98} & =1.995
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt{4.05}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=4,\delta x=0.05$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x+\delta x\right) & \approx f\left(x\right)+f'\left(x\right)\delta x\\
+ & =x^{\frac{1}{2}}+\frac{1}{2\sqrt{x}}\cdot\delta x\\
+f\left(4+0.05\right) & =2+\frac{1}{2\left(2\right)}\cdot0.05\\
+\sqrt{4.05} & =2.0125
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Find the definitions
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\sqrt[3]{x}\\
+f\left(x+\delta x\right) & =\sqrt[3]{x+\delta x}\\
+f'\left(x\right) & =\frac{1}{3x^{\frac{2}{3}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt[3]{8030}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=8000,\delta x=8030-8000=30$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x+\delta x\right) & \approx f\left(x\right)+f'\left(x\right)\delta x\\
+f\left(x+\delta x\right)|_{x=8000,\delta x=30} & =\sqrt[3]{8000}+\frac{1}{3\left(8000\right)^{\frac{2}{3}}}\cdot30\\
+\sqrt[3]{8030} & =20.025
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (How about negative part)
+\end_layout
+
+\begin_layout Enumerate
+List down the terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r=radius=21$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta r=maximum\,error=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta V=\text{maximum error for volumes}=?$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $\frac{dV}{dr}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =\frac{4}{3}\pi r^{3}\\
+\frac{dV}{dr} & =4\pi r^{2}\\
+dV & =4\pi r^{2}dr\\
+\delta V & \approx4\pi r^{2}\delta r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\delta V$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\delta V & \approx4\pi\left(21\right)^{2}\left(0.05\right)\\
+ & =277
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The maximum error in calculated volume is 277 
+\begin_inset Formula $cm^{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Find coordinates of turning points, which mean 
+\begin_inset Formula $\frac{dy}{dx}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =6x^{2}+6x-12\\
+6x^{2}+6x-12 & =0\\
+x^{2}+x-2 & =0\\
+\left(x+2\right)\left(x-1\right) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=-2,x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =2\left(-2\right)^{3}+3\left(-2\right)^{2}-12\left(-2\right)+7\\
+y & =27
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(-2,27\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =2\left(1\right)^{3}+3\left(1\right)^{2}-12\left(1\right)+7\\
+ & =2+3-12+7\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Finding the nature, method 1
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++ve
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-ve
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++ve
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(-2,27\right)$
+\end_inset
+
+is a local maximum point
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ is a local minimum point.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Finding the nature, method 2
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{d}{dx}\left[6x^{2}+6x-12\right]\\
+\frac{d^{2}y}{dx^{2}} & =12x+6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =12x+6\\
+ & =12\left(-2\right)+6\\
+ & =-18<0,\therefore local\,max
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =12x+6\\
+ & =12\left(1\right)+6\\
+ & =18>0\therefore local\,min
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=27x+\frac{4}{x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find stationary points
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{d}{dx}\left[27x+\frac{4}{x^{2}}\right]\\
+ & =27-\frac{8}{x^{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $\frac{dy}{dx}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0 & =27-\frac{8}{x^{3}}\\
+27x^{3} & =8\\
+x^{3} & =\frac{8}{27}\\
+x & =\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y$
+\end_inset
+
+ when 
+\begin_inset Formula $x=\frac{2}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =27\left(\frac{2}{3}\right)+\frac{4}{\left(\frac{2}{3}\right)^{2}}\\
+ & =27
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{d}{dx}\left[27-\frac{8}{x^{3}}\right]\\
+\frac{d^{2}y}{dx^{2}} & =\frac{24}{x^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=\frac{2}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{24}{\left(\frac{2}{3}\right)^{4}}\\
+ & =\frac{24}{\left(\frac{2}{3}\right)^{4}}\\
+ & =+ve;\therefore min\,point
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclusion
+\begin_inset Formula 
+\[
+\left(\frac{2}{3},27\right)
+\]
+
+\end_inset
+
+is a minimum point.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Extreme Values)
 \end_layout
 
 \end_body

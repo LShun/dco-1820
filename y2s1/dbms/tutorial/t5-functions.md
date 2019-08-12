@@ -125,3 +125,4 @@ WHERE   E.job_id IN
                                  FROM   jobs) AND
                                     E.job_id = J.job_id);
 ```
+

@@ -21,3 +21,15 @@ Extra notes:
 - Uppercase, lowercase, toLower, toUpper. String & character methods confirm will come out in mid term and finals. (According to tutorial teachers).
 
 - Sure will test on String and StringBuilder/StringBuffer after modification.
+
+## Lab test
+
+ - no open book, no internet
+During tutorial class - can do tutorial
+Lab test - C4 -> C8
+Will give UML diagram, very straightforward. (Worst case scenario: Practical 7)
+How to put objects inside array
+Note: if you try to stringify a class, then toString() will automatically run
+ - Need to tell them what is the object class (which child class). Utilize instanceof 
+ - If both class have same properties, most probably will have parent class
+ - toString method, please remember to put labels (Eg: `"label: " + content`)

@@ -2039,14 +2039,14 @@ Opp: the items of factory C are not superior to those of factory B.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $H_{1}:p_{C-B}<0$
+\begin_inset Formula $H_{1}:p_{B-C}>0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $H_{0}:p_{C-B}\ge0$
+\begin_inset Formula $H_{0}:p_{B-C}\le0$
 \end_inset
 
 
@@ -2097,7 +2097,7 @@ Test statistic
 
 \begin_inset Formula 
 \begin{align*}
-Z & =\frac{\hat{p_{1}}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}\cdot\left(\frac{1}{\sqrt{n_{B}}}+\frac{1}{\sqrt{n_{C}}}\right)}}\\
+Z & =\frac{\hat{p_{1}}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}\cdot\left(\frac{1}{n_{B}}+\frac{1}{n_{C}}\right)}}\\
  & =\frac{0.03-0.02}{\sqrt{0.024\cdot0.976\cdot\left(\frac{1}{1000}+\frac{1}{1500}\right)}}\\
  & =1.600
 \end{align*}

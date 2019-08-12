@@ -25,3 +25,13 @@ Important:
 2. Authentication / Login CANNOT be consider as a "module".
 3. No need for database/GUI
 4. Be aware of copyright issues
+
+## For assignment:
+
+- Submit before come in the class
+- Hardcopy(submit on Saturday) -> Softcopy is for code
+- Time: 15-20 minutes (presentation)
+- Report format: Check with lecturer
+- Presentation format: SHow all the functions
+- Need to print out the marks
+  - No need prepare presentation slides

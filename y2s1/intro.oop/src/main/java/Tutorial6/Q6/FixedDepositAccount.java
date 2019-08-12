@@ -17,8 +17,8 @@ public class FixedDepositAccount extends Account {
     }
 
     @Override
-    double calculateInterest() {
-        return super.getAccountBalance() * super.getAnnualInterestRate() * this.savingYears;
+    public double calculateInterest() {
+        return super.calculateInterest() * this.savingYears;
     }
 
     @Override

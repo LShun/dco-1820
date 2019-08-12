@@ -4,7 +4,7 @@ abstract class Account {
     private int accountNo;
     private String accountHolderName;
     private double accountBalance;
-    private double annualInterestRate;
+    private double annualInterestRate = 0.06;
 
     public Account(int accountNo, String accountHolderName, double accountBalance, double annualInterestRate) {
         this.accountNo = accountNo;
@@ -53,7 +53,9 @@ abstract class Account {
         this.accountBalance -= cash;
     }
 
-    abstract double calculateInterest();
+    public double calculateInterest() {
+        return this.accountBalance * this.annualInterestRate;
+    };
 
     @Override // reason to use: https://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why/94411
     public String toString() {

@@ -1,0 +1,658 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 8
+\end_layout
+
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(28\right)}{8\left(8^{2}-1\right)}\\
+ & =\frac{2}{3}\text{​}\\
+ & =0.6667
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is a high positive linear correlation between the value to the company
+ and preference of the managers.
+\end_layout
+
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(48\right)}{10\left(10^{2}-1\right)}\\
+ & =\frac{39}{55}\\
+ & =0.7091
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is a high positive linear correlation that it represents a measure
+ of agreement between the two panel members.
+\end_layout
+
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+From the scatter diagram, there is a moderate negative linear relationship
+ between the weeks of experience and the number of rejects.
+\end_layout
+
+\begin_layout Enumerate
+
+\end_layout
+
+\begin_layout Standard
+Q8.
+ A random sample of eight drivers insured with a company and having similar
+ car insurance policies was selected.
+ The following table lists their driving experiences and monthly car insurance
+ premiums.
+\end_layout
+
+\begin_layout Standard
+(a) Does the insurance premium depend on the driving experience or does
+ the driving experience
+\end_layout
+
+\begin_layout Standard
+depend on the insurance premium? State the dependent and independent variables.
+\end_layout
+
+\begin_layout Standard
+The insurance premium depends on the driving experience.
+\end_layout
+
+\begin_layout Standard
+In statistics: Y depends on X.
+\end_layout
+
+\begin_layout Standard
+Y: Insurance premium (dependent variable)
+\end_layout
+
+\begin_layout Standard
+X: Driving experience (Independent variable)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Driving Experience
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Insurance Premium
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+474
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4739
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1396
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29642
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) Draw and comment the scatter diagram.
+ 
+\end_layout
+
+\begin_layout Standard
+Note: Can start from lowest to highest, no need to start from zero
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../lyx-imgs/t8q8-scatter.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the scatter diagram, there is a moderate negative linear relationship
+ between driving experience and monthly premium.
+ (Note: The relationship must be 3 parts, intensity + positive/negative
+ + linear, which one come first doesn't matter) 
+\end_layout
+
+\begin_layout Standard
+(c) Find the appropriate least squares regression line based on your answer
+ in part (a).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{XY} & =\sum xy-\frac{\sum x\sum y}{n}=4739-\frac{90\left(474\right)}{8}\\
+ & =
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{XX} & =\sum X^{2}-\frac{\left(\sum X\right)^{2}}{n}=1396-\frac{90^{2}}{8}\\
+ & =383.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{XY} & =\sum y^{2}-\frac{\left(\sum y\right)^{2}}{n}\\
+ & =29642-\frac{474^{2}}{8}\\
+ & =1557.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{b}\left(gradient,\frac{y_{a}-y_{b}}{x_{a}-x_{b}}\right) & =\frac{S_{X\boldsymbol{Y}}}{S_{X\boldsymbol{X}}}\\
+ & =-\frac{593.5}{383.5}\\
+ & =-1.5476
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\bar{y}-\hat{b}X\\
+ & =\frac{474}{8}+1.5476\left(\frac{90}{8}\right)\\
+ & =76.6605
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{y}=76.6605-1.5476x\text{(When X=0, \ensuremath{\hat{y}=\hat{a}}) }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d) Interpret the meaning of the values of regression coefficients a and
+ b obtained in part (c).
+ 
+\end_layout
+
+\begin_layout Standard
+For a driver with no experience, the predicted monthly premium is RM76.66.
+\end_layout
+
+\begin_layout Standard
+(General format: When X increases by 1 unit, Y is expected to change by
+ 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+ units, on the average)
+\end_layout
+
+\begin_layout Standard
+When the driving experience increases by 1 year, the monthly premium is
+ expected to decrease by RM1.55 on average)
+\end_layout
+
+\begin_layout Standard
+(e) Calculate and interpret the correlation coefficient between the two
+ variables.
+ 
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{S_{XY}}{\sqrt{S_{XX}}\sqrt{S_{YY}}}\\
+ & =\frac{-593.5}{\sqrt{383.5}\sqrt{1557.5}}\\
+ & =-0.7679
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(Note: Look at notes page 81 table, notes, and decide it is from where to
+ where)
+\end_layout
+
+\begin_layout Standard
+There is a high negative linear correlation(proper)/relationship between
+ driving experience and monthly premium
+\end_layout
+
+\begin_layout Standard
+(f) Calculate and interpret the coefficient of determination.
+ 
+\begin_inset Formula 
+\begin{align*}
+r^{2} & =\left(-0.7659\right)\\
+ & =0.5879
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+58.97% of the total variance in monthly premium is explained by the driving
+ experience (Generally, the higher the better).
+\end_layout
+
+\begin_layout Standard
+(g) Predict the monthly car insurance premium for a driver with 10 years
+ of driving experience.
+ 
+\end_layout
+
+\begin_layout Standard
+When X = 10,
+\begin_inset Formula 
+\begin{align*}
+\hat{y} & =76.6605-1.5476\left(10\right)\\
+ & =61.1845
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The predicted monthly premium monthly premium is RM61.18.
+\end_layout
+
+\begin_layout Standard
+(h) Predict the monthly car insurance premium for a driver with 30 years
+ of driving experience.
+ 
+\end_layout
+
+\begin_layout Standard
+When X = 30,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{y} & =76.6605-1.5476\left(30\right)\\
+ & =30.2325
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The predicted monthly premium monthly premium is RM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+30.2325
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+(i) Comment on the accuracy of your estimates obtained in parts (g) and
+ (h).
+\end_layout
+
+\begin_layout Standard
+The accuracy of estimates in part g is more accurate than h.
+ This is because part g is interpolation and part h is extrapolation.
+ g is inside the range of the samples, while h is outside the range of samples,
+ which is less accurate.
+\end_layout
+
+\end_body
+\end_document

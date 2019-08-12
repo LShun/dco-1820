@@ -107,7 +107,7 @@ END
 | Pay in advance                                         | Y    | Y    | Y    | Y    | N    | N    | N    | N    |
 | Designated key account customer                        | Y    | Y    | N    | N    | Y    | Y    | N    | N    |
 | Order > RM1200 in year                                 | Y    | N    | Y    | N    | Y    | N    | Y    | N    |
-|                                                        |      |      |      |      |      |      |      |      |
+| **Action**                                             |      |      |      |      |      |      |      |      |
 | 5% Discount                                            | X    | X    | X    | X    |      |      |      |      |
 | 50 Bonus Points                                        | X    | X    |      |      |      |      |      |      |
 | 20 Bonus Points                                        |      |      |      |      | X    | X    |      |      |

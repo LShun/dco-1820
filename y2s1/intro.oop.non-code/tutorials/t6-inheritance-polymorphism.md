@@ -127,3 +127,40 @@
       1. Polymorphism refers to the generalization of methods so that one method name can refer to multiple operations under a single class.
 
    7. 
+   
+7. 
+
+   1. | Private                                                      | PROTECTED                                                    |
+      | ------------------------------------------------------------ | ------------------------------------------------------------ |
+      | Only available to be accessed within the class that defined them | Accessible in the class that defines them and in other classes which inherit from that class. |
+
+8. Error, because parent cannot fit into child class
+
+9. ABC
+   A -> m1 (Aa) => A
+
+   ^
+   |
+   B -> m1(Bb) => B
+   ^
+
+   |
+   C -> m1 (Cc) => C
+   ^
+
+   |
+
+   D -> m1(Dd) => D
+
+   Basically go bottom up.
+
+   
+
+10. Differences between 
+
+    | Final variable               | Final method                                                 | Final class                                                  |
+    | ---------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+    | Final variable is a constant | Final method is a method that cannot be overridden by any subclasses | Final class is a class that cannot be extended or inherited. |
+
+    
+

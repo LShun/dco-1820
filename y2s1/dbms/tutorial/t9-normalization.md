@@ -35,3 +35,27 @@ PROD_SOLD(<u>PROD_NUM*</u>, <u>INV_NUM</u>*, QUANT_SOLD)
 PROD(<u>PROD_NUM</u>, PROD_LABEL, PROD_PRICE, VEND_CODE*)
 
 VENDOR(<u>VEND_CODE</u>, VEND_NAME)
+
+
+
+## Q4. Dream Sdn Bhd TourPackages
+
+**Normalize**
+
+**0NF** (Unnormalized)
+
+**TourPackages**(<u>PackageCode</u>, PackageDesc, Price, TourGuide, T_GuideContact, <u>CustNo</u>, CustName, CustPhone, DepartDate)
+
+**1NF** (Remove repeating groups)
+
+**TourPackages**(<u>PackageCode</u>, PackageDesc, Price, TourGuide, T_GuideContact, DepartDate, <u>CustNo*</u>, )
+
+**Customer**(<u>CustNo</u>, CustName, CustPhone)
+
+**2NF** (Remove partial dependency)
+
+**TourPackages**(<u>PackageCode</u>, PackageDesc, Price, TourGuide, T_GuideContact, <u>CustNo*</u>)
+
+**Customer**(<u>CustNo</u>, CustName, CustPhone, DepartDate)
+
+**3NF** (Remove transitive dependency)

@@ -11,6 +11,6 @@ public class TestCircle {
                             circle1.findArea()  + "\nNo. of objects = "
                             + circle2.getNoOfObjects());
 
-        System.out.println("Circle.getNoOfObjects() = " + Circle.getNoOfObjects());
+        System.out.println("Practical7.Q2.Circle.getNoOfObjects() = " + Circle.getNoOfObjects());
     }
 }
