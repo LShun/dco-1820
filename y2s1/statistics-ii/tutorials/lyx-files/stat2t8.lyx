@@ -153,7 +153,172 @@ From the scatter diagram, there is a moderate negative linear relationship
 \end_layout
 
 \begin_layout Enumerate
+Product moment correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{8\left(1069\right)-\left(72\right)\left(128\right)}{\sqrt{\left[8\left(732\right)-\left(72\right)^{2}\right]\left[8\left(2156\right)-\left(128\right)^{2}\right]}}\\
+ & =\text{−}0.8714
+\end{align*}
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There is a very high negative linear correlation between the weeks of experience
+ and the number of rejects.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Spearman's rank correlation
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(160.5\right)}{8\left(8^{2}-1\right)}\\
+ & =-0.9107
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There is a very high negative linear correlation between the weeks of experience
+ and the number of rejects
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Draw and comment the scatter diagram.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is a high positive linear correlation between the
+ output and the cost
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Product moment coefficient correlation
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{10\left(5704\right)-\left(120\right)\left(400\right)}{\sqrt{\left(\left(10\right)\left(1866\right)-\left(120\right)^{2}\right)\left(\left(10\right)\left(18200\right)-\left(400\right)^{2}\right)}}\\
+ & =0.9338
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is a very high positive linear correlation between
+ the output and the cost
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Spearman's rank coefficient correlation
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(8.5\right)}{10\left(10^{2}-1\right)}\\
+ & =0.9485
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is a very high positive linear correlation between
+ the output and the cost
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Product moment correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{12\left(7449\right)-\left(659\right)\left(135\right)}{\sqrt{\left[\left(12\right)\left(36313\right)-\left(659\right)^{2}\right]\left[\left(12\right)\left(1561\right)-\left(135\right)^{2}\right]}}\\
+ & =0.4891
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is some positive linear correlation between the median
+ income and the house purchase price
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Spearman's rank correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(192.5\right)}{12\left(12^{2}-1\right)}\\
+ & =0.3269
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Answer
+\end_layout
+
+\begin_layout Enumerate
+Least squares regression line of time on year.
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X\\
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Answer
 \end_layout
 
 \begin_layout Standard

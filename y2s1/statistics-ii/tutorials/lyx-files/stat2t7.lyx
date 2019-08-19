@@ -2204,7 +2204,7 @@ Oppo: the degree of defectiveness is NOT independent from the types of machine
 \end_deeper
 \begin_layout Enumerate
 Critical value 
-\begin_inset Formula $\chi_{0.02;\left(3-1\right)\left(4-1\right)}^{2}=\chi_{0.02;6}^{2}=15.033$
+\begin_inset Formula $\chi_{0.02;\left(3-1\right)\left(3-1\right)}^{2}=\chi_{0.02;4}^{2}=11.668$
 \end_inset
 
 
@@ -2214,7 +2214,7 @@ Critical value
 Rejection range:
 \begin_inset Formula 
 \[
-\chi^{2}>15.033
+\chi^{2}>11.668
 \]
 
 \end_inset
@@ -2243,7 +2243,7 @@ Conclusion
 \begin_deeper
 \begin_layout Enumerate
 Since 
-\begin_inset Formula $\chi^{2}=9.0905<15.033,$
+\begin_inset Formula $\chi^{2}=9.0905<11.668,$
 \end_inset
 
 we failed to reject 

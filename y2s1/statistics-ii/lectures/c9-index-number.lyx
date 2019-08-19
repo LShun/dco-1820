@@ -3161,6 +3161,52 @@ After changing the base, we can see that the growth of profits is faster
  in company B than in Company A.
 \end_layout
 
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+The RM
+\begin_inset Formula $20,000$
+\end_inset
+
+ income in 1979 is the same (in terms of buying power) as a RM 9756 
+\begin_inset Formula $\left(20000\div2.05=9756\right)$
+\end_inset
+
+ income in 1967.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The RM
+\begin_inset Formula $30,000$
+\end_inset
+
+ income in 1984 is the same as RM 
+\begin_inset Formula $9,836$
+\end_inset
+
+ 
+\begin_inset Formula $\left(30,000\div3.05=9836\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The percentage increase in real income over 5 years is 
+\begin_inset Formula 
+\[
+\frac{9836-9756}{9756}*100\%=0.82\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 
 \end_layout

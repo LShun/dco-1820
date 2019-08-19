@@ -1,0 +1,703 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Chapter 10: Time Series Analysis
+\end_layout
+
+\begin_layout Section
+Example & Notes
+\end_layout
+
+\begin_layout Subsection
+Trend & Seasonal Pattern
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c10trend&seasonal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definitions
+\end_layout
+
+\begin_layout Enumerate
+Trend 
+\begin_inset Formula $\left(T\right)$
+\end_inset
+
+ - overall direction of changes
+\end_layout
+
+\begin_layout Enumerate
+Seasonal variation 
+\begin_inset Formula $\left(S\right)$
+\end_inset
+
+- pattern within a year
+\end_layout
+
+\begin_layout Enumerate
+Cyclical variation 
+\begin_inset Formula $\left(C\right)$
+\end_inset
+
+- longer pattern
+\end_layout
+
+\begin_layout Enumerate
+Residual variation 
+\begin_inset Formula $\left(I\right)$
+\end_inset
+
+- random event
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c10e1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c10e2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A: Downward trend
+\end_layout
+
+\begin_layout Enumerate
+A: Upward trend
+\end_layout
+
+\begin_layout Enumerate
+A: No trend / No clear movement
+\end_layout
+
+\begin_layout Section
+Example (Exam rarely ask)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename lyx-img/c10e3a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename lyx-img/c10e3b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Subsection
+Solution
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X=0$
+\end_inset
+
+ for Year 1 Q1, X = 1 for Year 1 Q2, and so on.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename lyx-img/c10e4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Assume trend is linear
+\begin_inset Formula 
+\[
+\hat{Y}=\hat{a}+\hat{b}X
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =4.112
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =0.17063
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: If you start your trend with 
+\begin_inset Formula $X=1$
+\end_inset
+
+, the gradient and intercept will be different, but the trend will be the
+ same
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c10e5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c10e5a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Shortcut in calculator
+\end_layout
+
+\begin_layout Standard
+Add the next number, and subtract the old number.
+\end_layout
+
+\begin_layout Enumerate
+This method is highly risky, as if you do this, and one place wrong, then
+ all place wrong
+\end_layout
+
+\begin_layout Enumerate
+Solution: Calculate last set of numbers by yourself.
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Subsection
+Adjustments
+\end_layout
+
+\begin_layout Standard
+We do the last adjustment, by adding up all the averages.
+ If the total is not 0, that means the trend is not in the middle of the
+ graph.
+ Therefore, we will have to adjust every term by a little, by subtracting
+ each term by the adjustment to 'center' the graph.
+\end_layout
+
+\begin_layout Subsection
+Answer
+\end_layout
+
+\begin_layout Standard
+Refer to c10-tables.xlsx in same directory
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Refer to c10-tables.xlsx in same directory
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Average daily increase in trend =
+\begin_inset Formula $\frac{\text{W3WedMovAvg - W1WedMovAvg}}{11-1}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{99.2-92.0}{10}=0.72$
+\end_inset
+
+.
+ Note: the reason why we use 10 instead of 11, is because from day 1 to
+ day 2 is considered one day.
+ Day 1 alone is just the starting point, not an actual day.
+\end_layout
+
+\begin_layout Enumerate
+Forecasting the output for week 4 with 
+\begin_inset Formula $Y_{est}=T_{est}+S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Week 4 Monday: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T_{est}=99.2+3\left(0.72\right)+\left(-13.06\right)=88.3$
+\end_inset
+
+ (Week 3 Wednesday: Moving average)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Y_{est}=99.2+3\left(0.72\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The reason why 
+\begin_inset Formula $*3$
+\end_inset
+
+ is because from Wednesday to Monday, the increase in trend (daily) had
+ occured 3 times.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Week 4 Tuesday:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T_{est}=99.2+4\left(0.72\right)+15.94=118.02$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Week 4 Wednesday:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T_{est}=99.2+5\left(0.72\right)+1.34=104.14$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Table Form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Week
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Day
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projected Trend
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Average Daily variation, S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forecast
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $99.2+4\left(0.72\right)=101.36$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-13.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $101.36+\left(-13.06\right)=88.3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Add 0.72: 102.08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $102.08+\left(15.94\right)=118.02$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wednesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Add 0.72: 102.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $102.80+\left(1.34\right)=104.14$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Subsection
+Note
+\end_layout
+
+\begin_layout Standard
+When do we need centering? If the middle of a moving average cannot be compared
+ directly with Y.
+ 
+\end_layout
+
+\begin_layout Standard
+Put it simply, odd don't need, even need.
+\end_layout
+
+\begin_layout Standard
+Note, if you keep 2/3 decimal, rounding errors are still acceptable by teacher.
+\end_layout
+
+\begin_layout Enumerate
+Inside c10-tables.xlsx
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Subsection
+10(a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lyx-img/c1010a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+10(b)
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -76,7 +76,7 @@
 - use `super` keyword: `super.methods(args)`
 - `super` is similar to `this` except always refer to `superclass`
 
-- **Can you invoke super.super.p()**? Answer this later
+- **Can you invoke super.super.p()**? Answer: No, super can only go one level higher.
 
 ## `Object class`
 

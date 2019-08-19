@@ -33,3 +33,6 @@ Note: if you try to stringify a class, then toString() will automatically run
  - Need to tell them what is the object class (which child class). Utilize instanceof 
  - If both class have same properties, most probably will have parent class
  - toString method, please remember to put labels (Eg: `"label: " + content`)
+
+
+

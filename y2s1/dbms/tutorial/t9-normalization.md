@@ -8,11 +8,19 @@ Note, need to draw in table form for diagram, just divide the column
 
 INVOICE(<u>INV_NUM</u>, <u>PROD_NUM</u>, SALE_DATE, PROD_LABEL, VEND_CODE, VEND_NAME, QUANT_SOLD, PROD_PRICE)
 
+
+
 ### 1NF (Removed Repeating Group)
 
 INVOICE(<u>INV_NUM</u>, SALE_DATE, QUANT_SOLD, <u>PROD_NUM*</u> )
 
 PROD(<u>PROD_NUM</u>, PROD_LABEL, PROD_PRICE, VEND_CODE, VEND_NAME)
+
+#### Problem 1 Solution
+
+
+
+
 
 
 
