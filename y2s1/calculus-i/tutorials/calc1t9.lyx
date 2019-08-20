@@ -1,0 +1,663 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calculus 1 T9
+\end_layout
+
+\begin_layout Section
+Question 1
+\end_layout
+
+\begin_layout Standard
+Find the dimensions of a rectangle with perimeter 100m whose area is as
+ large as possible.
+\begin_inset Formula 
+\begin{align*}
+x & =width\\
+y & =length
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P & =perimeter\\
+2x+2y & =100\\
+x+y & =50
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Requirements: Area as large as possible.
+\begin_inset Formula 
+\[
+A=xy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Try to make the equation in terms of 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+y & =50-x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute back into area formula
+\begin_inset Formula 
+\begin{align*}
+A & =x\left(50-x\right)\\
+ & =50x-x^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dA}{dx}=50-2x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the stationary point (where maximum/mininum values occur)
+\begin_inset Formula 
+\begin{align*}
+\frac{dA}{dx} & =0\\
+50-2x & =0\\
+x & =25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =50-25\\
+ & =25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimensions
+\begin_inset Formula 
+\[
+25m*25m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question 2
+\end_layout
+
+\begin_layout Standard
+A box with an open top is to be constructed from a square piece of cardboard,
+ 0.9m wide, by cutting out a square from each of the four corners and bending
+ up the sides.
+ Find the largest volume that such a box can have.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Sides & =s\\
+ & =0.9
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V=sides^{2}*h
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & =area\\
+ & =s^{2}\\
+ & =0.81m
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Cuts=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sides after cutted
+\begin_inset Formula 
+\[
+s=0.9-2x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Height of box
+\begin_inset Formula 
+\[
+x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the volume formula
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+V & =\left(0.9-2x\right)^{2}*x\\
+ & =x\left(0.9-2x\right)^{2}\\
+ & =x\left(4x^{2}-3.6x+0.81\right)\\
+ & =4x^{3}-3.6x^{2}+0.81x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the derivative
+\begin_inset Formula 
+\begin{align*}
+\frac{dV}{dx} & =4x^{3}-3.6x^{2}+0.81x\\
+ & =12x^{2}-7.2x+0.81
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the stationary point
+\begin_inset Formula 
+\begin{align*}
+\frac{dV}{dx} & =0\\
+12x^{2}-7.2x+0.81 & =0\\
+4x^{2}-2.4x+0.27 & =0\\
+x=\frac{9}{20}, & x=\frac{3}{20}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the volume:
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $x=\frac{9}{20}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =4\left(\frac{9}{20}\right)^{3}-3.6\left(\frac{9}{20}\right)^{2}+0.81\left(\frac{9}{20}\right)\\
+ & =0m^{3}\left(ignored,volume\,cannot=0\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $x=\frac{3}{20}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =4\left(\frac{3}{20}\right)^{3}-3.6\left(\frac{3}{20}\right)^{2}+0.81\left(\frac{3}{20}\right)\\
+ & =0.054m^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conclusion
+\begin_inset Formula 
+\[
+V=0.054m^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question 3
+\end_layout
+
+\begin_layout Standard
+Find the point on the line y = 4x + 7 that is closest to the origin
+\end_layout
+
+\begin_layout Standard
+Question ask for 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+pair closest to 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=4x+7
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+distance & =s=\sqrt{\left(y_{2}-y_{1}\right)^{2}+\left(x_{2}-x_{1}\right)^{2}}\\
+s & =\sqrt{\left(y-0\right)^{2}+\left(x-0\right)^{2}}\\
+ & =\left(y^{2}+x^{2}\right)^{\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substitute 
+\begin_inset Formula $y$
+\end_inset
+
+ for 
+\begin_inset Formula $4x+7$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+s & =\left(\left(4x+7\right)^{2}+x^{2}\right)^{\frac{1}{2}}\\
+ & =\left(17x^{2}+28x+28x+49\right)^{\frac{1}{2}}\\
+\frac{ds}{dt} & =\frac{1}{2}\left(17x^{2}+56x+49\right)^{-\frac{1}{2}}\cdot\left(34x+56\right)\\
+\frac{ds}{dt} & =\frac{\left(34x+56\right)}{2\sqrt{17x^{2}+56x+49}}\\
+ & =\frac{17x+28}{\sqrt{17x^{2}+56x+49}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\frac{ds}{dt}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{17x+28}{\sqrt{17x^{2}+56x+49}} & =0\\
+17x+28 & =0\\
+x & =-\frac{28}{17}\\
+ & =-\frac{28}{17}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Check 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =4\left(-\frac{28}{17}\right)+7\\
+ & =\frac{7}{17}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question 4
+\end_layout
+
+\begin_layout Standard
+A piece of wire 10m long is cut into two pieces.
+ One piece is bent into a square and the other is bent into an equilateral
+ triangle.
+ How should the wire be cut so that the total area enclosed is a minimum?
+ 
+\end_layout
+
+\begin_layout Section
+Question 5
+\end_layout
+
+\begin_layout Standard
+For the given cost and price functions, find the production level that will
+ maximize profit.
+ C(x) = 16000 + 500x – 1.6x2 + 0.004x3 p(x) = 1700 7x
+\end_layout
+
+\begin_layout Section
+Question 6
+\end_layout
+
+\begin_layout Standard
+Suppose p(x) 100 0.04x and 2 c(x) 500 40x 0.04x are the price function (in
+ dollars per unit) and cost function (in dollars) and x is the number of
+ units produced.
+ Find the production level when profit is maximized.
+ What is the price and the average cost at this optimum level?
+\end_layout
+
+\begin_layout Section
+Question 7
+\end_layout
+
+\begin_layout Standard
+Use Newton’s method with initial approximation x1 = 1 to find x3, the third
+ approximation to the root of the equation x3 – x 2 –1 = 0.
+ (Give your answer to three decimal places.)
+\end_layout
+
+\begin_layout Section
+Question 8
+\end_layout
+
+\begin_layout Standard
+Use Newton’s method to approximate 7 1000 correct to eight decimal places.
+ [x0 = 3]
+\end_layout
+
+\begin_layout Section
+Question 9
+\end_layout
+
+\begin_layout Standard
+Use Newton’s method to find the root of the equation x4 + x – 4 = 0 in the
+ interval [1, 2] correct to six decimal places.
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula 
+\begin{align*}
+Let\,x & =\sqrt[7]{1000}\\
+x^{7} & =1000\\
+x^{7}-1000 & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Let\,f\left(x\right) & =x^{7}-1000\\
+f'\left(x\right) & =7x^{6}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{0}=3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{1} & =x_{0}-\frac{f\left(x_{0}\right)}{f'\left(x_{0}\right)}\\
+ & =3-\frac{f\left(3\right)}{f'\left(3\right)}\\
+ & =3-\frac{3^{7}-1000}{7\left(3\right)^{6}}\\
+x_{1} & =2.76739173
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{2} & =x_{1}-\frac{f\left(x_{1}\right)}{f'\left(x_{1}\right)}\\
+ & =2.76739173-\frac{f\left(2.76739173\right)}{f'\left(2.76739173\right)}\\
+ & =2.76739173-\frac{\left(2.76739173\right)^{7}-1000}{7\left(2.76739173\right)^{6}}\\
+x_{2} & =2.690087405
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{3} & =x_{2}-\frac{f\left(x_{2}\right)}{f'\left(x_{2}\right)}\\
+ & =2.690087405-\frac{\left(2.690087405\right)^{7}-1000}{7\left(2.690087405\right)^{6}}\\
+x_{3} & =2.682756447
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+x_{4} & =2.682756447-\frac{\left(2.682756447\right)^{7}-1000}{7\left(2.682756447\right)^{6}}\\
+ & =2.682695799
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{5} & =2.682695799-\frac{\left(2.682695799\right)^{7}-1000}{7\left(2.682695799\right)^{6}}\\
+ & =2.682695795
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{6} & =2.682695795-\frac{\left(2.682695795\right)^{7}-1000}{7\left(2.682695795\right)^{6}}\\
+ & =2.682695795
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $x_{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{6}$
+\end_inset
+
+agree to 8 d.p.
+ , 
+\begin_inset Formula $\sqrt[7]{1000}\approx2.68269580$
+\end_inset
+
+ (8d.p.)
+\end_layout
+
+\end_body
+\end_document

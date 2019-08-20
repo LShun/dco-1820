@@ -308,9 +308,47 @@ Answer
 Least squares regression line of time on year.
 \begin_inset Formula 
 \begin{align*}
-\hat{Y} & =\hat{a}+\hat{b}X\\
-\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}
+\hat{Y} & =\hat{a}+\hat{b}X
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(9\right)\left(7838.4\right)-\left(144\right)\left(496.6\right)}{\left(9\right)\left(3264\right)-\left(144\right)^{2}}\\
+ & =-0.112
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\left(496.6\right)}{144}-\left(-0.112\right)\frac{144}{9}\\
+ & =5.241
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =5.241-0.112X\\
+ & =
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Predict winning time for year 2012.
+\begin_inset Formula 
+\[
+\]
 
 \end_inset
 
@@ -321,9 +359,116 @@ Least squares regression line of time on year.
 Answer
 \end_layout
 
+\begin_layout Enumerate
+Least square regressions line
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(7\right)\left(2273\right)-\left(21\right)\left(641\right)}{\left(7\right)\left(91\right)-\left(21\right)^{2}}\\
+ & =12.5
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{641}{7}-12.5\frac{21}{7}\\
+ & =54.0714
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{Y}=54.0714+12.5X
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Predict average annual earnings for year 2011 and 2012.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+2011
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2011-2004=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =54.0714+12.5\left(7\right)\\
+ & =141.5714
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+2012
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2012-2004=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =54.0714+12.5\left(8\right)\\
+ & =154.0714
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Answer
+\end_layout
+
 \begin_layout Standard
-Q8.
- A random sample of eight drivers insured with a company and having similar
+A random sample of eight drivers insured with a company and having similar
  car insurance policies was selected.
  The following table lists their driving experiences and monthly car insurance
  premiums.
@@ -819,5 +964,162 @@ The accuracy of estimates in part g is more accurate than h.
  which is less accurate.
 \end_layout
 
+\begin_layout Section
+Answer (Check with teacher)
+\end_layout
+
+\begin_layout Enumerate
+State the dependent and independent variables.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dependent: Cholesterol level
+\end_layout
+
+\begin_layout Enumerate
+Independent: Age
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the least squares regression line of cholesterol level on age.
+ 
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(10\right)\left(39531\right)-\left(202\right)\left(1896\right)}{\left(10\right)\left(5976\right)-\left(202\right)^{2}}\\
+ & =0.6498
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{1896}{10}-0.6498\frac{202}{10}\\
+ & =176.474
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{Y}=176.474+0.6498X
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Interpret the meaning of the values of regression coefficients a and b obtained
+ in part (b).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For a men with an age of 58, the cholesterol level is 176.47
+\end_layout
+
+\begin_layout Enumerate
+As the age of the men increase by 1, the cholesterol level increases by
+ 0.6498.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate and interpret the correlation coefficient between the two variables.
+ 
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{S_{XY}}{\sqrt{S_{X^{2}}}\sqrt{S_{Y^{2}}}}\\
+ & =\frac{39531}{\sqrt{5976}\sqrt{364280}}\\
+ & =0.8473
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There is a high positive linear correlation between the age and the cholesterol
+ level of men.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Calculate and interpret the coefficient of determination.
+ 
+\begin_inset Formula 
+\begin{align*}
+r^{2} & =\left(0.8473\right)^{2}\\
+ & =0.7179
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $71.79\%$
+\end_inset
+
+ of the total variance is explained by the age.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Predict the cholesterol level of a 60-year-old man.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $X=60-31=29$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =176.474+0.6498\left(29\right)\\
+ & =195.3182
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

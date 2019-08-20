@@ -32,8 +32,7 @@ public class Circle extends GeometricObject {
   }
 
   public void printCircle() {
-    System.out.println("The circle is created " + getDateCreated() +
-      " and the radius is " + radius);
+    System.out.println("The radius is " + radius);
   }
   public String toString(){
   	return super.toString() + "\nRadius : "+ getRadius();
