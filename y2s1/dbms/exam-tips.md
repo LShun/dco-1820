@@ -34,3 +34,28 @@ Part II explain two system development methodologies.
 
 Need to talk about 2 strengths
 
+## Final Exam
+
+Chapter 3
+
+SELECT
+FROM 
+WHERE 
+GROUP BY
+HAVING
+ORDER BY
+
+INSERT INTO TABLE VALUES()
+
+DELETE FROM....WHERE
+
+UPDATE TABLE SET
+
+CREATE TABLE Student (
+	STU_ID CHAR(10) NOT NULL,
+	STU_NAME VARCHAR(100) NOT NULL,
+	ProID CHAR(3),
+	PRIMARY KEY (STU_ID),
+	FOREIGN KEY (ProID) REFERENCES Programme (ProID)
+
+DELETE BY REFERENCE, UPDATE BY REFERENCE (Remember, cause recently lecturer come out with this)

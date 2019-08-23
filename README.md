@@ -5,7 +5,9 @@ Custom-made notes, tips, exercises encompassing all around Diploma in Computer S
 
 ## Getting Started
 
-Head inside the respective folders containing materials of your interest. All folders are marked using shorthand. The first two characters represent the year (Eg: y1 = Year 1) and the second 2 represents the semester (Eg: s1 = Semester 1).
+**Head inside the respective folders containing materials of your interest.** All folders are marked using shorthand. The first two characters represent the year (Eg: y1 = Year 1) and the second 2 represents the semester (Eg: s1 = Semester 1).
+
+Besides that, **remember to check out**  [ADVICE.md](ADVICE.md) for advice on tackling subjects in DCO based on my experience.
 
 ### Prerequisites
 

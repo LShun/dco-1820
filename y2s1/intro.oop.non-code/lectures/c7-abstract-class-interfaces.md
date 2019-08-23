@@ -103,3 +103,11 @@ public class ClassName extends SuperClassName {
 In Exam, uml NEED TO know difference between italic and non-italic font
 Difference between interface and abstract
 Difference between abstract and concrete class
+
+Exam won't ask for cloning
+
+Exam won't ask for sorting
+
+From Chapter 7 Part 2 onwards, the topics are optional
+
+- 

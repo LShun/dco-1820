@@ -222,3 +222,10 @@ Common relationships among classes:
   - No mutator methods
   - No accessor methods, returning a reference to mutable data field objects
     - Therefore, class with all `private` data, without mutators is not necessary immutable
+
+## Exam Tips
+
+Take note:
+
+- Dotted line = implement
+- Solid line = extend

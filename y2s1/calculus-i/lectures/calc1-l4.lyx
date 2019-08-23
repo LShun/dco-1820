@@ -108,6 +108,24 @@ Calc I : Chapter 4 - Applications of Diff.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ds}[1]{\frac{d#1}{dx}}
+{\frac{d#1}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lt}[1]{\lim_{x\to#1}}
+{\lim_{x\to#1}}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Example
 \end_layout
@@ -3030,8 +3048,11 @@ Conclusions
 
 \begin_deeper
 \begin_layout Enumerate
-Dimensions of field with largest area = 
-\begin_inset Formula $600m*1200m$
+\begin_inset Formula $r=\sqrt[3]{\frac{500}{\pi}}$
+\end_inset
+
+, 
+\begin_inset Formula $h=2\sqrt[3]{\frac{500}{\pi}}$
 \end_inset
 
 
@@ -3043,13 +3064,843 @@ Dimensions of field with largest area =
 Example
 \end_layout
 
+\begin_layout Enumerate
+Area of rectangle
+\begin_inset Formula 
+\[
+24xy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Area of triangle
+\begin_inset Formula 
+\[
+12x*5x=60x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Total area
+\begin_inset Formula 
+\[
+A=24xy+60x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Total wire length = 240
+\begin_inset Formula 
+\begin{align*}
+13x*2+y*2+24x & =240\\
+50x+2y & =240
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2y & =240-50x\\
+y & =\frac{240-50x}{2}\\
+ & =120-25x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into area formula
+\begin_inset Formula 
+\begin{align*}
+A & =24x\left(120-25x\right)+60x^{2}\\
+ & =2880x-600x^{2}+60x^{2}\\
+\boldsymbol{A} & \boldsymbol{=2880x-540x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are at their maximum when 
+\begin_inset Formula $\frac{dA}{dx}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ds A & =2880-1080x\\
+2880-1080x & =0\\
+2880 & =1080x\\
+x & =\frac{2880}{1080}\\
+ & =\frac{8}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y$
+\end_inset
+
+ when 
+\begin_inset Formula $x=\frac{8}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =120-25x\\
+ & =120-25\left(\frac{8}{3}\right)\\
+ & =\frac{160}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 
+\begin_inset Formula $A$
+\end_inset
+
+ is at their maximum when 
+\begin_inset Formula $x=\frac{8}{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $y=\frac{160}{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the maximum area, 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+A|_{x=\frac{8}{3}} & =2880\left(\frac{8}{3}\right)-540\left(\frac{8}{3}\right)^{2}\\
+ & =3840cm^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Newton Method
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the total revenue 
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+R\left(x\right) & =p*x\\
+ & =\left(1000-x\right)x\\
+ & =1000x-x^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the total profit 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(x\right) & =R\left(x\right)-c\left(x\right)\\
+ & =1000x-x^{2}-\left(3000+20x\right)\\
+ & =980x-x^{2}-3000
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+How many units to sell to maximize profit, what's the maximum profit.
+\begin_inset Formula 
+\begin{align*}
+\frac{dP}{dx} & =0\\
+\frac{dP}{dx} & =980-2x\\
+980-2x & =0\\
+2x & =980\\
+x & =490units
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maximum profit
+\begin_inset Formula 
+\begin{align*}
+P\left(490\right) & =980\left(490\right)-\left(490\right)^{2}-3000\\
+ & =\boldsymbol{RM237100}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Notations
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Volume=V=320$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=area$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=sides$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=height$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Minimize the cost
+\end_layout
+
+\begin_layout Enumerate
+Find the volume
+\begin_inset Formula 
+\begin{align*}
+V & =x^{2}y\\
+x^{2}y & =320
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the cost formula
+\begin_inset Formula 
+\begin{align*}
+C & =15x^{2}+4*2.5xy+10x^{2}\\
+ & =25x^{2}+10xy
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $x$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+x^{2}y & =320\\
+y & =\frac{320}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into cost formula
+\begin_inset Formula 
+\begin{align*}
+C & =25x^{2}+10x\left(\frac{320}{x^{2}}\right)\\
+ & =25x^{2}+\frac{3200}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dC}{dx}$
+\end_inset
+
+and the minimum cost when 
+\begin_inset Formula $\frac{dC}{dx}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ds C & =50x-\frac{3200}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ds C & =0\\
+50x-\frac{3200}{x^{2}} & =0\\
+50x^{3}-3200 & =0\\
+50x^{3} & =3200\\
+x^{3} & =\frac{3200}{50}\\
+x & =\sqrt[3]{64}\\
+x & =4
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{320}{x^{2}}\\
+ & =\frac{320}{4^{2}}\\
+ & =20
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dimensions
+\begin_inset Formula 
+\[
+4cm*4cm*20cm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+L'Hospital' Rule
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt 0\frac{x}{\sin x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt 0\frac{x}{\sin x} & =\lt 0\frac{1}{\cos x}\\
+ & =\frac{1}{\cos0}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt 1\frac{x^{3}+x-2}{x^{2}-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt 1\frac{x^{3}+x-2}{x^{2}-1} & =\lt 1\frac{\dd\left[x^{3}+x-2\right]}{\dd\left[x^{2}-1\right]}\\
+ & =\lt 1\frac{3x^{2}+1}{2x}\\
+ & =\frac{3\left(1\right)^{2}+1}{2\left(1\right)}\\
+ & =\frac{4}{2}\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Or, the non-hospitalized way (its a pun)
+\begin_inset Formula 
+\begin{align*}
+\lt 1\frac{x^{3}+x-2}{x^{2}-1} & =\lt 1\frac{\left(x-1\right)\left(x^{2}+x+2\right)}{\left(x-1\right)\left(x+1\right)}\\
+ & =\lt 1\frac{\left(x^{2}+x+2\right)}{\left(x+1\right)}\\
+ & =\frac{1+1+2}{1+1}\\
+ & =\frac{4}{2}\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Indeterminate form, going to hospital 
+\begin_inset Formula $\frac{\infty}{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt{\infty}\frac{x}{1-2x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{\infty}\frac{x}{1-2x} & =\lt{\infty}\frac{\dd\left[x\right]}{\dd\left[1-2x\right]}\\
+ & =\lt{\infty}\frac{1}{-2}\\
+ & =-\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt{\infty}\frac{e^{x}}{x^{n}}$
+\end_inset
+
+ where 
+\begin_inset Formula $n\,\epsilon\,Z^{+}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{\infty}\frac{e^{x}}{nx^{n-1}} & =\lt{\infty}\frac{e^{x}}{n!}\\
+ & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt{\infty}\frac{\sinh x}{e^{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{\infty}\frac{\sinh x}{e^{x}} & =\lt{\infty}\frac{\cosh x}{e^{x}}\\
+ & =\lt{\infty}\frac{\sinh x}{e^{x}}\\
+ & =\left(Hospitalization\,failed\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The 
+\begin_inset Formula $0*\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $\infty-\infty$
+\end_inset
+
+ Forms
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt{0^{+}}x\ln x$
+\end_inset
+
+ 
+\begin_inset Formula $\left(0\cdot\infty\,\text{form}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{0^{+}}x\ln x & =\lt{0^{+}}\frac{\ln x}{\frac{1}{x}}\left(\frac{\infty}{\infty}form\right)\\
+ & =\lt{0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}\\
+ & =-\lt{0^{x}}x^{2}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to-1^{+}}\left(\frac{2}{1-x^{2}}-\frac{1}{1+x}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\infty-\infty\right)$
+\end_inset
+
+form
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to-1^{+}}\left(\frac{2}{1-x^{2}}-\frac{1}{1+x}\right) & =\lim_{x\to-1^{+}}\left(\frac{2-\left(1-x\right)}{1-x^{2}}\right)\\
+ & =\lim_{x\to-1^{+}}\frac{1+x}{1-x^{2}}\\
+ & =\lim_{x\to-1^{+}}\frac{1}{-2x}\\
+ & =\frac{1}{-2\left(-1\right)}\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Indeterminate Forms 
+\begin_inset Formula $0^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $1^{\infty}$
+\end_inset
+
+, 
+\begin_inset Formula $\infty^{0}$
+\end_inset
+
+,
+\begin_inset Formula $0^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to0^{+}}x^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $y=x^{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ln y & =x\ln x\\
+\lim_{x\to0^{+}}\ln y & =\lim_{x\to0^{+}}x\ln x\\
+ & =0\\
+\lim_{x\to0^{+}}y & =e^{0}\\
+y & =1\\
+x^{x} & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to0^{+}}x^{\frac{1}{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Let\,y=x^{\frac{1}{x}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt 0y & =\lt 0x^{\frac{1}{x}}\\
+\lt 0\ln y & =\lt 0\frac{1}{x}\ln x\\
+ & =\lt 0\frac{\ln x}{x}\\
+ & =\frac{\infty}{0^{+}}\\
+\ln y & =\frac{\infty}{0^{+}}\\
+y & =\ln\infty\\
+e^{x} & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Newton-Raphson Method
 \end_layout
 
 \begin_layout Standard
 Notes: If question didn't ask until which degree, then do until satisfied
 \end_layout
 
+\begin_layout Enumerate
+Find third aproximation 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ to the root of the equation 
+\begin_inset Formula $x^{3}-2x-5=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find second approximation
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =x^{3}-2x-5\\
+f'\left(x\right) & =3x^{2}-2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{2} & =x_{1}-\frac{f\left(x_{1}\right)}{f'\left(x_{1}\right)}\\
+ & =2-\frac{f\left(2\right)}{f'\left(2\right)}\\
+ & =2.1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find third approximation
+\begin_inset Formula 
+\begin{align*}
+x^{3} & =x_{2}-\frac{f\left(x_{2}\right)}{f'\left(x_{2}\right)}\\
+ & =2.1-\frac{f\left(2.1\right)}{f'\left(2.1\right)}\\
+\boldsymbol{x^{3}} & \boldsymbol{\approx2.0946}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $\sqrt[6]{2}$
+\end_inset
+
+ correct to 6 d.p.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=\sqrt[6]{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{6} & =2\\
+x^{6}-2 & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=x^{6}-2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=6x^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since we know the actual value of 
+\begin_inset Formula $\sqrt[6]{2}$
+\end_inset
+
+ is somewhere close to 1, we choose 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find correct to 6 d.p.
+\begin_inset Formula 
+\begin{align*}
+x_{2} & =x_{1}-\frac{f\left(x_{1}\right)}{f'\left(x\right)}\\
+ & =1-\frac{f\left(1\right)}{f'\left(1\right)}\\
+ & \approx1.16666667
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{3} & =1.16666667-\frac{f\left(1.16666667\right)}{f'\left(1.16666667\right)}\\
+ & \approx1.1264437
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{4} & =x_{3}-\frac{f\left(x_{3}\right)}{f'\left(x_{3}\right)}\\
+ & \approx1.1224971
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{5} & =x_{4}-\frac{f\left(x_{4}\right)}{f'\left(x_{4}\right)}\\
+ & \approx1.1224621
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{6} & =x_{5}-\frac{f\left(x_{5}\right)}{f'\left(x_{5}\right)}\\
+ & \approx1.1224621
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $x_{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{6}$
+\end_inset
+
+ agree to six d.p., 
+\begin_inset Formula $\sqrt[6]{2}\approx1.122462\left(6\,d.p.\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

@@ -110,7 +110,6 @@ Example:
 ## Exams
 
 The questions for the size of the data types will never be asked
-Need to know how to write into a text file
 
 Basic imports, basic input output usually will not come out in test.
 

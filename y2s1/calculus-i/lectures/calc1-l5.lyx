@@ -1,0 +1,662 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Chapter 5: Integrals
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ix}[1]{\int#1\,dx}
+{\int#1\,dx}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dy}{\frac{dy}{dx}}
+{\frac{dy}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dd}{\frac{d}{dx}}
+{\frac{d}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ds}[1]{\frac{d#1}{dx}}
+{\frac{d#1}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lt}[1]{\lim_{x\to#1}}
+{\lim_{x\to#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\sin^{2}x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\sin^{2}x} & =\int\frac{1-\cos2x}{2}\\
+ & =\frac{1}{2}\left[x-\frac{1}{2}\sin2x\right]+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\cos^{2}x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\cos^{2}x} & =\ix{\frac{\cos2x+1}{2}}\\
+ & =\frac{1}{2}\ix{\cos2x+1}\\
+ & =\frac{1}{2}\left[\frac{1}{2}\sin2x+x\right]+c\\
+ & =\frac{1}{4}\sin2x+\frac{1}{2}x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\tan^{2}x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\tan^{2}x} & =\int\left(\sec^{2}x-1\right)dx\\
+ & =\tan x-x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\cot^{2}x}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ix{\csc^{2}x+1}=-\cot x+x+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\cos3x\cos x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\cos3x\cos x} & =\int\frac{1}{2}\left[\cos\left(3x+x\right)+\cos\left(3x-x\right)\right]\\
+ & =\frac{1}{2}\ix{\left[\cos\left(4x\right)+\cos\left(2x\right)\right]}\\
+ & =\frac{1}{2}\left(\frac{1}{4}\sin\left(4x\right)+\frac{1}{2}\sin\left(2x\right)\right)+c\\
+ & =\frac{1}{8}\sin4x+\frac{1}{4}\sin2x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\sin3x\cos x\,dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\sin3x\cos x\,dx & =\ix{\frac{1}{2}\left[\sin\left(3x+x\right)+\sin\left(3x-x\right)\right]}\\
+ & =\frac{1}{2}\int\left(\sin\left(4x\right)+\sin\left(2x\right)\right)dx\\
+ & =\frac{1}{2}\left[-\frac{1}{4}\cos4x-\frac{\cos2x}{2}\right]+c\\
+ & =-\frac{1}{8}\cos4x-\frac{1}{4}\cos2x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\left(2+3x\right)^{15}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=2+3x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =3\\
+dx & =\frac{du}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the derivative with respect to 
+\begin_inset Formula $u$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int u^{15}\frac{du}{3} & =\frac{1}{3}\int u^{15}du\\
+ & =\frac{1}{3}\left(\frac{u^{16}}{16}\right)+c\\
+ & =\frac{u^{16}}{48}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $2+3x$
+\end_inset
+
+ back in to replace 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\int\left(2+3x\right)^{15}dx=\frac{\left(2+3x\right)^{16}}{48}+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int2x\left(x^{2}+3\right)^{5}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=x^{2}+3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =2x\\
+dx & =\frac{du}{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the derivative with respect to 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\int2x\left(x^{2}+3\right)^{5}dx & =\int u^{5}du\\
+ & =\frac{u^{6}}{6}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in 
+\begin_inset Formula 
+\[
+\int2x\left(x^{2}+3\right)^{5}dx=\frac{1}{6}\left(x^{2}+3\right)^{6}+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\frac{3x^{2}-1}{\left(x^{3}-x+4\right)^{4}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=\left(x^{3}-x+4\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =3x^{2}-1\\
+dx & =\frac{du}{3x^{2}-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into question
+\begin_inset Formula 
+\begin{align*}
+\ix{\frac{3x^{2}-1}{\left(x^{3}-x+4\right)^{4}}} & =\int\left(3x^{2}-1\right)u^{-4}\frac{du}{\left(3x^{2}-1\right)}\\
+ & =\int u^{-4}du\\
+ & =\frac{u^{-3}}{-3}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in 
+\begin_inset Formula $u=\left(x^{3}-x+4\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\frac{3x^{2}-1}{\left(x^{3}-x+4\right)^{4}}} & =-\frac{1}{3\left(x^{3}-x+4\right)}+c\\
+ & =\frac{1}{-3x^{2}+x-4}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int e^{5x}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=5x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =5x\\
+\ds u & =5\\
+dx & =\frac{du}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into equation
+\begin_inset Formula 
+\begin{align*}
+\int e^{u}\frac{du}{5} & =\frac{1}{5}\int e^{u}du\\
+ & =\frac{1}{5}\left[e^{u}\right]+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in 
+\begin_inset Formula $u=5x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int e^{5x}dx=\frac{1}{5}e^{5x}+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{2xe^{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=1-x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =1-x^{2}\\
+\ds u & =-2x\\
+dx & =-\frac{du}{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into the equation
+\begin_inset Formula 
+\begin{align*}
+\int2xe^{u}\left(-\frac{du}{2x}\right) & =-\int e^{u}du\\
+ & =-e^{u}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in 
+\begin_inset Formula $u=1-x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int2xe^{u}\left(-\frac{du}{2x}\right)=-e^{1-x^{2}}+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\frac{x}{e^{4x^{2}}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=4x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =4x^{2}\\
+\ds u & =8x\\
+dx & =\frac{du}{8x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into the equation
+\begin_inset Formula 
+\begin{align*}
+\int\frac{x}{e^{u}}\frac{du}{8x} & =\int\frac{1}{8e^{u}}du\\
+ & =\frac{1}{8}\int e^{-u}du\\
+ & =\frac{1}{8}\left(-e^{-u}\right)+c\\
+ & =-\frac{1}{8}e^{-u}+c\\
+ & =-\frac{1}{8e^{u}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in 
+\begin_inset Formula $u=4x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\frac{x}{e^{4x^{2}}}} & =-\frac{1}{8e^{4x^{2}}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\frac{2x}{x^{2}+3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=x^{2}+3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ds u & =2x\\
+dx & =\frac{du}{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute inside the question
+\begin_inset Formula 
+\begin{align*}
+\ix{\frac{2x}{x^{2}+3}} & =\int\frac{2x}{u}\frac{du}{2x}\\
+ & =\int\frac{1}{u}du\\
+ & =\ln\left|u\right|+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute back in 
+\begin_inset Formula $u=x^{2}+3$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ix{\frac{2x}{x^{2}+3}}=\ln\left|x^{2}+3\right|+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\tan x}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

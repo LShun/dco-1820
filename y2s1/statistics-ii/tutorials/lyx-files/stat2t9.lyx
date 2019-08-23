@@ -93,7 +93,7 @@ Tutorial 9: Index Number
 \begin_layout Section
 The following table shows the monthly butter stocks ( thousand tonnes )
  in UK for a particular year.
- 
+ (Check D with teacher)
 \end_layout
 
 \begin_layout Enumerate
@@ -104,8 +104,12 @@ Calculate a set of fixed base relatives by using March as the base month.
 \begin_deeper
 \begin_layout Enumerate
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
+<lyxtabular version="3" rows="4" columns="8">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -138,11 +142,47 @@ April
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 May
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jul
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aug
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sep
 \end_layout
 
 \end_inset
@@ -176,7 +216,7 @@ Price
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -185,6 +225,42 @@ Price
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+237.2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+235.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+230.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+224.4
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
@@ -209,7 +285,55 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{255.1}{216.9}*100=$
+\begin_inset Formula $\frac{225.1}{216.9}*100=103.78$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{234.6}{216.9}*100=108.16$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{237.2}{216.9}*100=109.36$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{235.2}{216.9}*100=108.44$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{230.1}{216.9}*100=106.09$
 \end_inset
 
 
@@ -221,7 +345,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{234.6}{216.9}*100=$
+\begin_inset Formula $\frac{224.4}{216.9}*100=103.46$
 \end_inset
 
 
@@ -244,7 +368,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-100
+-
 \end_layout
 
 \end_inset
@@ -253,7 +377,55 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{225.1}{216.9}*100=$
+\begin_inset Formula $\frac{225.1}{216.9}*100=103.78$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{234.6}{225.1}*100=104.22$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{237.2}{234.6}*100=101.11$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{235.2}{237.2}*100=99.16$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{230.1}{235.2}*100=97.83$
 \end_inset
 
 
@@ -265,7 +437,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{234.6}{225.1}*100=$
+\begin_inset Formula $\frac{224.4}{230.1}*100=97.52$
 \end_inset
 
 
@@ -289,8 +461,9 @@ Calculate a set of chain base relatives.
 \begin_deeper
 \begin_layout Enumerate
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="5">
+<lyxtabular version="3" rows="5" columns="6">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -301,7 +474,7 @@ Calculate a set of chain base relatives.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Commodity
 \end_layout
 
 \end_inset
@@ -341,7 +514,7 @@ Price in year 2,
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -350,13 +523,25 @@ I
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $WI$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Price
+W
 \end_layout
 
 \end_inset
@@ -365,6 +550,9 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $5$
+\end_inset
+
 
 \end_layout
 
@@ -374,6 +562,9 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $215$
+\end_inset
+
 
 \end_layout
 
@@ -383,6 +574,21 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $210$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{210}{215}*100=97.67$
+\end_inset
+
 
 \end_layout
 
@@ -392,7 +598,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{P_{1}}{P_{0}}*100$
+\begin_inset Formula $5*97.67=488.35$
 \end_inset
 
 
@@ -406,7 +612,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -415,7 +621,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12
 \end_layout
 
 \end_inset
@@ -424,7 +630,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+250
 \end_layout
 
 \end_inset
@@ -433,6 +639,18 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+275
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{250}{275}*100=90.91$
+\end_inset
+
 
 \end_layout
 
@@ -442,6 +660,71 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $12*90.91=1090.92$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1300}{1100}*100=118.18$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $118.18*2=236.36$
+\end_inset
+
 
 \end_layout
 
@@ -453,7 +736,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Z
 \end_layout
 
 \end_inset
@@ -462,7 +745,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8
 \end_layout
 
 \end_inset
@@ -471,7 +754,7 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+950
 \end_layout
 
 \end_inset
@@ -480,7 +763,16 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+950
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
 \end_layout
 
 \end_inset
@@ -489,6 +781,9 @@ Price
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $8*100=800$
+\end_inset
+
 
 \end_layout
 
@@ -509,7 +804,7 @@ For
 \end_inset
 
 
-\begin_inset Formula $I=\frac{P_{1}}{P_{0}}*100=$
+\begin_inset Formula $I=\frac{P_{1}}{P_{0}}*100=118.18$
 \end_inset
 
 
@@ -517,7 +812,7 @@ For
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\frac{\sum P_{1}}{\sum P_{0}}*100=$
+\begin_inset Formula $\frac{\sum P_{1}}{\sum P_{0}}*100=\frac{210+275+1300+950}{215+250+1100+950}*100=108.75$
 \end_inset
 
 
@@ -530,8 +825,25 @@ For
 
 \begin_inset Formula 
 \begin{align*}
-\frac{1}{n}\sum\frac{p_{1}}{p_{0}}*100 & =\frac{1}{4}\left(\frac{210}{215}*100+\frac{275}{250}*100+..\right)\\
-\bar{I} & =\frac{1}{n}\sum I_{i}
+\frac{1}{n}\sum\frac{p_{1}}{p_{0}}*100 & =\frac{1}{4}\left(\frac{210}{215}*100+\frac{275}{250}*100+\frac{1300}{1100}*100+\frac{950}{950}*100\right)\\
+\bar{I} & =106.46
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+(Check with teacher)
+\begin_inset Formula 
+\begin{align*}
+\bar{I} & =\frac{\sum IW}{\sum W}\\
+ & =\frac{488.35+1090.92+236.36+800}{5+12+2+8}\\
+ & =96.88
 \end{align*}
 
 \end_inset
@@ -545,24 +857,11 @@ For
 
 
 \begin_inset Formula 
-\[
-\bar{I}=\frac{\sum IW}{\sum W}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\bar{I}=\frac{\sum WP_{1}}{\sum WP_{0}}*100
-\]
+\begin{align*}
+\bar{I} & =\frac{\sum WP_{1}}{\sum WP_{0}}*100\\
+ & =\frac{\left(210*5+275*12+1300*2+950*8\right)}{\left(215*5+250*12+1100*2+950*8\right)}*100\\
+ & =104.86
+\end{align*}
 
 \end_inset
 
