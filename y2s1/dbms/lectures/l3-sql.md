@@ -488,7 +488,7 @@ WHERE Bno = (SELECT Bno
              WHERE street = '163 Main St');
 ```
 
-Or the multiple-answer way:
+Or the multiple-results way:
 
 ```sql
 SELECT Sno, FName, LName, Salary
@@ -533,7 +533,7 @@ Q13
 ```sql
 SELECT *
 FROM staff
-WHERE Salary => '10000';
+WHERE Salary > 10000;
 ```
 
 Note: Don't put dollar sign, because store in column no dollar sign.
@@ -588,9 +588,17 @@ Q17
 SELECT Sno, FName, LName, Salary
 FROM Staff
 WHERE Sno NOT LIKE 'SG37';
+```
 
+For the last line, we could go with:
+
+```sql
 WHERE Sno <> 'SG37';
+```
 
+or
+
+```sql
 WHERE Sno != 'SG37';
 ```
 
