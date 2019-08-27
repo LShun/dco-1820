@@ -350,6 +350,7 @@ standard deviation of 2.4 milligrams
 assuming an approximately normal distribution
 \series default
 .
+ 
 \end_layout
 
 \begin_deeper
@@ -475,6 +476,21 @@ assuming a normal distribution.
 \end_layout
 
 \begin_deeper
+\begin_layout Enumerate
+Note: 
+\series bold
+Trick question.
+
+\series default
+ This kind will frequently come and bite you in the exams, so be very careful
+ (I got bitten and lost around 14/100%).
+ The question says that the population is approximately normal distribution,
+ but didn't mention that the sample is normally distributed.
+ Therefore, you still 
+\series bold
+cannot use Z-score.
+\end_layout
+
 \begin_layout Enumerate
 
 \series bold
@@ -2145,11 +2161,90 @@ Estimate the difference in the true proportion of males and females that
  have the blood disorder.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Estimated difference: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{250}{1000}-\frac{275}{1000}=-\frac{25}{1000}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 Compute a 95% confidence interval for the difference between the proportion
  of males and females that have the blood disorder.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+95% C.I.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\hat{p}_{m}=0.25,\hat{q}_{m}=0.75,\hat{p}_{f}=0.275,\hat{q}_{f}=0.725,n=1000$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculate critical value
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Z_{\frac{0.05}{2}}=Z_{0.025}=1.9600$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate margin of error
+\begin_inset Formula 
+\begin{align*}
+E & =1.9600*\sqrt{\frac{\left(0.25\right)\left(0.75\right)}{1000}+\frac{\left(0.275\right)\left(1-0.275\right)}{1000}}\\
+ & =0.03855
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the confidence interval
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\hat{p}_{m}-\hat{p}_{f}=-\frac{25}{1000}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-\frac{25}{1000}-0.03855 & <p_{m}-p_{f}<-\frac{25}{1000}+0.03855\\
+-\frac{25}{1000}-0.03855 & <p_{m}-p_{f}<-\frac{25}{1000}+0.03855\\
+-0.06355 & <p_{m}-p_{f}<0.01355
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 A marketing researcher wants to find a 95% confidence interval for the mean
@@ -2160,6 +2255,84 @@ A marketing researcher wants to find a 95% confidence interval for the mean
  be within RM2 of the population mean?
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha=0.05,\sigma=11
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Confidence interval
+\begin_inset Formula 
+\[
+\bar{x}-2<\mu<\bar{x}+2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the critical value
+\begin_inset Formula 
+\[
+\alpha=0.05
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z_{\frac{0.05}{2}} & =Z_{0.025}\\
+ & =1.9600
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the margin of error, which corresponds to 2
+\begin_inset Formula 
+\begin{align*}
+E & =2\\
+1.9600*\frac{11}{\sqrt{n}} & =2\\
+\frac{11}{\sqrt{n}} & =\frac{2}{1.9600}\\
+n & =\left(\frac{1.9600}{2}*11\right)^{2}\\
+ & =116.20\\
+ & \approx117
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Notes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We never round down 
+\begin_inset Formula $n$
+\end_inset
+
+, because if we do, then the margin of error will exceed 2, the smaller
+ the margin of error, the better.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 Johnny’s Pizza guarantees all pizza deliveries within 30 minutes of the
  placement of orders.
@@ -2191,6 +2364,41 @@ are both
 , which is the largest yield possible for standard error.
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $p=0.5,q=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Critical value at 
+\begin_inset Formula $Z_{\frac{0.01}{2}}=Z_{0.005}=2.5758$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0.02 & =2.5758*\sqrt{\frac{\left(0.5\right)\left(0.5\right)}{n}}\\
+\frac{0.02}{2.5758} & =\sqrt{\frac{\left(0.5\right)\left(0.5\right)}{n}}\\
+\frac{\left(\frac{0.02}{2.5758}\right)^{2}}{0.25} & =\frac{1}{n}\\
+n & =\frac{0.25}{\left(\frac{0.02}{2.5758}\right)^{2}}\\
+ & =4146.71\\
+\boldsymbol{n} & \boldsymbol{\approx4147}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Assume that a preliminary study has shown that 93% of all Johnny’s pizzas
@@ -2198,6 +2406,42 @@ Assume that a preliminary study has shown that 93% of all Johnny’s pizzas
  How large should the sample size?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the proportions of pizza delivered successfully
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=0.93,q=0.07
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0.02 & =2.5758*\sqrt{\frac{\left(0.93\right)\left(0.07\right)}{n}}\\
+n & =\frac{\left(0.93\right)\left(0.07\right)}{\left(\frac{0.02}{2.5758}\right)^{2}}\\
+ & =1079.80\\
+\boldsymbol{n} & \boldsymbol{\approx1080}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 A small insurance company has 1861 life insurance policyholders.

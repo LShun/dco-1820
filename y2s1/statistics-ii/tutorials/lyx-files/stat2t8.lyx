@@ -335,8 +335,7 @@ Least squares regression line of time on year.
 
 \begin_inset Formula 
 \begin{align*}
-\hat{Y} & =5.241-0.112X\\
- & =
+\hat{Y} & =5.241-0.112X
 \end{align*}
 
 \end_inset
@@ -347,8 +346,10 @@ Least squares regression line of time on year.
 \begin_layout Enumerate
 Predict winning time for year 2012.
 \begin_inset Formula 
-\[
-\]
+\begin{align*}
+\hat{Y} & =-0.1117*56.964*40\\
+ & =52.50seconds
+\end{align*}
 
 \end_inset
 
@@ -1020,7 +1021,8 @@ Find the least squares regression line of cholesterol level on age.
 
 \end_inset
 
-
+(Note: the answer for 9b is wrong, as you cannot get 9e answer using 9b's
+ equation given in the answer)
 \end_layout
 
 \begin_layout Enumerate
@@ -1046,8 +1048,8 @@ Calculate and interpret the correlation coefficient between the two variables.
 \begin_inset Formula 
 \begin{align*}
 r & =\frac{S_{XY}}{\sqrt{S_{X^{2}}}\sqrt{S_{Y^{2}}}}\\
- & =\frac{39531}{\sqrt{5976}\sqrt{364280}}\\
- & =0.8473
+ & =\frac{\left(395310-382992\right)}{\sqrt{\left[59760-40804\right]\left[3642800-3594816\right]}}\\
+ & =0.4084
 \end{align*}
 
 \end_inset
@@ -1062,7 +1064,7 @@ Interpretation
 
 \begin_deeper
 \begin_layout Enumerate
-There is a high positive linear correlation between the age and the cholesterol
+There is a some positive linear correlation between the age and the cholesterol
  level of men.
 \end_layout
 
