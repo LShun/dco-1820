@@ -186,14 +186,52 @@ Let X be the lifetime of a mechanical assembly in a vibration test with
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Formula $P\left(X<100\right)$
+\end_inset
+
+
+\family typewriter
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X<100\right) & =\int_{0}^{100}\frac{1}{400}e^{-\frac{x}{400}}dx\\
+ & =1-\frac{1}{e^{\frac{1}{4}}}\\
+ & =0.2212
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(X>500\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\left(X>500\right) & =1-P\left(X<500\right)\\
+ & =1-\int_{0}^{500}\frac{1}{400}e^{-\frac{x}{400}}dx\\
+ & =\frac{1}{e^{\frac{5}{4}}}\\
+ & =0.2865
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset Formula 
 \begin{align*}
-P\left(X<100\right) & =\int_{0}^{100}\frac{1}{400}e^{-\frac{x}{400}}dx\\
- & =0.2212
+\sigma & =\sqrt{\mu^{2}}\\
+ & =\sqrt{400^{2}}\\
+ & =400hours
 \end{align*}
 
 \end_inset
@@ -843,6 +881,14 @@ P\left(Z>1.57\right) & =\boldsymbol{0.058763}
 QUESTION: HOW TO KNOW IF WE SHOULD TAKE SAMPLE DISTRIBUTION?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Answer: Sample distribution is only when we take sample from a population.
+ In this case, we are only using Normal to approximate another form of probabili
+ty distribution, and not calculating, and therefore, we do not need to.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $p=0.1$

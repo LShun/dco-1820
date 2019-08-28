@@ -61,7 +61,94 @@ This is dedicated to my juniors in DCO, to help you (if you are a junior) to kno
 
 **Remarks:**
 
-- Borrow books from library
+- Borrow books from library, don't waste money to buy
 - During oral test, please don't, stop, talking
 - Easy A if you don't stop talking during oral test
 
+### Semester 2
+
+| **Year 1 Semester 2**        |                                    | Credit hours |
+| ---------------------------- | ---------------------------------- | ------------ |
+| AACS1084                     | PROGRAMMING CONCEPTS AND DESIGN II | 4            |
+| AACS1143                     | PRINCIPLES OF INFORMATION SYSTEMS  | 3            |
+| AAMS1143                     | INTRODUCTORY CALCULUS              | 3            |
+| ABFA1523                     | ACCOUNTING METHODS II              | 3            |
+| AHEL2043                     | ENGLISH FOR COMMUNICATION          | 3            |
+| MPU-2163                     | PENGAJIAN MALAYSIA 2               | 3            |
+| MPU-2213*                    | BAHASA KEBANGSAAN A                | -            |
+| **Total Credit Hour(s)   :** | **19**                             |              |
+
+#### 1. PROGRAMMING CONCEPTS AND DESIGN II
+
+##### Difficulty: 1/5
+
+**Remarks:** 
+
+- Remember to memorize the details that teacher quizzed during lecture time.
+- Don't waste time on assignments, get it done and move on, you have much more to do on other subjects.
+
+#### 2. PRINCIPLES OF INFORMATION SYSTEMS
+
+##### Difficulty: 1/5
+
+**Remarks:** 
+
+- Harder than Intro to IS, much more memorization.
+- Memorize all definitions that teacher repeatedly quizzed.
+
+#### 3. INTRODUCTORY CALCULUS
+
+##### Difficulty:  3/5
+
+**Remarks:** 
+
+- Attempt all tutorials
+- If you don't understand anything,
+  - Use [KhanAcademy](www.khanacademy.org/) for understanding
+  - Use [Paul's Online Math Notes](tutorial.math.lamar.edu/) for practice
+- Easy A
+- Assignment suggestion: For 2018, is timed, in-class, group test. **Pick correct teammates.**
+
+#### 4.   ACCOUNTING METHODS II 
+
+**Difficulty:  4/5**
+
+**Remarks:**
+
+- Only subject to practice, a lot, seriously
+- Practice until you can recite entire format
+- Follow teacher's advice
+- Assignment: Ask teacher *nicely* to help check at least once before submission. 
+  - Check if you have:
+    - [ ] Fully included all required materials
+    - [ ] Added headers & footers
+    - [ ] Added page numberings
+    - [ ] Added sufficient references
+    - [ ] Bolded important points
+    - [ ] Used appropriate headings
+
+#### 5.    ENGLISH FOR COMMUNICATION
+
+**Difficulty:  4/5**
+
+**Remarks:**
+
+- Most of you will lose your 4.0 CGPA here (me included)
+- For presentation, focus on grammar, pronunciation more than content.
+- For presentation, extremely high weightage on final results (very easy to get 11/15, which is 73%)
+
+#### 6.    PENGAJIAN MALAYSIA 2
+
+**Difficulty:  1/5**
+
+**Remarks:**
+
+- Memorize what you want to present, easy A
+
+#### 7.    BAHASA KEBANGSAAN A
+
+**Difficulty:  ?/5**
+
+**Remarks:**
+
+- No idea, but most probably "put sufficient effort" rule applies
