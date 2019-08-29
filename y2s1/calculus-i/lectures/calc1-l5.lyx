@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -653,6 +644,3203 @@ Substitute back in
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\ix{\tan x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\frac{\sin x}{\cos x}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=\cos x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =-\sin x\\
+dx & =\frac{du}{-\sin x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note
+\begin_inset Formula 
+\[
+\int\frac{f'\left(x\right)}{f\left(x\right)}dx=\ln\left|f\left(x\right)\right|+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculation
+\begin_inset Formula 
+\begin{align*}
+\ix{\frac{\sin x}{\cos x}} & =\int\frac{\sin x}{u}\frac{du}{-\sin x}\\
+ & =-\int\frac{1}{u}du\\
+ & =-\ln\left|u\right|+c\\
+ & =-\ln\left|\cos x\right|+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{x\left(2-3x\right)^{11}};u=2-3x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ds u & =-3\\
+dx & =-\frac{1}{3}du
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =2-3x\\
+x & =-\frac{u-2}{3}\\
+x & =\frac{2-u}{3}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int xu^{11}\left(-\frac{1}{3}du\right) & =-\frac{1}{3}\int\left(\frac{2-u}{3}\right)\left(u^{11}\right)du\\
+ & =-\frac{1}{9}\int2u^{11}-u^{12}du\\
+ & =-\frac{1}{9}\left(\frac{2}{12}u^{12}-\frac{u^{13}}{13}\right)+c\\
+ & =-\frac{1}{9}\left(\frac{1}{6}u^{12}-\frac{1}{13}u^{13}\right)+c\\
+ & =-\frac{1}{54}\left(2-3x\right)^{12}+\frac{1}{117}\left(2-3x\right)^{13}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\sin^{3}x};u=\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =-\sin x\\
+dx & =\frac{du}{-\sin x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =\cos x\\
+\frac{du}{dx} & =-\sin x\\
+dx & =\frac{du}{-\sin x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{\sin^{3}x} & =\int\sin^{2}x\sin x\,dx\\
+ & =\int\left(1-\cos^{2}x\right)\sin x\,dx\\
+ & =\int\left(1-u^{2}\right)\sin x\frac{du}{-\sin x}\\
+ & =-\int\left(1-u^{2}\right)\sin x\frac{du}{-\sin x}\\
+ & =-\int\left(1-u^{2}\right)du\\
+ & =-\left(u-\frac{u^{3}}{3}\right)+c\\
+ & =-u+\frac{1}{3}u^{3}+c\\
+ & =-u+\frac{1}{3}u^{3}+c\\
+ & =-\cos x+\frac{1}{3}\cos^{3}x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\sqrt{1-x^{2}}dx;x=\sin\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=\sin\theta$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{d\theta} & =\cos\theta\\
+dx & =\cos\theta d\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\sqrt{1-x^{2}}dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\sqrt{1-x^{2}}dx & =\int\sqrt{1-\left(\sin\theta\right)^{2}}\cos\theta d\theta\\
+ & =\int\sqrt{\cos^{2}\theta}\cos\theta d\theta\\
+ & =\int\cos^{2}\theta d\theta\\
+ & =\int\frac{\cos2\theta+1}{2}d\theta\\
+ & =\frac{1}{2}\left(\frac{\sin2\theta}{2}+\theta\right)+c\\
+ & =\frac{1}{4}\sin2\theta+\frac{1}{2}\theta+c\\
+ & =\frac{1}{4}\left(2\sin\theta\cos\theta\right)+\frac{1}{2}\theta+c\\
+ & =\frac{1}{2}\left(\sin\theta\cos\theta+\theta\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Integration by Partial Fractions)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{x\left(x+1\right)}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Perform method of long division to obtain degree of numerator less than
+ degree of denominator
+\begin_inset Formula 
+\[
+\frac{1}{x\left(x+1\right)}=\frac{A}{x}+\frac{B}{x+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\left(x+1\right)+Bx=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=0,A=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=-1,B=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{x\left(x+1\right)}dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\frac{1}{x\left(x+1\right)}dx & =\ix{\left(\frac{1}{x}-\frac{1}{x+1}\right)}\\
+ & =\ln x-\ln\left(x+1\right)+c\\
+ & =\ln\left(\frac{x}{x+1}\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\frac{2x^{3}-11x^{2}-2x+2}{2x^{2}+x-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Perform long division
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(2x^{2}+x-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2x^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-11x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2x^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-12x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-12x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-6x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Therefore
+\begin_inset Formula 
+\[
+\frac{2x^{3}-11x^{2}-2x+2}{2x^{2}+x-1}=x-6+\frac{5x-4}{2x^{2}+x-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Un-polynomialize 
+\begin_inset Formula $\frac{5x-4}{2x^{2}+x-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{5x-4}{2x^{2}+x-1}=\frac{A}{\left(2x-1\right)}+\frac{B}{\left(x+1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{5x-4}{\left(2x-1\right)\left(x+1\right)} & =\frac{A\left(x+1\right)+B\left(2x-1\right)}{\left(2x-1\right)\left(x+1\right)}\\
+5x-4 & =A\left(x+1\right)+B\left(2x-1\right)\\
+A\left(x+1\right)+B\left(2x-1\right)-5x+4 & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\left(x+1\right)+B\left(2x-1\right)-5x+4=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(0\right)+B\left(2\left(-1\right)-1\right)-5\left(-1\right)+4 & =0\\
+B\left(-2-1\right)+5+4 & =0\\
+-3B & =-9\\
+B & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(\frac{1}{2}+1\right)+B\left(0\right)-5\left(\frac{1}{2}\right)+4 & =0\\
+\frac{3}{2}A-\frac{5}{2}+4 & =0\\
+3A-5+8 & =0\\
+3A+3 & =0\\
+A & =\frac{-3}{3}\\
+A & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute back into the equation
+\begin_inset Formula 
+\begin{align*}
+\frac{5x-4}{2x^{2}+x-1} & =\frac{A}{\left(2x-1\right)}+\frac{B}{\left(x+1\right)}\\
+\boldsymbol{\frac{5x-4}{2x^{2}+x-1}} & \boldsymbol{=-\frac{1}{\left(2x-1\right)}+\frac{3}{\left(x+1\right)}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve the integration problem
+\begin_inset Formula 
+\begin{align*}
+\ix{\frac{2x^{3}-11x^{2}-2x+2}{2x^{2}+x-1}} & =\ix{x-6+\frac{5x-4}{2x^{2}+x-1}}\\
+ & =\int x-6+\left(-\frac{1}{\left(2x-1\right)}+\frac{3}{\left(x+1\right)}\right)dx\\
+ & =\int x-6-\frac{1}{\left(2x-1\right)}+\frac{3}{\left(x+1\right)}dx\\
+\boldsymbol{\ix{\frac{2x^{3}-11x^{2}-2x+2}{2x^{2}+x-1}}} & \boldsymbol{=\frac{x^{2}}{2}-6x-\frac{1}{2}\ln\left(2x-1\right)+3\ln\left(x+1\right)+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Integration by Parts, with 
+\begin_inset Formula $\ln x$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Note: If integrate 
+\begin_inset Formula $\ln x$
+\end_inset
+
+ with other functions, then let 
+\begin_inset Formula $\ln x=u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{\ln x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=\ln x$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =\frac{1}{x}\\
+du & =\frac{1}{x}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $dv=dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int1\cdot dv & =\int1\cdot dx\\
+v & =x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate it by parts
+\begin_inset Formula 
+\begin{align*}
+\ix{\ln x} & =uv-\int vdu\\
+ & =x\ln x-\int x\frac{1}{x}dx\\
+ & =x\ln x-x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{x\ln x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=\ln x$
+\end_inset
+
+, 
+\begin_inset Formula $dv=xdx$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+du=\frac{1}{x}dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int dv & =\int xdx\\
+v & =\frac{x^{2}}{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{x\ln x} & =uv-\int vdu\\
+ & =\ln x\left(\frac{x^{2}}{2}\right)-\int\left(\frac{x^{2}}{2}\right)\left(\frac{1}{x}\right)dx\\
+ & =\frac{x^{2}}{2}\ln x-\ix{\frac{x}{2}}\\
+ & =\frac{x^{2}}{2}\ln x-\frac{1}{2}\ix x\\
+ & =\frac{x^{2}}{2}\ln x-\frac{1}{2}\left(\frac{x^{2}}{2}+c\right)\\
+ & =\frac{x^{2}}{2}\ln x-\frac{x^{2}}{4}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Integration by Parts, without 
+\begin_inset Formula $\ln x$
+\end_inset
+
+, but have 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Note: If integrate 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ with other functions (except 
+\begin_inset Formula $\ln x$
+\end_inset
+
+), then let 
+\begin_inset Formula $u=x^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{xe^{x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $dv$
+\end_inset
+
+, and from them, find 
+\begin_inset Formula $du$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =x\\
+\dd\left[u\right] & =\dd\left[x\right]\\
+\ds u & =1\\
+du & =dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $dv=e^{x}dx$
+\end_inset
+
+ (Note 
+\begin_inset Formula $\int dv=\int1dv$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+\int dv & =\int e^{x}dx\\
+v & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the formula
+\begin_inset Formula 
+\begin{align*}
+\int xe^{x}dx & =uv-\int vdu\\
+ & =x\left(e^{x}\right)-\int e^{x}dx\\
+ & =xe^{x}-e^{x}+c\\
+\int xe^{x}dx & =e^{x}\left(x-1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ix{x\sin x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $dv$
+\end_inset
+
+, and use them to find 
+\begin_inset Formula $du$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =x\\
+\frac{du}{dx} & =1\\
+du & =1dx\\
+du & =dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+dv & =\sin x\,dx\\
+\int dv & =\int\sin x\,dx\\
+\int1dv & =\ix{\sin x}\\
+v & =-\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the formula
+\begin_inset Formula 
+\begin{align*}
+\int x\sin x\,dx & =uv-\int vdu\\
+ & =x\left(-\cos x\right)-\int\left(-\cos x\right)\left(dx\right)\\
+ & =-x\cos x+\sin x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int x^{2}e^{x}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $dv$
+\end_inset
+
+, then use it to find 
+\begin_inset Formula $du$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+u & =x^{2}\\
+\frac{du}{dx} & =2x\\
+du & =2x\,dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dv}{dx} & =e^{x}\\
+dv & =e^{x}dx\\
+\int dv & =\int e^{x}dx\\
+v & =e^{x}\text{ Note: }\int dv=\int1dv
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the formula.
+\begin_inset Formula 
+\begin{align*}
+\int x^{2}e^{x}dx & =uv-\int vdu\\
+ & =\left(x^{2}\right)\left(e^{x}\right)-\ix{\left(e^{x}\right)2x}\\
+ & =x^{2}e^{x}-2\ix{xe^{x}}\\
+\int x^{2}e^{x}dx & =x^{2}e^{x}-2\ix{xe^{x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+At this point, as you can see (the bolded part), we still have one integration
+ to work with, therefore, we need to integrate it by parts again.
+ Its up to personal preference whether to take the entire term or just the
+ integration part.
+ But regardless, do not be careless.
+\begin_inset Formula 
+\[
+\boldsymbol{\ix{xe^{x}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $dv$
+\end_inset
+
+, and use them to find 
+\begin_inset Formula $du$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =x\\
+\boldsymbol{du} & \boldsymbol{=dx}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+dv & =e^{x}dx\\
+\int dv & =\int e^{x}dx\\
+\boldsymbol{v} & \boldsymbol{=e^{x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the formula
+\begin_inset Formula 
+\begin{align*}
+\ix{xe^{x}} & =uv-\int vdu\\
+ & =x\left(e^{x}\right)-\int e^{x}dx\\
+\boldsymbol{\ix{xe^{x}}} & \boldsymbol{=xe^{x}-e^{x}+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now we can combine the results.
+ Note: 
+\begin_inset Formula $2c=c$
+\end_inset
+
+, because 
+\begin_inset Formula $c$
+\end_inset
+
+ is just an arbitrary constant and it doesn't affect our results.
+\begin_inset Formula 
+\begin{align*}
+\int x^{2}e^{x}dx & =x^{2}e^{x}-2\boldsymbol{\ix{xe^{x}}}\\
+ & =x^{2}e^{x}-2\left(xe^{x}+e^{x}+c\right)\\
+ & =x^{2}e^{x}-2xe^{x}+2e^{x}+2c\\
+ & =e^{x}\left(x^{2}-2x+2\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Integration by parts, without 
+\begin_inset Formula $\ln x$
+\end_inset
+
+ nor 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Note: If we are going to integrate with other functions, and none of the
+ functions have 
+\begin_inset Formula $\ln x$
+\end_inset
+
+ or 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+, then we are free to choose any one function to be used.
+ The reason why we prefer to choose those two functions first is because
+ they are more complicated than functions without 
+\begin_inset Formula $\ln$
+\end_inset
+
+ or power to be integrated.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{e^{x}\sin x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find terms to be substituted for 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $dv$
+\end_inset
+
+, and use them to find 
+\begin_inset Formula $du$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =\sin x\\
+du & =\cos x\,dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+dv & =e^{x}dx\\
+\int dv & =\int e^{x}dx\\
+v & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the formula
+\begin_inset Formula 
+\begin{align*}
+\ix{e^{x}\sin x} & =uv-\int vdu\\
+ & =\sin x\cdot e^{x}-\int e^{x}\left(\cos x\,dx\right)\\
+ & =e^{x}\sin x-\int e^{x}\cos x\,dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We are now stuck again, but notice something, if we keep going on, we will
+ be integrating by parts forever, then we have no choice but to do some
+ fancy math.
+\begin_inset Formula 
+\begin{align*}
+\ix{e^{x}\sin x} & =e^{x}\sin x-\int e^{x}\cos x\,dx\\
+ & =e^{x}\sin x-\left(e^{x}\cos x-\ix{-e^{x}\sin x}\right)\\
+ & =e^{x}\sin x-\left(e^{x}\cos x+\ix{e^{x}\sin x}\right)\\
+ & =e^{x}\sin x-e^{x}\cos x-\ix{e^{x}\sin x}\\
+\ix{e^{x}\sin x}+\ix{e^{x}\sin x} & =e^{x}\sin x-e^{x}\cos x\\
+2\ix{e^{x}\sin x} & =e^{x}\sin x-e^{x}\cos x\\
+\frac{1}{2}\left(2\ix{e^{x}\sin x}\right) & =\frac{1}{2}\left(e^{x}\sin x-e^{x}\cos x\right)\\
+\boldsymbol{\ix{e^{x}\sin x}} & \boldsymbol{=\frac{1}{2}e^{x}\left(\sin x-\cos x\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Integration by reduction formula
+\end_layout
+
+\begin_layout Subsubsection
+Proof the reduction formula
+\end_layout
+
+\begin_layout Enumerate
+Split into two terms
+\begin_inset Formula 
+\[
+\int\sin^{n}x\,dx=\ix{\sin^{n-1}x\cdot\sin x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $dv$
+\end_inset
+
+, and use them to find 
+\begin_inset Formula $du$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =\sin^{n-1}x\\
+\frac{du}{dx} & =\left(n-1\right)\sin^{n-2}x\cos x\\
+du & =\left(n-1\right)\sin^{n-2}x\cos x\,dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+dv & =\sin x\,dx\\
+v & =-\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the formula 
+\series bold
+(Note to self: Look this up later on)
+\series default
+
+\begin_inset Formula 
+\begin{align*}
+\int\sin^{n}x\,dx & =\ix{\sin^{n-1}x\cdot\sin x}\\
+ & =uv-\int v\,du\\
+ & =\left(\sin^{n-1}x\right)\left(-\cos x\right)-\int\left(-\cos x\right)\left(n-1\right)\sin^{n-2}x\cos x\,dx\\
+ & =\left(\sin^{n-1}x\right)\left(-\cos x\right)-\int\left(-\cos x\right)\left(n-1\right)\sin^{n-2}x\cos x\,dx\\
+ & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x\cos x\cos x\,dx\\
+ & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x\cos^{2}x\,dx\\
+ & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x\left(1-\sin^{2}x\right)\,dx\\
+ & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x-\sin^{n}x\,dx\\
+ & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x-\left(n-1\right)\int\sin^{n}x\,dx\\
+ & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x-\left(n-1\right)\int\sin^{n}x\,dx\\
+ & =-\cos x\sin^{n-1}x-\left(n-1\right)\int\sin^{n}x\,dx+\left(n-1\right)\int\sin^{n-2}x\,dx\\
+\left[1+\left(n-1\right)\right]\int\sin^{n}x\,dx & =-\cos x\sin^{n-1}x+\left(n-1\right)\int\sin^{n-2}x\,dx\\
+n\int\sin^{n}xdx & =-\frac{1}{n}\cos x\sin^{n-1}x+\frac{n-1}{n}\int\sin x\,dx\\
+ & =-\frac{1}{3}\cos x\sin^{2}x+\frac{2}{3}\left(-\cos x\right)+c\\
+ & =-\frac{1}{3}\cos x\sin^{2}x-\frac{2}{3}\cos x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example (Riemann Sum)
+\end_layout
+
+\begin_layout Enumerate
+Right-hand endpoints
+\begin_inset Formula 
+\[
+n=4,\Delta x=\frac{1-0}{4}=0.25
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+R_{4} & =0.25\left(0.25\right)^{2}+0.25\left(0.5\right)^{2}+0.25\left(0.75\right)^{2}+0.25\left(1\right)^{2}\\
+ & =0.46875
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Left-hand endpoints
+\begin_inset Formula 
+\[
+n=4,\Delta x=\frac{1-0}{4}=0.25
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L_{4} & =0.25\left(0\right)^{2}+0.25\left(0.25\right)^{2}+0.25\left(0.5\right)^{2}+0.25\left(0.75\right)^{2}\\
+ & =0.21875
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Range (not required)
+\begin_inset Formula 
+\[
+0.21875<A<0.46875
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lt{\infty}\sum_{i=1}^{n}\left[x_{i}^{3}+x_{i}\sin x_{i}\right]\Delta x,interval=\left[0,\pi\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lt{\infty}\sum_{i=1}^{n}\left[x_{i}^{3}+x_{i}\sin x_{i}\right]\Delta x=\int_{0}^{\pi}\left(x^{3}+x\sin x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{1}\sqrt{1-x^{2}}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=4,\Delta x=\frac{2-0}{4}=0.5$
+\end_inset
+
+ (use midpoint)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="10">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interval
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Midpoint
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=e^{-x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M_{4} & =0.5*e^{-0.25}+0.5*e^{-0.75}+0.5*e^{-1.25}+0.5*e^{-1.75}\\
+A & \approx0.8857
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{1}\sqrt{1-x^{2}}dx$
+\end_inset
+
+ (midpoints)
+\begin_inset Formula 
+\[
+n=4,\Delta x=\frac{1-0}{4}=0.25
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M_{4} & =0.25*\sqrt{1-\left(0.125\right)^{2}}+0.25*\sqrt{1-\left(0.375\right)^{2}}+0.25*\sqrt{1-\left(0.625\right)^{2}}+0.25*\sqrt{1-\left(0.875\right)^{2}}\\
+ & \approx0.79598
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=4,\Delta x=\frac{3-0}{4}=0.75$
+\end_inset
+
+ (use left-hand endpoints)
+\begin_inset Formula 
+\[
+n=4,\Delta x=\frac{1-0}{4}=0.75
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L_{4} & =0.75\left(f\left(0\right)+...+f\left(2.25\right)\right)\\
+ & =0.75\left(-1-0.25+0.5+1.25\right)\\
+ & =0.375
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example (Fundamental theorem of calculus)
+\begin_inset Formula 
+\begin{align*}
+\ix{_{0}^{10}f\left(x\right)} & =\ix{_{0}^{8}f\left(x\right)}+\ix{_{8}^{10}f\left(x\right)}\\
+17 & =12+\ix{_{8}^{10}f\left(x\right)}\\
+\ix{_{8}^{10}f\left(x\right)} & =17-12\\
+ & =5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example 
+\begin_inset Formula $\left(\ix{_{a}^{b}\left[f\left(x\right)\pm g\left(x\right)\right]}=\ix{_{a}^{b}f\left(x\right)}\pm\ix{_{a}^{b}g\left(x\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{_{1}^{2}\left(x+3\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{_{1}^{2}\left(x+3\right)} & =\ix{_{1}^{2}x}+\ix{_{1}^{2}3}\\
+ & =\left[\frac{x^{2}}{2}\right]_{1}^{2}+\left[3x\right]_{1}^{2}\\
+ & =\left(2-\frac{1}{2}\right)+\left(3\left(2\right)-3\left(1\right)\right)\\
+ & =4.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{_{7}^{10}\frac{7}{x^{2}-5x-6}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve for partial fractions to split the polynomial into individual, integratabl
+e terms
+\begin_inset Formula 
+\begin{align*}
+\frac{7}{x^{2}-5x-6} & =\frac{7}{\left(x-6\right)\left(x+1\right)}\\
+ & =\frac{A}{\left(x-6\right)}+\frac{B}{\left(x+1\right)}\\
+\frac{7}{\left(x-6\right)\left(x+1\right)} & =\frac{A\left(x+1\right)+B\left(x-6\right)}{\left(x-6\right)\left(x+1\right)}\\
+7 & =A\left(x+1\right)+B\left(x-6\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $A$
+\end_inset
+
+, when 
+\begin_inset Formula $x=6$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+7 & =A\left(6+1\right)+B\left(6-6\right)\\
+ & =7A\\
+A & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve for 
+\begin_inset Formula $B$
+\end_inset
+
+, when 
+\begin_inset Formula $x=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+7 & =A\left(-1+1\right)+B\left(-1-6\right)\\
+ & =-7B\\
+B & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Obtain final equation
+\begin_inset Formula 
+\begin{align*}
+\frac{7}{x^{2}-5x-6} & =\frac{1}{\left(x-6\right)}-\frac{1}{\left(x+1\right)}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ix{_{7}^{10}\frac{7}{x^{2}-5x-6}} & =\ix{_{7}^{10}\frac{A}{\left(x-6\right)}+\frac{B}{\left(x+1\right)}}\\
+ & =\ix{_{7}^{10}\frac{1}{\left(x-6\right)}-\frac{1}{\left(x+1\right)}}\\
+ & =\left[\ln\left(x-6\right)-\ln\left(x+1\right)\right]_{7}^{10}\\
+ & =\left(\ln\left(10-6\right)-\ln\left(10+1\right)\right)-\left(\ln\left(7-6\right)-\ln\left(7+1\right)\right)\\
+ & =\left(\ln4-\ln11\right)-\left(\ln1-\ln8\right)\\
+ & =\ln4-\ln11-\ln1+\ln8\\
+ & =\ln\frac{4*8}{11*1}\\
+ & =\ln\frac{32}{11}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{3}\sqrt{9-x^{2}}dx;x=3\sin\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =3\sin\theta\\
+\frac{dx}{d\theta} & =3\cos\theta\\
+dx & =3\cos\theta\cdot d\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\theta$
+\end_inset
+
+ when 
+\begin_inset Formula $x=3$
+\end_inset
+
+ and 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3 & =3\sin\theta\\
+\sin\theta & =1\\
+\theta & =\sin^{-1}\left(1\right)\\
+ & =\frac{\pi}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0 & =3\sin\theta\\
+\sin\theta & =0\\
+\theta & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{3}\sqrt{9-x^{2}}dx & =\int_{0}^{\frac{\pi}{2}}\sqrt{9-\left(3\sin\theta\right)^{2}}3\cos\theta\cdot d\theta\\
+ & =\int_{0}^{\frac{\pi}{2}}\sqrt{9-9\sin^{2}\theta}3\cos\theta\cdot d\theta\\
+ & =\int_{0}^{\frac{\pi}{2}}3\sqrt{1-\sin^{2}\theta}3\cos\theta\cdot d\theta\\
+ & =9\int_{0}^{\frac{\pi}{2}}\sqrt{\cos^{2}\theta}\cos\theta\cdot d\theta\\
+ & =9\int_{0}^{\frac{\pi}{2}}\cos\theta\cos\theta\cdot d\theta\\
+ & =9\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\cdot d\theta\\
+ & =9\int_{0}^{\frac{\pi}{2}}\frac{\cos2\theta+1}{2}\cdot d\theta\\
+ & =9\left[\frac{\sin2\theta}{2*2}+\frac{1}{2}\theta\right]_{0}^{\frac{\pi}{2}}\\
+ & =\frac{9}{2}\left[\frac{\sin2\theta}{2}+\theta\right]_{0}^{\frac{\pi}{2}}\\
+ & =\frac{9}{2}\left(\frac{\sin\pi}{2}+\left(\frac{\pi}{2}\right)-\left(\frac{\sin0}{2}\right)-0\right)\\
+ & =\frac{9}{2}\left(\cancel{\frac{\sin\pi}{2}}+\left(\frac{\pi}{2}\right)\right)\\
+ & =\frac{9}{4}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example (Trapezoidal Rule)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{3}\frac{1}{1+x^{3}}dx,n=6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the width of each strips
+\begin_inset Formula 
+\begin{align*}
+h & =\frac{b-a}{n}=\frac{3-0}{6}\\
+ & =0.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the values of 
+\begin_inset Formula $y$
+\end_inset
+
+ for each strip
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=\frac{1}{1+x^{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.88889
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.22857
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.11111
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06015
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03571
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Estimate the integration value using Trapezoidal rule
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{3}\frac{1}{1+x^{3}}dx & =\frac{0.5}{2}\left[1+0.03571+2\left(0.88889+..+0.06015\right)\right]\\
+ & =1.15\left(2d.p.\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Simpson's Rule)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{3}\frac{1}{1+x^{3}}dx,n=6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the width of each strips
+\begin_inset Formula 
+\begin{align*}
+h & =\frac{b-a}{n}=\frac{3-0}{6}\\
+ & =0.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the values of 
+\begin_inset Formula $y$
+\end_inset
+
+ for each strip
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=\frac{1}{1+x^{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Odd terms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Even terms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.88889
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.22857
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.11111
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03571
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.17761
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.61111
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Approximate the area using Simpson's rule
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{3}\frac{1}{1+x^{3}}dx & =\frac{0.5}{3}\left[1+0.3571+4\left(0.17761\right)+2\left(0.61111\right)\right]\\
+ & =1.161\left(3d.p.\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example (Simpson's Rule)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ix{_{0}^{0.8}e^{-x}}$
+\end_inset
+
+, 
+\begin_inset Formula $h=0.1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $y-values$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y=e^{-x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Odd terms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Even terms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.90483
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.81873
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.74018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.67032
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.60653
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.54881
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.49659
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.44933
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.74877
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0379
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Approximate the definite integral using Simpson's rule
+\begin_inset Formula 
+\begin{align*}
+\ix{_{0}^{0.8}e^{-x}} & \approx\frac{1}{3}\left(0.1\right)\left(\left(1+0.44933\right)+4\left(2.74877\right)+2\left(2.0379\right)\right)\\
+ & =0.55067
+\end{align*}
+
 \end_inset
 
 
