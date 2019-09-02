@@ -265,3 +265,68 @@ Factors:
 
 **Risk of failure:** Attention split between two systems, opportunity cost can lead to personnel with weak skills in either system.
 
+## 5. Direct Changeover 
+
+**Meaning:** Select suitable cut-off date, stop the older system, and start the new system. Usually used when old system and new system is vastly different.
+
+### Appropriate circumstances
+
+- **Small system**
+- **Competent staff**
+- **Reliable systems**
+- **Not comparable**
+- **Resources shortage**
+
+### Advantages
+
+- Flexible changeover time
+- Cheaper
+- Maintain morale
+- Quick return on investment
+
+### Disadvantages
+
+- Risky approach
+- Organization and supervision costs
+- Need comprehensive testing
+- Difficult to detect errors
+
+## 6. Pilot Run
+
+**Meaning:** Test the new system on a "pilot branch", and deploying system on other branches after success. In "pilot branch", can use either direct changeover or parallel run.
+
+### Appropriate circumstances
+
+- Large systems project spanning wide range
+- Resources shortage
+
+### Advantages
+
+- Localized errors
+- Cheaper
+- Reduce risk of failure
+- Promote user confidence
+- Prevent overstretching of resources
+
+### Disadvantages
+
+- Overwork of employees
+- High investment
+- Not full representative
+
+## 7. Phased/Staged changeover
+
+**Meaning:** Implement system in stages/phases. Divide the system into parts and introduce them one-by-one after the previous one succeeds.
+
+### Advantages
+
+- Less resources required
+- Reduced risk
+- Increase user confidence
+
+### Disadvantages
+
+- Slow process
+- Demoralize staff. Having to deal with constant change.
+- More expensive. Far longer active implementation period.
+

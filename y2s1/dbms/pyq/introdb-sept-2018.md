@@ -69,13 +69,13 @@ Defining clear set of business rules
 
 **1NF, Remove repeating groups**
 
-**Delivery**(DeliveryOrderNo, DeliverOrderDate, CustId, CustName, Address, <u>ItemCode</u>\*)
+**Delivery**(<u>DeliveryOrderNo</u>, DeliverOrderDate, CustId, CustName, Address, <u>ItemCode</u>\*)
 
 **Purchase**(<u>ItemCode</u>, Description, Qty)
 
 **2NF: Remove partial dependencies**
 
-**Delivery**(DeliveryOrderNo, DeliverOrderDate, CustId, CustName, Address, <u>ItemCode</u>\*)
+**Delivery**(<u>DeliveryOrderNo</u>, DeliverOrderDate, CustId, CustName, Address, <u>ItemCode</u>\*)
 
 **Purchase**(<u>ItemCode</u>\*, Qty)
 
@@ -83,7 +83,7 @@ Defining clear set of business rules
 
 ##### 3NF: Remove transitive dependencies
 
-**Delivery**(DeliveryOrderNo, DeliverOrderDate, CustId*, <u>ItemCode</u>\*)
+**Delivery**(<u>DeliveryOrderNo</u>, DeliverOrderDate, CustId*, <u>ItemCode</u>\*)
 
 **Customer**(<u>CustId</u>, CustName, Address)
 
