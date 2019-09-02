@@ -34,7 +34,7 @@
 
 - Cannot be instantiated, should be extended. 
   - cannot use `new` on abstract class.
-- Can contain no `abstract` methods. 
+- Can contain `abstract` methods. 
 - **All subclasses must implement all abstract methods**, or be an abstract class
 - **Constructor** can be defined in subclasses.
 - **Superclass** can be concrete.

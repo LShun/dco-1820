@@ -79,6 +79,24 @@
 Calculus 1: Tutorial 3
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lx}[1]{\lim_{x\to#1}}
+{\lim_{x\to#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lt}[2]{\lim_{#1\to#2}}
+{\lim_{#1\to#2}}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 Evaluate the limit if it exists.
 \end_layout
@@ -202,6 +220,19 @@ Evaluate the limit if it exists.
 \end_inset
 
 
+\begin_inset Formula 
+\begin{align*}
+\lx 0\frac{\sqrt{1+h}-1}{h} & =\lx 0\frac{\sqrt{1+h}-1}{h}*\frac{\sqrt{1+h}+1}{\sqrt{1+h}+1}\\
+ & =\lx 0\frac{\sqrt{1+h}-1\left(\sqrt{1+h}+1\right)}{h\left(\sqrt{1+h}+1\right)}\\
+ & =\lx 0\frac{1+h-1}{h\left(\sqrt{1+h}+1\right)}\\
+ & =\lx 0\frac{h}{h\left(\sqrt{1+h}+1\right)}\\
+ & =\lx 0\frac{1}{\sqrt{1+h}+1}\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -228,6 +259,19 @@ Evaluate the limit if it exists.
 \end_inset
 
 1
+\begin_inset Formula 
+\begin{align*}
+\lt t0\left(\frac{1}{t}-\frac{1}{t^{2}+t}\right) & =\lt t0\left(\frac{1\left(t^{2}+t\right)}{t\left(t^{2}+t\right)}-\frac{t}{t*\left(t^{2}+t\right)}\right)\\
+ & =\lt t0\left(\frac{\left(t^{2}+t\right)}{t^{3}+t^{2}}-\frac{t}{t^{3}+t^{2}}\right)\\
+ & =\lt t0\left(\frac{t^{2}}{t^{3}+t^{2}}\right)\\
+ & =\lt t0\left(\frac{t^{2}}{t^{2}\left(t+1\right)}\right)\\
+ & =\lt t0\left(\frac{1}{t+1}\right)\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper

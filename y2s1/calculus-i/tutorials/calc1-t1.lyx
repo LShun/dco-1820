@@ -116,7 +116,7 @@ R_{f} & =\left[-2,3\right]
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $(-1,0.5)$
+\begin_inset Formula $(-1,3)$
 \end_inset
 
 
@@ -543,5 +543,76 @@ R_{f} & =\left(-\infty,2\right)\cup\left(2,+\infty\right)
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Even.
+\end_layout
+
+\begin_layout Enumerate
+Odd.
+\end_layout
+
+\begin_layout Enumerate
+Even.
+\end_layout
+
+\begin_layout Enumerate
+Neither.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+h
+\end_layout
+
+\begin_layout Enumerate
+f
+\end_layout
+
+\begin_layout Enumerate
+g
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+G
+\end_layout
+
+\begin_layout Enumerate
+f
+\end_layout
+
+\begin_layout Enumerate
+F
+\end_layout
+
+\begin_layout Enumerate
+g
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

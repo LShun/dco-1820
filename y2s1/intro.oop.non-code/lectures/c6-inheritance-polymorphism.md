@@ -118,7 +118,7 @@
 - **parametric polymorphism:** Object of subclass's type can be used whenever superclass's type value required.
 
 - **dynamic blending**: Implementation determined dynamically by JVM at runtime. Closest, most suitable method is invoked. (Eg. when String is passed will use method that takes in String).
-- **generic programming: **Writing methods that can be used generically for wide range of arguments. 
+- **generic programming:** Writing methods that can be used generically for wide range of arguments. 
   - **example:** Passing subclass *objects* (i.e. Circle) to superclass *parameters* (i.e. `public int getInt(Object O)`)
 
 ###  10. Method Matching vs Binding
@@ -128,7 +128,7 @@
 - **Matches method signature**
 - Compiler finds matching method: same *parameter type, number, order* at compile time.
 
-### Method binding
+#### Method binding
 
 - **dynamically bind** implementation to reference call.
 - **actual class of object** referenced decides binding.

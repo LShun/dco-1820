@@ -1714,6 +1714,25 @@ y & =5\sin\theta\\
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+OR
+\begin_inset Formula 
+\begin{align*}
+x^{2} & =16\cos^{2}\theta\\
+\frac{x^{2}}{16} & =\cos^{2}\theta\\
+y^{2} & =25\sin^{2}\theta\\
+\frac{y^{2}}{25} & =\sin^{2}\theta\\
+\frac{x^{2}}{16}+\frac{y^{2}}{25} & =\sin^{2}\theta+\cos^{2}\theta\\
+\frac{x^{2}}{16}+\frac{y^{2}}{25} & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset space ~
 \end_inset
