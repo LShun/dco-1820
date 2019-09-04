@@ -13,4 +13,9 @@ public class ComparableCircle extends Circle implements Comparable, Colorable {
             return 0;
         }
     }
+
+    @Override
+    public void howToColor() {
+
+    }
 }

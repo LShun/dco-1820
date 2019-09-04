@@ -496,6 +496,188 @@ A piece of wire 10m long is cut into two pieces.
  
 \end_layout
 
+\begin_layout Enumerate
+Let the amount cut for the square be 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ The amount left for the equilateral triangle will be 
+\begin_inset Formula $10-x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Side length of square is 
+\begin_inset Formula $\frac{x}{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A_{s} & =\left(\frac{x}{4}\right)^{2}\\
+ & =\frac{x^{2}}{16}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Area of equilateral triangle with side length 
+\begin_inset Formula $x$
+\end_inset
+
+ is 
+\begin_inset Formula $\frac{\sqrt{3}}{4}x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Side length of equilateral triangle is 
+\begin_inset Formula $\frac{10-x}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Area of equilateral triangle
+\begin_inset Formula 
+\[
+\frac{\sqrt{3}}{4}\left(\frac{10-x}{3}\right)^{2}=\frac{\sqrt{3}\left(10-x\right)^{2}}{36}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Total area = 
+\begin_inset Formula $A_{s}+A_{t}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\left(x\right)=\frac{x^{2}}{16}+\frac{\sqrt{3}\left(10-x\right)^{2}}{36}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Differentiate
+\begin_inset Formula 
+\[
+A'\left(x\right)=\frac{x}{8}-\frac{\sqrt{3}\left(10-x\right)}{18}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve 
+\begin_inset Formula $A'\left(x\right)=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{x}{8}-\frac{\sqrt{3}\left(10-x\right)}{18} & =0\\
+\frac{x}{8} & =\frac{\sqrt{3}\left(10-x\right)}{18}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cross Multiply
+\begin_inset Formula 
+\[
+18x=8\sqrt{3}\left(10-x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+18x=80\sqrt{3}-8\sqrt{3}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(18+8\sqrt{3}\right)x & =80\sqrt{3}\\
+x & =\frac{80\sqrt{3}}{\left(18+8\sqrt{3}\right)}\\
+ & \approx4.35
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evaluate the endpoints
+\begin_inset Formula 
+\begin{align*}
+A\left(0\right) & =\frac{0}{16}-\frac{\sqrt{3}\left(10-0\right)^{2}}{36}\\
+ & \approx4.81
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(4.35\right) & =\frac{4.35}{16}-\frac{\sqrt{3}\left(10-4.35\right)^{2}}{36}\\
+ & \approx2.72
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(10\right) & =\frac{10}{16}-\frac{\sqrt{3}\left(10-10\right)^{2}}{36}\\
+ & =6.25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For minimum area, 
+\begin_inset Formula $x=4.35m$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Question 5
 \end_layout
@@ -503,7 +685,64 @@ Question 5
 \begin_layout Standard
 For the given cost and price functions, find the production level that will
  maximize profit.
- C(x) = 16000 + 500x – 1.6x2 + 0.004x3 p(x) = 1700 7x
+ 
+\begin_inset Formula 
+\[
+C\left(x\right)=16000+500x-1.6x^{2}+0.004x^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\left(x\right)=1700-7x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+C'\left(x\right) & =500-3.2x+0.012x^{2}\\
+R\left(x\right) & =x\cdot p\left(x\right)\\
+ & =1700x-7x^{2}\\
+R'\left(x\right) & =1700-14x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To maximize the profit, marginal revenue must equal marginal cost
+\begin_inset Formula 
+\begin{align*}
+C'\left(x\right) & =R'\left(x\right)\\
+500-3.2x+0.012x^{2} & =1700-14x\\
+0.012x^{2}+10.8x-1200 & =0\\
+x & =100,-1000
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore
+\begin_inset Formula 
+\[
+x=100
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -511,21 +750,196 @@ Question 6
 \end_layout
 
 \begin_layout Standard
-Suppose p(x) 100 0.04x and 2 c(x) 500 40x 0.04x are the price function (in
- dollars per unit) and cost function (in dollars) and x is the number of
- units produced.
+Suppose 
+\begin_inset Formula $p\left(x\right)=100-0.04x$
+\end_inset
+
+ and 
+\begin_inset Formula $c\left(x\right)=500+40x+0.04x^{2}$
+\end_inset
+
+ are the price function (in dollars per unit) and cost function (in dollars)
+ and x is the number of units produced.
  Find the production level when profit is maximized.
  What is the price and the average cost at this optimum level?
 \end_layout
 
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $P$
+\end_inset
+
+ be the profit.
+ For the profit to be maximized, we need the marginal revenue, 
+\begin_inset Formula $R$
+\end_inset
+
+ to be at least equal to the marginal cost.
+\begin_inset Formula 
+\begin{align*}
+R\left(x\right) & =x\cdot p\left(x\right)\\
+ & =x\left(100-0.04x\right)\\
+ & =100x-0.04x^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R'\left(x\right)=100-0.08x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+c'\left(x\right) & =500+40x+0.04x^{2}\\
+ & =40+0.08x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let the marginal cost be equal to the marginal revenue
+\begin_inset Formula 
+\begin{align*}
+R'\left(x\right) & =c'\left(x\right)\\
+100-0.08x & =40+0.08x\\
+60 & =0.16x\\
+x & =375
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Fid the price and average cost at this optimum level
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Price
+\begin_inset Formula 
+\begin{align*}
+p\left(375\right) & =100-0.04\left(375\right)\\
+ & =85
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Average cost
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Total cost
+\begin_inset Formula 
+\begin{align*}
+c\left(375\right) & =500+40\left(375\right)+0.04\left(375\right)^{2}\\
+ & =21125
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Average cost
+\begin_inset Formula 
+\begin{align*}
+c & =\frac{21125}{375}\\
+ & =56.33
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 Question 7
 \end_layout
 
 \begin_layout Standard
-Use Newton’s method with initial approximation x1 = 1 to find x3, the third
- approximation to the root of the equation x3 – x 2 –1 = 0.
+Use Newton’s method with initial approximation 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+ to find 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, the third approximation to the root of the equation 
+\begin_inset Formula $x^{3}-x^{2}-1=0$
+\end_inset
+
+.
  (Give your answer to three decimal places.)
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=x^{3}-x^{2}-1$
+\end_inset
+
+, 
+\begin_inset Formula $f'\left(x\right)=3x^{2}-2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{2} & =1-\frac{1^{3}-1^{2}-1}{3\left(1\right)^{2}-2\left(1\right)}\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{3} & =2-\frac{2^{3}-2^{2}-1}{3\left(2\right)^{2}-2\left(2\right)}\\
+ & =1.625
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -533,8 +947,121 @@ Question 8
 \end_layout
 
 \begin_layout Standard
-Use Newton’s method to approximate 7 1000 correct to eight decimal places.
- [x0 = 3]
+Use Newton’s method to approximate 
+\begin_inset Formula $\sqrt[7]{1000}$
+\end_inset
+
+ correct to eight decimal places.
+ 
+\begin_inset Formula $[x_{0}=3]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=\sqrt[7]{1000}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =\sqrt[7]{1000}\\
+x^{7} & =1000\\
+x^{7}-1000 & =0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =x^{7}-1000\\
+f'\left(x\right) & =7x^{6}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the approximation to eight decimal places
+\begin_inset Formula 
+\begin{align*}
+x_{0} & =3
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{1} & =x_{0}-\frac{\left(x_{0}\right)^{7}-1000}{7\left(x_{0}\right)^{6}}\\
+ & =2.76739173
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{2} & =x_{1}-\frac{\left(x_{1}\right)^{7}-1000}{7\left(x_{1}\right)^{6}}\\
+ & =2.690087405
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{3} & =x_{2}-\frac{\left(x_{2}\right)^{7}-1000}{7\left(x_{2}\right)^{6}}\\
+ & =2.682756447
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{4} & =x_{3}-\frac{\left(x_{3}\right)^{7}-1000}{7\left(x_{3}\right)^{6}}\\
+ & =2.682695799
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{5} & =x_{4}-\frac{\left(x_{4}\right)^{7}-1000}{7\left(x_{4}\right)^{6}}\\
+ & =2.682695795
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{6} & =x_{5}-\frac{\left(x_{5}\right)^{7}-1000}{7\left(x_{5}\right)^{6}}\\
+ & =2.682695795
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $x_{5}=x_{6}$
+\end_inset
+
+ at 8d.p., we conclude that 
+\begin_inset Formula $\sqrt[7]{1000}=2.682695795$
+\end_inset
+
+ to 8 d.p.
 \end_layout
 
 \begin_layout Section

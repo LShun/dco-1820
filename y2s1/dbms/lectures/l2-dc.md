@@ -123,7 +123,7 @@ End user <-> DBMS <-> Database Structure
 - File system
   - Many separate and unrelated files
 - Database
-- Logically related data at single point
+  - Logically related data at single point
 
 ### Database System Environment
 
