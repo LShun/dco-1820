@@ -167,7 +167,7 @@ Common relationships among classes:
 #### Reasons to use
 
 - To locate classes: Make it easier to locate
-- Avoid naming conflicts: Prevent naming conflicts between reusable classes, only allow name to be referenced inside class.
+- Avoid naming conflicts: Prevent naming conflicts between reusable classes, only allow name to be referenced inside packages.
 - Distribute software conveniently
   - Package group related classes
 - Protect classes
