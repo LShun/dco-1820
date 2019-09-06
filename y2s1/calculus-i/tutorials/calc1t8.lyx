@@ -90,6 +90,15 @@
 Calc 1: Tutorial 8
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lx}[1]{\lim_{x\to#1}}
+{\lim_{x\to#1}}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 Find the critical numbers of the function.
  
@@ -1951,6 +1960,239 @@ c.up
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to1}\frac{x^{a}-1}{x^{b}-1} & =\lim_{x\to1}\frac{ax^{a-1}}{bx^{b-1}}\\
+ & =\frac{a\left(1\right)^{a-1}}{b\left(1\right)^{b-1}}\\
+ & =\frac{a}{b}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx 0\frac{x+\tan x}{\sin x} & =\lx 0\frac{1+\sec^{2}x}{\cos x}\\
+ & =\lx 0\frac{1+\sec^{2}\left(0\right)}{\cos\left(0\right)}\\
+ & =\lx 0\frac{1+1}{1}\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to\infty}\frac{\ln\ln x}{x} & =\lim_{x\to\infty}\frac{\frac{1}{\ln x}\cdot\left(\frac{1}{x}\right)}{1}\\
+ & =\lim_{x\to\infty}\frac{\frac{1}{x\ln x}}{1}\\
+ & =\lim_{x\to\infty}\frac{1}{x\ln x}\\
+ & =\frac{1}{\infty\ln\infty}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx 0\frac{\cos mx-\cos nx}{x^{2}} & =\lx 0\frac{-m\sin\left(mx\right)+n\sin\left(nx\right)}{2x}\\
+ & =\lx 0\frac{-m^{2}\cos\left(mx\right)+n^{2}\cos\left(nx\right)}{2}\\
+ & =\frac{-m^{2}\cos0+n^{2}\cos0}{2}\\
+ & =\frac{n^{2}-m^{2}}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx 0\frac{x}{\tan^{-1}x} & =\lx 0\frac{1}{x^{2}+1}\\
+ & =\frac{1}{1}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx{-\infty}x^{2}e^{x} & =\lx{-\infty}x^{2}e^{x}\\
+ & =\lx{-\infty}\frac{x^{2}}{\frac{1}{e^{x}}}\\
+ & =\lx{-\infty}\frac{2x}{-e^{-x}}\\
+ & =\lx{-\infty}\frac{2}{e^{x}}\\
+ & =\frac{2}{e^{-\infty}}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx{\left(\frac{\pi}{2}\right)^{-}}\sec7x\cos3x & =\lx{\left(\frac{\pi}{2}\right)^{-}}\sec7x\cos3x\\
+ & =\lx{\left(\frac{\pi}{2}\right)^{-}}\frac{\cos3x}{\cos7x}\\
+ & =\lx{\left(\frac{\pi}{2}\right)^{-}}\frac{-3\sin3x}{-7\sin7x}\\
+ & =\frac{-3\cos\left(\frac{\pi}{2}-\frac{3\pi}{2}\right)}{-7\cos\left(\frac{\pi}{2}-\frac{7\pi}{2}\right)}\\
+ & =\frac{-3\cos\left(-\pi\right)}{-7\cos\left(-3\pi\right)}\\
+ & =\frac{-3\cos\left(\pi\right)}{-7\cos\left(3\pi\right)}\\
+ & =\frac{-3\left(1\right)}{-7\left(1\right)}\\
+ & =\frac{3}{7}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lx 0\left(\csc x-\cot x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx 0\left(\csc x-\cot x\right) & =\lx 0\left(\csc x-\cot x\right)\\
+ & =\lx 0\left(\csc x\right)-\lx 0\left(\cot x\right)\\
+ & =\lx 0\left(\frac{1}{\sin x}\right)-\lx 0\left(\frac{1}{\tan x}\right)\\
+ & =\lx 0\left(\sin^{-1}x\right)-\lx 0\left(\tan^{-1}x\right)\\
+ & =\lx 0\left(\sin^{-1}x\right)-\lx 0\left(\tan^{-1}x\right)\\
+ & =\lx 0\left(\frac{1}{\sqrt{1-x^{2}}}\right)-\lx 0\left(\frac{1}{1+x^{2}}\right)\\
+ & =1-1\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to1}\left(\frac{1}{\ln x}-\frac{1}{x-1}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to1}\left(\frac{1}{\ln x}-\frac{1}{x-1}\right) & =\lim_{x\to1}\left(\frac{x-1-\ln x}{\left(x-1\right)\ln x}\right)\\
+ & =\lim_{x\to1}\left(\frac{x-1-\ln x}{x\ln x-\ln x}\right)\\
+ & =\lim_{x\to1}\left(\frac{1-\frac{1}{x}}{\ln x+\frac{x}{x}-\frac{1}{x}}\right)\\
+ & =\lim_{x\to1}\left(\frac{1-\frac{1}{x}}{\ln x+1-\frac{1}{x}}\right)\\
+ & =\lim_{x\to1}\left(\frac{1-x^{-1}}{\ln x+1-x^{-1}}\right)\\
+ & =\lim_{x\to1}\left(\frac{x^{-2}}{\frac{1}{x}+x^{-2}}\right)\\
+ & =\left(\frac{1}{1+1}\right)\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lx 0\left(1-2x\right)^{\frac{1}{x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $y=\left(1-2x\right)^{\frac{1}{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ln y & =\frac{1}{x}\ln\left(1-2x\right)\\
+ & =\frac{\ln\left(1-2x\right)}{x}\\
+\lim_{x\to0}\ln\left(y\right) & =\lim_{x\to0}\frac{\ln\left(1-2x\right)}{x}\\
+ & =\lim_{x\to0}\frac{-\frac{2}{1-2x}}{1}\\
+ & =\lim_{x\to0}-\frac{2}{1-2x}\\
+ & =-\frac{2}{1-2\left(0\right)}\\
+\ln y & =-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lx 0\left(1-2x\right)^{\frac{1}{x}} & =\lim_{x\to\infty}y\\
+ & =\lim_{x\to\infty}e^{\ln\left(y\right)}\\
+ & =e^{\lim_{x\to\infty}\ln\left(y\right)}\\
+ & =e^{-2}
+\end{align*}
 
 \end_inset
 
