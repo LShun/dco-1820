@@ -15,7 +15,7 @@
 
 ## Functions
 
-### Traditional Data Admin Functions (remember at least 2)
+### Traditional Data Administration Functions (remember at least 2)
 
 - **Planning**
 - **Internal marketing of DA concepts**
