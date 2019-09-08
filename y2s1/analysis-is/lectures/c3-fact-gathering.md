@@ -77,7 +77,7 @@ Good choice when:
 - **Cannot clarify question.** Unlike interviews, hard to explain to user.
 - **Poor response.** Many people will delay/forget.
 
-### Questionnaire
+### Observation
 
 - Analyst monitor interrelations, interactions, procedures, and data flow inside a department
 - Requires prior arrangement & make everyone aware of purpose

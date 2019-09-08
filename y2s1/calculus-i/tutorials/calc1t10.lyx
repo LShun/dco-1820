@@ -1,0 +1,987 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc 1 : Tutorial 10
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dx}{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+By using suitable substitution, find the following indefinite integral.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{x}{x^{2}+1}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=x^{2}+1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =x^{2}+1\\
+du & =2x\,dx\\
+dx & =\frac{du}{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Subsitute inside
+\begin_inset Formula 
+\begin{align*}
+\int\frac{x}{x^{2}+1}dx & =\int\frac{x}{u}\frac{du}{2x}\\
+ & =\frac{1}{2}\int\frac{1}{u}du\\
+ & =\frac{1}{2}\ln\left(u\right)+c\\
+ & =\frac{1}{2}\ln\left(x^{2}+1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int xe^{x^{2}}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+du & =2x\,dx\\
+dx & =\frac{du}{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in 
+\begin_inset Formula 
+\begin{align*}
+\int xe^{u}\frac{du}{2x} & =\int e^{u}\frac{du}{2}\\
+ & =\frac{1}{2}\int e^{u}du\\
+ & =\frac{1}{2}e^{u}+c\\
+ & =\frac{1}{2}e^{x^{2}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int e^{x}\sqrt{1+e^{x}}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=1+e^{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =e^{x}\\
+du & =e^{x}dx\\
+dx & =\frac{du}{e^{x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substiute in
+\begin_inset Formula 
+\begin{align*}
+\int e^{x}\sqrt{u}\frac{du}{e^{x}} & =\int\sqrt{u}du\\
+ & =\int u^{\frac{1}{2}}du\\
+ & =\frac{u^{\frac{3}{2}}}{\frac{3}{2}}+c\\
+\int e^{x}\sqrt{1+e^{x}}dx & =\frac{2}{3}\left(1+e^{x}\right)^{\frac{3}{2}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{\sec x\tan x}{1+2\sec x}dx$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\sec x\tan x\left(1+2\sec x\right)^{-1}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=1+2\sec x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =2\sec x\tan x\\
+dx & =\frac{du}{2\sec x\tan x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in
+\begin_inset Formula 
+\begin{align*}
+\int\sec x\tan x\left(1+2\sec x\right)^{-1}dx & =\int\sec x\tan x\left(1+2\sec x\right)^{-1}\frac{du}{2\sec x\tan x}\\
+ & =\frac{1}{2}\int u^{-1}du\\
+ & =\frac{1}{2}\ln u+c\\
+ & =\frac{1}{2}\ln\left(1+2\sec x\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{2x+1}{\left(x-3\right)^{6}}dx;u=x-3$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =1\\
+du & =dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in
+\begin_inset Formula 
+\begin{align*}
+\int\frac{2\left(x+3-3\right)+1}{u^{6}}du & =\int\frac{2\left(u+3\right)+1}{u^{6}}du\\
+ & =\int\frac{2u+6+1}{u^{6}}du\\
+ & =\int\frac{2u}{u^{6}}du+\int\frac{6}{u^{6}}du+\int\frac{1}{u^{6}}du\\
+ & =\int2u^{-5}du+\int6u^{-6}du+\int u^{-6}du\\
+ & =\left(-\frac{2}{4}u^{-4}\right)+6\left(-\frac{1}{5}u^{-5}\right)+\left(-\frac{1}{5}u^{-5}\right)+c\\
+ & =-\frac{1}{2u^{4}}-\frac{6}{5u^{5}}-\frac{1}{5u^{-5}}+c\\
+ & =-\frac{1}{2\left(x-3\right)^{4}}-\frac{7}{5\left(x-3\right)^{5}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int x^{3}\sqrt{1+x^{2}}dx;u=\sqrt{1+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =\frac{1}{2}\left(1+x^{2}\right)^{-\frac{1}{2}}\left(2x\right)\\
+ & =\frac{x}{\sqrt{1+x^{2}}}\\
+du & =\frac{x}{\sqrt{1+x^{2}}}dx\\
+dx & =\frac{\left(1+x^{2}\right)^{\frac{1}{2}}}{x}du
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =\sqrt{1+x^{2}}\\
+u^{2} & =1+x^{2}\\
+x & =\sqrt{u^{2}-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in
+\begin_inset Formula 
+\begin{align*}
+\int x^{3}\sqrt{1+x^{2}}dx & =\int x^{3}\sqrt{1+x^{2}}\frac{\left(1+x^{2}\right)^{\frac{1}{2}}}{x}du\\
+ & =\int x^{2}\left(1+x^{2}\right)du\\
+ & =\int\left(u^{2}-1\right)u^{2}du\\
+ & =\int u^{4}-u^{2}du\\
+ & =\frac{u^{5}}{5}-\frac{u^{3}}{3}+c\\
+ & =\frac{\left(1+x^{2}\right)^{\frac{5}{2}}}{5}-\frac{\left(1+x^{2}\right)^{\frac{3}{2}}}{3}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\cos^{2}x\sin^{3}xdx;u=\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =-\sin x\\
+dx & =-\frac{du}{\sin x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $x$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+u & =\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in
+\begin_inset Formula 
+\begin{align*}
+\int\cos^{2}x\sin^{3}x\,dx & =\int u^{2}\sin^{3}x\left(-\frac{du}{\sin x}\right)\\
+ & =-\int u^{2}\sin^{2}x\,du\\
+ & =-\int u^{2}\left(1-\cos^{2}\left(x\right)\right)\,du\\
+ & =-\int u^{2}\left(1-u^{2}\right)du\\
+ & =-\int u^{2}-u^{4}du\\
+ & =-\left[\frac{u^{3}}{3}-\frac{u^{5}}{5}\right]+c\\
+ & =-\frac{\cos^{3}x}{3}-\frac{\cos^{5}x}{5}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{x-9}{\left(x+5\right)\left(x-2\right)}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Part-ify the equation
+\begin_inset Formula 
+\begin{align*}
+\frac{x-9}{\left(x+5\right)\left(x-2\right)} & =\frac{A}{\left(x+5\right)}+\frac{B}{\left(x-2\right)}\\
+ & =\frac{A\left(x-2\right)+B\left(x+5\right)}{\left(x+5\right)\left(x-2\right)}\\
+x-9 & =A\left(x-2\right)+B\left(x+5\right)\\
+A\left(x-2\right)+B\left(x+5\right)-x+9 & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(2-2\right)+B\left(2+5\right)-2+9 & =0\\
+7B+7 & =0\\
+B & =-\frac{7}{7}\\
+ & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-5$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(-5-2\right)+B\left(-5+5\right)-\left(-5\right)+9 & =0\\
+-7A+5+9 & =0\\
+-7A & =-14\\
+A & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Form the final equation
+\begin_inset Formula 
+\begin{align*}
+\frac{x-9}{\left(x+5\right)\left(x-2\right)} & =\frac{A}{\left(x+5\right)}+\frac{B}{\left(x-2\right)}\\
+ & =\frac{2}{\left(x+5\right)}-\frac{1}{\left(x-2\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Integrate the equations
+\begin_inset Formula 
+\begin{align*}
+\int\frac{x-9}{\left(x+5\right)\left(x-2\right)}dx & =\int\frac{2}{\left(x+5\right)}-\frac{1}{\left(x-2\right)}dx\\
+ & =2\int\frac{1}{x+5}dx-\int\frac{1}{x-2}dx\\
+\int\frac{x-9}{\left(x+5\right)\left(x-2\right)}dx & =2\ln\left|\left(x+5\right)\right|-\ln\left|\left(x-2\right)\right|+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{2x^{2}+14x+10}{2x^{2}+9x+4}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hmm, since the numerator has same power as denominator, we know its not
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+proper fraction
+\begin_inset Quotes erd
+\end_inset
+
+ yet.
+ So lets do some fancy math, which is 
+\begin_inset Quotes eld
+\end_inset
+
+long division
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename lyx-imgs/t10q3c.png
+	lyxscale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now we have 
+\begin_inset Formula $1+\frac{5x+6}{2x^{2}+9x+4}$
+\end_inset
+
+, which is much better
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Partial-ify it (just the second part)
+\begin_inset Formula 
+\begin{align*}
+\frac{5x+6}{2x^{2}+9x+4} & =\frac{5x+6}{\left(x+4\right)\left(2x+1\right)}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{5x+6}{\left(x+4\right)\left(2x+1\right)} & =\frac{A}{\left(x+4\right)}+\frac{B}{\left(2x+1\right)}\\
+5x+6 & =A\left(2x+1\right)+B\left(x+4\right)\\
+A\left(2x+1\right)+B\left(x+4\right)-5x-6 & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(2x+1\right)+B\left(x+4\right)-5x-6 & =0\\
+A\left(0\right)+B\left(\frac{7}{2}\right)-5\left(-\frac{1}{2}\right)-6 & =0\\
+B\left(\frac{7}{2}\right) & =6-\frac{5}{2}\\
+ & =\frac{7}{2}\\
+B & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-4$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(2x+1\right)+B\left(x+4\right)-5x-6 & =0\\
+A\left(2\left(-4\right)+1\right)+B\left(-4+4\right)-5\left(-4\right)-6 & =0\\
+-7A+14 & =0\\
+-7A & =-14\\
+A & =\frac{-14}{-7}\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Get the full equation (oh and do not forget that 
+\begin_inset Quotes eld
+\end_inset
+
+whole
+\begin_inset Quotes erd
+\end_inset
+
+ part earlier)
+\begin_inset Formula 
+\begin{align*}
+\frac{2x^{2}+14x+10}{2x^{2}+9x+4} & =1+\frac{A}{\left(x+4\right)}+\frac{B}{\left(2x+1\right)}\\
+ & =1+\frac{2}{\left(x+4\right)}+\frac{1}{\left(2x+1\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate it and get the answer
+\begin_inset Formula 
+\begin{align*}
+\int\frac{2x^{2}+14x+10}{2x^{2}+9x+4}dx & =\int1+\frac{2}{\left(x+4\right)}+\frac{1}{\left(2x+1\right)}dx\\
+\int\frac{2x^{2}+14x+10}{2x^{2}+9x+4}dx & =x+2\ln\left(x+4\right)+\frac{1}{2}\ln\left(2x+1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int\ln2x\,dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $v'$
+\end_inset
+
+, again F-A-N-C-Y math
+\begin_inset Formula 
+\begin{align*}
+u & =\ln2x\\
+v' & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $u'$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u' & =\frac{2}{2x}\\
+ & =\frac{1}{x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v & =\int v'dx\\
+ & =x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate by parts
+\begin_inset Formula 
+\begin{align*}
+\int uv' & =uv-\int u'v\,dx\\
+\int\ln2x\,dx & =x\ln2-\int\frac{1}{x}\cdot x\,dx\\
+ & =x\ln2-\int1\,dx\\
+ & =x\ln2-x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\int\left(\ln x\right)^{n}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Okay so lets just flex our formula first, we know that
+\begin_inset Formula 
+\[
+\int uv'=uv-\int u'v\,dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+and 
+\begin_inset Formula $\int\left(\ln x\right)^{n}dx=x\left(\ln x\right)^{n}-n\int\left(\ln x\right)^{n-1}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, lets just let
+\begin_inset Formula 
+\[
+\int uv'=\int\left(\ln x\right)^{n}dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+uv & =x\left(\ln x\right)^{n}\\
+\int u'v\,dx & =-n\int\left(\ln x\right)^{n-1}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+and so from this, we figured out that we need to let:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u$
+\end_inset
+
+ be 
+\begin_inset Formula $\left(\ln x\right)^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+and 
+\begin_inset Formula $v'$
+\end_inset
+
+ be 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now we need to find 
+\begin_inset Formula $u'$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u' & =n\left(\ln x\right)^{n-1}*\frac{1}{x}\\
+ & =\frac{n}{x}\left(\ln x\right)^{n-1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v & =\int v'dx\\
+ & =x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let's dump inside the formula
+\begin_inset Formula 
+\begin{align*}
+\int\left(\ln x\right)^{n}dx & =x\left(\ln x\right)^{n}-\int\frac{n}{x}\left(\ln x\right)^{n-1}x\,dx\\
+ & =x\left(\ln x\right)^{n}-\int n\left(\ln x\right)^{n-1}\,dx\\
+ & =x\left(\ln x\right)^{n}-n\int\left(\ln x\right)^{n-1}\,dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now let's fine 
+\begin_inset Formula $\int\left(\ln x\right)^{3}dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\left(\ln x\right)^{3}dx & =x\left(\ln x\right)^{3}-3\int\left(\ln x\right)^{3-1}\,dx+c\\
+ & =x\left(\ln x\right)^{3}-3\int\left(\ln x\right)^{2}\,dx+c\\
+ & =x\left(\ln x\right)^{3}-3\left(x\left(\ln x\right)^{2}-2\int\left(\ln x\right)^{2-1}\right)+c\\
+ & =x\left(\ln x\right)^{3}-3\left(x\left(\ln x\right)^{2}-2\int\left(\ln x\right)^{1}\right)+c\\
+ & =x\left(\ln x\right)^{3}-3x\left(\ln x\right)^{2}+6\int\left(\ln x\right)^{1}+c\\
+ & =x\left(\ln x\right)^{3}-3x\left(\ln x\right)^{2}+6\left(x\left(\ln x\right)^{n}-n\int\left(\ln x\right)^{n-1}\,dx\right)+c\\
+ & =x\left(\ln x\right)^{3}-3x\left(\ln x\right)^{2}+6x\ln x-6\int1\,dx+c\\
+ & =x\left(\ln x\right)^{3}-3x\left(\ln x\right)^{2}+6x\ln x-6x+c\\
+ & =x\left[\left(\ln x\right)^{3}-3\left(\ln x\right)^{2}+6\ln x-6+c\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
