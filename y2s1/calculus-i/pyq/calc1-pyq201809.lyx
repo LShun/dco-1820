@@ -1,0 +1,2039 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc 1 PYQ Sept-2018
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ix}[1]{\int#1\,dx}
+{\int#1\,dx}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dy}{\frac{dy}{dx}}
+{\frac{dy}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dd}{\frac{d}{dx}}
+{\frac{d}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ds}[1]{\frac{d#1}{dx}}
+{\frac{d#1}{dx}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\lt}[1]{\lim_{x\to#1}}
+{\lim_{x\to#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=x^{2}-6x+11$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =x^{2}-6x+11\\
+y & =x^{2}-6x+\left(-3\right)^{2}-\left(-3\right)^{2}+11\\
+ & =\left(x-3\right)^{2}-9+11\\
+ & =\left(x-3\right)^{2}+2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/pyq201809-q1a.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evaluate the limits if exist
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lt 0\frac{4\cos x-4}{3x^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt 0\frac{4\cos x-4}{3x^{2}} & =\frac{4\cos0-4}{30^{2}}\\
+ & =\frac{0}{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using L'Hospital's Rule
+\begin_inset Formula 
+\begin{align*}
+\lt 0\frac{4\cos x-4}{3x^{2}} & =\lt 0\frac{-4\sin x}{6x}\\
+ & =\lt 0\frac{-4\cos x}{6}\\
+ & =\lt 0\frac{-4\cos x}{6}\\
+ & =\frac{-4\cos0}{6}\\
+ & =-\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lt{-1}\frac{\sqrt{x+10}-3}{2x+2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{-1}\frac{\sqrt{x+10}-3}{2x+2} & =\lt{-1}\frac{\sqrt{x+10}-3}{2x+2}\cdot\frac{\sqrt{x+10}+3}{\sqrt{x+10}+3}\\
+ & =\lt{-1}\frac{x+10-9}{\left(2x+2\right)\left(\sqrt{x+10}+3\right)}\\
+ & =\lt{-1}\frac{x+1}{2\left(x+1\right)\left(\sqrt{x+10}+3\right)}\\
+ & =\lt{-1}\frac{1}{2\left(\sqrt{x+10}+3\right)}\\
+ & =\frac{1}{2\left(\sqrt{-1+10}+3\right)}\\
+ & =\frac{1}{2\left(\sqrt{9}+3\right)}\\
+ & =\frac{1}{2\left(6\right)}\\
+ & =\frac{1}{12}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{x+5}{3x-3},x\neq1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g\left(x\right)=3x^{2}-2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(f\circ g\right)\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(f\circ g\right)\left(x\right) & =f\left(g\left(x\right)\right)\\
+ & =f\left(3x^{2}-2\right)\\
+ & =\frac{3x^{2}-2+5}{3\left(3x^{2}-2\right)-3}\\
+ & =\frac{3x^{2}+3}{3\left(3x^{2}-2-1\right)}\\
+ & =\frac{3\left(x^{2}+1\right)}{3\left(3x^{2}-3\right)}\\
+ & =\frac{x^{2}+1}{3\left(x^{2}-1\right)},x\neq\pm1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(f^{-1}\circ g\right)\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+, Let 
+\begin_inset Formula $f\left(x\right)=y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{x+5}{3x-3}\\
+y & =\frac{x+5}{3\left(x-1\right)}\\
+3y\left(x-1\right) & =x+5\\
+3xy-3 & =x+5\\
+3xy-x & =5+3\\
+x\left(3y-1\right) & =8\\
+x & =\frac{8}{3y-1}\\
+f^{-1}\left(x\right) & =\frac{8}{3x-1},x\neq\pm1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the composition
+\begin_inset Formula 
+\begin{align*}
+\left(f^{-1}\circ g\right)\left(x\right) & =f^{-1}\left(g\left(x\right)\right)\\
+ & =f^{-1}\left(3x^{2}-2\right)\\
+ & =\frac{8}{3\left(3x^{2}-2\right)-1}\\
+ & =\frac{8}{9x^{2}-6-1}\\
+\left(f^{-1}\circ g\right)\left(x\right) & =\frac{8}{9x^{2}-7},x\neq\left(\pm\frac{\sqrt{7}}{9}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+\frac{x^{2}-1}{x-1}=\frac{\left(x+1\right)\left(x-1\right)}{x-1}=x+1 & x<1\\
+x^{2}+1 & x\ge1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lt{1^{-}}f\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{1^{-}}x+1 & =\lt{1^{-}}1+1\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt{1^{+}}f\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lt{1^{+}}f\left(x\right) & =1^{2}+1\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lt 1f\left(x\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(1\right)=1^{2}+1=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+ from first principle if 
+\begin_inset Formula $f\left(x\right)=3x^{2}-3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\lim_{h\to0}\frac{f\left(x+h\right)-f\left(x\right)}{h}\\
+ & =\lim_{h\to0}\frac{3\left(x+h\right)^{2}-3-\left(3x^{2}-3\right)}{h}\\
+ & =\lim_{h\to0}\frac{3\left(x^{2}+2hx+h^{2}\right)-3-3x^{2}+3}{h}\\
+ & =\lim_{h\to0}\frac{3x^{2}+6hx+3h^{2}-3x^{2}}{h}\\
+ & =\lim_{h\to0}\frac{h\left(6x+3h\right)}{h}\\
+ & =\lim_{h\to0}6x+3h\\
+f'\left(x\right) & =6x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differentiate with respect to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{e^{2x}+3x}{\sqrt{x+1}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\frac{d}{dx}\left[\frac{e^{2x}+3x}{\sqrt{x+1}}\right]\\
+ & =\frac{\sqrt{x+1}\cdot\frac{d}{dx}\left[e^{2x}+3x\right]-\left(e^{2x}+3x\right)\cdot\frac{d}{dx}\left[\sqrt{x+1}\right]}{x+1}\\
+ & =\frac{\sqrt{x+1}\cdot\left(2e^{2x}+3\right)-\left(e^{2x}+3x\right)\cdot\frac{1}{2\sqrt{x+1}}}{x+1}\\
+ & =\frac{\sqrt{x+1}\cdot\left(2e^{2x}+3\right)-\frac{\left(e^{2x}+3x\right)}{2\sqrt{x+1}}}{x+1}\\
+ & =\frac{\frac{\left(x+1\right)\cdot\left(2e^{2x}+3\right)-\frac{1}{2}\left(e^{2x}+3x\right)}{\sqrt{x+1}}}{x+1}\\
+ & =\frac{\left(x+1\right)\cdot\left(2e^{2x}+3\right)-\frac{1}{2}\left(e^{2x}+3x\right)}{\left(x+1\right)^{\frac{3}{2}}}\\
+ & =\frac{2\left(x+1\right)\cdot\left(2e^{2x}+3\right)-\left(e^{2x}+3x\right)}{2\left(x+1\right)^{\frac{3}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(\sin^{2}x\right)\left[\ln\left(x^{4}-1\right)\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\left(\sin x\right)^{2}\left[\ln\left(x^{4}-1\right)\right]\\
+f'\left(x\right) & =2\left(\sin x\right)\left(\cos x\right)\left[\ln\left(x^{4}-1\right)\right]+\left(\sin x\right)^{2}\left(\frac{4x^{3}}{x^{4}-1}\right)\\
+ & =\sin2x\ln\left(x^{4}-1\right)+\sin^{2}x\left(\frac{4x^{3}}{x^{4}-1}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y^{2}-4y-2x+1=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left[y^{2}-4y-2x+1\right] & =0\\
+2y\frac{dy}{dx}-4\frac{dy}{dx}-2 & =0\\
+2y\frac{dy}{dx}-4\frac{dy}{dx} & =2\\
+\frac{dy}{dx}\left(y-2\right) & =1\\
+y' & =\frac{1}{y-2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Equation of tangent at 
+\begin_inset Formula $\left(-2,1\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y' & =\frac{1}{1-2}\\
+ & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find equation
+\begin_inset Formula 
+\begin{align*}
+y-y_{1} & =y'\left(x-x_{1}\right)\\
+y-1 & =-1\left(x-\left(-2\right)\right)\\
+y & =-x-2+1\\
+y & =-x-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=\ln\left(2t+1\right),y=4t^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =\frac{d}{dt}\left[\ln\left(2t+1\right)\right]\\
+ & =\frac{1}{2t+1}\cdot2\\
+\frac{dx}{dt} & =\frac{2}{2t+1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dt} & =\frac{d}{dt}\left[4t^{2}\right]\\
+\frac{dy}{dt} & =8t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Utilize chain rule
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{dy}{dt}*\frac{dt}{dx}\\
+ & =8t\cdot\frac{2t+1}{2}\\
+ & =4t\left(2t+1\right)\\
+ & =8t^{2}+4t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in 
+\begin_inset Formula $t$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ds y|_{t=1} & =8\left(1\right)+4\left(1\right)\\
+ & =12
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differentiate again (note, you cannot differentiate THEN chain for the second
+ derivative, otherwise you will end up with 
+\begin_inset Formula $\frac{d^{2}y}{dt^{2}}*\frac{dt^{2}}{d^{2}x}=\frac{d^{2}y}{d^{2}x}$
+\end_inset
+
+, which is obviously different from 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+).
+ In this part, because our equations is in terms of 
+\begin_inset Formula $t$
+\end_inset
+
+, we cannot 
+\begin_inset Formula $\frac{d}{dx}$
+\end_inset
+
+, we must 
+\begin_inset Formula $\frac{d}{dt}$
+\end_inset
+
+.
+ Therefore, we must find a way to chain things together so that they become
+ 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+after cancelling.
+ So we know that we:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+must 
+\begin_inset Formula $\frac{d}{dt}$
+\end_inset
+
+ to get the 
+\begin_inset Formula $d^{2}something$
+\end_inset
+
+ on top, and since we are differentiating with respect to 
+\begin_inset Formula $t$
+\end_inset
+
+, we must have 
+\begin_inset Formula $dt$
+\end_inset
+
+ on the bottom.
+ 
+\end_layout
+
+\begin_layout Enumerate
+must do at least once, 
+\begin_inset Formula $\frac{dy}{d-something}$
+\end_inset
+
+ to get one 
+\begin_inset Formula $dy$
+\end_inset
+
+ on top.
+ 
+\end_layout
+
+\begin_layout Enumerate
+must do two 
+\begin_inset Formula $\frac{d-something}{dx}$
+\end_inset
+
+ to get 
+\begin_inset Formula $dx^{2}$
+\end_inset
+
+ on bottom.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Enter our solution:
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{d}{dt}*\frac{dy}{dx}*\frac{dt}{dx}\\
+ & =\frac{d}{dt}\left(8t^{2}+4t\right)*\frac{2t+1}{2}\\
+ & =\left(16t+4\right)*\frac{2t+1}{2}\\
+ & =\frac{32t^{2}+16t+8t+4}{2}\\
+ & =16t^{2}+12t+2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute in 
+\begin_inset Formula $t$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\ds y|_{t=1} & =16\left(1\right)+4\\
+ & =20
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}}|_{t=1} & =16\left(1\right)^{2}+12\left(1\right)+2\\
+ & =30
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Newton-raphson method.
+ Initial 
+\begin_inset Formula $x_{0}=0.8$
+\end_inset
+
+.
+ Find root of 
+\begin_inset Formula $x^{3}+2x-4=0$
+\end_inset
+
+.
+ 3 d.p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=x^{3}+2x-4$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =x^{3}+2x-4\\
+f'\left(x\right) & =3x^{2}+2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Recursive newton-raphson method
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\frac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{1} & =1.2816\\
+x_{2} & =1.1851\\
+x_{3} & =1.1795\\
+x_{4} & =1.1795
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{4}$
+\end_inset
+
+agree to 3.d.p..
+ The root of the equation is 
+\begin_inset Formula $1.180$
+\end_inset
+
+ (3dp)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Define the terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=area=486$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P=perimeter$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=width$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=height$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the formulas to relate
+\begin_inset Formula 
+\[
+A_{total}=xy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+xy & =486\\
+y & =\frac{486}{x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A_{print} & =\left(x-4\right)\left(y-6\right)\\
+ & =xy-4y-6x+24
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitue 
+\begin_inset Formula $y=\frac{486}{x}$
+\end_inset
+
+ into 
+\begin_inset Formula $A_{print}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A_{print} & =x\left(\frac{486}{x}\right)-4\left(\frac{486}{x}\right)-6x+24\\
+ & =486-\frac{1944}{x}-6x+24
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Maximize 
+\begin_inset Formula $A_{print}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dA}{dx}=\frac{1944}{x^{2}}-6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1944}{x^{2}}-6 & =0\\
+\frac{1944}{x^{2}} & =6\\
+1944 & =6x^{2}\\
+x^{2} & =\frac{1944}{6}\\
+ & =324\\
+x & =18cm
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{486}{18}\\
+ & =27cm
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Maximized dimensions
+\begin_inset Formula 
+\[
+18cm*27cm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=x^{3}-12x^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dy}{dx}=3x^{2}-24x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3x^{2}-24x & =0\\
+3x\left(x-8\right) & =0\\
+x & =0,8
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}=6x-24$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =-24\\
+ & =max\,point
+\end{align*}
+
+\end_inset
+
+When 
+\begin_inset Formula $x=8$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =48-24\\
+ & =24>0\\
+ & =min\,point
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Coordinates
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=8$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =x^{3}-12x^{2}\\
+ & =-256
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Maximum point: 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimum point 
+\begin_inset Formula $\left(8,-256\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Coordinates of inflection point
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =6x-24\\
+6x-24 & -0\\
+x & =\frac{24}{6}\\
+x & =4
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=4$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\left(4\right)^{3}-12\left(4\right)^{2}\\
+ & =-128
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inflection point 
+\begin_inset Formula 
+\[
+\left(4,-128\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Concave up (range of 
+\begin_inset Formula $x$
+\end_inset
+
+): 
+\begin_inset Formula $\left(-\infty,4\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Concave down (range of 
+\begin_inset Formula $x$
+\end_inset
+
+): 
+\begin_inset Formula $\left(4,+\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sketch the curve
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/pyq201809-q3ciii.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Evaluate integrals
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{3}^{4}\frac{2xdx}{\left(x+4\right)\left(x-2\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Partial fractions
+\begin_inset Formula 
+\begin{align*}
+\frac{2x}{\left(x+4\right)\left(x-2\right)} & =\frac{A}{\left(x+4\right)}+\frac{B}{\left(x-2\right)}\\
+2x & =A\left(x-2\right)+B\left(x+4\right)\\
+A\left(x-2\right)+B\left(x+4\right)-2x & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(2-2\right)+B\left(2+4\right)-2\left(2\right) & =0\\
+6B & =4\\
+B & =\frac{4}{6}\\
+B & =\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-4$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(-4-2\right)-2\left(-4\right) & =0\\
+-6A+8 & =0\\
+A & =\frac{8}{6}\\
+ & =\frac{4}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find equation
+\begin_inset Formula 
+\begin{align*}
+\frac{2x}{\left(x+4\right)\left(x-2\right)} & =\frac{4}{3\left(x+4\right)}+\frac{2}{3\left(x-2\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differentiate
+\begin_inset Formula 
+\begin{align*}
+\int_{3}^{4}\frac{2xdx}{\left(x+4\right)\left(x-2\right)} & =\int_{3}^{4}\frac{4}{3\left(x+4\right)}+\frac{2}{3\left(x-2\right)}dx\\
+ & =\frac{4}{3}\int_{3}^{4}\frac{1}{\left(x+4\right)}dx+\frac{2}{3}\int_{3}^{4}\frac{1}{\left(x-2\right)}dx\\
+ & =\frac{4}{3}\left[\ln\left(x+4\right)\right]_{3}^{4}+\frac{2}{3}\left[\ln\left(x-2\right)\right]_{3}^{4}\\
+ & =\frac{4}{3}\left(\ln8-\ln7\right)+\frac{2}{3}\left(\ln2-\ln1\right)\\
+ & =\frac{4}{3}\ln\frac{8}{7}+\frac{2}{3}\ln2\\
+ & =0.6401
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{\frac{\pi}{4}}\left(1-\sin2x\right)^{\frac{3}{2}}\cos2xdx$
+\end_inset
+
+, Substitution
+\begin_inset Formula 
+\begin{align*}
+u & =1-\sin2x\\
+\frac{du}{dx} & =-2\cos2x\\
+dx & =-\frac{du}{2\cos2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find bounds with respect to 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=\frac{\pi}{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =1-\sin2\left(\frac{\pi}{4}\right)\\
+ & =1-\sin\frac{\pi}{2}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+When 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =1-\sin0\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute inside
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{\frac{\pi}{4}}\left(1-\sin2x\right)^{\frac{3}{2}}\cos2xdx & =\int_{1}^{0}u^{\frac{3}{2}}\cos2x\left(-\frac{du}{2\cos2x}\right)\\
+ & =-\frac{1}{2}\int_{1}^{0}u^{\frac{3}{2}}du\\
+ & =-\frac{1}{2}\left[\frac{3}{2}u^{\frac{1}{2}}\right]_{1}^{0}\\
+ & =-\frac{1}{2}\left(-\frac{3}{2}\right)\\
+\int_{0}^{\frac{\pi}{4}}\left(1-\sin2x\right)^{\frac{3}{2}}\cos2xdx & =\frac{3}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trapezium rule
+\begin_inset Formula 
+\[
+\int_{0}^{2}\ln\left(x^{3}+5\right)dx,n=5,\Delta x=\frac{2-0}{5}=0.4,2.decimal.places
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the points
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)=\ln\left(x^{3}+5\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.605
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.622
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.707
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.906
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.208
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.565
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.443
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Trapezium rule
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{2}\ln\left(x^{3}+5\right)dx & \approx\frac{0.4}{2}\left(4.17+2\left(7.443\right)\right)\\
+ & =3.8112\\
+ & =3.81\,\text{(2dp)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Simpson's rule 
+\begin_inset Formula $n=6$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{3}^{6}\sqrt{7x^{3}+2}dx$
+\end_inset
+
+.
+ Correct to 
+\begin_inset Formula $2d.p.$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Delta x=\frac{6-3}{6}=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the points, 
+\begin_inset Formula $f\left(x\right)=\sqrt{7x^{3}+2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Odd 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Even 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+First/Last
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.820
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17.381
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.213
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.255
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29.614
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34.155
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38.91
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+76.791
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50.827
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52.73
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Simpson's rule
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{2}\ln\left(x^{3}+5\right)dx & \approx\frac{0.5}{3}\left(52.73+4\left(76.791\right)+2\left(50.827\right)\right)\\
+ & =76.92\\
+ & =76.92\,\text{(2dp)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
