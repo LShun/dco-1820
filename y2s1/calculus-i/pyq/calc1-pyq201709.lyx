@@ -191,7 +191,7 @@ End result:
 
 
 \begin_inset Graphics
-	filename img/pyq201909-q1a.png
+	filename img/pyq201709-q1a.png
 
 \end_inset
 
@@ -311,7 +311,7 @@ Find
  & =h\left(2x^{2}-1\right)\\
  & =\frac{2\left(2x^{2}-1\right)-1}{\left(2x^{2}-1\right)-3}\\
  & =\frac{4x^{2}-2-1}{2x^{2}-1-3}\\
-\left(h\circ g\right)\left(x\right) & =\frac{4x^{2}-3}{2x^{2}-4}
+\left(h\circ g\right)\left(x\right) & =\frac{4x^{2}-3}{2x^{2}-4}.x\neq\pm\sqrt{2}
 \end{align*}
 
 \end_inset
@@ -367,7 +367,7 @@ Find
  & =-\frac{3\left(2x^{2}-1\right)}{2-\left(2x^{2}-1\right)}\\
  & =-\frac{6x^{2}-3}{-2x^{2}+1+2}\\
  & =-\frac{6x^{2}-3}{3-2x^{2}}\\
- & =\frac{6x^{2}-3}{2x^{2}-3}
+ & =\frac{6x^{2}-3}{2x^{2}-3},x\neq\pm\sqrt{\frac{3}{2}}
 \end{align*}
 
 \end_inset
@@ -472,8 +472,7 @@ f'\left(x\right) & =\frac{d}{dx}\left[\frac{\sin x}{\sqrt{x-3}}\right]\\
  & =\frac{\sqrt{x-3}\frac{d}{dx}\left[\sin x\right]-\sin x\frac{d}{dx}\left[\sqrt{x-3}\right]}{x-3}\\
  & =\frac{\sqrt{x-3}\cos x-\sin x\frac{1}{2\sqrt{x-3}}}{x-3}\\
  & =\frac{\sqrt{x-3}\cos x-\frac{1}{2\sqrt{x-3}}\sin x}{x-3}\\
- & =\frac{\cos x}{\sqrt{x-3}}-\frac{\sin x}{3\sqrt{x-3}}\\
- & =\frac{1}{\sqrt{x-3}}\left(\cos x-\frac{\sin x}{2\sqrt{x-3}}\right)
+ & =\frac{\cos x}{\sqrt{x-3}}-\frac{\sin x}{2\left(x-3\right)^{\frac{3}{2}}}
 \end{align*}
 
 \end_inset
@@ -487,9 +486,1581 @@ f'\left(x\right) & =\frac{d}{dx}\left[\frac{\sin x}{\sqrt{x-3}}\right]\\
 
 
 \begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\dd\left[e^{4x}\right]\ln\left(3x-2\right)+e^{4x}\dd\left[\ln\left(3x-2\right)\right]\\
+ & =4e^{4x}\left(\ln\left(3x-2\right)\right)+e^{4x}\frac{3}{3x-2}\\
+ & =4e^{4x}\ln\left(3x-2\right)+\frac{3e^{4x}}{3x-2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=e^{\sqrt{x}-1},y=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find coordinates of 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+e^{\sqrt{x}-1} & =1\\
+\ln e^{\sqrt{x}-1} & =\ln1\\
+\sqrt{x}-1 & =0\\
+\sqrt{x} & =1\\
+x & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Coordinates of 
+\begin_inset Formula $P$
+\end_inset
+
+: 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find equation of the tangent to the curve at 
+\begin_inset Formula $P$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{1}{2\sqrt{x}}e^{\sqrt{x}-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+At 
+\begin_inset Formula $P$
+\end_inset
+
+, 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{1}{2\sqrt{1}}e^{\sqrt{1}-1}\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the equation of the tangent
+\begin_inset Formula 
+\begin{align*}
+y-y_{1} & =m\left(x-x_{1}\right)\\
+y-1 & =\frac{1}{2}\left(x-1\right)\\
+y & =\frac{1}{2}x-\frac{1}{2}+1\\
+y & =\frac{1}{2}\left(x+1\right)\\
+2y & =x+1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=5t^{2}+1$
+\end_inset
+
+, 
+\begin_inset Formula $y=2t+5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ when 
+\begin_inset Formula $t=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =10t\\
+\frac{dy}{dt} & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Chain rule
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{dy}{dt}*\frac{dt}{dx}\\
+ & =\frac{dy}{dt}*\frac{1}{\frac{dx}{dt}}\\
+ & =2*\frac{1}{10t}\\
+\frac{dy}{dx} & =\frac{1}{5t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $t=1$
+\end_inset
+
+
+\begin_inset Formula 
 \[
-f'\left(x\right)=
+\frac{dy}{dx}|_{t=1}=\frac{1}{5}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+ when 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+ Note: for this question, look at calc1-pyq201809 file for explanation for
+ a similar question.
+ This question is one of the trickiest around.
+ The reason is because of the 
+\begin_inset Formula $dt$
+\end_inset
+
+.
+ We need 3 things to make 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+One 
+\begin_inset Formula $dy$
+\end_inset
+
+ at the top.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Two 
+\begin_inset Formula $dx$
+\end_inset
+
+ at the bottom to make 
+\begin_inset Formula $dx^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+One extra 
+\begin_inset Formula $d$
+\end_inset
+
+at the top, to be multipled with 
+\begin_inset Formula $dy$
+\end_inset
+
+ to form 
+\begin_inset Formula $d^{2}y$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{d}{dt}*\frac{dy}{dx}*\frac{dt}{dx}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Chain rule
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =\frac{d}{dt}*\frac{dy}{dx}*\frac{dt}{dx}\\
+ & =\frac{d}{dt}\left[\frac{1}{5t}\right]*\frac{1}{10t}\\
+ & =-\frac{1}{5t}*\frac{1}{10t}\\
+ & =-\frac{1}{50t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{d^{2}y}{dx^{2}}|_{t=1}=-\frac{1}{50}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Newton-Raphson Method.
+ 
+\begin_inset Formula $x_{0}=-2$
+\end_inset
+
+.
+ Find approximation to root of 
+\begin_inset Formula $x^{3}-3x+4=0$
+\end_inset
+
+.
+ Correct to 3.d.p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f\left(x\right)=x^{3}-3x+4$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=3x^{2}-3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Newton-Raphson recursive
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\frac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{1} & =-2.2222\\
+x_{2} & =-2.1962\\
+x_{3} & =-2.1958\\
+x_{4} & =-2.1958
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since both 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{4}$
+\end_inset
+
+ agree to 
+\begin_inset Formula $-2.196$
+\end_inset
+
+ at 3 d.p., we conclude that the approximation to the root of 
+\begin_inset Formula $x^{3}-3x+4=0$
+\end_inset
+
+ is 
+\begin_inset Formula $-2.196$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Rate of change problem.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Define terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r_{full}=radius=12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h_{full}=height=48$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dV}{dt}=-144$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h_{target}=36$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dh}{dt}=?$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find formula to relate
+\begin_inset Formula 
+\[
+V=\frac{1}{3}\pi r^{2}h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use similar triangles
+\begin_inset Formula 
+\begin{align*}
+\frac{r_{full}}{h_{full}} & =\frac{r_{target}}{h_{target}}\\
+\frac{12}{48} & =\frac{r}{h}\\
+r & =\frac{h}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Subsitute into formula (note, we cannot directly put in 
+\begin_inset Formula $h_{target}=36$
+\end_inset
+
+ for now, otherwise, you would have assumed that 
+\begin_inset Formula $h$
+\end_inset
+
+ is a constant and the only thing changing is 
+\begin_inset Formula $r$
+\end_inset
+
+, which is not true).
+\begin_inset Formula 
+\begin{align*}
+V & =\frac{1}{3}\pi\left(\frac{h}{4}\right)^{2}h\\
+V & =\frac{1}{48}\pi h^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the derivative
+\begin_inset Formula 
+\begin{align*}
+\frac{dV}{dh} & =\frac{3}{48}\pi h^{2}\\
+ & =\frac{1}{16}\pi h^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use chain rule to find 
+\begin_inset Formula $\frac{dh}{dt}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dh}{dt} & =\frac{dh}{dV}*\frac{dV}{dt}\\
+ & =\frac{1}{\frac{dV}{dh}}*\frac{dV}{dt}\\
+ & =\frac{16}{\pi h^{2}}*-144\\
+\frac{dh}{dt} & =-\frac{2304}{\pi h^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Subsitute in 
+\begin_inset Formula $h=36$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dh}{dt}|_{h=36} & =-\frac{2304}{\pi36^{2}}\\
+ & =-\frac{16}{9\pi}cm/s
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=4x^{3}-3x^{2}-18x-17$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find local max and local min
+\begin_inset Formula 
+\begin{align*}
+y & =4x^{3}-3x^{2}-18x-17\\
+\frac{dy}{dx} & =12x^{2}-6x-18\\
+12x^{2}-6x-18 & =0\\
+2x^{2}-x-3 & =0\\
+\left(2x-3\right)\left(x+1\right) & =0\\
+x & =\frac{3}{2},-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Determine points
+\begin_inset Formula 
+\[
+\frac{d^{2}y}{dx^{2}}=24x-6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}}|_{x=\frac{3}{2}} & =24\left(\frac{3}{2}\right)-6\\
+ & =30\,\left(min\,point\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}}|_{x=-1} & =24\left(-1\right)-6\\
+ & =-30\,\left(max\,point\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine coordinates
+\begin_inset Formula 
+\begin{align*}
+f\left(\frac{3}{2}\right) & =4\left(\frac{3}{2}\right)^{3}-3\left(\frac{3}{2}\right)^{2}-18\left(\frac{3}{2}\right)-17\\
+ & =-37\frac{1}{4}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(-1\right)=-6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Local min point 
+\begin_inset Formula $\left(\frac{3}{2},-37\frac{1}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Local max point: 
+\begin_inset Formula $\left(-1,-6\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine concave up and down intervals
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find inflection point
+\begin_inset Formula 
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} & =0\\
+24x-6 & =0\\
+x & =\frac{6}{24}\\
+x & =\frac{1}{4}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\frac{1}{4}\right)=-21\frac{5}{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inflection point: 
+\begin_inset Formula $\left(\frac{1}{4},-21\frac{5}{8}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Concave down intervals: 
+\begin_inset Formula $\left(-\infty,\frac{1}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Concave up intervals: 
+\begin_inset Formula $\left(\frac{1}{4},+\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sketch the curve
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/pyq201709-q3iii.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Integrals
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Evaluate definite integrals to 
+\series bold
+3 decimal places.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{1}\frac{xdx}{\left(x+2\right)\left(x+3\right)}$
+\end_inset
+
+(Partial fractions)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve partial fractions
+\begin_inset Formula 
+\begin{align*}
+\frac{x}{\left(x+2\right)\left(x+3\right)} & =\frac{A}{\left(x+2\right)}+\frac{B}{\left(x+3\right)}\\
+x & =A\left(x+3\right)+B\left(x+2\right)\\
+A\left(x+3\right)+B\left(x+2\right)-x & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(-3+3\right)+B\left(-3+2\right)-\left(-3\right) & =0\\
+-B+3 & =0\\
+B & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\left(-2+3\right)+B\left(-2+2\right)-\left(-2\right) & =0\\
+-A & =-2\\
+A & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find equation
+\begin_inset Formula 
+\[
+\frac{x}{\left(x+2\right)\left(x+3\right)}=\frac{2}{x+2}+\frac{3}{x+3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differentiate
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}\frac{xdx}{\left(x+2\right)\left(x+3\right)} & =\int_{0}^{1}\left(\frac{2}{x+2}+\frac{3}{x+3}\right)dx\\
+ & =\int_{0}^{1}\frac{2}{x+2}dx+\int_{0}^{1}\frac{3}{x+3}dx\\
+ & =2\int_{0}^{1}\frac{1}{x+2}dx+3\int_{0}^{1}\frac{1}{x+3}dx\\
+\int_{0}^{1}\frac{xdx}{\left(x+2\right)\left(x+3\right)} & =2\ln\left(x+2\right)+3\ln\left(x+3\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{1}x^{2}\sin\left(3x\right)dx$
+\end_inset
+
+ (Integration by parts)
+\begin_inset Formula 
+\begin{align*}
+u & =x^{2}\\
+v' & =\sin\left(3x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u'=2x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v & =\int\sin\left(3x\right)\\
+v & =\frac{1}{3}\cos\left(3x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int uv'dx=uv-\int u'v\,dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int x^{2}\sin\left(3x\right)dx & =x^{2}\left(-\frac{1}{3}\cos\left(3x\right)\right)-\int2x\left(-\frac{1}{3}\cos\left(3x\right)\right)dx+c\\
+ & =-\frac{1}{}x^{2}\cos\left(3x\right)+\frac{2}{3}\int x\cos\left(3x\right)dx+c\\
+ & =-\frac{1}{3}x^{2}\cos\left(3x\right)+\frac{2}{3}\int x\cos\left(3x\right)dx+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate by parts again
+\begin_inset Formula 
+\begin{align*}
+u & =x\\
+v' & =\cos\left(3x\right)\\
+u' & =1\\
+v & =\frac{1}{3}\sin\left(3x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int x\cos\left(3x\right)dx & =\frac{1}{3}x\sin\left(3x\right)-\left(\frac{1}{3}\right)\int\sin\left(3x\right)dx\\
+ & =\frac{1}{3}x\sin\left(3x\right)-\frac{1}{3}\left(-\frac{1}{3}\right)\cos3x+c\\
+ & =\frac{1}{3}x\sin\left(3x\right)+\frac{1}{9}\cos3x+c\\
+ & =\frac{1}{9}\left(3\sin3x+\cos3x\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Definite integration (remember radians)
+\begin_inset Formula 
+\begin{align*}
+\int x^{2}\sin\left(3x\right)dx & =-\frac{1}{3}x^{2}\cos\left(3x\right)+\frac{2}{3}\left(\frac{1}{9}\left(3\sin3x+\cos3x\right)\right)+c\\
+ & =-\frac{1}{3}x^{2}\cos\left(3x\right)+\frac{2}{27}\cos3x+\frac{2}{9}x\sin3x+c
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}x^{2}\sin\left(3x\right)dx & =\left[-\frac{1}{3}x^{2}\cos\left(3x\right)+\frac{2}{27}\cos3x+\frac{2}{9}x\sin3x\right]_{0}^{1}\\
+ & =0.21395\\
+ & \approx0.214
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Trapezium rule, approximate 
+\begin_inset Formula $\int_{0}^{1}\left(e^{x^{2}}+3\right)dx$
+\end_inset
+
+, 
+\begin_inset Formula $n=5$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta x=\frac{1-0}{5}=0.2$
+\end_inset
+
+, 2.d.p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{1}\left(e^{x^{2}}+3\right)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)=e^{x^{2}}+3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.010
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.041
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.174
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.433
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.896
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.718
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17.544
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.728
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find trapezium rule approximate
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}\left(e^{x^{2}}+3\right)dx & =\frac{0.2}{2}\left[9.728+2\left(17.544\right)\right]\\
+ & =4.482\\
+ & \approx4.482
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Simpson's Rule estimate, approximate 
+\begin_inset Formula $\int_{3}^{6}\sqrt{5x^{2}-2}dx$
+\end_inset
+
+, 
+\begin_inset Formula $n=6$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta x=\frac{6-3}{6}=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)=5x^{2}-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ [Odd]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ [Even]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.557
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.697
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.831
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.962
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.09
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.216
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.341
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.898
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29.875
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.921
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Estimate
+\begin_inset Formula 
+\begin{align*}
+\int_{3}^{6}\sqrt{5x^{2}-2}dx & =\frac{0.5}{3}\left(19.898+4\left(29.875\right)+2\left(19.921\right)\right)\\
+ & \approx29.87
+\end{align*}
 
 \end_inset
 
