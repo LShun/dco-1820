@@ -144,7 +144,7 @@ Entities: Customer, Bread Order, Kitchen Bakr, Delivery Staff
 
 #### Part 1
 
-One type of code is **block sequence code**. 
+One type of code is
 
 - **Sequence code.** 
 - By using sequence code, the system can automatically assign a code for every new customer, reducing the user input from the staff. This reduces the possibility of user input errors.
