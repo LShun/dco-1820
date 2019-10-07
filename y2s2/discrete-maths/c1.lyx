@@ -1,0 +1,725 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Discrete Maths C1
+\end_layout
+
+\begin_layout Section
+Notes
+\end_layout
+
+\begin_layout Enumerate
+If there are 
+\begin_inset Formula $=$
+\end_inset
+
+ signs, 100% of the time they are actually 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ signs.
+ But 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ signs are much more tedious to type that 
+\begin_inset Formula $=$
+\end_inset
+
+ signs (5 keystrokes vs 1 keystroke).
+ Therefore, I tend to use them interchangably.
+ But in your answers, you should write 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ instead of 
+\begin_inset Formula $=$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Example 11
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\sim\left(\left(p\lor q\right)\land r\right)\lor\sim q\right) & \equiv\sim\sim\left(\left(p\lor q\right)\land r\right)\lor\sim\sim q\\
+ & \equiv\left(\left(p\lor q\right)\land r\right)\lor q\\
+ & \equiv\left(p\lor q\right)\land r\lor q\\
+ & \equiv\left(p\lor q\right)\lor q\land r\\
+ & \equiv q\land r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 18
+\begin_inset Formula 
+\begin{align*}
+s & =\left(p\land\sim q\right)\lor\left(r\land t\right)\\
+s^{d} & =\left(p\lor\sim q\right)\land\left(r\lor c\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 20 (Disjunctive: Sums of products)
+\begin_inset Formula 
+\begin{align*}
+p\land\left(p\to q\right) & \equiv p\land\left(\sim p\lor q\right)\\
+ & \equiv\boldsymbol{p\land\sim p\lor p\land q}\text{(Can stop here)}\\
+ & \equiv c\lor p\land q\\
+p\land\left(p\to q\right) & \equiv p\land q
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Eliminate, distribute, then 
+\begin_inset Formula $p\land\sim p=c$
+\end_inset
+
+, then 
+\begin_inset Formula $c\lor a=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Notes:
+\begin_inset Formula 
+\[
+p\bar{p}+pq
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Example 21 (Simplified workings)
+\begin_inset Formula 
+\begin{align*}
+\sim\left[\left(p\lor q\right)\leftrightarrow\left(p\land q\right)\right] & =\sim\left[\left(\left(p\lor q\right)\to\left(p\land q\right)\right)\land\left(\left(p\land q\right)\to\left(p\lor q\right)\right)\right]\\
+ & =\sim\left[\left(\sim\left(p\lor q\right)\lor\left(p\land q\right)\right)\land\left(\sim\left(p\land q\right)\lor\left(p\lor q\right)\right)\right]\\
+ & =\sim\left(\sim\left(p\lor q\right)\lor\left(p\land q\right)\right)\lor\sim\left(\sim\left(p\land q\right)\lor\left(p\lor q\right)\right)\\
+ & =\left[\left(p\lor q\right)\land\sim\left(p\land q\right)\right]\lor\left[\left(p\land q\right)\land\sim\left(p\lor q\right)\right]\\
+ & =\left(p+q\right)\bar{\left(pq\right)}+\left(pq\right)\bar{\left(p+q\right)}\\
+ & =p\bar{\left(pq\right)}+q\bar{\left(pq\right)}+p\bar{\left(p+q\right)}+q\bar{\left(p+q\right)}\\
+ & =p\left(\bar{p}+\bar{q}\right)+q\left(\bar{p}+\bar{q}\right)+p\left(\bar{p}\bar{q}\right)+q\left(\bar{p}\bar{q}\right)\\
+ & =c+p\bar{q}+\bar{p}q+c+c+c\\
+ & =p\bar{q}+\bar{p}q
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 22 (Conjunctive normal form)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\land\left(p\to q\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p\land\left(p\to q\right) & =p\land\left(\sim p\lor q\right)\\
+ & =p\left(\bar{p}q\right)\text{Can stop here}\\
+ & =p\bar{p}+pq\\
+ & =c+pq\\
+ & =pq
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\sim\left(p\lor q\right)\leftrightarrow\left(p\land q\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(p\lor q\right)\leftrightarrow\left(p\land q\right) & =\left[\sim\left(p\lor q\right)\to\left(p\land q\right)\right]\land\left[\left(p\land q\right)\to\sim\left(p\lor q\right)\right]\\
+ & =\left[\left(p\lor q\right)\lor\left(p\land q\right)\right]\land\left[\sim\left(p\land q\right)\lor\sim\left(p\lor q\right)\right]\\
+ & =\left[\left(p\lor q\right)\lor\left(p\land q\right)\right]\land\left[\left(\sim p\lor\sim q\right)\lor\left(\sim p\land\sim q\right)\right]\\
+ & =\left(p+q+pq\right)\left(\bar{p}+\bar{q}+\bar{p}\bar{q}\right)\\
+ & =\left(p+q\right)\left(\bar{p}+\bar{q}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 23 (CNF + 
+\begin_inset Formula $t$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+q\lor\left(p\land\sim q\right)\lor\left(\sim p\land\sim q\right) & =q\lor\left(p\land\sim q\right)\lor\left(\sim p\land\sim q\right)\\
+ & =q+p\bar{q}+\bar{p}\bar{q}\\
+ & =q+\bar{q}\left(p+\bar{p}\right)\\
+ & =q+\bar{q}\left(1\right)\\
+ & =q+\bar{q}\\
+ & =1\\
+ & =t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Extra: Minterms and Maxterms
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\lor\left(q\land r\right)=p+\left(qr\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Minterms:
+\begin_inset Formula 
+\begin{align*}
+F & =p+qr\\
+ & =p\left(q+\bar{q}\right)\left(r+\bar{r}\right)+\left(p+\bar{p}\right)qr\\
+ & =\left(pq+p\bar{q}\right)\left(r+\bar{r}\right)+pqr+\bar{p}qr\\
+ & =pqr+p\bar{q}r+pq\bar{r}+p\bar{q}\bar{r}+\cancel{pqr}+\bar{p}qr\\
+ & =pqr+p\bar{q}r+pq\bar{r}+p\bar{q}\bar{r}+\cancel{pqr}+\bar{p}qr
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Or even DeMorgan the DeMorgan still perfectly acceptable
+\begin_inset Formula 
+\begin{align*}
+p\lor\left(q\land r\right) & =p+\left(qr\right)\\
+ & =\overline{\overline{p+\left(qr\right)}}\\
+ & =\overline{\bar{p}\cdot\bar{qr}}\\
+ & =\overline{\bar{p}\cdot\left(\bar{q}+\bar{r}\right)}\\
+ & =\overline{\bar{p}\bar{q}+\bar{p}\bar{r}}\\
+ & =\overline{\bar{p}\bar{q}+\bar{p}\bar{r}}\\
+ & =\overline{\bar{p}\bar{q}}\cdot\overline{\bar{p}\bar{r}}\\
+\boldsymbol{p\lor\left(q\land r\right)} & \boldsymbol{=\left(p+q\right)\cdot\left(p+r\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Example 24 (Principal Disjunctive normal forms/ sum of products Canonical
+ form)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\to q\equiv\bar{p}\bar{q}+\bar{p}q+pq
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\lor q\equiv\bar{p}q+p\bar{q}+pq
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sim\left(p\land q\right)\equiv p\bar{q}+\bar{p}q+\bar{p}\bar{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 26
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\lor\left(p\land q\right)\Leftrightarrow p$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Easiest way
+\begin_inset Formula 
+\begin{align*}
+LHS:p\lor\left(p\land q\right) & =p+pq\\
+ & =p\left(1+q\right);1+q=t/1\\
+ & =p\Leftrightarrow RHS
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Alternatively
+\begin_inset Formula 
+\begin{align*}
+LHS:p\lor\left(p\land q\right) & =p\left(q+\bar{q}\right)+pq\\
+ & =pq+p\bar{q}+pq\\
+ & =p\bar{q}+pq
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+RHS:p= & p\left(q+\bar{q}\right)\\
+= & pq+p\bar{q}\\
+= & p\bar{q}+pq\\
+= & LHS
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+LHS\Leftrightarrow RHS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\lor\left(\sim p\land q\right)\Leftrightarrow p\lor q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solution
+\begin_inset Formula 
+\begin{align*}
+LHS:p\lor\left(\sim p\land q\right)= & p+\left(\bar{p}q\right)\\
+= & p\left(q+\bar{q}\right)+\left(\bar{p}q\right)\\
+= & pq+p\bar{q}+\bar{p}q
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+RHS:p\lor q= & p+q\\
+= & p\left(q+\bar{q}\right)+q\left(p+\bar{p}\right)\\
+= & pq+p\bar{q}+\cancel{qp}+\bar{p}q\\
+= & pq+p\bar{q}+\bar{p}q\\
+= & LHS
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+LHS\Leftrightarrow RHS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Example 27
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+p\to\left[\left(p\to q\right)\land\sim\left(\sim q\lor\sim p\right)\right]\equiv & \sim p\lor\left[\left(\sim p\lor q\right)\land\sim\left(\sim q\lor\sim p\right)\right]\\
+\equiv & \sim p\lor\left[\left(\sim p\lor q\right)\land\sim\left(\sim q\lor\sim p\right)\right]\\
+\equiv & \sim p\lor\left[\left(\sim p\lor q\right)\land\left(q\land p\right)\right]\\
+\equiv & \bar{p}+\left[\left(\bar{p}+q\right)\left(pq\right)\right]\\
+\equiv & \bar{p}+\bar{p}p+\bar{p}q+pq+qq\\
+\equiv & \bar{p}+\bar{p}q+pq+q\\
+\equiv & \bar{p}\left(q+\bar{q}\right)+\bar{p}q+pq+q\left(p+\bar{p}\right)\\
+\equiv & \bar{p}q+\bar{p}\bar{q}+\cancel{\bar{p}q}+pq+\cancel{pq}+\cancel{\bar{p}q}\\
+\equiv & pq+\bar{p}q+\bar{p}\bar{q}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 28
+\end_layout
+
+\begin_layout Standard
+Let A represent 
+\begin_inset Formula $(\sim p\to r)\land(q\leftrightarrow p)$
+\end_inset
+
+.
+ Obtain the pcnf of A, and of ~A.
+ Deduce the pdnf of A.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\equiv\left(\sim p\to r\right)\land\left(q\leftrightarrow p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Obtain PCNF of 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & \equiv\left(p\lor r\right)\land\left(\left(q\to p\right)\land\left(p\to q\right)\right)\\
+ & \equiv\left(p\lor r\right)\land\left(\left(\sim q\lor p\right)\land\left(\sim p\lor q\right)\right)\\
+ & \equiv\left(p+r\right)\left(\left(\bar{q}+p\right)\left(\bar{p}+q\right)\right)\\
+ & \equiv\left(p+r\right)\left(\bar{q}+p\right)\left(\bar{p}+q\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+PCNF of A
+\begin_inset Formula 
+\begin{align*}
+PCNF_{A} & \equiv\left(p+q\bar{q}+r\right)\left(p+\bar{q}+r\bar{r}\right)\left(\bar{p}+q+r\bar{r}\right)\\
+ & \equiv\left(p+q+r\right)\left(p+\bar{q}+r\right)\cancel{\left(p+\bar{q}+r\right)}\left(p+\bar{q}+\bar{r}\right)\left(\bar{p}+q+r\right)\cdot\\
+ & \quad\left(\bar{p}+q+\bar{r}\right)\\
+ & \equiv\left(p+q+r\right)\left(p+\bar{q}+r\right)\left(p+\bar{q}+\bar{r}\right)\left(\bar{p}+q+r\right)\left(\bar{p}+q+\bar{r}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: for this part, 
+\begin_inset Formula $\left(p+q\bar{q}+r\right)\equiv\left(p+q+r\right)\left(p+\bar{q}+r\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(p+q+r\right)\left(p+\bar{q}+r\right) & \equiv pp+pq+pr+qp+q\bar{q}+qr\\
+ & \quad+pr+\bar{q}r+rr\\
+ & \equiv p+\cancel{pq}+\cancel{pr}+\cancel{pq}+q\bar{q}+qr+\cancel{pr}+\bar{q}r+r\\
+ & \equiv p+q\bar{q}+qr+\bar{q}r+r\\
+ & \left(\text{Note: if \ensuremath{q} is false, \ensuremath{qr} is false. If \ensuremath{r} is false, \ensuremath{\bar{q}r} is false}\right)\\
+ & \equiv p+q\bar{q}+r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+PCNF of 
+\begin_inset Formula $\sim A$
+\end_inset
+
+, according to the lecture notes, it is stated that the principal disjunctive
+ (conjunctive) normal form of ~A will consist of the 
+\series bold
+disjunctive (conjunctive) of the remaining minterms (maxterms) which do
+ not appear in the principal disjunctive (conjunctive) normal form of A
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Remember your Analysis & Design of IS? There's a total combinations formula
+ for boolean expressions where 
+\begin_inset Formula 
+\begin{align*}
+Total\,combinations & =2^{n}combinations\\
+ & \text{where \ensuremath{n} is the number of combinations}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+There should be 
+\begin_inset Formula $2^{3}=8$
+\end_inset
+
+ combinations.
+ Or 
+\begin_inset Formula $8-5=3$
+\end_inset
+
+ remaining combinations
+\begin_inset Formula 
+\[
+\sim A_{PCNF}\equiv\left(p+q+\bar{r}\right)\left(\bar{p}+\bar{q}+r\right)\left(\bar{p}+\bar{q}+\bar{r}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Paragraph
+Example 29
+\end_layout
+
+\begin_layout Enumerate
+PDNF of A
+\begin_inset Formula 
+\[
+A_{PDNF}\equiv\bar{p}\bar{q}r+pq\bar{r}+pqr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+PCNF of A
+\begin_inset Formula 
+\begin{align*}
+A_{PCNF} & \equiv\left(\bar{p}+\bar{q}+\bar{r}\right)\left(p+\bar{q}+r\right)\left(p+\bar{q}+\bar{r}\right)\left(\bar{p}+q+r\right)\left(p+q+\bar{r}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+To understand minterms and maxterms:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Minterms
+\series default
+: If one term is true, the entire expression is true.
+ So the 'minimal' terms are required for true.
+ Therefore, we form the equations from terms that 'evaluates to true'.
+ Because if we get 1 true, even if everything else is false, we get true.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Maxterms
+\series default
+: All terms must be true, for the entire expression to be true.
+ Hence the 'max' terms are required.
+ Therefore, we form the equations from terms that 'evaluates to false'.
+ Because we must get all true (they are all false), to get true.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(p\bar{q}\bar{r}\right)+\left(p\bar{q}r\right)+\left(pqr\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example 38
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left[\left(P\land\sim Q\right)\lor\left(P\land Q\right)\right]\land Q\left(LHS\right) & \equiv\left(P\bar{Q}+PQ\right)Q\\
+ & \equiv\left(P\bar{Q}Q+PQQ\right)\\
+ & \equiv\left(P+PQ\right)\\
+ & \equiv P\left(1+Q\right)\\
+ & \equiv PQ
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

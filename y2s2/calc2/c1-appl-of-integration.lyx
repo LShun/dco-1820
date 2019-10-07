@@ -1,0 +1,2283 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{tikz, pgfplots}
+\usepgfplotslibrary{fillbetween}
+
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+AAMS3123 Calc II - C1 Application of Integration
+\end_layout
+
+\begin_layout Section
+Area Under a Curve
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Area=\int_{a}^{b}f\left(x\right)dx=\int_{a}^{b}f\left(y\right)dy
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{axis} [xlabel=$x$, ylabel=$f(x)$, grid=major]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		% Draw the graph
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot [blue, line width = 1, smooth, domain=0:5] {2^x};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		% Draw the shaded region under graph
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot [red!20!white, fill, domain=2:3] {2^x} 
+\backslash
+closedcycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+		% Plot the points
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+node [below] at (axis cs: 2,0) {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+node [below] at (axis cs: 3,0) {$b$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{axis} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 1
+\end_layout
+
+\begin_layout Standard
+Find the area bounded by the x-axis, the y-axis, the curve 
+\begin_inset Formula $y=e^{x}$
+\end_inset
+
+ and the line 
+\begin_inset Formula $x=2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{0}^{2}f\left(x\right)dx\\
+ & =\int_{0}^{2}e^{x}dx\\
+ & =\left[e^{x}\right]_{0}^{2}\\
+ & =e^{2}-e^{0}\\
+A & =e^{2}-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 2
+\end_layout
+
+\begin_layout Standard
+Find the area between the curve 
+\begin_inset Formula $x=4-y^{2}$
+\end_inset
+
+ and the y-axis.
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{-2}^{2}4-y^{2}dy\\
+ & =\left[4y-\frac{y^{3}}{3}\right]_{-2}^{2}\\
+ & =\left(4\left(2\right)-\frac{2^{3}}{3}\right)-\left(4\left(-2\right)-\frac{\left(-2\right)^{3}}{3}\right)\\
+ & =\left[4\left(2\right)-\frac{2^{3}}{3}\right]-\left[4\left(-2\right)-\frac{\left(-2\right)^{3}}{3}\right]\\
+ & =10\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 3
+\end_layout
+
+\begin_layout Standard
+Find the area enclosed between the curve 
+\begin_inset Formula $y=x\left(x-1\right)\left(x-2\right)$
+\end_inset
+
+ and the x-axis
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{axis} [xlabel=$x$, ylabel=$f(x)$, grid=major]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		% Draw the graph
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot [blue, line width = 1, smooth, domain=0:2] {x*(x-1)*(x-2)};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{axis} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+y & =x\left(x-1\right)\left(x-2\right)\\
+ & =\left(x^{2}-x\right)\left(x-2\right)\\
+ & =\left(x^{3}-2x^{2}-x^{2}+2x\right)\\
+ & =x^{3}-3x^{2}+2x
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{0}^{1}f\left(x\right)dx-\int_{1}^{2}f\left(x\right)dx\\
+ & =\int_{0}^{1}x\left(x-1\right)\left(x-2\right)dx-\int_{1}^{2}x\left(x-1\right)\left(x-2\right)dx\\
+ & =\int_{0}^{1}x\left(x-1\right)\left(x-2\right)dx-\int_{1}^{2}x\left(x-1\right)\left(x-2\right)dx\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 4 (Area between two curves)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Area=\int_{a}^{b}\left[f\left(x\right)-g\left(x\right)\right]dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculate the area enclosed between the curves 
+\begin_inset Formula $y=2x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $y^{2}=4x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find the intersections
+\begin_inset Formula 
+\begin{align*}
+y & =2x^{2}\\
+y & =\sqrt{4x}\\
+ & =2\sqrt{x}\\
+2x^{2} & =2\sqrt{x}\\
+4x^{4} & =4x\\
+x^{4} & =x\\
+x^{4}-x & =0\\
+x\left(x^{3}-1\right) & =0\\
+x & =0,x=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Check which one is above, when 
+\begin_inset Formula $x=\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =2\left(\frac{1}{2}\right)^{2}\\
+ & =\frac{1}{4}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =2\sqrt{\frac{1}{2}}\\
+ & =1.414
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right)=y & =2\sqrt{x}\\
+g\left(x\right)=y & =2x^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+They did not go below the 
+\begin_inset Formula $y-axis$
+\end_inset
+
+, therefore, we can calculate immediately
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{0}^{1}2\sqrt{x}-2x^{2}dx\\
+A & =\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 5
+\end_layout
+
+\begin_layout Standard
+Find the total area of the region between 
+\begin_inset Formula $y=4x-x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $y=x$
+\end_inset
+
+ from 
+\begin_inset Formula $x=0$
+\end_inset
+
+ to 
+\begin_inset Formula $x=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find intersection
+\begin_inset Formula 
+\begin{align*}
+4x-x^{2} & =x\\
+x^{2}+x-4x & =0\\
+x^{2}-3x & =0\\
+x\left(x-3\right) & =0\\
+x & =0,3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Check which on top
+\begin_inset Formula 
+\begin{align*}
+y|_{x=1} & =4\left(1\right)-1\\
+ & =3
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y|_{x=1}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=4x-x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x\right)=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integral
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{0}^{3}f\left(x\right)-g\left(x\right)dx\\
+ & =\int_{0}^{4}4x-x^{2}-xdx\\
+ & =\int_{0}^{4}3x-x^{2}dx\\
+ & =24-\frac{64}{3}\\
+A & =\frac{8}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 6
+\end_layout
+
+\begin_layout Standard
+The point of intersection in the positive quadrant of the graph of 
+\begin_inset Formula $y=4x$
+\end_inset
+
+ and the graph of 
+\begin_inset Formula $y=\frac{1}{x}$
+\end_inset
+
+ is A, and B is the point of intersection of the graph of 
+\begin_inset Formula $y=\frac{1}{x}$
+\end_inset
+
+ with the graph of 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+.
+ Find the area of the region OAB bounded by portions of the graphs, where
+ O is the origin.
+\end_layout
+
+\begin_layout Enumerate
+Find the intersection points
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Intersection point, A
+\begin_inset Formula 
+\begin{align*}
+4x & =\frac{1}{x}\\
+4x^{2} & =1\\
+x & =\sqrt{\frac{1}{4}}\\
+ & =\pm\frac{1}{2}\\
+ & =\frac{1}{2}\left(positive\,quadrant\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y|_{x=\frac{1}{2}} & =4\left(\frac{1}{2}\right)\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\left(\frac{1}{2},2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Intersection point, B
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{x} & =x^{2}\\
+x^{3} & =1\\
+x & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y|_{x=1} & =\frac{1}{1}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\left(1,1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Draw the graph
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c1e6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the area within
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{0}^{0.5}\left(4x-x^{2}\right)dx+\int_{0.5}^{1}\left(\frac{1}{x}-x^{2}\right)dx\\
+ & =0.85981
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Parametric Equations
+\begin_inset Formula 
+\[
+A=\int_{\alpha}^{\beta}g\left(t\right)f'\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Explanation: Cut the area under the graph into tiny rectangles.
+ For each tiny rectangle, multiply the 
+\begin_inset Formula $y/f\left(x\right)$
+\end_inset
+
+ value with the small change in 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta x\approx f'\left(t\right)$
+\end_inset
+
+ to get the area of every individual rectangle.
+ Then, add them all up to get the total area.
+\end_layout
+
+\begin_layout Subsection
+Example 7 (Parametric Equations)
+\end_layout
+
+\begin_layout Standard
+A curve has parametric equation 
+\begin_inset Formula $x=at^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $y=2at$
+\end_inset
+
+.Find the area bounded by the curve, the 
+\begin_inset Formula $x-axis$
+\end_inset
+
+, and the coordinates at 
+\begin_inset Formula $t=1$
+\end_inset
+
+ and 
+\begin_inset Formula $t=2$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{1}^{2}2at\cdot\frac{d}{dt}\left[at^{2}\right]dt\\
+ & =\int_{1}^{2}2at\cdot2at\,dt\\
+ & =\int_{1}^{2}4a^{2}t^{2}dt\\
+ & =a^{2}\int_{1}^{2}4t^{2}dt\\
+ & =\frac{28}{3}a^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 8
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $x=a\sin\theta$
+\end_inset
+
+, 
+\begin_inset Formula $y=b\cos\theta$
+\end_inset
+
+, find the area under the curve between 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta=\pi$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & =\int_{0}^{\pi}b\cos\theta\cdot\frac{d}{d\theta}\left[a\sin\theta\right]d\theta\\
+ & =\int_{0}^{\pi}b\cos\theta\cdot\frac{d}{d\theta}\left[a\sin\theta\right]d\theta\\
+ & =\int_{0}^{\pi}b\cos\theta\cdot\frac{d}{d\theta}\left[a\sin\theta\right]d\theta\\
+ & =\int_{0}^{\pi}b\cos\theta\cdot a\cos\theta d\theta\\
+ & =ab\int_{0}^{\pi}\cos^{2}\theta d\theta\\
+ & =ab\int_{0}^{\pi}\cos^{2}\theta d\theta\\
+ & =\frac{\pi}{2}ab
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Volume of Revolution (Cylindrical Shells Method)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{a}^{b}\pi\left[f\left(x\right)\right]^{2}dx\\
+ & =\int_{a}^{b}\pi y^{2}dx\\
+ & =\int_{c}^{d}\pi x^{2}dy
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Explaination:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Comparing it to calculatig the volume of a cylinder, from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cylinder: 
+\begin_inset Formula $V=\int_{a}^{b}\pi r^{2}dx$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For the first equation, remember that 
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+ is the area of a circle.
+ So, how do you find, the volume of a cylinder? Easy, you take the area
+ of the circle 
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+, multiplied by the height of the circle, 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ This means that if the cylinder is 1000 units long, you will multiply by
+ 1000, hence adding 1000 cylinders, with area of 
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+ together.
+ This is the same thing, but instead of a cylinder, you now have a 
+\begin_inset Quotes eld
+\end_inset
+
+curvy cylinder
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Because the area of the circle constantly changes, you have to recompute
+ the area of the circle at every point.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The formula is simply saying, add together (
+\begin_inset Formula $\int$
+\end_inset
+
+ ) all the circles 
+\begin_inset Formula $\pi\left[f\left(x\right)\right]^{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is the radius of the circle, from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+ (
+\begin_inset Formula $\int_{a}^{b}$
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example 1
+\end_layout
+
+\begin_layout Standard
+The area between a curve 
+\begin_inset Formula $y=x\left(2-x\right)$
+\end_inset
+
+, the x-axis, the lines 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=2$
+\end_inset
+
+ is rotated about the x-axis through 360
+\begin_inset Formula $\text{°}$
+\end_inset
+
+ , find the volume generated.
+\begin_inset Formula 
+\begin{align*}
+y & =x\left(2-x\right)\\
+V & =\pi\int_{0}^{2}\left[x\left(2-x\right)\right]^{2}dx\\
+ & =\pi\int_{0}^{2}\left[x\left(2-x\right)\right]^{2}dx\\
+ & =\pi\left(\frac{32}{3}-16+\frac{32}{5}\right)\\
+ & =\frac{16}{15}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 2
+\end_layout
+
+\begin_layout Standard
+Find the volume generated when the region bounded by 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+, the y-axis and 
+\begin_inset Formula $y=1$
+\end_inset
+
+ is rotated about the y-axis.
+ 
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{0}^{1}\pi\left[y^{\frac{1}{2}}\right]^{2}dy\\
+ & =\int_{0}^{1}\pi ydy\\
+ & =\pi\int_{0}^{1}y\,dy\\
+ & =\frac{1}{2}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 3
+\end_layout
+
+\begin_layout Standard
+Error 404: Not found.
+ No, seriously, its missing from the notes.
+ So I'll leave the answer for your imagination.
+\end_layout
+
+\begin_layout Subsection
+Example 3
+\end_layout
+
+\begin_layout Standard
+Find the volume of the solid generated by rotating the region bounded by
+ the curve with equation 
+\begin_inset Formula $y=\frac{1}{2}\left(e^{x}+e^{-x}\right)$
+\end_inset
+
+, the 
+\begin_inset Formula $x-axis$
+\end_inset
+
+ and the lines 
+\begin_inset Formula $x=\pm1$
+\end_inset
+
+ about the 
+\begin_inset Formula $x-axis$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{-1}^{1}\pi\left[\frac{1}{2}\left(e^{x}+e^{-x}\right)\right]^{2}dx\\
+ & =\pi\int_{-1}^{1}\frac{1}{4}\left(e^{x}+e^{-x}\right)^{2}dx\\
+ & =\pi\frac{4e^{2}-1+e^{4}}{4e^{2}}\\
+ & =2.813\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 5
+\end_layout
+
+\begin_layout Enumerate
+Extra Notes: If area is bounded by 2 curves 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $y=g\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+V=\int_{a}^{b}\pi\left[\left(f\left(x\right)\right)^{2}-\left(g\left(x\right)\right)^{2}\right]dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{c}^{d}\pi\left[f\left(y\right)^{2}-\left(g\left(y\right)\right)^{2}\right]dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Explanation: Kinda the same as the previous formula 
+\begin_inset Formula $V=\int_{a}^{b}\pi\left[f\left(x\right)\right]^{2}dx$
+\end_inset
+
+, just now is a little more stuff.
+ Basically, the previous one, in longer form should be 
+\begin_inset Formula 
+\[
+V=\int_{a}^{b}\pi\left[f\left(x\right)\right]^{2}-0^{2}dx
+\]
+
+\end_inset
+
+ but now we don't have the luxury of having another equation with 0 in it.
+\end_layout
+
+\begin_layout Standard
+Calculate the volume obtained by rotating the area enclosed by the curves
+ 
+\begin_inset Formula $y^{2}=4x$
+\end_inset
+
+, and 
+\begin_inset Formula $y=2x^{2}$
+\end_inset
+
+ (i) about the x-axis, (ii) about the y-axis.
+\end_layout
+
+\begin_layout Enumerate
+about the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the intersections
+\begin_inset Formula 
+\begin{align*}
+y^{2} & =4x\\
+y & =\sqrt{4x}\\
+y & =2\sqrt{x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2\sqrt{x} & =2x^{2}\\
+\sqrt{x} & =x^{2}\\
+x & =x^{4}\\
+x^{4}-x & =0\\
+x\left(x^{3}-1\right) & =0\\
+x & =0,x=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Check which one is on top
+\begin_inset Formula 
+\[
+x=\frac{1}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =2\sqrt{\frac{1}{4}}\\
+ & =\pm1\\
+ & =1\left(\text{since we rotate 360 degrees positive or negative doesn't matter}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =2\left(\frac{1}{4}\right)^{2}\\
+ & =2\left(\frac{1}{16}\right)\\
+ & =\frac{1}{8}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =2\sqrt{x}\\
+g\left(x\right) & =2x^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the volume
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}\pi\left[2\sqrt{x}-2x^{2}\right]dx & =\pi\int_{0}^{1}4x-\left(2x^{2}\right)^{2}dx\\
+ & =\pi\frac{6}{5}\\
+ & =\frac{6}{5}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+about the 
+\begin_inset Formula $y-axis$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the intersections (in terms of 
+\begin_inset Formula $y$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{y^{2}}{4}\\
+x^{2} & =\frac{y^{4}}{16}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}=\frac{y}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{y^{4}}{16} & =\frac{y}{2}\\
+y^{4} & =8y\\
+y^{4}-8y & =0\\
+y\left(y^{3}-8\right) & =0\\
+y & =0,2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the volume
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{2}\pi\left[\frac{y^{4}}{16}-\frac{y}{2}\right]dy & =\pi\int_{0}^{2}\left[\frac{y^{4}}{16}-\frac{y}{2}\right]dy\\
+ & =-\frac{3}{5}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Looks like we got negative area, which doesn't sounds right, but this is
+ simply because we mixed up the order, subtracting a bigger number from
+ a smaller number, the actual should be 
+\begin_inset Formula $\frac{3}{5}\pi$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the points of intersection of the curves 
+\begin_inset Formula $y^{2}=x^{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $y^{2}=2-x$
+\end_inset
+
+ and find the volume of the solid generated by rotating the region enclosed
+ by the two curves about the x-axis.
+\end_layout
+
+\begin_layout Enumerate
+Find the points of intersection
+\begin_inset Formula 
+\begin{align*}
+x^{3} & =2-x\\
+x^{3}+x-2 & =0\\
+x & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Remember the region enclosed by two curves ABOUT the x-axis (Now would be
+ a good time to draw out the diagram)
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{0}^{1}\pi x^{3}dx+\int_{1}^{2}\pi\left(2-x\right)dx\\
+ & =\pi\left(\int_{0}^{1}x^{3}dx+\int_{1}^{2}\left(2-x\right)dx\right)\\
+V & =\frac{3}{4}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Notes: Finding volume of parametric equations, with:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=f\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=g\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Same, cylindrical shells method
+\begin_inset Formula 
+\[
+V=\pi\int_{\alpha}^{\beta}\left[g\left(t\right)\right]^{2}f'\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Explanation, in case you're wondering, the original form is this:
+\begin_inset Formula 
+\[
+V=\int_{\alpha}^{\beta}\pi\left[g\left(t\right)\right]^{2}f'\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Remember the 
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+? The 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is just 
+\begin_inset Formula $\pi$
+\end_inset
+
+, the 
+\begin_inset Formula $r$
+\end_inset
+
+ is 
+\begin_inset Formula $g\left(t\right)$
+\end_inset
+
+, which is 
+\begin_inset Formula $y$
+\end_inset
+
+ (since 
+\begin_inset Formula $y=g\left(t\right)$
+\end_inset
+
+), and since 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $y$
+\end_inset
+
+ is essentially the radius of the circle at 
+\begin_inset Formula $x$
+\end_inset
+
+ (drawing a line up 
+\begin_inset Formula $x$
+\end_inset
+
+ till you meet the 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Formula $f'\left(t\right)$
+\end_inset
+
+ is simply the best estimate to the small change in 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+, which is also approximately equal to 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The parametric equations of a curve are 
+\begin_inset Formula $x=3t^{2},y=3t-t^{2}$
+\end_inset
+
+ Find the volume generated when the plane figure bounded by the curve, the
+ x-axis and the coordinates corresponding to 
+\begin_inset Formula $t=0,t=2$
+\end_inset
+
+, rotates about the 
+\begin_inset Formula $x-axis$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+V & =\pi\int_{0}^{2}\left[3t-t^{2}\right]^{2}\frac{d}{dt}\left(3t^{2}\right)dt\\
+ & =\pi\int_{0}^{2}\left[3t-t^{2}\right]^{2}\left(6t\right)dt\\
+ & =\frac{248\pi}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the volume of the solid obtained by rotating the region enclosed by
+ the curves 
+\begin_inset Formula $y=x$
+\end_inset
+
+ and 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ 
+\series bold
+about the line 
+\begin_inset Formula $y=2$
+\end_inset
+
+
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Note: In this case, the entire graph is 
+\begin_inset Quotes eld
+\end_inset
+
+shifted above the x-axis by 2 units
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Therefore, you gotta 
+\begin_inset Quotes eld
+\end_inset
+
+bring it down
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find the intersection point
+\begin_inset Formula 
+\begin{align*}
+x & =x^{2}\\
+x^{2}-x & =0\\
+x\left(x-1\right) & =0\\
+x & =0,x=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Figure out the area
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c1.2e8.png
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{0}^{1}\pi\left[\left(x^{2}-2\right)^{2}-\left(x-2\right)^{2}\right]dx\\
+ & =\frac{8}{15}\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+2.9 Example
+\end_layout
+
+\begin_layout Standard
+Find the volume of the solid obtained by rotating the region enclosed by
+ the curves 
+\begin_inset Formula $y=x$
+\end_inset
+
+ and 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ about the line 
+\begin_inset Formula $x=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find intersection
+\begin_inset Formula 
+\begin{align*}
+x & =x^{2}\\
+x^{2}-x & =0\\
+x\left(x-1\right) & =0\\
+x & =0,1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convert equations to 
+\begin_inset Formula $x=...$
+\end_inset
+
+.
+ Remember, the radius now stretches along the 
+\begin_inset Formula $x-axis$
+\end_inset
+
+ unlike the last question.
+ Therefore, you need to find radius 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+x=y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\sqrt{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the volume.
+ Note: shifted 
+\begin_inset Quotes eld
+\end_inset
+
+down
+\begin_inset Quotes erd
+\end_inset
+
+, so you gotta 
+\begin_inset Quotes eld
+\end_inset
+
+shift back up
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}\pi\left[\left(x-\left(-1\right)\right)^{2}-\left(x-\left(-1\right)\right)^{2}\right]dx & =\pi\int_{0}^{1}\left[\left(\sqrt{y}+1\right)^{2}-\left(y+1\right)^{2}\right]dy\\
+ & =\frac{\pi}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Arc Length Of Curves
+\end_layout
+
+\begin_layout Standard
+A smooth curve with parametric equations 
+\begin_inset Formula $x=f(t)$
+\end_inset
+
+, 
+\begin_inset Formula $y=g(t)$
+\end_inset
+
+, 
+\begin_inset Formula $a\le t\le b$
+\end_inset
+
+, the arc length is 
+\begin_inset Formula 
+\[
+𝐿=\int_{a}^{b}\sqrt{\left(\frac{dx}{dt}\right)^{2}+\left(\frac{dy}{dt}\right)^{2}}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the length of the curve 
+\begin_inset Formula $x=2\cos^{3}\vartheta,y=2\sin^{3}\vartheta$
+\end_inset
+
+ between the points corresponding to 
+\begin_inset Formula $\vartheta=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\vartheta=\frac{\pi}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{d\vartheta} & =2\cdot3\left(\cos\vartheta\right)^{2}\left(-\sin\vartheta\right)\\
+\frac{dx}{d\vartheta} & =-6\cos^{2}\vartheta\sin\vartheta
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{d\vartheta} & =2\cdot3\left(\sin\vartheta\right)^{2}\left(\cos\vartheta\right)\\
+ & =6\sin^{2}\vartheta\cos\vartheta
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L & =\int_{0}^{\frac{\pi}{2}}\sqrt{\left(-6\cos^{2}\vartheta\sin\vartheta\right)^{2}+\left(6\sin^{2}\vartheta\cos\vartheta\right)^{2}}d\vartheta\\
+ & =\int_{0}^{\frac{\pi}{2}}\sqrt{36\cos^{4}\vartheta\sin^{2}\vartheta+36\sin^{4}\vartheta\cos^{2}\vartheta}d\vartheta\\
+ & =\int_{0}^{\frac{\pi}{2}}\sqrt{36\cos^{2}\vartheta\sin^{2}\vartheta\left(\cos^{2}\vartheta+\sin^{2}\vartheta\right)}d\vartheta\\
+ & =\int_{0}^{\frac{\pi}{2}}6\cos\vartheta\sin\vartheta\sqrt{1}d\vartheta\quad\text{Note: }\sin^{2}\theta+\cos^{2}\theta=1\\
+ & =\int_{0}^{\frac{\pi}{2}}3\left(2\cos\vartheta\sin\vartheta\right)d\vartheta\\
+ & =3\int_{0}^{\frac{\pi}{2}}\sin\left(2\vartheta\right)d\vartheta\quad\text{Note:}\text{2\ensuremath{\cos\theta\sin\theta=1}}\\
+ & =3\left[-\frac{1}{2}\cos\left(2\vartheta\right)\right]_{0}^{\frac{\pi}{2}}\\
+ & =3\cdot1\\
+ & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alternatively, substitution rule:
+\begin_inset Formula 
+\begin{align*}
+L & =6\int_{0}^{\frac{\pi}{2}}\cos\vartheta\sin\vartheta d\vartheta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $u=\sin\vartheta$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{d\vartheta} & =\cos\vartheta\\
+du & =\cos\vartheta d\vartheta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u|_{\vartheta=\frac{\pi}{2}}=1,u|_{\vartheta=0}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L & =6\int_{0}^{1}udu\\
+ & =6\cdot\frac{1}{2}\\
+L & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the length of the curve 
+\begin_inset Formula $x=\vartheta-\sin\vartheta$
+\end_inset
+
+, 
+\begin_inset Formula $y=1-\cos\vartheta$
+\end_inset
+
+ between ....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{d\vartheta} & =1-\cos\vartheta\\
+\frac{dy}{d\vartheta} & =-(-\sin\vartheta)\\
+ & =\sin\vartheta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula 
+\begin{align*}
+L & =\int_{0}^{2\pi}\sqrt{\left(\frac{dx}{d\vartheta}\right)^{2}+\left(\frac{dy}{d\vartheta}\right)^{2}}d\vartheta\\
+ & =\int_{a}^{b}\sqrt{\left(1-\cos\vartheta\right)^{2}+\left(\sin\vartheta\right)^{2}}d\vartheta\\
+ & =\int_{a}^{b}\sqrt{1-2\cos\vartheta+\cos^{2}\vartheta+\sin^{2}\vartheta}d\vartheta\\
+ & =\int_{a}^{b}\sqrt{1-2\cos\vartheta+1}d\vartheta\\
+ & =\int_{0}^{2\pi}\sqrt{2-2\cos\vartheta}d\vartheta\\
+ & =\int_{0}^{2\pi}\sqrt{2\left(1-\cos\vartheta\right)}d\vartheta\\
+ & =\int_{0}^{2\pi}\sqrt{2}\sqrt{1-\cos\vartheta}d\vartheta\\
+ & =\sqrt{2}\int_{0}^{2\pi}\sqrt{1-\cos\vartheta}d\vartheta\\
+ & =\sqrt{2}\int_{0}^{2\pi}\sqrt{2\sin^{2}\left(\frac{\vartheta}{2}\right)}d\vartheta\\
+ & =\sqrt{2}\int_{0}^{2\pi}\sqrt{2}\sqrt{\sin^{2}\left(\frac{\vartheta}{2}\right)}d\vartheta\\
+ & =2\int_{0}^{2\pi}\left|\sin\left(\frac{\vartheta}{2}\right)\right|d\vartheta\\
+ & =2\int_{0}^{2\pi}\sin\left(\frac{\vartheta}{2}\right)d\vartheta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=\frac{\vartheta}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{d\vartheta} & =\frac{1}{2}\\
+du & =\frac{1}{2}d\vartheta\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find endpoints
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $\vartheta=2\pi$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =\frac{2\pi}{2}\\
+ & =\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitution
+\begin_inset Formula 
+\begin{align*}
+L & =2\int_{0}^{2\pi}\sin\left(\frac{\vartheta}{2}\right)d\vartheta\\
+ & =2\int_{0}^{\pi}\sin u\,2du\\
+ & =4\int_{0}^{\pi}\sin u\,du\\
+ & =4\left(-\cos\pi+\cos0\right)\\
+ & =4\left(1+1\right)\\
+ & =8
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Subsubsection
+Notes (Length of a curve, 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+L & =\int_{a}^{b}\sqrt{1+\left(\frac{dy}{dx}\right)^{2}}dx\\
+L & =\int_{a}^{b}\sqrt{1+\left(\frac{dx}{dy}\right)^{2}}dy
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the length of the curve 
+\begin_inset Formula $y^{2}=x^{3}$
+\end_inset
+
+ between 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=4$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+y & =x^{\frac{3}{2}}\\
+L & =\int_{0}^{4}\sqrt{1+\left(\frac{3}{2}x^{\frac{1}{2}}\right)^{2}}dx\\
+ & =\int_{0}^{4}\sqrt{1+\frac{9}{4}x}dx\\
+ & =\int_{0}^{4}\sqrt{1+\frac{9}{4}x}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u-substitution$
+\end_inset
+
+, 
+\begin_inset Formula $u=1+\frac{9}{4}x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =\frac{9}{4}\\
+\frac{4}{9}du & =dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find endpoints
+\begin_inset Formula 
+\begin{align*}
+u|_{x=4} & =1+\frac{9}{4}\left(4\right)\\
+ & =1+9\\
+ & =10
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u|_{x=0} & =1+\frac{9}{4}\left(0\right)\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find new equation
+\begin_inset Formula 
+\begin{align*}
+L & =\int_{0}^{4}\sqrt{1+\frac{9}{4}x}dx\\
+ & =\int_{1}^{10}\sqrt{u}\frac{4}{9}du\\
+ & =\frac{4}{9}\int_{1}^{10}u^{\frac{1}{2}}du\\
+L & =\frac{4\left(20\sqrt{10}-2\right)}{27}\\
+L & \approx9.073
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the length of the curve 
+\begin_inset Formula $y=\frac{2}{3}\left(x^{2}+1\right)^{\frac{3}{2}}$
+\end_inset
+
+ between 
+\begin_inset Formula $x=1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=4$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{2}{3}\cdot\frac{3}{2}\left(x^{2}+1\right)^{\frac{1}{2}}\cdot2x\\
+ & =2x\left(x^{2}+1\right)^{\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+L & =\int_{1}^{4}ds\\
+ & =\int_{1}^{4}\sqrt{1+\left(\frac{dy}{dx}\right)^{2}}dx\\
+ & =\int_{1}^{4}\sqrt{1+4x^{2}\left(x^{2}+1\right)}dx\\
+ & =\int_{1}^{4}\sqrt{1+4x^{4}+4x^{2}}dx\\
+ & =\int_{1}^{4}\sqrt{4x^{4}+4x^{2}+1}dx\\
+ & =\int_{1}^{4}\sqrt{\left(2x^{2}+1\right)^{2}}dx\\
+ & =\int_{1}^{4}2x^{2}+1dx\\
+L & =45
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Surface Area of Revolution
+\end_layout
+
+\begin_layout Subsubsection
+Formulas
+\end_layout
+
+\begin_layout Standard
+These formulas, come from the formula to calculuate the surface area of
+ frustums, a.k.a.
+ 
+\begin_inset Formula $2\pi rl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=f\left(x\right),a\le x\le b$
+\end_inset
+
+.
+ About 
+\begin_inset Formula $x-axis$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{a}^{b}y\sqrt{1+\left(\frac{dy}{dx}\right)^{2}}dx\\
+S & =2\pi\int_{a}^{b}y\left(t\right)\sqrt{\left(\frac{dy}{dt}\right)^{2}+\left(\frac{dx}{dt}\right)^{2}}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=g\left(y\right),a\le y\le b$
+\end_inset
+
+.
+ About 
+\begin_inset Formula $y-axis$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{a}^{b}x\sqrt{1+\left(\frac{dx}{dy}\right)^{2}}dy\\
+S & =2\pi\int_{a}^{b}x\left(t\right)\sqrt{\left(\frac{dy}{dt}\right)^{2}+\left(\frac{dx}{dt}\right)^{2}}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the area generated when the arc of the curve 
+\begin_inset Formula $y=\sqrt{x}$
+\end_inset
+
+ between 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=4$
+\end_inset
+
+ rotates about the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{1}{2}x^{-\frac{1}{2}}\\
+ & =\frac{1}{2x^{\frac{1}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{0}^{4}\sqrt{x}\sqrt{1+\left(\frac{1}{2x^{\frac{1}{2}}}\right)^{2}}dx\\
+ & =2\pi\int_{0}^{4}\sqrt{x}\sqrt{1+\frac{1}{4x}}dx\\
+ & =2\pi\int_{0}^{4}\sqrt{x+\frac{1}{4}}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=x+\frac{1}{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+du=dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find endpoints
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u|_{x=0}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u|_{x=4}=4+\frac{1}{4}=4\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Make new equation
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{\frac{1}{4}}^{\frac{17}{4}}u^{\frac{1}{2}}du\\
+ & =\frac{\pi\left(17\cdot17^{\frac{1}{2}}-1\right)}{6}\\
+ & \approx11.515\pi\,unit^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the area generated when the arc of the curve 
+\begin_inset Formula $y^{2}=x$
+\end_inset
+
+ between 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=2$
+\end_inset
+
+ rotates about the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+ (Note: same as above question except different bounds)
+\end_layout
+
+\begin_layout Enumerate
+Find endpoints
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u|_{x=0}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u|_{x=2}=2+\frac{1}{4}=\frac{9}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Make new equation
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{\frac{1}{4}}^{\frac{9}{4}}u^{\frac{1}{2}}du\\
+ & =\frac{13\pi}{3}\\
+ & =4\frac{1}{3}\pi\,unit^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the surface area generated when the arc of the curve 
+\begin_inset Formula $y=3t^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $x=3t-t^{3}$
+\end_inset
+
+ between 
+\begin_inset Formula $t=0$
+\end_inset
+
+ and 
+\begin_inset Formula $t=4$
+\end_inset
+
+ rotates about the x-axis through 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dt} & =6t\\
+\frac{dx}{dt} & =3-3t^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{a}^{b}y\left(t\right)\sqrt{\left(\frac{dy}{dt}\right)^{2}+\left(\frac{dx}{dt}\right)^{2}}dt\\
+ & =2\pi\int_{a}^{b}3t^{2}\sqrt{\left(6t\right)^{2}+\left(3-3t^{2}\right)^{2}}dt\\
+ & =2\pi\int_{a}^{b}3t^{2}\sqrt{36t^{2}+9t^{4}-18t^{2}+9}dt\\
+ & =2\pi\int_{a}^{b}3t^{2}\sqrt{9t^{4}+18t^{2}+9}dt\\
+ & =2\pi\int_{a}^{b}3t^{2}\sqrt{9\left(t^{4}+2t^{2}+1\right)}dt\\
+ & =2\pi\int_{a}^{b}3t^{2}\sqrt{9\left(t^{2}+1\right)^{2}}dt\\
+ & =2\pi\int_{a}^{b}9t^{2}\left(t^{2}+1\right)dt\\
+ & =18\pi\int_{a}^{b}t^{4}+t^{2}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=0,b=4$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S & =18\pi\int_{0}^{4}t^{4}+t^{2}dt\\
+ & =\frac{20352\pi}{5}\\
+ & =4070.4\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
