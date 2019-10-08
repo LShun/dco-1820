@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -125,14 +116,16 @@ If there are
 .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 11
+\end_layout
+
+\begin_layout LyX-Code
 \begin_inset Formula 
 \begin{align*}
-\sim\left(\sim\left(\left(p\lor q\right)\land r\right)\lor\sim q\right) & \equiv\sim\sim\left(\left(p\lor q\right)\land r\right)\lor\sim\sim q\\
+\sim\left(\sim\left(\left(p\lor q\right)\land r\right)\lor\sim q\right) & \equiv\sim\left(\left(p\lor q\right)\land r\right)\lor\sim\sim q\\
  & \equiv\left(\left(p\lor q\right)\land r\right)\lor q\\
  & \equiv\left(p\lor q\right)\land r\lor q\\
- & \equiv\left(p\lor q\right)\lor q\land r\\
  & \equiv q\land r
 \end{align*}
 
@@ -141,8 +134,11 @@ Example 11
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 18
+\end_layout
+
+\begin_layout LyX-Code
 \begin_inset Formula 
 \begin{align*}
 s & =\left(p\land\sim q\right)\lor\left(r\land t\right)\\
@@ -154,8 +150,11 @@ s^{d} & =\left(p\lor\sim q\right)\land\left(r\lor c\right)
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 20 (Disjunctive: Sums of products)
+\end_layout
+
+\begin_layout LyX-Code
 \begin_inset Formula 
 \begin{align*}
 p\land\left(p\to q\right) & \equiv p\land\left(\sim p\lor q\right)\\
@@ -195,8 +194,11 @@ p\bar{p}+pq
 \end_layout
 
 \end_deeper
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 21 (Simplified workings)
+\end_layout
+
+\begin_layout LyX-Code
 \begin_inset Formula 
 \begin{align*}
 \sim\left[\left(p\lor q\right)\leftrightarrow\left(p\land q\right)\right] & =\sim\left[\left(\left(p\lor q\right)\to\left(p\land q\right)\right)\land\left(\left(p\land q\right)\to\left(p\lor q\right)\right)\right]\\
@@ -215,8 +217,8 @@ Example 21 (Simplified workings)
 
 \end_layout
 
-\begin_layout Paragraph
-Example 22 (Conjunctive normal form)
+\begin_layout Subsection
+Example 22 Conjunctive normal form
 \end_layout
 
 \begin_layout Enumerate
@@ -254,12 +256,15 @@ p\land\left(p\to q\right) & =p\land\left(\sim p\lor q\right)\\
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 23 (CNF + 
 \begin_inset Formula $t$
 \end_inset
 
 )
+\end_layout
+
+\begin_layout LyX-Code
 \begin_inset Formula 
 \begin{align*}
 q\lor\left(p\land\sim q\right)\lor\left(\sim p\land\sim q\right) & =q\lor\left(p\land\sim q\right)\lor\left(\sim p\land\sim q\right)\\
@@ -276,8 +281,8 @@ q\lor\left(p\land\sim q\right)\lor\left(\sim p\land\sim q\right) & =q\lor\left(p
 
 \end_layout
 
-\begin_layout Paragraph
-Extra: Minterms and Maxterms
+\begin_layout Subsection
+Extra - Minterms and Maxterms
 \end_layout
 
 \begin_layout Enumerate
@@ -324,7 +329,7 @@ p\lor\left(q\land r\right) & =p+\left(qr\right)\\
 \end_layout
 
 \end_deeper
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 24 (Principal Disjunctive normal forms/ sum of products Canonical
  form)
 \end_layout
@@ -374,7 +379,7 @@ p\lor q\equiv\bar{p}q+p\bar{q}+pq
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 26
 \end_layout
 
@@ -477,7 +482,7 @@ LHS\Leftrightarrow RHS
 \end_layout
 
 \end_deeper
-\begin_layout Paragraph
+\begin_layout Subsection
 Example 27
 \end_layout
 
