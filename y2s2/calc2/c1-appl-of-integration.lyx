@@ -2279,5 +2279,544 @@ S & =18\pi\int_{0}^{4}t^{4}+t^{2}dt\\
 
 \end_layout
 
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the surface area generated when the arc of the curve 
+\begin_inset Formula $x=r\cos\theta$
+\end_inset
+
+, 
+\begin_inset Formula $y=r\sin\theta$
+\end_inset
+
+ where 
+\begin_inset Formula $r$
+\end_inset
+
+ is a constant between 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta=\pi$
+\end_inset
+
+ rotates about the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis through 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{d\theta} & =r\left(-\sin\theta\right)\\
+\frac{dx}{d\theta} & =-r\sin\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dy}{d\theta}=r\cos\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S & =2\pi\int_{a}^{b}y\left(t\right)\sqrt{\left(\frac{dy}{dt}\right)^{2}+\left(\frac{dx}{dt}\right)^{2}}dt\\
+ & =2\pi\int_{0}^{\pi}r\sin\theta\sqrt{\left(r\cos\theta\right)^{2}+\left(-r\sin\theta\right)^{2}}d\theta\\
+ & =2\pi r\int_{0}^{\pi}\sin\theta\sqrt{r^{2}\cos^{2}\theta+r^{2}\sin^{2}\theta}d\theta\\
+ & =2\pi r\int_{0}^{\pi}\sin\theta\sqrt{r^{2}\left(\cos^{2}\theta+\sin^{2}\theta\right)}d\theta\\
+ & =2\pi r\int_{0}^{\pi}\sin\theta\sqrt{r^{2}\cdot1}d\theta\\
+ & =2\pi r\int_{0}^{\pi}\sin\theta rd\theta\\
+ & =2\pi r^{2}\int_{0}^{\pi}\sin\theta d\theta\\
+ & =2\pi r^{2}\int_{0}^{\pi}\sin\theta d\theta\\
+ & =2\pi r^{2}\left(2\right)\\
+ & =4\pi r^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mean Values
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\frac{1}{b-a}\int_{a}^{b}f\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the mean value of 
+\begin_inset Formula $y=3x^{2}+4x+1$
+\end_inset
+
+ between 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{2-\left(-1\right)}\int_{-1}^{2}3x^{2}+4x+1dx\\
+ & =\frac{1}{3}\int_{-1}^{2}3x^{2}+4x+1dx\\
+M & =6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the mean value of 
+\begin_inset Formula $y=3\sin5t+2\cos3t$
+\end_inset
+
+ between 
+\begin_inset Formula $t=0$
+\end_inset
+
+ and 
+\begin_inset Formula $t=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{\pi-0}\int_{0}^{\pi}3\sin5t+2\cos3t\,dt\\
+ & =\frac{1}{\pi}\left[5\cdot3\cos5t+3\cdot2\left(-\sin3t\right)\right]_{0}^{\pi}\\
+ & =\frac{1}{\pi}\left[15\cos5t-6\sin3t\right]_{0}^{\pi}\\
+M & =\frac{6}{5\pi}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the mean value of 
+\begin_inset Formula $f\left(x\right)=\frac{x}{2x+3}$
+\end_inset
+
+ on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{1-0}\int_{0}^{1}\frac{x}{2x+3}dx\\
+ & =\int_{0}^{1}\frac{x}{2x+3}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=2x+3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =2\\
+dx & =\frac{du}{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\frac{u-3}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find endpoints
+\begin_inset Formula 
+\begin{align*}
+u|_{x=0} & =3\\
+u|_{x=1} & =2+3\\
+u|_{x=1} & =5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Make equation
+\begin_inset Formula 
+\begin{align*}
+M & =\int_{3}^{5}\frac{u-3}{2\left(2\left(\frac{u-3}{2}\right)+3\right)}\frac{du}{2}\\
+ & =\int_{3}^{5}\frac{u-3}{2u}\cdot\frac{du}{2}\\
+ & =\int_{3}^{5}\frac{u-3}{4u}\cdot du\\
+ & =\int_{3}^{5}\frac{u-3}{4u}\cdot du\\
+ & =\int_{3}^{5}\frac{u-3}{4u}du\\
+ & =\frac{1}{4}\int_{3}^{5}1-\frac{3}{u}du\\
+ & =\frac{1}{4}\left(2-3\left(\ln\left(5\right)-\ln\left(3\right)\right)\right)\\
+ & =0.1169
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the mean value of 
+\begin_inset Formula $y=\frac{1}{\sqrt{1-x^{2}}},\left[0,\frac{1}{2}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{\frac{1}{2}-0}\cdot\int_{0}^{\frac{1}{2}}\frac{1}{\sqrt{1-x^{2}}}dx\\
+ & =2\cdot\left[\sin^{-1}x\right]_{0}^{\frac{1}{2}}\\
+ & =2\left(\frac{\pi}{6}\right)\\
+ & =\frac{\pi}{3}\\
+ & =1.047
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Consumer & Producer Surplus
+\end_layout
+
+\begin_layout Subsubsection
+Formula
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{\bar{x}}D\left(x\right)dx-\overline{px}\\
+ & =\int_{0}^{\bar{x}}\left[D\left(x\right)-\bar{p}\right]dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+PS & =\overline{px}-\int_{0}^{\bar{x}}S\left(x\right)dx\\
+ & =\int_{0}^{\bar{x}}\left[\bar{p}-S\left(x\right)\right]dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+The demand function for a certain make of 10-speed bicycle is given by 
+\begin_inset Formula $p=D\left(x\right)=-0.001x^{2}+250$
+\end_inset
+
+ where 
+\begin_inset Formula $p$
+\end_inset
+
+ is the unit price in dollars and 
+\begin_inset Formula $x$
+\end_inset
+
+ is the quantity demanded in units of a thousand.
+ The supply function for these bicycles is given by 
+\begin_inset Formula $p=S\left(x\right)=0.0006x^{2}+0.02x+100$
+\end_inset
+
+ where 
+\begin_inset Formula $p$
+\end_inset
+
+ stands for the unit price in dollars and 
+\begin_inset Formula $x$
+\end_inset
+
+ stands for the number of bicycles that the supplier will put on the market,
+ in units of a thousand.
+ Determine the consumers’ surplus if the market price of a bicycle is set
+ at the equilibrium price.
+\end_layout
+
+\begin_layout Enumerate
+Find the equilibrium
+\begin_inset Formula 
+\begin{align*}
+D\left(x\right) & =S\left(x\right)\\
+-0.001x^{2}+250 & =0.0006x^{2}+0.02x+100\\
+0.0016x^{2}+0.02x-150 & =0\\
+2x^{2}+25x-187500 & =0\\
+x & =300,x=-\frac{625}{2}\left(ignored\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now we know
+\begin_inset Formula 
+\begin{align*}
+\bar{x} & =300\\
+\bar{p} & =D\left(300\right)\\
+ & =-0.001\left(300\right)^{2}+250\\
+\bar{p} & =160
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Next we find consumer surplus
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{\bar{x}}\left[D\left(x\right)-\bar{p}\right]dx\\
+ & =\int_{0}^{300}\left(-0.001x^{2}+250-160\right)dx\\
+ & =\int_{0}^{300}\left(-0.001x^{2}+90\right)dx\\
+ & =18000\$
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Lost in the woods, literally.
+ In the notes, there is no example 2.
+ The numbering jumped to 3.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+The demand function for a certain make of exercise bicycle that is sold
+ exclusively through cable television is 
+\begin_inset Formula $p=D\left(x\right)=\sqrt{9-0.02x}$
+\end_inset
+
+ where 
+\begin_inset Formula $p$
+\end_inset
+
+ is the unit price in hundreds of dollars and 
+\begin_inset Formula $x$
+\end_inset
+
+ is the quantity demanded per week.
+ The corresponding supply function is given by 
+\begin_inset Formula $p=S(x)=\sqrt{1+0.02x}$
+\end_inset
+
+ where 
+\begin_inset Formula $p$
+\end_inset
+
+ has the same meaning as before and 
+\begin_inset Formula $x$
+\end_inset
+
+ is the number of exercise bicycles the supplier will make available at
+ price 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Determine the consumers’ surplus if the unit price is set at the equilibrium
+ price.
+\end_layout
+
+\begin_layout Enumerate
+Find the equilibrium
+\begin_inset Formula 
+\begin{align*}
+\sqrt{9-0.02x} & =\sqrt{1+0.02x}\\
+9-0.02x & =1+0.02x\\
+8 & =0.04x\\
+x & =\frac{8}{0.04}\\
+\bar{x} & =200
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p & =S\left(200\right)\\
+ & =\sqrt{1+0.02\left(200\right)}\\
+\bar{p} & =\sqrt{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine consumer surplus
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{200}\left(\sqrt{9-0.02x}-\sqrt{5}\right)dx\\
+ & =\int_{0}^{200}\sqrt{9-0.02x}dx-\int_{0}^{200}\sqrt{5}dx\\
+ & =\int_{0}^{200}\sqrt{9-0.02x}dx-\int_{0}^{200}\sqrt{5}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize 
+\begin_inset Formula $u-substitution$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=9-0.02x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u & =9-0.02x\\
+\frac{du}{dx} & =-0.02\\
+dx & =-\frac{du}{0.02}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the bounds
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u|_{x=0}=9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u|_{x=200}=9-0.02\left(200\right)=9-4=5$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Make new equation
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{200}\sqrt{9-0.02x}dx-\int_{0}^{200}\sqrt{5}dx\\
+ & =-\frac{1}{0.02}\int_{9}^{5}u^{\frac{1}{2}}du-\int_{0}^{200}\sqrt{5}dx\\
+ & =-\frac{1}{0.02}\left(-18+\frac{10\cdot\:5^{\frac{1}{2}}}{3}\right)-200\sqrt{5}\\
+ & =80.1084
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
