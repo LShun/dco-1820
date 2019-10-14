@@ -4,6 +4,19 @@
 
 This is dedicated to my juniors in DCO, to help you (if you are a junior) to know what to prioritize, and avoid booby traps :bomb: and pitfalls.
 
+## Difficulty Level
+
+- Zero: Impossible to fail. Extremely easy A. But their presence means there's a larger threat just around the corner.
+- One: Unlikely to fail. Very easy A. Spend minimal time on these.
+- Two: Possible to fail. Easy A. Light revision. Practice the last year PYQ. 
+- Three: Likely to fail. Manageable A. Go through entire tutorials at least once. Practice 2-3 sets PYQ.
+- Four: Easy to fail. Difficult A. Go through entire notes/tutorials at least once. Practice 2-4 sets PYQ.
+- Five: Very easy to fail. Very difficult A. Go through entire notes & tutorials at least once. Practice 3-4 sets PYQ.
+
+## General
+
+- **ALWAYS practice past year questions for mid-terms & finals.** I cannot stress this enough. PYQ are more important source of practice than notes & tutorials.
+
 ## DCO Year 1
 
 ### Semester 1
