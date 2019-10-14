@@ -605,5 +605,112 @@ The region enclosed by the curve
  FInd the volume generated.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Diagram
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename tut-img/t1/q4a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Figure out the equations
+\begin_inset Formula 
+\begin{align*}
+x & =4y\\
+x & =y^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate
+\begin_inset Formula 
+\begin{align*}
+V & =\pi\int_{0}^{2}\left(y^{3}-8\right)^{2}-\left(4y-8\right)^{2}dy\\
+V & =\frac{832\pi}{21}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sketch the region bounded by the curves 
+\begin_inset Formula $y^{2}=x$
+\end_inset
+
+, 
+\begin_inset Formula $y^{2}=\frac{1}{x}$
+\end_inset
+
+, and the line 
+\begin_inset Formula $x=3.$
+\end_inset
+
+ Find the volume generated when the region is rotated about the 
+\begin_inset Formula $x-axis$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Diagram
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename tut-img/t1/q5.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Because its a mirror, we only need to calculate the top side.
+ Therefore, the intersection points are 
+\begin_inset Formula $x=1,x=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integration
+\begin_inset Formula 
+\begin{align*}
+V & =\int_{0}^{1}\pi\left(\sqrt{x}\right)^{2}dx+\int_{1}^{3}\pi\left(\frac{1}{x}\right)dx\\
+ & =\pi\int_{0}^{1}xdx+\pi\int_{1}^{3}\left(\frac{1}{x}\right)dx\\
+ & =\frac{\pi}{2}+\pi\ln\left(3\right)\\
+V & =\pi\left(\frac{1}{2}+\ln3\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
