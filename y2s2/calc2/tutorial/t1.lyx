@@ -589,7 +589,20 @@ V & =\pi\int_{0}^{1}\left(y^{2}-2\right)^{2}-\left(y-2\right)^{2}dy\\
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
+The region enclosed by the curve 
+\begin_inset Formula $x=4y$
+\end_inset
 
+ and 
+\begin_inset Formula $y=\sqrt[3]{x}$
+\end_inset
+
+ in the first quadrant about the line 
+\begin_inset Formula $x=8$
+\end_inset
+
+.
+ FInd the volume generated.
 \end_layout
 
 \end_body
