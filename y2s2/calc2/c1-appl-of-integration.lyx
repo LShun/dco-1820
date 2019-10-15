@@ -522,11 +522,10 @@ g\left(x\right)=x
 Find the integral
 \begin_inset Formula 
 \begin{align*}
-A & =\int_{0}^{3}f\left(x\right)-g\left(x\right)dx\\
- & =\int_{0}^{4}4x-x^{2}-xdx\\
- & =\int_{0}^{4}3x-x^{2}dx\\
- & =24-\frac{64}{3}\\
-A & =\frac{8}{3}
+A & =\int_{0}^{43}4x-x^{2}-xdx+\int_{3}^{4}x-\left(4x-x^{2}\right)dx\\
+ & =1.833+4.5\\
+ & =6.333\\
+ & =\frac{19}{3}
 \end{align*}
 
 \end_inset

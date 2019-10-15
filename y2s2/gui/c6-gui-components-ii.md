@@ -141,7 +141,11 @@ At the end of this lesson, you should be able to:
 - `BoxLayoout`: Like `FlowLayout`, but can choose direction.
 - `JTabbedPane`: Typical tabs
 - `JSplitPane`: Typical split panel, allows in-between resizing
-- `Action`: 
+- `Action`: Something like a macro/function for actions.
+  - Allows single point change.
+- `AbstractAction`: An abstract class used to create `Action`
+
+
 
 
 
