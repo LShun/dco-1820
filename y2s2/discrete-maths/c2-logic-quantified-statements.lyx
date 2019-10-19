@@ -1,0 +1,2580 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Disc.
+ Maths: C2 - Logic of Quan.
+ Statements
+\end_layout
+
+\begin_layout Section
+Predicates and Quantified Statements
+\end_layout
+
+\begin_layout Enumerate
+A predicate (AKA open statement)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+contains variables
+\end_layout
+
+\begin_layout Enumerate
+is not statement until the variables are 
+\begin_inset Quotes eld
+\end_inset
+
+filled in
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Domain of predicate variable: Set of all values that can be 
+\begin_inset Quotes eld
+\end_inset
+
+filled in
+\begin_inset Quotes erd
+\end_inset
+
+ to the variables.
+\end_layout
+
+\begin_layout Enumerate
+To obtain predicate, remove the nouns.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\epsilon A$
+\end_inset
+
+ indicates 
+\begin_inset Formula $x$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 1,2,3\right\} $
+\end_inset
+
+ refers to set containing only 1, 2 and 3.
+ 
+\begin_inset Formula $\left\{ 1,2,3,...\right\} $
+\end_inset
+
+ indicates all positive integers.
+\end_layout
+
+\begin_layout Enumerate
+2 sets are equal only if they have same elements.
+\end_layout
+
+\begin_layout Enumerate
+Symbols for sets:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbols
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Set
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All real numbers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R^{+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All positive real numbers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All integers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Z^{nonneg}/N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Set of non-negative integers (include 0) / natural numbers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ x\in D\vert P\left(x\right)\right\} $
+\end_inset
+
+ reads as the set of all 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $D$
+\end_inset
+
+ such that 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ (is true, for a truth set).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+ is random variable
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D$
+\end_inset
+
+ is the domain of 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ is a predicate
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Notations:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(x\right)\implies Q\left(x\right):$
+\end_inset
+
+ All truth set elements of 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ is in truth set of 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Basically, if I promised 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, then I must deliver, 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\left(x\right)\iff Q\left(x\right)$
+\end_inset
+
+: Same truth set
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Quantifiers:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Quantities
+\end_layout
+
+\begin_layout Enumerate
+Add to predicates, a substitute for 
+\begin_inset Quotes eld
+\end_inset
+
+fixed values
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+: For all
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Example: 
+\begin_inset Formula $\forall x=$
+\end_inset
+
+ For every 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Universal statement: 
+\begin_inset Formula $\forall x\in D,Q\left(x\right)$
+\end_inset
+
+, is true if 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $x$
+\end_inset
+
+ (where 
+\begin_inset Formula $x$
+\end_inset
+
+ is part of domain 
+\begin_inset Formula $D$
+\end_inset
+
+).
+ It is false if there is a 
+\series bold
+counterexample
+\series default
+, or a value for 
+\begin_inset Formula $x$
+\end_inset
+
+ where 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ is false.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists:$
+\end_inset
+
+ There exists
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Example: 
+\begin_inset Formula $\exists x=$
+\end_inset
+
+ At least one 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Existential statement: 
+\begin_inset Formula $\exists x\in D,Q\left(x\right)$
+\end_inset
+
+, is true if at least one 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ is true.
+ Where 
+\begin_inset Formula $x$
+\end_inset
+
+ is part of 
+\begin_inset Formula $D.$
+\end_inset
+
+ It is false if all is false.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Method of exhaustion
+\series default
+ - proving true for every case.
+ Good for finite domain.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ni$
+\end_inset
+
+: 
+\begin_inset Quotes eld
+\end_inset
+
+such that
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Rewriting
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To informal: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Replace all symbols
+\end_layout
+
+\begin_layout Enumerate
+Remove quantifiers and make them 
+\begin_inset Quotes eld
+\end_inset
+
+wordy
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The opposite for formal
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Universal condition statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A universal statement with a condition (if, then).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x,$
+\end_inset
+
+ if 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ then 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Equivalent forms of universal statement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in U,$
+\end_inset
+
+if 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ then 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula $\equiv\forall x\in D,Q\left(x\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Narrow 
+\begin_inset Formula $U$
+\end_inset
+
+ to be true statement domain of 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Equivalent forms of existential statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in U$
+\end_inset
+
+ such that 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ can be written as “
+\begin_inset Formula $\exists x\in D$
+\end_inset
+
+ such that 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+”, provided D consists of all elements in U that make 
+\begin_inset Formula $P(x)$
+\end_inset
+
+true.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Negation of quantified statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sim\left(\forall x\in D,Q\left(x\right)\right)\equiv\exists x\in D,\sim Q\left(x\right)$
+\end_inset
+
+, and vice versa
+\end_layout
+
+\begin_layout Enumerate
+Basically something like DeMorgan's law.
+\end_layout
+
+\begin_layout Enumerate
+Negation of 
+\begin_inset Quotes eld
+\end_inset
+
+all are
+\begin_inset Quotes erd
+\end_inset
+
+ (universal statement) is 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ Some are not (Existential).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Negation of universal conditional statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Negate a 
+\begin_inset Quotes eld
+\end_inset
+
+for all
+\begin_inset Quotes erd
+\end_inset
+
+ conditional statement
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sim\left(\forall x,P\left(x\right)\to Q\left(x\right)\right)\equiv\exists x,P\left(x\right)\land\sim Q\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\forall x,P\left(x\right)\to Q\left(x\right)\right) & \equiv\exists x,\sim\left(P\left(x\right)\to Q\left(x\right)\right)\\
+ & \equiv\exists x,\sim\left(\sim P\left(x\right)\lor Q\left(x\right)\right)\\
+\sim\left(\forall x,P\left(x\right)\to Q\left(x\right)\right) & \equiv\exists x,P\left(x\right)\land\sim Q\left(x\right)\,\left[DeMorgan\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sim\left(\forall x,\text{if }P\left(x\right),\text{then}Q\left(x\right)\right)\equiv\exists x\,\text{such that }P\left(x\right)\text{and}\sim Q\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Negations of Multiply Quantified Statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x,\exists y\ni P\left(x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Consider: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(x)$
+\end_inset
+
+: The number (x + 2) is an even integer.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q(x,y):$
+\end_inset
+
+ The numbers 
+\begin_inset Formula $y+2$
+\end_inset
+
+, 
+\begin_inset Formula $x–y$
+\end_inset
+
+, and 
+\begin_inset Formula $x+2y$
+\end_inset
+
+ are even integers.
+ 
+\end_layout
+
+\begin_layout Standard
+Domain for x is {4, 5} and domain for y is {2, 3} 
+\end_layout
+
+\begin_layout Standard
+Therefore,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\left(4\right):$
+\end_inset
+
+ 
+\begin_inset Formula $\left(4+2\right):6$
+\end_inset
+
+ is an even integer.
+ 
+\begin_inset Formula $(T)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p(5):$
+\end_inset
+
+ 
+\begin_inset Formula $\left(5+2\right):7$
+\end_inset
+
+ is an even integer.
+ 
+\begin_inset Formula $\left(F\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q(4,2):$
+\end_inset
+
+ The numbers 
+\begin_inset Formula $2+2:4$
+\end_inset
+
+, 
+\begin_inset Formula $4-2:2$
+\end_inset
+
+, and 
+\begin_inset Formula $4+2\left(2\right):8$
+\end_inset
+
+ are even integers.
+ 
+\begin_inset Formula $\left(T\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q(4,3):$
+\end_inset
+
+ The numbers 
+\begin_inset Formula $3+2:5$
+\end_inset
+
+, 
+\begin_inset Formula $4-3:1$
+\end_inset
+
+, and 
+\begin_inset Formula $4+2\left(3\right):10$
+\end_inset
+
+ are even integers.
+ 
+\begin_inset Formula $\left(F\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q(5,2):$
+\end_inset
+
+The numbers 
+\begin_inset Formula $2+2:4$
+\end_inset
+
+, 
+\begin_inset Formula $5-2:3$
+\end_inset
+
+, and 
+\begin_inset Formula $5+2\left(2\right):9$
+\end_inset
+
+ are even integers.
+ 
+\begin_inset Formula $\left(F\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q(5,3):$
+\end_inset
+
+The numbers 
+\begin_inset Formula $3+2:5$
+\end_inset
+
+, 
+\begin_inset Formula $5-3:2$
+\end_inset
+
+, and 
+\begin_inset Formula $5+2\left(3\right):11$
+\end_inset
+
+ are even integers.
+ 
+\begin_inset Formula $\left(F\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the truth set for the predicate below, 
+\begin_inset Formula 
+\[
+x>\frac{1}{x},domain:R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find a way to make it easier to compute
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{1}{x}\\
+x-\frac{1}{x} & =0\\
+\frac{x^{2}-1}{x} & =0\\
+\frac{\left(x+1\right)\left(x-1\right)}{x} & =0\\
+\frac{\left(x+1\right)\left(x-1\right)}{x} & >0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilize the number line system
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c2/example2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine the range (where it is greater than 
+\begin_inset Formula $0$
+\end_inset
+
+, in this case)
+\begin_inset Formula 
+\[
+Truth\,Set=\left\{ x\in R\vert-1<x<0,x>1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $P(x):x$
+\end_inset
+
+ is the factor of 8.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q(x):x$
+\end_inset
+
+ is the factor of 4.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R(x):x<5$
+\end_inset
+
+, 
+\begin_inset Formula $x≠3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Domain for 
+\begin_inset Formula $x$
+\end_inset
+
+ is 
+\begin_inset Formula $Z^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Answer
+\end_layout
+
+\begin_layout Standard
+The truth set of:
+\begin_inset Formula 
+\begin{align*}
+P\left(x\right) & =\left\{ 1,2,4,8\right\} \\
+Q\left(x\right) & =\left\{ 1,2,4\right\} \\
+R\left(x\right) & =\left\{ 1,2,4\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore,
+\begin_inset Formula 
+\begin{align*}
+Q\left(x\right) & \implies P\left(x\right)\\
+R\left(x\right) & \implies P\left(x\right)\\
+Q\left(x\right) & \iff R\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $D={1,2,3,4,5}$
+\end_inset
+
+, and consider the statement 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\forall x\in D,x\ge\frac{1}{x}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Show that this statement is 
+\series bold
+true
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ be 
+\begin_inset Formula $x\ge\frac{1}{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Result
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\ge\frac{1}{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\ge\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3\ge\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\ge\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5\ge\frac{1}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Since 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+is true for all 
+\begin_inset Formula $x\in D$
+\end_inset
+
+, thus 
+\begin_inset Formula $\forall x\in D,x\ge\frac{1}{x}$
+\end_inset
+
+ is a 
+\series bold
+true statement.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the statement “
+\begin_inset Formula $\forall x\in R,x>\frac{1}{x}$
+\end_inset
+
+” Find counterexamples to show that this statement is 
+\series bold
+false.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x>\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Result
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1>\frac{1}{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+This is a counterexample.
+\end_layout
+
+\begin_layout Enumerate
+The statement 
+\begin_inset Formula $\forall x\in R,x>\frac{1}{x}$
+\end_inset
+
+ is false.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Consider the statement 
+\begin_inset Formula $\exists x\in Z\ni x^{2}=x$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\ni\,\text{means such that}\right)$
+\end_inset
+
+Show that this statement is true.
+ EXTRA NOTE: The statement reads (There exists) 
+\begin_inset Formula $x$
+\end_inset
+
+ (in) 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ (such that) 
+\begin_inset Formula $x^{2}=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x^{2}-x & =0\\
+x\left(x-1\right) & =0\\
+x & =0,1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0^{2} & =0\\
+x^{2} & =x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Thus, 
+\begin_inset Formula $\exists x\in\mathbb{Z}\ni x^{2}=x$
+\end_inset
+
+ is true.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $D=\left\{ 5,6,7,8,9,10\right\} $
+\end_inset
+
+ and consider the statement 
+\begin_inset Formula $\exists x\in D\ni x^{2}=x$
+\end_inset
+
+.
+ Show that this statement is 
+\series bold
+false
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{2}=x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Result
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5^{2}:25=5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6^{2}:36=6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7^{2}:49=7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8^{2}:64=8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\exists x\in D\ni x^{2}=x$
+\end_inset
+
+ is a 
+\series bold
+false statement
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Rewrite the following formal statements in a variety of equivalent but more
+ informal ways.
+ Do not use the symbol 
+\begin_inset Formula $\forall$
+\end_inset
+
+ and 
+\begin_inset Formula $\exists$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R,x^{2}\neq-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For all real numbers, its square cannot be 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in Z\ni x^{2}=x$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The square of some integers is equal to itself.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Rewrite each of the following statements formally.
+ Use quantifiers and variables.
+\end_layout
+
+\begin_layout Enumerate
+Every real number is positive, negative, or zero.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\text{\ensuremath{\mathbb{R}}}\ni x>0\cup x<0\cup x=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Some real numbers are rational.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in\text{\ensuremath{\mathbb{R}}}\ni x=\frac{a}{b},(a,b\in\mathbb{Z},b\neq0)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\in\mathbb{R},$
+\end_inset
+
+if 
+\begin_inset Formula $x>4$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}>16$
+\end_inset
+
+, Informal:
+\end_layout
+
+\begin_layout Enumerate
+For any real number greater than 
+\begin_inset Formula $4$
+\end_inset
+
+, its square must also be greater than 16.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+The square of any even integers is even.
+ Formal way,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\mathbb{Z},$
+\end_inset
+
+if 
+\begin_inset Formula $x=2m,m\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}=2n,n\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+“ 
+\begin_inset Formula $\forall$
+\end_inset
+
+ polygons 
+\begin_inset Formula $p$
+\end_inset
+
+, if 
+\begin_inset Formula $p$
+\end_inset
+
+ is a square, then 
+\begin_inset Formula $p$
+\end_inset
+
+ is a rectangle.” is equivalent to
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ square polygons 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ is a rectangle, 
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+“
+\begin_inset Formula $\exists$
+\end_inset
+
+ a number 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime and 
+\begin_inset Formula $n$
+\end_inset
+
+ is even.” is equivalent to 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ a prime number such that 
+\begin_inset Formula $n$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ an even number such that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Write negations for the following statements.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ irrational numbers 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is not an integer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ irrational numbers 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is an integer.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists\,x\in R$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is rational.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is irrational.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+No politicians are honest.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Some politicians are not honest.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+All dinosaurs are extinct
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Some dinosaurs are not extinct.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Some exercises have answers.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+All exercises don't have answers.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Write the negations for the following statements.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ animals 
+\begin_inset Formula $x$
+\end_inset
+
+, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is a cat then 
+\begin_inset Formula $x$
+\end_inset
+
+ has whiskers and 
+\begin_inset Formula $x$
+\end_inset
+
+ has claws.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in D,\left[p\left(x\right)\to\left(Q\left(x\right)\land R\left(x\right)\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Negation: 
+\begin_inset Formula $\exists x\in D,p\left(x\right)\land\left(\sim Q\left(x\right)\lor\sim R\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ animals 
+\begin_inset Formula $x$
+\end_inset
+
+, where 
+\begin_inset Formula $x$
+\end_inset
+
+ is a cat and 
+\begin_inset Formula $x$
+\end_inset
+
+ don't have whiskers or 
+\begin_inset Formula $x$
+\end_inset
+
+ don't have claws.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+ , if 
+\begin_inset Formula $x>3$
+\end_inset
+
+ then 
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in R,$
+\end_inset
+
+where 
+\begin_inset Formula $x>3$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{2}\le9$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Negate the following statements and determine their truth values.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r(x):2x+1=5$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s(x):x^{2}=9$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists\,x\ni\left[r\left(x\right)\implies s\left(x\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ni\left[r\left(x\right)\land\sim s\left(x\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine truth values
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+r\left(3\right) & :2\left(3\right)+1=7\,\left(F\right)\\
+s\left(3\right) & :3^{2}:9=9\,\left(T\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ni\left[F\land\sim T\right]\equiv\forall x\ni c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the negation of 
+\begin_inset Formula $\exists\,x\ni\left[r\left(x\right)\implies s\left(x\right)\right]$
+\end_inset
+
+ is a false statement.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p(x):x$
+\end_inset
+
+ is odd.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $q(x):x^{2}–1$
+\end_inset
+
+ is even.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall x\in Z$
+\end_inset
+
+, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $\left(x^{2}-1\right)$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Determine negation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in\mathbb{Z},$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd, and 
+\begin_inset Formula $\left(x^{2}-1\right)$
+\end_inset
+
+ is not even.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine final results
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Lets check the universal statement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x$
+\end_inset
+
+ is an odd integer, then when divided by 2, it must leave a 0.5 behind.
+ So,
+\begin_inset Formula 
+\begin{align*}
+\frac{x}{2} & =b+0.5,\text{where b is an integer}\\
+x & =2b+1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Okay, so lets think about the second part, if 
+\begin_inset Formula $\left(x^{2}-1\right)$
+\end_inset
+
+ is even, then it should be divisible without leaving a 0.5 behind.
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(x^{2}-1\right)}{2} & =\frac{x^{2}}{2}-\frac{1}{2}\\
+ & =x\cdot\frac{x}{2}-\frac{1}{2}\\
+ & =x\cdot\left(b+0.5\right)-\frac{1}{2},\text{where b is an integer}\\
+ & =bx+\frac{1}{2}x-\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lets substitute in the 
+\begin_inset Formula $x$
+\end_inset
+
+ we derived from earlier in part A.
+ into part B.
+ Remember that although 
+\begin_inset Formula $x$
+\end_inset
+
+ can be any number, it is the same number for both part A and part B.
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(x^{2}-1\right)}{2} & =bx+\frac{1}{2}x-\frac{1}{2}\\
+ & =b\left(2b+1\right)+\frac{1}{2}\left(2b+1\right)-\frac{1}{2}\\
+ & =2b^{2}+b+b+\frac{1}{2}-\frac{1}{2}\\
+ & =2b^{2}+b+b
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now remember that from part B, 
+\begin_inset Formula $b$
+\end_inset
+
+ is an integer, so if we take
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(x^{2}-1\right)}{2} & =2\left(integer\right)^{2}+integer+integer
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The result does not have any fraction, and is an integer.
+\end_layout
+
+\begin_layout Enumerate
+Since the result is an integer, with no fraction 
+\begin_inset Formula $\left(x^{2}-1\right)$
+\end_inset
+
+, must be an even number, since only even numbers can be divided by 2 without
+ leaving fractions behind.
+ Hence, 
+\begin_inset Formula $\forall x\in Z$
+\end_inset
+
+, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $\left(x^{2}-1\right)$
+\end_inset
+
+ is even, is a true satement.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The negation statement is false.
+\end_layout
+
+\begin_layout Enumerate
+The universal statement is true.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Rewrite each of the following without using variables or the symbols 
+\begin_inset Formula $\forall$
+\end_inset
+
+ or 
+\begin_inset Formula $\exists$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ colours C, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ an animal A such that A is coloured C.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For all colours C, there exists an animal A such that A is coloured C.
+\end_layout
+
+\begin_layout Enumerate
+For all colour, there is an animal with the same colour.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+There is an animal that is coloured by all the colour.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ a book 
+\begin_inset Formula $b$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall$
+\end_inset
+
+ people 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ has read 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There exists a book 
+\begin_inset Formula $b$
+\end_inset
+
+ such that every people 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ has read 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+There is a book where everyone has read the book
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Rewrite the following formally using quantifiers and variables.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Everybody trusts somebody.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ peoples 
+\begin_inset Formula $\in x$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ people y, 
+\begin_inset Formula $x$
+\end_inset
+
+ trusts 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Somebody trusts everybody.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ people 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\forall$
+\end_inset
+
+ peoples 
+\begin_inset Formula $y$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ trusts 
+\begin_inset Formula $y.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

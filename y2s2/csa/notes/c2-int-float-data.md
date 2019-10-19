@@ -179,7 +179,6 @@ Example: 253.75~10~
    1.111110111 * 2^7
    $$
    
-
 4. Exponent
    $$
    127+7=134
@@ -195,15 +194,14 @@ Example: 253.75~10~
    0 (positive)
    $$
    
-
 7. Mantissa in 23 bits
    $$
    11111011\quad10000000\quad0000000
    $$
    
-
 8. IEEE 754 format:
    $$
    0\quad10000110\quad11111011\quad10000000\quad0000000
    $$
    
+

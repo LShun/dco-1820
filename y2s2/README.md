@@ -70,4 +70,11 @@
 ### GUI Programming
 
 - Google Classroom: **9agwg5**
-- 
+
+### Computer Systems Architecture
+
+- Google Classroom: 
+- Instructors
+  - Loh Kiean Nyak
+    - Email: lohkn.bww [@t] gmail [d ot] com
+  - 

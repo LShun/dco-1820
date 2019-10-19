@@ -1,0 +1,753 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CSA T1 - Numbering Systems
+\end_layout
+
+\begin_layout Enumerate
+Convert the following to decimal numbers.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $11100111_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+231
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $5577_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+2943
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ABCD (Hexadecimal)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $43981$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Convert the followings to Base-2, Base-8 and Base-16 respectively.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+3064 D
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 2: 
+\begin_inset Formula $1011\,1111\,1000_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $5770_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 16: 
+\begin_inset Formula $BF8_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2016_{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 2: 
+\begin_inset Formula $111\,1110\,0000_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $3740_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 16: 
+\begin_inset Formula $7E0_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+2899 base-10
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 2: 
+\begin_inset Formula $1011\,0101\,0011_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $5523_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 16: 
+\begin_inset Formula $B53_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Convert the following numbers to the respective base.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1111101000111100_{2}$
+\end_inset
+
+ to base-8 and base-16 respectively
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $175074_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 16: 
+\begin_inset Formula $FA3C_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1100001110100101_{2}$
+\end_inset
+
+ to base-8 and base-16 respectively
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $141645_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 16: 
+\begin_inset Formula $C3A5_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1EF_{H}$
+\end_inset
+
+ to base-2 and base-8 respectively
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 2: 
+\begin_inset Formula $0001\,1110\,1111_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $0757_{8}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $257AC_{H}$
+\end_inset
+
+ to base-2 and base-8 respectively
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 2: 
+\begin_inset Formula $10\,0101\,0111\,1010\,1100_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $453654_{8}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $754_{8}$
+\end_inset
+
+ to base-16
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 16: 
+\begin_inset Formula $1EC_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $447_{16}$
+\end_inset
+
+to base-8
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Base 8: 
+\begin_inset Formula $2107_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Perform the following conversions.
+ You are required to 
+\series bold
+show the working steps clearly
+\series default
+.
+ If the operation(s) is illogical, explain the reason.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1658_{10}$
+\end_inset
+
+ to hexadecimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $67A_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $765_{8}$
+\end_inset
+
+ to hexadecimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1F5$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $67324_{7}$
+\end_inset
+
+ to decimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Illogical, only 1-6
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $87390_{10}$
+\end_inset
+
+ to base-5 number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10244030$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $39208_{8}$
+\end_inset
+
+ to decimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Illogical, base 8 does not include 8.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Perform the following conversions.
+ You are required to show the working steps clearly.
+ If the operation(s) is illogical, explain the reason.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1230_{10}$
+\end_inset
+
+ to base-6 number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert using the 
+\begin_inset Quotes eld
+\end_inset
+
+continuous division method
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t1/q5a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $5410_{6}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1528_{10}$
+\end_inset
+
+ to hexadecimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t1/q5b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hexadecimal form: 
+\begin_inset Formula $5F8_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $6217_{8}$
+\end_inset
+
+ to decimal number
+\begin_inset Formula 
+\[
+6*8^{3}+2*8^{2}+1*8^{1}+7*8^{0}=3215_{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $372_{8}$
+\end_inset
+
+to hex
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $0FA_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $230_{10}$
+\end_inset
+
+ to base-7 number (use the method in 2a, but substitute the 16 for 7.
+ Drawing is tiring lol.)
+\begin_inset Formula 
+\[
+230_{10}=446_{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Perform the following operations and show the answers in the respective
+ number base.
+ You are required to show your working steps clearly
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ABC_{16}+FFF_{16}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t1/q6a.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $125_{8}-77_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $26_{8}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1011_{2}*101_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $110111_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $11011_{2}*101_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10000111_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $11011_{2}*1011_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $100101001_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Perform the following operations and show the answers in the respective
+ number base.
+ You are required to show your working steps clearly
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $461_{8}+515_{8}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+461_{8}+515_{8}=1176_{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $224_{7}-136_{7}=55_{7}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $173_{H}*AA_{H}=371*170=63070=F65E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $11111010_{2}+1110_{8}=372_{8}+1110_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: Direct conversion, split into parts of 3 from the right, if insufficient,
+ pad in front.
+ For fractions, from left.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $3064_{16}*213_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use binary as a pit stop for easy conversion.
+ Octal is sets of 3, Hex is sets of 4.
+\begin_inset Formula 
+\[
+213_{8}=10001011_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1A464C_{16}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

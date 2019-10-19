@@ -77,5 +77,28 @@
     - Step 2: Rederive the hexadecimal numbers from decimal numbers 
   - ![1569234683224](c1-numbering-systems.assets/1569234683224.png)
     - ERROR: NOT A HUMAN!
-- 
+
+## Magic Tricks
+
+- Method 1: Use laying-out-and-addition method
+  - Good for binary, not good for others
+  - Bad for others
+- Method 2
+  - Repeated division
+  - Good for everything. But not optimal.
+- Method 3
+  - Use blocks
+  - For octal-to-hex: Octal -> Binary -> Hex
+
+- Convert from decimal to binary. Lay out the entire binary 8 bits. Add appropriately.
+- Convert from binary to octal. Use 3 bits for every octal digits.
+- Convert from binary to hex. Use 4 bits for every octal.
+
+### Exercise
+
+| Binary             | Decimal | Octal | Hex  |
+| ------------------ | ------- | ----- | ---- |
+| 128+64+16=11010000 | 208     | 320   | D0   |
+| 111111001          | 505     | 771   | 1F9  |
+| 0100 1110 1110     | 1262    | 2356  | 4EE  |
 

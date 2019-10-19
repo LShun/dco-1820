@@ -1,0 +1,880 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CSA - Tutorial 2 - Numerical Data Representation
+\end_layout
+
+\begin_layout Section
+Signed Number
+\end_layout
+
+\begin_layout Enumerate
+Under what circumstances the Two’s Complement is used?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To obtain the negative representation of a number in binary form.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert the 8-bit binary number 11010111 into decimal number if the binary
+ number is a(n):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Unsigned number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1+2+4+16+64+128=215_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Signed number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-41_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Differentiate between carry flag and overflow flag.
+ Complete the following table.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="33page%">
+<column alignment="left" valignment="top" width="33page%">
+<column alignment="left" valignment="top" width="33page%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Carry
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Overflow
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+When result exceed bit available, disregarding sign
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Result of arithmetic does not fit in bits available
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detect in signed or unsigned number?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Signed numbers.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Signed and unsigned numbers.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+How to detect?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Extra bit generated when negative numbers are added.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The sign of the result is opposite of both of operands.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Example
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1101_{2}+1110_{2}=11011_{2}->11100_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1000_{2}+1000_{2}=0001_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Assuming an 8-bit system is used, show how the following operation is solved
+ through Two’s Complement method.
+ 
+\begin_inset Formula 
+\[
+-124_{10}-6_{10}
+\]
+
+\end_inset
+
+ Verify and comment the answer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the representation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-124_{10}=10000100_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-6_{10}=11111010_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Do the 
+\begin_inset Quotes eld
+\end_inset
+
+addition
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-124+\left(-6\right)=10000100_{2}+11111010_{2}=101111110_{2}$
+\end_inset
+
+ (OF)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert back to decimal
+\begin_inset Formula 
+\[
+01111111_{2}=127_{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion: Overflow flag is detected because the result is different than
+ the two signs of the operands.
+ The result computed is incorrect
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assuming that an 8-bit system is being applied, perform the binary subtraction
+ operation for the following decimal numbers using Two’s Complement method.
+ 
+\begin_inset Formula 
+\[
+65-54
+\]
+
+\end_inset
+
+ Verify your answer by showing the answer in signed decimal value.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert to two's complement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $65_{10}=0100\,0001_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-54_{10}=1100\,1010_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Do the 
+\begin_inset Quotes eld
+\end_inset
+
+addition
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $65_{10}+\left(-54_{10}\right)=00001100_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert back to decimal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $100001011_{2}=11_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Assuming an 8-bit system is used (i.e.
+ the system uses 8 bits to represent an integer).
+ Given the following decimal numbers: 
+\begin_inset Formula 
+\[
+-12+-8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve the above operation using two’s complement method.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert to binary:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-12_{10}=1111\,0100_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-8_{10}=1111\,1000_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Perform addition
+\begin_inset Formula 
+\[
+1111\,0100+1111\,1000=1\,1110\,1100_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verify your answer by showing the answer in signed decimal value.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1110\,1100_{2}=-19_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Justify the validity of the answer obtained.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The answer is valid, even carry flag is detected because of 2's complement
+ extra 1 when performing addition and discarded.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Does overflow occur? Justify your answer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No.
+ The sign of the result is same as both of the operands.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Assuming an 8-bit system is involve.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve the following operation using Two’s Complement method: (PYP-08/14:
+ 5 marks) 
+\begin_inset Formula 
+\[
+(-9_{10})+(-8_{10})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert to binary
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $11110111_{2}+11111000_{2}=1\,1110\,1111_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Verify your answer by showing the answer in signed decimal value.
+ (PYP-08/14: 1 mark)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Discard carry bit, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1110\,1111_{2}=-17_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Justify the validity of the answer obtained.
+ (PYP-08/14: 4 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The answer is valid, because overflow flag is not detected.
+ The sign of the final result is same as the sign of the two operands.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Does overflow or/and carry occur? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Carry occured.
+ But overflow did not.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Section B: Floating Point Number
+\end_layout
+
+\begin_layout Enumerate
+Perform the following number conversions.
+ Show your conversion steps clearly.
+ If the operation is illogical, explain the reason.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $30.30_{10}$
+\end_inset
+
+ to Binary 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Illogical.
+ Because the fraction part do not have a denominator that is a power of
+ two.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $123.123_{5}$
+\end_inset
+
+ to Decimal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $38.304_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $100\,100\,011\,111.11_{2}$
+\end_inset
+
+ to Octal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $4437.6_{8}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Perform the following operations.
+ Show your working steps clearly.
+ 
+\series bold
+If the operation is illogical, explain the reason.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert 
+\begin_inset Formula $6A.96_{10}$
+\end_inset
+
+ to hexadecimal number 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Illogical.
+ In decimal, there is no 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert 
+\begin_inset Formula $1807.65_{10}$
+\end_inset
+
+ into a hexadecimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Illogical, for the fraction part, the decimal must be a power of 
+\begin_inset Formula $16$
+\end_inset
+
+, in this case, 
+\begin_inset Formula $\frac{13}{20}$
+\end_inset
+
+ is certainly not.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert 
+\begin_inset Formula $101011.0111_{2}$
+\end_inset
+
+ into a decimal number
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $32+8+2+1=43$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $.0111=\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}=\frac{15}{32}=0.46875$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Answer: 
+\begin_inset Formula $43.46875$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $111100110011.11000001_{2}$
+\end_inset
+
+ + 
+\begin_inset Formula $20.5_{10}$
+\end_inset
+
+.
+ Show your answer in Hex format.
+ (PYP-08/12: 3 marks) 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert the fraction part of the binary figure to decimal.
+ 
+\begin_inset Formula 
+\[
+0.11000001=\frac{1}{2}+\frac{1}{4}+\frac{1}{2^{8}}=\frac{193}{256}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convert the binary to hex
+\begin_inset Formula 
+\[
+1111\,0011\,0011.1100\,0001_{2}=F33.C1_{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convert the decimal to binary
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $20.5=10100.1_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert binary to hex
+\begin_inset Formula 
+\[
+0001\,0100.1000_{2}=14.8_{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add them together
+\begin_inset Formula 
+\[
+F33.C1_{16}+14.8_{16}=F48.41_{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Given that: 
+\begin_inset Newline newline
+\end_inset
+
+- An Excess-52 notation is applied.
+\begin_inset Newline newline
+\end_inset
+
+- The implied decimal point is at the beginning of the mantissa.
+ 
+\begin_inset Newline newline
+\end_inset
+
+- A “5” is used to represent a positive number and a “9” is used to represent
+ a negative number.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert -357.24610 to the SEEMMMMM format.
+ (PYP-04/14: 2 marks)
+\end_layout
+
+\begin_layout Enumerate
+Convert 55220311 to scientific notation.
+\end_layout
+
+\begin_layout Enumerate
+Convert 95575321 to scientific notation.
+\end_layout
+
+\begin_layout Enumerate
+Convert 30.81510 to the SEEMMMMM format.
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
