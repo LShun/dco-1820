@@ -70,6 +70,9 @@
 ### GUI Programming
 
 - Google Classroom: **9agwg5**
+- Lee Kim Keong
+  - `kimlee18@gmail.com`
+  - 012-6683868
 
 ### Computer Systems Architecture
 

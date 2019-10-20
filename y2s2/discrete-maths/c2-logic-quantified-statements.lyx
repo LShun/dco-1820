@@ -739,10 +739,17 @@ Negations of Multiply Quantified Statements
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall x,\exists y\ni P\left(x,y\right)$
+\begin_inset Formula $\sim\left(\forall x,\exists y\ni P\left(x,y\right)\right)\equiv\exists x\forall y,\sim P\left(x,y\right)$
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sim\left(\exists x\ni\forall y,P\left(x,y\right)\right)\equiv\forall x,\exists y\ni\sim P\left(x,y\right)$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2573,6 +2580,120 @@ Somebody trusts everybody.
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example (Check answer)
+\end_layout
+
+\begin_layout Standard
+Negate the statements below.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ a book 
+\begin_inset Formula $b$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall$
+\end_inset
+
+ people 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ has read 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+books 
+\begin_inset Formula $b$
+\end_inset
+
+, there 
+\begin_inset Formula $\exists$
+\end_inset
+
+ people 
+\begin_inset Formula $p$
+\end_inset
+
+, such that 
+\begin_inset Formula $p$
+\end_inset
+
+ has not read 
+\begin_inset Formula $b.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ even integers 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ an integer 
+\begin_inset Formula $k$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=2k$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ even integers 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\forall$
+\end_inset
+
+ an integer 
+\begin_inset Formula $k$
+\end_inset
+
+ such that 
+\begin_inset Formula $n\neq2k$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
