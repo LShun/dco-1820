@@ -753,6 +753,306 @@ Negations of Multiply Quantified Statements
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+The Relation Among 
+\begin_inset Formula $\forall$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ , 
+\begin_inset Formula $\land$
+\end_inset
+
+ , and 
+\begin_inset Formula $\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in D,Q\left(x\right)\equiv Q\left(x_{1}\right)\land Q\left(x_{2}\right)\land...\land Q\left(x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This reads: For all 
+\begin_inset Formula $x$
+\end_inset
+
+ in domain 
+\begin_inset Formula $D$
+\end_inset
+
+, such that (not shown, but should be 
+\begin_inset Formula $\ni$
+\end_inset
+
+) 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ evaluates to true.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The statement is equivalent to 
+\begin_inset Quotes eld
+\end_inset
+
+All 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ evaluates to true
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in D\ni Q\left(x\right)\equiv Q\left(x_{1}\right)\lor Q\left(x_{2}\right)\lor...\lor Q\left(x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This reads: There exists 
+\begin_inset Formula $x$
+\end_inset
+
+ in domain 
+\begin_inset Formula $D$
+\end_inset
+
+, such that 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ evaluates to true.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The statement is equivalent to 
+\begin_inset Quotes eld
+\end_inset
+
+Some 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ evaluates to true
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\left[P\left(x\right)\lor Q\right]\equiv\forall xP\left(x\right)\lor Q$
+\end_inset
+
+ (Refer to example 18)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x[P(x)\land Q(x)]\equiv\forall xP\left(x\right)\land\forall xQ\left(x\right)$
+\end_inset
+
+ (Refer to example 19)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ distributes over 
+\begin_inset Formula $\land$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ distributes over 
+\begin_inset Formula $\lor$
+\end_inset
+
+.
+ But NOT vice versa.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Variants of Universal and Conditional Statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Consider the statement of the form:
+\begin_inset Formula 
+\[
+\forall x\in D,\text{if}P\left(x\right)\text{then}Q\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Its contrapositive is the statement
+\begin_inset Formula 
+\[
+\forall x\in D,\text{if}\sim Q\left(x\right)\text{then}\sim P\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Its converse is the statement
+\begin_inset Formula 
+\[
+\forall x\in D,\text{if}Q\left(x\right)\text{then}P\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Its inverse is
+\begin_inset Formula 
+\[
+\forall x\in D,\text{if}\sim P\left(x\right)\text{then}\sim Q\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Universal condition statement equivalence
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Equivalent to contrapositive: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $x$
+\end_inset
+
+, if 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ then 
+\begin_inset Formula $Q\left(x\right)\equiv$
+\end_inset
+
+ For all 
+\begin_inset Formula $x$
+\end_inset
+
+, if not 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ then not 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+NOT equivalent to:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Converse: For all 
+\begin_inset Formula $x$
+\end_inset
+
+, if 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ then 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inverse: For all 
+\begin_inset Formula $x$
+\end_inset
+
+, if not 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ then not 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Using diagrams to test for validity
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Helpful and convincing
+\end_layout
+
+\begin_layout Enumerate
+Steps
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Represent truth of premises in diagrams
+\end_layout
+
+\begin_layout Enumerate
+Aalyze diagrams to see if they also apply to conclusion
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Example
 \end_layout
@@ -2685,11 +2985,11 @@ books
 \begin_inset Formula $\forall$
 \end_inset
 
- an integer 
+ integer 
 \begin_inset Formula $k$
 \end_inset
 
- such that 
+, 
 \begin_inset Formula $n\neq2k$
 \end_inset
 
@@ -2697,5 +2997,1091 @@ books
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ a person 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall$
+\end_inset
+
+ people 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ loves 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ people 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a people 
+\begin_inset Formula $y$
+\end_inset
+
+, such that 
+\begin_inset Formula $x$
+\end_inset
+
+ do not love 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x$
+\end_inset
+
+, 
+\begin_inset Formula $\exists y\left[\left(P\left(x,y\right)\land Q\left(x,y\right)\right)\to R\left(x,y\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\exists x,\forall y\sim\left[\sim\left(P\left(x,y\right)\land Q\left(x,y\right)\right)\lor R\left(x,y\right)\right] & \equiv\exists x,\forall y\sim\left[\sim\left(P\left(x,y\right)\land Q\left(x,y\right)\right)\lor R\left(x,y\right)\right]\\
+ & \equiv\exists x,\forall y\sim\left[\sim P\left(x,y\right)\lor\sim Q\left(x,y\right)\lor R\left(x,y\right)\right]\\
+ & \equiv\exists x,\forall y\left[P\left(x,y\right)\land Q\left(x,y\right)\land\sim R\left(x,y\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example 18 - The Relation Among 
+\begin_inset Formula $\forall$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ , 
+\begin_inset Formula $\land$
+\end_inset
+
+ , and 
+\begin_inset Formula $\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the universe of natural numbers 
+\begin_inset Formula $N$
+\end_inset
+
+, the assertion 
+\begin_inset Formula $\forall x\left[P\left(x\right)\lor Q\right]$
+\end_inset
+
+ is equivalent to the infinite conjunction: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[P\left(1\right)\lor Q\right]\land\left[P\left(2\right)\lor Q\right]\land\left[P\left(3\right)\lor Q\right]\land...\land\left[P\left(N\right)\lor Q\right]
+\]
+
+\end_inset
+
+which can be rearranged using the distributive laws to form: 
+\begin_inset Formula 
+\[
+\left[P\left(1\right)\land P\left(2\right)\land...\land P\left(N\right)\right]\lor Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is equivalent to 
+\begin_inset Formula 
+\[
+\forall xP\left(x\right)\lor Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Note: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The variable 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ for example 18 is bound by quantifiers, which 
+\begin_inset Formula $Q$
+\end_inset
+
+ is free (constant in a sense).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example 19
+\end_layout
+
+\begin_layout Standard
+For the universe of natural numbers 
+\begin_inset Formula $N$
+\end_inset
+
+, the proposition 
+\begin_inset Formula $\forall x[P(x)\land Q(x)]$
+\end_inset
+
+ can be expanded into an infinite conjunction:
+\begin_inset Formula 
+\[
+\left[P\left(1\right)\land Q\left(1\right)\right]\land\left[P\left(2\right)\land Q\left(2\right)\right]\land...\land\left[P\left(N\right)\land Q\left(N\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be rearranged using associative and commutative laws to obtain:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(1\right)\land P\left(2\right)\land...\land P\left(N\right)\land Q\left(1\right)\land Q\left(2\right)\land...\land Q\left(N\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is equivalent to 
+\begin_inset Formula 
+\[
+\forall xP\left(x\right)\land\forall xQ\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Let the universe be the integers, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(x):x$
+\end_inset
+
+ is an even integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q(x):x$
+\end_inset
+
+ is an odd integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $\exists x\,P\left(x\right)\land\exists x\,Q\left(x\right)$
+\end_inset
+
+ is true but 
+\begin_inset Formula $\exists x\,\left[P\left(x\right)\land Q\left(x\right)\right]$
+\end_inset
+
+ is false.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+TRUE: There exists 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is an even integer, and there exists 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is an odd integer.
+\end_layout
+
+\begin_layout Enumerate
+FALSE: There exists 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is an even integer AND an odd integer.
+\end_layout
+
+\begin_layout Enumerate
+The point here is that 
+\begin_inset Formula $\exists$
+\end_inset
+
+ is not distributable over 
+\begin_inset Formula $\land$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Therefore 
+\begin_inset Formula $\exists x\,P\left(x\right)\land\exists x\,Q\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\exists x\,\left[P\left(x\right)\land Q\left(x\right)\right]$
+\end_inset
+
+ are not equivalent.
+ 
+\end_layout
+
+\begin_layout Enumerate
+However, 
+\begin_inset Formula $\exists x\,P\left(x\right)\land\exists x\,Q\left(x\right)$
+\end_inset
+
+ implies 
+\begin_inset Formula $\exists x\,\left[P\left(x\right)\land Q\left(x\right)\right]$
+\end_inset
+
+ is valid.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Write the contrapositive, converse and inverse for the following statements.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+, if 
+\begin_inset Formula $x>3$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Contrapositive: 
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+, if not 
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+ , then not 
+\begin_inset Formula $x>3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Converse: 
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+, if 
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+ , then 
+\begin_inset Formula $x>3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inverse: 
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+, if not 
+\begin_inset Formula $x>3$
+\end_inset
+
+, then not 
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ animals 
+\begin_inset Formula $A$
+\end_inset
+
+, if 
+\begin_inset Formula $A$
+\end_inset
+
+ is a cat then 
+\begin_inset Formula $A$
+\end_inset
+
+ has whiskers and 
+\begin_inset Formula $A$
+\end_inset
+
+ has claws.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall x\in A,$
+\end_inset
+
+if 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Contrapositive:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in A$
+\end_inset
+
+, if 
+\begin_inset Formula $\sim Q\left(x\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\sim P\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ animals 
+\begin_inset Formula $A$
+\end_inset
+
+, if 
+\begin_inset Formula $A$
+\end_inset
+
+ do not has whiskers or 
+\begin_inset Formula $A$
+\end_inset
+
+ do not has claws, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is not a cat.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Converse:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in A,$
+\end_inset
+
+if 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ animals 
+\begin_inset Formula $A$
+\end_inset
+
+, if 
+\begin_inset Formula $A$
+\end_inset
+
+ has whiskers and 
+\begin_inset Formula $A$
+\end_inset
+
+ has claws then 
+\begin_inset Formula $A$
+\end_inset
+
+ is a cat.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Inverse:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in A,$
+\end_inset
+
+if 
+\begin_inset Formula $A$
+\end_inset
+
+ is NOT a cat, then 
+\begin_inset Formula $A$
+\end_inset
+
+ DO NOT has whiskers OR 
+\begin_inset Formula $A$
+\end_inset
+
+ DO NOT has claws.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine the validity of the following argument using diagrams.
+ 
+\end_layout
+
+\begin_layout Enumerate
+All human beings are mortal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Zeus is not mortal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Zeus is not a human being.
+\end_layout
+
+\begin_layout Subsubsection
+Solution
+\end_layout
+
+\begin_layout Enumerate
+Let H: set of human beings 
+\end_layout
+
+\begin_layout Enumerate
+M: set of those who are mortal 
+\end_layout
+
+\begin_layout Enumerate
+Z: Zeus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/c2/ex22.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine the validity of the following argument using diagrams.
+ 
+\end_layout
+
+\begin_layout Enumerate
+All human beings are mortal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Felix is mortal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Felix is a human being.
+\end_layout
+
+\begin_layout Subsubsection
+Solution
+\end_layout
+
+\begin_layout Enumerate
+H: set of human beings 
+\end_layout
+
+\begin_layout Enumerate
+M: set of those who are mortal 
+\end_layout
+
+\begin_layout Enumerate
+F: Felix 
+\end_layout
+
+\begin_layout Paragraph
+Major Premise (the predicate of the conclusion, kinda major because they
+ are what we want)
+\end_layout
+
+\begin_layout Enumerate
+The disc of H falls entirely inside the disc of M.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/ex23-major.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Minor Premise (the subject of the conclusion, kinda minor because if they
+ lead to something)
+\end_layout
+
+\begin_layout Enumerate
+F falls inside the disc of M.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/ex23-minor.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Possible conclusions
+\end_layout
+
+\begin_layout Enumerate
+Therefore, Felix is not a human being as 
+\begin_inset Formula $F$
+\end_inset
+
+ falls outside of the disc of 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, Felix is a human being as 
+\begin_inset Formula $F$
+\end_inset
+
+ falls inside the disc of H.
+\end_layout
+
+\begin_layout Paragraph
+Conclusion
+\end_layout
+
+\begin_layout Standard
+There is a contradiction between the conclusions, hence the argument is
+ 
+\series bold
+invalid
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine the validity of the following argument using diagrams.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No polynomial functions have horizontal asymptote.
+ 
+\end_layout
+
+\begin_layout Enumerate
+This function has a horizontal asymptote.
+ 
+\end_layout
+
+\begin_layout Enumerate
+This function is not a polynomial.
+\end_layout
+
+\begin_layout Subsubsection
+Assign symbols
+\end_layout
+
+\begin_layout Standard
+Let:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P:$
+\end_inset
+
+ Set of polynomial functions
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H:$
+\end_inset
+
+ Set of functions with horizontal asymptotes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T:$
+\end_inset
+
+ This function.
+ (Conclusion)
+\end_layout
+
+\begin_layout Subsubsection
+Check the diagrams
+\end_layout
+
+\begin_layout Enumerate
+Major premise - No polynomial functions have horizontal asymptote
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ are separated
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/ex24-major.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Minor premise - This function has a horizontal asymptote
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 
+\begin_inset Formula $T$
+\end_inset
+
+ is inside 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/ex24-minor.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Conclusion - This function is not a polynomial
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The only possible conclusion is disc 
+\begin_inset Formula $T$
+\end_inset
+
+ falls outside of disc 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ This function is not a polynomial.
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the cargument is valid.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine the validity of the following argument using diagrams.
+ 
+\end_layout
+
+\begin_layout Enumerate
+All 
+\series bold
+discrete mathematics
+\series default
+ students can tell a valid argument from an invalid one.
+ 
+\end_layout
+
+\begin_layout Enumerate
+All
+\series bold
+ thoughtful
+\series default
+ people can tell a valid argument from an invalid one.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ All 
+\series bold
+discrete mathematics
+\series default
+ students are
+\series bold
+ thoughtful
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Make the terms and signs
+\end_layout
+
+\begin_layout Standard
+Let 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D:$
+\end_inset
+
+ Discrete mathematics students
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T:$
+\end_inset
+
+ Thoughtful people
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V:$
+\end_inset
+
+ Can tell a valid argument from invalid one.
+\end_layout
+
+\begin_layout Subsubsection
+Determine minor and major premises
+\end_layout
+
+\begin_layout Enumerate
+Minor premise - All discrete mathematics students can tell a valid argument
+ from an invalid one.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Disc 
+\begin_inset Formula $D$
+\end_inset
+
+ is inside disc 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/ex25-minor.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Major premise - All
+\series bold
+ thoughtful
+\series default
+ people can tell a valid argument from an invalid one.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Disc 
+\begin_inset Formula $T$
+\end_inset
+
+ inside disc 
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/ex25-major.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Conclusion - All 
+\series bold
+discrete mathematics
+\series default
+ students are
+\series bold
+ thoughtful
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Possible conclusions (ASK lecturer do we need the second sentence)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Disc 
+\begin_inset Formula $D$
+\end_inset
+
+ falls inside disc 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ All discrete mathematics students are thoughtful
+\end_layout
+
+\begin_layout Enumerate
+Disc 
+\begin_inset Formula $D$
+\end_inset
+
+ falls inside disc 
+\begin_inset Formula $V$
+\end_inset
+
+ but NOT disc 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ All discrete mathematics are NOT thoughtful.
+\end_layout
+
+\begin_layout Enumerate
+Disc 
+\begin_inset Formula $D$
+\end_inset
+
+ intersects with disc 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Some discrete mathematics student are thoughtful.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Disc 
+\begin_inset Formula $T$
+\end_inset
+
+falls inside disc 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ All thoughtful people are discrete maths students.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Since the possible conclusions contradict each other, the argument is 
+\series bold
+invalid
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

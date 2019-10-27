@@ -4,51 +4,90 @@
 
 - These have NOT been cleaned up yet. I am forced to type above 60wpm at all times due to teacher's incredible speech speed. Expect a cleanup in this week
 
-### Segmented Memory Management
+## 1. Data Storage Sizes
 
-- Segment Address
-  - Store in Segment Register
-  - Ignore the last few digits (since segment register smaller than the actual size)
-  - From segment to actual
-    - Adjust back to 20bit 
-      - Use 2000 times 10, get back 20000
-    - Add back the offset
-      - Lets say offset 250
-      - Add 250 = 20250
-- Segment composition
-  - `XXXX:XXXX`
-  - **First part**: segment address
-    - To get back: `XXXX` times 10H
-  - **Second part**: offset address
-- Challenge
-  - Segment: 1234H
-  - Offset: 0022H
-  - Answer, physical address: 
-    - 12340H + 0022H = 12362H
-- Challenge
-  - Segment: 5BA3H
-  - Offset: 3122H
-  - Physical address:
-    - 5BA30H + 3122H =
-    - 5EB52H
-- Challenge
-  - Segment: 002AH
-  - Offset: ?
-  - Result: 002C3H
-  - Physical address:
-    - 002C3H - 002A0H = 0023H
+![image-20191024114728708](img/c3/data-storage-sizes.png)
+
+- Generally only need to remember `WORD` and `BYTE`
+
+## 2. Data Addressing
+
+### Little Endian Order (LEO)
+
+- LSB store at first memory address
+- `2F 31` (in memory) :arrow_right:`31 2F` (in register)
+
+### Big Endian Order (BEO)
+
+- MSB at first memory address
+- `31 2F ` (in memory) :arrow_right:`31 2F` (in register)
+
+## 3. Segmented Memory Management
+
+### Segments & Addressing
+
+- **Real-address Mode**:
+  - x86 processor can access 1MB memory using 20 bit address (0 ~ FFFF)
+- **Segmented memory**
+  - Memory divide into 64KByte units called segments
+
+### Absolute Addressing
+
+- 20-bit value, directly reference location. (E.g. 04A26~H~)
+
+### Segments : Offset Address
+
+- Combines starting address with offset value
+- 2 portions:
+  - Segment address
+  - Offset address
+
+#### Segment Address
+
+- Stored in segment register without last digit
+  - `038E0H` :arrow_right: `038EH`
+  - Cut from 20-bit to 16-bit
+
+#### Offset Address
+
+- Distance from segment to another location *in segment*.
+- Range from `0000H (0D)` to `FFFFH (65,535D)`
+- Each segment 64KB
+
+### 20-bit Linear Address Calculation
+
+1. Adjust back to 20bit 
+
+  - Basically segment address \* `10H`
+
+2. Add offset address
+
+3. Formula:
+   $$
+   PhysicalAddress=(LogicalAddress*10H)+OffsetAddress
+   $$
 
 ### Segments
+
+- Special areas of memory containing code, data & stack info.
+- OS use to track location of program segments.
+- Types (X segment, where X is one of the following)
+- 4 types
+  - Code segment: Stores machine instructions (AKA code)
+  - Data segment: Stores defined & constants (AKA data)
+  - Stack segment: Stores local function variables & function parameters (or stacks /states)
+  - Extra segment (not in syllabus)
+- Segments can overlap (Multiple segments, same data)
 
 #### Segments vs Segment Register
 
 - Segment register stores address
 - Segments store stack information
-  - 3 types
-    - Code segment: Stores code
-    - Data segment: Stores data
-    - Stack segment: Stores stacks (or states)
-    - Extra segment (not in syllabus)
+
+### Initializing data segment register
+
+- 2-step process
+  - Add to AX, then move to DS
 
 ### Program Execution Registers
 
@@ -58,36 +97,71 @@
 - High-speed memory
 - In 8086,
   - All registers are 16-bit registers
-- AX
-  - By default, 16 bits.
+  - general-purpose registers can access as 8/16 bit
+
+#### Categories of register
+
+- General
+  - 16 bits: (A/B/C/D)X, E.g.: AX
+  - 8 bits: (A/B/C/D)(H/L), E.g.: AL
+- Pointer
+  - (S/B/I)P
+- Index
+  - (S/D)I
+- Segment
+  - (CDSE)S 
+- Flag
+  - (C/A/Z/T/D/S/O/P)F
+
+#### Registers, explained
+
+##### General-purpose registers
+
+- AX, Accumulator register
+  - By default, 16 bits, 2 byte.
   - Can divide into 2
     - AH: 1 byte
     - AL: 1 byte
   - Use for arithmetic, input/output, multiply, divide
   - Double size: EAX (Extended AX)
-- BX
+- BX, Base register
   - Break into BH and BL
   - Use for arithmetic, index
-- CX
+- CX, Count register
   - Break into CH and CL
   - Use for arithmetic, loop
-- DX
+- DX, Data register
   - Break into DH and DL
   - Use for same as AX.
   - DX is usually for bigger number, smaller number is AX
 
-#### Segment
+##### Segment
 
 - Registers
-  - CS - Code
-  - DS - Data
+  - CS - Code: Starting address of program CS
+    - CS + IP = address of instruction for execution
+  - DS - Data, starting address of program DS
+    - Locate data
+    - DS + instruction offset value (inside instruction) = specific byte location
   - SS - Segment
+    - Implement stack in memory, temporarily store address & data.
+    - SS + SP = current word being addressed in stack
   - ES - Extra
-- Stores segment address
+    - Used in string operation, handle memory addressing
+    - Initialize with appropriate segment address
+
+##### Index registers
+
+- Types
+  - SI - Source Index
+    - Some string handling
+  - DI - Destination Index
+    - String operations
+- To store index if BX is not enough
 
 #### Pointers
 
-- Registers
+- Registers, hold offset, associate with other base registers
   - IP - Instruction
   - SP - Stack
   - BP - Base
@@ -97,40 +171,40 @@
   - SS:SP
   - SS:BP
 
-### Index
+### Flag Registers (Second Highlight)
 
-- Types
-  - SI - Source Index
-  - DI - Destination Index
-- To store index if BX is not enough
-
-### Flag (Second Highlight) - Note, finishe entire table
-
-- Indicate state
-- Flag registers, only 1, but occupies 16 bits
-  - CF
+- Indicate state of activities
+- Flag registers, only 1 actual register, 16 bits (1 bit = 1 flag)
+  - CF (Carry Flag)
     - Indicate carry bit
-    - Set when unsigned too big
-    - NC: No carry
+    - Set when:
+      - unsigned too big
+      - extra 1 bit after signed calculation
+    - States:
+      - 
+      - NC: No carry
   - OF
-    - Indicate overflow
+    - Indicate overflow (ONLY signed)
+    - Set when:
+      - Result of signed arithmetic too big (i.e. The result's sign is opposite of both operand's sign)
     - NO: No overflow
   - AF
     - Auxillary Flag
     - AC: Auxillary Carry
     - NA: No auxillary
   - ZF
-    - Indicate zero
-    - 
+    - Indicate result is zero
   - SF
-    - Indicate sign after operation
+    - Indicate result's sign
   - PF
     - Set if result have even number of 1 bits
-    - Even parity
-    - Odd parity
+    - States:
+      - Even parity
+      - Odd parity
     - Use for error checking
   - AF
     - Set when carry from bit 3 to bit 4 *in 8 bit operation*
+    - Important for BCD addition & subtraction.
   - CF
     - TF: Single step
     - IF: Interrupt

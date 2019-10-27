@@ -1,0 +1,1645 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc II - C2: Differential Eq.
+ with Modelling Apps
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Enumerate
+Differential equations 
+\begin_inset Formula $\left(D.E.\right)$
+\end_inset
+
+: Equations containing derivatives.
+\end_layout
+
+\begin_layout Enumerate
+In this chapter: Find 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ which satisfies 
+\begin_inset Formula $\left(D.E.\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Term
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Differential equations (D.E.) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Equation containing derivatives
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ordinary differential equation (O.D.E)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D.E.
+ with only ONE independent variable
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Order
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Highest derivative presentation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Degree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greatest power of highest order derivative
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Differential Equation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Independent Variables
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dependent Variables
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Order
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Degree
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}+x^{3}y=\sin x$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2(Note: 
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1(Note:
+\begin_inset Formula $\left(\frac{d^{2}y}{dx^{2}}\right)^{1}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{d^{3}y}{dx^{3}}+4y\left(\frac{dy}{dx}\right)^{2}=x\frac{d^{2}y}{dx^{2}}+e^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{du}{dx}+\frac{dv}{dx}=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u,v$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\frac{d^{4}s}{dt^{4}}\right)^{2}+\left(\frac{d^{2}s}{dt^{2}}\right)^{5}+\frac{ds}{dt}=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Solution of D.E.
+\end_layout
+
+\begin_layout Standard
+Definition 2.5: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Solution of DE: 
+\series default
+Function 
+\begin_inset Formula $f$
+\end_inset
+
+ (free of derivatives), satisfies identically a D.E.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that the function 
+\begin_inset Formula $f(x)=2x^{3}-5x+C$
+\end_inset
+
+ for any real number 
+\begin_inset Formula $C$
+\end_inset
+
+, is the solution of the 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ 
+\begin_inset Formula $y'=6x^{2}-5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Solution
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $y=2x^{3}-5x+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differentiate 
+\begin_inset Formula $y$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $x$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+y'=6x^{2}-5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute into D.E., we have
+\begin_inset Formula 
+\[
+6x^{2}-5=6x^{2}-5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Thus, 
+\begin_inset Formula $y=f\left(x\right)=2x^{3}-5x+C$
+\end_inset
+
+ for any real number 
+\begin_inset Formula $C$
+\end_inset
+
+ is the solution of 
+\begin_inset Formula $y'=6x^{2}-5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+General solution: 
+\series default
+
+\begin_inset Formula $y=f\left(x\right)=2x^{3}-5x+C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Every solution is in this orm.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Particular solution: 
+\series default
+Assigning C to specific value.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that every member of the family of function 
+\begin_inset Formula $y\left(t\right)=\frac{1+ce^{t}}{1-ce^{t}}$
+\end_inset
+
+ is a solution of the D.E.
+ 
+\begin_inset Formula $𝑦′(𝑡)=\left(y^{2}-1\right)/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $y=\frac{1+ce^{t}}{1-ce^{t}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the derivative
+\begin_inset Formula 
+\begin{align*}
+y' & =\frac{\left(1-ce^{t}\right)\frac{d}{dx}\left[1+ce^{t}\right]-\left(1+ce^{t}\right)\frac{d}{dx}\left[1-ce^{t}\right]}{\left(1-ce^{t}\right)^{2}}\\
+ & =\frac{\left(1-ce^{t}\right)\left(ce^{t}\right)-\left(1+ce^{t}\right)\left(-ce^{t}\right)}{\left(1-ce^{t}\right)^{2}}\\
+ & =\frac{ce^{t}-ce^{2t}-\left(-ce^{t}-ce^{2t}\right)}{\left(1-ce^{t}\right)^{2}}\\
+ & =\frac{ce^{t}-ce^{2t}+ce^{t}+ce^{2t}}{\left(1-ce^{t}\right)^{2}}\\
+y' & =\frac{2ce^{t}}{\left(1-ce^{t}\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Simplify the second equation, to make them equal
+\begin_inset Formula 
+\begin{align*}
+y' & =\frac{\left(y^{2}-1\right)}{2}\\
+ & =\frac{\left(\left(\frac{1+ce^{t}}{1-ce^{t}}\right)^{2}-1\right)}{2}\\
+ & =\frac{\left(\frac{1+ce^{t}}{1-ce^{t}}\right)^{2}-1}{2}\\
+ & =\frac{\frac{\left(1+ce^{t}\right)^{2}}{\left(1-ce^{t}\right)^{2}}-1}{2}\\
+ & =\frac{\frac{\left(1+ce^{t}\right)^{2}}{\left(1-ce^{t}\right)^{2}}-1}{2}\\
+ & =\frac{\left(1+ce^{t}\right)^{2}-\left(1-ce^{t}\right)^{2}}{2\left(1-ce^{t}\right)^{2}}\\
+ & =\frac{1+2ce^{t}+ce^{2t}-\left(1-2ce^{t}+ce^{2t}\right)}{2\left(1-ce^{t}\right)^{2}}\\
+ & =\frac{1+2ce^{t}+ce^{2t}-1+2ce^{t}-ce^{2t}}{2\left(1-ce^{t}\right)^{2}}\\
+ & =\frac{4ce^{t}}{2\left(1-ce^{t}\right)^{2}}\\
+y' & =\frac{2ce^{t}}{\left(1-ce^{t}\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion, since both of the equations result in the same 
+\begin_inset Formula $y'$
+\end_inset
+
+, every member of the family of function 
+\begin_inset Formula $y\left(t\right)=\frac{1+ce^{t}}{1-ce^{t}}=\frac{u}{v}$
+\end_inset
+
+ is a solution of 
+\begin_inset Formula $y'\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Example (Continue from 1.5)
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $y(0)=2$
+\end_inset
+
+ (initial condition), solve the initial value problem 
+\begin_inset Formula $𝑦′=\frac{(y^{2}-1)}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+y\left(0\right) & =\frac{1+ce^{0}}{1-ce^{0}}\\
+ & =\frac{1+c}{1-c}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2 & =\frac{1+c}{1-c}\\
+2\left(1-c\right) & =1+c\\
+2-2c & =1+c\\
+2-1 & =c+2c\\
+1 & =3c\\
+c & =\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute the 
+\begin_inset Formula $c$
+\end_inset
+
+ into the equation
+\begin_inset Formula 
+\[
+y\left(t\right)=\frac{1+\frac{1}{3}e^{t}}{1-\frac{1}{3}e^{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modelling with Differential Equations
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mathematical model: 
+\series default
+Mathematical description of a real-world phenomenon.
+\end_layout
+
+\begin_layout Subsection
+Models of Population Growth
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Assumption
+\series default
+: Population grows at rate proportional to size of population.
+\end_layout
+
+\begin_layout Enumerate
+Variables
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $t=time$
+\end_inset
+
+ (the independent variable)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P=$
+\end_inset
+
+ the number of individuals in the population (dependent variable)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rate of growth: 
+\begin_inset Formula $\frac{dP}{dt}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dP}{dt} & \propto P\\
+\frac{dP}{dt} & =kP,k\text{= proportionality constant}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that any exponential function of the form 
+\begin_inset Formula $P\left(t\right)=Ce^{kt}$
+\end_inset
+
+ is a solution of 
+\begin_inset Formula $\frac{dP}{dt}=kP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the derivative
+\begin_inset Formula 
+\begin{align*}
+P\left(t\right) & =Ce^{kt}\\
+P'\left(t\right) & =k\left(Ce^{kt}\right)\\
+ & =kP
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+A Model for the Motion of A Spring
+\end_layout
+
+\begin_layout Enumerate
+Consider the motion of an object with mass 
+\begin_inset Formula $m$
+\end_inset
+
+ at the end of a vertical spring.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If the spring is stretched (or compressed) 
+\begin_inset Formula $x$
+\end_inset
+
+ units from its natural length, then, by Hooke’s Law, it exerts a force
+ that is proportional to 
+\begin_inset Formula $x$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+Restoring\,force=-kx
+\]
+
+\end_inset
+
+Where 
+\begin_inset Formula $k$
+\end_inset
+
+ is a positive constant (called the spring constant).
+ 
+\end_layout
+
+\begin_layout Enumerate
+By Newton's Second Law 
+\begin_inset Formula $\left(F=ma\right)$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\begin{align*}
+m\frac{d^{2}x}{dt^{2}} & =-kx\\
+\frac{d^{2}x}{dt^{2}} & =-\frac{k}{m}x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the nonzero values of 
+\begin_inset Formula $k$
+\end_inset
+
+ in function 
+\begin_inset Formula $x=\sin kt$
+\end_inset
+
+ which satisfy the 
+\begin_inset Formula $D.E.,\frac{d^{2}x}{dt^{2}}=-9x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=\sin kt$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =k\cos kt\\
+\frac{d^{2}x}{dt^{2}} & =k\left(-k\sin kt\right)\\
+\frac{d^{2}x}{dt^{2}} & =-k^{2}\sin kt\\
+ & =-k^{2}x\\
+-9x & =-k^{2}x\\
+9 & =k^{2}\\
+k & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Direction fields
+\end_layout
+
+\begin_layout Enumerate
+Impossible to obtain an explicit formula for most differential equation
+\end_layout
+
+\begin_layout Enumerate
+Another way to learn solution through graphical approach.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Example
+\series default
+: 
+\begin_inset Formula $y'=F\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x,y\right)\equiv$
+\end_inset
+
+ Slope of a solution curve at a point 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Solution curve
+\series default
+: Graph of solution of ODE
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Direction/slope field: 
+\series default
+Drawing of short line segments with slope 
+\begin_inset Formula $F\left(x,y\right)$
+\end_inset
+
+ at several points.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Indicates direction the solution curve is heading
+\end_layout
+
+\begin_layout Enumerate
+Visualize general shape of solution curve.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Sketch the direction field for the DE 
+\begin_inset Formula $𝑦′=𝑥^{2}+𝑦^{2}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use part (a) to sketch the solution curve that passes through the origin.
+\end_layout
+
+\begin_layout Enumerate
+Solution: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Notice that we orignally are required to find the other values, however,
+ remember that 
+\begin_inset Formula $\left(-x\right)^{2}=x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(-y\right)^{2}=y^{2}$
+\end_inset
+
+.
+ Therefore, we could omit inverse values since they are simply the same.
+ Besides that, as you might see, all the slope are slowly increasing as
+ the 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ increases.
+ Therefore, we could start graphing it out.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/c2-direction-field.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Equilibrium solutions
+\end_layout
+
+\begin_layout Enumerate
+An ODE of the form 
+\begin_inset Formula $y'=F\left(y\right)$
+\end_inset
+
+ in which the independent variable is missing from the right side, is called
+ 
+\series bold
+autonomous
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For any autonomous equation 
+\begin_inset Formula $𝑦′=𝐹(𝑦)$
+\end_inset
+
+, if 
+\begin_inset Formula $𝐹(𝑐)=0$
+\end_inset
+
+, then a constant solution 
+\begin_inset Formula $𝑦=𝑐$
+\end_inset
+
+ of the ODE is called an 
+\series bold
+equilibrium solution
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Example: Which of the following DE are autonomous? Determine the equilibrium
+ solution of each autonomous equation.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dy}{dx}=1-y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Autonomous.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Finding equilibrium solution
+\begin_inset Formula 
+\begin{align*}
+1-y^{2} & =0\\
+y & =1,-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dx}{dt}=1+𝑡^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not autonomous.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dP}{dt}=P\left(1-\frac{P}{K}\right),K$
+\end_inset
+
+ is a constant
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Autonomous.
+\begin_inset Formula 
+\begin{align*}
+P\left(1-\frac{P}{K}\right) & =0\\
+P-\frac{P^{2}}{K} & =0\\
+\frac{P^{2}}{K} & =P\\
+P^{2} & =PK\\
+K & =\frac{P^{2}}{P}\\
+K & =P\\
+P & =K
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dy}{dx}=2𝑥𝑦$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not autonomous.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Euler's Method
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

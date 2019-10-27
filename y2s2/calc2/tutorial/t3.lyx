@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -104,7 +95,15 @@ Find the average value of the function on the given interval:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\frac{2}{\pi}$
+Answer
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{\frac{\pi}{2}-0}\int_{0}^{\frac{\pi}{2}}\cos x\,dx\\
+ & =\frac{2}{\pi}\left[\sin x\right]_{0}^{\frac{\pi}{2}}\\
+ & =\frac{2}{\pi}\left(1-\left(0\right)\right)\\
+M & =\frac{2}{\pi}
+\end{align*}
+
 \end_inset
 
 
@@ -120,7 +119,14 @@ Find the average value of the function on the given interval:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $0.1\left[1-e^{-25}\right]$
+Answer
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{5-0}\int_{0}^{5}te^{-t^{2}}dt\\
+ & =\frac{e^{25}-1}{10e^{25}}\\
+M & =0.1\left(1-e^{-25}\right)
+\end{align*}
+
 \end_inset
 
 
@@ -136,12 +142,75 @@ Find the average value of the function on the given interval:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\frac{3}{14}$
+Answer
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{6-1}\int_{1}^{6}\frac{3}{\left(1+r\right)^{2}}dr\\
+ & =\frac{1}{5}\int_{1}^{6}\frac{3}{\left(1+r\right)^{2}}dr\\
+ & =\frac{3}{14}
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Note, to solve 
+\begin_inset Formula $\int_{1}^{6}\frac{3}{\left(1+r\right)^{2}}dr$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=1+r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{du}{dr}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find bounds
+\begin_inset Formula 
+\begin{align*}
+u\vert_{r=6} & =1+6\\
+ & =7
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u|_{r=1} & =1+1\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{1}^{6}\frac{3}{\left(1+r\right)^{2}}dr & =\int_{2}^{7}\frac{3}{u^{2}}du\\
+ & =\int_{2}^{7}3u^{-2}du
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $f\left(y\right)=\ln y,\left[1,3\right]$
@@ -152,12 +221,74 @@ Find the average value of the function on the given interval:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\frac{3}{2}\ln3-1$
+Answer
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{3-1}\int_{1}^{3}\ln y\,dy\\
+ & =\frac{1}{2}\int_{1}^{3}\ln y\,dy\\
+ & =\frac{1}{2}\left(3\ln\left(3\right)-2\right)\\
+M & =\frac{3}{2}\ln3-1
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Extra, to find integral for 
+\begin_inset Formula $\int_{1}^{3}\ln y\,dy$
+\end_inset
+
+, integrate by parts
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=\ln y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $v'=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dy} & =\frac{1}{y}\\
+du & =\frac{1}{y}dy
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v & =\int1\\
+ & =y
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{1}^{3}\ln y\cdot1dy & =y\ln y|_{1}^{3}-\int_{1}^{3}y\frac{1}{y}dy\\
+ & =\left[y\ln y-y\right]_{1}^{3}\\
+ & =3\ln3-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $y=3x^{2}+5x-7,\left[-2,3\right]$
@@ -168,7 +299,15 @@ Find the average value of the function on the given interval:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $2.5$
+Answer
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{3-\left(-2\right)}\int_{-2}^{3}3x^{2}+5x-7dx\\
+ & =\frac{1}{5}\int_{-2}^{3}3x^{2}+5x-7dx\\
+ & =\frac{5}{2}\\
+M & =2.5
+\end{align*}
+
 \end_inset
 
 
@@ -184,7 +323,15 @@ Find the average value of the function on the given interval:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $a-\frac{2a}{e}$
+Answer
+\begin_inset Formula 
+\begin{align*}
+M & =\frac{1}{a-0}\int_{0}^{a}xe^{-\frac{x}{a}}dx\\
+ & =\frac{1}{a}\int_{0}^{a}xe^{-\frac{x}{a}}dx\\
+ & =\frac{\left(e-2\right)a}{e}\\
+M & =a-\frac{2a}{e}
+\end{align*}
+
 \end_inset
 
 
@@ -206,7 +353,38 @@ Find the values of b such that the average value of
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\frac{3\pm\sqrt{5}}{2}$
+Answer
+\begin_inset Formula 
+\begin{align*}
+3 & =\frac{1}{b-0}\int_{0}^{b}2+6x-3x^{2}dx\\
+3b & =\int_{0}^{b}2+6x-3x^{2}dx\\
+ & =\left[2x+3x^{2}-x^{3}\right]_{0}^{b}\\
+3b & =2b+3b^{2}-b^{3}\\
+b^{3}-3b^{2}+3b-2b & =0\\
+b^{3}-3b^{2}+b & =0\\
+b\left(b^{2}-3b+1\right) & =0\\
+b & =0,\frac{3\pm\sqrt{5}}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, otherwise the entire equation evaluates to 
+\begin_inset Formula $0$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b=\frac{3\pm\sqrt{5}}{2}$
 \end_inset
 
 
@@ -214,7 +392,11 @@ Find the values of b such that the average value of
 
 \end_deeper
 \begin_layout Enumerate
-The marginal revenue from selling 
+The marginal revenue 
+\begin_inset Formula $R'\left(x\right)$
+\end_inset
+
+ from selling 
 \begin_inset Formula $x$
 \end_inset
 
@@ -232,7 +414,32 @@ The marginal revenue from selling
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\$17,500$
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+\int_{100}^{200}R'\left(x\right)dx & =\int_{100}^{200}90-0.02x\,dx\\
+ & =8700
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Total figure
+\begin_inset Formula 
+\begin{align*}
+8700 & =R\left(200\right)-R\left(100\right)\\
+ & =R\left(200\right)-8800\\
+R\left(200\right) & =\$17500
+\end{align*}
+
 \end_inset
 
 
@@ -250,7 +457,31 @@ The demand function for a certain commodity is
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\$45$
+Answer
+\begin_inset Formula 
+\[
+\bar{x}=30
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\bar{p} & =5-\frac{30}{10}\\
+ & =2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{30}\left[5-\frac{x}{10}-2\right]dx\\
+ & =\int_{0}^{30}3-\frac{x}{10}dx\\
+ & =\$45
+\end{align*}
+
 \end_inset
 
 
@@ -260,7 +491,7 @@ The demand function for a certain commodity is
 \begin_layout Enumerate
 The demand function for a certain make of cartridge typewriter ribbon is
  given by 
-\begin_inset Formula $-0.01x^{2}-0.1x+6$
+\begin_inset Formula $p=-0.01x^{2}-0.1x+6$
 \end_inset
 
 , where 
@@ -277,7 +508,59 @@ The demand function for a certain make of cartridge typewriter ribbon is
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\$11.67$
+Determine demand.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=-0.01x^{2}-0.1x+6$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{p}=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+4 & =-0.01x^{2}-0.1x+6\\
+-0.01x^{2}-0.1x+2 & =0\\
+\bar{x} & =-20,10
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Reject 
+\begin_inset Formula $-20$
+\end_inset
+
+ because quantity demanded cannot be negative, therefore 
+\begin_inset Formula $\bar{x}=10$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine consumer surplus
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{10}\left[-0.01x^{2}-0.1x+6-4\right]dx\\
+ & =11.67\$
+\end{align*}
+
 \end_inset
 
 
@@ -298,12 +581,65 @@ It is known that the quantity demanded of a certain make of portable hair
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\$66.67$
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=\sqrt{225-5x}$
+\end_inset
+
+, 
+\begin_inset Formula $p=10$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Formula for CS: 
+\begin_inset Formula $CS=\int_{0}^{\bar{x}}\left[D\left(x\right)-\bar{p}\right]dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine the quantity demanded, 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p & =10\\
+10 & =\sqrt{225-5x}\\
+100 & =225-5x\\
+100-225 & =-5x\\
+\frac{125}{5} & =x\\
+\bar{x} & =25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+CS
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{25}\sqrt{225-5x}-10dx\\
+ & =\frac{200}{3}\\
+ & =\$66.67
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 For a commodity and pure competition, the number of units produced and the
@@ -322,7 +658,67 @@ For a commodity and pure competition, the number of units produced and the
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\$1,000;\$2,000$
+Find the intersection
+\begin_inset Formula 
+\begin{align*}
+50-\frac{x}{20} & =20+\frac{x}{10}\\
+1000-x & =400+2x\\
+600 & =3x\\
+\bar{x} & =200
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find equilibrium
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Equilibrium price, 
+\begin_inset Formula $\bar{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\bar{p} & =50-\frac{200}{20}\\
+ & =50-10\\
+\bar{p} & =40
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consumer surplus 
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{200}\left[50-\frac{x}{20}-40\right]dx\\
+ & =\int_{0}^{200}10-\frac{x}{20}dx\\
+\boldsymbol{CS} & \boldsymbol{=1000\$}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Produceer surplus
+\begin_inset Formula 
+\begin{align*}
+PS & =\int_{0}^{200}40-\left[20+\frac{x}{10}\right]dx\\
+ & =\int_{0}^{200}20-\frac{x}{10}dx\\
+\boldsymbol{PS} & \boldsymbol{=2000\$}
+\end{align*}
+
 \end_inset
 
 
@@ -363,7 +759,56 @@ The quantity demanded
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\$20.83;\$33.33$
+Find the intersection point
+\begin_inset Formula 
+\begin{align*}
+-0.1x^{2}-x+40 & =0.1x^{2}+2x+20\\
+0.2x^{2}+3x-20 & =0\\
+x^{2}+15x-100 & =0\\
+\left(x+20\right)\left(x-5\right) & =0\\
+\bar{x} & =-20\left(ignored\right),5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the equilibrium price
+\begin_inset Formula 
+\begin{align*}
+\bar{p} & =0.1\left(5\right)^{2}+2\left(5\right)+20\\
+ & =32.5\$
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the consumer surplus
+\begin_inset Formula 
+\begin{align*}
+CS & =\int_{0}^{5}-0.1x^{2}-x+40-32.5dx\\
+ & =20.83\$
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the producer surplus
+\begin_inset Formula 
+\begin{align*}
+PS & =\int_{0}^{5}32.5-\left(0.1x^{2}+2x+20\right)dx\\
+ & =\int_{0}^{5}32.5-0.1x^{2}-2x-20dx\\
+PS & =\$33.33
+\end{align*}
+
 \end_inset
 
 

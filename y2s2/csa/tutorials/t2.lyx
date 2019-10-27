@@ -858,21 +858,582 @@ Given that:
 
 \begin_deeper
 \begin_layout Enumerate
-Convert -357.24610 to the SEEMMMMM format.
+Convert 
+\begin_inset Formula $-357.24610$
+\end_inset
+
+ to the SEEMMMMM format.
  (PYP-04/14: 2 marks)
+\begin_inset Formula 
+\[
+95535725
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Convert 55220311 to scientific notation.
+\begin_inset Formula 
+\[
+0.20311
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Convert 95575321 to scientific notation.
+\begin_inset Formula 
+\[
+\left(-1\right)^{1}\cdot10^{55-52}\cdot0.75321=-7.5321*10^{2}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Convert 30.81510 to the SEEMMMMM format.
+Convert 
+\begin_inset Formula $30.815_{10}$
+\end_inset
+
+ to the SEEMMMMM format.
  
+\begin_inset Formula 
+\[
+55430815
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The following decimal numbers are stored in excess-50 floating point format.
+ A “1”is used to represent a negative sign, and a “5” for positive sign.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $55020311-15375321=55375301$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $55965253$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $55456660$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The floating point decimal numbers below are stored in the form of SEEMMMMM
+ where the exponent is stored in excess-50 with the implied decimal point
+ at the beginning of the mantissa.
+ A 
+\begin_inset Formula $4$
+\end_inset
+
+ in the sign position indicates a positive number and a 
+\begin_inset Formula $3$
+\end_inset
+
+ indicates a negative number:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $45320460$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $35520112$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Add these two numbers.
+ Show the result in sign-magnitude notation.
+ (PYP-08/12: 3 marks)
+\begin_inset Formula 
+\[
+1806.6=45418066
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply these two numbers.
+ Show the result in sign-magnitude notation.
+ (PYP-08/12: 3 marks)
+\begin_inset Formula 
+\[
+-411491.52=35641149
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show how the number 
+\begin_inset Formula $-5.5_{10}$
+\end_inset
+
+ is stored in the computer’s storage using IEEE754 32-bit single precision
+ format.
+ You are required to show your conversion steps clearly.
+ (PYP-01/14: 6 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert to binary
+\begin_inset Formula 
+\[
+101.1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add exponent
+\begin_inset Formula 
+\[
+101.1*2^{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Position decimal point
+\begin_inset Formula 
+\[
+1.011*2^{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Exponent
+\begin_inset Formula 
+\[
+127+2=129
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Change 129 to binary
+\begin_inset Formula 
+\[
+10000001
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sign of mantissa
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+1
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Full 32-bit IEEE 754
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1100000010110000000000000000000
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Represent the binary number -10111.01 into IEEE754 single precision format.
+ You are required to show your conversion steps clearly.
+ (PYP-08/15: 5 marks).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert to binary
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Already binary
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Add exponent
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10111.01*2^{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Position decimal point
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1.011101*2^{4}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Exponent
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $127+4=131$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Change exponent to binary
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10000011$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sign of mantissa
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-$
+\end_inset
+
+, so 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mantissa in 23 bits
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $0111010000000000000000$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+IEEE754 format
+\begin_inset Formula 
+\[
+1100000110111010000000000000000
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Given a decimal number “-30.8125”, how this notation can be represented in
+ the IEEE754 single precision notation.
+ You are required to show your working steps.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convert to binary
+\begin_inset Formula 
+\[
+30.8125=11110.1101
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add exponent
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10111.01*2^{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Position decimal point
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1.11101101*2^{4}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Exponent
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $127+4=131$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Change exponent to binary
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10000011$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sign of mantissa
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-$
+\end_inset
+
+, so 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mantissa in 23 bits
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $111011010000000000000$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+IEEE754 format
+\begin_inset Formula 
+\[
+11000001111101101000000000000000
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Given an IEEE754 single precision notation below, show how this notation
+ can be represented in a sign-magnitude notation.
+ You are required to show your working steps.
+ 
+\begin_inset Formula 
+\[
+11000001001001000000000000000000
+\]
+
+\end_inset
+
+ Assuming that excess-127 is applied.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First digit is 
+\begin_inset Formula $1$
+\end_inset
+
+, therefore, it is negative
+\end_layout
+
+\begin_layout Enumerate
+Convert exponent to decimal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10000010=130$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Remove excess-127 from exponent
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $130-127=3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert mantissa to decimal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $01001000000000000000000=2359296$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Write the entire sign-magnitude figure down (without proper decimal place)
+\begin_inset Formula 
+\[
+N=-1.2359296*10^{3}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper

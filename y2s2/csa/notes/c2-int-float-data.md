@@ -1,5 +1,11 @@
 # Chapter 2: Representing Numerical Data
 
+## 0. Exam Tips
+
+- Exam DO NOT cover Unsigned Binary & BCD
+- 1's complement will not come out
+- Exam will come out 2's complement
+
 ## 1. Unsigned Binary & BCD
 
 Two approaches to represent them.
