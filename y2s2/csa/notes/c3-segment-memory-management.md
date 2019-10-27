@@ -1,9 +1,5 @@
 # C3 Segment Memory Mgmt
 
-## Disclaimer
-
-- These have NOT been cleaned up yet. I am forced to type above 60wpm at all times due to teacher's incredible speech speed. Expect a cleanup in this week
-
 ## 1. Data Storage Sizes
 
 ![image-20191024114728708](img/c3/data-storage-sizes.png)
@@ -74,7 +70,7 @@
 - Types (X segment, where X is one of the following)
 - 4 types
   - Code segment: Stores machine instructions (AKA code)
-  - Data segment: Stores defined & constants (AKA data)
+  - Data segment: Stores defined variables & constants (AKA data)
   - Stack segment: Stores local function variables & function parameters (or stacks /states)
   - Extra segment (not in syllabus)
 - Segments can overlap (Multiple segments, same data)
