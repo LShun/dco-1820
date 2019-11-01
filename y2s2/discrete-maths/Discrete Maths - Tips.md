@@ -2,7 +2,7 @@
 
 - Memorize DeMorgan's Law
 
-
+- Final: Come out PDNF, PCNF, Truth table
 
 ### Leadership Form
 

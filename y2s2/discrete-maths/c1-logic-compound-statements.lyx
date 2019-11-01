@@ -505,6 +505,63 @@ p\to\left[\left(p\to q\right)\land\sim\left(\sim q\lor\sim p\right)\right]\equiv
 
 \end_layout
 
+\begin_layout Subsection
+Extra Note, for the parts below
+\end_layout
+
+\begin_layout Standard
+Say you have the PDNF:
+\begin_inset Formula 
+\[
+p\land q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+All the possible terms in a two-term situation is:
+\begin_inset Formula 
+\[
+\bar{p}\land\bar{q},p\land\bar{q},\bar{p}\land q,p\land q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The inverse of PDNF 
+\begin_inset Formula $\left(\sim PDNF\right)$
+\end_inset
+
+ is simply the terms NOT found in PDNF
+\begin_inset Formula 
+\[
+\left(\bar{p}\land\bar{q}\right)\lor\left(p\land\bar{q}\right)\lor\left(\bar{p}\land q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The PCNF is simply the terms not found in PCNF, inversed (Note the change
+ in signs)
+\begin_inset Formula 
+\[
+\left(p\lor q\right)\land\left(p\lor\bar{q}\right)\land\left(\bar{p}\lor q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Example 28
 \end_layout

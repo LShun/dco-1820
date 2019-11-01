@@ -1,0 +1,31 @@
+.MODEL SMALL
+.STACK 100
+.DATA
+    VAL1 DB 6
+    VAL2 DB 3
+    VAL3 DB 4
+    RESULT  DB  ?
+    
+.CODE
+MAIN PROC
+    MOV AX,@DATA
+    MOV DS,AX
+    MOV BL,VAL1
+    MOV BH,VAL2
+    ADD BL,BH
+    SUB BL,VAL3
+    
+    ; --- CONVERT NUMBER TO ASCII ---
+    ADD BL, 30H
+    MOV RESULT, BL
+    
+    ; --- DISPLAY ASCII
+    MOV AH, 02H
+    MOV DL, RESULT
+    INT 21H
+    
+    MOV AX,4C00H
+    INT 21H
+    
+MAIN ENDP
+END MAIN

@@ -157,7 +157,7 @@ If
 \end_deeper
 \begin_layout Enumerate
 Having two 
-\begin_inset Formula $45\text{\textdegree}$
+\begin_inset Formula $45\text{°}$
 \end_inset
 
  angles is a sufficient condition for this triangle to be a right triangle.
@@ -167,7 +167,7 @@ Having two
 \begin_deeper
 \begin_layout Enumerate
 If the triangle is a right triangle, then it has two 
-\begin_inset Formula $45\text{\textdegree\ angles.}$
+\begin_inset Formula $45\text{°\ angles.}$
 \end_inset
 
 
@@ -2184,20 +2184,15 @@ Thus, rewrite the following statement form without using
 
 \begin_inset Formula 
 \begin{align*}
- & =\left(\sim p\lor\left(q\to r\right)\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
- & =\left(\sim p\lor\sim q\lor r\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
- & =\left(\sim p\lor\sim q\lor r\right)\leftrightarrow\left(\sim p\lor\sim q\lor r\right)\\
- & =\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim\left(p\land q\right)\lor r\right)\land\sim\left(\sim\left(p\land q\right)\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\\
- & =\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\land\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\\
- & =\left(p\land q\land\sim r\lor\sim p\lor\sim q\lor r\right)\land\left(p\land q\land\sim r\lor\sim p\lor\sim q\lor r\right)\\
- & =\left(pq\bar{r}+\bar{p}+\bar{q}+r\right)\left(pq\bar{r}+\bar{p}+\bar{q}+r\right)\\
- & =pq\bar{r}+\bar{p}+\bar{q}+r\\
- & =\bar{p}+pq\bar{r}+\bar{q}+r\\
- & =\left(\bar{p}+p\right)\left(p+q\bar{r}\right)+\bar{q}+r\\
- & =p+\bar{q}\bar{r}+\bar{q}+r\\
- & =p+\left(\bar{q}+\bar{q}\right)+\left(\bar{q}+\bar{r}\right)+r\\
- & =p+t+\bar{q}+\bar{r}+r\\
- & =t
+ & \equiv\left(\sim p\lor\left(q\to r\right)\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
+ & \equiv\left(\sim p\lor\sim q\lor r\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
+ & \equiv\left(\sim p\lor\sim q\lor r\right)\leftrightarrow\left(\sim p\lor\sim q\lor r\right)\\
+ & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim\left(p\land q\right)\lor r\right)\land\sim\left(\sim\left(p\land q\right)\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\\
+ & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\land\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\\
+ & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor c\lor\left(\sim p\lor\sim q\lor r\right)\\
+ & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\lor c\\
+ & \equiv t\lor c\\
+ & \equiv t
 \end{align*}
 
 \end_inset

@@ -200,14 +200,14 @@ Example: 253.75~10~
    0 (positive)
    $$
    
-7. Mantissa in 23 bits
+7. Mantissa in 23 bits (Note, can use ... to represent trailing zeroes)
    $$
-   11111011\quad10000000\quad0000000
+   11111011\quad1...
    $$
    
 8. IEEE 754 format:
    $$
-   0\quad10000110\quad11111011\quad10000000\quad0000000
+   0\quad10000110\quad11111011\quad1...
    $$
    
 

@@ -1637,9 +1637,2386 @@ Not autonomous.
 Euler's Method
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Numerical process to generate table of approximate values of the function
+ that solves the initial value problem 
+\begin_inset Formula $\frac{dy}{dx}=y'=F\left(x,y\right),$
+\end_inset
+
+and 
+\begin_inset Formula $y\left(x_{0}\right)=y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Iteration formula for Euler's method
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x_{n}=x_{n-1}+h$
+\end_inset
+
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $TL;DR:$
+\end_inset
+
+ The next 
+\begin_inset Formula $x$
+\end_inset
+
+ value is simply the previous one + step size.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y_{n}=y_{n-1}+hF\left(x_{n-1},y_{n-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $TL;DR:$
+\end_inset
+
+ The next 
+\begin_inset Formula $y$
+\end_inset
+
+ value is simply the previous one + step size * the gradient of the previous
+ step.
+ Remember that 
+\begin_inset Formula $\frac{dy}{dx}=F\left(x,y\right)$
+\end_inset
+
+ as per point 1.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h$
+\end_inset
+
+ is the horizontal distance called the step size.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The smaller the step size, 
+\begin_inset Formula $h$
+\end_inset
+
+, the better the approximation
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Use Euler’s method to find approximate values for the solution of the initial
+ value problem 
+\begin_inset Formula $F=\frac{dy}{dx}=x-y,y\left(0\right)=1$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ using five steps of size 
+\begin_inset Formula $h=0.2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Xn$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=y_{n-1}+0.2\left(x_{n-1}-y_{n-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1+0.2\left(-1\right)=1-0.2=0.8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.8+0.2\left(.2-.8\right)=0.68$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.68+0.2\left(.4-.68\right)=0.624$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.624+0.2\left(.6-0.624\right)=0.6192$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.6192+0.2\left(.8-0.6192\right)=0.65536$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Use Euler’s method with 
+\begin_inset Formula $n=5$
+\end_inset
+
+ to approximate the solution of the initial value problem 
+\begin_inset Formula $\frac{dy}{dx}=-2xy^{2},y\left(0\right)=1$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\left[0,0.5\right]$
+\end_inset
+
+.
+ Find the actual solution of the initial value problem.
+ Finally, sketch the graphs of the approximate solutions and the actual
+ solution for 
+\begin_inset Formula $0\le x\le0.5$
+\end_inset
+
+ on the same set of axes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Approximate solution
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Xn$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=y_{n-1}+0.1\left(-2x_{n-1}y_{n-1}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1+0.1\left(-2\left(0\right)\left(1\right)^{2}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1+0.1\left(-2\left(0.1\right)\left(1\right)^{2}\right)=0.98$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.98+0.1\left(-2\left(0.2\right)\left(0.98\right)^{2}\right)=0.9416$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.9416+0.1\left(-2\left(0.3\right)\left(0.9416\right)^{2}\right)=0.8884$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.8884+0.1\left(-2\left(0.4\right)\left(0.8884\right)^{2}\right)=0.8253$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Actual solution (Method: Separation of variables)
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =-2xy^{2}\\
+dy & =-2xy^{2}dx\\
+\frac{1}{y^{2}}dy & =-2xdx\\
+\frac{1}{y^{2}}dy+2xdx & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Now integrate them
+\begin_inset Formula 
+\begin{align*}
+\int\left(\frac{1}{y^{2}}dy+2xdx\right) & =0\\
+\int y^{-2}dy+\int2xdx & =0\\
+-\frac{1}{y}+c+\frac{2x^{2}}{2}+c & =0\\
+-\frac{1}{y}+x^{2}+c & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then when 
+\begin_inset Formula $x=0,y=1$
+\end_inset
+
+, so:
+\begin_inset Formula 
+\begin{align*}
+-\frac{1}{y}+x^{2}+c & =0\\
+-1+0^{2}+c & =0\\
+c & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Finally, we arrive at our equation
+\begin_inset Formula 
+\begin{align*}
+-\frac{1}{y}+x^{2}+1 & =0\\
+-\frac{1}{y} & =-\left(x^{2}+1\right)\\
+\frac{1}{y} & =x^{2}+1\\
+y & =\frac{1}{x^{2}+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lets check our answers
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/2.4.2-eulers-ivt-actual-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c2/2.4.2-eulers-ivt-actual-graph.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+That's pretty close!
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Consider the initial-value problem 
+\begin_inset Formula $\frac{dy}{dx}=0.1\sqrt{y}+0.4x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $y\left(2\right)=4$
+\end_inset
+
+.
+ Use Euler’s method to obtain an approximation to 
+\begin_inset Formula $y\left(2.5\right)$
+\end_inset
+
+ using 
+\begin_inset Formula $h=0.1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=y_{n-1}+0.1\left(0.1\sqrt{y_{n-1}}+0.4x_{n-1}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=4+0.1\left(0.1\sqrt{4}+0.4\left(2\right)^{2}\right)=4.18$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=4.18+0.1\left(0.1\sqrt{4.18}+0.4\left(2.1\right)^{2}\right)=4.3768$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=4.3768+0.1\left(0.1\sqrt{4.3768}+0.4\left(2.2\right)^{2}\right)=4.5913$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=4.5913+0.1\left(0.1\sqrt{4.5913}+0.4\left(2.3\right)^{2}\right)=4.8243$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y_{n}=4.8243+0.1\left(0.1\sqrt{4.8243}+0.4\left(2.4\right)^{2}\right)=5.0767$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+First Order Linear Differential Equations
+\end_layout
+
+\begin_layout Subsubsection
+Definition
+\end_layout
+
+\begin_layout Subparagraph
+An n-th order linear Ordinary Differential Equation (O.D.E.) has the form of:
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)\frac{d^{n}y}{dx^{n}}+a_{n-1}\left(x\right)\frac{d^{n-1}y}{dx^{n-1}}+...+a_{1}\left(x\right)\frac{dy}{dx}+a_{0}\left(x\right)y=f\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A linear O,D,E, is said to be homogenous (or alike) if 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+, and vice versa.
+\end_layout
+
+\begin_layout Paragraph
+Important properties of linear O.D.E.
+\end_layout
+
+\begin_layout Enumerate
+Dependent variables & derivatives are ONLY 
+\series bold
+power of one
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Non-linear O.D.E.
+ = ....O.D.E.
+ that is not linear
+\end_layout
+
+\begin_layout Enumerate
+Coefficient of derivatives and 
+\begin_inset Formula $y$
+\end_inset
+
+ (A.K.A the multiplier) must be function of independent variable 
+\begin_inset Formula $x$
+\end_inset
+
+ ONLY.
+\end_layout
+
+\begin_layout Enumerate
+Function on RHS must all be functions of independent variable 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Constant can be considered funciton of 
+\begin_inset Formula $x$
+\end_inset
+
+, e.g.
+ 
+\begin_inset Formula $a\left(x\right)=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D.E.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Order
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linear/Non-linear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Homogeneous/Non-homogenous (only for linear D.E.)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{2}\frac{dy}{dx}+\left(\sin x\right)y=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Homogeneous
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}-6\frac{dy}{dx}+9y=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N/A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{d^{4}y}{dx^{4}}+x^{2}\frac{d^{3}y}{dx^{3}}-x^{3}\frac{dy}{dx}=xe^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Non-homogenous
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{d^{2}y}{dx^{2}}+\left(\frac{d^{2}}{dx^{2}}\right)^{2}+6y=x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Non-linear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N/A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Definition
+\end_layout
+
+\begin_layout Standard
+A first order linear D.E.
+ is in the form:
+\begin_inset Formula 
+\[
+a_{1}\left(x\right)\frac{dy}{dx}+a_{0}\left(x\right)y=f\left(x\right),where\,a_{1}\left(x\right)\neq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dividing by 
+\begin_inset Formula $a_{1}\left(x\right)$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+\frac{dy}{dx}+p\left(x\right)y=q\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Where 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q\left(x\right)$
+\end_inset
+
+are continuous functions.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Standard form of F.O.D.E.: 
+\series default
+
+\begin_inset Formula $\frac{dy}{dx}+p\left(x\right)y=q\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solution Process
+\end_layout
+
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1.
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Multiply everythin in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\end_layout
+
+\begin_layout Subsubsection
+Example 1
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $\frac{dy}{dx}+3y=e^{2x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1.
+\begin_inset Formula 
+\[
+\frac{dy}{dx}+3y=e^{2x},p\left(x\right)=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int3dx}\\
+\mu\left(x\right) & =e^{3x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everything in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+e^{3x}\left(\frac{dy}{dx}+3y\right) & =e^{3x}\left(e^{2x}\right)\\
+e^{3x}\frac{dy}{dx}+3e^{3x}y & =e^{3x}\left(e^{2x}\right)\\
+\frac{d}{dx}\left(e^{3x}y\right) & =e^{5x}\quad\left(\text{if you didn't notice, }\frac{d}{dx}\left(ab\right)=a'b+ab'\right)\\
+\int\frac{d}{dx}\left(e^{3x}y\right)dx & =\int e^{5x}dx\\
+e^{3x}y & =\frac{1}{5}e^{5x}+c\\
+y & =\frac{1}{5}e^{2x}+ce^{-3x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example 2
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $x\frac{dy}{dx}+y=x^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1.
+\begin_inset Formula 
+\begin{align*}
+x\frac{dy}{dx}+y & =x^{3}\\
+\frac{x\frac{dy}{dx}+y}{x} & =\frac{x^{3}}{x}\\
+\frac{dy}{dx}+\frac{y}{x} & =x^{2},p\left(x\right)=\frac{1}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int\frac{1}{x}dx}\\
+\mu\left(x\right) & =e^{\ln x}\\
+ & =x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everythin in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+x\left(\frac{dy}{dx}+\frac{y}{x}\right) & =x\left(x^{2}\right)\\
+x\frac{dy}{dx}+y & =x^{3}\\
+\frac{d}{dx}\left[xy\right] & =x^{3}\\
+\int\frac{d}{dx}\left[xy\right]dx & =\int x^{3}dx\\
+xy & =\frac{x^{4}}{4}+c\\
+y & =\frac{1}{4}x^{3}+\frac{c}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example 3
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $x\frac{dy}{dx}+2y=x^{2}-x+1$
+\end_inset
+
+, 
+\begin_inset Formula $y\left(1\right)=\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1.
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{x}\left(x\frac{dy}{dx}+2y\right) & =\frac{1}{x}\left(x^{2}-x+1\right)\\
+\frac{dy}{dx}+\frac{2}{x}y & =x-1+\frac{1}{x},p\left(x\right)=\frac{2}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int\frac{2}{x}dx}\\
+\mu\left(x\right) & =e^{\ln x^{2}}\\
+\mu\left(x\right) & =x^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everythin in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+x^{2}\left(\frac{dy}{dx}+\frac{2}{x}y\right) & =x^{2}\left(x-1+\frac{1}{x}\right)\\
+x^{2}\frac{dy}{dx}+x^{2}\frac{2}{x}y & =x^{3}-x^{2}+x\\
+x^{2}\frac{dy}{dx}+2xy & =x^{3}-x^{2}+x\\
+\frac{d}{dx}\left(x^{2}y\right) & =x^{3}-x^{2}+x\\
+\int\frac{d}{dx}\left(x^{2}y\right)dx & =\int x^{3}-x^{2}+xdx\\
+x^{2}y & =\frac{x^{4}}{4}-\frac{x^{3}}{3}+\frac{x^{2}}{2}+c\\
+y & =\frac{1}{x^{2}}\left(\frac{x^{4}}{4}-\frac{x^{3}}{3}+\frac{x^{2}}{2}+c\right)\\
+y & =\frac{x^{2}}{4}-\frac{x}{3}+\frac{1}{2}+\frac{c}{x^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $y\left(1\right)=\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2} & =\frac{1}{4}-\frac{1}{3}+\frac{1}{2}+c\\
+c & =\frac{1}{2}-\frac{1}{4}+\frac{1}{3}-\frac{1}{2}\\
+c & =\frac{1}{12}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The solution
+\begin_inset Formula 
+\[
+y=\frac{x^{2}}{4}-\frac{x}{3}+\frac{1}{2}+\frac{1}{12x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Solve the equation 
+\begin_inset Formula $\left(x-2\right)\frac{dy}{dx}-y=\left(x-2\right)^{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx}-\frac{y}{\left(x-2\right)} & =\frac{\left(x-2\right)^{3}}{\left(x-2\right)}\\
+\frac{dy}{dx}-\frac{y}{\left(x-2\right)} & =\left(x-2\right)^{2},p\left(x\right)=-\frac{1}{\left(x-2\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int-\left(x-2\right)^{-1}dx}\\
+ & =e^{-\ln\left(x-2\right)}\\
+ & =e^{\ln\left(x-2\right)^{-1}}\\
+\mu\left(x\right) & =\frac{1}{x-2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everythin in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx}-\frac{y}{\left(x-2\right)} & =\left(x-2\right)^{2}\\
+\frac{1}{x-2}\left(\frac{dy}{dx}-\frac{y}{\left(x-2\right)}\right) & =\frac{1}{x-2}\left(x-2\right)^{2}\\
+\frac{1}{x-2}\frac{dy}{dx}-\frac{1}{\left(x-2\right)}\frac{y}{\left(x-2\right)} & =x-2\\
+\left(x-2\right)^{-1}\frac{dy}{dx}-y\left(x-2\right)^{-2} & =x-2\\
+\int\frac{d}{dx}\left[\left(x-2\right)^{-1}y\right]dx & =\int x-2dx\\
+\frac{y}{x-2} & =\frac{x^{2}}{2}-2x+c\\
+y & =\left(\frac{x^{2}}{2}-2x+c\right)\left(x-2\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Seperable Equations
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.8
+\end_layout
+
+\begin_layout Standard
+A separable D.E.
+ is any D.E.
+ that we can write in the form of 
+\begin_inset Formula 
+\[
+g\left(y\right)\frac{dy}{dx}=f\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solution Process
+\end_layout
+
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\[
+\int g\left(y\right)dy=\int f\left(x\right)dx+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $\frac{dy}{dx}=\frac{2x}{y+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{2x}{y+1}\\
+\left(y+1\right)dy & =2xdx\\
+\int\left(y+1\right)dy & =\int2xdx\\
+\frac{y^{2}}{2}+y & =\frac{2x^{2}}{2}+c\\
+y & =x^{2}-\frac{1}{2}y^{2}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $\frac{dy}{dx}=\frac{3y-1}{x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{3y-1}{x}\\
+\int\frac{1}{3y-1}dy & =\int\frac{1}{x}dx\\
+\frac{1}{3}\ln\left(3y-1\right) & =\ln x+c\\
+\ln\left(3y-1\right) & =3\left(\ln x+c\right)\\
+\ln\left(3y-1\right) & =\ln x^{3}+\ln A,A=e^{3c}\\
+3y-1 & =Ax^{3}\\
+y & =\frac{A}{3}x^{3}+\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Solve the differential equation 
+\begin_inset Formula $y^{2}\frac{dy}{dx}=x^{2}+1$
+\end_inset
+
+ given that 
+\begin_inset Formula $y=1$
+\end_inset
+
+ when 
+\begin_inset Formula $x=2$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y^{2}\frac{dy}{dx} & =x^{2}+1\\
+y^{2}dy & =\left(x^{2}+1\right)dx\\
+\int y^{2}dy & =\int x^{2}+1dx\\
+\frac{y^{3}}{3} & =\frac{x^{3}}{3}+x+c\\
+y^{3} & =x^{3}+3x+c\\
+y & =\sqrt[3]{x^{3}+3x+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $\frac{dy}{dx}=e^{3x-5y}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =e^{3x-5y}\\
+ & =\frac{e^{3x}}{e^{5y}}\\
+e^{5y}dy & =e^{3x}dx\\
+\int e^{5y}dy & =\int e^{3x}dx\\
+\frac{1}{5}e^{5y} & =\frac{1}{3}e^{3x}+c\\
+e^{5y} & =\frac{5}{3}e^{3x}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Solve 
+\begin_inset Formula $4ydx-\left(1+x\right)dy=0,y\left(0\right)=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+4ydx & =\left(1+x\right)dy\\
+\int\frac{1}{1+x}dx & =\int\frac{1}{4y}dy\\
+\ln\left(1+x\right) & =\frac{1}{4}\ln y+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y\left(0\right)=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ln\left(1\right) & =\frac{1}{4}\ln1+c\\
+c & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve the rest of the equation
+\begin_inset Formula 
+\begin{align*}
+\ln\left(1+x\right) & =\frac{1}{4}\ln y\\
+1+x & =y^{\frac{1}{4}}\\
+y & =\left(1+x\right)^{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Second Order Differential Equation
+\end_layout
+
+\begin_layout Standard
+A second order O.D.E.
+ has the form
+\begin_inset Formula 
+\[
+a_{2}\left(x\right)\frac{d^{2}y}{dx^{2}}+a_{1}\left(x\right)\frac{dy}{dx}+a_{0}\left(x\right)y=f\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a_{2}\left(x\right),a_{1}\left(x\right)$
+\end_inset
+
+and 
+\begin_inset Formula $a_{0}\left(x\right)$
+\end_inset
+
+ are constants, then we have a second order D.E.
+ with constant coefficients.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.9
+\end_layout
+
+\begin_layout Enumerate
+Second Order Linear D.E.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ay''+by'+cy=f\left(x\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ are constants and 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Homogeneous: 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+
+\series default
+, and vice versa
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Second Order Homogeneous Linear D.E.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Form
+\series default
+: 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+General solution
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=C_{1}y_{1}+C_{2}y_{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $y_{1}\neq ky_{2}$
+\end_inset
+
+ for any constant 
+\begin_inset Formula $k$
+\end_inset
+
+, if 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ are the solutions.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We assume all solutions to the D.E.
+ will be of the form 
+\begin_inset Formula $y=e^{rx}$
+\end_inset
+
+, 
+\begin_inset Formula $r$
+\end_inset
+
+ is a constant.
+\begin_inset Formula 
+\begin{align*}
+y & =e^{rx}\\
+y' & =re^{rx}\\
+y'' & =r^{2}e^{rx}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug these into the D.E.
+\begin_inset Formula 
+\begin{align*}
+ar^{2}e^{rx}+bre^{rx}+ce^{rx} & =0\\
+e^{rx}\left(ar^{2}+br+c\right) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $e^{rx}\neq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+ar^{2}+br+c=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Like, if 
+\begin_inset Formula $AB=0$
+\end_inset
+
+, either 
+\begin_inset Formula $A$
+\end_inset
+
+ or 
+\begin_inset Formula $B$
+\end_inset
+
+ must be 0.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Characteristic/auxiliary equation: 
+\series default
+
+\begin_inset Formula $ar^{2}+br+c=0$
+\end_inset
+
+ for any 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ 
+\begin_inset Formula $ay''+by'+c=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since it is quadratic, we will have two roots, 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Can be obtained with 
+\begin_inset Formula $r=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$
+\end_inset
+
+, roots can be either
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Real, distinct roots 
+\begin_inset Formula $r_{1}\neq r_{2}$
+\end_inset
+
+
+\begin_inset Formula $\left(b^{2}-4ac>0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Repeated real roots, 
+\begin_inset Formula $r_{1}=r_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(b^{2}-4ac=0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complex roots, 
+\begin_inset Formula $r_{1,2}=\alpha\pm\beta i$
+\end_inset
+
+ 
+\begin_inset Formula $\left(b^{2}-4ac<0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Note: In the following, 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ are arbitrary constants.
+\end_layout
+
+\begin_layout Subsubsection
+Real, distinct roots, 
+\begin_inset Formula $r_{1}\neq r_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have 
+\begin_inset Formula $y_{1}=e^{r_{1}x}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}=e^{r_{2}x}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+General solution
+\series default
+: 
+\begin_inset Formula $y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Example
+\end_layout
+
+\begin_layout Enumerate
+Find the general solution of
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y''-3y'-10y=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+r^{2}-3r-10 & =0\\
+\left(r-5\right)\left(r+2\right) & =0\\
+r_{1}=5, & r_{2}=-2\\
+y & =C_{1}e^{5x},C_{2}e^{-2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2y''-5y'-3y=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2r^{2}-5r-3 & =0\\
+\left(2r+1\right)\left(r-3\right) & =0\\
+r=-\frac{1}{2} & ,r=3\\
+y & =C_{1}e^{-\frac{1}{2}x},C_{2}e^{3x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solve the following 
+\begin_inset Formula $I.V.P.$
+\end_inset
+
+ 
+\begin_inset Formula $y''+11y'+24=0$
+\end_inset
+
+, given 
+\begin_inset Formula $y\left(0\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $y'\left(0\right)=-7$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+r^{2}+11r+24 & =0\\
+\left(r+8\right)\left(r+3\right) & =0\\
+r_{1}=-8, & r_{2}=-3\\
+y & =C_{1}e^{-8x}+C_{2}e^{-3x}\\
+y\left(0\right) & =0\rightarrow C_{1}e^{0}+C_{2}e^{0}=0\to C_{1}+C_{2}=0\quad\circledR\\
+y'\left(0\right) & =-7\to y'=-8C_{1}-3C_{2}=-7\quad\circledS
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve 
+\begin_inset Formula $\circledR$
+\end_inset
+
+ and 
+\begin_inset Formula $\circledS$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{1}=-C_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-8C_{1}+3C_{1} & =-7\\
+-5C_{1} & =-7\\
+C_{1} & =\frac{7}{5}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{2}=-\frac{7}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the final equation
+\begin_inset Formula 
+\[
+y=\frac{7}{5}e^{-8x}-\frac{7}{5}e^{-3x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

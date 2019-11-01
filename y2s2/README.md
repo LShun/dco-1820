@@ -80,4 +80,7 @@
 - Instructors
   - Loh Kiean Nyak
     - Email: lohkn.bww [@t] gmail [d ot] com
-  - 
+
+### Public Speaking
+
+- Ms. Susan Lim

@@ -981,9 +981,9 @@ Add these two numbers.
  Show the result in sign-magnitude notation.
  (PYP-08/12: 3 marks)
 \begin_inset Formula 
-\[
-1806.6=45418066
-\]
+\begin{align*}
+1806.6 & =0.18066*10^{4}
+\end{align*}
 
 \end_inset
 
@@ -996,7 +996,7 @@ Multiply these two numbers.
  (PYP-08/12: 3 marks)
 \begin_inset Formula 
 \[
--411491.52=35641149
+-411491.52=-0.41149152*10^{6}
 \]
 
 \end_inset
@@ -1099,7 +1099,7 @@ Full 32-bit IEEE 754
 
 \begin_inset Formula 
 \[
-1100000010110000000000000000000
+110000001011...
 \]
 
 \end_inset
@@ -1362,13 +1362,13 @@ IEEE754 format
 
 \end_deeper
 \begin_layout Enumerate
-Given an IEEE754 single precision notation below, show how this notation
- can be represented in a sign-magnitude notation.
+(CHECK AGAIN) Given an IEEE754 single precision notation below, show how
+ this notation can be represented in a sign-magnitude notation.
  You are required to show your working steps.
  
 \begin_inset Formula 
 \[
-11000001001001000000000000000000
+1\,1000\,0010\,0100\,1000\,0000\,0000\,0000\,000
 \]
 
 \end_inset
@@ -1417,7 +1417,7 @@ Convert mantissa to decimal
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $01001000000000000000000=2359296$
+\begin_inset Formula $0100\,1000=64+8=0.25+0.03125=0.28125$
 \end_inset
 
 
@@ -1428,7 +1428,7 @@ Convert mantissa to decimal
 Write the entire sign-magnitude figure down (without proper decimal place)
 \begin_inset Formula 
 \[
-N=-1.2359296*10^{3}
+N=1.28125*10^{3}
 \]
 
 \end_inset
