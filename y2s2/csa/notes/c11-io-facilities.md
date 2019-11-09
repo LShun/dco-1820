@@ -175,3 +175,31 @@
 
 
 
+## 7. I/O Modules
+
+- Interface between CPU and device. Accept command from CPU, control device
+
+### Functions
+
+- **Recognize message addressed to it**
+- **Provide buffer** to hold data.
+- **Provide required registers and control (for DMA)**
+- **Interrupt capability.** Notify CPU task completion.
+
+### Intermediary interfaces
+
+- **CPU interface**: Between CPU & I/O module
+  - Accept commands from CPU
+  - Forward interrupts & status info to CPU
+- **Device interface:** Supply control of device
+  - Accept I/O request
+  - Interact with device to fulfill requests
+  - Example: move head to correct track on disk
+
+### Benefits for interfaces
+
+- **Simplify CPU I/O instructions**. Complex details handled by interfaces. CPU can be built simpler.
+- **Reduce CPU workload**. Simplify interfacing task, free up CPU.
+- **Support DMA**. CPU can perform other tasks.
+- **Eliminate vendor lock-in**. Specialized circuitry on interface, open source, developers just have to build to support interface.
+

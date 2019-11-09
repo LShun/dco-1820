@@ -4963,7 +4963,7 @@ If
 \begin_inset Formula $y_{p}$
 \end_inset
 
- have any terms duplicated in 
+ have any terms duplcated in 
 \begin_inset Formula $y_{h}$
 \end_inset
 
@@ -4985,39 +4985,10 @@ Say
 \end_inset
 
 , 
-\begin_inset Formula $y_{h}=C_{1}\sin2x+C_{2}\cos2x$
+\begin_inset Formula $ $
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Enumerate
-If we suggest 
-\begin_inset Formula $y_{p}=A\sin2x+B\cos2x$
-\end_inset
-
-, this is duplicated in 
-\begin_inset Formula $y_{h}$
-\end_inset
-
- 
-\series bold
-(barring the constant aside)
-\series default
-.
- So, we will have to multiply by 
-\begin_inset Formula $x$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-This makes 
-\begin_inset Formula $y_{p}=x\left[A\sin2x+B\cos2x\right]$
-\end_inset
-
-, which is not duplicated, and valid.
 \end_layout
 
 \end_deeper
@@ -5242,182 +5213,6 @@ Question: Suggest the form of
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Paragraph
-Example 1
-\end_layout
-
-\begin_layout Enumerate
-Question: Find the general solution of 
-\begin_inset Formula $y''+4y=\sin x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Answer
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Solve the homogeneous D.E.
- 
-\begin_inset Formula $ay''+by'+cy=0$
-\end_inset
-
- (find the 
-\begin_inset Formula $r$
-\end_inset
-
-)
-\begin_inset Formula 
-\begin{align*}
-y''+4y & =0\\
-r^{2}+4 & =0\\
-r & =0\pm2i\leftarrow\left(remember:\alpha\pm\beta i\right)
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Find the complementary function, 
-\begin_inset Formula $y_{h}$
-\end_inset
-
-
-\begin_inset Formula 
-\[
-y_{h}=e^{0x}\left(C_{1}\cos2x+C_{2}\sin2x\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Find the particular solution 
-\begin_inset Formula $y_{p}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-f\left(x\right) & =\sin x\\
-y_{p} & =A\sin x+B\cos x\\
-y'_{p} & =A\cos x-B\sin x\\
-y''_{p} & =-A\sin x-B\cos x\\
--A\sin x-B\cos x+4\left(A\sin x+B\cos x\right) & =\sin x\\
-\sin x\left(-A+4A\right)+\cos x\left(-B+4B\right) & =\sin x\\
-\sin x\left(3A\right)+\cos x\left(3B\right) & =\sin x
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Compare 
-\begin_inset Formula $\sin x\left(3A\right)$
-\end_inset
-
- with 
-\begin_inset Formula $\sin x$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\sin x\left(3A\right) & =\sin x\\
-3A & =1\\
-A & =\frac{1}{3}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Compare 
-\begin_inset Formula $\cos x\left(3B\right)$
-\end_inset
-
- with 
-\begin_inset Formula $0$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\cos x\left(3B\right) & =0\\
-B & =0
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Find 
-\begin_inset Formula $y_{p}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-y_{p} & =\frac{1}{3}\sin x+0\cos x\\
-y_{p} & =\frac{1}{3}\sin x
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Find the non-homogeneous D.E.
- general solution, 
-\begin_inset Formula $y=y_{h}+y_{p}$
-\end_inset
-
-
-\begin_inset Formula 
-\[
-y=C_{1}\cos2x+C_{2}\sin2x+\frac{1}{3}\sin x
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Paragraph
-Example 2
-\end_layout
-
-\begin_layout Enumerate
-Question
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Find the general solution of 
-\begin_inset Formula $y''-4y'-12y=2x^{3}-x+3$
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \end_body
 \end_document

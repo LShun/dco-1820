@@ -2098,6 +2098,13 @@ Every real number is positive, negative, or zero.
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\text{\ensuremath{\mathbb{R}}}\ni x>0\text{or}x<0\text{or}x=0$
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Some real numbers are rational.
@@ -2109,6 +2116,13 @@ Some real numbers are rational.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in\text{\ensuremath{\mathbb{R}}}\ni x$
+\end_inset
+
+ is rational
 \end_layout
 
 \end_deeper
@@ -2163,6 +2177,21 @@ if
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\mathbb{Z},$
+\end_inset
+
+if 
+\begin_inset Formula $x$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ is even
+\end_layout
+
 \begin_layout Subsection
 Example
 \end_layout
@@ -2199,7 +2228,7 @@ Example
 \begin_inset Formula $p$
 \end_inset
 
- is a rectangle, 
+ is a rectangle
 \end_layout
 
 \begin_layout Subsection
@@ -2235,17 +2264,6 @@ Example
 \end_inset
 
  is even.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\exists$
-\end_inset
-
- an even number such that 
-\begin_inset Formula $n$
-\end_inset
-
- is prime.
 \end_layout
 
 \begin_layout Subsection
@@ -2318,7 +2336,11 @@ No politicians are honest.
 
 \begin_deeper
 \begin_layout Enumerate
-Some politicians are not honest.
+Translate: All politicians are dishonest
+\end_layout
+
+\begin_layout Enumerate
+Negation: Some politicians are honest.
 \end_layout
 
 \end_deeper
@@ -2442,6 +2464,26 @@ where
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $R$
+\end_inset
+
+ such that 
+\begin_inset Formula $x>3$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{2}\le9$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -4077,10 +4119,6 @@ Since the possible conclusions contradict each other, the argument is
 invalid
 \series default
 .
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body

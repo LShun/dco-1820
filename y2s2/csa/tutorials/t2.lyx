@@ -716,15 +716,14 @@ Convert
 
 \begin_deeper
 \begin_layout Enumerate
-Illogical, for the fraction part, the decimal must be a power of 
-\begin_inset Formula $16$
+\begin_inset Formula $70F.A6_{16}$
 \end_inset
 
-, in this case, 
-\begin_inset Formula $\frac{13}{20}$
-\end_inset
 
- is certainly not.
+\end_layout
+
+\begin_layout Enumerate
+Do the front part, then times the back part, the back part is repeating
 \end_layout
 
 \end_deeper
@@ -745,7 +744,7 @@ Convert
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $.0111=\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}=\frac{15}{32}=0.46875$
+\begin_inset Formula $\left(0+0.25+...\right)$
 \end_inset
 
 
@@ -753,7 +752,7 @@ Convert
 
 \begin_layout Enumerate
 Answer: 
-\begin_inset Formula $43.46875$
+\begin_inset Formula $43.4375$
 \end_inset
 
 
@@ -890,7 +889,7 @@ Convert 55220311 to scientific notation.
 Convert 95575321 to scientific notation.
 \begin_inset Formula 
 \[
-\left(-1\right)^{1}\cdot10^{55-52}\cdot0.75321=-7.5321*10^{2}
+\left(-1\right)^{1}\cdot10^{55-52}\cdot0.75321=-0.75321*10^{3}
 \]
 
 \end_inset
@@ -917,32 +916,94 @@ Convert
 
 \end_deeper
 \begin_layout Enumerate
-The following decimal numbers are stored in excess-50 floating point format.
+[Popular Question] The following decimal numbers are stored in excess-50
+ floating point format.
  A “1”is used to represent a negative sign, and a “5” for positive sign.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $55020311-15375321=55375301$
+\begin_inset Formula $55020311-15375321=1\,5375300689$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+-0.75301 * 
+\begin_inset Formula $10^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $5\,55\,65253$
+\end_inset
+
+ = 
+\begin_inset Formula $0.65253*10^{5}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $55965253$
+\begin_inset Formula $5\,5261838=0.61838*10^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Adjust exponent: 
+\begin_inset Formula $5\,52\,052295$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $55456660$
+Addition: 
+\begin_inset Formula $1\,52\,566080$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+SEMMMM: 
+\begin_inset Formula $5\,52\,61838$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For divide
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Change the signs
+\end_layout
+
+\begin_layout Enumerate
++ becomes minus, - becomes +
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-0.7/0.5=$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 The floating point decimal numbers below are stored in the form of SEEMMMMM
@@ -980,23 +1041,63 @@ The floating point decimal numbers below are stored in the form of SEEMMMMM
 Add these two numbers.
  Show the result in sign-magnitude notation.
  (PYP-08/12: 3 marks)
-\begin_inset Formula 
-\begin{align*}
-1806.6 & =0.18066*10^{4}
-\end{align*}
+\end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Adjust exponent: 
+\begin_inset Formula $4\,55\,0020460$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
+Addition: 
+\begin_inset Formula $3\,55\,20112$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+SEEMMMM: 35519907(40)
+\end_layout
+
+\begin_layout Enumerate
+Sign magnitude: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $0.19907*10^{5}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Multiply these two numbers.
  Show the result in sign-magnitude notation.
  (PYP-08/12: 3 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Adjust: 53+55-50=58=10^8
 \begin_inset Formula 
 \[
--411491.52=-0.41149152*10^{6}
+-411491.52=-0.41149*10^{7}
 \]
 
 \end_inset
@@ -1004,6 +1105,15 @@ Multiply these two numbers.
 
 \end_layout
 
+\begin_layout Enumerate
+SEEMMMM: 
+\begin_inset Formula $3\,57\,41149$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Show how the number 
@@ -1352,7 +1462,7 @@ Mantissa in 23 bits
 IEEE754 format
 \begin_inset Formula 
 \[
-11000001111101101000000000000000
+1\,1000\,0011\,1110\,1101\,...
 \]
 
 \end_inset
