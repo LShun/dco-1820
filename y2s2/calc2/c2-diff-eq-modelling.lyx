@@ -40,7 +40,7 @@
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
@@ -66,6 +66,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -2698,18 +2702,22 @@ Constant can be considered funciton of
 
 \begin_layout Paragraph
 Example
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="4">
+<lyxtabular version="3" rows="6" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2718,7 +2726,7 @@ D.E.
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2727,7 +2735,7 @@ Order
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2736,11 +2744,49 @@ Linear/Non-linear
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Homogeneous/Non-homogenous (only for linear D.E.)
+Homogeneous/Non-homogenous 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(only for linear D.E.)
 \end_layout
 
 \end_inset
@@ -4782,7 +4828,7 @@ Product of above
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="7" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -4869,7 +4915,7 @@ Product of above
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4885,12 +4931,7 @@ Product of above
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align*}
-\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\sin\left(\beta x\right) & +\\
-\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\cos\left(\beta x\right)
-\end{align*}
-
+\begin_inset Formula $\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\sin\left(\beta x\right)+$
 \end_inset
 
 
@@ -4900,7 +4941,30 @@ Product of above
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\cos\left(\beta x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4912,16 +4976,34 @@ Product of above
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align*}
-\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\sin\left(\beta x\right) & +\\
-\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\cos\left(\beta x\right)
-\end{align*}
+\begin_inset Formula $\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\sin\left(\beta x\right)+$
+\end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[Ax^{n}+Bx^{n-1}+...+Nx+P\right]\cos\left(\beta x\right)$
 \end_inset
 
 
@@ -5288,7 +5370,8 @@ Find the complementary function,
 \begin_inset Formula $y_{h}$
 \end_inset
 
-
+.
+ Note: repeated real roots
 \begin_inset Formula 
 \[
 y_{h}=e^{0x}\left(C_{1}\cos2x+C_{2}\sin2x\right)
@@ -5413,6 +5496,315 @@ Question
 \begin_layout Enumerate
 Find the general solution of 
 \begin_inset Formula $y''-4y'-12y=2x^{3}-x+3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Answer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+r^{2}-4r-12 & =0\\
+r & =6,-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+(Note, non-repeated real roots)
+\begin_inset Formula 
+\[
+y_{h}=C_{1}e^{6x}+C_{2}e^{-2x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =Ax^{3}+Bx^{2}+Cx+D\\
+y'_{p} & =3Ax^{2}+2Bx+c\\
+y''_{p} & =6Ax+2B\\
+\left(6Ax+2B\right)-4\left(3Ax^{2}+2Bx+C\right)-12\left(Ax^{3}+Bx^{2}+Cx+D\right) & =2x^{3}-x+3\\
+x^{3}\left(-12A\right)+x^{2}\left(-12A-12B\right)+x\left(6A-8B-12C\right)+2B-4C-12D & =2x^{3}-x+3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-12A=2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=-\frac{1}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-12\left(-\frac{1}{6}\right)-12B=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\frac{1}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $6\left(-\frac{1}{6}\right)-8\left(\frac{1}{6}\right)-12C=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=-\frac{1}{9}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2\left(\frac{1}{6}\right)-4\left(-\frac{1}{9}\right)-12D=3$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D=-\frac{5}{27}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=C_{1}e^{6x}+C_{2}e^{-2x}-\frac{1}{6}x^{3}+\frac{1}{6}x^{2}-\frac{1}{9}x-\frac{5}{27}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Example 3
+\end_layout
+
+\begin_layout Enumerate
+Solve the following I.V.P.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''+y=4x+10\sin x$
+\end_inset
+
+, given 
+\begin_inset Formula $y\left(\pi\right)=0,y'\left(\pi\right)=2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+r^{2}+1 & =0\to r=0\pm i\\
+y_{h} & =C_{1}\sin x+C_{2}\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+(Note, non-repeated real roots)
+\begin_inset Formula 
+\[
+y_{h}=C_{1}\sin x+C_{2}\cos x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =\left(A_{x}+B\right)+\left(Cx\sin x+Dx\cos x\right)\\
+y'_{p} & =A+\left(C\sin x+Cx\cos x+D\cos x-Dx\sin x\right)\\
+ & =A+\left(C\sin x+D\cos x\right)+\left(Cx\cos x-Dx\sin x\right)\\
+y''_{p} & =C\cos x-D\sin x+\left(C\cos x-Cx\sin x-D\sin x-Dx\cos x\right)\\
+ & =2C\cos x-2D\sin x-Cx\sin x-Dx\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2C\cos x-2D\sin x-Cx\sin x-Dx\cos x=4x+10\sin x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=4,B=0,C=0,D=-5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=4x-5x\cos x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =C_{1}\sin x+C_{2}\cos x+4x-5x\cos x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y\left(\pi\right) & =0\\
+-C_{2}+4\pi+5\pi & =0\\
+C_{2} & =9\pi
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =C_{1}\sin x+9\pi\cos x+4x-5x\cos x\\
+y' & =C_{1}\cos x-9\pi\sin x+4-5\cos x+5x\sin x\\
+y'\left(\pi\right) & =-C_{1}+4+5=2\\
+C_{1} & =7
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the solution
+\begin_inset Formula 
+\[
+y=7\sin x+9\pi\cos x+4x-5x\cos x
+\]
+
 \end_inset
 
 
