@@ -90,5 +90,1251 @@
 Calc II - C3: Infinite Sequences & Series
 \end_layout
 
+\begin_layout Section
+Terms to describe 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ (Problematic, ask teacher!)
+\end_layout
+
+\begin_layout Enumerate
+Definition 3.2: Let 
+\begin_inset Formula $n=1,2,3$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a_{n}\le M$
+\end_inset
+
+, 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+
+\series bold
+bounded above 
+\series default
+by 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ is 
+\series bold
+upper bound
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+and vice versa (
+\begin_inset Formula $a_{n}\ge M$
+\end_inset
+
+, lower bound)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+positive 
+\series default
+if 
+\begin_inset Formula $a_{n}\ge0,\forall n$
+\end_inset
+
+ and vice versa 
+\begin_inset Formula $\left(a_{n}\le0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+increasing
+\series default
+ if 
+\begin_inset Formula $a_{n+1}\ge a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+, and vice versa 
+\begin_inset Formula $\left(a_{n+1}\le0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+monotonic = 
+\series default
+all increasing/decreasing
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+alternating
+\series default
+ = 
+\begin_inset Formula $a_{n}\cdot a_{n+1}\le0$
+\end_inset
+
+ (consecutive, opposite sign)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+As 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+convergent
+\series default
+ if 
+\begin_inset Formula $\lim_{n\to\infty}$
+\end_inset
+
+ is real number
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+divergent 
+\series default
+if 
+\begin_inset Formula $\lim_{n\to\infty}$
+\end_inset
+
+ is 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Describe the following sequences using the terms in definition above:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ n\right\} =\left\{ 1,2,3,4,5...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not bounded above
+\end_layout
+
+\begin_layout Enumerate
+Bounded below, Lower bound = 1
+\end_layout
+
+\begin_layout Enumerate
+Not bounded
+\end_layout
+
+\begin_layout Enumerate
+Positive
+\end_layout
+
+\begin_layout Enumerate
+Increasing
+\end_layout
+
+\begin_layout Enumerate
+Monotonic
+\end_layout
+
+\begin_layout Enumerate
+Not alternating
+\end_layout
+
+\begin_layout Enumerate
+Divergent (from 1)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{n-1}{n}\right\} =\left\{ 0,\frac{1}{2},\frac{2}{3},\frac{3}{4}...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not bounded above
+\end_layout
+
+\begin_layout Enumerate
+Bounded below, Lower bound = 0
+\end_layout
+
+\begin_layout Enumerate
+Not bounded
+\end_layout
+
+\begin_layout Enumerate
+Positive
+\end_layout
+
+\begin_layout Enumerate
+Increasing
+\end_layout
+
+\begin_layout Enumerate
+Monotonic
+\end_layout
+
+\begin_layout Enumerate
+Not alternating
+\end_layout
+
+\begin_layout Enumerate
+Convergent (to 1)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left(-\frac{1}{2}\right)^{n}\right\} =\left\{ -\frac{1}{2},\frac{1}{4},-\frac{1}{8},\frac{1}{16}...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Bounded above, 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Bounded below, Lower bound = 
+\begin_inset Formula $-\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Bounded
+\end_layout
+
+\begin_layout Enumerate
+Not increasing / decreasing
+\end_layout
+
+\begin_layout Enumerate
+Not monotonic
+\end_layout
+
+\begin_layout Enumerate
+Alternating
+\end_layout
+
+\begin_layout Enumerate
+Convergent (to 0)
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Convergence and Divergence of Sequences
+\end_layout
+
+\begin_layout Subsection
+Definition
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=L$
+\end_inset
+
+, 
+\series bold
+converges
+\series default
+ (is 
+\series bold
+convergent
+\series default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c3/1.1-converging.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Else if 
+\begin_inset Formula $L$
+\end_inset
+
+ D.N.E.
+ or 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+, it 
+\series bold
+diverges 
+\series default
+(is 
+\series bold
+divergent
+\series default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c3/1.1-diverging.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(n\right)=a_{n}$
+\end_inset
+
+, and 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer, then 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Put it simply (and slightly incorrectly), if the series converges, and 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(\infty\right)$
+\end_inset
+
+ is simply 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Enumerate
+Every bounded & monotonic sequence is 
+\series bold
+convergent
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Laws - Limit Laws for Convergent Sequences:
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+are convergent sequences, and 
+\begin_inset Formula $c$
+\end_inset
+
+ is constant, then:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(a_{n}\pm b_{n}\right)=\lim_{n\to\infty}\left(a_{n}\right)\pm\lim_{n\to\infty}b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(c\cdot a_{n}\right)=c\lim_{n\to\infty}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}c=c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(a_{n}\cdot b_{n}\right)=\lim_{n\to\infty}\left(a_{n}\right)\cdot\lim_{n\to\infty}b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(\frac{a_{n}}{b_{n}}\right)=\frac{\lim_{n\to\infty}a_{n}}{\lim_{n\to\infty}b_{n}},\lim_{n\to\infty}b_{n}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}a_{n}^{p}=\left[\lim_{n\to\infty}a_{n}\right]^{p},p>0,a_{n}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Technique - Rational functions
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is rational function, to find 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}$
+\end_inset
+
+, divide both by highest power of 
+\begin_inset Formula $n$
+\end_inset
+
+ in 
+\series bold
+denominator.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the limit of the following sequences if exist: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{3n^{2}-n+4}{7+6n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{\frac{3n^{2}}{n^{2}}-\frac{n}{n^{2}}+\frac{4}{n^{2}}}{\frac{7}{n^{2}}+\frac{6n^{2}}{n^{2}}}\\
+ & =\frac{3}{6}\\
+\boldsymbol{\lim_{n\to\infty}a_{n}} & \boldsymbol{=\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n}{n+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{n}{n+1}\\
+ & =\lim_{n\to\infty}\frac{\frac{n}{n}}{\frac{n+1}{n}}\\
+ & =\frac{1}{1}\\
+\boldsymbol{\lim_{n\to\infty}a_{n}} & \boldsymbol{=1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n^{2}-n}{n^{2}+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{n^{2}-n}{n^{2}+1}\\
+ & =\lim_{n\to\infty}\frac{\frac{n^{2}}{n^{2}}-\frac{n}{n^{2}}}{\frac{n^{2}}{n^{2}}+\frac{1}{n^{2}}}\\
+ & =\lim_{n\to\infty}\frac{1-\frac{1}{n}}{1+\frac{1}{n^{2}}}\\
+\boldsymbol{\lim_{n\to\infty}a_{n}} & \boldsymbol{=1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+By using L’Hospital’s Rule, calculate the following: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\frac{\ln n}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{\ln n}{n} & =\lim_{n\to\infty}\frac{\frac{1}{n}}{1}\\
+ & =\lim_{n\to\infty}\frac{1}{n}\\
+\boldsymbol{\lim_{n\to\infty}\frac{\ln n}{n}} & \boldsymbol{=0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\frac{e^{2n}}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{e^{2n}}{n} & =\lim_{n\to\infty}\frac{\frac{d}{dn}\left[e^{2n}\right]}{\frac{d}{dn}\left[n\right]}\\
+ & =\lim_{n\to\infty}\frac{2e^{2n}}{1}\\
+ & =\lim_{n\to\infty}2e^{2n}\\
+\lim_{n\to\infty}\frac{e^{2n}}{n} & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem - Squeeze Theorem
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a_{n}\le b_{n}\le c_{n},n>n_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=\lim_{n\to\infty}c_{n}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $\lim_{n\to\infty}b_{n}=L$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Evaluate:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{\cos^{2}n}{3^{n}}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-1 & \le\cos n\le1\\
+1 & \le\cos^{2}n\le1\\
+\frac{1}{3} & \le\frac{\cos^{2}n}{3^{n}}\le\frac{1}{3}\\
+\lim_{n\to\infty}\frac{1}{3} & \le\lim_{n\to\infty}\frac{\cos^{2}n}{3^{n}}\le\lim_{n\to\infty}\frac{1}{3}\\
+0 & \le\lim_{n\to\infty}\frac{\cos^{2}n}{3^{n}}\le0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ According to Squeeze Theorem, 
+\begin_inset Formula $\lim_{n\to\infty}\frac{\cos^{2}n}{3^{n}}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{n!}{n^{n}} & =\frac{n\left(n-1\right)\left(n-2\right)...3\cdot2\cdot1}{n\cdot n\cdot n...\cdot n}\\
+ & =\frac{n}{n}\cdot\frac{n-1}{n}\cdot...\cdot\frac{3}{n}\cdot\frac{2}{n}\cdot\frac{1}{n}\\
+ & =1\cdot\left(1-\frac{1}{n}\right)\cdot...\cdot\frac{3}{n}\cdot\frac{2}{n}\cdot\frac{1}{n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}1\\
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}1\\
+0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+According to S.T., 
+\begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} =0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 3.3
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}\left|a_{n}\right|=0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Evaluate 
+\begin_inset Formula $\lim_{n\to\infty}\frac{\left(-1\right)^{n}}{n}$
+\end_inset
+
+ if exists.
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{\left(-1\right)^{n}}{n}\right| & =\lim_{n\to\infty}\frac{1}{n}\\
+\lim_{n\to\infty}\frac{\left(-1\right)^{n}}{n} & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem 3.4
+\end_layout
+
+\begin_layout Enumerate
+Sequence 
+\begin_inset Formula $\left\{ r^{n}\right\} _{n=0}^{\infty}$
+\end_inset
+
+ converges if 
+\begin_inset Formula $-1<r\le1$
+\end_inset
+
+, diverges for all other 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Also,
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}=\begin{cases}
+0 & ,-1<r<1\\
+1 & ,r=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Evaluate:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(-1\right)^{n}=\infty,Divergent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(\frac{1}{3}\right)^{n}=0,convergent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}5^{n}=\infty,Divergent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Infinite Series
+\end_layout
+
+\begin_layout Subsection
+Definition 3.4
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Infinite series 
+\series default
+(or just 
+\series bold
+series)
+\series default
+ 
+\begin_inset Formula $=a_{1}+a_{2}+a_{3}+...+a_{n}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ OR 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Series = infinite sum of numbers
+\end_layout
+
+\begin_layout Enumerate
+Sequence = numbers, 1-to-1 correspondence with positive integer.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{1}{n}\right\} =\left\{ 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{1}{n}\right)=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{\left(-1\right)^{n-1}}{2^{n-1}}\right\} =\left\{ 1,-\frac{1}{2},\frac{1}{4},...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{\left(-1\right)^{n-1}}{2^{n-1}}\right)=1-\frac{1}{2}+\frac{1}{4}-...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Definition 3.5 - Partial Sums, 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $k-th$
+\end_inset
+
+ Partial sum, 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ of 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S_{k}=a_{1}+a_{2}+...+a_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sequence of partial sum of 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ S_{1},S_{2}...S_{n},...\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the sequence of partial sum of the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}n & =1+2+3+...\\
+S_{1} & =1\\
+S_{2} & =1+2=3\\
+S_{3} & =....
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sequence of partial sum: 
+\begin_inset Formula $\left\{ 1,3,6,10,\frac{n}{2}\left(n+1\right),...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Convergence & Divergence of Series
+\end_layout
+
+\begin_layout Subsection
+Definition
+\end_layout
+
+\begin_layout Enumerate
+The series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 
+\series bold
+converges
+\series default
+ if and only if the sequence 
+\begin_inset Formula $\left\{ 𝑆𝑛\right\} $
+\end_inset
+
+ is convergent and 
+\begin_inset Formula $\lim_{n\to\infty}S_{n}=s$
+\end_inset
+
+ exists as a real number.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The number 
+\begin_inset Formula $s$
+\end_inset
+
+ is called the 
+\series bold
+sum 
+\series default
+of the series, 
+\begin_inset Formula $s=\sum_{n=1}^{\infty}a_{n}=a_{1}+a_{2}+...+a_{n}+...$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If the sequence 
+\begin_inset Formula $\left\{ 𝑆𝑛\right\} $
+\end_inset
+
+ is divergent, then the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 
+\series bold
+diverges
+\end_layout
+
+\begin_layout Enumerate
+To put it simply, series converges if and only if:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+sequence is convergent AND
+\end_layout
+
+\begin_layout Enumerate
+the value of function when approaching infinity is a real number.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}n$
+\end_inset
+
+ is divergent
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ S_{n}\right\} =\left\{ 1,2,3,....,\infty\right\} $
+\end_inset
+
+ is divergent
+\end_layout
+
+\begin_layout Enumerate
+Therefore, it is divergent.
+\end_layout
+
+\begin_layout Subsection
+Theorem 3.5
+\end_layout
+
+\begin_layout Enumerate
+If the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Converse not generally true.
+ Further investigation needed.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 3.6: Test for Divergence
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}\neq0$
+\end_inset
+
+ or 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}$
+\end_inset
+
+ D.N.E., the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\begin_layout Enumerate
+Put it simply, if the limit to infinity is not 0, then it diverges.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that the following series are divergent.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n^{2}}{3+5n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{n^{2}}{3+5n^{2}} & =\lim_{n\to\infty}\frac{\frac{n^{2}}{n^{2}}}{\frac{3}{n^{2}}+\frac{5n^{2}}{n^{2}}}\\
+ & =\lim_{n\to\infty}\frac{1}{\frac{3}{n^{2}}+5}\\
+\lim_{n\to\infty}\frac{n^{2}}{3+5n^{2}} & =\frac{1}{5}\neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore Divergent$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{-n}{2n+3}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{-n}{2n+3} & =\lim_{n\to\infty}\frac{\frac{-n}{n}}{\frac{2n}{n}+\frac{3}{n}}\\
+ & =\lim_{n\to\infty}\frac{-1}{2+\frac{3}{n}}\\
+\lim_{n\to\infty}\frac{-n}{2n+3} & =-\frac{1}{2}\\
+\lim_{n\to\infty}\frac{-n}{2n+3} & \neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Special Series
+\end_layout
+
+\begin_layout Subsection
+Geometric Series
+\end_layout
+
+\begin_layout Subsubsection
+Definition
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Geometric series: 
+\series default
+Series with the form 
+\begin_inset Formula $a+ar+ar^{2}+...+ar^{n}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Notation: 
+\begin_inset Formula $\sum_{n=1}^{\infty}ar^{n-1}$
+\end_inset
+
+ OR 
+\begin_inset Formula $\sum_{n=0}^{\infty}ar^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Convergent
+\series default
+, if
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|r\right|<1$
+\end_inset
+
+, AND
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=0}^{\infty}ar^{n}=\frac{a}{1-r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Otherwise, its 
+\series bold
+divergent
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
 \end_body
 \end_document

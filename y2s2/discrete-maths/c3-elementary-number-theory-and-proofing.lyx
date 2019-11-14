@@ -1,0 +1,849 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+C3: Elementary Number Theory & Method of Proof
+\end_layout
+
+\begin_layout Section
+Definition
+\end_layout
+
+\begin_layout Subsection
+Even
+\end_layout
+
+\begin_layout Enumerate
+Integer 
+\begin_inset Formula $n$
+\end_inset
+
+ is even iff 
+\begin_inset Formula $n=2k$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ is an integer.
+\end_layout
+
+\begin_layout Enumerate
+Divisible by 2
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ is even 
+\begin_inset Formula $\iff\exists k\ni n=2k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Odd
+\end_layout
+
+\begin_layout Enumerate
+Integer 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd iff 
+\begin_inset Formula $n=2k+1$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+ is integer
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ is odd 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\exists k\ni n=2k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example 1
+\end_layout
+
+\begin_layout Standard
+Which of the following is even or odd number? 
+\end_layout
+
+\begin_layout Itemize
+If even, write it as 2k; 
+\end_layout
+
+\begin_layout Itemize
+if odd, write it as 2k + 1.
+ 
+\end_layout
+
+\begin_layout Enumerate
+0
+\begin_inset Formula 
+\[
+2\left(0\right),even
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+35 
+\begin_inset Formula 
+\[
+2\left(17\right)+1,odd
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $6ab^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\left(3ab^{2}\right),even
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Prime
+\end_layout
+
+\begin_layout Enumerate
+Integer 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime iff 
+\begin_inset Formula $n>1$
+\end_inset
+
+, and 
+\begin_inset Formula $\forall\mathbb{Z^{+}}r,s$
+\end_inset
+
+, if 
+\begin_inset Formula $n=rs$
+\end_inset
+
+, then 
+\begin_inset Formula $r=1$
+\end_inset
+
+ OR 
+\begin_inset Formula $s=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+An integer 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime provided that 
+\begin_inset Formula $n>1$
+\end_inset
+
+ and the only positive divisors of 
+\begin_inset Formula $n$
+\end_inset
+
+ are 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Symbolically, 
+\begin_inset Formula $n=prime\iff\exists\text{ positive integers }r,s,$
+\end_inset
+
+ if 
+\begin_inset Formula $n=rs$
+\end_inset
+
+ then 
+\begin_inset Formula $r=1\cup s=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Composite 
+\end_layout
+
+\begin_layout Enumerate
+An integer 
+\begin_inset Formula $n$
+\end_inset
+
+ is composite, iff, 
+\begin_inset Formula $n=r\cdot s$
+\end_inset
+
+ for some positive integers r and s with 
+\begin_inset Formula $r\neq1$
+\end_inset
+
+ and 
+\begin_inset Formula $s\neq1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Symbolically, n is composite positive integers r and s such that 
+\begin_inset Formula $n=r\cdot s$
+\end_inset
+
+ and 
+\begin_inset Formula $r\neq1$
+\end_inset
+
+ and 
+\begin_inset Formula $s\neq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Every integer greater than 1 is either prime or composite.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Example 2
+\end_layout
+
+\begin_layout Standard
+Write the first 5 prime numbers and composite numbers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Prime: 
+\begin_inset Formula $2,3,5,7,11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Composite: 
+\begin_inset Formula $4,6,8,9,10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Divisible
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ are integers, 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $n$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $d$
+\end_inset
+
+ iff, 
+\begin_inset Formula $n=d\cdot k$
+\end_inset
+
+ for some integer 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Denoted 
+\begin_inset Formula $d\vert n$
+\end_inset
+
+, read as “
+\begin_inset Formula $d$
+\end_inset
+
+ divides 
+\begin_inset Formula $n$
+\end_inset
+
+”
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\vert n$
+\end_inset
+
+ also means:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ is a multiple of 
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d$
+\end_inset
+
+ is a factor of 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d$
+\end_inset
+
+ is a divisor of 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d$
+\end_inset
+
+ divides 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Symbolically, 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $d\vert n\iff\exists$
+\end_inset
+
+ an integer 
+\begin_inset Formula $k$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=d\cdot k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Example 3
+\end_layout
+
+\begin_layout Standard
+Is 12 divisible by 4?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+12=4\cdot3,3\in\text{\ensuremath{\mathbb{Z}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Yes, 12 is divisible by 
+\begin_inset Formula $4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example 4
+\end_layout
+
+\begin_layout Standard
+Which of the following are true and which are false?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\vert100$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\vert99$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-3\vert3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-2\vert-7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Note
+\end_layout
+
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ with 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $d\nmid n\iff\frac{n}{d}$
+\end_inset
+
+ is not an integer.
+\end_layout
+
+\begin_layout Subsection
+Rational
+\end_layout
+
+\begin_layout Itemize
+A real number 
+\begin_inset Formula $r$
+\end_inset
+
+ is rational iff, 
+\begin_inset Formula $r=a|b$
+\end_inset
+
+ for some integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ with 
+\begin_inset Formula $r=a|b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r$
+\end_inset
+
+ is rational 
+\begin_inset Formula $\iff\exists$
+\end_inset
+
+ integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ such that 
+\begin_inset Formula $r=a|b$
+\end_inset
+
+ and 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Irrational
+\end_layout
+
+\begin_layout Enumerate
+Real number, NOT rational.
+\end_layout
+
+\begin_layout Subsubsection
+Example 5
+\end_layout
+
+\begin_layout Standard
+Which of the following are rational numbers? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $13/4$
+\end_inset
+
+.
+ Rational
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-5/8$
+\end_inset
+
+.
+ Rational
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0.56$
+\end_inset
+
+.
+ Rational
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $6$
+\end_inset
+
+.
+ Rational
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+ .
+ Rational
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4/0$
+\end_inset
+
+.
+ Irrational
+\end_layout
+
+\begin_layout Section
+Unique Factorization Theorem
+\end_layout
+
+\begin_layout Enumerate
+For any integer 
+\begin_inset Formula $n>1$
+\end_inset
+
+, there exists a positive integer 
+\begin_inset Formula $k$
+\end_inset
+
+, distinct prime number 
+\begin_inset Formula $p_{1},p_{2},...,p_{k}$
+\end_inset
+
+ and positive integers 
+\begin_inset Formula $e^{1},e^{2},...,e^{k}$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n=p_{1}^{e_{1}}\cdot p_{2}^{e_{2}}\cdot...p_{k}^{e_{k}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For any other expression of 
+\begin_inset Formula $n$
+\end_inset
+
+ as a product of prime numbers is identical to this except, perhaps, for
+ the order in which the factors are written.
+\end_layout
+
+\begin_layout Enumerate
+To put it simply, for every positive number.
+ You can obtain that figure through the multiplication of prime numbers
+ with different power together.
+\end_layout
+
+\begin_layout Section
+Standard Factor Form
+\end_layout
+
+\begin_layout Enumerate
+For any integer 
+\begin_inset Formula $n>1$
+\end_inset
+
+, the standard factored form of 
+\begin_inset Formula $n$
+\end_inset
+
+ is an expression of the form 
+\begin_inset Formula 
+\[
+n=p_{1}^{e_{1}}\cdot p_{2}^{e_{2}}\cdot...\cdot p_{k}^{e_{k}},k>0;
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p_{1},p_{2},...,p_{k}$
+\end_inset
+
+ are prime numbers; 
+\begin_inset Formula $e^{1},e^{2},...,e^{k}$
+\end_inset
+
+are positive integers; 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+and
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula 
+\[
+p_{1}>p_{2}>…>p_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Put it simply, its unique factorization theorem, but the biggest prime numbers
+ comes first.
+\end_layout
+
+\begin_layout Subsection
+Example 6
+\end_layout
+
+\begin_layout Standard
+Write 8,820 in standard factored form
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c3/c3e6-calc.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $8820=7^{2}*5*3^{2}*2^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

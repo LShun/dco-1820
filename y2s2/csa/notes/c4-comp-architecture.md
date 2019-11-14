@@ -1,5 +1,13 @@
 # CSA C4: Computer Architecture
 
+## 0. Exam Tips
+
+1. Remember
+   Use of PC, MAR, MDR, IR, Accumulator
+2. Exam must remember machine cycle, 4 steps
+3. Exam must remember all instruction steps (STORE, ADD, etc)
+4. Exam must remember 5 main features of RISC over CISC
+
 ## 1. IPO(S) Model
 
 - **IPO(S):** Input-Process-Output (Storage) Model
@@ -211,8 +219,8 @@
 #### SRAM (Static RAM)
 
 - Uncommon, expensive
-- No need periodic refreshing, much faster & more expensive
-- Used in cache-memory
+- No need periodic refreshing, much faster
+- Used in cache
 
 ### ROM - Read Only Memory
 
@@ -225,9 +233,11 @@
 #### Flash ROM
 
 - Faster than disks, more expensive
-- Used in: BIOS, Digital Cameras
+- Used in: BIOS
 
 ## 7. Fetch-execute instruction cycle
+
+- Exam must remember machine cycle, 4 steps
 
 ![machine-cycle](img/c4/machine-cycle.png)
 
@@ -247,9 +257,9 @@
     - Increment PC
 - **Store:** Write results to memory.
   - PC -> MAR
-  - MDR -> IR
-  - IR [ result address] -> MAR
-  - Result -> MDR
+  - MDR (value) -> IR
+  - IR [result address] -> MAR
+  - Accumulator (A) -> MDR
   - PC + 1 -> PC
 
 - **ADD** (Extra example)
@@ -273,10 +283,8 @@ CPU architecture is defined by characteristics & features, such as:
 
 - Few general-purpose registers
 - Many addressing techniques
-- Many specialized, complex instructions
-- Different size instructions
-
 - Example: x86 family
+- Normally used for low-end stuff: IoT and so on
 
 #### Drawbacks
 
@@ -289,22 +297,15 @@ CPU architecture is defined by characteristics & features, such as:
 - Many general-purpose registers
 - Limited addressing techniques
 - Limited, simple instruction set
-- Fixed 4-byte instruction size
-
 - Example: PowerPC
 
-#### Aim
-
-- More CPU power, eliminate major bottlenecks
-  - Reduce data memory access
-  - Eliminate rarely used instructions
-
-#### Benefits
+#### Benefits (Important)
 
 - **Simple instruction**: Try to execute within same clock interval
   - Faster, higher clock speed, simple hardware
 - **Registers-oriented instructions**: Reduce memory access, use registers to hold instructions
 - **Fixed-length/format instruction word**: Easy to identify. Can be fetch/decoded independently -> pipelining
+  - Pipelining: Start another task before previous task end
 - **Limited addressing mode**: Single address mode, speed up execution
 - **Large bank of registers:** Registers widely applied, reduce memory access
 

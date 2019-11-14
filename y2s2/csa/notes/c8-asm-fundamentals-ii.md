@@ -280,7 +280,7 @@ L2:
 	MOV	CX, LENGTHOF	arrayNum	; loop counter
 	MOV	AX, 0						; reset accumulator
 L1:
-	ADD AL, [D1] 		; add integer
+	ADD AL, [DI] 		; add integer
 	INC	DI				; point to next
 	LOOP L1
 ```

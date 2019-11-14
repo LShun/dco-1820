@@ -1,3 +1,13 @@
+## Mid Term
+
+- Week 8
+- C1 - C5
+
+## Final Test
+
+- C6 - End
+- 
+
 Mid term will not ask on cables
 
 Chapter 3 touch and go
@@ -42,3 +52,6 @@ Lower - MAC - 802.3
 
 - Supports HW
 
+### C6 Hot Topic
+
+​	- 3rd bullet point

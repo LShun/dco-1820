@@ -919,11 +919,16 @@ Convert
 [Popular Question] The following decimal numbers are stored in excess-50
  floating point format.
  A “1”is used to represent a negative sign, and a “5” for positive sign.
+\begin_inset Newline newline
+\end_inset
+
+Perform the following operations, and present them in standard decimal sign-and-
+magnitude notation.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $55020311-15375321=1\,5375300689$
+\begin_inset Formula $55020311+15375321=1\,5375300689$
 \end_inset
 
 
@@ -933,6 +938,93 @@ Convert
 \begin_layout Enumerate
 -0.75301 * 
 \begin_inset Formula $10^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $15176323*15486496$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Negative * negative = positive.
+ So 
+\begin_inset Formula $5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $10^{1}*10^{4}=10^{1+4}=10^{5}$
+\end_inset
+
+, therefore it is 
+\begin_inset Formula $55$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convert to binary:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $10010101000100011$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $10100110111111000$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Multiply binary numbers together
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $110000100111100000101100011101000$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Convert back to decimal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $6525311208$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trim down to 5 digits
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $65253$
 \end_inset
 
 
@@ -950,8 +1042,9 @@ Convert
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $5\,5261838=0.61838*10^{2}$
+\begin_inset Formula $55152295-15256608$
 \end_inset
 
 
@@ -959,19 +1052,18 @@ Convert
 
 \begin_deeper
 \begin_layout Enumerate
-Adjust exponent: 
-\begin_inset Formula $5\,52\,052295$
+\begin_inset Formula $a-\left(-b\right)=a+b$
+\end_inset
+
+, therefore, this is an addition, first sign is 
+\begin_inset Formula $5$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-Addition: 
-\begin_inset Formula $1\,52\,566080$
-\end_inset
-
-
+Adjust the exponent, perform addition
 \end_layout
 
 \begin_layout Enumerate
@@ -982,6 +1074,15 @@ SEMMMM:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $5\,5261838=0.61838*10^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 For divide
@@ -989,18 +1090,11 @@ For divide
 
 \begin_deeper
 \begin_layout Enumerate
-Change the signs
+Change the signs (for the power)
 \end_layout
 
 \begin_layout Enumerate
 + becomes minus, - becomes +
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $-0.7/0.5=$
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -1094,7 +1188,11 @@ Multiply these two numbers.
 
 \begin_deeper
 \begin_layout Enumerate
-Adjust: 53+55-50=58=10^8
+Adjust: 
+\begin_inset Formula $53+55-50=58=10^{8}$
+\end_inset
+
+
 \begin_inset Formula 
 \[
 -411491.52=-0.41149*10^{7}
@@ -1472,8 +1570,8 @@ IEEE754 format
 
 \end_deeper
 \begin_layout Enumerate
-(CHECK AGAIN) Given an IEEE754 single precision notation below, show how
- this notation can be represented in a sign-magnitude notation.
+ Given an IEEE754 single precision notation below, show how this notation
+ can be represented in a sign-magnitude notation.
  You are required to show your working steps.
  
 \begin_inset Formula 

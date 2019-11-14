@@ -28,7 +28,9 @@
     - Thurs: 1-3pm
 - Exam
   - Test
-    - 60% Week 7
+    - 60% Week 7 - Tutorial 1-5
+      - Print your own formula sheet, test pad, calculator, stationaries
+      - Mid term test have differential equation example 1 & 2 solve dy/dx
     - 40% Week 11/12
 
 ### Fundamentals of Networking

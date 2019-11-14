@@ -217,7 +217,7 @@ L10:
 	KBINPUT 	DB		20	DUP('') ; Input area
 .CODE
 	MOV AH, 3FH 					; for KB
-	MOV	BX, 00						; max 20 chars
+	MOV	BX, 20						; max 20 chars
 	LEA	DX, KBINPUT					; Input area
 	INT 21H
 ```
