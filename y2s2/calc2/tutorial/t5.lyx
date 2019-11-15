@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -403,10 +394,9 @@ Again, we need to deal with integration, now use
 \end_inset
 
  substitution
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_deeper
-\begin_layout Enumerate
 Let 
 \begin_inset Formula $u=-x$
 \end_inset
@@ -428,7 +418,6 @@ Let
 
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Substitute back in
@@ -770,11 +759,6 @@ Time to use Calc 1 skills, Integration by parts
 
 \end_inset
 
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
 Let 
 \begin_inset Formula $u=\ln x$
 \end_inset
@@ -784,22 +768,38 @@ Let
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Enumerate
-\begin_inset Formula $\frac{du}{dx}=\frac{1}{x}+c,v=x+c$
+
+\begin_inset Formula $\frac{du}{dx}=\frac{1}{x},v=x$
 \end_inset
 
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Finally we get
 \begin_inset Formula 
-\[
-\int\ln x\,dx=x\ln x-\int\frac{1}{x}
-\]
+\begin{align*}
+\int\ln x\,dx & =x\ln x-\int x\,\frac{1}{x}dx\\
+ & =x\ln x-\int1dx\\
+ & =x\ln x-x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Continue plugging in
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dy}{dx}\left[x^{-2}y\right]dx & =x\ln x-x+c\\
+x^{-2}y & =x\ln x-x+c\\
+y & =x^{3}\ln x-x^{3}+cx^{2}
+\end{align*}
 
 \end_inset
 

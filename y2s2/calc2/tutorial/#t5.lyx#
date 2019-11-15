@@ -260,7 +260,7 @@ y & =\frac{x+c}{\sin x}
 \begin_inset Formula $x\dydx=y-x^{2}e^{-x}$
 \end_inset
 
- (COME BACK LATER)
+
 \end_layout
 
 \begin_deeper
@@ -330,10 +330,10 @@ Multiply everything in the D.E.
 \begin_inset Formula 
 \begin{align*}
 \frac{1}{x}\left(\frac{dy}{dx}-\frac{y}{x}\right) & =\frac{1}{x}\left(-x^{2}e^{-x}\right)\\
-x^{-2}y-x^{-1}\frac{dy}{dx} & =-xe^{-x}\\
-\frac{dy}{dx}\left(x^{-2}y\right) & =-xe^{-x}\\
-\int\frac{dy}{dx}\left(x^{-2}y\right)dx & =\int-xe^{-x}dx\\
-x^{-2}y & =-\int xe^{-x}dx
+-\left(-x^{-2}y+x^{-1}\frac{dy}{dx}\right) & =-xe^{-x}\\
+-\frac{dy}{dx}\left(x^{-1}y\right) & =-xe^{-x}\\
+-\int\frac{dy}{dx}\left(x^{-1}y\right)dx & =\int-xe^{-x}dx\\
+-x^{-2}y & =-\int xe^{-x}dx
 \end{align*}
 
 \end_inset
@@ -389,9 +389,38 @@ v & =-e^{-x}
 Lets find the answer
 \begin_inset Formula 
 \begin{align*}
-\int u\,dv & =x\cdot e^{-x}-\int e^{-x}dx\\
-\int u\,dv & =\frac{x}{e^{x}}-\left(-e^{-x}\right)\\
-\int xe^{-x}dx & =e^{-x}\left(x+1\right)+c
+\int u\,dv & =-x\cdot e^{-x}-\int e^{-x}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Again, we need to deal with integration, now use 
+\begin_inset Formula $u$
+\end_inset
+
+ substitution
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=-x$
+\end_inset
+
+, 
+\begin_inset Formula $du=-dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-\int e^{-x}dx & =-\int e^{u}du\\
+ & =-e^{u}\\
+-\int e^{-x}dx & =-e^{-x}+c
 \end{align*}
 
 \end_inset
@@ -400,14 +429,16 @@ Lets find the answer
 \end_layout
 
 \end_deeper
+\end_deeper
 \begin_layout Enumerate
 Substitute back in
 \begin_inset Formula 
 \begin{align*}
-x^{-2}y & =\int xe^{-x}dx\\
- & =e^{-x}\left(x+1\right)+c\\
-y & =e^{-x}\cdot x^{2}\left(x+1\right)+cx^{2}\\
- & =xe^{-x}+\frac{e^{-x}}{x}+\frac{c}{x}
+-x^{-1}y & =\int xe^{-x}dx\\
+ & =-e^{-x}+c\\
+y & =-e^{-x}\cdot-x-cx\\
+ & =xe^{-x}-cx\\
+y & =xe^{-x}+cx\,\text{Note: c is constant, sign doesn't matter for now}
 \end{align*}
 
 \end_inset
@@ -756,7 +787,7 @@ Let
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\frac{du}{dx}=\frac{1}{x}+c,v=x+c$
+\begin_inset Formula $\frac{du}{dx}=\frac{1}{x}+c,v=x$
 \end_inset
 
 
@@ -766,9 +797,26 @@ Let
 \begin_layout Enumerate
 Finally we get
 \begin_inset Formula 
-\[
-\int\ln x\,dx=x\ln x-\int\frac{1}{x}
-\]
+\begin{align*}
+\int\ln x\,dx & =x\ln x-\int x\,dx\\
+ & =x\ln x-\frac{x^{2}}{2}+c\,dx\\
+ & =x\ln x-\frac{x^{2}}{2}+c\,dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Continue plugging in
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dy}{dx}\left[x^{-2}y\right]dx & =x\ln x-\frac{x^{2}}{2}+c\,dx\\
+x^{-2}y & =x\ln x-\ln x+c\\
+y & =x^{3}\ln x-x^{2}\ln x+x^{2}c\\
+ & =
+\end{align*}
 
 \end_inset
 
