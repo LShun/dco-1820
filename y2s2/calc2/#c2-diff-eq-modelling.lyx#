@@ -3051,18 +3051,49 @@ Find the integrating factor
 
 \begin_deeper
 \begin_layout Enumerate
-Note: For this step, the 
-\begin_inset Formula $+c$
-\end_inset
-
- is omitted when integrating, else in the end you'll get an extra 
+Note: For this step, a lot of times the 
 \begin_inset Formula $c$
 \end_inset
 
- somewhere as a constant.
- That would be a waste of time.
+ is omitted, this is because if you don't, it will yield something like:
+\begin_inset Formula 
+\begin{align*}
+xe^{y+c} & =\left(e^{y}\cdot e^{c}\right)\\
+ & =xe^{y}\cdot xe^{c}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+In this case, 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are random constants, therefore:
+\begin_inset Formula 
+\begin{align*}
+xe^{y}\cdot xe^{c} & =xe^{y}\cdot c\\
+ & =cxe^{y}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then if you put this inside the actual 
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Multiply everything in the D.E.

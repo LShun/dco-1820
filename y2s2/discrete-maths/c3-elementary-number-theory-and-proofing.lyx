@@ -90,6 +90,24 @@
 C3: Elementary Number Theory & Method of Proof
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\floor}[1]{\lfloor#1\rfloor}
+{\lfloor#1\rfloor}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ceil}[1]{\lceil#1\rceil}
+{\lceil#1\rceil}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Definition
 \end_layout
@@ -841,9 +859,1499 @@ Write 8,820 in standard factored form
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Quotient-Remainder Theorem
+\end_layout
+
+\begin_layout Enumerate
+Given any integer 
+\begin_inset Formula $n$
+\end_inset
+
+ and positive integer 
+\begin_inset Formula $d$
+\end_inset
+
+, there evists unique integers 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=d\cdot q+r,0\le r<d$
+\end_inset
+
 
 \end_layout
 
+\begin_layout Enumerate
+Put it simply, any integer can be obtained by 
+\begin_inset Formula $\boldsymbol{n}umber*\boldsymbol{q}uotient+\boldsymbol{r}emainder$
+\end_inset
+
+ (or 
+\begin_inset Formula $nq+r$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Example 7
+\end_layout
+
+\begin_layout Standard
+Find the integers for 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ for the following values of 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+, in the form 
+\begin_inset Formula $n=d\cdot q+r,0\le r<d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=62,d=4$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+62=4\left(15\right)+2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=-62,d=4$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-62=4\left(-15\right)-2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=62,d=80$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+62=80\left(0\right)+62
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+`div` and `mod`
+\end_layout
+
+\begin_layout Enumerate
+Given non-negative integer 
+\begin_inset Formula $n$
+\end_inset
+
+ and positive integer 
+\begin_inset Formula $d$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ div 
+\begin_inset Formula $d=$
+\end_inset
+
+ the integer quotient obtained when 
+\begin_inset Formula $n$
+\end_inset
+
+ is divided b y 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n\mod d=$
+\end_inset
+
+ the integer remainder obtained when 
+\begin_inset Formula $n$
+\end_inset
+
+ is divided by 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Symbolically, if 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ are positive integers,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n\,\text{div}\,d=q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $n\mod d=r$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Put it simply, given any 2 combination of the below, it is possible to find
+ the third value:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+number, 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+divisor, 
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+remainder, 
+\begin_inset Formula $r$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example 8
+\end_layout
+
+\begin_layout Standard
+Compute 23 div 6 and 23 mod 6.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $23=6\left(3\right)+5$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the regular division method to find the other terms/
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $23\text{div}6=q=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $23\mod6=r=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Floor
+\end_layout
+
+\begin_layout Standard
+Given any real number 
+\begin_inset Formula $x$
+\end_inset
+
+, the floor of 
+\begin_inset Formula $x$
+\end_inset
+
+, denoted 
+\begin_inset Formula $\floor x$
+\end_inset
+
+, is 
+\begin_inset Formula 
+\[
+\floor x=\text{that unique integer }n\text{ such that }n\le x<n+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Symbolically, if 
+\begin_inset Formula $x=$
+\end_inset
+
+ real number, 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer, then
+\begin_inset Formula 
+\[
+\floor x=n\iff n\le x\le n+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+To put it simply, the floor of a number is the closest integer below it
+ or equal to it.
+\end_layout
+
+\begin_layout Section
+Ceiling
+\end_layout
+
+\begin_layout Standard
+Given any real number 
+\begin_inset Formula $x$
+\end_inset
+
+, the ceiling of 
+\begin_inset Formula $x$
+\end_inset
+
+, denoted 
+\begin_inset Formula $\ceil x$
+\end_inset
+
+, is 
+\begin_inset Formula 
+\[
+\ceil x=\text{that unique integer }n\text{ such that }n-1<x\le n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Symbolically, if 
+\begin_inset Formula $x=$
+\end_inset
+
+ real number, 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer, then
+\begin_inset Formula 
+\[
+\floor x=n\iff n-1<x\le n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+To put it simply, the ceiling of a number is the closest integer equal to
+ or above it.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 9
+\end_layout
+
+\begin_layout Standard
+Compute the floor and the ceiling for each of the following values of x:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{25}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\floor{\frac{25}{4}}=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ceil{\frac{25}{4}}=7$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $37.999$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\floor{37.999}=37$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ceil{37.999}=38$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-3.61$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\floor{-3.61}=-4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ceil{-3.61}=-3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example 10
+\end_layout
+
+\begin_layout Standard
+If k is an integer, what are 
+\begin_inset Formula $\floor k$
+\end_inset
+
+ and 
+\begin_inset Formula $\floor{k+\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solution: 
+\end_layout
+
+\begin_layout Enumerate
+Suppose k is an integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Then because k is an integer and 
+\begin_inset Formula $k\le k<k+1$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\floor k=\floor{k+\frac{1}{2}}=k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Methods of Proof
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Theorem
+\series default
+: A mathematics declarative statement with a proof
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Result:
+\series default
+ Generic word for theorem
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Fact: 
+\series default
+Small theorem
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Proposition
+\series default
+: A theorem, bigger than fact, smaller than theorem.
+\end_layout
+
+\begin_layout Section
+Method of direct proof
+\end_layout
+
+\begin_layout Enumerate
+Express that statement to be proved in the form “
+\begin_inset Formula $\forall x\in D,if\,P\left(x\right),then\,Q\left(x\right)$
+\end_inset
+
+” (mentally)
+\end_layout
+
+\begin_layout Enumerate
+Start the proof by supposing 
+\begin_inset Formula $x$
+\end_inset
+
+ is a particular but arbitrarily chosen element of 
+\begin_inset Formula $D$
+\end_inset
+
+ for which the hypothesis 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ is true.
+ (Suppose 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ and 
+\begin_inset Formula $P(x)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Show that the conclusion 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ is true by using definitions, previously established results, and the rules
+ for logical inference.
+ 
+\end_layout
+
+\begin_layout Subsection
+Directions for Writing Proofs of Universal Statements
+\end_layout
+
+\begin_layout Enumerate
+Write the theorem to be proved.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Clearly mark the beginning of your proof with the word Proof.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Make your proof self-contained.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Write proofs in complete English sentences.
+\end_layout
+
+\begin_layout Subsection
+Common Mistakes 
+\end_layout
+
+\begin_layout Enumerate
+Arguing from examples.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Using the same letter to represent two different things.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Jumping to conclusion.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Begging the question.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Misuse of the word 
+\begin_inset Formula $if$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Standard
+If the sum of any two integers is even, then so is their difference.
+\end_layout
+
+\begin_layout Enumerate
+Workings
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let the even integers be 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Since they are even integers, added together they should be 
+\begin_inset Formula $2k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Question is 
+\begin_inset Formula $m-n=?$
+\end_inset
+
+.
+ We would like to know if 
+\begin_inset Formula $m-n=2l$
+\end_inset
+
+, where 
+\begin_inset Formula $l$
+\end_inset
+
+ is another number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proof
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start the proof by supposing 
+\begin_inset Formula $x$
+\end_inset
+
+ is a particular but arbitrarily chosen element of 
+\begin_inset Formula $D$
+\end_inset
+
+ for which the hypothesis 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ is true.
+ (Suppose 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ and 
+\begin_inset Formula $P(x)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are two particular but arbitrarily chosen integers such that 
+\begin_inset Formula $m+n$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Enumerate
+By definition of even,
+\begin_inset Formula 
+\[
+m+n=2k,k\in\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that the conclusion 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ is true by using definitions, previously established results, and the rules
+ for logical inference.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the difference of integers is an integer, 
+\begin_inset Formula $l=k-n$
+\end_inset
+
+ is a integer, and hence, by definition of even, 
+\begin_inset Formula $m-n$
+\end_inset
+
+ is an even integer 
+\begin_inset Formula $\left(m-n\right)=2l$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, if the sum of any 2 integers is even, then so is their difference.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Example 11
+\end_layout
+
+\begin_layout Standard
+Prove: For all integers 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $l$
+\end_inset
+
+, if 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ are both odd, then 
+\begin_inset Formula $k+l$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Enumerate
+Mental calculations
+\begin_inset Formula 
+\begin{align*}
+n & =2k+1\\
+n^{2} & =\left(2k+1\right)^{2}\\
+ & =4k^{2}+4k+1\\
+ & =2\left(2k^{2}+2k\right)+1\\
+ & =2m+1\left(odd\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Proof
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start the proof by supposing 
+\begin_inset Formula $x$
+\end_inset
+
+ is a particular but arbitrarily chosen element of 
+\begin_inset Formula $D$
+\end_inset
+
+ for which the hypothesis 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ is true.
+ (Suppose 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ and 
+\begin_inset Formula $P(x)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Suppose
+\series default
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ is a particular but arbitrarily chosen odd integer.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that the conclusion 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ is true by using definitions, previously established results, and the rules
+ for logical inference.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+By definition
+\series default
+ of odd, 
+\begin_inset Formula $n=2k+1,k\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then,
+\begin_inset Formula 
+\begin{align*}
+n^{2} & =4k^{2}+4k+1\\
+ & =2\left(2k^{2}+2k\right)+1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Since
+\series default
+ the sum of products of integers is an integer, 
+\begin_inset Formula $2k^{2}+2k$
+\end_inset
+
+ is an integer, and hence by definition of odd, 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ is an odd integer.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Therefore, 
+\series default
+if 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ is odd.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Theorem
+\end_layout
+
+\begin_layout Standard
+Every integer is a rational number.
+\end_layout
+
+\begin_layout Enumerate
+Express that statement to be proved in the form “
+\begin_inset Formula $\forall x\in D,if\,P\left(x\right),then\,Q\left(x\right)$
+\end_inset
+
+” (mentally)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Equivalent form: 
+\begin_inset Formula $\forall n\in\mathbb{R}$
+\end_inset
+
+, if 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer, then 
+\begin_inset Formula $n$
+\end_inset
+
+ is a rational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Do some mental calculations
+\begin_inset Formula 
+\[
+n=\frac{n}{1},n\in\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Proof:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $n$
+\end_inset
+
+ is a particular but arbitrarily chosen integer.
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $n=\frac{n}{1},where\,n,1\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n$
+\end_inset
+
+ can be written as a fraction of integers where 
+\begin_inset Formula $1\neq0$
+\end_inset
+
+, hence by definition of rational, 
+\begin_inset Formula $n$
+\end_inset
+
+ is a rational number.
+\end_layout
+
+\begin_layout Enumerate
+Therefore, every integer is a rational number.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Theorem
+\end_layout
+
+\begin_layout Standard
+The sum of any two rational numbers is rational.
+\end_layout
+
+\begin_layout Enumerate
+Equivalent form: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $s$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ are rational numbers, then 
+\begin_inset Formula $s+r$
+\end_inset
+
+ is rational.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mental notes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S=\frac{ad}{bd},R=\frac{bc}{bd}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S+R=\frac{ad+bc}{bd}=\frac{p}{q}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proof:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $s$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ are particular but arbitrarily chosen rational numbers.
+\end_layout
+
+\begin_layout Enumerate
+By definition of rational numbers,
+\begin_inset Formula 
+\begin{align*}
+S & =\frac{a}{b}\ni a,b\in\mathbb{Z},b\neq0\\
+r & =\frac{c}{d}\ni c,d\in\mathbb{Z},d\neq0\\
+S+r & =\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}\\
+ad+bc & =\mathbb{Z}\\
+bd & \in\mathbb{Z},\neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $S+r$
+\end_inset
+
+ is rational
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Theorem: Transitivity of Divisibility
+\end_layout
+
+\begin_layout Standard
+For all integers 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{b}{a}=k,\frac{c}{d}=l$
+\end_inset
+
+, 
+\begin_inset Formula $k,l\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b=ka,c=lb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c=lka$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{c}{a}=lk\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore a$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proof:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Suppose 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+
+\series default
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ are particular, but arbitrary chosen integers such that 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+By definition
+\series default
+ of divisibility,
+\begin_inset Formula 
+\[
+b=ka,c=lb,k,l\in\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $c=\left(kl\right)a,kl\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since the product of integers is an integer, 
+\begin_inset Formula $kl$
+\end_inset
+
+ is an integer, and hence by definition of divisibility, 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Therefore, for all integers 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Theorem
+\end_layout
+
+\begin_layout Standard
+Any two consecutive integers have opposite parity.
+\begin_inset Formula 
+\[
+m,m+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Equivalent form: If m is an even (odd) integer, then m + 1 is odd (even).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c3/9.3.5-consecutive-integers-cases.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proof: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $m+1$
+\end_inset
+
+ are particular but arbitrarily chosen consecutive integers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+By the parity property, 
+\begin_inset Formula $m$
+\end_inset
+
+ is either odd or even.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Case 1: If 
+\begin_inset Formula $m$
+\end_inset
+
+ is even 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+By definition of even, 
+\begin_inset Formula $m=2k,k\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $m+1=2k+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+which is an odd integer.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Therefore if 
+\begin_inset Formula $m$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $m+1$
+\end_inset
+
+ is odd.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Case 2: If m is odd 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+By definition
+\series default
+ of odd, 
+\begin_inset Formula $m=2k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Then
+\series default
+ 
+\begin_inset Formula $m+1=2k+2=2\left(k+1\right)=2l$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Since
+\series default
+ the sum of integers is an integer, 
+\begin_inset Formula $k+1$
+\end_inset
+
+ is an integer and hence by definition of even, 
+\begin_inset Formula $m+1$
+\end_inset
+
+ is an even integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Therefore
+\series default
+ if 
+\begin_inset Formula $m$
+\end_inset
+
+ is odd, then m + 1 is even.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Regardless of which case actually occurs, either m or m + 1 is even, the
+ other will be an odd integer.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

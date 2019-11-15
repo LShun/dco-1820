@@ -55,9 +55,9 @@
 
 ### Limitations of IPv4
 
-- IP Address Depletion
-- Routing table expansion
-- Lack of end-to-end connectivity
+- IP Address Depletion. Limited number of unique public IP address.
+- Routing table expansion. IPv4 has more nodes, many are badly configured, more overhead.
+- Lack of end-to-end connectivity. IPv4 uses Network Address Translation (NAT) for multiple devices to share single public IP. As a result, end-to-end connectivity becomes problematic as the device do not have its own public IP. 
 
 ### IPv6
 
@@ -92,11 +92,33 @@
 
 ### IPv4 Router Routing Table
 
-- FILL THIS PART IN LATER
+- To display, use `netstat -r` 
 
 ### Directly connected routing table entries
 
+- ![directly-connected-routing-table-entries.png](lecture-img/c6/directly-connected-routing-table-entries.png)
+- For Part A:
+  - `C`: Connected
+  - `L`: Link local
+- For part B:
+  - For `C`: Refers to network connected
+  - For `L`: Refers to the interface IP address
+- For Part C:
+  - Nothing special, just refers to ports
+
 ### Remote Network Routing Table Entries
+
+![image-20191115113104852](lecture-img/c6/remote-table-routing-table-entries.png)
+
+- For Part A, B and G is similar to the local.
+- For `D`: Lower values indicate faster routes
+
+### Next-Hop Address
+
+![next-hop-address-example.png](lecture-img/c6/next-hop-address-example.png)
+
+- On the image above `D`  refers to `EIGRP`  which is  Enhanced Interior Gateway Routing Protocol. It is a routing protocol that searches for the best route to destination.
+- According to the image, the two highlighted points have a `via 209.165.200.226`. This is the interface of the next hop.
 
 ## 3. Routers
 
