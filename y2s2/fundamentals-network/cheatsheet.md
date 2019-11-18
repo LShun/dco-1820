@@ -1,10 +1,21 @@
-## CLI
+# CLI
 
-### Switch
+### Show MAC table
+
+- `show mac-address-table`
+
+### ARP
+
+- Delete ARP: `arp -d`
+- Show ALL ARP: `arp -a`
+
+### Configuration
 
 `show running-config`: Displays running configuration
 
-Change switch host name:
+`show startup-config`: Show startup configuration
+
+- Change host name:
 
 ```bash
 enable
@@ -16,6 +27,12 @@ exit
 - Notes
   - `conf` = `configure`
   - `t` = `terminal`
+
+#### Flash
+
+- `show flash`: Show contents of flash
+- Save startup config to flash
+  - `copy startup-config flash`
 
 #### Access Control
 
@@ -75,7 +92,7 @@ line vty 0 15
   exit
   ```
 
-- Saving config file
+- Save config to NVRAM/file
 
   - Note: [Enter] key is on the keyboard
 

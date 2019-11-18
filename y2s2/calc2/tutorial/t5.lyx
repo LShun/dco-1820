@@ -161,7 +161,8 @@ x\frac{dy}{dx}+y & =1+\frac{1}{x}\\
 \frac{d}{dx}\left[yx\right] & =1+\frac{1}{x}\\
 \int\frac{d}{dx}\left[yx\right]dx & =\int1+\frac{1}{x}dx\\
 yx & =x+\ln x+c\\
-y & =1+\frac{\ln x+c}{x}
+y & =1+\frac{\ln x+c}{x}\\
+ & =1+\frac{\ln x}{x}+\frac{c}{x}
 \end{align*}
 
 \end_inset
@@ -826,6 +827,15 @@ Put
 \end_inset
 
  is 1.
+\begin_inset Formula 
+\begin{align*}
+x\dydx-3y & =x^{4}\\
+\dydx-\frac{3y}{x} & =x^{3}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -834,6 +844,18 @@ Find the integrating factor
 \end_inset
 
 .
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int-\frac{3}{x}dx}\\
+ & =e^{-3\int\frac{1}{x}dx}\\
+ & =e^{-3\ln x}\\
+ & =e^{\ln x^{-3}}\\
+\mu\left(x\right) & =x^{-3}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -847,6 +869,20 @@ Multiply everything in the D.E.
 \end_inset
 
  and write it as such.
+\begin_inset Formula 
+\begin{align*}
+x^{-3}\left[\dydx-\frac{3y}{x}\right] & =x^{-3}\left[x^{3}\right]\\
+x^{-3}\dydx-3x^{-4}y & =1\\
+\frac{d}{dx}\left[x^{-3}y\right] & =1\\
+\int\frac{d}{dx}\left[x^{-3}y\right]dx & =\int1dx\\
+x^{-3}y & =x+c\\
+y & =\frac{x}{x^{-3}}+\frac{c}{x^{-3}}\\
+y & =x^{4}+cx^{3}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -857,12 +893,119 @@ Solve the following I.V.P.:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\dydx=98-0.196y,y\left(0\right)=48$
+\begin_inset Formula $\dydx=9.8-0.196y,y\left(0\right)=48$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1.
+\begin_inset Formula 
+\[
+\dydx+0.196y=9.8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int0.196dx}\\
+ & =e^{0.196\int1dx}\\
+ & =e^{0.196x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everything in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+e^{0.196x}\left[\dydx+0.196y\right] & =e^{0.196x}\left[9.8\right]\\
+e^{0.196x}\dydx+e^{0.196x}0.196y & =9.8e^{0.196x}\\
+\frac{d}{dx}\left[ye^{0.196x}\right] & =9.8e^{0.196x}\\
+\int\frac{d}{dx}\left[ye^{0.196x}\right]dx & =\int\left(9.8e^{0.196x}\right)dx\\
+ye^{0.196x} & =9.8\cdot\left(\frac{1}{0.196}e^{0.196x}+c\right)\\
+ye^{0.196x} & =\frac{9.8}{0.196}e^{0.196x}+9.8c\\
+y & =\frac{9.8}{0.196\cdot e^{0.196x}}e^{0.196x}+\frac{9.8c}{e^{0.196x}}\\
+ & =\frac{9.8}{0.196}+\frac{9.8c}{e^{0.196x}}\\
+y & =50+\frac{9.8c}{e^{0.196x}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug in the values given, and solve for 
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y\left(0\right) & =50+\frac{9.8c}{e^{0.196\left(0\right)}}\\
+48 & =50+\frac{9.8c}{1}\\
+c & =\frac{48-50}{9.8}\\
+ & =\text{−}\frac{10}{49}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $c$
+\end_inset
+
+ back into the original equation
+\begin_inset Formula 
+\begin{align*}
+y & =50+\frac{9.8\left(\text{−}\frac{10}{49}\right)}{e^{0.196x}}\\
+ & =50+\frac{9.8\left(\text{−}\frac{10}{49}\right)}{e^{0.196x}}\\
+ & =50-\frac{2}{e^{0.196x}}\\
+y & =50-2e^{-0.196x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $x\dydx+y=\frac{x}{x+1},y\left(1\right)=1$
 \end_inset
@@ -870,6 +1013,155 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1.
+\begin_inset Formula 
+\[
+\dydx+\frac{y}{x}=\frac{1}{x+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int\frac{1}{x}dx}\\
+ & =e^{\ln x}\\
+\mu\left(x\right) & =x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everything in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+x\left[\dydx+\frac{y}{x}\right] & =x\left[\frac{1}{x+1}\right]\\
+x\dydx+y & =\frac{x}{x+1}\\
+\frac{d}{dx}\left[xy\right] & =\frac{x}{x+1}\\
+\int\frac{d}{dx}\left[xy\right]dx & =\int\frac{x}{x+1}dx\\
+xy & =\int x\left(x+1\right)^{-1}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+On first sight, integration by parts seems to be pretty good, but if you
+ try it out you're in for a world of pain.
+ A combination of long division and 
+\begin_inset Formula $u$
+\end_inset
+
+ substitution works best in this case.
+ Because:
+\begin_inset Newline newline
+\end_inset
+
+1.
+ Numerator and denominator same power
+\end_layout
+
+\begin_layout Enumerate
+Do long division
+\begin_inset Formula 
+\begin{align*}
+\int\frac{x}{\left(x+1\right)}dx & =\int1-\frac{1}{x+1}dx\\
+ & =\int1dx-\int\frac{1}{x+1}dx\\
+\int\frac{x}{\left(x+1\right)}dx & =x-\ln\left(x+1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Move everything to the right place
+\begin_inset Formula 
+\begin{align*}
+xy & =x-\ln\left(x+1\right)+c\\
+y & =\frac{x-\ln\left(x+1\right)+c}{x}\\
+ & =1-\frac{1}{x}\ln\left(x+1\right)+\frac{c}{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Plug in the values given, and solve for 
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y\left(1\right) & =1-\frac{1}{1}\ln\left(1+1\right)+\frac{c}{1}\\
+1 & =1-\ln\left(2\right)+c\\
+c & =\ln\left(2\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $c$
+\end_inset
+
+ back into the original equation
+\begin_inset Formula 
+\begin{align*}
+y & =1-\frac{1}{x}\ln\left(x+1\right)+\frac{1}{x}\ln\left(2\right)\\
+ & =1-\frac{1}{x}\left(\ln\left(x+1\right)-\ln\left(2\right)\right)\\
+ & =1-\frac{1}{x}\ln\frac{x+1}{2}\\
+ & =1+\frac{1}{x}\ln\left(\frac{x+1}{2}\right)^{-1}\\
+y & =1+\frac{1}{x}\ln\frac{2}{x+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $x\dydx+3y=x^{2}-4x+3,y\left(1\right)=0$
 \end_inset
@@ -877,6 +1169,109 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Put 
+\begin_inset Formula $D.E.$
+\end_inset
+
+ in the correct standard form, coefficient of 
+\begin_inset Formula $\frac{dy}{dx}$
+\end_inset
+
+ is 1
+\begin_inset Formula 
+\begin{align*}
+\dydx+\frac{3}{x}y & =x-4+\frac{3}{x}
+\end{align*}
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find the integrating factor 
+\begin_inset Formula $\mu\left(x\right)=e^{\int p\left(x\right)dx}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\mu\left(x\right) & =e^{\int p\left(x\right)dx}\\
+\mu\left(x\right) & =e^{\int\frac{3}{x}dx}\\
+ & =e^{3\ln x}\\
+ & =e^{\ln x^{3}}\\
+\mu\left(x\right) & =x^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Multiply everything in the D.E.
+ by 
+\begin_inset Formula $\mu\left(x\right)$
+\end_inset
+
+ , and verify that the left side becomes the product rule 
+\begin_inset Formula $\frac{d}{dx}\left[\mu\left(x\right)y\right]$
+\end_inset
+
+ and write it as such.
+\begin_inset Formula 
+\begin{align*}
+\dydx+\frac{3}{x}y & =x-4+\frac{3}{x}\\
+x^{3}\left[\dydx+\frac{3}{x}y\right] & =x^{3}\left[x-4+\frac{3}{x}\right]\\
+x^{3}\dydx+3x^{2}y & =x^{4}-4x^{3}+3x^{2}\\
+\frac{d}{dx}\left[x^{3}y\right] & =x^{4}-4x^{3}+3x^{2}\\
+\int\frac{d}{dx}\left[x^{3}y\right]dx & =\int x^{4}-4x^{3}+3x^{2}dx\\
+x^{3}y & =\frac{x^{5}}{5}-x^{4}+x^{3}+c\\
+y & =\frac{x^{2}}{5}-x+1+\frac{c}{x^{3}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug in the values given, and solve for 
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y\left(1\right) & =\frac{1^{2}}{5}-1+1+\frac{c}{1^{3}}\\
+0 & =\frac{1}{5}+c\\
+c & =-\frac{1}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $c$
+\end_inset
+
+ back into the original equation
+\begin_inset Formula 
+\[
+y=\frac{x^{2}}{5}-x+1-\frac{1}{5x^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -898,6 +1293,68 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{e^{2x}}{4y^{3}}\\
+4y^{3}\dydx & =e^{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int4y^{3}\frac{dy}{\cancel{dx}}\cancel{dx} & =\int e^{2x}dx\\
+4\int y^{3}dy & =\int e^{2x}dx\\
+4\left(\frac{y^{4}}{4}+c\right) & =\frac{1}{2}e^{2x}+c\\
+y^{4}+c & =\frac{1}{2}e^{2x}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+y^{4} & =\frac{1}{2}e^{2x}+c\\
+y & =\pm\sqrt[4]{\frac{1}{2}e^{2x}+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\dydx=\frac{xy}{2\ln y}$
 \end_inset
@@ -905,13 +1362,200 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\frac{dx}{dt}+e^{t+x}=0$
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{xy}{2\ln y}\\
+2\ln y\dydx & =xy\\
+\frac{2}{y}\dydx\ln y & =x
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int\frac{2}{y}\dydx\ln y\,dx & =\int x\,dx\\
+2\int\frac{1}{y}\ln y\,dy & =\frac{x^{2}}{2}+c\\
+2\left(\frac{\ln^{2}y}{2}+c\right) & =\frac{x^{2}}{2}+c\,\text{check below for elaboration}\\
+\ln^{2}y+c & =\frac{x^{2}}{2}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use 
+\begin_inset Formula $u-substitution$
+\end_inset
+
+, let 
+\begin_inset Formula $u=\ln y$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dy} & =\frac{1}{y}\\
+du & =\frac{1}{y}dy
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\frac{1}{y}\ln y\,dy & =\int u\,du\\
+ & =\frac{u^{2}}{2}+c\\
+ & =\frac{\left(\ln y\right)^{2}}{2}+c\\
+\int\frac{1}{y}\ln y\,dy & =\frac{\ln^{2}y}{2}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ln^{2}y+c & =\frac{x^{2}}{2}+c\\
+\ln y & =\pm\sqrt{\frac{x^{2}}{2}+c}\\
+y & =e^{\pm\sqrt{\frac{x^{2}}{2}+c}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{dx}{dt}+e^{t+x}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Before-we-start: This question is a lil' tricky.
+ Usually, we have 
+\begin_inset Formula $x$
+\end_inset
+
+ as our parameter, but this has 
+\begin_inset Formula $t$
+\end_inset
+
+ as parameter.
+ Therefore, we need to make it 
+\begin_inset Formula $x\left(t\right)=...$
+\end_inset
+
+ instead.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt}+e^{t+x} & =0\\
+\frac{dx}{dt} & =-e^{t+x}\\
+ & =-e^{t}\cdot e^{x}\\
+\frac{1}{e^{x}}dx & =\frac{1}{e^{t}}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int e^{-x}dx & =\int e^{-t}dt\\
+-e^{-x}+c & =-e^{-t}+c\\
+e^{-x} & =e^{-t}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\ln e^{-x} & =\ln\left(e^{-t}+c\right)\\
+-x & =\ln\left(e^{-t}+c\right)\\
+x & =-\ln\left(e^{-t}+c\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $2\sqrt{xy}\frac{dy}{dx}=1,x,y>0$
 \end_inset
@@ -919,6 +1563,71 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2\sqrt{xy}\frac{dy}{dx} & =1\\
+\sqrt{xy}dy & =\frac{1}{2}dx\\
+\sqrt{x}\sqrt{y}dy & =\frac{1}{2}dx\\
+y^{\frac{1}{2}}dy & =\frac{1}{2}x^{-\frac{1}{2}}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int y^{\frac{1}{2}}dy & =\int\frac{1}{2}x^{-\frac{1}{2}}dx\\
+\frac{y^{\frac{3}{2}}}{\frac{3}{2}}+c & =\frac{1}{2}\left(\frac{x^{\frac{1}{2}}}{\frac{1}{2}}+c\right)\\
+\frac{2}{3}y^{\frac{3}{2}}+c & =\frac{1}{2}\left(2x^{\frac{1}{2}}+c\right)\\
+\frac{2}{3}y^{\frac{3}{2}}+c & =x^{\frac{1}{2}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\frac{2}{3}y^{\frac{3}{2}} & =x^{\frac{1}{2}}+c\\
+y^{\frac{3}{2}} & =\frac{3}{2}\left(x^{\frac{1}{2}}+c\right)\\
+y^{\frac{3}{2}} & =\frac{3}{2}\sqrt{x}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\dydx=\frac{xy}{x+2}$
 \end_inset
@@ -926,6 +1635,139 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dydx & =\frac{xy}{x+2}\\
+\frac{1}{xy}dy & =\frac{1}{x+2}dx\\
+\frac{1}{x}\cdot\frac{1}{y}dy & =\frac{1}{x+2}dx\\
+\frac{1}{y}dy & =\frac{x}{x+2}dx\\
+y^{-1}dy & =\frac{x}{x+2}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\[
+\int y^{-1}dy=\int\frac{x}{x+2}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For first part,
+\begin_inset Formula 
+\[
+\int y^{-1}dy=\ln y+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For second part, ideally you want to use long division + u-substitution.
+ Just something learned from above.
+\begin_inset Formula 
+\begin{align*}
+\int\frac{x}{x+2}dx & =\int1-\frac{2}{x+2}dx\\
+ & =\int1dx-2\int\frac{1}{x+2}dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $u=x+2$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =1\\
+du & =dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int1dx-2\int\frac{1}{x+2}dx & =x-2\int\frac{1}{u}du+c\\
+ & =x-2\ln u+c\\
+ & =x-2\ln\left(x+2\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the final integration
+\begin_inset Formula 
+\begin{align*}
+\int y^{-1}dy & =\int\frac{x}{x+2}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\ln y+c & =x-2\ln\left(x+2\right)+c\\
+\ln y & =x-\ln\left(x+2\right)^{2}+c\\
+y & =e^{x-\ln\left(x+2\right)^{2}+c}\\
+ & =\frac{e^{x+c}}{e^{\ln\left(x+2\right)^{2}}}\\
+ & =\frac{e^{x}\cdot e^{c}}{\left(x+2\right)^{2}}\\
+y & =\frac{Ae^{x}}{\left(x+2\right)^{2}},A=e^{c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $y\left(x^{2}-1\right)\dydx=1$
 \end_inset
@@ -933,6 +1775,89 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y\left(x^{2}-1\right)\dydx & =1\\
+y\dydx & =\frac{1}{\left(x^{2}-1\right)}\\
+ydy & =\frac{1}{\left(x^{2}-1\right)}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int ydy & =\int\frac{1}{\left(x^{2}-1\right)}dx\\
+\frac{y^{2}}{2}+c & =-\int\frac{1}{1-x^{2}}dx\\
+\frac{y^{2}}{2}+c & =-\tanh^{-1}\left(x\right)+c\\
+ & =-\frac{1}{2}\ln\left(x+1\right)+\frac{1}{2}\ln\left(x-1\right)+c\\
+\frac{y^{2}}{2}+c & =-\frac{1}{2}\ln\left(x+1\right)+\frac{1}{2}\ln\left(x-1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\frac{y^{2}}{2}+c & =-\frac{1}{2}\ln\left(x+1\right)+\frac{1}{2}\ln\left(x-1\right)+c\\
+y^{2} & =\ln\left(x-1\right)-\ln\left(x+1\right)+c\\
+y^{2} & =\ln\frac{x-1}{x+1}+c\\
+y & =\sqrt{\ln\frac{x-1}{x+1}+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=e^{c}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\sqrt{\ln\frac{x-1}{x+1}+\ln A}\\
+ & =\sqrt{\ln\frac{A\left(x-1\right)}{x+1}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\frac{dx}{dt}=\frac{4\sin t+6\cos2t}{x}$
 \end_inset
@@ -940,6 +1865,101 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =\frac{4\sin t+6\cos2t}{x}\\
+xdx & =4\sin t+6\cos2t\,dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int xdx & =\int4\sin t+6\cos2t\,dt\\
+\frac{x^{2}}{2}+c & =4\left(-\cos t+c\right)+6\int\cos2t\,dt\\
+ & =4\left(-\cos t+c\right)+6\left(\frac{1}{2}\sin\left(2t\right)+c\right)\\
+\frac{x^{2}}{2}+c & =-4\cos t+3\sin\left(2t\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To integrate 
+\begin_inset Formula $\cos2t$
+\end_inset
+
+, let 
+\begin_inset Formula $u=2t$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dt} & =2\\
+du & =2dt
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\cos2tdt & =\frac{1}{2}\int\cos u\,du\\
+ & =\frac{1}{2}\left(\sin u+c\right)\\
+\int\cos2tdt & =\frac{1}{2}\sin\left(2t\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\frac{x^{2}}{2}+c & =-4\cos t+3\sin\left(2t\right)+c\\
+\frac{x^{2}}{2} & =-4\cos t+3\sin2t+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\dydx=e^{-y}\left(2x-4\right)$
 \end_inset
@@ -947,6 +1967,69 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{e^{-y}}dy & =\left(2x-4\right)dx\\
+e^{y}dy & =\left(2x-4\right)dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int e^{y}dy & =\int\left(2x-4\right)dx\\
+e^{y}+c & =\frac{2x^{2}}{2}-4x+c\\
+e^{y}+c & =x^{2}-4x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+e^{y}+c & =x^{2}-4x+c\\
+e^{y} & =x^{2}-4x+c\\
+\ln e^{y} & =\ln\left(x^{2}-4x+c\right)\\
+y & =\ln\left(x^{2}-4x+c\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\sec x\dydx=e^{y+\sin x}$
 \end_inset
@@ -954,6 +2037,110 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos x\frac{dx}{dy} & =\frac{1}{e^{y+\sin x}}\\
+\cos xdx & =e^{-y}\cdot e^{-\sin x}\\
+\frac{\cos x}{e^{-\sin x}}dx & =e^{-y}dy
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int e^{-y}dy & =\int\cos x\cdot e^{\sin x}dx\\
+-e^{-y}+c & =\int\cos x\cdot e^{\sin x}dx\\
+ & =\int\cos x\cdot e^{\sin x}dx\\
+e^{y} & =-e^{\sin x}+c\,\left(\text{check below}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Integrating 
+\begin_inset Formula $\int\cos x\cdot e^{\sin x}dx$
+\end_inset
+
+ probably needs 
+\begin_inset Formula $u-$
+\end_inset
+
+integration.
+ Let 
+\begin_inset Formula $u=\sin x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =-\cos x\\
+du & =-\cos x\,dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\cos x\cdot e^{\sin x}dx & =\int\cos x\cdot e^{\sin x}dx\\
+ & =-\int e^{u}du\\
+ & =-e^{u}+c\\
+ & =-e^{\sin x}+c\\
+\int\cos x\cdot e^{-\sin x}dx & =c-e^{\sin x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+e^{-y} & =c-e^{\sin x}\\
+\ln e^{-y} & =\ln\left(c-e^{\sin x}\right)\\
+y & =-\ln\left(c-e^{\sin x}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\dydx=\frac{3x^{2}+4x-4}{2y-4}$
 \end_inset
@@ -961,6 +2148,85 @@ Solve the following differential equations:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2y-4\,dy=3x^{2}+4x-4\,dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int2y-4\,dy & =\int3x^{2}+4x-4\,dx\\
+y^{2}-4y+c & =x^{3}+2x^{2}-4x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+y^{2}-4y & =x^{3}+2x^{2}-4x+c\\
+y^{2}-4y-\left(x^{3}+2x^{2}-4x+c\right) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=1,b=-4,c=-\left(x^{3}+2x^{2}-4x+c\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}\\
+ & =\frac{-\left(-4\right)\pm\sqrt{\left(-4\right)^{2}-4\left(1\right)\left(-\left(x^{3}+2x^{2}-4x+c\right)\right)}}{2\left(1\right)}\\
+ & =\frac{4\pm\sqrt{4^{2}+4\left(x^{3}+2x^{2}-4x+c\right)}}{2}\\
+ & =2\pm\frac{\sqrt{4\left(4+x^{3}+2x^{2}-4x+c\right)}}{2}\\
+ & =2\pm\frac{2\sqrt{4+x^{3}+2x^{2}-4x+c}}{2}\\
+ & =2\pm\sqrt{4+x^{3}+2x^{2}-4x+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Solve the following I.V.P.:
@@ -974,6 +2240,104 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dy}{dx} & =\frac{y\cos x}{1+y^{2}}\\
+\left(1+y^{2}\right)dy & =y\cos x\,dx\\
+\frac{\left(1+y^{2}\right)}{y}dy & =\cos x\,dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(1+y^{2}\right)}{y}dy & =\cos x\,dx\\
+\int\frac{1}{y}+\frac{y^{2}}{y}dy & =\int\cos x\,dx\\
+\int\frac{1}{y}dy+\int ydy & =\sin x+c\\
+\ln y+\frac{y^{2}}{2}+c & =\sin x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+).
+ Note in some cases (like this, it is impossible at our current level)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\ln y+\frac{y^{2}}{2}+c & =\sin x+c\\
+\ln y+\frac{y^{2}}{2} & =\sin x+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute in the values given to find 
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\ln1+\frac{1^{2}}{2} & =\sin\left(0\right)+c\\
+\frac{1}{2} & =0+c\\
+c & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $C$
+\end_inset
+
+ back into the equation, to find the solution for the I.V.P.
+\begin_inset Formula 
+\begin{align*}
+\ln y+\frac{y^{2}}{2} & =\sin x+\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $x+2y\sqrt{x^{2}+1}\dydx=0,y\left(0\right)=1$
 \end_inset
@@ -981,6 +2345,147 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x+2y\sqrt{x^{2}+1}\dydx & =0\\
+2y\sqrt{x^{2}+1}\dydx & =-x\\
+2y\dydx & =-\frac{x}{\sqrt{x^{2}+1}}\\
+2ydy & =-\frac{x}{\sqrt{x^{2}+1}}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int2ydy & =\int-\frac{x}{\sqrt{x^{2}+1}}dx\\
+y^{2}+c & =-\int x\left(x^{2}+1\right)^{-\frac{1}{2}}dx\\
+y^{2}+c & =-\left(x^{2}+1\right)^{\frac{1}{2}}+c\,\left(\text{Check below}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Integrate 
+\begin_inset Formula $-\int x\left(x^{2}+1\right)^{-\frac{1}{2}}dx$
+\end_inset
+
+, I'm thinking about 
+\begin_inset Formula $u$
+\end_inset
+
+-substitution.
+ Let 
+\begin_inset Formula $u=x^{2}+1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =2x\\
+du & =2x\,dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-\int x\left(x^{2}+1\right)^{-\frac{1}{2}}dx & =-\frac{1}{2}\int\left(x^{2}+1\right)^{-\frac{1}{2}}\cdot2x\,dx\\
+ & =-\frac{1}{2}\int u^{-\frac{1}{2}}du\\
+ & =-\frac{1}{2}\left(\frac{u^{\frac{1}{2}}}{\frac{1}{2}}\right)\\
+ & =-u^{\frac{1}{2}}+c\\
+-\int x\left(x^{2}+1\right)^{-\frac{1}{2}}dx & =-\left(x^{2}+1\right)^{\frac{1}{2}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+y^{2}+c & =-\left(x^{2}+1\right)^{\frac{1}{2}}+c\\
+y^{2} & =-\left(x^{2}+1\right)^{\frac{1}{2}}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute in the values given to find 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $y\left(0\right)=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1^{2} & =-\left(\left(0\right)^{2}+1\right)^{\frac{1}{2}}+c\\
+1 & =-1+c\\
+c & =2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $C$
+\end_inset
+
+ back into the equation, to find the solution for the I.V.P.
+\begin_inset Formula 
+\[
+y^{2}=-\left(x^{2}+1\right)^{\frac{1}{2}}+2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\frac{dy}{dt}=te^{y},y\left(1\right)=0$
 \end_inset
@@ -988,6 +2493,109 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{e^{y}}dy & =t\,dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int e^{-y}dy & =\int t\,dt\\
+-e^{-y}+c & =\frac{t^{2}}{2}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+-e^{-y}+c & =\frac{t^{2}}{2}+c\\
+-e^{-y} & =\frac{t^{2}}{2}+c-c\\
+e^{-y} & =-\frac{t^{2}}{2}+c\,\left(\text{Const. - cons. = cons. (even 0)}\right)\\
+-y\ln e & =\ln\left(-\frac{t^{2}}{2}+c\right)\\
+y & =-\ln\left(-\frac{t^{2}}{2}+c\right)\\
+ & =\ln\frac{1}{-\frac{t^{2}}{2}+c}\\
+y & =\ln\frac{1}{-\frac{1}{2}t^{2}+c}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute in the values given to find 
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0 & =\ln\frac{1}{-\frac{1}{2}1^{2}+c}\\
+\ln\frac{1}{-\frac{1}{2}+c} & =0\\
+\frac{1}{-\frac{1}{2}+c} & =e^{0}\\
+-\frac{1}{2}+c & =1\\
+c & =1+\frac{1}{2}\\
+c & =\frac{3}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $C$
+\end_inset
+
+ back into the equation, to find the solution for the I.V.P.
+\begin_inset Formula 
+\begin{align*}
+y & =\ln\frac{1}{-\frac{t^{2}}{2}+\frac{3}{2}}\\
+ & =\ln\frac{1}{\frac{-t^{2}+3}{2}}\\
+y & =\ln\frac{2}{3-t^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $t\left(t-1\right)\frac{dx}{dt}=x\left(x+1\right),x\left(2\right)=2$
 \end_inset
@@ -995,6 +2603,297 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+t\left(t-1\right)\frac{dx}{dt} & =x\left(x+1\right)\\
+\frac{dx}{x\left(x+1\right)} & =\frac{dt}{t\left(t-1\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int\frac{1}{x\left(x+1\right)}dx & =\int\frac{1}{t\left(t-1\right)}dt\\
+\int\frac{1}{x\left(x+1\right)}dx & =\int\frac{1}{t\left(t-1\right)}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For both parts, we need to use partial fractions, lets start with 
+\begin_inset Formula $\frac{1}{x\left(x+1\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{x\left(x+1\right)} & =\frac{A}{x}+\frac{B}{x+1}\\
+ & =\frac{A\left(x+1\right)+Bx}{x\left(x+1\right)}\\
+\frac{x\left(x+1\right)}{x\left(x+1\right)} & =A\left(x+1\right)+Bx\\
+1 & =A\left(x+1\right)+Bx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+When 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =A\left(1\right)+0\\
+A & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+When 
+\begin_inset Formula $x=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =A\left(-1+1\right)+B\left(-1\right)\\
+1 & =-B\\
+B & =-1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Therefore,
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{x\left(x+1\right)} & =\frac{A}{x}+\frac{B}{x+1}\\
+ & =\frac{1}{x}-\frac{1}{x+1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Start integrating:
+\begin_inset Formula 
+\begin{align*}
+\int\frac{1}{x}-\frac{1}{x+1}dx & =\int\frac{1}{x}dx-\int\frac{1}{x+1}dx\\
+ & =\ln\left(x\right)-\ln\left(x+1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lets integrate the other one, 
+\begin_inset Formula $\int\frac{1}{t\left(t-1\right)}dt$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Again, partial fractions first.
+ 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{t\left(t-1\right)} & =\frac{A}{t}+\frac{B}{t-1}\\
+1 & =A\left(t-1\right)+Bt
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+When 
+\begin_inset Formula $t=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=1
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+When 
+\begin_inset Formula $t=2,B=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =A\left(2-1\right)+1\left(2\right)\\
+1 & =A+2\\
+A & =-1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Substitute back in
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{t\left(t-1\right)} & =\frac{A}{t}+\frac{B}{t-1}\\
+ & =-\frac{1}{t}+\frac{1}{t-1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Integrate:
+\begin_inset Formula 
+\begin{align*}
+\int-\frac{1}{t}+\frac{1}{t-1}dt & =\int-\frac{1}{t}dt+\int\frac{1}{t-1}dt\\
+ & =-\ln\left(t\right)+\ln\left(t-1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Combine the entire equation
+\begin_inset Formula 
+\begin{align*}
+\int\frac{1}{x\left(x+1\right)}dx & =\int\frac{1}{t\left(t-1\right)}dt\\
+\ln\left(x\right)-\ln\left(x+1\right)+c & =-\ln\left(t\right)+\ln\left(t-1\right)+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+\ln\left(x\right)-\ln\left(x+1\right)+c_{1} & =-\ln\left(t\right)+\ln\left(t-1\right)+c_{2}\\
+\ln\left(x\right)-\ln\left(x+1\right)+c_{1}-c_{1} & =-\ln\left(t\right)+\ln\left(t-1\right)+c_{2}-c_{1}\\
+\ln\left(x\right)-\ln\left(x+1\right) & =-\ln\left(t\right)+\ln\left(t-1\right)+c\\
+\ln\frac{x}{x+1} & =\ln\frac{\left(t-1\right)}{t}+c\\
+\ln\frac{x}{x+1} & =\ln\frac{\left(t-1\right)}{t}+c\\
+\ln\frac{x}{x+1} & =\ln\frac{\left(t-1\right)}{t}+\ln e^{c}\\
+\ln\frac{x}{x+1} & =\ln\frac{e^{c}\left(t-1\right)}{t}\\
+\frac{x}{x+1} & =\frac{e^{c}\left(t-1\right)}{t}\\
+1-\frac{1}{x+1} & =\frac{e^{c}\left(t-1\right)}{t}\\
+-\frac{1}{x+1} & =\frac{e^{c}\left(t-1\right)}{t}-1\\
+\frac{1}{x+1} & =-\frac{e^{c}\left(t-1\right)}{t}+1\\
+x+1 & =-\frac{t}{t+e^{c}\left(t-1\right)}\\
+x & =-\frac{t}{t+e^{c}\left(t-1\right)}-1\\
+ & =-\frac{t-\left(t+e^{c}\left(t-1\right)\right)}{t+e^{c}\left(t-1\right)}\\
+ & =-\frac{-e^{c}\left(t-1\right)}{t+e^{c}\left(t-1\right)}\\
+ & =\frac{e^{c}\left(t-1\right)}{t+e^{c}\left(t-1\right)}\\
+ & =\frac{c\left(t-1\right)}{t+c\left(t-1\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute in the values given to find 
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{c\left(t-1\right)}{t+c\left(t-1\right)}\\
+2 & =\frac{c\left(2-1\right)}{2+c\left(2-1\right)}\\
+2 & =\frac{c}{2+c}\\
+4+2c & =c\\
+c & =-\frac{4}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $C$
+\end_inset
+
+ back into the equation, to find the solution for the I.V.P.
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{-\frac{4}{3}\left(t-1\right)}{t+-\frac{4}{3}\left(t-1\right)}\\
+ & =\frac{-\frac{4}{3}t+\frac{4}{3}}{t-\frac{4}{3}t+\frac{4}{3}}\\
+ & =\frac{\frac{-4t+4}{3}}{\frac{t+4}{3}}\\
+x & =\frac{4\left(1-t\right)}{t-4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\frac{dx}{dt}=e^{x+t},x\left(0\right)=a$
 \end_inset
@@ -1002,6 +2901,113 @@ Solve the following I.V.P.:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Write D.E.
+ as 
+\begin_inset Formula $g\left(y\right)dy=f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{dx}{dt} & =e^{x+t}\\
+\frac{dx}{dt} & =e^{x}e^{t}\\
+e^{-x}dx & =e^{t}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides
+\begin_inset Formula 
+\begin{align*}
+\int e^{-x}dx & =\int e^{t}dt\\
+-e^{-x}+c & =e^{t}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Try to change implicit solution into explicit solution (in terms of 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+DO NOT forget to include 
+\begin_inset Formula $C$
+\end_inset
+
+, constant of integration
+\begin_inset Formula 
+\begin{align*}
+-e^{-x} & =e^{t}+c-c\\
+-e^{-x} & =e^{t}+c-c\\
+\ln\left(-e^{-x}\right) & =\ln\left(e^{t}+c\right)\\
+\ln\left(-1\right)+\ln\left(e^{-x}\right) & =\ln\left(e^{t}+c\right)\\
+\ln\left(-1\right)-x & =\ln\left(e^{t}+c\right)\\
+-x & =\ln\left(e^{t}+c\right)-\ln\left(-1\right)\\
+x & =-\ln\frac{\left(e^{t}+c\right)}{-1}\\
+ & =-\ln\left(-e^{t}-c\right)\\
+ & =-\ln\left(-e^{t}+c\right)\\
+ & =-\ln\left(-e^{t}+c\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Substitute in the values given to find 
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a & =-\ln\left(-e^{0}+c\right)\\
+ & =-\ln\left(-1+c\right)\\
+a & =-\ln\left(-1+c\right)\\
+\ln\left(-1+c\right) & =-a\\
+-1+c & =e^{-a}\\
+c & =e^{-a}+1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $C$
+\end_inset
+
+ back into the equation, to find the solution for the I.V.P.
+\begin_inset Formula 
+\begin{align*}
+x & =-\ln\left(-e^{t}+e^{-a}+1\right)\\
+x & =-\ln\left(1+e^{-a}-e^{t}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
