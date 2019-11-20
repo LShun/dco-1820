@@ -1,0 +1,994 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+D.Maths - Tutorial 5
+\end_layout
+
+\begin_layout Section
+Negate and simplify each of the following.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\ni\left[p\left(x\right)\lor q\left(x\right)\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\exists x\ni\left[p\left(x\right)\lor q\left(x\right)\right]\right) & \equiv\forall x\ni\sim\left[p\left(x\right)\lor q\left(x\right)\right]\\
+ & \equiv\forall x\ni\sim p\left(x\right)\land\sim q\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x,\left[p\left(x\right)\land\sim q\left(x\right)\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\forall x,\left[p\left(x\right)\land\sim q\left(x\right)\right]\right) & \equiv\exists x,\sim p\left(x\right)\lor q\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x,\left[p\left(x\right)\to\sim q\left(x\right)\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\forall x,\left[p\left(x\right)\to\sim q\left(x\right)\right]\right) & \equiv\exists x,\sim\left(p\left(x\right)\to\sim q\left(x\right)\right)\\
+ & \equiv\exists x,\sim p\left(x\right)\land\sim q\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\ni\left[p\left(x\right)\lor q\left(x\right)\to r\left(x\right)\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\exists x\ni\left[p\left(x\right)\lor q\left(x\right)\to r\left(x\right)\right]\right) & \equiv\forall x\ni\sim\left[p\left(x\right)\lor q\left(x\right)\to r\left(x\right)\right]\\
+ & \equiv\forall x\ni\sim\left(\sim\left(p\left(x\right)\lor q\left(x\right)\right)\lor r\left(x\right)\right)\\
+ & \equiv\forall x\ni\sim\left(\sim p\left(x\right)\land\sim q\left(x\right)\lor r\left(x\right)\right)\\
+ & =\forall x\ni p\left(x\right)\lor q\left(x\right)\land\sim r\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Write the negations for each of the statements below.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R^{nonneg},$
+\end_inset
+
+if 
+\begin_inset Formula $x>3$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R^{nonneg}\ni x>3\land x$
+\end_inset
+
+ is even 
+\begin_inset Formula $\to$
+\end_inset
+
+
+\begin_inset Formula $x^{2}>9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in R^{nonneg}\ni x\le3\lor x$
+\end_inset
+
+ is odd, AND 
+\begin_inset Formula $x^{2}\le9$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall n\in Z,$
+\end_inset
+
+ if 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime, then 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd or 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in Z\ni$
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+ is prime, AND 
+\begin_inset Formula $n$
+\end_inset
+
+ is NOT odd AND 
+\begin_inset Formula $n\neq2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ integers 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $a-b$
+\end_inset
+
+ is even and 
+\begin_inset Formula $b-c$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $a-c$
+\end_inset
+
+ is even
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ integers 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+, such that 
+\begin_inset Formula $a-b$
+\end_inset
+
+ is even and 
+\begin_inset Formula $b-c$
+\end_inset
+
+ is even, AND 
+\begin_inset Formula $a-c$
+\end_inset
+
+ is NOT even.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in R$
+\end_inset
+
+ such that 
+\begin_inset Formula $x^{2}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in R,x^{2}\neq2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in Z^{+}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is even and prime.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in Z^{+}$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is NOT even OR NOT prime.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+All even integers have even squares.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Some even integers do not have even squares.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+No irrational numbers are integers.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+All irrational numbers are integers
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If an integer is divisible by 2, then it is even.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If an integer is divisible by 2, then it is NOT even.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Rewrite the statement formally using quantifiers and variables.
+\end_layout
+
+\begin_layout Enumerate
+Everybody trusts somebody.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in$
+\end_inset
+
+ body, 
+\begin_inset Formula $x$
+\end_inset
+
+ trusts 
+\begin_inset Formula $\exists x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Somebody trusts everybody.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in body\ni x$
+\end_inset
+
+ trusts 
+\begin_inset Formula $\forall x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The number of rows in any truth table equals 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ for some integer 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in$
+\end_inset
+
+ truth tables, the number of rows in 
+\begin_inset Formula $x=2^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\ni n\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Every action has an equal or opposite reaction.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in actions,x$
+\end_inset
+
+ has an equal reaction or 
+\begin_inset Formula $x$
+\end_inset
+
+ has an opposite reaction.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There is a prime number between every integer and its double.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in$
+\end_inset
+
+ integers, a prime number is between 
+\begin_inset Formula $x$
+\end_inset
+
+ and a prime number is between 
+\begin_inset Formula $2x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+For the following statements the universe comprises all nonzero integers.
+ Determine the truth value of each statement.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\ni\exists y\ni\left[xy=1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\ni\forall y,\left[xy=1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x,\exists y\ni\left[xy=1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\ni\exists y\ni\left[\left(2x+y=5\right)\land\left(x-3y=-8\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=1,y=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+True
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\ni\exists y\ni\left[\left(3x-y=7\right)\land\left(2x+4y=3\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2x+4y=3$
+\end_inset
+
+.
+ Two even numbers added together cannot be odd.
+\end_layout
+
+\begin_layout Enumerate
+False
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Rewrite each of the following quantifier statements formally using quantifier
+ and variables, then write a negation for the statement.
+\end_layout
+
+\begin_layout Enumerate
+For every odd integer n, there is an integer 
+\begin_inset Formula $k$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=2k+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall n\in\text{odd integers},\exists k\in\mathbb{Z}\ni n=2k+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists n\in\text{odd integers},\forall k\in Z\ni n\neq2k+1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Any even integer equals twice some other integer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For all integers, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is an even integer, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is twice some other integer.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x,y\in\text{\mathbb{Z}},x$
+\end_inset
+
+ is an even integer 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ is twice 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x,y\in\mathbb{Z},x$
+\end_inset
+
+ is an even integer AND 
+\begin_inset Formula $x$
+\end_inset
+
+ is not twice 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Indicate the following argument is valid or invalid by drawing diagrams.
+\end_layout
+
+\begin_layout Enumerate
+No college cafeteria food is good.
+ 
+\begin_inset Newline newline
+\end_inset
+
+No good food is wasted.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+No college cafeteria food is wasted.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=$
+\end_inset
+
+ college cafeteria food
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q=$
+\end_inset
+
+ good food
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r=$
+\end_inset
+
+ wasted food
+\end_layout
+
+\begin_layout Enumerate
+No college cafeteria food is good
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t5/q6i-part1.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For no good food is wasted the picture is same as above except for the signs
+\end_layout
+
+\begin_layout Enumerate
+For the conclusion, there is an ambiguity, because college cafeteria food
+ can either be wasted, or not be wasted.
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the argument is invalid
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+All teachers occasionally make mistakes.
+\begin_inset Newline newline
+\end_inset
+
+No gods ever make mistakes.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+No teachers are gods.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Establish terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $t=teachers$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m=$
+\end_inset
+
+ set of those who make mistakes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g=gods$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Draw out circles
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For the first one, teachers is inside the set of those who make mistakes
+\end_layout
+
+\begin_layout Enumerate
+For the second one, gods is outside the set of those who make mistakes
+\end_layout
+
+\begin_layout Enumerate
+There is only one possible way to draw the third one, which is teachers
+ is outside of the set of those who make mistakes.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The argument is VALID.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+All polynomial functions are differentiable.
+\begin_inset Newline newline
+\end_inset
+
+All differentiable functions are continuous.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+All polynomial functions are continuous.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Establish the terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=polynomial$
+\end_inset
+
+ functions
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d$
+\end_inset
+
+ = differentiable functions
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c=$
+\end_inset
+
+ continuous functions
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Draw the set of diagrams
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For the first set, 
+\begin_inset Formula $p$
+\end_inset
+
+-circle is inside 
+\begin_inset Formula $d$
+\end_inset
+
+-circle
+\end_layout
+
+\begin_layout Enumerate
+For the second set 
+\begin_inset Formula $d-circle$
+\end_inset
+
+ is inside 
+\begin_inset Formula $c-circle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For the third set, there is only one combination, 
+\begin_inset Formula $p-circle$
+\end_inset
+
+ inside 
+\begin_inset Formula $d-circle$
+\end_inset
+
+ inside 
+\begin_inset Formula $c-circle$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Therefore, the argument is VALID.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+All mathematics lecturers have studied calculus.
+\begin_inset Newline newline
+\end_inset
+
+Lena is a mathematics lecturer.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+Lena had studied calculus.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Establish the terms
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $m=$
+\end_inset
+
+ mathematics lecturers
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c=$
+\end_inset
+
+people who studied calculus
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $l=$
+\end_inset
+
+ Lena
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Draw the diagrams
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For the first set 
+\begin_inset Formula $m-circle$
+\end_inset
+
+ is inside 
+\begin_inset Formula $c-circle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For the second set 
+\begin_inset Formula $l-circle$
+\end_inset
+
+ is inside 
+\begin_inset Formula $m-circle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For the third set, there is only one possible way to draw, which is 
+\begin_inset Formula $l-circle$
+\end_inset
+
+ inside 
+\begin_inset Formula $m-circle$
+\end_inset
+
+ inside 
+\begin_inset Formula $c-circle$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The argument is VALID
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

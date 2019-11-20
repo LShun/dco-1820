@@ -17,6 +17,7 @@
 - Name: Kok Wai Keong
 - Room: A203
 - Classroom Code: **7dw5q3c**
+- Mid Term Test: Week 8 - Wednesday (Scope: Chapter 1 only)
 
 ### Calculus II
 
@@ -68,13 +69,6 @@
 - Final test
 
   - Chapter 6-10
-
-### GUI Programming
-
-- Google Classroom: **9agwg5**
-- Lee Kim Keong
-  - `kimlee18@gmail.com`
-  - 012-6683868
 
 ### Computer Systems Architecture
 

@@ -1,5 +1,9 @@
 # C6: Network Layer
 
+### Final Exam
+
+- "Directly Connected Routing Table Entries"
+
 ## Objectives
 
 - Explain how network layer protocols & services support communications

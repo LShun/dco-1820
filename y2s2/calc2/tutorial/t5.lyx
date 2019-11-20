@@ -1505,7 +1505,7 @@ Write D.E.
 \frac{dx}{dt}+e^{t+x} & =0\\
 \frac{dx}{dt} & =-e^{t+x}\\
  & =-e^{t}\cdot e^{x}\\
-\frac{1}{e^{x}}dx & =\frac{1}{e^{t}}dt
+\frac{1}{e^{x}}dx & =-e^{t}dt
 \end{align*}
 
 \end_inset
@@ -1517,9 +1517,10 @@ Write D.E.
 Integrate both sides
 \begin_inset Formula 
 \begin{align*}
-\int e^{-x}dx & =\int e^{-t}dt\\
--e^{-x}+c & =-e^{-t}+c\\
-e^{-x} & =e^{-t}+c
+\int e^{-x}dx & =-\int e^{t}dt\\
+-e^{-x}+c & =-\left(e^{t}+c\right)\\
+-e^{-x} & =-e^{t}-c\\
+e^{-x} & =e^{t}+c
 \end{align*}
 
 \end_inset
@@ -1544,9 +1545,9 @@ DO NOT forget to include
 , constant of integration
 \begin_inset Formula 
 \begin{align*}
-\ln e^{-x} & =\ln\left(e^{-t}+c\right)\\
--x & =\ln\left(e^{-t}+c\right)\\
-x & =-\ln\left(e^{-t}+c\right)
+\ln e^{-x} & =\ln\left(e^{t}+c\right)\\
+-x & =\ln\left(e^{t}+c\right)\\
+x & =-\ln\left(e^{t}+c\right)
 \end{align*}
 
 \end_inset

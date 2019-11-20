@@ -3943,7 +3943,7 @@ General solution
 \begin_inset Formula $y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}$
 \end_inset
 
-
+ (<< MUST REMEMBER, NOT GIVEN IN EXAMS)
 \end_layout
 
 \begin_layout Standard
@@ -3967,7 +3967,7 @@ Find the general solution of
 r^{2}-3r-10 & =0\\
 \left(r-5\right)\left(r+2\right) & =0\\
 r_{1}=5, & r_{2}=-2\\
-y & =C_{1}e^{5x},C_{2}e^{-2x}
+y & =C_{1}e^{5x}+C_{2}e^{-2x}
 \end{align*}
 
 \end_inset
@@ -3985,7 +3985,7 @@ y & =C_{1}e^{5x},C_{2}e^{-2x}
 2r^{2}-5r-3 & =0\\
 \left(2r+1\right)\left(r-3\right) & =0\\
 r=-\frac{1}{2} & ,r=3\\
-y & =C_{1}e^{-\frac{1}{2}x},C_{2}e^{3x}
+y & =C_{1}e^{-\frac{1}{2}x}+C_{2}e^{3x}
 \end{align*}
 
 \end_inset
@@ -4270,8 +4270,8 @@ y=e^{2x}\left(12-27x\right)
 General solution:
 \begin_inset Formula 
 \begin{align*}
-y & =C_{1}e^{\alpha x}\sin\beta x+C_{2}e^{ax}\cos\beta x\\
-y & =e^{ax}\left(C_{1}\sin\beta x+C_{2}\cos\beta x\right)
+y & =C_{1}e^{\alpha x}\sin\beta x+C_{2}e^{\alpha x}\cos\beta x\\
+y & =e^{\alpha x}\left(C_{1}\sin\beta x+C_{2}\cos\beta x\right)
 \end{align*}
 
 \end_inset
@@ -4530,7 +4530,7 @@ Substitute into
 \end_layout
 
 \begin_layout Enumerate
-Notes:
+Notes (ALL THESE NOT GIVEN, HAVE TO MEMORIZE):
 \end_layout
 
 \begin_deeper
@@ -5056,6 +5056,8 @@ Product of above
 
 \end_deeper
 \begin_layout Enumerate
+
+\series bold
 If 
 \begin_inset Formula $y_{p}$
 \end_inset
@@ -5064,6 +5066,8 @@ If
 \begin_inset Formula $y_{h}$
 \end_inset
 
+
+\series default
 , we have to multiply 
 \begin_inset Formula $y_{p}$
 \end_inset
@@ -5648,7 +5652,7 @@ Find the non-homogeneous D.E.
 \begin_inset Formula $y=y_{h}+y_{p}$
 \end_inset
 
-
+ (REMEMBER THIS PART)
 \begin_inset Formula 
 \[
 y=C_{1}e^{6x}+C_{2}e^{-2x}-\frac{1}{6}x^{3}+\frac{1}{6}x^{2}-\frac{1}{9}x-\frac{5}{27}

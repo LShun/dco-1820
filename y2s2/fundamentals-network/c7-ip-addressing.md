@@ -1,5 +1,18 @@
 # C7: IP Addressing
 
+## Final Exam/SPA
+
+Bitwise AND operation
+
+- IP give you subnet mask & IP address
+- Convert into binary bits
+- Break it into 8 bits
+- Do the Bitwise AND operation to get the Network Address
+
+Private address blocks
+
+Special Use IPv4 Address
+
 ## 7.0 Introduction
 
 - **Binary notation**: Communication using 1s and 0s.

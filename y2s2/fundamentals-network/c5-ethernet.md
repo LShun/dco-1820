@@ -1,5 +1,9 @@
 # C5 - Ethernet
 
+## Mid Term Coverage
+
+- Switch MAC Address Table
+
 ## 5.1 Ethernet Protocol - LLC & MAC Sublayers
 
 ### Ethernet
