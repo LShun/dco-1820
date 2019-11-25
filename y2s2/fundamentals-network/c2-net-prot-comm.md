@@ -60,13 +60,13 @@
 
 | No   | Layer        | Description                                                  | Examples                                                     |
 | ---- | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 7    | Application  | User interface                                               | E-mail, HTTP                                                 |
-| 6    | Presentation | Data representation, encryption, decryption                  | JPEG, MPEG                                                   |
-| 5    | Session      | 1. Start, monitor, terminate connection session              | SQL, RPC, NETBIOS                                            |
-| 4    | Transport    | Flow control & retransmission                                | TCP, UDP                                                     |
-| 3    | Network      | 1. Source & destination logical/IP addressing<br />2. Best path determination | 1. Protocols: IP<br />2. Devices: Layer 3 switch & routers   |
-| 2    | Data Link    | Physical addressing (MAC), network topology, access, error notification<br />2. Layers: <br />2.1: User Layer: Logical Link Control (LLC)<br />2.2: Media Access Control (MAC) | 2. Protocols: Ethernet, Token Ring<br />Bridges, switches, NIC |
-| 1    | Physical     | Encode & transmit raw data bits<br />- Electric & radio signals<br />- Remember EMO (Electrical Mechanical Operational) | Repeaters, hubs                                              |
+| 7    | Application  | **User interface**                                           | E-mail, HTTP                                                 |
+| 6    | Presentation | **Data representation**, encryption, decryption              | JPEG, MPEG                                                   |
+| 5    | Session      | 1. Start, **monitor**, terminate **connection session**      | SQL, RPC, NETBIOS                                            |
+| 4    | Transport    | **Flow control** & retransmission                            | TCP, UDP                                                     |
+| 3    | Network      | 1. Source & destination **logical/IP addressing**<br />2. Best path determination | 1. Protocols: IP<br />2. Devices: Layer 3 switch & routers   |
+| 2    | Data Link    | **Physical addressing (MAC)**, network topology, access, error notification<br />2. Layers: <br />2.1: User Layer: Logical Link Control (LLC)<br />2.2: Media Access Control (MAC) | 2. Protocols: Ethernet, Token Ring<br />Bridges, switches, NIC |
+| 1    | Physical     | **Encode & transmit raw data bits**<br />- Electric & radio signals<br />- Remember EMO (Electrical Mechanical Operational) | Repeaters, hubs                                              |
 
 - Note: Lecture notes problem, in given text Ethernet is in Layer 2, in table is in Layer 1
 
@@ -94,7 +94,7 @@
 | -------------- | --------------- | ------------------------------------------------------------ |
 | Application    | HTTP/DNS        | Content & formatting                                         |
 | Transport      | TCP/UDP         | Divides data into segments. Control rate & size              |
-| Internet       | IP (IPv4, IPv6) | Encapsulate segments into packets. Assign addresses. Select best path to destination. |
+| Internet       | IP (IPv4, IPv6) | Encapsulate segments into packets. Assign addresses. Best path determination. |
 | Network Access | Ethernet        | Data link management. Physical data transmission             |
 
 #### Transmission Process

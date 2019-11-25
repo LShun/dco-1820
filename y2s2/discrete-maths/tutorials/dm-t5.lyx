@@ -184,22 +184,7 @@ if
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall x\in R^{nonneg}\ni x>3\land x$
-\end_inset
-
- is even 
-\begin_inset Formula $\to$
-\end_inset
-
-
-\begin_inset Formula $x^{2}>9$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\exists x\in R^{nonneg}\ni x\le3\lor x$
+\begin_inset Formula $\exists x\in R^{nonneg}\ni x>3\lor x$
 \end_inset
 
  is odd, AND 
@@ -279,6 +264,20 @@ if
 
 \begin_deeper
 \begin_layout Enumerate
+Calculations (optional)
+\begin_inset Formula 
+\begin{align*}
+\left(p\land q\right)\to r & \equiv\sim\left(p\land q\right)\lor r\\
+ & \equiv\sim p\lor\sim q\lor r\\
+\sim\left(\left(p\land q\right)\to r\right) & \equiv p\land q\land\sim r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 \begin_inset Formula $\exists$
 \end_inset
 
@@ -298,13 +297,19 @@ if
 \begin_inset Formula $b-c$
 \end_inset
 
- is even, AND 
+ is even, BUT 
 \begin_inset Formula $a-c$
 \end_inset
 
  is NOT even.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Use but here because already have AND earlier, but both also can be used.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\exists x\in R$
@@ -356,7 +361,14 @@ All even integers have even squares.
 
 \begin_deeper
 \begin_layout Enumerate
-Some even integers do not have even squares.
+\begin_inset Formula $\exists x\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is even, but do not have even squares.
 \end_layout
 
 \end_deeper
@@ -366,7 +378,19 @@ No irrational numbers are integers.
 
 \begin_deeper
 \begin_layout Enumerate
-All irrational numbers are integers
+There is at least one real number 
+\begin_inset Formula $x$
+\end_inset
+
+ , such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is a rational number and 
+\begin_inset Formula $x$
+\end_inset
+
+ is an integer.
 \end_layout
 
 \end_deeper
@@ -376,7 +400,22 @@ If an integer is divisible by 2, then it is even.
 
 \begin_deeper
 \begin_layout Enumerate
-If an integer is divisible by 2, then it is NOT even.
+\begin_inset Formula $\exists x\in\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $2$
+\end_inset
+
+, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is not even.
 \end_layout
 
 \end_deeper
@@ -393,15 +432,61 @@ Everybody trusts somebody.
 \begin_inset Formula $\forall x\in$
 \end_inset
 
- body, 
+ people, 
+\begin_inset Formula $\exists y\in$
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+people
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, such that 
 \begin_inset Formula $x$
 \end_inset
 
  trusts 
-\begin_inset Formula $\exists x$
+\begin_inset Formula $y$
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Enumerate
+Lazy way: 
+\begin_inset Formula $\forall x,\exists y\in$
+\end_inset
+
+ people 
+\begin_inset Formula $\ni x$
+\end_inset
+
+ trusts 
+\begin_inset Formula $y$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -411,11 +496,15 @@ Somebody trusts everybody.
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\exists x\in body\ni x$
+\begin_inset Formula $\exists x\in people,\forall y\in$
+\end_inset
+
+ people 
+\begin_inset Formula $\ni x$
 \end_inset
 
  trusts 
-\begin_inset Formula $\forall x$
+\begin_inset Formula $y$
 \end_inset
 
 .
@@ -439,12 +528,46 @@ The number of rows in any truth table equals
 \begin_inset Formula $\forall x\in$
 \end_inset
 
- truth tables, the number of rows in 
+ number of rows in any truth table, 
+\begin_inset Formula $\exists y\in$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ integer
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
 \begin_inset Formula $x=2^{n}$
 \end_inset
 
- 
-\begin_inset Formula $\ni n\in\mathbb{Z}$
+ for 
+\begin_inset Formula $y$
 \end_inset
 
 
@@ -457,14 +580,22 @@ Every action has an equal or opposite reaction.
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall x\in actions,x$
+\begin_inset Formula $\forall x\in actions,\exists$
 \end_inset
 
- has an equal reaction or 
+ an action 
+\begin_inset Formula $y$
+\end_inset
+
+ such that 
 \begin_inset Formula $x$
 \end_inset
 
- has an opposite reaction.
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have equal or opposite reaction.
 \end_layout
 
 \end_deeper
@@ -474,15 +605,15 @@ There is a prime number between every integer and its double.
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall x\in$
+\begin_inset Formula $\exists x\in$
 \end_inset
 
- integers, a prime number is between 
-\begin_inset Formula $x$
+ prime number, 
+\begin_inset Formula $\forall y\in$
 \end_inset
 
- and a prime number is between 
-\begin_inset Formula $2x$
+ integer 
+\begin_inset Formula $\ni y<x<2y$
 \end_inset
 
 .
@@ -562,13 +693,54 @@ True
 
 \begin_deeper
 \begin_layout Enumerate
+Proof
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $3x-y=7$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =3x-7
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Subsitute into 
 \begin_inset Formula $2x+4y=3$
 \end_inset
 
-.
- Two even numbers added together cannot be odd.
+
+\begin_inset Formula 
+\begin{align*}
+2x+4\left(3x-7\right) & =3\\
+2x+12x-28 & =3\\
+14x & =31\\
+x & =\frac{31}{14}/2.2142
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =3\left(\frac{31}{14}\right)-7\\
+ & =-\frac{5}{14}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 False
 \end_layout
@@ -593,14 +765,32 @@ For every odd integer n, there is an integer
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall n\in\text{odd integers},\exists k\in\mathbb{Z}\ni n=2k+1$
+Rewrite: 
+\begin_inset Formula $\forall\text{odd integer}\,n,\exists\text{integer}\,k,n=2k+1$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\exists n\in\text{odd integers},\forall k\in Z\ni n\neq2k+1$
+Negation: 
+\begin_inset Formula $\exists$
+\end_inset
+
+ odd integer 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\forall$
+\end_inset
+
+ integer 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $n\neq2k+1$
 \end_inset
 
 
@@ -624,6 +814,56 @@ For all integers, if
  is twice some other integer.
 \end_layout
 
+\begin_layout Enumerate
+Givenanswer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+ even integer 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ integer 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $\ni x=2y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Negate: 
+\begin_inset Formula $\exists$
+\end_inset
+
+ even integer 
+\begin_inset Formula $x\ni\forall$
+\end_inset
+
+ integer 
+\begin_inset Formula $y,x\neq2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Personal Answer (ask teacher)
+\end_layout
+
+\begin_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\forall x,y\in\text{\mathbb{Z}},x$
 \end_inset
@@ -658,6 +898,7 @@ For all integers, if
 .
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Section
 Indicate the following argument is valid or invalid by drawing diagrams.

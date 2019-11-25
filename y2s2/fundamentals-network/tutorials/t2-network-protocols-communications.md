@@ -106,7 +106,7 @@ When a web client makes a request to a web server, describe the interaction of p
 
 #### Question
 
-Open Systems Interconnection (OSI) reference model is created by International Standards Organization (OSI) to develop standards for networks and to facilitate multivendor equipment interoperability. List the SEVEN (7) layers of the OSI model and also describe ONE function for each layer.
+Open Systems Interconnection (OSI) reference model is created by International Standards Organization (ISO) to develop standards for networks and to facilitate multivendor equipment interoperability. List the SEVEN (7) layers of the OSI model and also describe ONE function for each layer.
 
 #### Answer
 
@@ -200,7 +200,7 @@ List down the layers of the TCP/IP protocol suite and its protocol data unit (PD
 #### Answer
 
 - This is a wrong statement. For same network delivery, the message is not required to be sent to the default gateway.
-- When the sender and receiver of the IP packet are on the same network, the dat link frame is sent directly to the receiving device.
+- When the sender and receiver of the IP packet are on the same network, the data link frame is sent directly to the receiving device.
 
 ## Question 6
 

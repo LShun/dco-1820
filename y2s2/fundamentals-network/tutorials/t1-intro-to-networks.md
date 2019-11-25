@@ -14,7 +14,7 @@
 
 2. Explain clients and servers network. Draw **ONE (1)** example of clients and servers network diagram by using proper network representations.  
    1. Clients and servers network refers to the delegation of roles inside a network depending on the software installed. The client will have software to primarily request and receive information. Whereas the servers will have software to primarily accept requests and provide information.
-   2. ![](t1-intro-to-networks.assets/q1b.png)
+   2. ![](diagrams/t1/q1b.png)
    3. List **THREE (3)** advantages and **THREE (3)** disadvantages of using peer-to-peer networks.
       1. **Advantages**
          1. **Simpler**. No need for a network operating system

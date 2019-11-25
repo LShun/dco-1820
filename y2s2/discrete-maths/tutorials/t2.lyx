@@ -2039,6 +2039,10 @@ Contrapositive: If
 “If Jim studies hard, then he will pass his final examination.” Assuming
  that this statement is true, which of the following must also be true?
  
+\begin_inset Formula $p\to q$
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -2106,7 +2110,7 @@ False
 A necessary condition for Jim to pass his final examination is that he studied
  hard.
  
-\begin_inset Formula $p\to q$
+\begin_inset Formula $q\to p$
 \end_inset
 
 
@@ -2115,6 +2119,32 @@ A necessary condition for Jim to pass his final examination is that he studied
 \begin_deeper
 \begin_layout Enumerate
 False
+\end_layout
+
+\begin_layout Enumerate
+Note: To understand why: Go 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://faculty.washington.edu/smcohen/120/Chapter7.pdf"
+literal "false"
+
+\end_inset
+
+ CTRL+F 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+If vs.
+ only if
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_deeper

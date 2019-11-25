@@ -2581,6 +2581,78 @@ PS & =\overline{px}-\int_{0}^{\bar{x}}S\left(x\right)dx\\
 
 \end_layout
 
+\begin_layout Enumerate
+To understand the formula, lets look at this graph
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c1/Consumer-and-producer-surplus.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+As you can see, the 
+\series bold
+consumer surplus, 
+\series default
+
+\begin_inset Formula $CS$
+\end_inset
+
+, is referring to the extra money the consumers are saving.
+ For most of the eager customers, you can see that they saved quite a bit
+ of money (however, the more patient they get, the less they save).
+ As the price decreases, more people save more money (or the yellow triangle
+ region).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+So, the consumer surplus, is simply the area above the equilibrium price
+ (where both sides do not gain profit).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Whereas, the 
+\series bold
+producer surplus
+\series default
+, 
+\begin_inset Formula $PS$
+\end_inset
+
+, is referring to the extra money that the producers are getting.
+ To understand this, look at the 
+\series bold
+opportunity cost
+\series default
+.
+ For the first few supplies, they are extremely optimized (using the best
+ land, best distance, best transport, best workers).
+ As the supplies increase, the optimization decreases, hence increasing
+ the opportunity cost for every extra product they want to produce.
+ To break even, the demand must be equal to the supplier.
+ Therefore, by selling it at the equilibrium price, you can see that a lot
+ of the suppliers managed to get a healthy profit, except for the ones supplying
+ for the last few stocks (but they did break even).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+So, the produce surplus, is simply the area below the equilibrium price.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Example
 \end_layout

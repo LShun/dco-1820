@@ -1638,7 +1638,7 @@ Therefore, if the sum of any 2 integers is even, then so is their difference.
 
 \end_deeper
 \end_deeper
-\begin_layout Subsubsection
+\begin_layout Subsection
 Example 11
 \end_layout
 
@@ -1795,7 +1795,7 @@ if
 
 \end_deeper
 \end_deeper
-\begin_layout Subsubsection
+\begin_layout Subsection
 Theorem
 \end_layout
 
@@ -1883,7 +1883,7 @@ Therefore, every integer is a rational number.
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection
+\begin_layout Subsection
 Theorem
 \end_layout
 
@@ -1977,7 +1977,7 @@ Therefore,
 
 \end_deeper
 \end_deeper
-\begin_layout Subsubsection
+\begin_layout Subsection
 Theorem: Transitivity of Divisibility
 \end_layout
 
@@ -2184,7 +2184,7 @@ Therefore, for all integers
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection
+\begin_layout Subsection
 Theorem
 \end_layout
 
@@ -2350,6 +2350,2000 @@ Therefore
 \begin_layout Enumerate
 Regardless of which case actually occurs, either m or m + 1 is even, the
  other will be an odd integer.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Standard
+For all real numbers 
+\begin_inset Formula $x$
+\end_inset
+
+ and all integers 
+\begin_inset Formula $m$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\lfloor x+m\rfloor=\lfloor x\rfloor+m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Equivalent form: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x$
+\end_inset
+
+ is a real number and 
+\begin_inset Formula $m$
+\end_inset
+
+ is an integer, then
+\begin_inset Formula 
+\[
+\lfloor x+m\rfloor=\lfloor x\rfloor+m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proof:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Suppose
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ are particular but arbitrarily chosen real number and integer, respectively.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=\lfloor x\rfloor$
+\end_inset
+
+.
+ 
+\series bold
+By definition
+\series default
+ of floor
+\begin_inset Formula 
+\[
+n\le x<n+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Then 
+\series default
+
+\begin_inset Formula $n+m\le n+1+m=m+n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Since
+\series default
+ the sum of integers is an integer, 
+\begin_inset Formula $m$
+\end_inset
+
+ + 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer and hence by definition of floor, 
+\begin_inset Formula $\floor{x+m}=n+m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+However 
+\begin_inset Formula $n=\floor x$
+\end_inset
+
+ , 
+\series bold
+hence
+\series default
+ by substitution,
+\begin_inset Formula 
+\[
+\floor{x+m}=\floor x+m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Standard
+For any integer 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\floor{\frac{n}{2}}=\begin{cases}
+\frac{n}{2} & ,\text{if n is even \left(=2k\right)}\\
+\frac{n-1}{2} & ,\text{if n is odd}\left(=2k+1\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Proof:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Suppose
+\series default
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ is a particular but arbitrarily chosen integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Case 1: If n is even.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+By definition
+\series default
+ of even, 
+\begin_inset Formula $n=2k,k\in\text{\ensuremath{\mathbb{Z}}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $\floor{\frac{n}{2}}=\floor{\frac{2k}{2}}=\floor k=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n=2k$
+\end_inset
+
+, so 
+\begin_inset Formula $k=\frac{n}{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore 
+\begin_inset Formula $\floor{\frac{n}{2}}=\frac{n}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Case 2: If n is odd.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+By definition of odd, 
+\begin_inset Formula $n=2k+1,k\in\mathbb{Z}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $\floor{\frac{n}{2}}=\floor{\frac{2k+1}{2}}=\floor{k+\frac{1}{2}}=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $n=2k+1$
+\end_inset
+
+, so 
+\begin_inset Formula $k=\frac{n-1}{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore 
+\begin_inset Formula $\floor{\frac{n}{2}}=\frac{n-1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Method of Proof by Indirect Argument I: Contradiction
+\end_layout
+
+\begin_layout Enumerate
+We try to prove the statement is false
+\end_layout
+
+\begin_layout Enumerate
+If the statement CANNOT be proved as false (AKA leads to contradiction),
+ then it's true
+\end_layout
+
+\begin_layout Enumerate
+In maths terms, we use 
+\begin_inset Formula 
+\[
+\sim P=False
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To indicate
+\begin_inset Formula 
+\[
+P=True
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 
+\end_layout
+
+\begin_layout Itemize
+There is no greatest integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Negation: There is a greatest integer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Proof: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Suppose not.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suppose
+\series default
+ there is a greatest integer, 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Then
+\series default
+ 
+\begin_inset Formula $N\ge k,\forall k\in\ensuremath{\mathbb{Z}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Let
+\series default
+ 
+\begin_inset Formula $M=N+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Since
+\series default
+ the sum of integers is an integer, 
+\begin_inset Formula $M$
+\end_inset
+
+ is an integer and 
+\begin_inset Formula $M>N$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $M$
+\end_inset
+
+ is an integer that is greater than the greatest integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+This contradicts with the supposition.
+ 
+\series default
+Hence, the supposition is false.
+ The statement is true.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Itemize
+The sum of any rational number and any irrational number is irrational.
+ Negation: The sum of at least one rational and at least one irrational
+ number is rational
+\end_layout
+
+\begin_layout Enumerate
+Proof: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose not.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Suppose there is a rational number 
+\begin_inset Formula $r$
+\end_inset
+
+ and an irrational number 
+\begin_inset Formula $s$
+\end_inset
+
+ such that 
+\begin_inset Formula $r+s$
+\end_inset
+
+ is rational.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proof: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose not.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Suppose there is a rational number 
+\begin_inset Formula $r$
+\end_inset
+
+ and an irrational number 
+\begin_inset Formula $s$
+\end_inset
+
+ such that 
+\begin_inset Formula $r+s$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\begin_layout Enumerate
+By definition of rational, 
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\end_layout
+
+\begin_layout Enumerate
+Since the difference and product of integers are integers, 
+\begin_inset Formula $bc-ad$
+\end_inset
+
+ and 
+\begin_inset Formula $bd$
+\end_inset
+
+ are integers and 
+\begin_inset Formula $bd\neq0$
+\end_inset
+
+ by zero product property.
+ So by definition, 
+\begin_inset Formula $s$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\begin_layout Enumerate
+This contradicts with the supposition and so
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Method of Proof by Indirect Argument II: Contraposition
+\end_layout
+
+\begin_layout Enumerate
+Express the statement to be proved in the form 
+\begin_inset Formula 
+\[
+\forall x\in D,p\left(x\right)\to q\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Done mentally
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rewrite the statement in the contraposition form 
+\begin_inset Formula $\forall x$
+\end_inset
+
+ in 
+\begin_inset Formula $D$
+\end_inset
+
+, if 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ is false then 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ is false
+\end_layout
+
+\begin_layout Enumerate
+Prove the contrapositive by a direct proof.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $x$
+\end_inset
+
+ is a (particular but arbitrarily chosen) element in 
+\begin_inset Formula $D$
+\end_inset
+
+ such that 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ is false.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ is false.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Proposition
+\end_layout
+
+\begin_layout Standard
+Given any integer 
+\begin_inset Formula $n$
+\end_inset
+
+, if 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ is even then 
+\begin_inset Formula $n$
+\end_inset
+
+ is even.
+ 
+\end_layout
+
+\begin_layout Subsection
+Proposition
+\end_layout
+
+\begin_layout Itemize
+Given any integer 
+\begin_inset Formula $n$
+\end_inset
+
+, if 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ is even then n is even.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contrapositive: If n is odd , then n 2 is odd.
+\end_layout
+
+\begin_layout Standard
+Proof: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suppose
+\series default
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ is a particular but arbitrarily chosen odd integer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+From the previous example (example 12)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+n & =2k+1\\
+n^{2} & =\left(2k+1\right)^{2}\\
+ & =4k^{2}+4k+1\\
+ & =2\left(2k^{2}+2k\right)+1\,is\,odd
+\end{align*}
+
+\end_inset
+
+, the product of two odd integers is odd, hence 
+\begin_inset Formula $n^{2}=n\cdot n$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Therefore 
+\series default
+the statement is true
+\end_layout
+
+\begin_layout Subsection
+Classical Theorem 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Statement
+\series default
+: 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ irrational.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Negation
+\series default
+: 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is rational.
+\end_layout
+
+\begin_layout Standard
+Proof: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suppose not
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suppose 
+\series default
+
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+By definition 
+\series default
+of rational, there are integers 
+\begin_inset Formula $m,n$
+\end_inset
+
+ with no common divisor such that 
+\begin_inset Formula $\sqrt{2}=\frac{m}{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Then
+\series default
+ 
+\begin_inset Formula 
+\begin{align*}
+2 & =\frac{m^{2}}{n^{2}}\\
+m^{2} & =2n^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This implies 
+\begin_inset Formula $m$
+\end_inset
+
+ is even, 
+\begin_inset Formula $m=2k,k\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\left(m^{2}=2n^{2}\right)\implies\left[\left(2k\right)^{2}=2n^{2}\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(2k\right)^{2} & =2n^{2}\\
+4k^{2} & =2n^{2}\\
+n^{2} & =2k^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $2k^{2}$
+\end_inset
+
+ is divisible by 2, which is even.
+ Then 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+, and therefore 
+\begin_inset Formula $n$
+\end_inset
+
+ is even too.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hence both 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are even with common factor of 2.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+This contradicts with the supposition and so the supposition is false, and
+ the theorem is true.
+\end_layout
+
+\begin_layout Subsection
+Proposition
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1+3\sqrt{2}$
+\end_inset
+
+ is irrational.
+ 
+\end_layout
+
+\begin_layout Itemize
+Negation: 
+\begin_inset Formula $1+3\sqrt{2}$
+\end_inset
+
+ is rational
+\end_layout
+
+\begin_layout Standard
+Proof: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suppose not
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suppose
+\series default
+ 
+\begin_inset Formula $1+3\sqrt{2}$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+By definition 
+\series default
+of rational, 
+\begin_inset Formula 
+\begin{align*}
+1+3\sqrt{2} & =\frac{a}{b},ab\in\mathbb{Z}\\
+3\sqrt{2} & =\frac{a}{b}-1\\
+ & =\frac{a-b}{b}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Then
+\series default
+.
+ 
+\begin_inset Formula $\sqrt{2}=\frac{a-b}{3b}\in\mathbb{Q}$
+\end_inset
+
+.
+ However, 
+\begin_inset Formula $\sqrt{2}\notin\mathbb{Q}$
+\end_inset
+
+.
+ This is a contradiction.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Since
+\series default
+ the difference and product of integers are integers, 
+\begin_inset Formula $a-b$
+\end_inset
+
+ and 
+\begin_inset Formula $3b$
+\end_inset
+
+ are integers, 
+\begin_inset Formula $3b\neq0$
+\end_inset
+
+ by zero product property.
+ Hence, according to our proof, 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+This contradicts with the theorem 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is irrational, and so the supposition is false.
+ Hence, 
+\begin_inset Formula $1+3\sqrt{2}$
+\end_inset
+
+ is irrational 
+\end_layout
+
+\begin_layout Section
+Disproof by Counterexample
+\end_layout
+
+\begin_layout Standard
+To disprove a statement of the form “
+\begin_inset Formula $\forall x\in D$
+\end_inset
+
+, if 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ then 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+” find a value of 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $D$
+\end_inset
+
+ for which 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ is true and 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ is false.
+ Such 
+\begin_inset Formula $x$
+\end_inset
+
+ is called a counterexample.
+\end_layout
+
+\begin_layout Subsection
+Example 13
+\end_layout
+
+\begin_layout Standard
+Disprove the following statement by finding a counterexample.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall$
+\end_inset
+
+ real numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, if 
+\begin_inset Formula $a^{2}=b^{2}$
+\end_inset
+
+ then 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Finding counterexamples:
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $a=-1,b=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a^{2}=1,b^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+From this, 
+\begin_inset Formula $a^{2}=b^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+But 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, it is disproven
+\end_layout
+
+\begin_layout Subsection
+Notes
+\end_layout
+
+\begin_layout Standard
+Many theorems can proved either direct or indirect way.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Try first to prove directly.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If not succeed, look for counterexample.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Finally proof by contradiction or contraposition
+\end_layout
+
+\begin_layout Section
+Algorithms
+\end_layout
+
+\begin_layout Standard
+Step-by-step method for performing some action.
+ E.g.
+ food preparation recipes, directions for assembling equipment, sewing pattern
+ instructions,
+\end_layout
+
+\begin_layout Subsection
+Greatest Common Divisor, gcd
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be integers that are not both zero.
+ The greatest common divisor of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, denoted 
+\begin_inset Formula $gcd(a,b)$
+\end_inset
+
+, is that integer 
+\begin_inset Formula $d$
+\end_inset
+
+ with the following properties: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d$
+\end_inset
+
+ is a common divisor of both 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, that is 
+\begin_inset Formula $d|a$
+\end_inset
+
+ and 
+\begin_inset Formula $d|b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $c$
+\end_inset
+
+ is a common divisor of both 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, then 
+\begin_inset Formula $c$
+\end_inset
+
+ is less than or equal to 
+\begin_inset Formula $d$
+\end_inset
+
+, that is 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $c|a$
+\end_inset
+
+ and 
+\begin_inset Formula $c|b$
+\end_inset
+
+, then 
+\begin_inset Formula $c\le d$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example 14:
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $gcd(27,72)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Using the repeated devision method
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2....72$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2....36$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2....18$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3....9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $....3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $27=3\cdot3\cdot3=3^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $72=2^{3}\cdot3^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+From both the figure above, they have a common:
+\begin_inset Formula 
+\[
+3^{2}=9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $9$
+\end_inset
+
+ is the common divisor
+\end_layout
+
+\begin_layout Subsubsection
+Example 15:
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $gcd(10^{20},6^{30})=2^{20}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+10^{20} & =2^{20}\cdot3^{20}\\
+6^{10} & =2^{30}\cdot3^{30}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Both of them have the same 
+\begin_inset Formula $2^{20}$
+\end_inset
+
+ together, therefore, 
+\begin_inset Formula $2^{20}$
+\end_inset
+
+ is the greatest common divisor.
+\end_layout
+
+\begin_layout Subsubsection
+Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $gcd(0,0)$
+\end_inset
+
+ is not allowed.
+\end_layout
+
+\begin_layout Subsection
+Least Common Multiple, lcm 
+\end_layout
+
+\begin_layout Standard
+For two nonzero integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, the least common multiple, denoted 
+\begin_inset Formula $lcm(a,b)$
+\end_inset
+
+, is the positive integer 
+\begin_inset Formula $c$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a|c$
+\end_inset
+
+ and 
+\begin_inset Formula $b|c$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+for all integers 
+\begin_inset Formula $m$
+\end_inset
+
+, if 
+\begin_inset Formula $a|m$
+\end_inset
+
+ and 
+\begin_inset Formula $b|m$
+\end_inset
+
+, then 
+\begin_inset Formula $c|m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{c}{2},\frac{c}{3}$
+\end_inset
+
+.
+ Min 
+\begin_inset Formula $c=6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In english: If 2 divides 
+\begin_inset Formula $c$
+\end_inset
+
+, and 3 divides 
+\begin_inset Formula $c$
+\end_inset
+
+, then the minimum 
+\begin_inset Formula $c$
+\end_inset
+
+ for LCM is 6.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjencture: 
+\begin_inset Formula $LCM\left(a,b\right)\cdot GCM\left(a,b\right)=a\cdot b$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Proof:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $d=gcd\left(a,b\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $l=lcm\left(a,b\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+By definition, 
+\begin_inset Formula $\frac{ab}{d}$
+\end_inset
+
+ is a common multiply of 
+\begin_inset Formula $a,b$
+\end_inset
+
+, since 
+\begin_inset Formula $\frac{a}{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{b}{d}$
+\end_inset
+
+ are integers.
+\end_layout
+
+\begin_layout Enumerate
+By Euclidean algorithm, 
+\begin_inset Formula $\frac{a}{d},\frac{b}{d}$
+\end_inset
+
+ are relatively prime.
+ (no integer greater than one that divides them both)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume 
+\begin_inset Formula $n$
+\end_inset
+
+ is the common multiple of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We can find integers 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $k'$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=ka$
+\end_inset
+
+ and 
+\begin_inset Formula $n=k'b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+By dividing both sides by 
+\begin_inset Formula $d$
+\end_inset
+
+, we still remain integer, but we now get 
+\begin_inset Formula $k'\frac{b}{d}=k\frac{a}{d}$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hence, 
+\begin_inset Formula $\frac{a}{d}$
+\end_inset
+
+ divides 
+\begin_inset Formula $\frac{b}{d}k'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\frac{a}{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{b}{d}$
+\end_inset
+
+ are relatively prime, then 
+\begin_inset Formula $\frac{a}{d}$
+\end_inset
+
+ divides 
+\begin_inset Formula $k'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hence, 
+\begin_inset Formula $n=k'b=q\frac{ab}{d}$
+\end_inset
+
+ for some integer 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+So
+\begin_inset Formula $\frac{ad}{d}$
+\end_inset
+
+ divides 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Hence, 
+\begin_inset Formula $lcm\left(a,b\right)=\frac{ab}{d}=\frac{ab}{gcd\left(a,b\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Example 16:
+\end_layout
+
+\begin_layout Standard
+Find 
+\begin_inset Formula $lcm(12,18)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $\frac{c}{12}\in\mathbb{Z}$
+\end_inset
+
+, AKA if we take an integer, multiply by 12, we get 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $\frac{c}{18}\in\mathbb{Z}$
+\end_inset
+
+, AKA if we take an integer, multiply by 18, we get 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Minimum 
+\begin_inset Formula $c=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $12=2^{2}*3$
+\end_inset
+
+, 
+\begin_inset Formula $18=2*3^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $gcd\left(a,b\right)=gcd\left(12,18\right)=2*3=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a*b=12*18=216$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the formula
+\begin_inset Formula 
+\begin{align*}
+lcm\left(a,b\right) & =\frac{ab}{gcd\left(a,b\right)}\\
+ & =\frac{216}{6}\\
+ & =36
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimum 
+\begin_inset Formula $c=36$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Notes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $lcm(1,n)=n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $a,n\in\mathbb{Z}^{+},lcm(a,na)=na$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $a,m,n\in\mathbb{Z}^{+}$
+\end_inset
+
+ with 
+\begin_inset Formula $m\le n$
+\end_inset
+
+, 
+\begin_inset Formula $lcm(a^{m},a^{n})=a^{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $gcd(a^{m},a^{n})=a^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Euclidean Algorithm 
+\end_layout
+
+\begin_layout Standard
+The Euclidean algorithm can be described as follows: 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be integers with 
+\begin_inset Formula $A>B\ge0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+First check whether 
+\begin_inset Formula $B=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If yes, 
+\begin_inset Formula $gcd(A,B)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If it isn’t, then 
+\begin_inset Formula $B>0$
+\end_inset
+
+ and the quotient-remainder theorem can be used to obtain 
+\begin_inset Formula $A=B\cdot q+r,0\le r<B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Thus, 
+\begin_inset Formula $gcd(A,B)$
+\end_inset
+
+ = 
+\begin_inset Formula $gcd(B,r)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+From point 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x$
+\end_inset
+
+ divides 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, then 
+\begin_inset Formula $x$
+\end_inset
+
+ divides 
+\begin_inset Formula $a-bq=r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x$
+\end_inset
+
+ is a number, and 
+\begin_inset Formula $x$
+\end_inset
+
+ divides 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+, then 
+\begin_inset Formula $x$
+\end_inset
+
+ must divide 
+\begin_inset Formula $bq+r=a$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $0\le r<B<A$
+\end_inset
+
+, the largest number of the pair 
+\begin_inset Formula $(B,r)$
+\end_inset
+
+ is smaller than the largest number of the pair 
+\begin_inset Formula $(A,B)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Repeat the process in (2), but use 
+\begin_inset Formula $B$
+\end_inset
+
+ instead of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ instead of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The repetitions will be terminated when r = 0.
+\end_layout
+
+\begin_layout Subsection
+Example 17
+\end_layout
+
+\begin_layout Standard
+Use Euclidean algorithm to find 
+\begin_inset Formula $gcd(1188,385)$
+\end_inset
+
+ and then rewrite them in the form of 
+\begin_inset Formula $sA+tB$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Solution: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1188=385\left(3\right)+33$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $385=33\left(11\right)+22$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $33=22\left(1\right)+11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $22=11\left(2\right)+0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $gcd(1188,385)=gcd\left(11,0\right)=11$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $11=S\left(1188\right)+t\left(385\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+11 & =33-22\left(1\right)\\
+ & =33-\left(385-33\left(11\right)\right)\\
+11 & =12\left(33\right)-385\\
+11 & =12\left(1188-3\left(385\right)\right)-385\\
+11 & =12\left(1188\right)-37\left(385\right)\\
+11 & =12\left(1188\right)+\left(-37\right)\left(385\right)
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper

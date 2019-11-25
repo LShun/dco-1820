@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -41,7 +32,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -66,6 +57,13 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 0.5cm
+\topmargin 1cm
+\rightmargin 0.5cm
+\bottommargin 1cm
+\headheight 0.5cm
+\headsep 0.5cm
+\footskip 0.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -845,7 +843,8 @@ r & =-7
 Obtain equation
 \begin_inset Formula 
 \begin{align*}
-y & =e^{-7x}\left(C_{1}+C_{2}x\right)
+y & =e^{-7x}\left(C_{1}+C_{2}x\right)\\
+y & =C_{1}e^{-7x}+C_{2}e^{-7x}x
 \end{align*}
 
 \end_inset
@@ -863,6 +862,11 @@ Find
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the equations
 \begin_inset Formula 
 \begin{align*}
 -1 & =e^{-7\left(-4\right)}\left(C_{1}+C_{2}\left(-4\right)\right)\\
@@ -877,26 +881,10 @@ C_{1} & =-e^{-28}+4C_{2}
 
 \begin_inset Formula 
 \begin{align*}
-y'' & =\frac{d}{dx}\left[-e^{-7x}\left(C_{1}+C_{2}x\right)\right]\\
- & =\frac{d}{dx}\left[-C_{1}e^{-7x}-C_{2}e^{-7x}x\right]\\
- & =-C_{1}\left(-7\right)e^{-7x}-C_{2}\left(-7\right)e^{-7x}x\\
- & =7C_{1}e^{-7x}+7C_{2}e^{-7x}\\
-5 & =7C_{1}e^{-7\left(-4\right)}+7C_{2}e^{-7\left(-4\right)}\\
-5 & =7C_{1}e^{28}+7C_{2}e^{28}\\
-5 & =7e^{28}\left(-e^{-28}+4C_{2}\right)+7C_{2}e^{28}\\
- & =-7+28C_{2}e^{28}+7C_{2}e^{28}\\
-12 & =35C_{2}e^{28}\\
-C_{2} & =\frac{12}{35}e^{-28}
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-C_{1} & =-e^{-28}+4\left(\frac{12}{35}e^{-28}\right)\\
- & =-e^{-28}+\frac{48}{35}e^{-28}\\
- & =\frac{13}{35}e^{-28}
+y' & =\frac{d}{dx}\left[e^{-7x}\left(C_{1}+C_{2}x\right)\right]\\
+ & =\frac{d}{dx}\left[C_{1}e^{-7x}+C_{2}e^{-7x}x\right]\\
+ & =-7C_{1}e^{-7x}+C_{2}\left[-7e^{-7x}\cdot x+e^{-7x}\right]\\
+y' & =-7C_{1}e^{-7x}+C_{2}e^{-7x}-7C_{2}xe^{-7x}
 \end{align*}
 
 \end_inset
@@ -905,7 +893,57 @@ C_{1} & =-e^{-28}+4\left(\frac{12}{35}e^{-28}\right)\\
 \end_layout
 
 \begin_layout Enumerate
-Find the solution for I.V.P.V
+Substitute the values in
+\begin_inset Formula 
+\[
+y=-1\,and\,\dydx=5\,when\,x=-4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+5 & =-7C_{1}e^{-7\left(-4\right)}+C_{2}e^{-7\left(-4\right)}-7C_{2}\left(-4\right)e^{-7\left(-4\right)}\\
+ & =-7C_{1}e^{28}+C_{2}e^{28}+28C_{2}e^{28}\\
+5 & =-7C_{1}e^{28}+29Ce^{28}\\
+5 & =-7\left(-e^{-28}+4C_{2}\right)e^{28}+29C_{2}e^{28}\\
+5 & =7-28C_{2}e^{28}+29C_{2}e^{28}\\
+-2 & =C_{2}e^{28}\\
+C_{2} & =-\frac{2}{e^{28}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+C_{1} & =-e^{-28}+4C_{2}\\
+C_{1} & =-e^{-28}+4\left(-\frac{2}{e^{28}}\right)\\
+ & =-e^{-28}-8e^{-28}\\
+ & =-\frac{9}{e^{28}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the solution for I.V.P.V (Given answer is bolded)
+\begin_inset Formula 
+\begin{align*}
+y & =-\frac{9}{e^{28}}e^{-7x}+-\frac{2}{e^{28}}e^{-7x}x\\
+ & =-9e^{-7x-28}-2xe^{-7x-28}\\
+\boldsymbol{y} & \boldsymbol{=-9e^{-7\left(x+4\right)}-2xe^{-7\left(x+4\right)}}\\
+ & =e^{-7x-28}\left(-2x-9\right)\\
+y & =e^{-7\left(x+4\right)}\left(-2x-9\right)
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -929,6 +967,137 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+r^{2}-2r+1 & =0\\
+\left(r-1\right)\left(r-1\right) & =0\\
+\left(r-1\right)^{2} & =0\\
+r & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{h}=e^{x}\left(C_{1}+C_{2}x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =Ae^{2x}\\
+y'_{p} & =2Ae^{2x}\\
+y''_{p} & =4Ae^{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+\ddydx-2\dydx+y & =e^{2x}\\
+4Ae^{2x}-2\left(2Ae^{2x}\right)+Ae^{2x} & =e^{2x}\\
+4Ae^{2x}-4Ae^{2x}+Ae^{2x} & =e^{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+4Ae^{2x}-4Ae^{2x}+Ae^{2x} & =e^{2x}\\
+Ae^{2x} & =e^{2x}\\
+A & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=e^{2x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=e^{x}\left(C_{1}+C_{2}x\right)+e^{2x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $9\ddydx+6\dydx+y=x^{2}+2x+3$
 \end_inset
@@ -936,6 +1105,197 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+9r^{2}+6r+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(3r+1\right)^{2} & =0\\
+r & =-\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{h} & =e^{-\frac{1}{3}x}\left(C_{1}+C_{2}x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =Ax^{2}+Bx+C\\
+y' & =2Ax+B\\
+y'' & =2A
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+9\left(2A\right)+6\left(2Ax+B\right)+Ax^{2}+Bx+C & =x^{2}+2x+3\\
+Ax^{2}+12Ax+Bx+18A+6B+C & =x^{2}+2x+3\\
+Ax^{2}+\left(12A+B\right)x+18A+6B+C & =x^{2}+2x+3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ by equating them
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Ax^{2} & =x^{2}\\
+A & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+12A+B & =2\\
+B & =2-12\left(A\right)\\
+ & =2-12\left(1\right)\\
+B & =-10
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+18A+6B+C & =3\\
+18\left(1\right)+6\left(-10\right)+C & =3\\
+C & =3-18+60\\
+C & =45
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =Ax^{2}+Bx+C\\
+\boldsymbol{y_{p}} & \boldsymbol{=x^{2}-10x+45}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\left(C_{1}+C_{2}x\right)e^{-\frac{1}{3}x}+x^{2}-10x+45
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\ddydx-4y=3e^{-2x}$
 \end_inset
@@ -943,6 +1303,142 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+\ddydx-4y & =0\\
+r^{2}-4 & =0\\
+\left(r-2\right)\left(r+2\right) & =0\\
+r & =\pm2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{h}=e^{2x}C_{1}+e^{-2x}C_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =x\left[Ae^{-2x}\right]\\
+y_{p} & =\boldsymbol{Axe^{-2x}}\\
+y'_{p} & =Ae^{-2x}+\left(-2\right)Axe^{-2x}\\
+ & =Ae^{-2x}-2Axe^{-2x}\\
+y''_{p} & =\frac{d}{dx}\left[Ae^{-2x}-2Axe^{-2x}\right]\\
+ & =-2Ae^{-2x}-2\left(Ae^{-2x}+\left(-2\right)Axe^{-2x}\right)\\
+y''_{p} & =-4Ae^{-2x}+4Axe^{-2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+\ddydx-4y & =3e^{-2x}\\
+\left(-4Ae^{-2x}+4Axe^{-2x}\right)-4\left(Axe^{-2x}\right) & =3e^{-2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(-4Ae^{-2x}+4Axe^{-2x}\right)-4\left(Axe^{-2x}\right) & =3e^{-2x}\\
+-4Ae^{-2x} & =3e^{-2x}\\
+-4A & =3\\
+A & =-\frac{3}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=-\frac{3}{4}e^{-2x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =e^{2x}C_{1}+e^{-2x}C_{2}-\frac{3}{4}e^{-2x}\\
+ & e^{2x}C_{1}+\left(C_{2}-\frac{3}{4}\right)e^{-2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $3\ddydx+8\dydx+5y=9\cos2x-23\sin2x$
 \end_inset
@@ -950,6 +1446,165 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+3\ddydx+8\dydx+5y & =0\\
+3r^{2}+8r+5 & =0\\
+\left(3r+5\right)\left(r+1\right) & =0\\
+r & =-\frac{5}{3},-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{h}=e^{-\frac{5}{3}x}C_{1}+e^{-x}C_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =A\sin\left(2x\right)+B\cos\left(2x\right)\\
+y'_{p} & =\frac{d}{dx}\left[A\sin\left(2x\right)+B\cos\left(2x\right)\right]\\
+ & =A\left(2\cos2x\right)-2B\sin\left(2x\right)\\
+y'_{p} & =2A\cos2x-2B\sin\left(2x\right)\\
+y'' & =-4A\sin2x-4B\cos2x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+3\ddydx+8\dydx+5\left(A\sin\left(2x\right)+B\cos\left(2x\right)\right) & =9\cos2x-23\sin2x\\
+3\left(-4A\sin2x-4B\cos2x\right)+8\left(2A\cos2x-2B\sin\left(2x\right)\right)+5A\sin\left(2x\right)+5B\cos\left(2x\right) & =9\cos2x-23\sin2x\\
+-12A\sin2x-12B\cos2x+16A\cos2x-16B\sin2x+5A\sin2x+5B\cos2x & =9\cos2x-23\sin2x\\
+-12A\sin2x+5A\sin2x-16B\sin2x-12B\cos2x+5B\cos2x+16A\cos2x & =9\cos2x-23\sin2x\\
+-7A\sin2x-16B\sin2x-7B\cos2x+16A\cos2x & =9\cos2x-23\sin2x\\
+\left(-7B+16A\right)\cos2x+\left(-7A-16B\right)\sin2x & =9\cos2x-23\sin2x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A\&B$
+\end_inset
+
+ (by equating coefficients)
+\begin_inset Formula 
+\begin{align*}
+-7B+16A & =9\\
+16A & =9+7B\\
+A & =\frac{9+7B}{16}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-7A-16B & =23\\
+-7\left(\frac{9+7B}{16}\right)-16B & =23\\
+\frac{-63-49B}{16}-16B & =23\\
+-63-49B-256B & =368\\
+305B & =305\\
+B & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A & =\frac{9+7\left(1\right)}{16}\\
+ & =\frac{16}{16}\\
+A & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=\sin\left(2x\right)+\cos\left(2x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =e^{-\frac{5}{3}x}C_{1}+e^{-x}C_{2}+\sin\left(2x\right)+\cos\left(2x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $y''+2y'+5y=x^{2}$
 \end_inset
@@ -957,6 +1612,159 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+r^{2}+2r+5 & =0\\
+r & =\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}\\
+ & =-1\pm2i
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{h} & =e^{-x}\left(C_{1}\sin2x+C_{2}\cos2x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Formula 
+\begin{align*}
+y & =Ax^{2}+Bx+C\\
+y' & =2Ax+B\\
+y'' & =2A
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+2A+2\left(2Ax+B\right)+5\left(Ax^{2}+Bx+C\right) & =x^{2}\\
+2A+4Ax+2B+5Ax^{2}+5Bx+5C & =x^{2}\\
+5Ax^{2}+\left(4A+5B\right)x+2A+2B+5C & =x^{2}+0x+0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+5A & =1\\
+A & =\frac{1}{5}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+4A+5B & =0\\
+4\left(\frac{1}{5}\right)+5B & =0\\
+5B & =-\frac{4}{5}\\
+B & =-\frac{4}{25}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2A+2B+5C & =0\\
+2\left(\frac{1}{5}\right)+2\left(-\frac{4}{25}\right)+5C & =0\\
+\frac{2}{5}-\frac{8}{25}+5C & =0\\
+5C & =-\frac{2}{5}+\frac{8}{25}\\
+5C & =-\frac{2}{25}\\
+C & =-\frac{2}{125}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=\frac{1}{5}x^{2}-\frac{4}{25}x-\frac{2}{125}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=e^{-x}\left(C_{1}\sin2x+C_{2}\cos2x\right)+\frac{1}{5}x^{2}-\frac{4}{25}x-\frac{2}{125}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $y''-y'+9y=3\sin3x$
 \end_inset
@@ -964,6 +1772,173 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+r^{2}-r+9 & =0\\
+r & =\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}\\
+ & =\frac{-\left(-1\right)\pm\sqrt{\left(-1\right)^{2}-4\left(9\right)}}{2}\\
+ & =\frac{1\pm\sqrt{1-36}}{2}\\
+ & =\frac{1\pm\sqrt{-35}}{2}\\
+ & =\frac{1\pm\sqrt{-1}\sqrt{35}}{2}\\
+ & =\frac{1\pm\sqrt{35}i}{2}\\
+r & =\frac{1}{2}\pm\frac{\sqrt{35}}{2}i
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{h} & =e^{\frac{1}{2}x}\left(C_{1}\sin\frac{\sqrt{35}}{2}x+C_{1}\cos\frac{\sqrt{35}}{2}x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Newline newline
+\end_inset
+
+From 
+\begin_inset Formula $3\sin3x$
+\end_inset
+
+, we predict 
+\begin_inset Formula $y$
+\end_inset
+
+ will be:
+\begin_inset Formula 
+\begin{align*}
+y & =A\sin3x+B\cos3x\\
+y' & =3A\cos3x-3B\sin3x\\
+y'' & =-9A\sin3x-9B\cos3x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+y''-y'+9y & =3\sin3x\\
+\left(-9A\sin3x-9B\cos3x\right)-\left(3A\cos3x-3B\sin3x\right)+9\left(A\sin3x+B\cos3x\right) & =3\sin3x\\
+-9A\sin3x-9B\cos3x-3A\cos3x+3B\sin3x+9A\sin3x+9B\cos3x & =3\sin3x\\
+3B\sin3x-3A\cos3x & =3\sin3x\\
+B\sin3x-A\cos3x & =\sin3x+0\cos3x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\sin3x-A\cos3x=\sin3x+0\cos3x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+B & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{p} & =\cos3x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=e^{\frac{1}{2}x}\left(C_{1}\sin\frac{\sqrt{35}}{2}x+C_{1}\cos\frac{\sqrt{35}}{2}x\right)+\cos3x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $y''+y'=2x+4+2e^{x}$
 \end_inset
@@ -971,6 +1946,164 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+y''+y' & =0\\
+r^{2}+r & =0\\
+r\left(r+1\right) & =0\\
+r & =0,-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y_{h} & =C_{1}e^{0x}+C_{2}e^{-1x}\\
+y_{h} & =C_{1}+C_{2}e^{-x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives (By prediction, find 
+\begin_inset Formula $y$
+\end_inset
+
+, then find the rest of derivatives)
+\begin_inset Formula 
+\begin{align*}
+y & =Ax^{2}+Bx+Ce^{x}\\
+y' & =2Ax+B+Ce^{x}\\
+y'' & =2A+Ce^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+2A+Ce^{x}+2Ax+B+Ce^{x} & =2x+4+2e^{x}\\
+2Ax+2A+B+2Ce^{x} & =2x+4+2e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A,B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+2A & =2\\
+A & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2A+B & =4\\
+2\left(1\right)+B & =4\\
+B & =4-2\\
+B & =2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+2C & =2\\
+C & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=x^{2}+2x+e^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=C_{1}+C_{2}e^{-x}+x^{2}+2x+e^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $y''-3y'-18y=xe^{4x}$
 \end_inset
@@ -978,6 +2111,156 @@ Find General Solution for:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Solve the homogeneous D.E.
+ 
+\begin_inset Formula $ay''+by'+cy=0$
+\end_inset
+
+ (find the 
+\begin_inset Formula $r$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+y''-3y'-18y & =0\\
+r^{2}-3r-18 & =0\\
+\left(r-6\right)\left(r+3\right) & =0\\
+r & =6,r=-3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the complementary function, 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{h}=e^{6x}C_{1}+e^{-3x}C_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the particular solution 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
+\begin_inset Formula 
+\begin{align*}
+y & =\left(Bx+C\right)e^{4x}\\
+y' & =\frac{d}{dx}\left[Bxe^{4x}+Ce^{4x}\right]\\
+ & =Be^{4x}+4Bxe^{4x}+4Ce^{4x}\\
+y'' & =4Be^{4x}+4B\left(e^{4x}+4xe^{4x}\right)+16Ce^{4x}\\
+ & =4Be^{4x}+4Be^{4x}+16Bxe^{4x}+16Ce^{4x}\\
+y'' & =8Be^{4x}+16Bxe^{4x}+16Ce^{4x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+8Be^{4x}+16Bxe^{4x}+16Ce^{4x}-3\left(Be^{4x}+4Bxe^{4x}+4Ce^{4x}\right)-18\left(Bxe^{4x}+Ce^{4x}\right) & =xe^{4x}\\
+8Be^{4x}+16Bxe^{4x}+16Ce^{4x}-3Be^{4x}-12Bxe^{4x}-12Ce^{4x}-18Bxe^{4x}-18Ce^{4x} & =xe^{4x}\\
+16Bxe^{4x}-12Bxe^{4x}-18Bxe^{4x}-12Ce^{4x}-18Ce^{4x}+16Ce^{4x}+8Be^{4x}-3Be^{4x} & =xe^{4x}\\
+16Bxe^{4x}-30Bxe^{4x}-14Ce^{4x}+5Be^{4x} & =xe^{4x}\\
+xe^{4x}\left(-14B\right)-e^{4x}\left(14C+5B\right) & =xe^{4x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-14B & =1\\
+B & =-\frac{1}{14}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+14C+5B & =0\\
+14C & =-5\left(-\frac{1}{14}\right)\\
+C & =\frac{5}{14}*\frac{1}{14}\\
+ & =\frac{5}{196}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=\left(-\frac{1}{14}x+\frac{5}{196}\right)e^{4x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the non-homogeneous D.E.
+ general solution, 
+\begin_inset Formula $y=y_{h}+y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+y & =e^{6x}C_{1}+e^{-3x}C_{2}+\left(-\frac{1}{14}x+\frac{5}{196}\right)e^{4x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document

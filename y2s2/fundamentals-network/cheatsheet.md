@@ -28,6 +28,33 @@ exit
   - `conf` = `configure`
   - `t` = `terminal`
 
+### IPv6
+
+#### Router: Enable IPv6 forwarding
+
+```bash
+enable
+conf t
+ipv6 unicast-routing
+```
+
+#### Router: Config IPv6 address
+
+```bash
+en
+conf t
+interface [interfaceName, eg: GigabitEthernet0/0]
+ipv6 address [address, eg: 2001:DB8:1:1::1/64]
+no shutd
+ex
+```
+
+- For link local: `ipv6 address FE80::1 link-local`
+
+#### ServersL Conf IPv6
+
+- Use Desktop > IP Config
+
 #### Flash
 
 - `show flash`: Show contents of flash

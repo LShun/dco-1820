@@ -254,7 +254,7 @@ show ipv6 interface brief
       - `FF02::1`: All-nodes multicast group
         - All devices
         - Same as broadcast in IPv4
-      - `FF02::2`: All routers multicast grou
+      - `FF02::2`: All routers multicast group
         - All IPV6 routers
         - Autojoin if `ipv6 unicast-routing`  enabled
         - Packet sent here is processed by all routers

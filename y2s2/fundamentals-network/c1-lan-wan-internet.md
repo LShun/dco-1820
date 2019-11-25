@@ -115,4 +115,4 @@ How to connect devices, media, and services together
 - BYOD - Bring Your Own Device: Use personal devices to access
 - Online Collaboration
 - Video
-- Cloud computing: Storage of data, services/app in internet.
+  - Cloud computing: Storage of data, services/app in internet.

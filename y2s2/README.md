@@ -1,5 +1,11 @@
 # README: Year 2 Semester 2 
 
+## Timetable
+
+- :calendar:[Course Schedule](https://www.notion.so/35f8fe78ec1c464498f749ec9acab38d?v=e3641386c7d4419fb57bf94633a7c9ed)
+
+## General Information
+
 ### Intro to Networking
 
 - Name: Lim Kong Hua
@@ -17,7 +23,8 @@
 - Name: Kok Wai Keong
 - Room: A203
 - Classroom Code: **7dw5q3c**
-- Mid Term Test: Week 8 - Wednesday (Scope: Chapter 1 only)
+- Mid Term Test: Week 8 - Wednesday (Scope: Chapter 1 only, T1-3)
+  - 4:15PM - 5:15PM
 
 ### Calculus II
 

@@ -4625,7 +4625,7 @@ exponential, polynomial, or sin/cosine function
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -4734,11 +4734,37 @@ exponential, polynomial, or sin/cosine function
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $a\sin\left(\beta x\right)+a\cos\left(\beta x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A\sin\left(\beta x\right)+B\cos\left(\beta x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a\sin\left(\beta x\right)+b\cos\left(\beta x\right)$
 \end_inset
 
 
@@ -5121,6 +5147,20 @@ This makes
 , which is not duplicated, and valid.
 \end_layout
 
+\begin_layout Enumerate
+Reason we want to do this is to prevent important constants (like 
+\begin_inset Formula $A$
+\end_inset
+
+) from cancelling each other.
+ So, we need to 
+\series bold
+guess
+\series default
+ something else.
+ (Remember we are guessing according to the table)
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Paragraph
@@ -5180,16 +5220,16 @@ Find the particular solution
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the derivatives
 \begin_inset Formula 
 \begin{align*}
 y_{p} & =Ae^{2x}\\
-y_{p} & =Ae^{2x}\\
 y'_{p} & =2Ae^{2x}\\
-y''_{p} & =4Ae^{2x}\\
-4Ae^{2x}+6\left(2Ae^{2x}\right)+9\left(Ae^{2x}\right) & =e^{2x}\\
-25Ae^{2x} & =e^{2x}\\
-A & =\frac{1}{25}\\
-y_{p} & =\frac{1}{25}e^{2x}
+y''_{p} & =4Ae^{2x}
 \end{align*}
 
 \end_inset
@@ -5197,6 +5237,53 @@ y_{p} & =\frac{1}{25}e^{2x}
 
 \end_layout
 
+\begin_layout Enumerate
+Plug into the function
+\begin_inset Formula 
+\begin{align*}
+4Ae^{2x}+6\left(2Ae^{2x}\right)+9\left(Ae^{2x}\right) & =e^{2x}\\
+25Ae^{2x} & =e^{2x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+25Ae^{2x} & =e^{2x}\\
+A & =\frac{1}{25}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}=\frac{1}{25}e^{2x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Find the non-homogeneous D.E.
  general solution, 
