@@ -3,9 +3,9 @@
 ## Q1
 
 1. What are the functions of the physical layer?
-   1.  The physical layer's function is to transport data using electrical, mechanical, or procedural interfaces.
-   2. The physical layer is responsible for sending computer bits from one device to another along the network.
-   3. The physical layer is also responsible to define how bits are converted from bits to signals, data rate, synchronization, transmission mode, and interface.
+   1.  The physical layer's function is to **transport data using electrical, mechanical, or procedural interfaces**.
+   2. The physical layer is responsible for **sending computer bits from one device to another** along the network.
+   3. The physical layer is also responsible to **define how bits are converted from bits to signals**, data rate, synchronization, transmission mode, and interface.
 2. With reference to the diagram, describe encapsulation process from source node to destination node.
    1. The user data is segmented by the transport layer, placed into packets by the network layer, and further encapsulated as frames by the data link layer.
    2. The physical layer encodes the frames and creates the electrical, optical, or radio wave signals that represent the bits in each frame.
@@ -28,9 +28,9 @@
 | ------------------- | ------------------------------------------------------------ |
 | Synchronous         | Data signals are sent along with a clock signals which occurs at evenly spaced time durations referred to as the bit time. |
 | Signaling method    | The method to represent the bits.                            |
-| Frame encoding      |                                                              |
+| Frame encoding      | The method a network frame is converted into signals for transmission |
 | Asynchronous        | Data signals are transmitted without an associated clock signal. |
-| Physical components | The electronic hardware devices, media, and other connects that transmit nd carry the signals to represent the bits. |
+| Physical components | The electronic hardware devices, media, and other connects that transmit and carry the signals to represent the bits. |
 
 2. Distinguish between bandwidth and throughput 
    1. **Bandwidth**: The capacity of a medium to carry data. Digital bandwidth measures the amount of data that can flow from one place to another in a given time. Bandwidth refers to the maximum amount under ideal conditions. Bandwidth is equal or higher than throughput.
@@ -38,11 +38,11 @@
 
 3.  Identify the type of the copper cable and briefly describe the cable.  
 
-   1. |      | Cable Type                          | Description                                                  |
-      | ---- | ----------------------------------- | ------------------------------------------------------------ |
-      |      | Unshielded Twisted Pair (UTP) cable | Consists of four pairs of color-coded wires that have been twisted together and then encased in a flexible plastic sheath that protects from minor physical damage. The twisting of wires helps protect against signal interference from other wires. |
-      |      | Shielded Twisted Pair (STP) cable   | STP cables combine the techniques of shielding to counter EMI and RFI, and wire twisting to counter crosstalk. |
-      |      | Coaxial cable                       | There are two conductors that share the same axis.           |
+   1. | Cable Type                          | Description                                                  |
+      | ----------------------------------- | ------------------------------------------------------------ |
+      | Unshielded Twisted Pair (UTP) cable | Consists of four pairs of color-coded wires that have been twisted together and then encased in a flexible plastic sheath that protects from minor physical damage. The twisting of wires helps protect against signal interference from other wires. |
+      | Shielded Twisted Pair (STP) cable   | STP cables combine the techniques of shielding to counter EMI and RFI, and wire twisting to counter crosstalk. |
+      | Coaxial cable                       | There are two conductors that share the same axis.           |
 
 4.  Discuss the application of each of the following UTP cable types. 
 

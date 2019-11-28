@@ -107,7 +107,7 @@
 ### MAC Address
 
 - Address don't change
-- Similar to person's name
+- Similar to person's name (in a country that don't allow changing names) 
 - Known as physical address because physically assigned
 - Assigned by host NIC
 - Examined by switches

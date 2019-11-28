@@ -1,0 +1,6 @@
+Instruction to build a cable (4.2.2.7 Lab)
+
+1. each student ONLY can build on cable, either straight through cable or cross-over cable.
+2. Therefore, divide the class into two groups.
+3. Once the student completed and Tested the cable, ask the students use the suitable cable to do "Lab5.1.13b Building a Swithch-based Network" exercise. Students can form a group to do this Lab5.1.13b. 
+4. STUDENT NEED TO RETURN THE CABLE, THEY CANNOT BRING BACK HOME.  

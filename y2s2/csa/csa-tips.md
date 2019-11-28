@@ -6,3 +6,6 @@ Hardware components (memory) - Exam
 
 Bus examples ignore, won't come out in exam for own knowledge only
 
+- Mid term test until DEBUG
+  - C1,2,4,5
+

@@ -268,8 +268,8 @@ Put
  is 1.
 \begin_inset Formula 
 \begin{align*}
-\frac{dy}{dx} & =\frac{y}{x}-x^{2}e^{-x}\\
-\frac{dy}{dx}-\frac{y}{x} & =-x^{2}e^{-x}
+x\dydx & =y-x^{2}e^{-x}\\
+\dydx-\frac{y}{x} & =-xe^{-x}
 \end{align*}
 
 \end_inset
@@ -295,12 +295,9 @@ Find the integrating factor
 .
 \begin_inset Formula 
 \begin{align*}
-\mu\left(x\right) & =e^{\int-\frac{1}{x}dx}\\
- & =e^{-\int\frac{1}{x}dx}\\
- & =e^{-\ln x}\\
-\mu\left(x\right) & =e^{\ln x^{-1}}\\
- & =x^{-1}\\
- & =\frac{1}{x}
+\mu & =e^{\int-\frac{1}{x}dx}\\
+ & =e^{\ln x^{-1}}\\
+\mu & =\frac{1}{x}
 \end{align*}
 
 \end_inset
@@ -321,114 +318,13 @@ Multiply everything in the D.E.
  and write it as such.
 \begin_inset Formula 
 \begin{align*}
-\frac{1}{x}\left(\frac{dy}{dx}-\frac{y}{x}\right) & =\frac{1}{x}\left(-x^{2}e^{-x}\right)\\
--\left(-x^{-2}y+x^{-1}\frac{dy}{dx}\right) & =-xe^{-x}\\
--\frac{dy}{dx}\left(x^{-1}y\right) & =-xe^{-x}\\
--\int\frac{dy}{dx}\left(x^{-1}y\right)dx & =\int-xe^{-x}dx\\
--x^{-2}y & =-\int xe^{-x}dx
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Before we can proceed, again, integrate by parts, if you don't remember,
- GG.com...jk, 
-\begin_inset Formula 
-\[
-\int u\,dv=uv-\int vdu
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Let 
-\begin_inset Formula $u=x$
-\end_inset
-
-, 
-\begin_inset Formula $dv=e^{-x}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\frac{du}{dx} & =1\\
-du & =dx
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\int dv & =\int e^{-x}\\
-v & =-e^{-x}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Lets find the answer
-\begin_inset Formula 
-\begin{align*}
-\int u\,dv & =-x\cdot e^{-x}-\int e^{-x}dx
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Again, we need to deal with integration, now use 
-\begin_inset Formula $u$
-\end_inset
-
- substitution
-\begin_inset Newline newline
-\end_inset
-
-Let 
-\begin_inset Formula $u=-x$
-\end_inset
-
-, 
-\begin_inset Formula $du=-dx$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
--\int e^{-x}dx & =-\int e^{u}du\\
- & =-e^{u}\\
--\int e^{-x}dx & =-e^{-x}+c
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Substitute back in
-\begin_inset Formula 
-\begin{align*}
--x^{-1}y & =\int xe^{-x}dx\\
- & =-e^{-x}+c\\
-y & =-e^{-x}\cdot-x-cx\\
- & =xe^{-x}-cx\\
-y & =xe^{-x}+cx\,\text{Note: c is constant, sign doesn't matter for now}
+\frac{1}{x}\left[\dydx-\frac{y}{x}\right] & =\frac{1}{x}\left[-xe^{-x}\right]\\
+\frac{1}{x}\frac{dy}{dx}-\frac{1}{x^{2}}y & =-e^{-x}\\
+\frac{d}{dx}\left[x^{-1}y\right] & =-e^{-x}\\
+\int\frac{d}{dx}\left[x^{-1}y\right]dx & =-\int e^{-x}dx\\
+x^{-1}y & =-\left(-1\right)e^{-x}+c\\
+y & =x\left(e^{-x}+c\right)\\
+y & =e^{-x}x+cx
 \end{align*}
 
 \end_inset
@@ -1787,8 +1683,9 @@ Write D.E.
 \begin_inset Formula 
 \begin{align*}
 y\left(x^{2}-1\right)\dydx & =1\\
-y\dydx & =\frac{1}{\left(x^{2}-1\right)}\\
-ydy & =\frac{1}{\left(x^{2}-1\right)}dx
+\left(x^{2}-1\right)\dydx & =\frac{1}{y}\\
+\frac{1}{\left(x^{2}-1\right)}\frac{dx}{dy} & =y\\
+\frac{1}{\left(x^{2}-1\right)}dx & =ydy
 \end{align*}
 
 \end_inset
@@ -1800,11 +1697,13 @@ ydy & =\frac{1}{\left(x^{2}-1\right)}dx
 Integrate both sides
 \begin_inset Formula 
 \begin{align*}
-\int ydy & =\int\frac{1}{\left(x^{2}-1\right)}dx\\
-\frac{y^{2}}{2}+c & =-\int\frac{1}{1-x^{2}}dx\\
-\frac{y^{2}}{2}+c & =-\tanh^{-1}\left(x\right)+c\\
- & =-\frac{1}{2}\ln\left(x+1\right)+\frac{1}{2}\ln\left(x-1\right)+c\\
-\frac{y^{2}}{2}+c & =-\frac{1}{2}\ln\left(x+1\right)+\frac{1}{2}\ln\left(x-1\right)+c
+\int\frac{1}{\left(x^{2}-1\right)}dx & =\int ydy\\
+\int\frac{1}{\left(x^{2}-1\right)}dx & =\frac{y^{2}}{2}+c\\
+\int\frac{1}{\left(x-1\right)\left(x+1\right)}dx & =\frac{y^{2}}{2}+c\\
+\int\frac{1}{2\left(x-1\right)}-\frac{1}{2\left(x+1\right)}dx & =\frac{y^{2}}{2}+c\\
+\frac{1}{2}\left(\int\frac{1}{\left(x-1\right)}dx-\int\frac{1}{\left(x+1\right)}dx\right) & =\frac{y^{2}}{2}+c\\
+\int\frac{1}{\left(x-1\right)}dx-\int\frac{1}{\left(x+1\right)}dx & =y^{2}+c\\
+\ln\left(x-1\right)-\ln\left(x+1\right) & =y^{2}+c
 \end{align*}
 
 \end_inset
@@ -1812,6 +1711,67 @@ Integrate both sides
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Partial fractions
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\left(x-1\right)\left(x+1\right)} & =\frac{A}{\left(x-1\right)}+\frac{B}{\left(x+1\right)}\\
+1 & =A\left(x+1\right)+B\left(x-1\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =B\left(-2\right)\\
+B & =-\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1 & =A\left(2\right)\\
+A & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore
+\begin_inset Formula 
+\[
+\frac{1}{\left(x-1\right)\left(x+1\right)}=\frac{1}{2\left(x-1\right)}-\frac{1}{2\left(x+1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Try to change implicit solution into explicit solution (in terms of 
 \begin_inset Formula $y=y\left(x\right)$
@@ -1829,10 +1789,9 @@ DO NOT forget to include
 , constant of integration
 \begin_inset Formula 
 \begin{align*}
-\frac{y^{2}}{2}+c & =-\frac{1}{2}\ln\left(x+1\right)+\frac{1}{2}\ln\left(x-1\right)+c\\
-y^{2} & =\ln\left(x-1\right)-\ln\left(x+1\right)+c\\
-y^{2} & =\ln\frac{x-1}{x+1}+c\\
-y & =\sqrt{\ln\frac{x-1}{x+1}+c}
+\ln\frac{\left(x-1\right)}{\left(x+1\right)} & =y^{2}+c\\
+y^{2} & =\ln\frac{\left(x-1\right)}{\left(x+1\right)}-2c\\
+y & =\sqrt{\ln\frac{\left(x-1\right)}{\left(x+1\right)}+c}
 \end{align*}
 
 \end_inset
@@ -1848,8 +1807,8 @@ Let
 
 \begin_inset Formula 
 \begin{align*}
-y & =\sqrt{\ln\frac{x-1}{x+1}+\ln A}\\
- & =\sqrt{\ln\frac{A\left(x-1\right)}{x+1}}
+y & =\sqrt{\ln\frac{\left(x-1\right)}{\left(x+1\right)}+\ln A}\\
+y & =\sqrt{\ln\frac{A\left(x-1\right)}{\left(x+1\right)}}
 \end{align*}
 
 \end_inset
@@ -1951,7 +1910,9 @@ DO NOT forget to include
 \begin_inset Formula 
 \begin{align*}
 \frac{x^{2}}{2}+c & =-4\cos t+3\sin\left(2t\right)+c\\
-\frac{x^{2}}{2} & =-4\cos t+3\sin2t+c
+\frac{x^{2}}{2} & =-4\cos t+3\sin2t+c\\
+x^{2} & =-8\cos t+6\sin2t+c\\
+x & =\sqrt{-8\cos t+6\sin2t+c}
 \end{align*}
 
 \end_inset
@@ -2091,20 +2052,22 @@ integration.
 
 \begin_inset Formula 
 \begin{align*}
-\frac{du}{dx} & =-\cos x\\
-du & =-\cos x\,dx
+\frac{du}{dx} & =\cos x\\
+du & =\cos xdx
 \end{align*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
 \begin_inset Formula 
 \begin{align*}
-\int\cos x\cdot e^{\sin x}dx & =\int\cos x\cdot e^{\sin x}dx\\
- & =-\int e^{u}du\\
- & =-e^{u}+c\\
- & =-e^{\sin x}+c\\
-\int\cos x\cdot e^{-\sin x}dx & =c-e^{\sin x}
+\int\cos xe^{\sin x}dx & =\int e^{u}du\\
+ & =e^{u}+c\\
+ & =e^{\sin x}+c
 \end{align*}
 
 \end_inset
@@ -2839,14 +2802,13 @@ DO NOT forget to include
 \ln\frac{x}{x+1} & =\ln\frac{e^{c}\left(t-1\right)}{t}\\
 \frac{x}{x+1} & =\frac{e^{c}\left(t-1\right)}{t}\\
 1-\frac{1}{x+1} & =\frac{e^{c}\left(t-1\right)}{t}\\
--\frac{1}{x+1} & =\frac{e^{c}\left(t-1\right)}{t}-1\\
-\frac{1}{x+1} & =-\frac{e^{c}\left(t-1\right)}{t}+1\\
-x+1 & =-\frac{t}{t+e^{c}\left(t-1\right)}\\
-x & =-\frac{t}{t+e^{c}\left(t-1\right)}-1\\
- & =-\frac{t-\left(t+e^{c}\left(t-1\right)\right)}{t+e^{c}\left(t-1\right)}\\
- & =-\frac{-e^{c}\left(t-1\right)}{t+e^{c}\left(t-1\right)}\\
- & =\frac{e^{c}\left(t-1\right)}{t+e^{c}\left(t-1\right)}\\
- & =\frac{c\left(t-1\right)}{t+c\left(t-1\right)}
+\frac{1}{x+1} & =1-\frac{e^{c}\left(t-1\right)}{t}\\
+\frac{1}{x+1} & =\frac{t-e^{c}\left(t-1\right)}{t}\\
+x+1 & =\frac{t}{t-e^{c}\left(t-1\right)}\\
+x & =\frac{t}{t-e^{c}\left(t-1\right)}-1\\
+ & =\frac{t-\left(t-e^{c}\left(t-1\right)\right)}{t-e^{c}\left(t-1\right)}\\
+ & =\frac{e^{c}\left(t-1\right)}{t-e^{c}\left(t-1\right)}\\
+x & =\frac{c\left(t-1\right)}{t+c\left(1-t\right)}
 \end{align*}
 
 \end_inset
@@ -2863,11 +2825,11 @@ Substitute in the values given to find
 
 \begin_inset Formula 
 \begin{align*}
-x & =\frac{c\left(t-1\right)}{t+c\left(t-1\right)}\\
-2 & =\frac{c\left(2-1\right)}{2+c\left(2-1\right)}\\
-2 & =\frac{c}{2+c}\\
-4+2c & =c\\
-c & =-\frac{4}{3}
+x & =\frac{c\left(t-1\right)}{t+c\left(1-t\right)}\\
+2 & =\frac{c\left(2-1\right)}{2+c\left(1-2\right)}\\
+2 & =\frac{c}{2-c}\\
+4-2c & =c\\
+c & =\frac{4}{3}
 \end{align*}
 
 \end_inset
@@ -2883,10 +2845,11 @@ Substitute
  back into the equation, to find the solution for the I.V.P.
 \begin_inset Formula 
 \begin{align*}
-x & =\frac{-\frac{4}{3}\left(t-1\right)}{t+-\frac{4}{3}\left(t-1\right)}\\
- & =\frac{-\frac{4}{3}t+\frac{4}{3}}{t-\frac{4}{3}t+\frac{4}{3}}\\
- & =\frac{\frac{-4t+4}{3}}{\frac{t+4}{3}}\\
-x & =\frac{4\left(1-t\right)}{t-4}
+x & =\frac{\frac{4}{3}\left(t-1\right)}{t+\frac{4}{3}\left(1-t\right)}\\
+ & =\frac{\frac{4}{3}\left(t-1\right)}{t+\frac{4}{3}\left(1-t\right)}\\
+ & =\frac{\frac{4}{3}t-\frac{4}{3}}{t+\frac{4}{3}-\frac{4}{3}t}\\
+ & =\frac{\frac{4t-4}{3}}{\frac{-t+4}{3}}\\
+x & =\frac{4\left(t-1\right)}{4-t}
 \end{align*}
 
 \end_inset

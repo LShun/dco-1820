@@ -27,8 +27,12 @@ LLC Sublayer, MAC Sublayer
 
 #### Half & Full Duplex CLARIFY
 
-- Half Duplex: Receive only
+- Half Duplex: Send/Receive only
+  - 1 pair of wire
+  - Network hubs :arrow_right: prevent collision
 - Full Duplex: Send and receive
+  - Use 2 pair of wires
+  - Switch
 
 #### Physical LAN Topology
 

@@ -28,6 +28,10 @@ exit
   - `conf` = `configure`
   - `t` = `terminal`
 
+### Subnet (in Router)
+
+- `ip address [START, exclude network] [Subnet Mask]`
+
 ### IPv6
 
 #### Router: Enable IPv6 forwarding
