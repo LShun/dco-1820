@@ -1411,7 +1411,7 @@ Find
 
 \begin_inset Formula 
 \[
-y_{p}=-\frac{3}{4}e^{-2x}
+y_{p}=-\frac{3}{4}e^{-2x}x
 \]
 
 \end_inset
@@ -1429,8 +1429,8 @@ Find the non-homogeneous D.E.
 
 \begin_inset Formula 
 \begin{align*}
-y & =e^{2x}C_{1}+e^{-2x}C_{2}-\frac{3}{4}e^{-2x}\\
- & e^{2x}C_{1}+\left(C_{2}-\frac{3}{4}\right)e^{-2x}
+y & =e^{2x}C_{1}+e^{-2x}C_{2}-\frac{3}{4}e^{-2x}x\\
+ & =e^{2x}C_{1}+\left(C_{2}-\frac{3}{4}x\right)e^{-2x}
 \end{align*}
 
 \end_inset

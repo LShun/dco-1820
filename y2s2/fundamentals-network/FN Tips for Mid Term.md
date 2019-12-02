@@ -6,7 +6,7 @@
 - :star: means high importance, double-stressed by lecturer
 - :star: :star: means confirm come out
 - :heavy_plus_sign: means optional, not mentioned by lecturer, just a gut feeling
-- :grey_question: means its unclear, lecturer mentioned, but there's no good information in lecture notes/netacad. Using google as source
+- :grey_question: means its unclear, lecturer mentioned, but there's no good information in lecture notes/Netacad. Using google as source
 
 ## Table of contents
 
@@ -77,7 +77,7 @@
 | ----------- | -------------------- | --------------------- |
 | Copper      | Twisted pair cable   | Electrical impulses   |
 | Fiber-optic | Glass/plastic fibers | Light pulses          |
-| Wireless    | -                    | Electromagnetic waves |
+| Wireless    | 4G                   | Electromagnetic waves |
 
 ### Network Representation (OPTIONAL) :heavy_plus_sign:
 
@@ -146,12 +146,12 @@
 
 #### Functions :star:
 
-- `A`: Supports process-to-process communications (HTML)
-- `P`: Ensure information readable by `A`, translation & encryption (JPEG)
-- `S`: Start, monitor & stop sessions. Synchronize dialog. 
-- `T`: End-to-end connection & reliability. Flow control. (TCP) 
-- `N`: Path determination & logical addressing (IP) (Protocols: IP, Devices: Router)
-- `D`: Physical addressing (MAC & LLC), how physical link used. (Protocols: Ethernet. Devices: Switches)
+- `A`: Supports process-to-process communications (HTML, E-mail)
+- `P`: Ensure information readable by `A`, translation & encryption (JPEG, MPEG)
+- `S`: Start, monitor & stop sessions. Synchronize dialog. (SQL, RPC (Remote procedure call))
+- `T`: End-to-end connection & reliability. Flow control. (TCP, UDP) 
+- `N`: Path determination & logical addressing (IP) (Protocols: IP, Devices: L3 Switch & Routers)
+- `D`: Physical addressing (MAC & LLC), how physical link used. (Protocols: Ethernet, PPP. Devices: Switches)
 - `P`: Define electrical, mechanical, operational (EMO) specifications for physical link. Transfers raw bits. (Repeaters, hubs)
 
 #### Know PDU name
@@ -170,12 +170,12 @@
 - Look at the marks given, if 6 marks, give 3 points + 3 explanation
 - Otherwise give all 4
 
-| Benefit                        | Explanation                                        |
-| ------------------------------ | -------------------------------------------------- |
-| Assists in protocol design     | Defined interface to layers above & below          |
-| Fosters competition            | Products from different vendor work together       |
-| Prevents feature contamination | Prevents technology in one layer affecting another |
-| Provides common language       | Easy to describe networking functions & features   |
+| Benefit                              | Explanation                                        |
+| ------------------------------------ | -------------------------------------------------- |
+| Assists in protocol design           | Defined interface to layers above & below          |
+| Fosters competition                  | Products from different vendor work together       |
+| Prevents feature cross-contamination | Prevents technology in one layer affecting another |
+| Provides common language             | Easy to describe networking functions & features   |
 
 #### Protocol & reference model
 
@@ -272,11 +272,11 @@
 
 ### Physical vs Logical Topology
 
-| Physical T                                | Differences | Logical T                            |
-| ----------------------------------------- | ----------- | ------------------------------------ |
-| Physical connections                      | Refers to   | The way a network transfer frames    |
-| Identifies how devices are interconnected | Function    | Controls network communication       |
-| Star, Extended Star, Bus, Ring topology   | Examples    | Contention-based & controlled access |
+| Physical T                                                   | Differences | Logical T                            |
+| ------------------------------------------------------------ | ----------- | ------------------------------------ |
+| Physical connections                                         | Refers to   | The way a network transfer frames    |
+| Identifies how devices are interconnected                    | Function    | Controls network communication       |
+| **LAN**: Star, Extended Star, Bus, Ring topology. **WAN:** Point-to-point, Hub-and-spoke, Full mesh | Examples    | Contention-based & controlled access |
 
 #### Logical Topologies Types  :heavy_plus_sign:
 
@@ -290,7 +290,7 @@
 | Everyone send when ready           | Operation   | Wait for turn to send                       |
 | Transmit anytime                   | Access      | One station at one time, must wait for turn |
 | Collision exist, use CSMA/CD or CA | Collisions  | Collisions do not exist                     |
-| 802.3 Ethernet                     | Examples    | Token Ring                                  |
+| 802.3 Ethernet                     | Examples    | Token Ring, Polling                         |
 
 - CSMA: Carrier-sense multiple access
 
@@ -338,7 +338,7 @@
 - **Purpose:** Find MAC address of destination in Ethernet
 - **Functions:** Resolve IPv4 to MAC address, maintain table of mapping.
 - **Protocols:** ARP
-- **Process:**
+- **Process (PC):**
   - Check if ARP entry present
   - If not present
     - Broadcast ARP request with IP
@@ -348,6 +348,13 @@
     - Send data directly to destination
   - If (still) not present
     - Drop packet, alert sender host not found
+- **Process (Switch)**:
+  - One PC sends a broadcast frame to switch
+  - The switch saves sender MAC address & switch port pair into address table
+  - Switch floods frame to all ports, except sender's port
+  - Receiver device replies with unicast address to PC1
+  - Switch saves receiver MAC & switch port pair
+  - Switch free to forward frames without flooding because have entries
 - (Tutorial) What happens when you have a frame when you cannot find the destination
 - Refer to your tutorial question Tutorial 5 (c)
   - If cant find destination, then IP will broadcast to all except incoming address
