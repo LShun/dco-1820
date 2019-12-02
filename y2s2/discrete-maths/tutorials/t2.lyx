@@ -93,46 +93,63 @@ Rewrite each statement below in “if – then” form.
 
 \begin_deeper
 \begin_layout Enumerate
-I am on time for lecture if I catch the 7 am bus.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
 If I catch the 7am bus, then I am on time for lecture.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 David studies hard or he fails the examination.
- 
+ (
+\begin_inset Formula $p\lor q$
+\end_inset
+
+), note that 
+\begin_inset Formula $\left(p\to q\equiv\sim p\land q\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If David studies hard, then he passes the examination.
+If David did not study hard, then he fail the examination.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 The program is readable only if it is well structured.
- 
+ (
+\begin_inset Formula $p$
+\end_inset
+
+ only if 
+\begin_inset Formula $q$
+\end_inset
+
+)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If the program is well structured, then it is readable.
+If the program is readable, then it is well structured.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 This door will not open unless a security code is entered.
- 
+ (
+\begin_inset Formula $q$
+\end_inset
+
+ unless 
+\begin_inset Formula $\sim p$
+\end_inset
+
+)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If a security code is entered, then the door will open.
+If the security code is not entered, then the door will not open
 \end_layout
 
 \end_deeper
@@ -144,11 +161,11 @@ If a security code is entered, then the door will open.
 \begin_deeper
 \begin_layout Enumerate
 If 
-\begin_inset Formula $x=8$
+\begin_inset Formula $2x-5=11$
 \end_inset
 
 , then 
-\begin_inset Formula $2x-5=11$
+\begin_inset Formula $x=8$
 \end_inset
 
 
@@ -161,35 +178,59 @@ Having two
 \end_inset
 
  angles is a sufficient condition for this triangle to be a right triangle.
- 
+ (
+\begin_inset Formula $p$
+\end_inset
+
+ is a sufficient condition for 
+\begin_inset Formula $q$
+\end_inset
+
+)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If the triangle is a right triangle, then it has two 
-\begin_inset Formula $45\text{°\ angles.}$
+If the triangle has two 
+\begin_inset Formula $45\text{°\ angles}$
 \end_inset
 
-
+, the triangle is a right triangle.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 Solving all tutorial’s questions is a necessary condition for Alan to pass
  this subject.
- 
+ (
+\begin_inset Formula $q$
+\end_inset
+
+ is a necessary condition for 
+\begin_inset Formula $p$
+\end_inset
+
+)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If Alan solve all tutorial questions, then Alan passes the subject.
+If Alan passes the subject, then Alan solve all tutorial questions.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 To be a citizen in this country, it is sufficient that you were born in
  this country.
- 
+ (
+\begin_inset Formula $q$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ is sufficient)
 \end_layout
 
 \begin_deeper
@@ -200,12 +241,20 @@ If you were born in this country, then you are a citizen in this country.
 \end_deeper
 \begin_layout Enumerate
 It is necessary to have a valid password to log on to the server.
- 
+ (
+\begin_inset Formula $q$
+\end_inset
+
+ is a necessary for 
+\begin_inset Formula $p$
+\end_inset
+
+)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-If you have a valid server, then you can log on to the server.
+If you log on to the server, then you must have a valid password.
 \end_layout
 
 \end_deeper
@@ -1817,7 +1866,7 @@ If the sun is shining, then I shall play tennis or swimming this afternoon.
 
 \begin_deeper
 \begin_layout Enumerate
-Even if the sun is shining, I shall not play tennis and not swim this afternoon.
+The sun is shining and I shall not play tennis and not swim this afternoon.
 \end_layout
 
 \end_deeper
@@ -1828,7 +1877,7 @@ If I am free and I am not tired, then I will go to the supermarket.
 
 \begin_deeper
 \begin_layout Enumerate
-Even if I am free and I am not tired, I will not go to the supermarket.
+Even if I am free and I am not tired and I will not go to the supermarket.
 \end_layout
 
 \end_deeper
@@ -1838,7 +1887,7 @@ If
 \end_inset
 
  or 
-\begin_inset Formula $x=8$
+\begin_inset Formula $x^{3}=8$
 \end_inset
 
 , then x is prime.
@@ -1847,12 +1896,11 @@ If
 
 \begin_deeper
 \begin_layout Enumerate
-There are cases where 
 \begin_inset Formula $x=17$
 \end_inset
 
  or 
-\begin_inset Formula $x=8,$
+\begin_inset Formula $x^{3}=8,$
 \end_inset
 
 and 
@@ -1906,15 +1954,30 @@ If I am late, then I will not take the train to work.
 
 \begin_deeper
 \begin_layout Enumerate
-Converse: If I will not take the train to work, then I am late.
+Converse: If I do not take the train to work, then I am late.
+ 
+\begin_inset Formula $\left(q\to p\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Inverse: If I am not late, then I will take the train to work.
+ 
+\begin_inset Formula $\left(\sim p\to\sim q\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Contrapositive: If I will take the train to work, then I am not late.
+Contrapositive: If I take the train to work, then I am not late.
+ 
+\begin_inset Formula $\left(\sim q\to\sim p\right)$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1929,18 +1992,32 @@ If I have enough money, then I will buy a car and I will buy a house.
 
 \begin_deeper
 \begin_layout Enumerate
-Converse: If I will buy a car and I will buy a house, then I have enough
- money.
+Converse: If I will buy a car and a house, then I have enough money.
+ 
+\begin_inset Formula $\left(q\land r\right)\to p$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Inverse: If I do not have enough money, then I will not buy a car or I will
  not buy a house.
+ 
+\begin_inset Formula $\left(\sim p\to\sim\left(q\land r\right)\right)\equiv1\left(\sim p\to\sim q\lor\sim r\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Contrapositive: If I will not buy a car or I will not buy a house, then
- I do not have enough money.
+Contrapositive: If I do not buy a car or I will not buy a house, then I
+ do not have enough money.
+ 
+\begin_inset Formula $\left(\sim q\lor\sim r\to\sim p\right)$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2090,6 +2167,10 @@ Jim will fail his final examination only if he does not study hard.
 True
 \end_layout
 
+\begin_layout Enumerate
+Contrapositive of a if...then is always the same in truth tables
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Jim will fail his final examination unless he studied hard.
@@ -2214,14 +2295,8 @@ Thus, rewrite the following statement form without using
 
 \begin_inset Formula 
 \begin{align*}
- & \equiv\left(\sim p\lor\left(q\to r\right)\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
- & \equiv\left(\sim p\lor\sim q\lor r\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
+\left(p\to\left(q\to r\right)\right)\leftrightarrow\left(\left(p\land q\right)\to r\right) & \equiv\left(\sim p\lor\left(q\to r\right)\right)\leftrightarrow\left(\sim\left(p\land q\right)\lor r\right)\\
  & \equiv\left(\sim p\lor\sim q\lor r\right)\leftrightarrow\left(\sim p\lor\sim q\lor r\right)\\
- & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim\left(p\land q\right)\lor r\right)\land\sim\left(\sim\left(p\land q\right)\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\\
- & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\land\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\\
- & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor c\lor\left(\sim p\lor\sim q\lor r\right)\\
- & \equiv\sim\left(\sim p\lor\sim q\lor r\right)\lor\left(\sim p\lor\sim q\lor r\right)\lor c\\
- & \equiv t\lor c\\
  & \equiv t
 \end{align*}
 

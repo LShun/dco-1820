@@ -31,7 +31,7 @@
 - Implemented by HW, in computer NIC
 - Responsibilities:
   - Data encapsulation
-    - **Frame delimiting**: Identify group of bits that makes up a frame. Synchronize transmitting & receiving notes.
+    - **Frame delimiting**: Identify group of bits that makes up a frame. Synchronize transmitting & receiving nodes.
     - **Addressing**: Add MAC address to Ethernet header for delivery
     - **Error detection**: Add Cyclic Redundancy Check (CRC) trailer  of contents to Ethernet frame
   - Media access control
@@ -104,21 +104,13 @@
 
 ## MAC & IP
 
-### MAC Address
-
-- Address don't change
-- Similar to person's name (in a country that don't allow changing names) 
-- Known as physical address because physically assigned
-- Assigned by host NIC
-- Examined by switches
-
-### IP Address
-
-- Change depending on location
-- Similar to address of person
-- Known as logical address because assigned logically
-- Assigned by network admin
-- Examined by routers
+| MAC                        | Address     | IP                           |
+| -------------------------- | ----------- | ---------------------------- |
+| Don't change               | Mutability  | Change depending on location |
+| Names                      | Similar to  | House addresses              |
+| Physical address           | AKA         | Logical address              |
+| Host NIC                   | Assigned by | Network Admin                |
+| Layer 2 devices (Switches) | Examined by | Layer 3 devices (Routers)    |
 
 ## Intro to ARP
 

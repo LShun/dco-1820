@@ -326,9 +326,15 @@ M & =2.5
 Answer
 \begin_inset Formula 
 \begin{align*}
-M & =\frac{1}{a-0}\int_{0}^{a}xe^{-\frac{x}{a}}dx\\
- & =\frac{1}{a}\int_{0}^{a}xe^{-\frac{x}{a}}dx\\
- & =\frac{\left(e-2\right)a}{e}\\
+\int_{0}^{a}xe^{-\frac{x}{a}}dx & =\left[x\left(-ae^{-\frac{x}{a}}\right)-\int-ae^{-\frac{x}{a}}dx\right]_{0}^{a}\\
+ & =\left[-axe^{-\frac{x}{a}}+a\int e^{-\frac{x}{a}}dx\right]_{0}^{a}\\
+ & =\left[-axe^{-\frac{x}{a}}+a\left(-ae^{-\frac{x}{a}}\right)\right]_{0}^{a}\\
+ & =\left[-axe^{-\frac{x}{a}}-a^{2}e^{-\frac{x}{a}}\right]_{0}^{a}\\
+ & =-aae^{-\frac{a}{a}}-a^{2}e^{-\frac{a}{a}}-\left(-a^{2}e^{-\frac{0}{a}}\right)\\
+ & =-a^{2}e^{-1}-a^{2}e^{-1}+a^{2}e^{-0}\\
+ & =-2a^{2}e^{-1}+a^{2}\\
+\frac{1}{a}\int_{0}^{a}xe^{-\frac{x}{a}}dx & =a\left(\frac{-2+e}{e}\right)\\
+ & =\frac{-2a+ae}{e}\\
 M & =a-\frac{2a}{e}
 \end{align*}
 
@@ -337,6 +343,61 @@ M & =a-\frac{2a}{e}
 
 \end_layout
 
+\begin_layout Enumerate
+Partial fractions
+\begin_inset Formula 
+\begin{align*}
+u & =x\\
+v' & =e^{-\frac{x}{a}}dx\\
+du & =dx\\
+v & =\frac{1}{-\frac{1}{a}}e^{-\frac{x}{a}}\\
+ & =-ae^{-\frac{x}{a}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u-substitution$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int e^{-\frac{x}{a}}dx & =-a\int-ae^{-\frac{x}{a}}dx\\
+ & =-a\int e^{u}du\\
+ & =-a\int e^{u}du\\
+ & =-a\left(e^{u}\right)\\
+ & =-ae^{-\frac{x}{a}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $u=-\frac{x}{a}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =-\frac{1}{a}\\
+du & =-a^{-1}dx\\
+dx & =-adu
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
