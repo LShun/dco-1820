@@ -2325,7 +2325,7 @@ Critical rows:
 \begin_inset Formula $pqr$
 \end_inset
 
-, the rest of the rows can be ignored.
+ (the 8th row), the rest of the rows can be ignored.
 \end_layout
 
 \end_deeper
@@ -3116,6 +3116,7 @@ Critical rows:
 \end_inset
 
 .
+ 1st, 2nd, and 5th row.
  The rest can be ignored.
 \end_layout
 
@@ -3815,6 +3816,7 @@ Critical rows:
 \end_inset
 
 .
+ 2nd, 5th, and 6th row.
  The rest can be safely ignored.
 \end_layout
 
@@ -4707,7 +4709,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0
 \end_layout
 
@@ -4716,7 +4718,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0
 \end_layout
 
@@ -4772,7 +4774,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0
 \end_layout
 
@@ -4781,7 +4783,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 1
 \end_layout
 
@@ -4837,7 +4839,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 1
 \end_layout
 
@@ -4846,7 +4848,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0
 \end_layout
 
@@ -4902,7 +4904,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 1
 \end_layout
 
@@ -4911,7 +4913,7 @@ Output, S
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 1
 \end_layout
 

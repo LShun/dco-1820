@@ -1,0 +1,554 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Discrete Maths Mid-Term Tips
+\end_layout
+
+\begin_layout Section
+Disclaimer
+\end_layout
+
+\begin_layout Enumerate
+Teacher gave ZERO tips.
+ These ones below are those that will trip me in exams, so yea.
+\end_layout
+
+\begin_layout Section
+Chapter 1
+\end_layout
+
+\begin_layout Enumerate
+Symbols:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Negation: 
+\begin_inset Formula $\sim p$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note :
+\begin_inset Formula $\sim p$
+\end_inset
+
+ is NOT a compound statement
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conjunction: 
+\begin_inset Formula $\land$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Inclusive, 
+\begin_inset Formula $\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Exclusive, 
+\begin_inset Formula $\veebar$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\veebar q$
+\end_inset
+
+, 
+\begin_inset Formula $p\varoplus q,pXORq$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+NAND, 
+\begin_inset Formula $\vert$
+\end_inset
+
+, scheffer stroke
+\end_layout
+
+\begin_layout Enumerate
+NOR, 
+\begin_inset Formula $\downarrow$
+\end_inset
+
+, pierce arrow
+\end_layout
+
+\begin_layout Enumerate
+Logical equivalence:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\equiv Q$
+\end_inset
+
+ or 
+\begin_inset Formula $P\iff Q$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Tautalogy: 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Contradiction: 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Contingency: Not 
+\begin_inset Formula $t$
+\end_inset
+
+ or not 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Biconditional: 
+\begin_inset Formula $p\leftrightarrow q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $p$
+\end_inset
+
+, if and only if, 
+\begin_inset Formula $q$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ iff 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ is a necessary and sufficient condition for 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\to q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+if 
+\begin_inset Formula $p$
+\end_inset
+
+ then 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ is 
+\series bold
+sufficient
+\series default
+ for 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ is a 
+\series bold
+sufficient
+\series default
+ condition for 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ only if 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ is 
+\series bold
+necessary
+\series default
+ for 
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ is a 
+\series bold
+necessary
+\series default
+ condition for 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ if 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ unless 
+\begin_inset Formula $\sim p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sim p\lor q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Logically equivalent to its contrapositive ONLY.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Order of operations:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sim$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\land,\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\to,\leftrightarrow$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Duality
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $s^{d}:$
+\end_inset
+
+ Flip all 
+\begin_inset Formula $\land$
+\end_inset
+
+ and 
+\begin_inset Formula $\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $s\iff r$
+\end_inset
+
+, then 
+\begin_inset Formula $s^{d}\iff r^{d}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Disjunctive/Conjunctive (DNF/CNF) and 
+\series bold
+principle
+\series default
+ disjunctive/conjunctive (PDNF/PCNF)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Disjunctive: Sums-of-products
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Principle: Minterms OR Sum-of-product 
+\series bold
+canonical
+\series default
+ form
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conjunctive: Product-of-sums
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Principle: Maxterms OR Product-of-sums 
+\series bold
+canonical
+\series default
+ form
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Elementary sum/product: DNF/CNF with simple statements only (including negations
+)
+\end_layout
+
+\begin_layout Enumerate
+Tautalogy: No maxterms
+\end_layout
+
+\begin_layout Enumerate
+Contradiction: No minterms
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Arguments
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+All except last 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ statement are hypothesis.
+ The last one is conclusion.
+\end_layout
+
+\begin_layout Enumerate
+Valid iff 
+\begin_inset Formula $conclusion\to hypothesis$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Gates
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+AND, OR, NAND, NOR
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Never combine two input wires
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Recognizer
+\series default
+: 1 for one-and-only 1 combination
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

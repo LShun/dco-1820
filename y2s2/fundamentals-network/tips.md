@@ -54,4 +54,10 @@ Lower - MAC - 802.3
 
 ### C6 Hot Topic
 
-​	- 3rd bullet point
+	- 3rd bullet point
+
+
+
+## Wrong Stuff in FN Subnetting Answer
+
+Practical Subnetting 10
