@@ -95,9 +95,50 @@ Terms to describe
 \begin_inset Formula $\left\{ a_{n}\right\} $
 \end_inset
 
- (Problematic, ask teacher!)
+
 \end_layout
 
+\begin_layout Enumerate
+A set of numbers
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=2n,n=\left\{ 1,2,3,...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=1\left(2^{n-1}\right),N=\left\{ 1,2,3,...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=1\left(-1\right)^{n-1},N=\left\{ 1,2,3,...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n}{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\left(-1\right)^{n}\left(\frac{n+1}{3^{n}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Definition 3.2: Let 
 \begin_inset Formula $n=1,2,3$
@@ -776,7 +817,7 @@ Evaluate:
 \begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} $
 \end_inset
 
-
+ (Lecturer mention exam might come out)
 \begin_inset Formula 
 \begin{align*}
 \frac{n!}{n^{n}} & =\frac{n\left(n-1\right)\left(n-2\right)...3\cdot2\cdot1}{n\cdot n\cdot n...\cdot n}\\
@@ -1334,6 +1375,19 @@ divergent
 \end_deeper
 \begin_layout Subsubsection
 Example
+\end_layout
+
+\begin_layout Standard
+Determine if the following series converge or diverge.
+ If they converge give the value of the series.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}9^{-n+2}4$
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -116,7 +116,7 @@ $$
 
 - **Excess-N notation**: N is the chosen middle value. More = positive. Less = negative. N = 0
 
-  - For signs, 0 represent '+', negative is other than '0' (but usually we use the highest digit, say Excess-50 we will use '5')
+  - For signs, 0 represent '+', negative is other than '0' (but usually we use the highest digit, say Excess-50 we will use '50')
 
 ### Normalization & Formatting
 

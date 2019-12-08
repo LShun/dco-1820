@@ -131,7 +131,7 @@ List TWO(2) protocols (name in full) that are associated with Layer 2, 3, 4 and 
 | Layer of the OSI Model | Protocols                                                    |
 | ---------------------- | ------------------------------------------------------------ |
 | 7 (Application)        | Hypertext Transfer Protocol (HTTP)<br />Domain Name System (DNS)<br />Dynamic Host Configuration Protocol (DHCP)<br />Dynamic Host Configuration Protocol (DHCP)<br />File Transfer Protocol (FTP) |
-| 4 (Session)            | Transmission Control Protocol (TCP)<br />User Datagram Protocol (UDP) |
+| 4 (Transport)          | Transmission Control Protocol (TCP)<br />User Datagram Protocol (UDP) |
 | 3 (Network)            | Internet Protocol v4 (IPv4)<br />Internet Protocol v6 (IPv6)<br />Internet Control Message Protocol v4 (ICMPv4)<br />Internet Control Message Protocol v6 (ICMP v6) |
 | 2 (Data Link)          | Ethernet<br />Point to Point Protocol (PPP)<br />Frame Relay<br />Asynchronous Transfer Mode (ATM)<br />Wireless Local Area Network (WLAN) |
 

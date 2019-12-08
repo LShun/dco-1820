@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -222,7 +213,7 @@ Detect in signed or unsigned number?
 \begin_inset Text
 
 \begin_layout Plain Layout
-Signed numbers.
+Unsigned numbers.
 \end_layout
 
 \end_inset
@@ -231,7 +222,7 @@ Signed numbers.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Signed and unsigned numbers.
+Signed.
 \end_layout
 
 \end_inset
@@ -973,45 +964,12 @@ Negative * negative = positive.
 \end_layout
 
 \begin_layout Enumerate
-Convert to binary:
+Multiply mantissa part
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $10010101000100011$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $10100110111111000$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Multiply binary numbers together
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $110000100111100000101100011101000$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Convert back to decimal
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $6525311208$
+\begin_inset Formula $76323*86496=6,601,634,208$
 \end_inset
 
 
@@ -1024,7 +982,7 @@ Trim down to 5 digits
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $65253$
+\begin_inset Formula $66016$
 \end_inset
 
 
@@ -1036,7 +994,7 @@ Trim down to 5 digits
 \end_inset
 
  = 
-\begin_inset Formula $0.65253*10^{5}$
+\begin_inset Formula $0.66016*10^{5}$
 \end_inset
 
 
@@ -1570,7 +1528,7 @@ IEEE754 format
 
 \end_deeper
 \begin_layout Enumerate
- Given an IEEE754 single precision notation below, show how this notation
+Given an IEEE754 single precision notation below, show how this notation
  can be represented in a sign-magnitude notation.
  You are required to show your working steps.
  
@@ -1625,7 +1583,7 @@ Convert mantissa to decimal
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $0100\,1000=64+8=0.25+0.03125=0.28125$
+\begin_inset Formula $0100\,1000=1*2^{-2}+1*2^{-5}=0.25+0.03125=0.28125$
 \end_inset
 
 

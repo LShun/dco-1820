@@ -1,0 +1,2396 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 6
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\floor}[1]{\lfloor#1\rfloor}
+{\lfloor#1\rfloor}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determine each of the following real numbers is rational or irrational.
+ 
+\end_layout
+
+\begin_layout Enumerate
+3.9602
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rational
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{2}{5}-\frac{5}{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{12}{30}-\frac{25}{30}=-\frac{13}{30}=0.4\bar{3}$
+\end_inset
+
+, Rational
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+0.30303030 .
+ .
+ .
+ (where the digits 30 are assumed to repeat forever)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rational
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0.\overline{30}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Justify your answer to each of the following questions, for the integers
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $2m(2m+2)$
+\end_inset
+
+ divisible by 4?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $2m\left(2m+2\right)$
+\end_inset
+
+ is divisible by 4, then it should be a multiple of 4.
+\begin_inset Formula 
+\begin{align*}
+2m\left(2m+2\right) & =2m\cdot2\left(m+1\right)\\
+ & =4m\left(m+1\right)\\
+ & =4\left(m^{2}+m\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4\left(m^{2}+m\right)$
+\end_inset
+
+ is a multiple of 
+\begin_inset Formula $4$
+\end_inset
+
+, it is divisible by 4.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $m=4n+3$
+\end_inset
+
+, does 8 divides 
+\begin_inset Formula $m^{2}-1$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Substitute in
+\begin_inset Formula 
+\begin{align*}
+\left(4n+3\right)^{2}-1 & =16n^{2}+24n+9-1\\
+ & =16n^{2}+24n+8\\
+ & =8\left(2n^{2}+3n+1\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $8\left(2n^{2}+3n+1\right)$
+\end_inset
+
+ is a multiple of 
+\begin_inset Formula $8$
+\end_inset
+
+, 8 divides 
+\begin_inset Formula $m^{2}-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Does 24|6?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Logic
+\begin_inset Formula 
+\[
+24|6=\frac{6}{24}=\frac{1}{4}\notin\mathbb{Z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore24\cancel{\mid}6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is (3m + 1)(3m + 2)(3m + 3) divisible by 3?
+\begin_inset Formula 
+\[
+3\left(m+1\right)\left(3m+1\right)\left(3m+2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore(3m+1)(3m+2)(3m+3)$
+\end_inset
+
+ is divisible by 3.
+\end_layout
+
+\begin_layout Section
+Find integers 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=dq+r,0\le r<d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+n = 100, d = 10
+\begin_inset Formula 
+\[
+n=dq+r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+100=10q+r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=10,r=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+n = 9, d = 10
+\begin_inset Formula 
+\begin{align*}
+n & =dq+r\\
+9 & =10q+r
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=0,r=9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+n = -57, d = 5
+\begin_inset Formula 
+\begin{align*}
+n & =dq+r\\
+-57 & =5q+r\\
+q & =-12\\
+r & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Evaluate
+\end_layout
+
+\begin_layout Enumerate
+59 div 3, 
+\begin_inset Formula $59\mod3$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+59=3\left(19\right)+2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+59\text{div}3=q=19
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+59\mod3=r=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+45 div 6, 45 mod 6
+\begin_inset Formula 
+\[
+45=6\left(7\right)+3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+45\text{div}6=q=7
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+45\mod6=r=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+What are the floor and ceiling for the following values?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Floor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ceil
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{25}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $19.67$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{76}{12}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Use the floor notation to express
+\end_layout
+
+\begin_layout Enumerate
+589 div 12 and 589 mod 12.
+\begin_inset Formula 
+\begin{align*}
+589 & =12\left(49\right)+1\\
+589\text{div}12 & =q=49\\
+589\mod12 & =r=1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+589\div12 & =49.9033\\
+\floor{49.9033} & =49
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+123 div 5 and 123 mod 5.
+\begin_inset Formula 
+\begin{align*}
+123 & =5\left(24\right)+3\\
+123\text{div}5 & =q=24\\
+123\mod5 & =r=3\\
+123\div12 & =10.25\\
+\floor{10.25} & =10
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Write the following integers in standard factored form.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $702=13\cdot3^{3}\cdot2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $112385=19\cdot13^{2}\cdot7\cdot5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(20!)^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(20!\right) & =2^{18}*3^{8}*5^{4}*7^{2}*11*13*17*19\\
+\left(20!\right)^{2} & =2^{36}*3^{16}*5^{8}*7^{4}*11^{2}*13^{2}*17^{2}*19^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Prove the following statements by the method of direct proof.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Direct Proof: 
+\series default
+We use it to prove statements of the form ”if 
+\begin_inset Formula $p$
+\end_inset
+
+ then 
+\begin_inset Formula $q$
+\end_inset
+
+” or ”
+\begin_inset Formula $p$
+\end_inset
+
+ implies 
+\begin_inset Formula $q$
+\end_inset
+
+” which we can write as 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+.
+ The method of the proof is to takes an original statement 
+\begin_inset Formula $p$
+\end_inset
+
+, which we assume to be true, and use it to show directly that another statement
+ 
+\begin_inset Formula $q$
+\end_inset
+
+ is true.
+ So a direct proof has the following steps: 
+\end_layout
+
+\begin_layout Quote
+• Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Quote
+• Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_layout Quote
+• Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to deduce that another statement 
+\begin_inset Formula $q$
+\end_inset
+
+ is true, that is show 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is any odd integers, then 
+\begin_inset Formula $(-1)^{n}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $n$
+\end_inset
+
+ is any odd integers
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $(-1)^{n}=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $n$
+\end_inset
+
+ is any odd integer
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to deduce that another statement 
+\begin_inset Formula $q$
+\end_inset
+
+ is true, that is show 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Then by definition 
+\begin_inset Formula $n=2k+1$
+\end_inset
+
+ for some integer 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Proof
+\begin_inset Formula 
+\begin{align*}
+(-1)^{2k+1} & =(-1)^{2k}\cdot\left(-1\right)^{1}\\
+ & =-1\left(\left(-1\right)^{2}\right)^{k}\\
+ & =-1\left(1\right)^{k}\\
+(-1)^{2k+1} & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $(-1)^{2k+1}=-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $r$
+\end_inset
+
+ is any rational number, then 
+\begin_inset Formula $2r^{2}-r+1$
+\end_inset
+
+ is rational.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $r$
+\end_inset
+
+ is any rational number
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $2r^{2}-r+1$
+\end_inset
+
+ is rational
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $r$
+\end_inset
+
+ is a rational number.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to deduce that another statement 
+\begin_inset Formula $q$
+\end_inset
+
+ is true, that is show 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Then by definition 
+\begin_inset Formula $r=\frac{a}{b},a,b\in\mathbb{Z},b\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Proof
+\begin_inset Formula 
+\begin{align*}
+2r^{2}-r+1 & =2\left(\frac{a}{b}\right)^{2}-\left(\frac{a}{b}\right)+1\\
+ & =\frac{2a^{2}}{b^{2}}-\frac{a}{b}+1\\
+ & =\frac{2a^{2}-ab+b^{2}}{b^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $2a^{2}-ab+b^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $b^{2}$
+\end_inset
+
+ are integers, 
+\begin_inset Formula $2r^{2}-r+1$
+\end_inset
+
+ is rational (Extra note: whether improper or proper doesn't matter).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+For integers 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a|b$
+\end_inset
+
+, then 
+\begin_inset Formula $a|bc$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $a|b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $a|bc$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $a\vert b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to deduce that another statement 
+\begin_inset Formula $q$
+\end_inset
+
+ is true, that is show 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a\vert b$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{b}{a}=k$
+\end_inset
+
+, where 
+\begin_inset Formula $k$
+\end_inset
+
+ is an integer
+\end_layout
+
+\begin_layout Enumerate
+Proof
+\begin_inset Formula 
+\begin{align*}
+a|bc & =\frac{bc}{a}\\
+ & =kc
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $k$
+\end_inset
+
+ is an integer, and 
+\begin_inset Formula $c$
+\end_inset
+
+ is an integer.
+ Their product must be an integer.
+ Therefore, 
+\begin_inset Formula $a|bc$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Disprove the following statements.
+\end_layout
+
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $n$
+\end_inset
+
+, if 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime then 
+\begin_inset Formula $(-1)^{n}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $(-1)^{n}=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to find a counterexample, and disprove the
+ statement.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $(-1)^{n}=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $\left(-1\right)^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\neq-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the statement is disproven.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $m$
+\end_inset
+
+, if 
+\begin_inset Formula $m>2$
+\end_inset
+
+, then 
+\begin_inset Formula $m^{2}-4$
+\end_inset
+
+ is composite.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $m>2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $m^{2}-4$
+\end_inset
+
+ is composite (AKA not prime)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $m>2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to find a counterexample, and disprove the
+ statement.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $m=3$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3^{2}-4=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+But 
+\begin_inset Formula $5$
+\end_inset
+
+ is not a composite number, therefore, the statement is disproven
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are positive integers and 
+\begin_inset Formula $mn$
+\end_inset
+
+ is a perfect square, then 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are perfect square.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are positive integers and 
+\begin_inset Formula $mn$
+\end_inset
+
+ is a perfect square
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be the statement that 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are perfect square
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are positive integers and 
+\begin_inset Formula $mn$
+\end_inset
+
+ is a perfect square
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $p$
+\end_inset
+
+ and other facts as necessary to find a counterexample, and disprove the
+ statement.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $m=8,n=2$
+\end_inset
+
+, 
+\begin_inset Formula $mn=16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+16 is a perfect square 
+\begin_inset Formula $4*4$
+\end_inset
+
+, but 
+\begin_inset Formula $8$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ are not perfect square.
+\end_layout
+
+\begin_layout Enumerate
+The statement is disproven
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Prove the following statements by contradiction.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Prove by contradiction: 
+\series default
+Establish validity, by showing the opposite leads to a contradiction.
+\end_layout
+
+\begin_layout Quote
+1.
+ The proposition to be proved, 
+\begin_inset Formula $P$
+\end_inset
+
+, is assumed to be false.
+ That is, 
+\begin_inset Formula $\lnot P$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Quote
+2.
+ It is then shown that 
+\begin_inset Formula ${\displaystyle \lnot}P$
+\end_inset
+
+ implies two mutually contradictory assertions, 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+3.
+ Since 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+ cannot both be true, the assumption that 
+\begin_inset Formula $P$
+\end_inset
+
+ is false must be 
+\series bold
+wrong
+\series default
+, so 
+\begin_inset Formula $P$
+\end_inset
+
+ must be 
+\series bold
+true
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $n$
+\end_inset
+
+, if 
+\begin_inset Formula $n$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $n^{2}+n+1$
+\end_inset
+
+ is odd.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Contrapositive
+\series default
+: There exists integers 
+\begin_inset Formula $n$
+\end_inset
+
+, if 
+\begin_inset Formula $n$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $n^{2}+n+1$
+\end_inset
+
+ is not odd.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p:$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ is even
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q:$
+\end_inset
+
+ 
+\begin_inset Formula $n^{2}+n+1$
+\end_inset
+
+ is odd
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The proposition to be proved, 
+\begin_inset Formula $P$
+\end_inset
+
+, is assumed to be false.
+ That is, 
+\begin_inset Formula $\lnot P$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume 
+\begin_inset Formula $p$
+\end_inset
+
+ is false, therefore 
+\begin_inset Formula $n$
+\end_inset
+
+ is NOT even.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+It is then shown that 
+\begin_inset Formula ${\displaystyle \lnot}P$
+\end_inset
+
+ implies two mutually contradictory assertions, 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+According to definition, if 
+\begin_inset Formula $n$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $n=2k$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+ is an integer.
+\end_layout
+
+\begin_layout Enumerate
+Substitute inside
+\begin_inset Formula 
+\begin{align*}
+n^{2}+n+1 & =\left(2k\right)^{2}+2k+1\\
+ & =4k^{2}+2k+1\\
+ & =2\left(2k^{2}+k\right)+1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $m=2k^{2}+k$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n^{2}+n+1=2m+1\left(odd\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+ cannot both be true, the assumption that 
+\begin_inset Formula $P$
+\end_inset
+
+ is false must be 
+\series bold
+wrong
+\series default
+, so 
+\begin_inset Formula $P$
+\end_inset
+
+ must be 
+\series bold
+true
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the contradiction is false, the statement must be true.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The product of any nonzero rational number and any irrational number is
+ irrational.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Contrapositive
+\series default
+: The product of at least one non-zero rational number and at least one
+ irrational number is rational.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The proposition to be proved, 
+\begin_inset Formula $P$
+\end_inset
+
+, is assumed to be false.
+ That is, 
+\begin_inset Formula $\lnot P$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume 
+\begin_inset Formula $x$
+\end_inset
+
+ is an irrational number.
+ The product of 
+\begin_inset Formula $x$
+\end_inset
+
+ and a rational 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is a rational 
+\begin_inset Formula $\frac{c}{d}$
+\end_inset
+
+.
+ Where 
+\begin_inset Formula $a,b,c,d$
+\end_inset
+
+ are integers.
+ 
+\begin_inset Formula $a,b,d$
+\end_inset
+
+ cannot be 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+According to the statement, 
+\begin_inset Formula $x\cdot\frac{a}{b}=\frac{c}{d}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+It is then shown that 
+\begin_inset Formula ${\displaystyle \lnot}P$
+\end_inset
+
+ implies two mutually contradictory assertions, 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+By division
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{c}{d}\div\frac{a}{b}\\
+ & =\frac{c}{d}\cdot\frac{b}{a}\\
+ & =\frac{cb}{da}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since division are closed under multiplication, 
+\begin_inset Formula $cb$
+\end_inset
+
+, and 
+\begin_inset Formula $da$
+\end_inset
+
+ are integers.
+ Making 
+\begin_inset Formula $\frac{cb}{da}$
+\end_inset
+
+ a rational number by definition.
+\end_layout
+
+\begin_layout Enumerate
+This contradicts with the statement that 
+\begin_inset Formula $x$
+\end_inset
+
+ is an irrational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+ cannot both be true, the assumption that 
+\begin_inset Formula $P$
+\end_inset
+
+ is false must be 
+\series bold
+wrong
+\series default
+, so 
+\begin_inset Formula $P$
+\end_inset
+
+ must be 
+\series bold
+true
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the assumption of the contradiction is wrong, therefore, the product
+ of any nonzero rational number and any irrational number is irrational.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Prove the following statements by contraposition.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Proof by Contrapositive: 
+\series default
+Proof by contrapositive takes advantage of the logical equivalence between
+ "P implies Q" and "Not Q implies Not P".
+ For example, the assertion "If it is my car, then it is red" is equivalent
+ to "If that car is not red, then it is not mine".
+ So, to prove "If P, Then Q" by the method of contrapositive means to 
+\series bold
+prove "If Not Q, Then Not P"
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $a$
+\end_inset
+
+ does not divide the product of 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ does not divide 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Form the contrapositive of the given statement.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For all integers 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $c$
+\end_inset
+
+, if 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ divides the product of 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $\sim q$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that for all integers 
+\begin_inset Formula $a,b,c,$
+\end_inset
+
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $a|b=k$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\frac{b}{a}=k,k\in\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $\sim q$
+\end_inset
+
+ and other facts as necessary to deduce that another statement 
+\begin_inset Formula $\sim p$
+\end_inset
+
+ is true, that is show 
+\begin_inset Formula $\sim q\implies\sim p$
+\end_inset
+
+ is true.
+ Hence, we can deduce that 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is also true.
+\begin_inset Formula 
+\begin{align*}
+\frac{b}{a}\cdot c & =kc\\
+\frac{bc}{a} & =kc
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $c$
+\end_inset
+
+ is an integer, and by definition the product of 2 integers are integers.
+ Therefore, 
+\begin_inset Formula $a$
+\end_inset
+
+ divides the product of 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ 
+\series bold
+The statement is true.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+For all irrational number 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt{x}$
+\end_inset
+
+ is irrational.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Form the contrapositive of the given statement.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x$
+\end_inset
+
+ is an irrational number, then 
+\begin_inset Formula $\sqrt{x}$
+\end_inset
+
+ is irrational.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Contrapositive
+\series default
+: If 
+\begin_inset Formula $\sqrt{x}$
+\end_inset
+
+ is rational, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is an rational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume the statement 
+\begin_inset Formula $\sim q$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Assume that 
+\begin_inset Formula $\sqrt{x}$
+\end_inset
+
+ is rational.
+ This means that 
+\begin_inset Formula 
+\begin{align*}
+\sqrt{x} & =\frac{a}{b},\text{where}a,b\in\mathbb{Z},b\neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use what we know about 
+\begin_inset Formula $\sim q$
+\end_inset
+
+ and other facts as necessary to deduce that another statement 
+\begin_inset Formula $\sim p$
+\end_inset
+
+ is true, that is show 
+\begin_inset Formula $\sim q\implies\sim p$
+\end_inset
+
+ is true.
+ Hence, we can deduce that 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is also true.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=\frac{a^{2}}{n^{2}}\to\text{x is rational}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $x$
+\end_inset
+
+ is a rational number.
+ The contrapositive is true.
+ Hence, by law of logical equivalence, 
+\series bold
+the statement is true.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Use the Euclidean algorithm to find the greatest common divisor of the following
+ pair of integers.
+\end_layout
+
+\begin_layout Enumerate
+27 and 72
+\begin_inset Formula 
+\begin{align*}
+27 & =72\left(0\right)+27\\
+72 & =27\left(2\right)+18\\
+27 & =18\left(1\right)+9\\
+18 & =9\left(2\right)+0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gcd\left(9,0\right)=9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+3510 and 672
+\begin_inset Formula 
+\[
+gcd\left(3510,672\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3510 & =672\left(5\right)+150\\
+672 & =150\left(4\right)+72\\
+150 & =72\left(2\right)+6\\
+72 & =6\left(12\right)+0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $gcd\left(3510,672\right)=6$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Find the least common multiple for the above pair of integers.
+\end_layout
+
+\begin_layout Enumerate
+27 and 72
+\begin_inset Formula 
+\begin{align*}
+lcm\left(27,72\right) & =\frac{a\cdot b}{gcd\left(a,b\right)}\\
+ & =\frac{27\cdot72}{9}\\
+ & =216
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+3510 and 672
+\begin_inset Formula 
+\begin{align*}
+lcm\left(3510,672\right) & =\frac{a\cdot b}{gcd\left(a,b\right)}\\
+ & =\frac{3510\cdot672}{6}\\
+ & =393120
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
