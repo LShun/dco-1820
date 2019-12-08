@@ -649,6 +649,165 @@ in matrix form;
 Give the in-degree and out-degree of each vertex.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+In-degree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Out-degree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Find the domain, range, matrix, and, when 
@@ -682,6 +841,61 @@ Find the domain, range, matrix, and, when
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Dom\left(R\right):\left\{ 1,2,3,4,8\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Ran\left(R\right):\left\{ 1,2,3,4,8\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Matrix
+\begin_inset Formula 
+\[
+\begin{array}{c}
+1\\
+2\\
+3\\
+4\\
+8
+\end{array}\begin{bmatrix}1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Digraph
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t7/q7a-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $A=\left\{ 1,2,3,4,6\right\} =B$
 \end_inset
@@ -705,6 +919,61 @@ Find the domain, range, matrix, and, when
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Dom\left(R\right):\left\{ 1,2,3,4,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Ran\left(R\right):\left\{ 1,2,3,4,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Matrix
+\begin_inset Formula 
+\[
+\begin{array}{c}
+1\\
+2\\
+3\\
+4\\
+6
+\end{array}\begin{bmatrix}1 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0\\
+1 & 1 & 0 & 1 & 0\\
+1 & 1 & 1 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Digraph
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t7/q7b-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $A=\left\{ 1,3,5,7,9\right\} $
 \end_inset
@@ -728,6 +997,61 @@ Find the domain, range, matrix, and, when
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Dom\left(R\right):\left\{ 3,5,7,9\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Ran\left(R\right):\left\{ 2,4,6,8\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Matrix
+\begin_inset Formula 
+\[
+\begin{array}{c}
+1\\
+3\\
+5\\
+7\\
+9
+\end{array}\begin{bmatrix}0 & 0 & 0 & 0\\
+1 & 0 & 0 & 0\\
+1 & 1 & 0 & 0\\
+1 & 1 & 1 & 0\\
+1 & 1 & 1 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Digraph
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t7/q7c-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Let 
@@ -769,21 +1093,25 @@ Let
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $R\left(3\right)=\left\{ 1,3,6\right\} $
+\begin_inset Graphics
+	filename img/t7/q8-circle.png
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $R\left(6\right)=\left\{ 1,6\right\} $
+Domain: 
+\begin_inset Formula $-5\le x\le5$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $R\left(\left\{ 2,4,6\right\} \right)=\left\{ 1,2,3,4,6\right\} $
+Range: 
+\begin_inset Formula $-5\le y\le5$
 \end_inset
 
 
@@ -817,25 +1145,33 @@ Let
 
 .
  Find each of the following.
+\begin_inset Formula 
+\[
+R=\left\{ \left(1,1\right),\left(2,1\right),\left(3,1\right),\left(4,1\right),\left(6,1\right),\left(4,2\right),\left(6,2\right),\left(6,3\right)\right\} 
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $R\left(3\right)$
+\begin_inset Formula $R\left(3\right)=\left\{ 1,3\right\} $
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $R\left(6\right)$
+\begin_inset Formula $R\left(6\right)=\left\{ 1,2,3,6\right\} $
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $R\left(\left\{ 2,4,6\right\} \right)$
+\begin_inset Formula $R\left(\left\{ 2,4,6\right\} \right)=\left\{ 1,2,3,4,6\right\} $
 \end_inset
 
 
@@ -865,7 +1201,38 @@ Let
 \end_inset
 
 .
+\begin_inset Formula 
+\[
+R\left(B\times B\right)=\left\{ \left(2,3\right),\left(3,6\right)\right\} 
+\]
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Note: 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(1,4\right)$
+\end_inset
+
+ originate from a single point in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ So, to be more specific it would be 
+\begin_inset Formula $\left(1,\left(2,4\right)\right)$
+\end_inset
+
+, and hence excluded.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
