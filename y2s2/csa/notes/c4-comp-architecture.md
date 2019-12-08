@@ -35,11 +35,11 @@
 
 #### Three components
 
-- Arithmetic and Logic Unit (ALU)
+- **Arithmetic and Logic Unit (ALU)**
   - Arithmetic, Boolean logical calculations.
-- Control Unit (CU)
+- **Control Unit (CU)**
   - Decode instructions, control execution & data movement.
-- Interface Unit
+- **Interface Unit**
   - Move instruction and data between CPU and devices.
   - Interconnect CPU with other devices on motherboard.
 
@@ -73,10 +73,10 @@
 
 ### Communication Components (HW)
 
-- Communication channels
+- **Communication channels**
   - Provide connection between computers
   - E.g.: Wire cable, Fiber optic cable
-- Interface hardware
+- **Interface hardware**
   - Handle comm. between computer and comm. channel
   - Modem/NIC
 
@@ -151,8 +151,8 @@
 - Major components:
   - ALU - calculations, comparisons, logic operations.
   - CU - Directs and coordinate operations in computer.
-    - Memory management unit: Manage & fetch data from memory.
-    - I/O interface: Combined with Mem.M.U. to form Bus Interface Unit
+    - **Memory management unit**: Manage & fetch data from memory.
+    - **I/O interface**: Combined with Mem.M.U. to form Bus Interface Unit
   - Registers
 
 ## 5. Concept of Registers
@@ -201,13 +201,13 @@
 
 ![memory cell](img/c4/memory-cell.png)
 
-| Read Operation                        | Write Operation             |
-| ------------------------------------- | --------------------------- |
-| CPU copy address to MAR.              | SAME                        |
-| CPU set R/W switch to `ON`            | CPU set R/W switch to `OFF` |
-| CPU set activation line `ON`          | SAME                        |
-| Data: Memory Location -> MDR register | Data transfer               |
-| Data: MDR register -> Register        |                             |
+| Read Operation                        | Write Operation               |
+| ------------------------------------- | ----------------------------- |
+| CPU copy address to MAR.              | SAME                          |
+| CPU set R/W switch to `ON/1`          | CPU set R/W switch to `OFF`/0 |
+| CPU set activation line `ON`          | SAME                          |
+| Data: Memory Location -> MDR register | Data transfer                 |
+| Data: MDR register -> Register        |                               |
 
 ### RAM - Random Access Memory
 
@@ -244,30 +244,45 @@
 ### Fetch Phase
 
 - **Fetch**: Get instruction from memory
-  - Copy: contents of Program Counter (PC) -> MAR
-  - Copy: MDR -> IR (Instruction Register)
 - **Decode:** Translate to computer commands
 
 ### Execute Phase
 
 - **Execute**: Execute computer commands
-  - LOAD:
-    - Copy IR address -> MAR
-    - Copy MDR content -> GP register
-    - Increment PC
 - **Store:** Write results to memory.
-  - PC -> MAR
-  - MDR (value) -> IR
-  - IR [result address] -> MAR
-  - Accumulator (A) -> MDR
-  - PC + 1 -> PC
+- **ADD/MUL/DIV/SUB**: Arithmetic
 
-- **ADD** (Extra example)
-  - PC -> MAR
-  - MDR -> IR
-  - IR [address] -> MAR
-  - A + MDR -> A
-  - PC + 1 -> PC
+### Table for reference
+
+- Note, all instructions must start with `FETCH` instructions first. If question ask for `LOAD`  means write `FETCH` contents first, then `LOAD` contents
+
+<table class="tg">
+  <tr>
+    <th class="tg-7btt" colspan="3"><center>FETCH</center></th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3"><center>PC -&gt; MAR</center></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3"><center>MDR -&gt; IR</center></td>
+  </tr>
+  <tr>
+      <td class="tg-7btt"><center><strong>LOAD</strong></center></td>
+    <td class="tg-7btt"><center><strong>STORE</strong></center></td></td>
+    <td class="tg-7btt"><center><strong>ADD/MUL/DIV/SUB</strong></center></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3"><center>IR[Address] -&gt; MAR</center></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"><center>MDR -&gt; A</center></td>
+    <td class="tg-0pky"><center>A -&gt; MDR</center></td>
+    <td class="tg-0pky"><center>A +*/ MDR -&gt; A</center></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" colspan="3"><center>PC + 1 -&gt; PC</center></td>
+  </tr>
+</table>
 
 ## 8. CISC & RISC architecture
 

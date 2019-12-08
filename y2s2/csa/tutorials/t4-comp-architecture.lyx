@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -879,7 +870,7 @@ Result
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A+MDR\to A$
+\begin_inset Formula $A\cdot MDR\to A$
 \end_inset
 
 
