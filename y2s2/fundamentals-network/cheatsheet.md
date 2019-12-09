@@ -31,6 +31,7 @@ exit
 ### Subnet (in Router)
 
 - `ip address [START, exclude network] [Subnet Mask]`
+- Subnet mask, say, `/28`  is `1111 0000` = `X.X.X.240`
 
 ### IPv6
 
@@ -55,7 +56,7 @@ ex
 
 - For link local: `ipv6 address FE80::1 link-local`
 
-#### ServersL Conf IPv6
+#### Servers Conf IPv6
 
 - Use Desktop > IP Config
 

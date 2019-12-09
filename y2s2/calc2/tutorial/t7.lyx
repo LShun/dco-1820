@@ -5,15 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-\makeatletter
-\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
-  \linewidth
-\else
-  \Gin@nat@width
-\fi}
-\makeatother
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -115,13 +106,13 @@ a_{n}=\left(-1\right)^{n},n=1,2,3...
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\left\{ 1,-\frac{1}{4},\frac{1}{9},-\frac{1}{16},\frac{1}{26},...\right\} $
+\begin_inset Formula $\left\{ 1,-\frac{1}{4},\frac{1}{9},-\frac{1}{16},\frac{1}{25},...\right\} $
 \end_inset
 
 
 \begin_inset Formula 
 \[
-a_{n}=
+a_{n}=\frac{\left(-1\right)}{n^{2}},n=1,2,3,...
 \]
 
 \end_inset
@@ -146,7 +137,7 @@ r & =\frac{-\frac{2}{3}}{1}\\
 \begin_inset Formula 
 \begin{align*}
 a_{n} & =ar^{n-1}\\
-\boldsymbol{a_{n}} & \boldsymbol{=1\left(-\frac{2}{3}\right)^{n-1},n=1,2,3...}
+\boldsymbol{a_{n}} & \boldsymbol{=\left(-\frac{2}{3}\right)^{n-1},n=1,2,3...}
 \end{align*}
 
 \end_inset
@@ -180,7 +171,7 @@ d & =7-2\\
 \begin{align*}
 a_{n} & =2+\left(n-1\right)5\\
  & =2+5n-5\\
-a_{n} & =5n-3,n=1,2,3...
+\boldsymbol{a_{n}} & \boldsymbol{=5n-3,n=1,2,3...}
 \end{align*}
 
 \end_inset
@@ -201,6 +192,14 @@ a_{n}=\sqrt{n},n=0,1,2....
 \end_inset
 
 
+\begin_inset Formula 
+\[
+a_{n}=\sqrt{n-1}=n=1,2,3,...
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -210,7 +209,7 @@ a_{n}=\sqrt{n},n=0,1,2....
 
 \begin_inset Formula 
 \[
-a_{n}=\left(\frac{2}{5}\right)^{n},n=1,2,3,...
+a_{n}=\frac{2n}{5^{n}},n=1,2,3,...
 \]
 
 \end_inset
@@ -225,7 +224,7 @@ a_{n}=\left(\frac{2}{5}\right)^{n},n=1,2,3,...
 
 \begin_inset Formula 
 \[
-a_{n}=\frac{1+n}{2}e^{n},n=0,1,2...
+a_{n}=\frac{n}{2}e^{n-1},n=1,2,3,...
 \]
 
 \end_inset
@@ -240,7 +239,7 @@ a_{n}=\frac{1+n}{2}e^{n},n=0,1,2...
 
 \begin_inset Formula 
 \[
-a_{n}=\frac{\left(-1\right)^{n}\cdot\left(n\right)^{3}}{n+3},n=1,2,....
+a_{n}=\frac{\left(-1\right)^{n}\cdot\left(n\right)^{3}}{n+2},n=1,2,....
 \]
 
 \end_inset
@@ -318,6 +317,19 @@ a_{n} & =3
 
 \begin_deeper
 \begin_layout Enumerate
+Proof
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}n\left(n-1\right) & =\infty\cdot\infty\\
+ & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 Diverges
 \end_layout
 
@@ -391,7 +403,38 @@ Diverges
 
 \begin_deeper
 \begin_layout Enumerate
-Diverges
+Proof (Squeeze theorem)
+\begin_inset Formula 
+\begin{align*}
+-1 & \le\sin n\le1\\
+0 & \le\sin^{2}n\le1\\
+0 & \le\frac{\sin^{2}n}{2^{n}}\le\frac{1}{2^{n}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\frac{\sin^{2}n}{2^{n}}\le\lim_{n\to\infty}\frac{1}{2^{n}}\\
+0 & \le\lim_{n\to\infty}\frac{\sin^{2}n}{2^{n}}\le0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{\sin^{2}n}{2^{n}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convergent
 \end_layout
 
 \end_deeper
@@ -404,7 +447,18 @@ Diverges
 
 \begin_deeper
 \begin_layout Enumerate
-Diverges
+Proof
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =2+\cos\left(n\pi\right)\\
+ & =2+\left\{ \cos\pi,\cos2\pi,\cos3\pi,...\right\} \\
+ & =\left\{ 1,3,1,3,1,3,...\right\} \\
+ & =diverges
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -441,7 +495,21 @@ a_{n} & =0
 
 \begin_deeper
 \begin_layout Enumerate
-D
+Proof
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =\frac{\left(n+2\right)\left(n+1\right)\cancel{\left(n\right)\left(n-1\right)!}}{\cancel{n\left(n-1\right)!}}\\
+ & =\left(n+2\right)\left(n+1\right)\\
+ & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diverges
 \end_layout
 
 \end_deeper
@@ -461,11 +529,31 @@ Determine if the following sequences are monotonic and/or bounded.
 
 \begin_deeper
 \begin_layout Enumerate
-Monotonic
+Monotonic (decreasing)
 \end_layout
 
 \begin_layout Enumerate
-Bounded.
+Bounded above
+\begin_inset Formula 
+\[
+UB=\frac{1}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Bounded below
+\begin_inset Formula 
+\[
+LB=0
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -478,11 +566,11 @@ Bounded.
 
 \begin_deeper
 \begin_layout Enumerate
-Monotonic
+Not monotonic
 \end_layout
 
 \begin_layout Enumerate
-Bounded.
+Not bounded
 \end_layout
 
 \end_deeper
@@ -495,6 +583,18 @@ Bounded.
 
 \begin_deeper
 \begin_layout Enumerate
+Proof
+\begin_inset Formula 
+\[
+\left\{ \cos\frac{\pi}{2},\cos\pi,\cos\frac{3\pi}{2},...\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 Not monotonic
 \end_layout
 
@@ -502,6 +602,22 @@ Not monotonic
 Bounded
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $UB=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $LB=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $a_{n}=-n^{2}$
@@ -513,15 +629,40 @@ Bounded
 \begin_deeper
 \begin_layout Enumerate
 Monotonic
+\begin_inset Formula 
+\[
+\left\{ -1,-4,-9,-16,...\right\} 
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Bounded
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $UB=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $a_{n}=\left(-1\right)^{n-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ 1,-1,1,-1,...\right\} 
+\]
+
 \end_inset
 
 
@@ -536,9 +677,33 @@ Not monotonic
 Bounded
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $UB=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $LB=-1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $a_{n}=\frac{2}{n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ 2,\frac{2}{4},\frac{2}{9},...\right\} 
+\]
+
 \end_inset
 
 
@@ -553,6 +718,22 @@ Monotonic
 Bounded
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $UB=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $LB=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_deeper
 \end_body

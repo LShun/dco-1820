@@ -772,7 +772,7 @@ Result
 \begin_inset Text
 
 \begin_layout Plain Layout
-151 (MUL)
+151 (ADD)
 \end_layout
 
 \end_inset
@@ -870,7 +870,7 @@ Result
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A\cdot MDR\to A$
+\begin_inset Formula $A+MDR\to A$
 \end_inset
 
 
@@ -882,7 +882,7 @@ Result
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A=23_{16}\cdot5_{16}=430$
+\begin_inset Formula $A=422+8=430$
 \end_inset
 
 
@@ -911,7 +911,7 @@ Result
 \begin_inset Formula $PC=22$
 \end_inset
 
-
+ 
 \end_layout
 
 \end_inset
@@ -2079,7 +2079,7 @@ Calculation
 
 \begin_deeper
 \begin_layout Enumerate
-MDR -> A
+A + MDR -> A
 \end_layout
 
 \begin_layout Enumerate
