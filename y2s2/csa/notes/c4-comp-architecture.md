@@ -89,7 +89,7 @@
 ## 3. Buses
 
 - Physical connection to transfer data INSIDE computer system.
-  - Peripherials <-> CPU
+  - Peripherals <-> CPU
   - CPU <-> Memory
   - Different points within CPU
 - Electrical conductors called "line", named, and carries computer signal.
@@ -152,7 +152,7 @@
   - ALU - calculations, comparisons, logic operations.
   - CU - Directs and coordinate operations in computer.
     - **Memory management unit**: Manage & fetch data from memory.
-    - **I/O interface**: Combined with Mem.M.U. to form Bus Interface Unit
+    - **I/O interface**: Combined with Mem. M.U. to form Bus Interface Unit
   - Registers
 
 ## 5. Concept of Registers
@@ -175,10 +175,10 @@
 
 - Found in CU
 - Examples
-  - Program counter register (PC) - holds next instruction for execution
-  - Instruction register (IR) - hold current instruction
-  - Memory address register (MAR) - hold address of memory location
-  - Memory data register (MDR) - hold data being retrieved/stored by MAR.
+  - **Program counter register (PC)** - holds next instruction for execution
+  - **Instruction register (IR)** - hold current instruction
+  - **Memory address register (MAR)** - hold address of memory location
+  - **Memory data register (MDR)** - hold data being retrieved/stored by MAR
 
 #### Flag registers
 

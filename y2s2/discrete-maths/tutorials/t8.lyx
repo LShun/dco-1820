@@ -1,0 +1,1006 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 8
+\end_layout
+
+\begin_layout Enumerate
+Let R be the relation whose digraph is given as follow:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/t8/t8q1-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+List all paths of length 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R^{1}=\left\{ \left(a,c\right),\left(a,b\right),\left(b,b\right),\left(b,f\right),\left(c,e\right),\left(c,d\right),\left(d,c\right),\left(d,b\right),\left(e,f\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+List all paths of length 3 starting from vertex 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R^{3}=\left\{ \left(a,b\right),\left(a,f\right),\left(a,d\right),\left(a,e\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find a cycle starting at vertex 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ 
+\series bold
+(DOUBLE CONFIRM)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ d,c,d\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Determine whether the given relation on 
+\begin_inset Formula $A=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+ is reflexive, irreflexive, symmetric, asymmetric, antisymmetric, or transitive.
+ Explain your answers
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ (1,1),(1,2),(2,1),(2,2),(3,3),(3,4),(4,3),(4,4)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Matrix-style
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 1 & 0 & 0\\
+1 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 0 & 1 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+, matrix have all 1's on its main diagonal.
+\end_layout
+
+\begin_layout Enumerate
+Not 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+.
+ In the matrix, if 
+\begin_inset Formula $m_{ij}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $m_{ji}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+.
+ In the matrix, 
+\begin_inset Formula $\left(M_{R}\right)_{\bigodot}^{2}=M_{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M_{R}\bigodot M_{R} & =\begin{bmatrix}1 & 1 & 0 & 0\\
+1 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 0 & 1 & 1
+\end{bmatrix}\cdot\begin{bmatrix}1 & 1 & 0 & 0\\
+1 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 0 & 1 & 1
+\end{bmatrix}\\
+ & =\begin{bmatrix}2 & 2 & 0 & 0\\
+2 & 2 & 0 & 0\\
+0 & 0 & 2 & 2\\
+0 & 0 & 2 & 2
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ (1,3),(1,1),(3,1),(1,2),(3,3),(4,4)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Digraph-style
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/t8/t8q2b-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Irreflexive.
+ 
+\begin_inset Formula $\left(4,4\right)\notin R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Not symmetric.
+ 
+\begin_inset Formula $\left(1,4\right)\in R$
+\end_inset
+
+ but 
+\begin_inset Formula $\left(4,1\right)\notin R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not asymmetric.
+ 
+\begin_inset Formula $\left(1,3\right)\in R$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(3,1\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not antisymmetric.
+ 
+\begin_inset Formula $\left(1,3\right),\left(3,1\right)\in R$
+\end_inset
+
+, but 
+\begin_inset Formula $3\neq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not reflexive.
+ 
+\begin_inset Formula $\left(1,4\right),\left(4,2\right)\in R$
+\end_inset
+
+ but 
+\begin_inset Formula $\left(1,2\right)\notin R$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\varnothing$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Tikam style
+\end_layout
+
+\begin_layout Enumerate
+Reflexive, symmetric, antisymmetric, transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ (1,2),(1,3),(3,1),(1,1),(3,3),(3,2),(1,4),(4,2),(3,4)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Tikam style version 2
+\end_layout
+
+\begin_layout Enumerate
+Irreflexive.
+ 
+\begin_inset Formula $\left(2,2\right)\notin R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not symmetric.
+ 
+\begin_inset Formula $\left(1,2\right)\in R$
+\end_inset
+
+ but 
+\begin_inset Formula $\left(2,1\right)\notin R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Not asymmetric.
+ 
+\begin_inset Formula $\left(1,3\right)\in R$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(3,1\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not antisymmetric.
+ 
+\begin_inset Formula $\left(1,3\right)\in R$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(3,1\right)\in R$
+\end_inset
+
+ but 
+\begin_inset Formula $1\neq3$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ w,x,y,z\right\} $
+\end_inset
+
+.
+ Determine whether the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ whose matrix 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ is given below is reflexive, irreflexive, symmetric, asymmetric, antisymmetric,
+ or transitive.
+ Explain your answers
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\series bold
+Determining transitivity through matrix multiplication
+\series default
+: Basically, the original 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+ tells you about the number of 
+\begin_inset Formula $1-step$
+\end_inset
+
+ paths from 
+\begin_inset Formula $x$
+\end_inset
+
+ to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ By multiplying each row of 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+ by each column of 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+, you will find how many 2-step paths there are.
+ So say you multiply 1st row times first column, you'll get the 2-step paths
+ for 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ (note: 
+\begin_inset Formula $\left(row,column\right)$
+\end_inset
+
+).
+ For a matrix to be transitive, all elements with a 
+\begin_inset Formula $1-step$
+\end_inset
+
+ path must also have a 
+\begin_inset Formula $2-step$
+\end_inset
+
+ path.
+ Note: Since we only care about 
+\begin_inset Quotes eld
+\end_inset
+
+presence
+\begin_inset Quotes erd
+\end_inset
+
+ of links, not 
+\begin_inset Quotes eld
+\end_inset
+
+how many
+\begin_inset Quotes erd
+\end_inset
+
+, its safe to just write '1' if there is to speed up calculation.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{bmatrix}0 & 1 & 0 & 1\\
+1 & 0 & 1 & 1\\
+0 & 1 & 0 & 0\\
+1 & 1 & 0 & 0
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Irreflexive
+\series default
+.
+ The main diagonal are all 
+\begin_inset Formula $0$
+\end_inset
+
+'s.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric.
+ 
+\series default
+If 
+\begin_inset Formula $m_{ij}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $m_{ji}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not asymmetric.
+ 
+\series default
+
+\begin_inset Formula $m_{12}=m_{21}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not antisymmetric.
+
+\series default
+ 
+\begin_inset Formula $m_{12}=m_{21}=1$
+\end_inset
+
+ but 
+\begin_inset Formula $1\neq2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not Transitive.
+\begin_inset Formula 
+\begin{align*}
+\left(M_{R}\right)_{\bigodot}^{2} & =\begin{bmatrix}0 & 1 & 0 & 1\\
+1 & 0 & 1 & 1\\
+0 & 1 & 0 & 0\\
+1 & 1 & 0 & 0
+\end{bmatrix}\cdot\begin{bmatrix}0 & 1 & 0 & 1\\
+1 & 0 & 1 & 1\\
+0 & 1 & 0 & 0\\
+1 & 1 & 0 & 0
+\end{bmatrix}\\
+ & =\begin{bmatrix}2 & 1 & 1 & 1\\
+1 & 3 & 0 & 1\\
+0 & 0 & 1 & 1\\
+1 & 1 & 1 & 2
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $M_{R}_{23}=1$
+\end_inset
+
+ 
+\series default
+but 
+\begin_inset Formula $M_{R_{32}}=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{bmatrix}0 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Not reflexive, not irreflexive.
+ 
+\begin_inset Formula $M_{00}=0$
+\end_inset
+
+, 
+\series default
+but
+\series bold
+ 
+\begin_inset Formula $M_{33}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not symmetric, not asymmetric.
+ 
+\series default
+
+\begin_inset Formula $M_{10}=1,$
+\end_inset
+
+but 
+\begin_inset Formula $M_{01}=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M_{32}=1,M_{23}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not antisymmetric.
+ 
+\series default
+
+\begin_inset Formula $M_{32}=1,M_{23}=1$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $2\neq3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not transitive.
+ 
+\series default
+
+\begin_inset Formula 
+\begin{align*}
+\left(M_{R}\right)_{\odot}^{2} & =\begin{bmatrix}0 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1
+\end{bmatrix}\cdot\begin{bmatrix}0 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1
+\end{bmatrix}\\
+ & =\begin{bmatrix}0 & 0 & 1 & 1\\
+0 & 1 & 1 & 1\\
+0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\left(M_{R}\right)_{21}=1$
+\end_inset
+
+ but 
+\begin_inset Formula $\left(M_{R}\right)_{21}^{2}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+.
+ Determine whether the relation R whose digraph is given below is reflexive,
+ irreflexive, symmetric, asymmetric, antisymmetric, or transitive.
+ Explain your answers.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t8/t8q4a-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Not reflexive.
+
+\series default
+ 
+\begin_inset Formula $\left(2,2\right)\notin R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not irreflexive.
+
+\series default
+ 
+\begin_inset Formula $\left(1,1\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not symmetric.
+
+\series default
+ 
+\begin_inset Formula $\left(2,3\right)\in R$
+\end_inset
+
+, but 
+\begin_inset Formula $\left(3,2\right)\notin R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Antisymmetric.
+ 
+\series default
+For all 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, if 
+\begin_inset Formula $aRb$
+\end_inset
+
+ then 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive.
+ 
+\series default
+For all 
+\begin_inset Formula $\left(a,b,c\right)$
+\end_inset
+
+, if 
+\begin_inset Formula $aRc$
+\end_inset
+
+, then 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t8/t8q4b-digraph.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ a,b,c\right\} $
+\end_inset
+
+.
+ Determine whether the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ whose matrix 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ is given is an equivalence relation.
+ If yes, find 
+\begin_inset Formula $A/R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{bmatrix}1 & 0 & 0\\
+0 & 1 & 1\\
+0 & 1 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{bmatrix}1 & 0 & 1\\
+0 & 1 & 1\\
+1 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine whether the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ whose digraph is given as below is an equivalence relation.
+ If yes, find 
+\begin_inset Formula $A/R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t8/t8q6a-digraph.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t8/t8q6b-digraph.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine whether the following relation R on the set A is an equivalence
+ relation.
+ If yes, find 
+\begin_inset Formula $A/R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ a,b,c,d\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $R=\left\{ (a,a),(a,b),(b,a),(b,b),(c,c),(c,d),(d,c),(d,d)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+,
+\begin_inset Formula $R=\left\{ (1,1),(1,2),(2,1),(2,2),(3,1),(3,3),(1,3),(4,1),(4,4)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 2,3,5,6,8\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $xRy$
+\end_inset
+
+ iff 
+\begin_inset Formula $3|(x–y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $xRy\iff x=y\left(\mod2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -42,7 +42,7 @@
 
 - Cannot add 2 constants (20H, 30H)
 - Cannot add different size (AH & 0123H)
-- Cannot missing operands (JMP without operands)
+- Cannot have missing operands (JMP without operands)
 - Cannot set value of CS & IP registers (MOV CS,BX)
 
 ## 2. Machine Language Instructions
