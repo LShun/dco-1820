@@ -84,16 +84,19 @@
 
 ### Commands
 
-| Command           | Purpose                                                      | Examples           |
-| ----------------- | ------------------------------------------------------------ | ------------------ |
-| `A` - Assemble    | Symbolic code :arrow_right: Machine code                     | `A 100`            |
-| `U` - Un-assemble | Machine code (in memory) :arrow_right: Symbolic Code         | `U 100, 107`       |
-| `D` - Dump        | Machine code  (in memory):arrow_right: Hex code              | `D CS:100`         |
-| `E` - Enter       | Enter data :arrow_right: memory starting from specific location | `E CS:100 A1 ....` |
-| `H` - Hex         | Perform hex arithmetic.                                      | `H ABC0 0FFF`      |
-| `Q` - Quit        | Quit `DEBUG` session                                         |                    |
-| `R` - register    | Display content of one/multiple registers                    |                    |
-| `T` - trace       | Trace execution of one instruction                           |                    |
+| Command         | Purpose                                       | Format / E.g.                                | Output                                                    |
+| --------------- | --------------------------------------------- | -------------------------------------------- | --------------------------------------------------------- |
+| **A**ssemble    | Convert symbolic code to object code          | `A [address]`                                | Object codes. (Not shown.)                                |
+| **C**ompare     | Compare 2 groups of content in memory segment | `C startAddress endAddress compStartAddress` | Segment:offset addresses & content of the selected groups |
+| **D**isassemble | Display the content of memory segment         | `D [range]`                                  | Segment:offset addresses, object codes & ASCII codes      |
+| **E**nter       | Enter the object to memory segment            | `E CS:100 8B`                                | Not shown. Use **D** command to confirm entered.          |
+| **F**ill        | Fill in a group of ASCII  code repeatedly     | `F range list`                               | Not shown. Use **D** command to confirm filled in.        |
+| **H**ex         | Perform hexadecimal computation               | `H value1 value2`                            | Result of addition and subtraction                        |
+| **P**roceed     | Proceed to execute a group of instruction     | `P [=address] [number]`                      | Changes of registers & next instruction                   |
+| **Q**uit        | Quit the DEBUG program                        | `-Q`                                         | Back to root directory                                    |
+| **R**etrieve    | Retrieve / edit the content of register(s)    | `R [register]`                               | Content of register(s)                                    |
+| **T**race       | Trace the execution of instruction 1 by 1     | `-T`                                         | Changes of registers & next instruction                   |
+| **U**nassemble  | Convert object code to symbolic code          | `U [range]`                                  | Segment:offset address, symbolic codes & object codes     |
 
 #### Peculiarities
 
@@ -155,4 +158,4 @@ Find physical address of CS:IP
 
 ##### Result
 
-- `BBBF	9BC1`. First is sum (N1+N2), second is difference (N1-N2).
+- `BBBF 9BC1`. First is sum (N1+N2), second is difference (N1-N2).

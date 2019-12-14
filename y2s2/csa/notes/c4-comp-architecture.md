@@ -303,7 +303,7 @@ CPU architecture is defined by characteristics & features, such as:
 
 #### Drawbacks
 
-- **Simple instruction**: More steps to complete
+- **More steps to complete simple instruction**: More steps to complete
 
 ### RISC - Reduced Instruction Set Computer
 
