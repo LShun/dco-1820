@@ -164,7 +164,17 @@ line vty 0 15
   - `show ip interface brief`
   - `show running-config`
 
-- 
+- Show statistics for interface
+
+  - `show interface [interfaceName]`
+
+- Show routing table contents
+
+  - `show ip route`
+
+- Check subnet mask
+
+  - `show run`, ` show interfaces`, `show ip protocols`
 
 ## SPA
 

@@ -1,0 +1,1906 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 8
+\end_layout
+
+\begin_layout Enumerate
+Determine whether the series is convergent or divergent.
+ If it is convergent, find its sum: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1+0.4+0.16+0.064…$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T_{n}=0.4^{n},n=0,1,2,3...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $r=0.4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The series is convergent
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\frac{a}{1-r}\\
+ & =\frac{1}{1-0.4}\\
+S_{\infty} & =\frac{5}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $5-\frac{10}{3}+\frac{20}{9}-\frac{40}{27}...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculations
+\begin_inset Formula 
+\begin{align*}
+r_{1} & =\frac{-\frac{10}{3}}{5}\\
+ & =-\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+r_{2} & =\frac{\frac{20}{9}}{-\frac{10}{3}}\\
+ & =\text{−}\frac{2}{3}\text{​}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a=5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r=-\frac{2}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convergent, 
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\frac{a}{1-r}\\
+ & =\frac{5}{1-\left(-\frac{2}{3}\right)}\\
+S_{\infty} & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}3\left(\frac{1}{2}\right)^{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Convergent
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sum
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\frac{3}{1-\frac{1}{2}}\\
+S_{\infty} & =6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-6\right)^{n-1}}{5^{n-1}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(-6\right)^{n-1}}{5^{n-1}} & =\left(-\frac{6}{5}\right)^{n-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n^{\infty}=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Divergent
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}8^{-n}3^{n+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}\frac{3^{n+1}}{8^{n}} & =\sum_{n=1}^{\infty}3\cdot\frac{3^{n}}{8^{n}}\\
+ & =\sum_{n=1}^{\infty}3\cdot\left(\frac{3}{8}\right)^{n}\\
+ & =\sum_{n=1}^{\infty}3\cdot\left(\frac{3}{8}\right)\cdot\left(\frac{3}{8}\right)^{n-1}\\
+ & =\sum_{n=1}^{\infty}\frac{9}{8}\left(\frac{3}{8}\right)^{n-1}\\
+ & =\sum_{n=1}^{\infty}\frac{9}{8}\left(\frac{3}{8}\right)^{n-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a=\frac{9}{8},r=\frac{3}{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convergent, sum:
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\frac{a}{1-r}\\
+ & =\frac{\frac{9}{8}}{1-\frac{3}{8}}\\
+ & =\frac{9}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{2}{n^{2}+4n+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the comparison test
+\begin_inset Formula 
+\[
+n^{2}+4n+3>n^{2}+4n>n^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{2}{n^{2}+4n+3}<\frac{2}{n^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+2
+\begin_inset Formula $\sum\frac{1}{n^{2}}$
+\end_inset
+
+ is a convergent 
+\begin_inset Formula $p-series$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore\sum_{n=1}^{\infty}\frac{2}{n^{2}+4n+3}$
+\end_inset
+
+ is convergent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{e^{2n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =\frac{1}{e^{2n}}\\
+\lim\frac{1}{e^{2n}} & =\frac{1}{e^{2\infty}}\\
+ & =\frac{1}{\infty}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Therefore, it is convergent
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{3}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+3\sum\frac{1}{n} & =\sum\frac{1}{n}\\
+ & =\text{harmonic series, divergent}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(n+1\right)^{2}}{n\left(n+2\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =\frac{\left(n+1\right)^{2}}{n\left(n+2\right)}\\
+a_{1} & =\frac{4}{3}=1.333\\
+a_{2} & =\frac{9}{16}=1.123\\
+a_{3} & =\frac{16}{15}=1.066
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Divergent, 
+\begin_inset Formula $n-th$
+\end_inset
+
+ term test.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}a_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{n^{2}+2n+2}{n^{2}+2n}\div n^{2}\\
+ & =\lim_{n\to\infty}\frac{1+\frac{2}{n}+\frac{2}{n^{2}}}{1+\frac{2}{n}}\\
+ & =\lim_{n\to\infty}\frac{1+0+0}{1+0}\\
+ & =1\left(\neq0\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{3^{n}+2^{n}}{6^{n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}\frac{3^{n}}{6^{n}}+\frac{2^{n}}{6^{n}} & =\sum_{n=1}^{\infty}\left(\frac{3^{n}}{6^{n}}+\frac{2^{n}}{6^{n}}\right)\\
+ & =\sum_{n=1}^{\infty}\left(\left(\frac{1}{2}\right)^{n}+\left(\frac{1}{3}\right)^{n}\right)\\
+ & =\sum_{n=1}^{\infty}\left(\frac{1}{2}\right)^{n}+\sum_{n=1}^{\infty}\left(\frac{1}{3}\right)^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since both 
+\begin_inset Formula $\left|r\right|\le1$
+\end_inset
+
+, convergent.
+\end_layout
+
+\begin_layout Enumerate
+Sum
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\frac{a}{1-r}\\
+ & =\frac{\frac{1}{2}}{1-\frac{1}{2}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\frac{a}{1-r}\\
+ & =\frac{\frac{1}{3}}{1-\frac{1}{3}}\\
+ & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}\frac{3^{n}}{6^{n}}+\frac{2^{n}}{6^{n}} & =1+\frac{1}{2}\\
+ & =\frac{3}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{5+2^{-n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{5+\frac{1}{2^{n}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Step 1: Write out some terms
+\end_layout
+
+\begin_layout Enumerate
+Step 2: Find a formula for 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{3}{n^{2}+4n+3}-8^{-n}3^{n+1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solution Errata: 
+\begin_inset Formula $-\frac{11}{20}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Use the Divergence Test (n-th test for divergence) to show that the following
+ series diverges.
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\series bold
+Steps for Divergence Test
+\end_layout
+
+\begin_layout Quote
+1.
+ If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=0$
+\end_inset
+
+, converges
+\end_layout
+
+\begin_layout Quote
+2.
+ Otherwise, diverges
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\tan^{-1}n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\tan^{-1}x\\
+\lim_{n\to\infty}\tan^{-1}x & =\lim_{n\to\infty}\tan^{-1}x\\
+ & =\frac{\pi}{2}\neq0\\
+ & =diverges
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\lim_{n\to\infty}\tan^{-1}x$
+\end_inset
+
+ diverges, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\tan^{-1}n$
+\end_inset
+
+ diverges.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1-n^{2}}{4+n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\frac{1-x^{2}}{4+x^{2}}\\
+\lim_{n\to\infty}f\left(x\right) & =\lim_{n\to\infty}\frac{1-x^{2}}{4+x^{2}}\\
+\lim_{n\to\infty}f\left(x\right) & =\lim_{n\to\infty}\frac{\frac{1}{x^{2}}-\frac{x^{2}}{x^{2}}}{\frac{4}{x^{2}}+\frac{x^{2}}{x^{2}}}\\
+ & =\lim_{n\to\infty}\frac{0-1}{0+1}\\
+ & =-1\neq0\\
+ & =diverges
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\lim_{n\to\infty}\frac{1-x^{2}}{4+x^{2}}$
+\end_inset
+
+ diverges, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1-n^{2}}{4+n^{2}}$
+\end_inset
+
+ diverges
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{2}{5-2^{-n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}f\left(x\right) & =\lim_{n\to\infty}\frac{2}{5-2^{-x}}\\
+ & =\lim_{n\to\infty}\frac{2}{5-\frac{1}{2^{x}}}\\
+ & =\frac{2}{5-\frac{1}{2^{\infty}}}\\
+ & =\frac{2}{5}\neq0\\
+ & =diverges
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\lim_{n\to\infty}\frac{2}{5-2^{-x}}$
+\end_inset
+
+ diverges, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{2}{5-2^{-n}}$
+\end_inset
+
+ diverges
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{2n}{\ln\left(n+3\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\frac{2x}{\ln\left(x+3\right)}\\
+\lim_{n\to\infty}f\left(x\right) & =\lim_{n\to\infty}\frac{\frac{d}{dx}\left[2x\right]}{\frac{d}{dx}\left[\ln\left(x+3\right)\right]}\\
+ & =\lim_{n\to\infty}\frac{2}{\frac{1}{x+3}}\\
+ & =\lim_{n\to\infty}2\left(x+3\right)\\
+ & =\lim_{n\to\infty}2x+6\\
+\lim_{n\to\infty}f\left(x\right) & =\infty\\
+ & =diverges
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine whether the following series converges or diverges, using the
+ given test.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Direct Comparison Test
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\series bold
+Direct Comparison Test Steps
+\end_layout
+
+\begin_layout Quote
+Important: BOTH Positive, 
+\begin_inset Formula $x>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+1.
+ Find a formula, 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ that is easy to evaluate, and is bigger than 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, the given formula, for ALL terms.
+ Usually by dropping a few terms.
+\end_layout
+
+\begin_layout Quote
+2.
+ Check if the series 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is convergent/divergent
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{4+n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Drop the denominator
+\series default
+
+\begin_inset Formula 
+\[
+\frac{1}{4+n^{2}}<\frac{1}{n^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Determine if 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is convergent/divergent.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Since ALL terms in both sequence are positive, 
+\begin_inset Formula $\frac{1}{4+n^{2}}<\frac{1}{n^{2}}$
+\end_inset
+
+ for ALL terms, and 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ converges, therefore, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{4+n^{2}}$
+\end_inset
+
+ will also 
+\series bold
+converge
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{3n-5}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Drop the denominator
+\begin_inset Formula 
+\[
+3n-5<3n
+\]
+
+\end_inset
+
+
+\series default
+
+\begin_inset Formula 
+\[
+\frac{1}{3n-5}>\frac{1}{3n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{1}{3n}=\frac{1}{3}\sum_{n=1}^{\infty}\frac{1}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Note: we cannot drop 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+ directly and make it 
+\begin_inset Formula $3n-5<3n$
+\end_inset
+
+, otherwise the statement will no longer be guaranteed.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Determine if 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is convergent/divergent.
+
+\series default
+ 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is a harmonic series, and is always divergent
+\end_layout
+
+\begin_layout Enumerate
+Since ALL terms in both sequence are positive when 
+\begin_inset Formula $n>0$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{1}{3n-5}>\frac{1}{n}$
+\end_inset
+
+ for ALL terms, and 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ diverges, therefore,
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{3n-5}$
+\end_inset
+
+ will also 
+\series bold
+diverge
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\sin^{2}n}{n\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\sin^{2}n$
+\end_inset
+
+ is always between 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+, lets drop the numerator
+\begin_inset Formula 
+\begin{align*}
+\frac{\sin^{2}n}{n\sqrt{n}} & \le\frac{1}{n\sqrt{n}}\\
+ & \le\frac{1}{n^{\frac{3}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine if 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is convergent.
+ 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is a 
+\begin_inset Formula $p-series$
+\end_inset
+
+, with 
+\begin_inset Formula $p=\frac{3}{2}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $p>1$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $n>0$
+\end_inset
+
+, since ALL terms in both sequence are positive , and 
+\begin_inset Formula $\frac{\sin^{2}n}{n\sqrt{n}}\le\frac{1}{n\sqrt{n}}$
+\end_inset
+
+ for all terms, and 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ converges, therefore, the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\sin^{2}n}{n\sqrt{n}}$
+\end_inset
+
+ also 
+\series bold
+converges
+\series default
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Integral Test
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{\sqrt[3]{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Make it into a function
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{1}{\sqrt[3]{x}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate the function
+\begin_inset Formula 
+\begin{align*}
+\int_{1}^{\infty}f\left(x\right)dx & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{\sqrt[3]{x}}dx\\
+ & =\lim_{b\to\infty}\int_{1}^{b}x^{-\frac{1}{3}}dx\\
+ & =\lim_{b\to\infty}\left[\frac{3}{2}x^{\frac{2}{3}}\right]_{1}^{b}\\
+ & =\lim_{b\to\infty}\frac{3}{2}\left(b^{\frac{2}{3}}-1\right)\\
+ & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion.
+ Since 
+\begin_inset Formula $\int_{1}^{\infty}f\left(x\right)d=\infty$
+\end_inset
+
+, it diverges, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{\sqrt[3]{n}}$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n\ln n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Make it into a function
+\series default
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{1}{x\ln x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Integrate the function
+\series default
+
+\begin_inset Formula 
+\begin{align*}
+\int_{1}^{\infty}f\left(x\right)dx & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx\\
+ & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $u=\ln x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{du}{dx} & =\frac{1}{x}\\
+du & =\frac{1}{x}dx
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Subsitute inside
+\begin_inset Formula 
+\begin{align*}
+\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{u}du\\
+ & =\lim_{b\to\infty}\left[\ln u\right]_{1}^{b}\\
+ & =\lim_{b\to\infty}\left(\ln b-\ln1\right)\\
+ & =\lim_{b\to\infty}\ln b\\
+ & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conclusion
+\series default
+.
+ Since 
+\begin_inset Formula $\int_{1}^{\infty}f\left(x\right)d=\infty$
+\end_inset
+
+, it diverges, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n\ln n}$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Limit Comparison Test
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1+n^{2}}{1+n^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Simplify this series, fractions involving only polynomials or polynomials
+ under radicals will behave in the same way as the largest power of 
+\begin_inset Formula $n$
+\end_inset
+
+ will behave in the limit.
+ So, the terms in this series should behave as,
+\begin_inset Formula 
+\[
+b_{n}=\frac{n^{2}}{n^{4}}=\frac{1}{n^{2}}
+\]
+
+\end_inset
+
+, 
+\begin_inset Formula $p-series$
+\end_inset
+
+ with 
+\begin_inset Formula $p=2>1$
+\end_inset
+
+, converges.
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{a_{n}}{b_{n}} & =\lim_{n\to\infty}\frac{1+n^{2}}{1+n^{4}}\cdot n^{2}\\
+ & =\lim_{n\to\infty}\frac{n^{2}+n^{4}}{1+n^{4}}\\
+ & =\lim_{n\to\infty}\frac{n^{2}+n^{4}}{1+n^{4}}\div\frac{n^{4}}{n^{4}}\\
+ & =\lim_{n\to\infty}\frac{n^{-2}+1}{n^{-4}+1}\\
+c & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $c>0$
+\end_inset
+
+ , and the series 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ converges, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1+n^{2}}{1+n^{4}}$
+\end_inset
+
+ must 
+\series bold
+converge.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{3}-n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Simplify this series, fractions involving only polynomials or polynomials
+ under radicals will behave in the same way as the largest power of 
+\begin_inset Formula $n$
+\end_inset
+
+ will behave in the limit.
+ So, the terms in this series should behave as,
+\begin_inset Formula 
+\[
+b_{n}=\frac{1}{n^{3}}
+\]
+
+\end_inset
+
+, which is a 
+\begin_inset Formula $p-series$
+\end_inset
+
+ with 
+\begin_inset Formula $p=3>1$
+\end_inset
+
+, converges
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{a_{n}}{b_{n}} & =\lim_{n\to\infty}\frac{1}{n^{3}-n}\cdot n^{3}\\
+ & =\lim_{n\to\infty}\frac{n^{3}}{n^{3}-n}\div\frac{n^{3}}{n^{3}}\\
+ & =\lim_{n\to\infty}\frac{1}{1-\frac{1}{n^{2}}}\\
+c & =1>0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $c>0$
+\end_inset
+
+ , and the series 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ converges, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{3}-n}$
+\end_inset
+
+ must 
+\series bold
+converge.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Incorrect (wrong way) solution
+\end_layout
+
+\begin_layout Enumerate
+Simplify this series, fractions involving only polynomials or polynomials
+ under radicals will behave in the same way as the largest power of 
+\begin_inset Formula $n$
+\end_inset
+
+ will behave in the limit.
+ So, the terms in this series should behave as,
+\begin_inset Formula 
+\begin{align*}
+b_{n} & =\frac{n}{\sqrt[3]{n^{7}}}\\
+ & =\frac{n}{n^{\frac{7}{3}}}\\
+b_{n} & =\frac{1}{n^{\frac{4}{3}}}
+\end{align*}
+
+\end_inset
+
+, which is a 
+\begin_inset Formula $p-series$
+\end_inset
+
+ with 
+\begin_inset Formula $p=\frac{4}{3}>1$
+\end_inset
+
+, 
+\series bold
+converges
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $c>0$
+\end_inset
+
+ , and the series 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ converges, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}$
+\end_inset
+
+ must 
+\series bold
+converge.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Correct solution
+\series default
+
+\begin_inset Formula 
+\[
+b_{n}=\frac{n}{\sqrt[3]{n^{3}}},b_{n}\text{is a convergent}p-series
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\frac{4}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{\left(\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}\right)}{\frac{n}{\sqrt[3]{n^{7}}}} & =\lim_{n\to\infty}\left(\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}\cdot\frac{3\sqrt{n^{7}}}{n}\right)\\
+ & =\lim_{n\to\infty}\left(\frac{n+7}{n}\cdot\frac{\sqrt[3]{n^{7}}}{\sqrt[3]{n^{7}+n^{2}}}\right)\\
+ & =\lim_{n\to\infty}\left(\left(1+\frac{7}{n}\right)\cdot\sqrt[3]{\frac{1}{1+n^{-5}}}\right)\\
+ & =\left(1+0\right)\cdot\sqrt[3]{\frac{1}{1+0}}=1\left(converges\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Alternating Series Test
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\series bold
+Theorem 3.11
+\series default
+: If the alternating series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}=\sum_{n=1}^{\infty}\left(-1\right)^{n}b_{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(-1\right)^{n-1}b_{n}$
+\end_inset
+
+ where 
+\begin_inset Formula $b_{n}>0$
+\end_inset
+
+ 0 satisfies: 
+\end_layout
+
+\begin_layout Quote
+1.
+ 
+\begin_inset Formula $𝑏_{𝑛+1}\le b_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ (decreasing); 
+\end_layout
+
+\begin_layout Quote
+2.
+ 
+\begin_inset Formula $\lim_{n\to\infty}b_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Then the series is convergent.
+ 
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Note
+\series default
+: This test CANNOT be used to determine if the series is divergent.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n+1}}{n+4}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{\left(-1\right)^{n+1}}{n+4},b_{n}=\frac{1}{n+4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\left(\frac{1}{5},\frac{1}{6},\frac{1}{7},\frac{1}{8},...\right)$
+\end_inset
+
+, decreasing
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}b_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{1}{n+4} & =\frac{1}{\infty}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n+1}}{n+4}$
+\end_inset
+
+ is a 
+\series bold
+convergent 
+\series default
+series.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\cos\left(n\pi\right)}{\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{\cos\left(n\pi\right)}{\sqrt{n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{\cos\left(n\pi\right)}{\sqrt{n}} & =\left(\frac{\cos\left(\pi\right)}{\sqrt{1}},\frac{\cos\left(2\pi\right)}{\sqrt{2}},\frac{\cos\left(3\pi\right)}{\sqrt{3}},\frac{\cos\left(4\pi\right)}{\sqrt{4}},...\right)\\
+ & =\left(\frac{-1}{\sqrt{1}},\frac{1}{\sqrt{2}},\frac{-1}{\sqrt{3}},\frac{1}{\sqrt{4}},...\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\frac{1}{\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}b_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{1}{\sqrt{n}} & =\lim_{n\to\infty}\frac{1}{\sqrt{\infty}}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\cos\left(n\pi\right)}{\sqrt{n}}$
+\end_inset
+
+ is a 
+\series bold
+convergent
+\series default
+ series
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ratio Test
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.13
+\series default
+: Suppose 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is a series with positive terms.
+\end_layout
+
+\begin_layout Quote
+If 
+\begin_inset Formula $\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\begin{cases}
+<1 & ,\sum_{n=1}^{\infty}a_{n}\text{converges}\\
+>1\text{or}\infty & ,\sum_{n=1}^{\infty}a_{n}\text{diverges}\\
+1 & ,\text{the Ratio Test inconclusive}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{5^{n-1}}{4^{n+2}\left(n+1\right)^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =\frac{5^{n-1}}{4^{n+2}\left(n+1\right)^{2}}\\
+a_{n+1} & =\frac{5^{n}}{4^{n+3}\left(n+2\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\frac{5^{n}}{4^{\cancel{n+2}+1}\cancel{\left(n+2\right)^{2}}}\cdot\frac{\cancel{4^{n+2}}\cancel{\left(n+1\right)^{2}}}{5^{\cancel{n}-1}}\\
+ & =\lim_{n\to\infty}\frac{5}{4}\\
+ & =\frac{5}{4}>1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right|>1$
+\end_inset
+
+, the series 
+\series bold
+diverges
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n!}{1\cdot3\cdot5\cdot...\cdot\left(2n-1\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\left(\frac{\left(n+1\right)!}{1\cdot3\cdot5\cdot...\cdot\left(2n\right)}\cdot\frac{1\cdot3\cdot5\cdot...\cdot\left(2n-1\right)}{n!}\right)\\
+ & =\lim_{n\to\infty}\left(\frac{\left(n+1\right)\cancel{n!}}{\cancel{1\cdot3\cdot5\cdot...\cdot\left(2n-1\right)\cdot}\left(2n\right)}\cdot\frac{\cancel{1\cdot3\cdot5\cdot...\cdot\left(2n-1\right)}}{\cancel{n!}}\right)\\
+ & =\lim_{n\to\infty}\frac{n+1}{2n}\\
+ & =\lim_{n\to\infty}\frac{1}{2}+\frac{1}{2n}\\
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\frac{1}{2}<1$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n!}{1\cdot3\cdot5\cdot...\cdot\left(2n-1\right)}$
+\end_inset
+
+ 
+\series bold
+converges
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-10\right)^{n}}{4^{2n+1}\left(n+1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right|$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\left|\frac{\left(-10\right)^{n+1}}{4^{2\left(n+1\right)+1}\left(\left(n+1\right)+1\right)}\cdot\frac{4^{2n+1}\left(n+1\right)}{\left(-10\right)^{n}}\right|\\
+ & =\lim_{n\to\infty}\left|\frac{\left(-10\right)^{\cancel{n}+1}}{4^{\cancel{2n+1}+2\left(1\right)}\left(\left(n+1\right)+1\right)}\cdot\frac{\cancel{4^{2n+1}}\left(n+1\right)}{\cancel{\left(-10\right)^{n}}}\right|\\
+ & =\lim_{n\to\infty}-\frac{5\left(n+1\right)}{8\left(n+2\right)}\\
+ & =\lim_{n\to\infty}-\frac{\frac{5n}{n}+\frac{5}{n}}{\frac{8n}{n}+\frac{16}{n}}\\
+ & =\lim_{n\to\infty}-\frac{5+\frac{5}{n}}{8+\frac{16}{n}}\\
+ & =-\frac{5}{8}<1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\frac{1}{2}<1$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-10\right)^{n}}{4^{2n+1}\left(n+1\right)}$
+\end_inset
+
+ 
+\series bold
+converges
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The Root Test
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\series bold
+Theorem 3.14
+\series default
+: Suppose we have the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+Define, 
+\begin_inset Formula $L=\lim_{n\to\infty}\sqrt[n]{\left|a_{n}\right|}=\lim_{n\to\infty}\left|a_{n}\right|^{\frac{1}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Then, if 
+\begin_inset Formula $L<1$
+\end_inset
+
+, the series is absolutely convergent (and hence convergent).
+\end_layout
+
+\begin_layout Quote
+If 
+\begin_inset Formula $L>1$
+\end_inset
+
+, the series is divergent.
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $L=1$
+\end_inset
+
+, the test is inconclusive.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-6\right)^{n}}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\sqrt[n]{\left|\frac{\left(-6\right)^{n}}{n}\right|} & =\lim_{n\to\infty}\left|\frac{\left(-6\right)^{n}}{n}\right|^{\frac{1}{n}}\\
+ & =\lim_{n\to\infty}\frac{6}{n^{\frac{1}{n}}}\\
+ & =\lim_{n\to\infty}\frac{6}{n^{\frac{1}{n}}}\\
+ & =\frac{6}{1}\\
+ & =6>1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-6\right)^{n}}{n}$
+\end_inset
+
+ 
+\series bold
+is divergent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{5n-3n^{3}}{4n^{3}+1}\right)^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\sqrt[n]{\left|\left(\frac{5n-3n^{3}}{4n^{3}+1}\right)^{n}\right|} & =\lim_{n\to\infty}\left|\left(\frac{5n-3n^{3}}{4n^{3}+1}\right)^{n}\right|^{\frac{1}{n}}\\
+ & =\lim_{n\to\infty}\left|\left(\frac{5n-3n^{3}}{4n^{3}+1}\right)^{n}\right|^{\frac{1}{n}}\\
+ & =\lim_{n\to\infty}\frac{5n-3n^{3}}{4n^{3}+1}\\
+ & =\lim_{n\to\infty}\frac{5n-3n^{3}}{4n^{3}+1}\times\frac{n^{3}}{n^{3}}\\
+ & =\lim_{n\to\infty}\frac{\frac{5}{n^{2}}-3}{4+\frac{1}{n^{3}}}\\
+ & =-\frac{3}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $L<1$
+\end_inset
+
+, the series is absolutely convergent, and hence convergent.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Use Ratio Test to determine whether the given series converges absolutely.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-3\right)^{n}}{n!}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}\left|\frac{\left(-3\right)^{n}}{n!}\right| & =\sum_{n=1}^{\infty}\frac{3^{n}}{n!}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{3^{n+1}}{\left(n+1\right)!}\cdot\frac{n!}{3^{n}} & =\lim_{n\to\infty}\frac{3\cdot\cancel{3^{n}}}{\left(n+1\right)\cancel{n!}}\cdot\frac{\cancel{n!}}{\cancel{3^{n}}}\\
+ & =\lim_{n\to\infty}\frac{3}{n+1}\\
+ & =0<1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $L<1$
+\end_inset
+
+, the series is absolutely convergent, hence 
+\series bold
+convergent
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-3\right)^{n}}{n^{3}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{\left(-3\right)^{n}}{n^{3}}\right| & =\lim_{n\to\infty}\left|\frac{3^{n}}{n^{3}}\right|\\
+ & \lim_{n\to\infty}\left(\frac{3^{n+1}}{\left(n+1\right)^{3}}\cdot\frac{n^{3}}{3^{n}}\right)\\
+ & =\left(\lim_{n\to\infty}\frac{\sqrt[3]{3}n}{n+1}\right)^{3}\\
+ & =\left(\lim_{n\to\infty}\frac{\sqrt[3]{3}}{1+\frac{1}{n}}\right)^{3}\\
+ & =3>0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $L>1$
+\end_inset
+
+, the series is divergent
+\end_layout
+
+\begin_layout Enumerate
+Given solution, 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{\left(-3\right)^{n}}{n^{3}}\right| & =\lim_{n\to\infty}\left|\frac{3^{n}}{n^{3}}\right|\\
+ & \lim_{n\to\infty}\left(\frac{3^{n+1}}{\left(n+1\right)^{3}}\cdot\frac{n^{3}}{3^{n}}\right)\\
+ & =\lim_{n\to\infty}3\frac{n^{3}}{\left(n+1\right)^{3}}\\
+ & =3\lim_{n\to\infty}\left(\frac{n}{n+1}\right)^{3}\\
+ & =3\lim_{n\to\infty}\left(\frac{1}{1+\frac{1}{n}}\right)^{3}\\
+ & =3\left(1\right)\\
+ & =3>0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\sin n}{n^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No idea for now I guess
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

@@ -4331,6 +4331,10 @@ Solution:
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 11 & =33-22\left(1\right)\\

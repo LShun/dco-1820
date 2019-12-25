@@ -1,3 +1,9 @@
+## Marks
+
+CW Marks: 60%
+
+Final: 40%
+
 ## Mid Term
 
 - Week 8
@@ -61,3 +67,14 @@ Lower - MAC - 802.3
 ## Wrong Stuff in FN Subnetting Answer
 
 Practical Subnetting 10
+
+## SBA
+
+1. theory is not involved
+2. you cannot write comments
+3. you can only write commands that cisco stuff understand, don't have to memorize command
+4. SBA - 1 and 1/2 hours
+5. Tutorial 8.1, 8.2, 8.3 (Do it over and over again)
+6. Can only bring your own configuration command. CANNOT bring command paper with comments on command. If bring, tutor will tear off the paper (depends on tutor)
+   1. Can differentiate them using different colors however
+

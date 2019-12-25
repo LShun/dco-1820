@@ -1,0 +1,875 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 11
+\end_layout
+
+\begin_layout Section
+Determine whether the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ is a partial order on the set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=Z$
+\end_inset
+
+, and 
+\begin_inset Formula $aRb$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $a=2b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1\neq2\left(1\right),2\neq2\left(2\right)\to\text{not reflexive}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\neq2\left(2\right),2=2\left(1\right)\to$
+\end_inset
+
+ antisymmetric.
+ No counterexamples
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\neq2\left(2\right),2\neq2\left(3\right),1\neq2\left(3\right)\to$
+\end_inset
+
+ not transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=R$
+\end_inset
+
+, and 
+\begin_inset Formula $aRb$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $a\le b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1\le1,2\le2,...\to$
+\end_inset
+
+ reflexive.
+ No counterexamples.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\le2,2\le1\to$
+\end_inset
+
+ antisymmetric.
+ No counterexamples.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\le2,2\le3,1\le3\to$
+\end_inset
+
+ transitive.
+ No counterexamples.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ partial order.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}=\begin{bmatrix}1 & 0 & 1 & 0\\
+0 & 1 & 1 & 0\\
+0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Reflexive.
+ The main diagonal is all 
+\begin_inset Formula $1$
+\end_inset
+
+'s
+\begin_inset Formula 
+\[
+M_{R}=\begin{bmatrix}\boldsymbol{1} & 0 & 1 & 0\\
+0 & \boldsymbol{1} & 1 & 0\\
+0 & 0 & \boldsymbol{1} & 1\\
+1 & 1 & 0 & \boldsymbol{1}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not symmetric.
+ Not all 
+\begin_inset Formula $M_{ij}=M_{ji}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{R}=\begin{bmatrix}1 & 0 & \boldsymbol{1} & 0\\
+0 & 1 & 1 & 0\\
+\boldsymbol{0} & 0 & 1 & 1\\
+1 & 1 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not transitive.
+ 
+\begin_inset Formula 
+\begin{align*}
+M_{R}^{2} & =\begin{bmatrix}1 & 0 & 1 & 0\\
+0 & 1 & 1 & 0\\
+0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1
+\end{bmatrix}\odot\begin{bmatrix}1 & 0 & 1 & 0\\
+0 & 1 & 1 & 0\\
+0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1
+\end{bmatrix}\\
+ & =\begin{bmatrix}1 & 0 & 1 & 1\\
+\\
+\\
+\\
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $M_{1,4}=0$
+\end_inset
+
+, 
+\begin_inset Formula $M_{1,4}^{2}=1$
+\end_inset
+
+, the relation is NOT transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+NOT partial order
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}=\begin{bmatrix}1 & 1 & 1 & 1 & 1\\
+0 & 1 & 0 & 1 & 0\\
+0 & 0 & 1 & 0 & 1\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Reflexive.
+ The main diagonal is all 
+\begin_inset Formula $1$
+\end_inset
+
+'s
+\begin_inset Formula 
+\[
+M_{R}=\begin{bmatrix}\boldsymbol{1} & 1 & 1 & 1 & 1\\
+0 & \boldsymbol{1} & 0 & 1 & 0\\
+0 & 0 & \boldsymbol{1} & 0 & 1\\
+0 & 0 & 0 & \boldsymbol{1} & 0\\
+0 & 0 & 0 & 0 & \boldsymbol{1}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Antisymmetric .
+ All 
+\begin_inset Formula $M_{ij}$
+\end_inset
+
+ which is 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $M_{ij}=M_{ji}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{R}=\begin{bmatrix}1 & 0 & 1 & 0\\
+0 & 1 & 1 & 0\\
+0 & 0 & 1 & 1\\
+1 & 1 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Transitive.
+ For if
+\begin_inset Formula $M_{ij}$
+\end_inset
+
+ is 1 in 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+, then 
+\begin_inset Formula $M_{ij}$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+ in 
+\begin_inset Formula $M_{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Partial order
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q1v.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Reflexive.
+ All elements have loops
+\end_layout
+
+\begin_layout Enumerate
+Antisymmetric.
+ All 
+\begin_inset Formula $M_{ij}$
+\end_inset
+
+ which is 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $M_{ij}=M_{ji}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not transitive.
+ There exists no 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Find the lexicographic ordering of the following strings of lowercase English
+ letters:
+\end_layout
+
+\begin_layout Enumerate
+quack, quick, quicksilver, quicksand, quacking
+\end_layout
+
+\begin_layout Enumerate
+zoo, zero, zoom, zoology, zoological
+\end_layout
+
+\begin_layout Section
+List all ordered pairs in the partial order whose Hasse diagram is shown
+ as below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/t11/t11-q3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Draw the Hasse diagram for each of the following posets.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a$
+\end_inset
+
+ is a divisor of 
+\begin_inset Formula $b$
+\end_inset
+
+ on the set 
+\begin_inset Formula $\left\{ 1,2,3,5,7,11,13\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $Y$
+\end_inset
+
+ on the set of all subsets of 
+\begin_inset Formula $\left\{ 1,2,3\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} ,\begin{bmatrix}1 & 1 & 1 & 1 & 1\\
+0 & 1 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4d.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Consider the partial order of divisibility on the set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Draw the Hasse diagram of the poset and determine which posets are linearly
+ ordered.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 1,2,3,4,5,10,15,30\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 3,6,12,36,72\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Given the Hasse diagram of a partial order 
+\begin_inset Formula $R$
+\end_inset
+
+ on 
+\begin_inset Formula $A=\left\{ a,b,c,d,e,f,g,h\right\} $
+\end_inset
+
+.
+ List the elements of 
+\begin_inset Formula $R$
+\end_inset
+
+ and write down the maximal and minimal elements of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/t11/t11-q6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determine the greatest and least elements, if exist, of the following posets.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q7i.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q7ii.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Consider the following posets whose Hasse diagrams are shown.
+ Find, if they exist,
+\end_layout
+
+\begin_layout Quote
+maximal and minimal elements;
+\end_layout
+
+\begin_layout Quote
+all upper bounds of B;
+\end_layout
+
+\begin_layout Quote
+all lower bounds of B;
+\end_layout
+
+\begin_layout Quote
+the least upper bound of B;
+\end_layout
+
+\begin_layout Quote
+the greatest lower bound of B.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q8a.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the maximal and minimal elements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maximal:
+\begin_inset Formula $\left\{ g,h\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimal: 
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+all upper bounds of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ f,g,h\right\} $
+\end_inset
+
+, because every element of B is
+\begin_inset Formula $\le$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ f,g,h\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+all lower bounds of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a,b,c\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the least upper bound of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the greatest lower bound of B.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q8b.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the maximal and minimal elements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maximal:
+\begin_inset Formula $\left\{ f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimal: 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+all upper bounds of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ d,e,f\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+all lower bounds of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the least upper bound of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ d\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the greatest lower bound of B.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ b\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q8c.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the maximal and minimal elements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maximal:
+\begin_inset Formula $\left\{ 5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimal: 
+\begin_inset Formula $\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+all upper bounds of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 5\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+all lower bounds of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the least upper bound of B;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 5\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the greatest lower bound of B.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

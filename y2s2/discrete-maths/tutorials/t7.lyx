@@ -300,6 +300,18 @@ refers to Natural numbers (AKA 1...
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Answer (which is the intersection of 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+)
 \begin_inset Formula 
 \[
 N=\left\{ \left(3,3\right),\left(4,1\right)\right\} 
@@ -1214,23 +1226,24 @@ R\left(B\times B\right)=\left\{ \left(2,3\right),\left(3,6\right)\right\}
 \begin_deeper
 \begin_layout Enumerate
 Note: 
-\begin_inset Formula $\left(1,2\right)$
+\begin_inset Formula $\left\{ 1,5,7\right\} $
 \end_inset
 
- and 
-\begin_inset Formula $\left(1,4\right)$
-\end_inset
-
- originate from a single point in 
-\begin_inset Formula $A$
+ are not in 
+\begin_inset Formula $B$
 \end_inset
 
 .
- So, to be more specific it would be 
-\begin_inset Formula $\left(1,\left(2,4\right)\right)$
+ Therefore, if we restrict 
+\begin_inset Formula $R$
 \end_inset
 
-, and hence excluded.
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+ only (for both range and domain), then only these two fits the condition.
+ 
 \end_layout
 
 \end_deeper
