@@ -418,7 +418,15 @@ Antisymmetric.
 
 \begin_layout Enumerate
 Not transitive.
- There exists no 
+ There exists no elements such that if 
+\begin_inset Formula $aRb\land bRc\to aRc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+NOT a partial order.
 \end_layout
 
 \end_deeper
@@ -431,16 +439,36 @@ Find the lexicographic ordering of the following strings of lowercase English
 quack, quick, quicksilver, quicksand, quacking
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+ANSWER: 
+\begin_inset Formula $quack,quacking,quick,quicksand,quicksilver$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 zoo, zero, zoom, zoology, zoological
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+ANSWER: 
+\begin_inset Formula $zero,zoo,zoology,zoological,zoom$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 List all ordered pairs in the partial order whose Hasse diagram is shown
  as below.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t11/t11-q3.png
 
@@ -449,6 +477,15 @@ List all ordered pairs in the partial order whose Hasse diagram is shown
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left(a,a\right),\left(a,b\right),\left(b,b\right),\left(b,d\right),\left(b,c\right),\left(c,c\right),\left(d,d\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Draw the Hasse diagram for each of the following posets.
 \end_layout
@@ -468,6 +505,25 @@ Draw the Hasse diagram for each of the following posets.
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Set notation: 
+\begin_inset Formula $\left\{ \left(1,2\right),\left(1,3\right),\left(1,5\right),\left(1,7\right),\left(1,11\right),\left(1,13\right),\left(2,2\right),\left(3,3\right),\left(5,5\right),\left(7,7\right),\left(11,11\right),\left(13,13\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4a.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $X$
 \end_inset
@@ -483,6 +539,25 @@ Draw the Hasse diagram for each of the following posets.
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Subset of 
+\begin_inset Formula $\left\{ 1,2,3\right\} =\left\{ \varnothing,\left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3\right\} ,\left\{ 1,2\right\} ,\left\{ 1,3\right\} ,\left\{ 2,3\right\} ,\left\{ 1,2,3\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4b.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} ,\begin{bmatrix}1 & 1 & 1 & 1 & 1\\
 0 & 1 & 1 & 1 & 1\\
@@ -495,6 +570,17 @@ Draw the Hasse diagram for each of the following posets.
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4c.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t11/t11-q4d.png
@@ -504,6 +590,59 @@ Draw the Hasse diagram for each of the following posets.
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Alright guys you know the drill
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Remove all reflexive links
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4d-step-1.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Remove all transitive links
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4d-step-2.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Arrange them in proper levels and connect them with dots
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q4d-step-3.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
 \begin_layout Section
 Consider the partial order of divisibility on the set 
 \begin_inset Formula $A$
@@ -521,6 +660,951 @@ Consider the partial order of divisibility on the set
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="10">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\{$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,4\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,5\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,10\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,15\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(2,4\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(2,10\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(2,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(3,15\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(3,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(4,4\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(5,5\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(5,10\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(5,15\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(5,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(10,10\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(10,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(15,15\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(15,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(30,30\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q5i.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+NOT Linearly Ordered
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $A=\left\{ 3,6,12,36,72\right\} $
 \end_inset
@@ -528,6 +1612,21 @@ Consider the partial order of divisibility on the set
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q5ii.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Linearly ordered
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Given the Hasse diagram of a partial order 
 \begin_inset Formula $R$
@@ -556,10 +1655,45 @@ Given the Hasse diagram of a partial order
 \end_inset
 
 
+\begin_inset Formula 
+\begin{align*}
+R & =\{\left(a,a\right),\left(a,d\right),\left(a,g\right),\left(d,d\right),\left(d,g\right),\left(b,b\right),\left(b,e\right),\\
+ & \left(b,g\right),\left(b,h\right),\left(e,e\right),\left(e,g\right),\left(e,h\right),\left(h,h\right),\left(f,f\right)\}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
+\begin_layout Enumerate
+Maximal elements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ g,h,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Minimal elements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a,b,c,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
-Determine the greatest and least elements, if exist, of the following posets.
+Determine the greatest and least element, if exist, of the following posets.
 \end_layout
 
 \begin_layout Enumerate
@@ -571,6 +1705,24 @@ Determine the greatest and least elements, if exist, of the following posets.
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Greatest element: 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Least element: 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t11/t11-q7ii.png
@@ -580,6 +1732,16 @@ Determine the greatest and least elements, if exist, of the following posets.
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Greatest elements: DNE (more than 1)
+\end_layout
+
+\begin_layout Enumerate
+Least elements: DNE (more than 1)
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Consider the following posets whose Hasse diagrams are shown.
  Find, if they exist,
@@ -870,6 +2032,244 @@ the greatest lower bound of B.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Section
+Answer the following questions concerning the poset ({3, 5, 9, 15, 24, 45},
+ |).
+\end_layout
+
+\begin_layout Enumerate
+Find the maximal and minimal elements.
+\end_layout
+
+\begin_layout Enumerate
+Determine the greatest element and least element, if exist.
+\end_layout
+
+\begin_layout Enumerate
+Find all upper bounds and least upper bounds of {3, 5}, if exist.
+\end_layout
+
+\begin_layout Enumerate
+Find all lower bounds of {15, 45}.
+ Hence determine the greatest lower bound of {15, 45}, if exist.
+\end_layout
+
+\begin_layout Subsection
+Answer
+\end_layout
+
+\begin_layout Enumerate
+Find the poset mapping
+\begin_inset Formula 
+\begin{align*}
+\{ & \left(3,3\right),\left(3,9\right),\left(3,15\right),\left(3,24\right),\left(3,45\right),\left(5,5\right),\\
+ & \left(5,15\right),\left(5,45\right),\left(9,45\right),\left(15,15\right),\left(15,45\right),\\
+ & \left(24,24\right),\left(45,45\right)\}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the maximal and minimal elements.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maximal: 
+\begin_inset Formula $\left\{ 24,45\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimal: 
+\begin_inset Formula $\left\{ 3,5\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the greatest element and least element, if exist.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Greatest element
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Does not exist
+\series default
+ (Explanation: split off at end)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Least element
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Does not exist
+\series default
+ (Explanation: Split off at end)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Find all upper bounds and least upper bounds of {3, 5}, if exist.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+All upper bounds: 
+\begin_inset Formula $\left\{ 15,45\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Least upper bound: 
+\begin_inset Formula $\left\{ 15\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find all lower bounds of {15, 45}.
+ Hence determine the greatest lower bound of {15, 45}, if exist.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Lower bounds
+\begin_inset Formula 
+\[
+\left\{ 15,45\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+GLB
+\begin_inset Formula 
+\[
+\left\{ 15\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+ and consider the partial order R on A as R = {(6, 6), (6, 5), (6, 4), (6,
+ 3), (6, 2), (6, 1), (5, 5), (5, 3), (5, 2), (5, 1), (4, 4), (4, 3), (4,
+ 2), (4, 1), (3, 3), (3, 2), (3, 1), (2, 2), (1, 1)}.
+\end_layout
+
+\begin_layout Enumerate
+Draw a Hasse diagram of the poset 
+\begin_inset Formula $[A,R]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/t11/t11-q10-step-2.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the minimal and maximal elements of the poset 
+\begin_inset Formula $[A,R]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Minimal elements: 
+\begin_inset Formula $\left\{ 6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Maximal elements: 
+\begin_inset Formula $\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the least upper bound of 
+\begin_inset Formula ${2,5}$
+\end_inset
+
+, if it exists.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 2\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the greatest lower bound of 
+\begin_inset Formula ${5,4}$
+\end_inset
+
+, if exists.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 6\right\} $
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_body
 \end_document

@@ -172,9 +172,30 @@
 
 ### UDP Server Processes
 
+#### Server Side
+
 - UDP-based server applications assigned registered/well-known ports
 - Accept UDP client requests.
-- Requests received on specific 
+- Requests received on specific port forwarded to application
+
+#### Client Side
+
+- UDP-based client dynamically select port & use as source port
+- Use source-destination ports in header, reverse when receiving
+
+## 7.2.4 Applications
+
+### Application using TCP
+
+- Handles all transport layer tasks
+- Application can hand over data stream to transport layer & TCP will handle the rest
+- Example: HTTP, FTP, SMTP, Telnet
+
+### Applications using UDP
+
+- Live video & multimedia applications - can tolerate loss but not delay
+- Simple requests & reply applications - may not receive reply, e.g. DNS & DHCP
+- Application handling reliability themselves. Unidirectional communication. Example: Simple Network Management Protocol (SNMP), Trivial File Transfer Protocol (TFTP).
 
 ## 7.3 Summary
 

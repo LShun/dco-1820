@@ -534,7 +534,7 @@ A1: 8000 (2^13)
 \begin_inset Text
 
 \begin_layout Plain Layout
-118.16.1.0
+118.16.0.0
 \end_layout
 
 \end_inset
@@ -815,7 +815,7 @@ What is the
 \begin_inset Formula $2^{nd}$
 \end_inset
 
- usable address in Branch C1 subnet?
+ last usable address in Branch C1 subnet?
 \end_layout
 
 \begin_deeper

@@ -3453,5 +3453,890 @@ Find the power series representations for the functions.
 
 \end_layout
 
+\begin_layout Section
+Taylor & Maclaurin Series
+\end_layout
+
+\begin_layout Standard
+In previous section we were able to find power series representations for
+ some specific functions.
+ Now we consider the following questions: 
+\series bold
+Which functions have power series representations? How to find such representati
+ons?
+\end_layout
+
+\begin_layout Standard
+Without taking anything away from the process we looked at in the previous
+ section, we come up with a more general method for writing a power series
+ representation.
+\end_layout
+
+\begin_layout Standard
+The concept of a 
+\series bold
+Taylor series
+\series default
+ was formulated by the Scottish mathematician James Gregory and formally
+ introduced by the English mathematician Brook Taylor in 1715.
+ Who was Brook Taylor? He was the one invented Integration by part: ∫ 𝑢𝑑𝑣
+ = 𝑢𝑣 − ∫ 𝑣𝑑𝑢 If the 
+\series bold
+Taylor series is centered at zero
+\series default
+, then that series is also called a 
+\series bold
+Maclaurin series
+\series default
+, named after the Scottish mathematician Colin Maclaurin.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.17: 
+\series default
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ has a power series representation at 
+\begin_inset Formula $a$
+\end_inset
+
+, that is, if 
+\begin_inset Formula $f\left(x\right)=\sum_{n=0}^{\infty}c_{n}\left(x-a\right)^{n}$
+\end_inset
+
+ for 
+\begin_inset Formula $\left|x-a\right|<R$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Quote
+Then 
+\begin_inset Formula $c_{n}=\frac{f^{\left(n\right)}\left(a\right)}{n!}$
+\end_inset
+
+, where 
+\begin_inset Formula $\left(n\right)$
+\end_inset
+
+ represent the number of 
+\begin_inset Formula $'$
+\end_inset
+
+ (or level of derivative)
+\end_layout
+
+\begin_layout Subsection
+Taylor Series (Intro)
+\end_layout
+
+\begin_layout Standard
+Thus, we have a power series representation for the function 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ about 
+\begin_inset Formula $x=a$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\sum_{n=0}^{\infty}c_{n}\left(x-a\right)^{n}\\
+ & =f\left(a\right)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^{2}+\frac{f'''\left(a\right)}{3!}\left(x-a\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is called the 
+\series bold
+Taylor Series 
+\series default
+of the function 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $a$
+\end_inset
+
+ (or about 
+\begin_inset Formula $a$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+MacLaurin Series (Intro)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a=0$
+\end_inset
+
+, then the series 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\sum_{n=0}^{\infty}\frac{f^{n}\left(0\right)}{n!}x^{n}\\
+ & =f\left(0\right)+\frac{f'\left(0\right)}{1!}+\frac{f''\left(0\right)}{2!}x^{2}+\frac{f'''\left(0\right)}{3!}x^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is called the 
+\series bold
+Maclaurin Series.
+\end_layout
+
+\begin_layout Subsection
+Limit of Compounded Interest
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^{n}=2.718281828459045...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Proof
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{1}{n}\right)^{n} & =1+n\left(\frac{1}{n}\right)+\frac{n\left(n-1\right)}{2!}\left(\frac{1}{n}\right)^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}\left(\frac{1}{n}\right)^{3}+...\\
+ & =1+1+\frac{n\left(n-1\right)}{2!}\left(\frac{1}{n}\right)^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}\left(\frac{1}{n}\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{1}{n}\right)^{n} & =1+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\frac{1}{4!}+...\\
+ & =e
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Expanding similarly,
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{x}{n}\right)^{n} & =1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\frac{x^{4}}{4!}+...\\
+ & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the Taylor Series for 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ at 
+\begin_inset Formula $a=2$
+\end_inset
+
+, and the Maclaurin Series for 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{-x}$
+\end_inset
+
+.
+ Taylor Series:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=e^{x},f'=e^{x},f''=e^{x},...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(2\right)=e^{2},f'\left(2\right)=e^{2},f''\left(2\right)=e^{2},...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(a\right)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^{2}+\frac{f'''\left(a\right)}{3!}\left(x-a\right)^{3}+...\\
+f\left(x\right) & =e+\frac{e^{2}}{1!}\left(x-2\right)+\frac{e^{2}}{2!}\left(x-2\right)^{2}+\frac{e^{2}}{3!}\left(x-2\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+MacLaurin Series, 
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f & =e^{x},f'=e^{x},f''=e^{x},...\\
+f\left(0\right) & =1,f'\left(0\right)=1,f''\left(0\right)=1,..
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(0\right)+\frac{f'\left(0\right)}{1!}\left(x\right)+\frac{f''\left(0\right)}{2!}x^{2}+\frac{f'''\left(0\right)}{3!}x^{3}+...\\
+f\left(x\right) & =1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+....\\
+ & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $e^{-x}$
+\end_inset
+
+, use 
+\begin_inset Formula $f\left(-x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/c3/7.4-e^-x-maclaurin.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Convergence of exponential series:
+\end_layout
+
+\begin_layout Enumerate
+It converges for all 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+It converges faster when 
+\begin_inset Formula $x$
+\end_inset
+
+ is approaching 
+\begin_inset Formula $0$
+\end_inset
+
+, slower when 
+\begin_inset Formula $x$
+\end_inset
+
+ is away from 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+It converges faster when 
+\begin_inset Formula $n$
+\end_inset
+
+ is bigger.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the Maclaurin Series for 
+\begin_inset Formula $\sin x$
+\end_inset
+
+.
+ Then use it to find the Maclaurin Series for 
+\begin_inset Formula $\sin\left(3x^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Derivatives
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{\left(n\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(0\right)=\sin0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'\left(x\right)=\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'\left(0\right)=\cos0=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f''\left(x\right)=-\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f''\left(0\right)=-\sin0=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'''\left(x\right)=-\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'''\left(0\right)=-\cos0=-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f''''\left(x\right)=\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(0\right)=\sin0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(0\right)+\frac{f'\left(0\right)}{1!}x+\frac{f''\left(0\right)}{2!}x^{2}+\frac{f'''\left(0\right)}{3!}x^{3}+...\\
+f\left(x\right) & =0+\frac{1}{1!}\left(x\right)+\frac{0}{2!}x^{2}-\frac{1}{3!}x^{3}+\frac{0}{4!}x^{4}+\frac{1}{5!}x^{5}-...\\
+\sin x & =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-...\\
+\sin\left(3x^{2}\right) & =\left(3x^{2}\right)-\frac{\left(3x^{2}\right)^{3}}{3!}+\frac{\left(3x^{2}\right)^{5}}{5!}-...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Important Maclaurin Series
+\end_layout
+
+\begin_layout Standard
+We collect in the following table, some important Maclaurin Series.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Series
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Range
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{1-x}=\sum_{n=0}^{\infty}x^{n}=1+x^{2}+x^{3}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\left(1-x\right)^{2}}=\sum_{n=0}^{\infty}nx^{n-1}=1+2x+3x^{2}+4x^{3}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{x}=\sum_{n=0}^{\infty}\frac{x^{n}}{n!}=1+\frac{x}{1!}+\frac{x^{2}}{3!}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\infty,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin x=\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{x^{2n+1}}{\left(2n\right)!}=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\infty,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tan^{-1}x=\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{x^{2n+1}}{\left(2n+1\right)}=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Applications of Taylor & Maclaurin Series
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Evaluate 
+\begin_inset Formula $\lim_{x\to0}\frac{x-\sin x}{x^{3}}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to0}\frac{x-\sin x}{x^{3}} & =\lim_{x\to0}\frac{x-\left(x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-...\right)}{x^{3}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{3}}{3!}-\frac{x^{5}}{5!}+...}{x^{3}}\\
+ & =\lim_{x\to0}\left(\frac{1}{3!}-\frac{x^{2}}{5!}+...\right)\\
+ & =\frac{1}{3!}\\
+\lim_{x\to0}\frac{x-\sin x}{x^{3}} & =\frac{1}{6}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The above example showed us that Maclaurin series can provide a useful alternati
+ve to L'Hospital's Rule to evaluate limit.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Use series to approximate the definite integral to within the indicated
+ accuracy: 
+\begin_inset Formula $\int_{0}^{1}e^{-x^{2}}dx$
+\end_inset
+
+ (3 decimal places).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+e^{x} & =1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}\\
+e^{-x^{2}} & =1+\frac{\left(-x^{2}\right)}{1!}+\frac{\left(-x^{2}\right)^{2}}{2!}+\frac{\left(-x^{2}\right)^{3}}{3!}+...\\
+ & =1-x^{2}+\frac{x^{4}}{2}-\frac{x^{6}}{6}+...\\
+\int_{0}^{1}e^{-x^{2}} & =\int_{0}^{1}1-x^{2}+\frac{x^{4}}{2}-\frac{x^{6}}{6}+...dx\\
+ & =\left[x-\frac{x^{3}}{3}+\frac{x^{5}}{10}-\frac{x^{7}}{42}+...\right]_{0}^{1}\\
+ & =0.743
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Taylor Polynomials and Maclaurin Polynomials
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ has 
+\begin_inset Formula $n$
+\end_inset
+
+ derivatives at 
+\begin_inset Formula $x=a$
+\end_inset
+
+, we form a polynomial
+\begin_inset Formula 
+\begin{align*}
+T_{n}\left(x\right) & =\sum_{n=0}^{\infty}\frac{f^{i}\left(a\right)}{i!}\left(x-a\right)^{i}\\
+ & =f\left(a\right)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^{2}+...+\frac{f^{n}\left(a\right)}{n!}\left(x-a\right)^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+which called the 
+\series bold
+Taylor Polynomial
+\series default
+ of the degree 
+\begin_inset Formula $n$
+\end_inset
+
+ at 
+\begin_inset Formula $x=a$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a=0$
+\end_inset
+
+, then the polynomial
+\begin_inset Formula 
+\begin{align*}
+T_{n}\left(x\right) & =\sum_{n=0}^{\infty}\frac{f^{i}\left(0\right)}{i!}\left(x\right)^{i}\\
+ & =f\left(0\right)+\frac{f'\left(0\right)}{1!}x+\frac{f''\left(0\right)}{2!}x^{2}+...+\frac{f^{n}\left(0\right)}{n!}x^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+is called the 
+\series bold
+Maclaurin Polynomial.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the first three non-zero terms in the Taylor Series for 
+\begin_inset Formula $f\left(x\right)=e^{x}\cos x$
+\end_inset
+
+ about 
+\begin_inset Formula $x=a$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+g\left(x\right) & =e^{x}=e^{a}+e^{a}\left(x-a\right)+\frac{e^{a}}{2}\left(x-a\right)^{2}+...\\
+h\left(x\right) & =\cos x=\cos a-\sin a\left(x-a\right)-\frac{\cos a}{2}\left(x-a\right)^{2}+...\\
+f\left(x\right) & =e^{x}\cos x=g\left(x\right)\cdot h\left(x\right)\\
+ & =\left(e^{a}+e^{a}\left(x-a\right)+\frac{e^{a}}{2}\left(x-a\right)^{2}\right)\left(\cos a-\sin a\left(x-a\right)-\frac{\cos a}{2}\left(x-a\right)^{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
