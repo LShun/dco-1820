@@ -6,7 +6,13 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -342,16 +348,6 @@ Expand the following functions as a power series:
 \end_inset
 
 
-\begin_inset Formula 
-\begin{align*}
-\frac{1}{\left(1+x\right)^{4}} & =\left(1+x\right)^{-4}\\
- & =1+\left(-4\right)\left(x\right)+\frac{\left(-4\right)\left(-4-1\right)}{2!}x^{2}+\frac{-4\left(-4-1\right)\left(-4-2\right)}{3!}x^{3}+...\\
- & =1-4x+10x^{2}-20x^{3}+..
-\end{align*}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -359,23 +355,11 @@ Expand the following functions as a power series:
 \end_inset
 
 
-\begin_inset Formula 
-\begin{align*}
-\sqrt{9-x} & =\sqrt{9\left(1-\frac{x}{9}\right)}\\
- & =\sqrt{9}\left(1-\frac{x}{9}\right)^{\frac{1}{2}}\\
- & =\sqrt{9}\left[1+\left(-\frac{x}{9}\right)\right]^{\frac{1}{2}}\\
- & =3\left(1+\frac{1}{2}\left(\frac{x}{9}\right)+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}\left(-\frac{x}{9}\right)^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}\left(-\frac{x}{9}\right)^{3}+...\right)
-\end{align*}
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Use the Binomial Theorem to expand (for natural numbers use theorem, anything
- else use series):
+Use the Binomial Theorem to expand:
 \end_layout
 
 \begin_deeper
@@ -384,31 +368,10 @@ Use the Binomial Theorem to expand (for natural numbers use theorem, anything
 \end_inset
 
 
-\begin_inset Formula 
-\begin{align*}
-\sum_{k=0}^{4}\binom{4}{k}\left(2x\right)^{4-k}\left(-3\right)^{k} & =\binom{4}{0}\left(2x\right)^{4}\left(-3\right)^{0}+\binom{4}{1}\left(2x\right)^{3}\left(-3\right)^{1}+\binom{4}{2}\left(2x\right)^{2}\left(-3\right)^{2}\\
- & +\binom{4}{3}\left(2x\right)^{1}\left(-3\right)^{3}+\binom{4}{4}\left(2x\right)^{0}\left(-3\right)^{4}\\
- & =16x^{4}-96x^{3}+216x^{2}+81
-\end{align*}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\left(x+\frac{1}{2x}\right)^{6}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\sum_{k=0}^{6}\binom{6}{k}x^{6-k}\left(\frac{1}{2x}\right)^{k} & =\binom{6}{0}x^{6}\left(\frac{1}{2x}\right)^{0}+\binom{6}{1}x^{5}\left(\frac{1}{2x}\right)^{1}+\binom{6}{2}x^{4}\left(\frac{1}{2x}\right)^{2}\\
- & +\binom{6}{3}x^{3}\left(\frac{1}{2x}\right)^{3}+\binom{6}{4}x^{2}\left(\frac{1}{2x}\right)^{4}+\binom{6}{5}x^{1}\left(\frac{1}{2x}\right)^{5}\\
- & +\binom{6}{6}x^{0}\left(\frac{1}{2x}\right)^{6}\\
- & =x^{6}+3x^{4}+\frac{15}{4}x^{2}+\frac{5}{2}+\frac{15}{16x^{2}}+\frac{3}{16x^{4}}+\frac{1}{64x^{6}}
-\end{align*}
-
 \end_inset
 
 
@@ -421,9 +384,7 @@ Use the Binomial Theorem to expand (for natural numbers use theorem, anything
 
 \begin_inset Formula 
 \begin{align*}
-\sum_{k=0}^{4}\binom{4}{k}2^{4-k}\left(\frac{x}{4}\right)^{k} & =\binom{4}{0}2^{4}\left(\frac{x}{4}\right)^{0}+\binom{4}{1}2^{3}\left(\frac{x}{4}\right)^{1}+\binom{4}{2}2^{2}\left(\frac{x}{4}\right)^{2}\\
- & +\binom{4}{3}2^{1}\left(\frac{x}{4}\right)^{3}+\left(\frac{x}{4}\right)^{4}\\
- & =16+12x+\frac{3}{2}x^{2}+\frac{x^{3}}{8}+\frac{x^{4}}{256}
+\sum_{k=0}^{4}\binom{4}{k}2^{4-k}\left(\frac{x}{4}\right)^{k} & =\binom{4}{0}2^{4}\left(\frac{x}{4}\right)^{0}+\binom{4}{1}2^{3}\left(\frac{x}{4}\right)^{1}+\binom{4}{2}2^{2}\left(\frac{x}{4}\right)^{2}+\binom{4}{3}2^{1}\left(\frac{x}{4}\right)^{3}+\binom{4}{4}2^{1}\left(\frac{x}{4}\right)^{3}\\
 \end{align*}
 
 \end_inset
@@ -443,34 +404,6 @@ Expand
 
 , then find the value of 
 \begin_inset Formula $\left(5+\sqrt{3}\right)^{4}-\left(5-\sqrt{3}\right)^{4}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\left(5+\sqrt{3}\right)^{4} & =1\left(5\right)^{4}\left(\sqrt{3}\right)^{0}+4\left(5\right)^{3}\left(\sqrt{3}\right)^{1}+1\left(5\right)^{0}\left(\sqrt{3}\right)^{4}\\
- & =625+500\sqrt{3}+450+60\sqrt{3}+45\\
- & =1120+560\sqrt{3}
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\left(5-\sqrt{3}\right)^{4} & =625-500\sqrt{3}+450-60\sqrt{3}+45\\
- & =1120-560\sqrt{3}
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\left(5+\sqrt{3}\right)^{4}-\left(5-\sqrt{3}\right)^{4} & =\left(1120+560\sqrt{3}\right)-\left(1120-560\sqrt{3}\right)\\
- & =1120\sqrt{3}
-\end{align*}
-
 \end_inset
 
 
