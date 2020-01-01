@@ -364,7 +364,8 @@ Expand the following functions as a power series:
 \sqrt{9-x} & =\sqrt{9\left(1-\frac{x}{9}\right)}\\
  & =\sqrt{9}\left(1-\frac{x}{9}\right)^{\frac{1}{2}}\\
  & =\sqrt{9}\left[1+\left(-\frac{x}{9}\right)\right]^{\frac{1}{2}}\\
- & =3\left(1+\frac{1}{2}\left(\frac{x}{9}\right)+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}\left(-\frac{x}{9}\right)^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}\left(-\frac{x}{9}\right)^{3}+...\right)
+ & =3\left(1+\frac{1}{2}\left(\frac{x}{9}\right)+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}\left(-\frac{x}{9}\right)^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}\left(-\frac{x}{9}\right)^{3}+...\right)\\
+ & =3-\frac{1}{6}\left(x\right)-\frac{1}{216}x^{2}-\frac{1}{388}x^{3}+...
 \end{align*}
 
 \end_inset
