@@ -44,7 +44,6 @@ MAIN PROC
     
     MOV CH, 0
     MOV CL, actn
-    SUB CL
     MOV SI, 0
     ; from 2-5 digit in ACTSTR
     COMPARE:
@@ -52,13 +51,27 @@ MAIN PROC
         MOV BL, actstr[SI]
         CMP BL, max
         ; if n <= max, cont
+        JG REPLACE
+        JMP CONTINUE
         
         ; else, max = n
-        
+        REPLACE:
+            MOV BL, actstr[SI]
+            MOV max, BL
         ; continue
-        
-    ; display max  
+        CONTINUE:
+            INC SI
+            LOOP COMPARE
+    ; display max
+    CALL NEWLINE
     
+    MOV AH, 09H
+    LEA DX, maxTxt
+    INT 21h
+    
+    MOV AH, 02h
+    MOV DL, max
+    INT 21h
     
     MOV AX ,4C00h
     INT 21H

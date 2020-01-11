@@ -1,27 +1,27 @@
-# C3: Speech Preparation
+# C3: Speech Preparation :microphone:
 
-##  Topic Selection
+##  Topic Selection :bookmark_tabs:
 
-### Guidelines
+### Guidelines :straight_ruler:
 
 - Consider
   - **audience**: choose language appropriate
   - **occasion**: consider timing
   - **yourself**: be conscious of power to communicate
 
-### Strategies
+### Strategies :crossed_swords:
 
-- **Brainstorming**: Generate ideas
+- :**Brainstorming**: Generate ideas
 - **Listening & reading topic ideas**: News & events
 - **Scanning websites**: Select categories at random, repeatedly
 - **Narrowing topic**: 
-  - Create categories.
+  - **Create categories.**
     - Write topic at top, keep adding words until become specific enough
-      - Music
-      - Folk Music
-      - Irish Folk Music
-      - Popularity of Irish folk music in United States
-  - Find right level. According to time limit.
+      - *Music*
+      - Folk *Music*
+      - Irish *Folk Music*
+      - Popularity of *Irish folk music* in United States
+  - **Find right level.** According to time limit.
     - Too broad. Keep narrowing
     - Too narrow. Go back steps
   - Questions to consider
@@ -60,14 +60,14 @@
 
 - Organizing ideas **topically**
   - Used when ideas have natural division/separation
-  - Primacy
+  - **Primacy**
     - Discuss most important point
     - Used if audience unfamiliar towards topic
-  - Recency
+  - **Recency**
     - Discuss latest points
     - Audience is generally favorable
-  - Complexity
-    - If simple to more complicated
+  - **Complexity**
+    - Always simple to more complicated
 - Organizing ideas **chronologically**
   - Useful for historical things
   - Forward in time

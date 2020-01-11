@@ -117,7 +117,878 @@ If there are
 \end_layout
 
 \begin_layout Subsection
+Introduction
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Logic: 
+\series default
+Discipline that deals with method of reasoning
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Statement/Proposition: 
+\series default
+Declarative statement.
+ Either true or false, but not both.
+\end_layout
+
+\begin_layout Subsection
+Example 1
+\end_layout
+
+\begin_layout Standard
+Which of the following are statements?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Question
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Answer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2+3=5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Statement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The earth is round.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Statement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-x=5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not a statement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Do you speak english?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not statement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Take two aspirins?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not statement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Compound statements:
+\series default
+ Obtained via
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Negation (Strictly speaking , negation alone (e.g.: 
+\begin_inset Formula $\sim p$
+\end_inset
+
+ is not really compound))
+\end_layout
+
+\begin_layout Enumerate
+combination of statements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Conjunction 
+\begin_inset Formula $\land$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Disjunctive 
+\begin_inset Formula $\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+NAND, 
+\begin_inset Formula $\vert$
+\end_inset
+
+, AKA Scheffer stroke
+\end_layout
+
+\begin_layout Enumerate
+NOR, 
+\begin_inset Formula $\downarrow$
+\end_inset
+
+, Pierce arrow.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Example 2:
+\end_layout
+
+\begin_layout Standard
+Form the negation, conjunction, and disjunctive for the following statements.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p:2+3>1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore\sim p:$
+\end_inset
+
+ 
+\begin_inset Formula $2+3\le1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p:$
+\end_inset
+
+ It is snowing.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $q:$
+\end_inset
+
+ I am cold.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore p\land q:$
+\end_inset
+
+ It is snowing AND I am cold.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p:2<3$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $q:-5>-8$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore p\land q:$
+\end_inset
+
+ 
+\begin_inset Formula $2<3$
+\end_inset
+
+ AND 
+\begin_inset Formula $-5>-8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p:$
+\end_inset
+
+ 2 is a positive integer.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $q:$
+\end_inset
+
+ 2 is an odd number.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore p\lor q:$
+\end_inset
+
+ 2 is a positive number OR 2 is an odd number.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+: Kelly ate the pie.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+: Charles ate the pie.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\therefore p\veebar q:$
+\end_inset
+
+ Kelly ate the pie or Chares ate the pie, but not both.
+\end_layout
+
+\begin_layout Subsection
+Introduction (continued)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Statement Form / Propositional Form
+\series default
+: Expression made from statement variables & logical connectives.
+ Becomes statement once actual value substituted in.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Truth table: 
+\series default
+Table showing truth value for different values substituted in.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Logically equivalent:
+\series default
+ Same truth table value.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Denoted as 
+\begin_inset Formula $P\equiv Q$
+\end_inset
+
+ or 
+\begin_inset Formula $P\iff Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P$
+\end_inset
+
+ is true iff 
+\begin_inset Formula $Q$
+\end_inset
+
+ is true, and vice versa.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Tautology
+\series default
+: A statement, always true.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Denoted as 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contradiction: 
+\series default
+Statement, always false.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Denoted as 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Law of logical equivalences
+\series default
+: Exam have
+\end_layout
+
+\begin_layout Subsection
+Example 8
+\end_layout
+
+\begin_layout Standard
+Use De Morgan’s Law to write negation for the following statement: 
+\begin_inset Newline newline
+\end_inset
+
+Sam swims on Thursday and Kate plays tennis on Saturdays
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be Sam swims on Thursdays,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ be Kate plays tennis on Saturdays
+\end_layout
+
+\begin_layout Enumerate
+Given 
+\begin_inset Formula $p\land q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+By DeMorgan's law,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Negation statement:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sim\left(p\land q\right)\equiv\sim p\lor\sim q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sam does not swims on Thursday or Kate does not play tennis on Saturdays.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Example 9
+\end_layout
+
+\begin_layout Standard
+Negate the following 
+\begin_inset Formula $\left(p\land q\right)\lor\left(p\lor q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Solution:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sim\left[\left(p\land q\right)\lor\left(p\lor q\right)\right] & \equiv\sim\left(p\land q\right)\land\sim\left(p\lor q\right)\quad\text{DeMorg}\\
+ & \equiv\left(\sim p\lor\sim q\right)\land\left(\sim p\land\sim q\right)\quad\text{DeMorg}\\
+ & \equiv\left(\sim p\lor\sim q\right)\land\left(\sim p\land\sim q\right)\quad\text{DeMorg}\\
+ & \equiv\left(\sim p\lor\sim q\right)\land\sim p\land\sim q\quad\text{Associative}\\
+ & \equiv\sim p\land\sim q\quad\text{Absorption laws}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 10
+\end_layout
+
+\begin_layout Standard
+Prove Negation law and Universal Bound law.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\lor\sim p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\land\sim p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\lor t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\land c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Negation laws:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\lor\sim p\equiv t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\land\sim p\equiv c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Universal Bound laws:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\lor t\equiv t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\land c\equiv c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
 Example 11
+\end_layout
+
+\begin_layout Enumerate
+Use theorem above to simplify logical equivalence:
+\begin_inset Formula 
+\[
+\sim\left(\sim\left(\left(p\lor q\right)\land r\right)\lor\sim q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Answer
 \end_layout
 
 \begin_layout LyX-Code
@@ -134,6 +1005,342 @@ Example 11
 
 \end_layout
 
+\begin_layout Section
+Conditional Statements
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\to q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+if 
+\begin_inset Formula $p$
+\end_inset
+
+ then 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ is sufficient for 
+\begin_inset Formula $q$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ is a sufficient condition for 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ only if 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ is necessary for 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ is a necessary condition for 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ if 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q$
+\end_inset
+
+ unless 
+\begin_inset Formula $\sim p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Negation: 
+\series default
+
+\begin_inset Formula $\sim\left(p\to q\right)\equiv p\land\sim q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ and not 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contrapositive: 
+\begin_inset Formula $p\to q\equiv\sim q\to\sim p$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\sim q$
+\end_inset
+
+ then 
+\begin_inset Formula $\sim p$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Converse: 
+\begin_inset Formula $q\to p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Logical Equivalency
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Conditional 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ Contrapositive
+\end_layout
+
+\begin_layout Enumerate
+Negation 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ Converse
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Biconditional
+\series default
+: 
+\begin_inset Formula $p\iff q$
+\end_inset
+
+ or 
+\begin_inset Formula $p\leftrightarrow q$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ iff 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+True when both 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ are FALSE/TRUE
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ is a necessary AND sufficient condition for 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Only-if Biconditional
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ only if 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+if 
+\begin_inset Formula $p$
+\end_inset
+
+ then 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+if not 
+\begin_inset Formula $q$
+\end_inset
+
+ then not 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Extra notes
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+ only if 
+\begin_inset Formula $q$
+\end_inset
+
+ NOT SAME as 
+\begin_inset Formula $p$
+\end_inset
+
+ if 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Order:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sim$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\land,\lor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rightarrow,\leftrightarrow$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Example 18
 \end_layout

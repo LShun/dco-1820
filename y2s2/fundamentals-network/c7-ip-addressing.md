@@ -115,9 +115,9 @@ Special Use IPv4 Address
 
 - Regional Internet Registries (RIRs) (remember ARIN enough)
 - 3 tiers of ISP in internet backbone
-  - Tier 1: Directly connected to internet backbone (TM)
-  - Tier 2: Business Customers (TM, Maxis, TIME)
-  - Tier 3: Serve regular customers (TM, Maxis, TIME)
+  - Tier 1: Directly connected to internet backbone (**TM**)
+  - Tier 2: Business Customers (**TM**, Maxis, TIME)
+  - Tier 3: Serve regular customers (**TM**, Maxis, TIME)
 - This is why TM monopoly, we stuck at bad speed so long until DAP come over.
 
 ## 7.2 IPv6 Network Addresses
@@ -167,7 +167,6 @@ Special Use IPv4 Address
       - Between `FC00::/7`  to `FDFF::/7`
     - **IPv4 embedded**: Transition from IPv4 to v6, not covered, ignore.
   - Multicast
-    - 
   - ~~Broadcast~~ Anycast
 
 ### Dynamic Configuration of Global Unicast Address using SLAAC
@@ -249,16 +248,16 @@ show ipv6 interface brief
 
 - Have `FFXX::/8` prefix
 - Two types:
-  - Assigned multicast
+  - **Assigned multicast**
     - Common groups:
-      - `FF02::1`: All-nodes multicast group
+      - `FF02::1`, All-nodes multicast group
         - All devices
         - Same as broadcast in IPv4
-      - `FF02::2`: All routers multicast group
+      - `FF02::2`, All routers multicast group
         - All IPV6 routers
         - Autojoin if `ipv6 unicast-routing`  enabled
         - Packet sent here is processed by all routers
-  - Solicited node multicast
+  - **Solicited node multicast**
     - Last 24-bits same as all-nodes multicast
     - Created when link-local/global unicast address assigned
     - Combine `FF02:0:0:0:0:FF00::/104`, last 24-bits is prefix (104+24=128-bits)

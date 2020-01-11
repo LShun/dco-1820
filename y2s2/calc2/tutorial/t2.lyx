@@ -96,7 +96,7 @@ Find the length of arc of the curve:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $x=e^{t}cost$
+\begin_inset Formula $x=e^{t}\cos t$
 \end_inset
 
 , 
@@ -253,9 +253,27 @@ L & =\frac{1}{2}\int_{0}^{6}\sqrt{e^{u}+e^{-u}+2}du\\
 L & =\int_{a}^{b}ds\\
  & =\int_{a}^{b}\sqrt{1+\left(\frac{dy}{dx}\right)^{2}}dx\\
  & =\int_{\frac{1}{2}}^{1}\sqrt{1+\left(\frac{x^{2}}{2}-\frac{1}{2x^{2}}\right)^{2}}dx\\
- & =\int_{\frac{1}{2}}^{1}\sqrt{1+\frac{x^{4}}{4}-\frac{1}{2}+\frac{1}{4x^{4}}}dx\\
- & =\int_{\frac{1}{2}}^{1}\sqrt{1+\frac{x^{4}}{4}-\frac{1}{2}+\frac{1}{4x^{4}}}dx\\
- & =\int_{\frac{1}{2}}^{1}\sqrt{\frac{1}{2}+\frac{x^{4}}{4}+\frac{1}{4x^{4}}}dx\\
+ & =\frac{1}{2}\int_{\frac{1}{2}}^{1}\sqrt{\left(x^{2}-\frac{1}{x^{2}}\right)^{2}+4}dx\\
+ & =\frac{1}{2}\int_{\frac{1}{2}}^{1}\sqrt{\left(x^{4}-2\left(x^{2}\right)\left(\frac{1}{x^{2}}\right)+\left(-x^{-2}\right)^{2}\right)+4}dx\\
+ & =\frac{1}{2}\int_{\frac{1}{2}}^{1}\sqrt{x^{4}+x^{-4}+2}dx\\
+ & =\frac{1}{2}\left(\frac{31}{24}\right)\\
+L & =\frac{31}{48}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Alternative solution
+\begin_inset Formula 
+\begin{align*}
+L & =\int_{\frac{1}{2}}^{1}\sqrt{1+\left(\frac{x^{2}}{2}-\frac{1}{2x^{2}}\right)^{2}}dx\\
+ & =\int_{\frac{1}{2}}^{1}\sqrt{1+\left(\frac{x^{2}}{2}\right)^{2}-2\left(\frac{x^{2}}{2}\right)\left(\frac{1}{2x^{2}}\right)+\left(-\frac{1}{2x^{2}}\right)^{2}}dx\\
+ & =\int_{\frac{1}{2}}^{1}\sqrt{1+\left(\frac{x^{4}}{4}\right)-\frac{1}{2}+\frac{1}{4x^{4}}}dx\\
+ & =\int_{\frac{1}{2}}^{1}\sqrt{\frac{1}{2}+\frac{1}{4}x^{4}+\frac{1}{4}x^{-4}}dx\\
  & =\frac{31}{48}
 \end{align*}
 
@@ -264,6 +282,7 @@ L & =\int_{a}^{b}ds\\
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $x=\frac{y^{5}}{20}+\frac{1}{3y^{3}}$
 \end_inset
@@ -481,8 +500,11 @@ Find the integral
 \begin{align*}
 S & =2\pi\int_{1}^{4}\left(\frac{x^{3}}{12}+\frac{1}{x}\right)\cdot\sqrt{1+\left(\frac{x^{2}}{4}-\frac{1}{x^{2}}\right)^{2}}dx\\
  & =2\pi\int_{1}^{4}\left(\frac{x^{3}}{12}+\frac{1}{x}\right)\cdot\sqrt{1+\left(\frac{x^{2}}{4}-\frac{1}{x^{2}}\right)^{2}}dx\\
- & =34\frac{3}{8}\pi\\
- & =\frac{275}{8}\pi
+ & =2\pi\int_{1}^{4}\left(\frac{x^{3}}{12}+\frac{1}{x}\right)\sqrt{1+\left(\frac{x^{4}}{16}-2\left(\frac{1}{4}x^{2}\right)\left(x^{-2}\right)+\left(x^{-2}\right)^{2}\right)}dx\\
+ & =2\pi\int_{1}^{4}\left(\frac{x^{3}}{12}+\frac{1}{x}\right)\sqrt{1+\left(\frac{x^{4}}{16}-\frac{1}{2}+x^{-4}\right)}dx\\
+ & =2\pi\int_{1}^{4}\left(\frac{x^{3}}{12}+\frac{1}{x}\right)\sqrt{\frac{1}{2}+\frac{x^{4}}{16}+x^{-4}}dx\\
+ & =2\pi\left(\frac{275}{16}\right)\\
+S & =\frac{275}{8}\pi
 \end{align*}
 
 \end_inset

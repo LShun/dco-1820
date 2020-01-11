@@ -1,17 +1,17 @@
-# C6: Network Layer
+# C6: Network Layer :globe_with_meridians:
 
-### Final Exam
+### Final Exam :memo:
 
 - "Directly Connected Routing Table Entries"
 
-## Objectives
+## Objectives :o:
 
 - Explain how network layer protocols & services support communications
 - Explain how routers enable connectivity
 - Determine appropriate device to route traffic
 - Configure router
 
-## 6.1 Network Layer Protocols
+## 6.1 Network Layer Protocols :mailbox:
 
 - Network = 3rd layer of OSI model
   - Path Determination
@@ -19,17 +19,17 @@
 
 ### Network layer (Host-to-Host communication)
 
-- **Addresses** packets with IP Address.
-- **Encapsulate** packets
-- **Routes** packets
-- **Decapsulates** packets
+- **Addresses** packets with IP Address. :e-mail:
+- **Encapsulate** packets :pill:
+- **Routes** packets​ :mountain_cableway:
+- **Decapsulates** packets :open_file_folder:
 
 ### IP
 
 - Internet Protocol
   - Common: IPv4 & IPv6
   - Only **Layer 3 protocol** used in **Internet**
-- Focus of course
+- **Focus**, of course
 
 ## Characteristics of IP
 
@@ -59,14 +59,14 @@
 
 ### Limitations of IPv4
 
-- IP Address Depletion. Limited number of unique public IP address.
-- Routing table expansion. IPv4 has more nodes, many are badly configured, more overhead.
-- Lack of end-to-end connectivity. IPv4 uses Network Address Translation (NAT) for multiple devices to share single public IP. As a result, end-to-end connectivity becomes problematic as the device do not have its own public IP. 
+- **IP Address Depletion**. Limited number of unique public IP address. :card_file_box:
+- **Routing table expansion**. IPv4 has more nodes, many are badly configured, more overhead.
+- **Lack of end-to-end connectivity**. IPv4 uses Network Address Translation (NAT) for multiple devices to share single public IP. As a result, end-to-end connectivity becomes problematic as the *device do not have its own public IP.* 
 
 ### IPv6
 
-- Increased address space
-- Better packet handling
+- Increased address space :open_file_folder: :open_file_folder:
+- Better packet handling :package: :tractor:
 - Eliminate NAT
 - Integrated security
 - Header similarities with IPv4:
@@ -80,6 +80,8 @@
 - IP address of router is default gateway (in most cases)
 
 ### Default Gateway
+
+- **Definition**: The router used to forward all traffic that is not addressed to a station within the local network or local subnet. 
 
 - Hosts must maintain own routing table
 - Typical contents:
@@ -130,12 +132,12 @@
 
 ### Components - Memory
 
-| Memory | Volatility   | Stores                                                     |
-| ------ | ------------ | ---------------------------------------------------------- |
-| RAM    | Volatile     | Run OS, config files, routing & ARP tables, packet buffer. |
-| ROM    | Non-volatile | Bootup instructions, basic diagnostics, limited IOS        |
-| NVRAM  | Non-volatile | Startup config files                                       |
-| Flash  | Non-volatile | OS, System files                                           |
+| Memory | Volatility   | Stores                                                       |
+| ------ | ------------ | ------------------------------------------------------------ |
+| RAM    | Volatile     | Running OS, config files, routing & ARP tables, packet buffer. |
+| ROM    | Non-volatile | Bootup instructions, basic diagnostics, limited IOS          |
+| NVRAM  | Non-volatile | Startup config files                                         |
+| Flash  | Non-volatile | OS, System files                                             |
 
 
 
@@ -146,12 +148,17 @@
 ## Communication from Host-to-Host
 
 - **Network Layer**: Communication from one host to another.
-
 - Only layer 3 protocol used in Internet.
 - Final may ask to explain characteristics of IP
-- Routing: Very important topic
-- If you get all 0.0.0.0 for your IP, it is called default IP address (6.2 Routig Sample IPv5 Host Routing Table) Final exam may ask similar question, will give you different IP, and explain what can you understand about the diagram and the table. To answer: Router R1 will have 2 networks, [list down the IP address], in order for router network A to route to network B, the packets need to pass through the default gateway [write dg ip here]. 5 networks in the diagram
-  - Note: Default gateway need to point to the EXIT point of the network, not any other gateways.
+- **Routing: Very important topic**
+- Potential final exam question
+  - ![6.2-routing-sample-ipv4-host-r-tb.png](lecture-img/c6/6.2-routing-sample-ipv4-host-r-tb.png)
+  - **Final exam** may ask similar question: 
+    - will give you different IP, and explain what can you understand about the diagram and the table. 
+    - **To answer**: Router R1 will have 2 networks, [list down the IP address], in order for router network A to route to network B, the packets need to pass through the default gateway [write default gateway IP here]. 
+    - If you get all 0.0.0.0 for your IP, it is called *default IP address* (6.2 Routing Sample IPv4 Host Routing Table) 
+  - **Note**: Default gateway need to point to the EXIT point of the network, not any other gateways.
+    - ![network-interfaces-ip.png](lecture-img/c6/network-interfaces-ip.png)
   - That topology have 2 network, sometimes question might ask you to label
   - If say in network A: 192.168.10.1, then need to pass to default gateway (which is the center route)
   - Gateway check source & destination
@@ -160,5 +167,5 @@
   - `d` = dynamic routing protocol (1 hop away)
   - `c` = directly connected
   - `l` = local (all on same network all have IP)
-- ADminstativedistance (or whatever that is) need to be memorized
+- Administrative distance (or whatever that is) need to be memorized
 

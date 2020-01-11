@@ -80,3 +80,19 @@ FINISH: MOV AX, 4C00H
 		INT 21H
 ```
 
+## Final ExamQ1
+
+
+C1-2
+Q2
+C3,4,5
+Q3
+
+Q4
+7,8,9,10 (Write program)
+
+- ASk you to write commands
+	- Chapter 5
+- Same like mid-term test
+
+C11-12 (considered as important, coming out in final exams)

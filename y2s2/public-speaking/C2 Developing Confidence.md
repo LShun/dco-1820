@@ -11,7 +11,7 @@
 - Increase experience
 - Prepare more
 - Think positively
-- Use power of visualization
+- Use power of visualization: Basically, law of attraction in a sense.
 - Know that most nervousness are not visible
 - Lower down expectation
 
@@ -39,16 +39,16 @@
 - **Rate**: Speaking speed
 - **Pauses**: Momentary break in speech
   - Let user process speech
-  - **Vocalized Pauses:** Pauses with "uh", "er", and "um". Not recommended.
-- **Vocal variety**: 
+  - **Vocalized Pauses:** Pauses with "uh", "er", and "um". *Not recommended.*
+- **Vocal variety**: Variation in the sound created in speech (speed/pitch/loudness)
 - **Pronunciation**: Accepted standard of sound & rhythm for words in a language
 - **Articulation**: Physical production of sounds
 - **Dialect**: Language distinguished by variations of accent, grammar, or vocabulary.
 
 ## The Speaker's Body
 
-- Personal appearance: Dress apropriately
+- Personal appearance: Dress appropriately
 - Movement: In the beginning, stand still to engage audience.
-- Gestures: Use appropriate gestures to attract attention
-- Eye contact: Use eye contact to keep attention
+- Gestures: Use appropriate gestures to *attract* attention
+- Eye contact: Use eye contact to *keep* attention
 

@@ -2832,10 +2832,28 @@ Suppose there is a rational number
 
 \begin_layout Enumerate
 By definition of rational, 
+\begin_inset Formula 
+\[
+r=\frac{a}{b},\left\{ a,b\right\} \in\mathbb{Z},b\neq0
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Then 
+\begin_inset Formula 
+\begin{align*}
+s+\frac{a}{b} & =\frac{c}{d}\\
+s & =\frac{c}{d}-\frac{a}{b}\\
+ & =\frac{cb-ad}{bd}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -2852,7 +2870,7 @@ Since the difference and product of integers are integers,
 \end_inset
 
  by zero product property.
- So by definition, 
+ By definition, 
 \begin_inset Formula $s$
 \end_inset
 
@@ -2861,7 +2879,13 @@ Since the difference and product of integers are integers,
 \end_layout
 
 \begin_layout Enumerate
-This contradicts with the supposition and so
+This contradicts with the supposition that 
+\begin_inset Formula $s$
+\end_inset
+
+ is an irrational number and so 
+\series bold
+the sum of any rational number and any irrational number is irrational.
 \end_layout
 
 \end_deeper
@@ -2978,7 +3002,15 @@ Given any integer
 \end_layout
 
 \begin_layout Itemize
-Contrapositive: If n is odd , then n 2 is odd.
+Contrapositive: If 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd , then 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ is odd.
 \end_layout
 
 \begin_layout Standard

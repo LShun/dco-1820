@@ -22,7 +22,7 @@ MAIN PROC
     MOV inOne, AL
     
     MOV AH, 02H
-    MOV DX, ','
+    MOV DL, ','
     INT 21H
     
     MOV AH, 01H

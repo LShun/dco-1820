@@ -135,7 +135,7 @@ To obtain predicate, remove the nouns.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $x\epsilon A$
+\begin_inset Formula $x\in A$
 \end_inset
 
  indicates 
@@ -1751,7 +1751,7 @@ Example
 
 \begin_layout Enumerate
 Consider the statement 
-\begin_inset Formula $\exists x\in Z\ni x^{2}=x$
+\begin_inset Formula $\exists x\in\mathbb{Z}\ni x^{2}=x$
 \end_inset
 
  
@@ -2048,7 +2048,7 @@ Rewrite the following formal statements in a variety of equivalent but more
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\forall x\in R,x^{2}\neq-1$
+\begin_inset Formula $\forall x\in\mathbb{R},x^{2}\neq-1$
 \end_inset
 
 
@@ -2065,7 +2065,7 @@ For all real numbers, its square cannot be
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\exists x\in Z\ni x^{2}=x$
+\begin_inset Formula $\exists x\in\mathbb{Z}\ni x^{2}=x$
 \end_inset
 
 
@@ -2307,7 +2307,7 @@ Write negations for the following statements.
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\exists\,x\in R$
+\begin_inset Formula $\exists\,x\in\mathbb{R}$
 \end_inset
 
  such that 
@@ -2319,9 +2319,10 @@ Write negations for the following statements.
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall x\in R$
+\begin_inset Formula $\forall x\in\mathbb{R}$
 \end_inset
 
+..
  such that 
 \begin_inset Formula $x$
 \end_inset
@@ -2436,7 +2437,7 @@ Negation:
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\forall x\in R$
+\begin_inset Formula $\forall x\in\mathbb{R}$
 \end_inset
 
  , if 
@@ -2452,7 +2453,7 @@ Negation:
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\exists x\in R,$
+\begin_inset Formula $\exists x\in\mathbb{R},$
 \end_inset
 
 where 
@@ -2472,7 +2473,7 @@ There exists
 \end_inset
 
  in 
-\begin_inset Formula $R$
+\begin_inset Formula $\mathbb{R}$
 \end_inset
 
  such that 
@@ -2523,7 +2524,7 @@ Negate the following statements and determine their truth values.
 \begin_inset Formula $\forall x\ni\left[r\left(x\right)\land\sim s\left(x\right)\right]$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
