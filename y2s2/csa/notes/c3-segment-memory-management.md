@@ -69,10 +69,10 @@
 - OS use to track location of program segments.
 - Types (X segment, where X is one of the following)
 - 4 types
-  - Code segment: Stores machine instructions (AKA code)
-  - Data segment: Stores defined variables & constants (AKA data)
-  - Stack segment: Stores local function variables & function parameters (or stacks /states)
-  - Extra segment (not in syllabus)
+  - **Code** segment: Stores machine *instructions* (AKA code)
+  - **Data** segment: Stores defined *variables* & *constants* (AKA data)
+  - **Stack** segment: Stores *local function variables* & function *parameters* (or stacks/states)
+  - **Extra** segment (not in syllabus)
 - Segments can overlap (Multiple segments, same data)
 
 #### Segments vs Segment Register
@@ -107,7 +107,10 @@
 - Segment
   - (CDSE)S 
 - Flag
-  - (C/A/Z/T/D/S/O/P)F
+  - (C/A/S/P/Z/O/I/D/T)F
+    - Carry, Aux carry, Sign
+    - Parity, Zero, Overflow
+    - Interrupt enable, Direction, Single step trap
 
 #### Registers, explained
 
@@ -177,34 +180,43 @@
       - unsigned too big
       - extra 1 bit after signed calculation
     - States:
-      - 
+      - CY: Carry
       - NC: No carry
   - OF
     - Indicate overflow (ONLY signed)
     - Set when:
       - Result of signed arithmetic too big (i.e. The result's sign is opposite of both operand's sign)
+    - OV: Overflow
     - NO: No overflow
   - AF
-    - Auxillary Flag
-    - AC: Auxillary Carry
-    - NA: No auxillary
+    - Carry from 3rd to 4th bit
+    - Auxiliary Carry Flag
+    - AC: Auxiliary Carry
+    - NA: No auxiliary
   - ZF
     - Indicate result is zero
+    - ZR: Zero
+    - NZ: Not zero
   - SF
     - Indicate result's sign
+    - PL: Positive
+    - NG: Negative
   - PF
     - Set if result have even number of 1 bits
     - States:
-      - Even parity
-      - Odd parity
+      - PE: Parity Even
+      - PO: Parity Odd
     - Use for error checking
   - AF
     - Set when carry from bit 3 to bit 4 *in 8 bit operation*
     - Important for BCD addition & subtraction.
-  - CF
+    - AC: Auxiliary Carry
+  - Control flags
     - TF: Single step
     - IF: Interrupt
     - DF: Directions
+      - DN: Down
+      - UP: Up
 - Exercise
   - 0101 1010 + 0000 + 0010 = 0101 1100
     - Flags: NV, UP, EI, PL, NZ, NA, PE, NC

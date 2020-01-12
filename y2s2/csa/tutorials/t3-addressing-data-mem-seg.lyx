@@ -248,7 +248,7 @@ Explain a similarity and THREE (3) differences between a register and a
 \begin_layout Plain Layout
 
 \series bold
-Register
+RAM
 \end_layout
 
 \end_inset
@@ -268,7 +268,7 @@ Register
 \begin_layout Plain Layout
 
 \series bold
-RAM
+Register
 \end_layout
 
 \end_inset
@@ -886,7 +886,7 @@ Given a 16-bit CS register consists of the hexadecimal value 12AB and the
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $12AD0H=00010010101011010000_{2}$
+\begin_inset Formula $12AD0H=01\,0010\,1010\,1101\,0000_{2}$
 \end_inset
 
 
@@ -1626,7 +1626,7 @@ Odd parity
 \begin_inset Text
 
 \begin_layout Plain Layout
-PE
+PO
 \end_layout
 
 \end_inset
@@ -1644,7 +1644,7 @@ Even parity
 \begin_inset Text
 
 \begin_layout Plain Layout
-PO
+PE
 \end_layout
 
 \end_inset

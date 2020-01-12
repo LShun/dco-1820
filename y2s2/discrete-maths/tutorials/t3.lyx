@@ -5880,6 +5880,7 @@ Construct circuits for the following Boolean expression.
 \begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t3/q4a-circuits.png
+	lyxscale 50
 
 \end_inset
 
@@ -5898,6 +5899,7 @@ Construct circuits for the following Boolean expression.
 \begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t3/q4b-circuits.png
+	lyxscale 50
 
 \end_inset
 
@@ -5916,6 +5918,7 @@ Construct circuits for the following Boolean expression.
 \begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t3/q4c-circuits.png
+	lyxscale 50
 
 \end_inset
 
@@ -5934,6 +5937,7 @@ Construct circuits for the following Boolean expression.
 \begin_layout Enumerate
 \begin_inset Graphics
 	filename img/t3/q4d-circuits.png
+	lyxscale 50
 
 \end_inset
 
