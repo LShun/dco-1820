@@ -237,8 +237,36 @@ Use the related Maclaurin series to find the first three nonzero terms in
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Maclaurin series
+\begin_inset Formula 
+\begin{align*}
+\sin x & =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+...\\
+\sin\left(x^{4}\right) & =x^{4}-\frac{\left(x^{4}\right)^{3}}{3!}+\frac{\left(x^{4}\right)^{5}}{5!}+...\\
+ & =x^{4}-\frac{x^{12}}{6}+\frac{x^{20}}{120}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $f\left(x\right)=x\cos2x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos x & =1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+...\\
+\cos2x & =1-\frac{\left(2x\right)^{2}}{2!}+\frac{\left(2x\right)^{4}}{4!}+...\\
+ & =1-\frac{4x^{2}}{2}+\frac{16x^{4}}{24}+...\\
+ & =1-2x^{2}+\frac{2}{3}x^{4}+...\\
+x\cos2x & =x-2x^{3}+\frac{2}{3}x^{5}+...
+\end{align*}
+
 \end_inset
 
 
@@ -246,6 +274,17 @@ Use the related Maclaurin series to find the first three nonzero terms in
 
 \begin_layout Enumerate
 \begin_inset Formula $f\left(x\right)=e^{-\frac{x}{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =e^{-\frac{x}{2}}\\
+e^{x} & =1-x+\frac{x^{2}}{2}+...\\
+e^{-\frac{x}{2}} & =1-\frac{x}{2}+\frac{\left(\frac{x}{2}\right)^{2}}{2}+...\\
+ & =1-\frac{x}{2}+\frac{x^{2}}{8}+...
+\end{align*}
+
 \end_inset
 
 
@@ -269,6 +308,44 @@ Use the definition of Taylor series to find the Taylor polynomials of degree
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f^{\left(0\right)}\left(x\right)=x^{\frac{1}{2}} & f^{\left(0\right)}\left(4\right)=2\\
+f^{\left(1\right)}\left(x\right)=\frac{1}{2}x^{-\frac{1}{2}} & f^{\left(1\right)}\left(4\right)=\frac{1}{4}\\
+f^{\left(2\right)}\left(x\right)=-\frac{1}{4}x^{-\frac{3}{2}} & f^{\left(2\right)}\left(4\right)=-\frac{1}{32}\\
+f^{\left(3\right)}\left(x\right)=\frac{3}{8}x^{-\frac{5}{2}} & f^{\left(3\right)}\left(4\right)=\frac{3}{256}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =2+\frac{\frac{1}{4}}{1!}\left(x-4\right)+\left(\frac{-\frac{1}{32}}{2!}\right)\left(x-4\right)^{2}+\frac{\frac{3}{256}}{3!}\\
+ & =2+\frac{1}{4}\left(x-4\right)-\frac{1}{64}\left(x-4\right)^{2}+\frac{1}{512}\left(x-4\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $f\left(x\right)=x^{3}-10x^{2}+6$
 \end_inset
@@ -278,6 +355,34 @@ Use the definition of Taylor series to find the Taylor polynomials of degree
 \end_inset
 
  
+\begin_inset Formula 
+\[
+\begin{cases}
+f^{\left(0\right)}\left(x\right)=x^{3}-10x^{2}+6 & f^{\left(0\right)}\left(3\right)=-57\\
+f^{\left(1\right)}\left(x\right)=3x^{2}-20x & f^{\left(1\right)}\left(3\right)=-33\\
+f^{\left(2\right)}\left(x\right)=6x-20 & f^{\left(2\right)}\left(3\right)=-2\\
+f^{\left(3\right)}\left(x\right)=6 & f^{\left(3\right)}\left(3\right)=6
+\end{cases}
+\]
+
+\end_inset
+
+ (Note: Don't draw the 
+\begin_inset Formula $\{$
+\end_inset
+
+ sign)
+\begin_inset Formula 
+\begin{align*}
+x^{3}-10x^{2}+6 & =\sum_{n=0}^{3}\frac{f^{\left(n\right)}\left(3\right)}{n!}\left(x-3\right)^{n}\\
+ & =f\left(3\right)+f'\left(3\right)\left(x-3\right)+\frac{f''\left(3\right)}{2!}\left(x-3\right)^{2}+\frac{f'''\left(3\right)}{3!}\left(x-3\right)^{3}\\
+ & =-57+-33\left(x-3\right)+\frac{-2}{2!}\left(x-3\right)^{2}+\frac{6}{3!}\left(x-3\right)^{3}\\
+x^{3}-10x^{2}+6 & =-57-33\left(x-3\right)-\left(x-3\right)^{2}+\left(x-3\right)^{3}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate

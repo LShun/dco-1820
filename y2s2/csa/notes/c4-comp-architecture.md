@@ -93,7 +93,7 @@
   - CPU <-> Memory
   - Different points within CPU
 - Electrical conductors called "line", named, and carries computer signal.
-- **Purpose:** Reduce "pathways" for communication.
+- **Purpose:** Reduce "pathways" for communication, save cost.
   - ![bus-lines.png](img/c4/bus-lines.png)
 - Buses
   - ![main-bus-lines.png](img/c4/main-bus-lines.png)
@@ -115,7 +115,7 @@
 
 - Provide control for synchronization & control of bus & modules connected.
 - Bidirectional.
-- Typical: I/O write/read, Reset, Clock
+- Typical: I/O read/write, reset, clock
 
 #### Internal & External Bus
 
@@ -225,15 +225,18 @@
 ### ROM - Read Only Memory
 
 - Non-volatile, permanent storage
+- Write-once
 
 #### EEPROM (Electrically Erasable Programmable ROM)
 
 - Slower, less flexible than Flash ROM
+- Much higher write cycles than Flash ROM / ROM
 
 #### Flash ROM
 
 - Faster than disks, more expensive
 - Used in: BIOS
+- Less write cycles than EEPROM
 
 ## 7. Fetch-execute instruction cycle
 
@@ -277,7 +280,7 @@
   <tr>
     <td class="tg-c3ow"><center>MDR -&gt; A</center></td>
     <td class="tg-0pky"><center>A -&gt; MDR</center></td>
-    <td class="tg-0pky"><center>A +*/ MDR -&gt; A</center></td>
+    <td class="tg-0pky"><center>A +*/- MDR -&gt; A</center></td>
   </tr>
   <tr>
     <td class="tg-baqh" colspan="3"><center>PC + 1 -&gt; PC</center></td>

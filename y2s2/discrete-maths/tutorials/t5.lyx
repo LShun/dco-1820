@@ -150,8 +150,8 @@ Negate and simplify each of the following.
 \begin{align*}
 \sim\left(\exists x\ni\left[p\left(x\right)\lor q\left(x\right)\to r\left(x\right)\right]\right) & \equiv\forall x\ni\sim\left[p\left(x\right)\lor q\left(x\right)\to r\left(x\right)\right]\\
  & \equiv\forall x\ni\sim\left(\sim\left(p\left(x\right)\lor q\left(x\right)\right)\lor r\left(x\right)\right)\\
- & \equiv\forall x\ni\sim\left(\sim p\left(x\right)\land\sim q\left(x\right)\lor r\left(x\right)\right)\\
- & =\forall x\ni p\left(x\right)\lor q\left(x\right)\land\sim r\left(x\right)
+ & \equiv\forall x\ni\sim\left(\left(\sim p\left(x\right)\land\sim q\left(x\right)\right)\lor r\left(x\right)\right)\\
+ & =\forall x\ni\left(p\left(x\right)\lor q\left(x\right)\right)\land\sim r\left(x\right)
 \end{align*}
 
 \end_inset
@@ -184,10 +184,26 @@ if
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\exists x\in R^{nonneg}\ni x>3\lor x$
+\begin_inset Formula $\sim\left(\left(p\land r\right)\to q\right)\equiv\sim\left(\sim\left(p\land r\right)\lor q\right)$
 \end_inset
 
- is odd, AND 
+
+\begin_inset Formula 
+\begin{align*}
+\sim\left(\sim\left(p\land r\right)\lor q\right) & \equiv\left(p\land r\right)\land\sim q\\
+ & \equiv p\land r\land\sim q
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in R^{nonneg}\ni x>3x$
+\end_inset
+
+ and is even, but 
 \begin_inset Formula $x^{2}\le9$
 \end_inset
 
@@ -216,7 +232,21 @@ if
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\exists x\in Z\ni$
+Calculation
+\begin_inset Formula 
+\begin{align*}
+\sim\left(p\to\left(q\lor r\right)\right) & \equiv\sim\left(\sim p\lor\left(q\lor r\right)\right)\\
+ & \equiv p\land\sim\left(q\lor r\right)\\
+ & \equiv p\land\sim q\land\sim r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in\mathbb{Z}\ni$
 \end_inset
 
 
@@ -378,7 +408,7 @@ No irrational numbers are integers.
 
 \begin_deeper
 \begin_layout Enumerate
-There is at least one real number 
+There is at least one irrational number 
 \begin_inset Formula $x$
 \end_inset
 
@@ -386,7 +416,7 @@ There is at least one real number
 \begin_inset Formula $x$
 \end_inset
 
- is a rational number and 
+ 
 \begin_inset Formula $x$
 \end_inset
 

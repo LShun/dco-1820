@@ -2652,6 +2652,24 @@ So, the produce surplus, is simply the area below the equilibrium price.
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Note, if question give a figure, but is NOT equilibrium price (or at least,
+ you're not certain), don't use 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+, just use 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Likewise for 
+\begin_inset Formula $\bar{p}$
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Subsection
 Example

@@ -667,7 +667,7 @@ General solution:
 
 \begin_deeper
 \begin_layout Enumerate
-Every solution is in this orm.
+Every solution is in this form.
 \end_layout
 
 \end_deeper
@@ -3080,6 +3080,19 @@ Multiply everything in the D.E.
  and write it as such.
 \end_layout
 
+\begin_layout Enumerate
+Integrate both sides, make sure you properly deal with the constant of integrati
+on.
+\end_layout
+
+\begin_layout Enumerate
+Solve for the solution 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Example 1
 \end_layout
@@ -3103,14 +3116,6 @@ Put
 \end_inset
 
  is 1.
-\begin_inset Formula 
-\[
-\frac{dy}{dx}+3y=e^{2x},p\left(x\right)=3
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -3121,6 +3126,7 @@ Find the integrating factor
 .
 \begin_inset Formula 
 \begin{align*}
+\frac{dy}{dx}+3y=e^{2x} & ,p\left(x\right)=3\\
 \mu\left(x\right) & =e^{\int3dx}\\
 \mu\left(x\right) & =e^{3x}
 \end{align*}
@@ -3145,11 +3151,38 @@ Multiply everything in the D.E.
 \begin{align*}
 e^{3x}\left(\frac{dy}{dx}+3y\right) & =e^{3x}\left(e^{2x}\right)\\
 e^{3x}\frac{dy}{dx}+3e^{3x}y & =e^{3x}\left(e^{2x}\right)\\
-\frac{d}{dx}\left(e^{3x}y\right) & =e^{5x}\quad\left(\text{if you didn't notice, }\frac{d}{dx}\left(ab\right)=a'b+ab'\right)\\
-\int\frac{d}{dx}\left(e^{3x}y\right)dx & =\int e^{5x}dx\\
-e^{3x}y & =\frac{1}{5}e^{5x}+c\\
-y & =\frac{1}{5}e^{2x}+ce^{-3x}
+\frac{d}{dx}\left(e^{3x}y\right) & =e^{5x}\quad\left(\text{if you didn't notice, }\frac{d}{dx}\left(ab\right)=a'b+ab'\right)
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides, make sure you properly deal with the constant of integrati
+on.
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d}{dx}\left(e^{3x}y\right)dx & =\int e^{5x}dx\\
+e^{3x}y & =\frac{1}{5}e^{5x}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve for the solution 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\frac{1}{5}e^{2x}+ce^{-3x}
+\]
 
 \end_inset
 
@@ -3223,11 +3256,38 @@ Multiply everythin in the D.E.
 \begin{align*}
 x\left(\frac{dy}{dx}+\frac{y}{x}\right) & =x\left(x^{2}\right)\\
 x\frac{dy}{dx}+y & =x^{3}\\
-\frac{d}{dx}\left[xy\right] & =x^{3}\\
-\int\frac{d}{dx}\left[xy\right]dx & =\int x^{3}dx\\
-xy & =\frac{x^{4}}{4}+c\\
-y & =\frac{1}{4}x^{3}+\frac{c}{x}
+\frac{d}{dx}\left[xy\right] & =x^{3}
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides, make sure you properly deal with the constant of integrati
+on.
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d}{dx}\left[xy\right]dx & =\int x^{3}dx\\
+xy & =\frac{x^{4}}{4}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve for the solution 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\frac{1}{4}x^{3}+\frac{c}{x}
+\]
 
 \end_inset
 
@@ -3290,7 +3350,7 @@ Find the integrating factor
 \end_layout
 
 \begin_layout Enumerate
-Multiply everythin in the D.E.
+Multiply everything in the D.E.
  by 
 \begin_inset Formula $\mu\left(x\right)$
 \end_inset
@@ -3305,9 +3365,36 @@ Multiply everythin in the D.E.
 x^{2}\left(\frac{dy}{dx}+\frac{2}{x}y\right) & =x^{2}\left(x-1+\frac{1}{x}\right)\\
 x^{2}\frac{dy}{dx}+x^{2}\frac{2}{x}y & =x^{3}-x^{2}+x\\
 x^{2}\frac{dy}{dx}+2xy & =x^{3}-x^{2}+x\\
-\frac{d}{dx}\left(x^{2}y\right) & =x^{3}-x^{2}+x\\
+\frac{d}{dx}\left(x^{2}y\right) & =x^{3}-x^{2}+x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integrate both sides, make sure you properly deal with the constant of integrati
+on.
+\begin_inset Formula 
+\begin{align*}
 \int\frac{d}{dx}\left(x^{2}y\right)dx & =\int x^{3}-x^{2}+xdx\\
-x^{2}y & =\frac{x^{4}}{4}-\frac{x^{3}}{3}+\frac{x^{2}}{2}+c\\
+x^{2}y & =\frac{x^{4}}{4}-\frac{x^{3}}{3}+\frac{x^{2}}{2}+c
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve for the solution 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
 y & =\frac{1}{x^{2}}\left(\frac{x^{4}}{4}-\frac{x^{3}}{3}+\frac{x^{2}}{2}+c\right)\\
 y & =\frac{x^{2}}{4}-\frac{x}{3}+\frac{1}{2}+\frac{c}{x^{2}}
 \end{align*}
@@ -3386,7 +3473,7 @@ Find the integrating factor
 \end_layout
 
 \begin_layout Enumerate
-Multiply everythin in the D.E.
+Multiply everything in the D.E.
  by 
 \begin_inset Formula $\mu\left(x\right)$
 \end_inset
