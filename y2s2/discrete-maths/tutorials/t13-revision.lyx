@@ -1,0 +1,374 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc II - Tutorial PYQ
+\end_layout
+
+\begin_layout Section
+2015/16
+\end_layout
+
+\begin_layout Enumerate
+Given the power series expansion of the function 
+\begin_inset Formula $\frac{1}{1-x}=1+x+x^{2}+...,\left|x\right|<1$
+\end_inset
+
+.
+ Show that the first three non-zero coefficients in the power series expansion
+ about 
+\begin_inset Formula $x=0$
+\end_inset
+
+ of 
+\begin_inset Formula $\frac{1}{\cos x}$
+\end_inset
+
+ is given by 
+\begin_inset Formula $1+\frac{x^{2}}{2}+\frac{5x^{4}}{24}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Way 1: Traditional listing out and writing it down.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+List down the terms
+\begin_inset Formula 
+\begin{align*}
+f & =\frac{1}{\cos x}=\sec x\\
+f' & =\tan x\sec x\\
+f'' & =\tan^{2}x\sec x+\sec^{3}x\\
+ & =\left(\sec^{2}-1\right)\sec x+\sec^{3}x\\
+ & =\sec^{3}-\sec x+\sec^{3}x\\
+ & =2\sec^{3}x-\sec x\\
+ & =2f^{3}-f\\
+f''' & =6f^{2}f'-f'\\
+f'''' & =\left(12ff'\left(f'\right)-6f^{2}f''\right)-f''\text{Product rule here}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write down the values
+\begin_inset Formula 
+\begin{align*}
+f\left(0\right) & =1\\
+f'\left(0\right) & =0\\
+f''\left(0\right) & =2\left(1\right)^{3}-1\\
+ & =1\\
+f'''\left(0\right) & =6f^{2}f'-f'\\
+ & =0\\
+f''''\left(0\right) & =0+6\left(1\right)\left(1\right)-1\\
+ & =5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write down the final series (using MacLaurin Polynomial)
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\cos x} & =f\left(0\right)+\frac{f'\left(0\right)}{1!}x+\frac{f''\left(0\right)}{2!}x^{2}+...+\frac{f^{n}\left(0\right)}{n!}x^{n}\\
+ & =1+\frac{x^{2}}{2}+\frac{5x^{4}}{24}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Way 2: Utilizing MacLaurin Series
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the Maclaurin series for 
+\begin_inset Formula $f\left(x\right)=e^{-4x}$
+\end_inset
+
+ in ascending powers of 
+\begin_inset Formula $x$
+\end_inset
+
+ up to and including the term in 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+.
+ Then use the series to estimate the value of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $x=0.1$
+\end_inset
+
+.
+ Give your answer correct to 2 decimal places.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the sequence
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $e^{x}=1+\frac{x}{1!}+\frac{x^{2}}{2!}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $e^{-4x}=1+\frac{\left(-4x\right)}{1!}+\frac{\left(-4x\right)^{2}}{2!}+...=1-4x+8x^{2}+...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=0.1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+e^{-4\left(0.1\right)} & =e^{-0.4}\\
+ & =1+\frac{\left(-4\left(0.1\right)\right)}{1!}+\frac{\left(-4\left(0.1\right)\right)^{2}}{2!}+...\\
+ & \approx0.6008\\
+ & =0.60(2\,d.p.)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+2016/17
+\end_layout
+
+\begin_layout Enumerate
+Determine the Maclaurin series for 
+\begin_inset Formula $f\left(x\right)=xe^{3x}$
+\end_inset
+
+ in ascending powers of 
+\begin_inset Formula $x$
+\end_inset
+
+ up to and including the term 
+\begin_inset Formula $x^{4}$
+\end_inset
+
+.
+ Then use the series to estimate the value of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $x=0.05$
+\end_inset
+
+.
+ Give your answer correct to 
+\begin_inset Formula $4$
+\end_inset
+
+ decimal places.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $e^{x}=\sum_{n=0}^{\infty}\frac{x^{n}}{n!}=1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\frac{x^{4}}{4!}...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $e^{3x}=1+\frac{3x}{1!}+\frac{\left(3x\right)^{2}}{2!}+\frac{\left(3x\right)^{3}}{3!}+\frac{\left(3x\right)^{4}}{4!}...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $xe^{3x}=x+\frac{3x^{2}}{1!}+\frac{\left(3x\right)^{2}}{2!}+\frac{\left(3x\right)^{3}}{3!}+\frac{\left(3x\right)^{4}}{4!}...$
+\end_inset
+
+ (Note: 
+\begin_inset Formula $x$
+\end_inset
+
+ doesn't change as 
+\begin_inset Formula $n$
+\end_inset
+
+ increases, therefore, easiest way is just to multiple in)
+\end_layout
+
+\begin_layout Enumerate
+Estimate 
+\begin_inset Formula $x=0.05$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(0.05\right) & =0.05+3\left(0.05\right)^{2}+\frac{9}{2}\left(0.05\right)^{3}+\frac{9}{2}\left(0.05\right)^{4}+...\\
+ & =0.0581
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use series to approximate the definite integral of 
+\begin_inset Formula $\int_{0}^{0.05}xe^{3x}dx$
+\end_inset
+
+ correct to 
+\begin_inset Formula $4$
+\end_inset
+
+ decimal places.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $e^{3x}=1+\frac{3x}{1!}+\frac{\left(3x\right)^{2}}{2!}+\frac{\left(3x\right)^{3}}{3!}+\frac{\left(3x\right)^{4}}{4!}..$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $xe^{3x}=x+\frac{3x^{2}}{1!}+\frac{\left(3x\right)^{2}}{2!}+\frac{\left(3x\right)^{3}}{3!}+\frac{\left(3x\right)^{4}}{4!}...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{0.05}xe^{3x} & =\int_{0}^{0.05}x+\frac{3x^{2}}{1!}+\frac{\left(3x\right)^{2}}{2!}+\frac{\left(3x\right)^{3}}{3!}+\frac{\left(3x\right)^{4}}{4!}dx\\
+ & =0.0014
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

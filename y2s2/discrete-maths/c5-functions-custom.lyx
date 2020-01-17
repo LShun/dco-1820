@@ -1,0 +1,1703 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+DM Chapter 5: Functions
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Functions: 
+\series default
+Binary relations with restrictions on occuring pairs
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Every element in set 
+\begin_inset Formula $A$
+\end_inset
+
+ associated with only one element in set 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Also called mappings/transformations.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Digraph: 
+\series default
+Only 1 arc leaving every element
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be function from set 
+\begin_inset Formula $A$
+\end_inset
+
+ to set 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+: For each 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, exists uniquely determined 
+\begin_inset Formula $y\in B$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(x,y\right)\in f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is the 
+\series bold
+image
+\series default
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ under 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ is called 
+\series bold
+domain
+\series default
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B$
+\end_inset
+
+ is called 
+\series bold
+codomain
+\series default
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Range of 
+\begin_inset Formula $f$
+\end_inset
+
+: 
+\series default
+Set of images of elements in 
+\begin_inset Formula $A$
+\end_inset
+
+ under 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(A\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(A\right)=\left\{ f\left(x\right):x\in A\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Smaller, or (rarely) equal to codomain.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c5/codomain-range-venn-diagram.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Graph: 
+\begin_inset Formula $f:R\to R$
+\end_inset
+
+ given by 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/5-revision/x^2-graph.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Domain 
+\series default
+
+\begin_inset Formula $R$
+\end_inset
+
+: 
+\begin_inset Formula $x-axix$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Codomain 
+\begin_inset Formula $R:y-axis$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Range 
+\series default
+
+\begin_inset Formula $R:$
+\end_inset
+
+ all the 
+\begin_inset Formula $y$
+\end_inset
+
+'s on the lin
+\end_layout
+
+\begin_layout Enumerate
+Question: Find image of 
+\begin_inset Formula $f$
+\end_inset
+
+ under 
+\begin_inset Formula $f$
+\end_inset
+
+ when 
+\begin_inset Formula $x=2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Answer: 
+\begin_inset Formula $x=2,f\left(2\right)=2^{2}=4$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Properties of Functions
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Injective: 
+\series default
+one-to-one
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall a_{1},a_{2}\in A,f\left(a_{1}\right)=f\left(a_{2}\right)\implies a_{1}=a_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{1}\neq a_{2}\implies f\left(a_{1}\right)\neq f\left(a_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Everywhere defined: 
+\series default
+
+\begin_inset Formula $Dom\left(f\right)=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Surjective 
+\series default
+(or 
+\series bold
+onto
+\series default
+): Range of 
+\begin_inset Formula $f$
+\end_inset
+
+ is same as codomain of 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(A\right)=B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall b\in B$
+\end_inset
+
+, 
+\begin_inset Formula $\exists a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $b=f\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Bijective: 
+\series default
+Injective + surjective
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+One-to-one correspondence 
+\series default
+between 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+: Injective + surjective + everywhere defined.
+\end_layout
+
+\begin_layout Subsection
+Show functions are not injective/surjective
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Limited/Small Domain: 
+\series default
+Use diagrams, check the edges
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c5/not-injective-surjective-diagram.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Large Domain: 
+\series default
+Use proofing
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Injective: 
+\series default
+Show that every imagei in set 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Surjective: 
+\series default
+Show that for every value in 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, or 
+\begin_inset Formula $c$
+\end_inset
+
+, we can find an 
+\begin_inset Formula $x$
+\end_inset
+
+ to map to it.
+\end_layout
+
+\begin_layout Enumerate
+Example: Show that the function 
+\begin_inset Formula $k:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ given by 
+\begin_inset Formula $k\left(x\right)=4x+3$
+\end_inset
+
+ is bijective.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Injective test
+\begin_inset Formula 
+\begin{align*}
+k\left(a\right) & =k\left(b\right)\\
+4a+3 & =4b+3\\
+4a & =4b\\
+a & \neq b
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore k$
+\end_inset
+
+ is injective
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Surjective test
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $c\in\mathbb{R},k\left(x\right)=c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+4x+3 & =c\\
+4x & =c-3\\
+x & =\frac{c-3}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+This means for every value in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, we can find value in 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+k\left(\mathbb{R}\right)=\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+Functions for Computer Science
+\end_layout
+
+\begin_layout Subsection
+From subset of universal set to Boolean Set
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be subset of universal set 
+\begin_inset Formula $U=\left\{ u_{1},u_{2},...,u_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Function 
+\begin_inset Formula $A$
+\end_inset
+
+, function from 
+\begin_inset Formula $U$
+\end_inset
+
+ to 
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{A}\left(u_{i}\right)=\begin{cases}
+1 & \text{if }u_{i}\in A\\
+0 & \text{if }u_{i}\notin A
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A=\left\{ 4,7,9\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $U=\left\{ 1,2,3,...,10\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $f_{A}\left(2\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{A}\left(4\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{A}\left(12\right)$
+\end_inset
+
+ is undefined.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f_{A}$
+\end_inset
+
+ is everywhere defined, and onto, but not one-to-one
+\end_layout
+
+\begin_layout Subsection
+Family of 
+\begin_inset Formula $\mod-n$
+\end_inset
+
+ functions
+\end_layout
+
+\begin_layout Enumerate
+One for each positive integer 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}\left(m\right)=m\left(\mod n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For a fixed 
+\begin_inset Formula $n$
+\end_inset
+
+, any non-negative integer 
+\begin_inset Formula $z$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $z=kn+r$
+\end_inset
+
+ with 
+\begin_inset Formula $0\le r<n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}\left(z\right)=r$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $z\equiv r\left(\mod n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Each member is everywhere defined, onto, but not-one-to-one 
+\begin_inset Formula $-a$
+\end_inset
+
+ and 
+\begin_inset Formula $a$
+\end_inset
+
+ yields same result.
+\end_layout
+
+\begin_layout Subsection
+Floor & Ceiling Function
+\end_layout
+
+\begin_layout Enumerate
+Floor: 
+\begin_inset Formula $f\left(q\right)=\lfloor q\rfloor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ceiling: 
+\begin_inset Formula $c\left(q\right)=\lceil q\rceil$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Common Algebraic Functions
+\end_layout
+
+\begin_layout Enumerate
+Polynomial with integer coefficients
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Example: 
+\begin_inset Formula $f\left(x\right)=2x^{2}+4x+1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Exponential functions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Example, base-2 exponential: 
+\begin_inset Formula $f\left(x\right)=2^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Functions without numeric domains and/or codomains
+\end_layout
+
+\begin_layout Enumerate
+Length of string
+\end_layout
+
+\begin_layout Enumerate
+Transposition of matrices (everywhere defined, onto, one-to-one)
+\end_layout
+
+\begin_layout Enumerate
+Boolean functions, 
+\begin_inset Formula $B=\left\{ True,False\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Permutations
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Permutation: 
+\series default
+All possible combinations
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A bijection (injection + surjection) from set 
+\begin_inset Formula $A$
+\end_inset
+
+ to itself.
+\end_layout
+
+\begin_layout Enumerate
+Number of permutations: 
+\begin_inset Formula $n!$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of elements
+\end_layout
+
+\begin_layout Enumerate
+Example:
+\begin_inset Graphics
+	filename img/c5/permutations-example-1.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 1: Number of permutations
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A=\left\{ a_{1},a_{2},...,a_{n}\right\} $
+\end_inset
+
+, then there are 
+\begin_inset Formula $n!$
+\end_inset
+
+ permutations on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Cyclic Permutation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Permutations forming a cycle, 
+\begin_inset Formula $p:A\to A$
+\end_inset
+
+ defined by:
+\begin_inset Formula 
+\begin{align*}
+p\left(b_{1}\right) & =b_{2}\\
+p\left(b_{2}\right) & =b_{3}\\
+... & ...\\
+p\left(b_{r-1}\right) & =b_{r}\\
+p\left(b_{r}\right) & =b_{1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\left(x\right)=x$
+\end_inset
+
+, if 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, 
+\begin_inset Formula $x\notin\left\{ b_{1},b_{2},...,b_{r}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+This is calle a:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+cyclic permutation of length 
+\begin_inset Formula $r$
+\end_inset
+
+, or, 
+\end_layout
+
+\begin_layout Enumerate
+a cycle or length 
+\begin_inset Formula $r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Digraph:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c5/cyclic-permutation-digraph.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,3,5\right\} $
+\end_inset
+
+.
+ The cycle 
+\begin_inset Formula $\left(1,3,5\right)$
+\end_inset
+
+ denotes permutation: 
+\begin_inset Formula $\begin{pmatrix}1 & 2 & 3 & 4 & 5\\
+3 & 2 & 5 & 4 & 1
+\end{pmatrix}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+As you can see, the first row is 
+\begin_inset Formula $1-5$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The second row denotes 
+\begin_inset Quotes eld
+\end_inset
+
+where the element in the same column, but row above goes to
+\begin_inset Quotes erd
+\end_inset
+
+.
+ For example 
+\begin_inset Formula $\binom{1}{3}$
+\end_inset
+
+ denotes vertex 
+\begin_inset Formula $1$
+\end_inset
+
+ goes to vertex 
+\begin_inset Formula $3$
+\end_inset
+
+ (in the cycle).
+\end_layout
+
+\begin_layout Enumerate
+For elements which don't exist in cycle, they simply go to themselves.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The notation for a cycle does not indicate number of elements.
+ We need to specify a set where the cycle applies outselves.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Identity permutation, 
+\begin_inset Formula $I_{A}$
+\end_inset
+
+: 
+\series default
+Length 1 cycle on set A
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Disjoint cycles: 
+\series default
+No element 
+\begin_inset Formula $a$
+\end_inset
+
+ exists in common in both cycles.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Disjoint: 
+\begin_inset Formula $\left(1,2,3\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(4,5,6\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Not disjoint: 
+\begin_inset Formula $\left(1,2,3\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(3,4,5\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 2: Products of Disjoint Cycles
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+All finite permutation can be written as an identity, cycle, or a product
+ of disjoint cycles
+\end_layout
+
+\begin_layout Enumerate
+A product of disjoiny cycles is unique except for ordering
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Inverses & composition of cycles
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $p_{1}=\begin{pmatrix}1 & 2 & 3\\
+3 & 1 & 2
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}=\begin{pmatrix}1 & 2 & 3\\
+2 & 1 & 3
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{3}=\begin{pmatrix}1 & 2 & 3\\
+2 & 3 & 1
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Find:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p_{1}^{-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First, write the first row in sequence (cause we don't know their mapping
+ yet)
+\begin_inset Formula 
+\[
+p_{1}^{-1}=\begin{pmatrix}1 & 2 & 3\\
+? & ? & ?
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then, go the opposite way, from the 
+\begin_inset Formula $p_{1}=\begin{pmatrix}1 & 2 & 3\\
+3 & 1 & 2
+\end{pmatrix}$
+\end_inset
+
+, we see that
+\begin_inset Newline newline
+\end_inset
+
+1.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ goes to 
+\begin_inset Formula $3$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ goes to 
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+3.
+ 
+\begin_inset Formula $3$
+\end_inset
+
+ goes to 
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, we inverse it, or flip every single value so it goes backwards,
+ this means:
+\begin_inset Newline newline
+\end_inset
+
+1.
+ 
+\begin_inset Formula $3$
+\end_inset
+
+ goes to 
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ goes to 
+\begin_inset Formula $2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+3.
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ goes to 
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hence arriving at our answer:
+\begin_inset Formula 
+\[
+p_{1}^{-1}=\begin{pmatrix}1 & 2 & 3\\
+2 & 3 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p_{3}\circ p_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Remember it's in reverse order, if you go forward order then 0 marks for
+ you (why can't we just go forward).
+\begin_inset Formula 
+\[
+p_{3}\circ p_{2}=\begin{pmatrix}1 & 2 & 3\\
+2 & 1 & 3
+\end{pmatrix}\cdot\begin{pmatrix}1 & 2 & 3\\
+2 & 3 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, again, start with listing the top row
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 2 & 3\\
+? & ? & ?
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then, you want to find the 
+\begin_inset Quotes eld
+\end_inset
+
+end-result
+\begin_inset Quotes erd
+\end_inset
+
+ of each edge after traversing into the second matrix, so starting from
+ the first one 
+\begin_inset Formula $\left(1,2\right)\cdot\left(2,3\right)=\left(1,3\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now, repeat this for the rest, and you get
+\begin_inset Formula 
+\[
+p_{3}\circ p_{2}=\begin{pmatrix}1 & 2 & 3\\
+3 & 2 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since this forms a perfect cycle, we can simplify it very neatly into cycle
+ form, so why not? (This is optional tho)
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}1 & 2 & 3\\
+3 & 2 & 1
+\end{pmatrix} & =\left(1,3\right)\\
+p_{3}\circ p_{2} & =\left(1,3\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Writing permutations as disjoint cycles
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Question
+\series default
+: Write the permutation 
+\begin_inset Formula $\begin{pmatrix}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+3 & 4 & 6 & 5 & 2 & 1 & 8 & 7 & 9
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First, lets start with the first cycle
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{pmatrix}\boldsymbol{1} & 2 & \boldsymbol{3} & 4 & 5 & \boldsymbol{6} & 7 & 8 & 9\\
+\boldsymbol{3} & 4 & \boldsymbol{6} & 5 & 2 & \boldsymbol{1} & 8 & 7 & 9
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, we get 
+\begin_inset Formula $\left(1,3,6\right)$
+\end_inset
+
+.
+ Note we don't need to write 1 because its a cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Second, lets move on to the second cycle
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{pmatrix}X & \boldsymbol{2} & X & \boldsymbol{4} & \boldsymbol{5} & X & 7 & 8 & 9\\
+X & \boldsymbol{4} & X & \boldsymbol{5} & \boldsymbol{2} & X & 8 & 7 & 9
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, we get 
+\begin_inset Formula $\left(2,4,5\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Lets move on to the third
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{pmatrix}X & X & X & X & X & X & \boldsymbol{7} & \boldsymbol{8} & 9\\
+X & X & X & X & X & X & \boldsymbol{8} & \boldsymbol{7} & 9
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, we get 
+\begin_inset Formula $\left(7,8\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Finally, lets move on to...hold on.
+ This is an identity permutation, so we ignore that.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{pmatrix}X & X & X & X & X & X & X & X & \boldsymbol{9}\\
+X & X & X & X & X & X & X & X & \boldsymbol{9}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Once we're done, we form a product of disjoint cycles, in order
+\begin_inset Formula 
+\[
+\left(1,3,6\right)\circ\left(2,4,5\right)\circ\left(7,8\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Even and Odd Permutations
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transposition: 
+\series default
+Cycle of length 2
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Identity permutation: 
+\series default
+Cycle of length 1.
+ However, if 
+\begin_inset Formula $p=\left(a_{i},a_{j}\right)$
+\end_inset
+
+ is a transposition of 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $p\circ p=1_{A}$
+\end_inset
+
+ (
+\begin_inset Formula $p$
+\end_inset
+
+ transposition 
+\begin_inset Formula $p$
+\end_inset
+
+, remember the 
+\begin_inset Quotes eld
+\end_inset
+
+find where it ends, yes, this will make it 
+\begin_inset Formula $p\circ p=\left(a_{i},a_{i}\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Every cycle can be written as product of transpositions
+\begin_inset Formula 
+\[
+\left(b_{1},b_{2},...,b_{k+1}\right)=\left(b_{1},b_{k+1}\right)\circ...\circ\left(b_{1},b_{3}\right)\circ\left(b_{1},b_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Where each permutation is simply a cycle of first element and the 
+\begin_inset Formula $n$
+\end_inset
+
+th next element.
+ But we must go from 
+\series bold
+last to first
+\series default
+, because remember for some odd reason the 
+\begin_inset Formula $\circ$
+\end_inset
+
+ sign composition goes from last to first.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Corralary 1: Permutations of finite set
+\end_layout
+
+\begin_layout Enumerate
+Every permutation of finite set with at least 2 elements can be written
+ as a product of transpositions which need not be disjoint
+\end_layout
+
+\begin_layout Enumerate
+Every cycle can be written as a product of transpositions in many different
+ ways.
+\end_layout
+
+\begin_layout Subsection
+Theorem 3: Evenness & oddness of an permutation
+\end_layout
+
+\begin_layout Enumerate
+A permutation of a finite set can be written as a product of an even number
+ of transpositions.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If so, it can never be written as an odd number of transpositions, and conversel
+y.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Even permutations: 
+\series default
+Can be written as even number of transpositions
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Odd permutation: 
+\series default
+Can be written as odd number of transpositions
+\end_layout
+
+\begin_layout Enumerate
+Combinations:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $even\circ even=even$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $odd\circ odd=even$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $even\circ odd=odd$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Theorem 4: Number of permutations
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If set 
+\begin_inset Formula $A$
+\end_inset
+
+ is a finite set with 
+\begin_inset Formula $n$
+\end_inset
+
+ elements, there are:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{n!}{2}$
+\end_inset
+
+ even permutations
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{n!}{2}$
+\end_inset
+
+ odd permutations
+\end_layout
+
+\begin_layout Enumerate
+Recall: a set can have 
+\begin_inset Formula $n!$
+\end_inset
+
+ permutations, so it makes sense that each of them contribute to half.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Determining whether permutations are even or odd:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Write them out as product of disjoint cycles
+\end_layout
+
+\begin_layout Enumerate
+Count them
+\end_layout
+
+\begin_layout Enumerate
+If even, then even
+\end_layout
+
+\begin_layout Enumerate
+If odd, then odd
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

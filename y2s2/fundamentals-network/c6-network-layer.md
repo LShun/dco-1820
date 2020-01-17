@@ -60,15 +60,15 @@
 ### Limitations of IPv4
 
 - **IP Address Depletion**. Limited number of unique public IP address. :card_file_box:
-- **Routing table expansion**. IPv4 has more nodes, many are badly configured, more overhead.
-- **Lack of end-to-end connectivity**. IPv4 uses Network Address Translation (NAT) for multiple devices to share single public IP. As a result, end-to-end connectivity becomes problematic as the *device do not have its own public IP.* 
+- **Routing table expansion**. IPv4 has more nodes, many are badly configured, more overhead. :outbox_tray:
+- **Lack of end-to-end connectivity**. IPv4 uses Network Address Translation (NAT) for multiple devices to share single public IP. As a result, end-to-end connectivity becomes problematic as the *device do not have its own public IP.*  :link:
 
 ### IPv6
 
-- Increased address space :open_file_folder: :open_file_folder:
-- Better packet handling :package: :tractor:
-- Eliminate NAT
-- Integrated security
+- **Increased address space**. Much bigger public IP pool, enough for everyone.
+- **Improve packet handling**. No IP-level checksum, more efficient transfer.
+- **Eliminate need for NAT**. Restore end-to-end connectivity at IP layer.
+- **Improved security**. IPSec, providing security, authentication, and integrity, is baked into IPv6.
 - Header similarities with IPv4:
   - Version
   - Source & destination address

@@ -336,12 +336,14 @@ Answer
 \begin_layout Enumerate
 Answer
 \series bold
- (ASK Teacher, is this hex or decimal?)
+ (Note: hex or decimal? A: If not specified, both hex/decimal is acceptable,
+ however, you need to specify which system you are assuming)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-(Table not acceptable in final exam, must list down all the steps)
+(Table in part 1 not acceptable in final exam, must list down all the steps
+ as in part II)
 \end_layout
 
 \begin_deeper

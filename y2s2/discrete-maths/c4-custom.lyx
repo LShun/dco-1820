@@ -1,0 +1,6364 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Chapter 4: Relations & Digraphs
+\end_layout
+
+\begin_layout Section
+Product Sets and Partitions
+\end_layout
+
+\begin_layout Enumerate
+Ordered pair are listing in the form of 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It is a 
+\series bold
+sequence
+\series default
+ of 
+\series bold
+length 2
+\end_layout
+
+\begin_layout Enumerate
+Commonly used to represent coordinates of a point in a plane.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\mathbb{R}$
+\end_inset
+
+ (note: 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ represents all real numbers)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}\times\mathbb{R}=\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ represents set of all points in plane
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Cartesian product: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ sign
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Represents set of all ordered pairs (aka tuples) 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\times B=\left\{ \left(a,b\right)|a\in A\cup b\in B\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Basically, the cartesian product of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, is the set of ordered pairs 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ is an element of the set 
+\begin_inset Formula $A$
+\end_inset
+
+, and 
+\begin_inset Formula $b$
+\end_inset
+
+ is an element of the set 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Table form:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a_{1},b_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a_{2},b_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+E.g.
+ 1
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let
+\color blue
+ 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+
+\color inherit
+ and
+\color red
+ 
+\begin_inset Formula $B=\left\{ r,s\right\} $
+\end_inset
+
+
+\color inherit
+, find 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ and 
+\begin_inset Formula $B\times A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\times B=\left\{ \left(1,r\right),\left(1,s\right),\left(2,r\right),\left(2,s\right),\left(3,r\right),\left(3,s\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem
+\series default
+: For any 2 finite, non-empty sets, the distributive law applies on modulo.
+\begin_inset Formula 
+\[
+\left|A\times B\right|=\left|A\right|\times\left|B\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Cartesian products can also span more than 2 sets.
+ In this case, 
+\begin_inset Formula 
+\[
+A_{1}\times A_{2}\times...\times A_{m}=\left\{ \left(a_{1},a_{2},...,a_{m}\right)|a_{1}\in A_{i},i=1,2,..,m\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This reads as the cartesian product of the non-empty sets 
+\begin_inset Formula $A_{1},...A_{m}$
+\end_inset
+
+ is the set of all ordered 
+\begin_inset Formula $m$
+\end_inset
+
+-tuples 
+\begin_inset Formula $\left(a_{1},a_{2},...a_{m}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+, and 
+\begin_inset Formula $i$
+\end_inset
+
+ is a counter going from 
+\begin_inset Formula $1$
+\end_inset
+
+ to 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The total elements/tuples in a cartesian product, is the product of the
+ size of each set as per follows:
+\begin_inset Formula 
+\[
+\text{Elements in cartesian product}=eleInSetA*eleInSetB*...*eleInSetM
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Category: 
+\series default
+Each element in cartesian product (E.g.: 
+\begin_inset Formula $\left(a_{1},b_{1},c_{1}\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Classification scheme: 
+\series default
+All the categories (its a number, mkay?)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Partition
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+AKA 
+\series bold
+quotient set
+\end_layout
+
+\begin_layout Enumerate
+Consists of 
+\series bold
+blocks 
+\series default
+or 
+\series bold
+cells
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Every element in the set being partitioned, must belong to one block/cell
+\end_layout
+
+\begin_layout Enumerate
+No block/cell overlap another 
+\begin_inset Formula $A_{1}\cap A_{2}=\varnothing$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Each block
+\series bold
+ 
+\series default
+or
+\series bold
+ 
+\series default
+cell
+\series bold
+ 
+\series default
+is a subset derived from another set by an 
+\series bold
+equivalence relation
+\series default
+ (quote: 
+\begin_inset CommandInset href
+LatexCommand href
+name "Quotient Set - Art of Problem Solving"
+target "https://artofproblemsolving.com/wiki/index.php/Quotient_set"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Equivalence relation:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A 
+\series bold
+relation 
+\series default
+between elements of a set, which is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Relation (Symbol: 
+\begin_inset Formula $\sim$
+\end_inset
+
+ or 
+\begin_inset Formula $R$
+\end_inset
+
+): 
+\series default
+The way in which 2 (or more elements) are connected.
+ For example: 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+ if 
+\begin_inset Formula $a-b\in\mathbb{Z}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are related if their condition, 
+\begin_inset Formula $a-b$
+\end_inset
+
+ is an integer, is satisfied.
+ The condition is the 
+\begin_inset Quotes eld
+\end_inset
+
+way
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reflexive:
+\series default
+ 
+\begin_inset Formula $a\sim a$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ is related to itself.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric: 
+\series default
+if 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+, then 
+\begin_inset Formula $b\sim a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive: 
+\series default
+if 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+, and 
+\begin_inset Formula $b\sim c$
+\end_inset
+
+, then 
+\begin_inset Formula $a\sim c$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be a set, let 
+\begin_inset Formula $R$
+\end_inset
+
+ be an equivalence relation.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The quotient of 
+\begin_inset Formula $S$
+\end_inset
+
+ by 
+\begin_inset Formula $R$
+\end_inset
+
+ (aka 
+\begin_inset Formula $S/R$
+\end_inset
+
+) is the set of 
+\series bold
+equivalence classes
+\series default
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Equivalence classes
+\series default
+: A subset 
+\begin_inset Formula $S$
+\end_inset
+
+ which includes all elements equivalent to each other with respect to a
+ certain relation 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "Equivalence Class: Definition - DataScienceCentral"
+target "https://www.statisticshowto.datasciencecentral.com/equivalence-class/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Partitions can be considered as a 
+\begin_inset Formula $\wp\left(S\right)$
+\end_inset
+
+, or the 
+\series bold
+power set
+\series default
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Power set
+\series default
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+: The set of all subsets of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+Relations and Digraphs
+\end_layout
+
+\begin_layout Enumerate
+If we have a set 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ (cartesian product of set 
+\begin_inset Formula $A$
+\end_inset
+
+ and set 
+\begin_inset Formula $B$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A relation of 
+\begin_inset Formula $R$
+\end_inset
+
+ from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $A\times B$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R\subseteq A\times B$
+\end_inset
+
+ and 
+\begin_inset Formula $(a,b)\in R$
+\end_inset
+
+, then 
+\begin_inset Formula $aRb$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ and the tuple 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ is related.
+ Then 
+\begin_inset Formula $a$
+\end_inset
+
+ is related to 
+\begin_inset Formula $b$
+\end_inset
+
+ by R.
+\end_layout
+
+\begin_layout Enumerate
+Else, 
+\begin_inset Formula $a\cancel{R}b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Example, let 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $B=\left\{ r,s\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,r\right),\left(2,s\right)\right\} $
+\end_inset
+
+ is a relation from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ It does not contain everything, but it satisfies point 2 above.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To define relations, usually we write: 
+\begin_inset Formula $aRb$
+\end_inset
+
+ iff (a condition involving 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+E.g.: 
+\begin_inset Formula $aRb$
+\end_inset
+
+ iff 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Then,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(a,b\right)=\left(4,12\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a|b & =\frac{b}{a}\\
+ & =\frac{12}{4}\\
+ & =3\in\mathbb{Z}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore4R12$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(a,b\right)=\left(5,7\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a|b & =\frac{b}{a}\\
+ & =\frac{7}{5}\notin\mathbb{Z}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore5\cancel{R}7$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Finding 
+\begin_inset Formula $R$
+\end_inset
+
+ in circles.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Say if you are given 
+\begin_inset Formula $xRy\iff\frac{x^{2}}{4}+\frac{y^{2}}{9}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+To find set 
+\begin_inset Formula $R$
+\end_inset
+
+, simply:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $x=0$
+\end_inset
+
+ to find all possible values of 
+\begin_inset Formula $y$
+\end_inset
+
+ on the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis
+\begin_inset Formula 
+\begin{align*}
+\frac{y^{2}}{9} & =1\\
+y & =\pm3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substitute 
+\begin_inset Formula $y=0$
+\end_inset
+
+ to find all possible values of 
+\begin_inset Formula $x$
+\end_inset
+
+ on the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis
+\begin_inset Formula 
+\begin{align*}
+\frac{x^{2}}{4} & =1\\
+x & =\pm2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, we can say 
+\begin_inset Formula $R$
+\end_inset
+
+ is the set of tuple 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ where: 
+\begin_inset Formula 
+\begin{align*}
+-2 & \le x\le2\\
+-3 & \le y\le3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If you want to find the exact values of infinite possible combinations,
+ go ahead, but I'm stopping here.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Finding 
+\begin_inset Formula $R$
+\end_inset
+
+ using set notation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Draw out the sets in ellipses and connect the nodes if they satisfy the
+ condition.
+ The set 
+\begin_inset Formula $R$
+\end_inset
+
+ is simply the tuples of connected nodes.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Finding 
+\begin_inset Formula $R$
+\end_inset
+
+ using tables
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+List down all values in tables.
+ The set 
+\begin_inset Formula $R$
+\end_inset
+
+ is simply each 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ combination which satisfies the condition.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Domain & Range of 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Say if we have a relation set 
+\begin_inset Formula $R$
+\end_inset
+
+, such that 
+\begin_inset Formula $R$
+\end_inset
+
+ is a subset of the cartesian product between set 
+\begin_inset Formula $A$
+\end_inset
+
+ and set 
+\begin_inset Formula $B$
+\end_inset
+
+, or, 
+\begin_inset Formula $R\subseteq A\times B$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Domain 
+\series default
+of 
+\begin_inset Formula $R$
+\end_inset
+
+, or 
+\begin_inset Formula $Dom\left(R\right)$
+\end_inset
+
+ is set of elements in set 
+\begin_inset Formula $A$
+\end_inset
+
+ inside set 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Range
+\series default
+ of 
+\begin_inset Formula $R$
+\end_inset
+
+, or 
+\begin_inset Formula $Ran\left(R\right)$
+\end_inset
+
+ is set of elements in set 
+\begin_inset Formula $B$
+\end_inset
+
+ inside set 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If a group elements 
+\begin_inset Formula $y$
+\end_inset
+
+ inside a set 
+\begin_inset Formula $B$
+\end_inset
+
+ , is related to a group of elements 
+\begin_inset Formula $x$
+\end_inset
+
+ inside set 
+\begin_inset Formula $A$
+\end_inset
+
+, according to the condition we want, 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Then we can say,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R\left(x\right)=\left\{ y\in B|xRy\right\} $
+\end_inset
+
+, or,
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Formula $R$
+\end_inset
+
+-relative set of 
+\begin_inset Formula $x$
+\end_inset
+
+ is the set of all 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $x$
+\end_inset
+
+ is 
+\begin_inset Formula $R$
+\end_inset
+
+-related to 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Example
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ r,s\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $R=\left\{ (1,r),(2,s),(3,r)\right\} $
+\end_inset
+
+ is a relation from A to B.
+ Determine Dom (R) and Ran (R).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dom
+\series bold
+
+\begin_inset Formula $\left(R\right)=\left\{ 1,2,3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ran
+\begin_inset Formula $\left(R\right)=\left\{ r,s\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Theorems
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 1
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be relation from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+be subsets of 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A_{1}\subseteq A_{2}\implies R\left(A_{1}\right)\subseteq R\left(A_{2}\right)$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If set 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ is a subset of set 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $R$
+\end_inset
+
+-related set of 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ should also be a subset of 
+\begin_inset Formula $R$
+\end_inset
+
+-related set of 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R\left(A_{1}\cup A_{2}\right)=R\left(A_{1}\right)\cup R\left(A_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To simplify, 
+\begin_inset Formula $R\left(A_{1}+A_{2}\right)=R\left(A_{1}\right)+R\left(A_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+This reads as, if the subsets 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+were combined, the 
+\begin_inset Formula $R$
+\end_inset
+
+-related set should be the same, as if they split off, then 
+\begin_inset Formula $R$
+\end_inset
+
+-related, then combined.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R\left(A_{1}\cap A_{2}\right)\subseteq R\left(A_{1}\right)\cap R\left(A_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This reads as, if we first find the intersection between subset 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and subset 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, then find their 
+\begin_inset Formula $R$
+\end_inset
+
+-related set, and call that relation set 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Then, we take each subset, find their 
+\begin_inset Formula $R$
+\end_inset
+
+-related set, and then find the intersection, then call that relation set
+ 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Relation set 
+\begin_inset Formula $C$
+\end_inset
+
+, should be a subset (or an equal set) of relation set 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The reason being when we find an intersection first, then we have less elements
+ on hand, to match with the 
+\begin_inset Formula $R$
+\end_inset
+
+-relation.
+ Therefore, it must be contain an equal or less elements in relation set
+ 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Note
+\series default
+: 
+\begin_inset Formula $R\left(A_{1}\cap A_{2}\right)\neq R\left(A_{1}\right)\cap R\left(A_{2}\right)$
+\end_inset
+
+, it's not always wrong, but generally wrong.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 2
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ be relations from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R\left(a\right)=S\left(a\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $R=S$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Matrix of a Relation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a set containing 
+\begin_inset Formula $\left\{ a_{1},a_{2},...,a_{m}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be a set containing 
+\begin_inset Formula $\left\{ b_{1},b_{2},...,b_{n}\right\} $
+\end_inset
+
+.
+ Both of them are finite.
+ So set 
+\begin_inset Formula $A$
+\end_inset
+
+ has 
+\begin_inset Formula $m$
+\end_inset
+
+ elements, set 
+\begin_inset Formula $B$
+\end_inset
+
+ has 
+\begin_inset Formula $n$
+\end_inset
+
+ elements.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a relation set from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We can represent 
+\begin_inset Formula $R$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First by taking the cartesian product of 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+Then creating a matrix,
+\begin_inset Formula $M_{R}=\left[m_{ij}\right]$
+\end_inset
+
+ , where
+\begin_inset Formula 
+\[
+m_{ij}=\begin{cases}
+1 & \text{if}\left(a_{i},b_{j}\right)\in R\\
+0 & \text{if }\left(a_{i},b_{j}\right)\notin R
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The matrix 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ is called matrix of 
+\begin_inset Formula $R$
+\end_inset
+
+, easy to check properties.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Example:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ r,s\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,r\right),\left(2,s\right),\left(2,r\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}$
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Digraphs of Relation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Digraph
+\series default
+: Directed graph.
+ Geometrical representation of 
+\begin_inset Formula $R$
+\end_inset
+
+ relation set.
+\end_layout
+
+\begin_layout Enumerate
+Step:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Draw a 
+\series bold
+vertex
+\series default
+: a small circle, each with label according to corresponding element of
+ the set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Draw an 
+\series bold
+edge:
+\series default
+ An arrow, from vertex 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ to vertex 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ iff 
+\begin_inset Formula $a_{i}Ra_{j}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Vertices
+\series default
+: same number as elements in 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Edges
+\series default
+: same number as pairs in 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+In-degree: 
+\series default
+Number of edges going 
+\begin_inset Quotes eld
+\end_inset
+
+in
+\begin_inset Quotes erd
+\end_inset
+
+ a vertex
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(b,a\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Out-degree: 
+\series default
+Number of edges going 
+\begin_inset Quotes eld
+\end_inset
+
+out
+\begin_inset Quotes erd
+\end_inset
+
+ of a vertex
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(a,b\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sum of all in-degrees always same as sum of out-degrees
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Loop
+\series default
+: Edge from vertex 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a,a\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $B$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\left(B\subseteq A\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $R$
+\end_inset
+
+ is a relation on set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+ is restricted to 
+\begin_inset Formula $R\cap B\times B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To put it simply, if you have an 
+\begin_inset Formula $R$
+\end_inset
+
+ relation, from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $R$
+\end_inset
+
+ must be restricted to only the cross product of 
+\begin_inset Formula $B$
+\end_inset
+
+ (AKA all the possible tuples in 
+\begin_inset Formula $B$
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Examples of a digraph:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c4/digraph-example.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Paths in Relations and Digraphs
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Path
+\series default
+ (of length 
+\begin_inset Formula $n$
+\end_inset
+
+) is a finite sequence of elements, starting from a certain element 
+\begin_inset Formula $a$
+\end_inset
+
+, ending at another 
+\begin_inset Formula $b$
+\end_inset
+
+ element.
+ When laid out, it looks like:
+\begin_inset Formula 
+\[
+aRx_{1},x_{1}Rx_{2},...x_{n-1}Rb
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Length 
+\series default
+is the number of edges in path
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Length 
+\begin_inset Formula $n$
+\end_inset
+
+ involves 
+\begin_inset Formula $n+1$
+\end_inset
+
+ elements (might not be distinct)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Cycle: 
+\series default
+path that ends at the starting vertex
+\end_layout
+
+\begin_layout Enumerate
+A relation, 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ on set 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $xR^{n}y$
+\end_inset
+
+ means that there is a path of length 
+\begin_inset Formula $n$
+\end_inset
+
+ from 
+\begin_inset Formula $x$
+\end_inset
+
+ to 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Connectivity relation 
+\series default
+for 
+\begin_inset Formula $R$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $xR^{\infty}y$
+\end_inset
+
+ means there is 
+\series bold
+some
+\series default
+ path from 
+\begin_inset Formula $x$
+\end_inset
+
+ to 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Cool example:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $aR^{n}b$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ is John , 
+\begin_inset Formula $b$
+\end_inset
+
+ is Jane, and 
+\begin_inset Formula $R$
+\end_inset
+
+ is the relation of mutual acquaintance.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $aR^{2}b$
+\end_inset
+
+ means that John and Jane have 1 acquaintance in common.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aR^{\infty}b$
+\end_inset
+
+ means that they are a chain of acquaintances, where 1 acquaintance in chain
+ knows John and 1 knows Jane (they can be the same).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Computing path using matrices
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $\left|R\right|$
+\end_inset
+
+ is large, we use 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ to compute 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $R^{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Theorem Time!
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 1
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a relation on finite set 
+\begin_inset Formula $A=\left\{ a_{1},a_{2},...,a_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ be the 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrix, representing 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ (Basically, the cartesian product of the elements related by 
+\begin_inset Formula $R$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+To put it simply, to get the 
+\begin_inset Quotes eld
+\end_inset
+
+R-related by 2 vertices away
+\begin_inset Quotes erd
+\end_inset
+
+ elements (and above), we will do a regular matrix multiplication.
+ Because we are only checking 
+\begin_inset Quotes eld
+\end_inset
+
+present
+\begin_inset Quotes erd
+\end_inset
+
+ (1) or 
+\begin_inset Quotes eld
+\end_inset
+
+absent
+\begin_inset Quotes erd
+\end_inset
+
+ (0) like boolean, and not 
+\begin_inset Quotes eld
+\end_inset
+
+how many
+\begin_inset Quotes erd
+\end_inset
+
+ (0,1,2,...), we must use a special symbol to denote this operation.
+ In this case, we use the o-dot, 
+\begin_inset Formula $\bigodot$
+\end_inset
+
+ sign.
+ This is EXTREMELY misleading because the same sign is also used for Hadamard
+ product, but we are not performing a Hadamard product, we just 
+\begin_inset Quotes eld
+\end_inset
+
+borrow
+\begin_inset Quotes erd
+\end_inset
+
+ the sign.
+ Sorry, Hadamard fellow...
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{R^{2}}=M_{R}\bigodot M_{R}$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(M_{R}\right)_{\bigodot}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Similarly, 
+\begin_inset Formula $M_{R^{3}}=M_{R}\bigodot\left(M_{R}\bigodot M_{R}\right)=\left(M_{R}\right)_{\bigodot}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 2: (CONTINUE HERE, pg 60)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ is a relation on a finaite set 
+\begin_inset Formula $A$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R^{n}}=M_{R}\bigodot M_{R}\bigodot...\bigodot M_{R}$
+\end_inset
+
+ (n factors)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{R^{\infty}}=M_{R}\lor\left(M_{R}\right)_{\bigodot}^{2}\lor\left(M_{R}\right)_{\bigodot}^{3}\lor...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R^{*}$
+\end_inset
+
+, 
+\series bold
+reachability relation
+\series default
+ of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula $R^{*}y$
+\end_inset
+
+ means that 
+\begin_inset Formula $x=y$
+\end_inset
+
+ or 
+\begin_inset Formula $xR^{\infty}y$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Either 
+\begin_inset Formula $x$
+\end_inset
+
+ is the same as 
+\begin_inset Formula $y$
+\end_inset
+
+, OR,
+\end_layout
+
+\begin_layout Enumerate
+There is some path connecting 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R^{*}}=M_{R^{\infty}}\lor I_{n}$
+\end_inset
+
+ ,where 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ is the 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ identity matrix.
+ Thus,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R^{*}}=I_{n}\lor M_{R}\lor\left(M_{R}\right)_{\bigodot}^{2}\lor\left(M_{R}\right)_{\bigodot}^{3}\lor...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Composition of paths
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If we have path 
+\begin_inset Formula $A_{1}:a,...,b$
+\end_inset
+
+, and another path, 
+\begin_inset Formula $A_{2}:b,...,c$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If both of them are from the same relation, 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The composition of them should be 
+\begin_inset Formula $A_{2}\circ A_{1}$
+\end_inset
+
+.
+ Yes, I know, it is backwards.
+ It reads as 
+\begin_inset Quotes eld
+\end_inset
+
+a path to 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ from 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A composition can intersect each other, but the element in the TAIL of one
+ must form the HEAD of another.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Properties of Relations
+\end_layout
+
+\begin_layout Subsection
+Reflexivity
+\end_layout
+
+\begin_layout Enumerate
+Note: The set arriving from applying the equality relation, 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+, is called the 
+\series bold
+equality set.
+
+\series default
+ In here, we use 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ to represent the equality set.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle" tabularwidth="80page%">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflexive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Irreflexive
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a,a\right)\in R$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbolic Meaning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\left(a,a\right)\notin R$
+\end_inset
+
+ 
+\series default
+for all 
+\begin_inset Formula $a\in R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the tuple element, 
+\begin_inset Formula $\left(a,a\right)$
+\end_inset
+
+, exists in the relation set for every element 
+\begin_inset Formula $a$
+\end_inset
+
+ inside the relation set.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Literal meaning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the tuple, 
+\begin_inset Formula $\left(a,a\right)$
+\end_inset
+
+, DO NOT exists in the relation set for every element 
+\begin_inset Formula $a$
+\end_inset
+
+ inside the relation set.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+every element is related to itself
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TL;DR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+every element is related to itself
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All 
+\begin_inset Formula $1$
+\end_inset
+
+'s on main diagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matrix
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All 
+\begin_inset Formula $0$
+\end_inset
+
+'s on main diagonal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Have length-1 loops at every vertex.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digraph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Length-1 loops at every vertex DO NOT EXIST
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Dom\left(R\right)=Ran\left(R\right)=A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Domain & Ranges
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Dom\left(R\right)\neq Ran\left(R\right)\neq A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflexive 
+\begin_inset Formula $\iff\Delta\subseteq R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Equality set, 
+\begin_inset Formula $\Delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Irreflexive\iff\Delta\cap R=\varnothing$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not reflexive
+\series default
+ if does not satisfy 
+\series bold
+reflexivity
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Not irreflexive
+\series default
+ if does not satisfy 
+\series bold
+irreflexivity
+\end_layout
+
+\begin_layout Enumerate
+Not reflexive
+\series bold
+ 
+\begin_inset Formula $\neq$
+\end_inset
+
+ 
+\series default
+irreflexive
+\end_layout
+
+\begin_layout Subsection
+Symmetricity (yes, that's a real word)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle" tabularwidth="80page%">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symmetric
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anti-symmetric
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+For all 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $aRb\iff bRa$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbolic Meaning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+For all 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $R$
+\end_inset
+
+, if 
+\begin_inset Formula $aRb\iff bRa$
+\end_inset
+
+, then 
+\begin_inset Formula $a=b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+If one element is related to another, then the vice versa must be true
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TL;DR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+If one element is related to another, and the vice versa is true, then they
+ must be the same element
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+If 
+\begin_inset Formula $m_{ij}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $m_{ji}=1$
+\end_inset
+
+, same for 
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matrix
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+If 
+\begin_inset Formula $m_{ij}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{ji}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $m_{ij}=m_{ji}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Edges must be bidirectional, 
+\begin_inset Quotes eld
+\end_inset
+
+two-way-street
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digraph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Edges, if bidirectional, must be the same (AKA loops), otherwise, they must
+ be 
+\begin_inset Quotes eld
+\end_inset
+
+one-way streets
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Asymmetric
+\series default
+: A graph that only have one way streets
+\end_layout
+
+\begin_layout Enumerate
+Note, in some questions regarding symmetricity, you might see the following:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a\mid b$
+\end_inset
+
+ but sometimes 
+\begin_inset Formula $b\nmid a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Quotes eld
+\end_inset
+
+(vert)ical line
+\begin_inset Quotes erd
+\end_inset
+
+, or 
+\begin_inset Quotes eld
+\end_inset
+
+pipe
+\begin_inset Quotes erd
+\end_inset
+
+ or just 
+\begin_inset Quotes eld
+\end_inset
+
+(mid)line
+\begin_inset Quotes erd
+\end_inset
+
+, can mean:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+such that
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+divides
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+or 
+\begin_inset Quotes eld
+\end_inset
+
+pipe
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In this context, its 
+\begin_inset Quotes eld
+\end_inset
+
+divides
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Transitivity in Relations
+\end_layout
+
+\begin_layout Enumerate
+A subset from applying relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on set 
+\begin_inset Formula $A$
+\end_inset
+
+ is transitive if whenever 
+\begin_inset Formula $aRb$
+\end_inset
+
+, and 
+\begin_inset Formula $bRc$
+\end_inset
+
+, then 
+\begin_inset Formula $aRc$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Matrix
+\series default
+ for transitivity: If 
+\begin_inset Formula $m_{ij}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{jk}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $m_{ik}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Steps:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $\left(M_{R}\right)_{\bigodot}^{2}$
+\end_inset
+
+ (the cartesian product.
+ 
+\begin_inset Formula $M_{R}\times M_{R}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $m_{ik}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(M_{R}\right)_{\bigodot}^{2}$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+, then same thing should happen in
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To understand why (source: 
+\begin_inset CommandInset href
+LatexCommand href
+name "Matrix transitivity - Stackexchange"
+target "https://math.stackexchange.com/questions/228898/how-to-check-whether-a-relation-is-transitive-from-the-matrix-representation"
+literal "false"
+
+\end_inset
+
+), 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First note that 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ tells you how many 'one-step paths' in 
+\begin_inset Formula $\left\{ 1,2,3\right\} $
+\end_inset
+
+ that are in the relation set 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+So for example, we have
+\begin_inset Formula 
+\[
+M_{R}=\begin{bmatrix}0 & 1 & 0\\
+0 & 1 & 0\\
+0 & 1 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ shows that we have 3 'one-step' paths, which are 
+\begin_inset Formula $\left\{ \left(1,2\right),\left(2,2\right),\left(2,3\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+So by multiplying 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ by 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+, we are finding how many '2-step' paths in 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+, so we have:
+\begin_inset Formula 
+\begin{align*}
+\left(M_{R}^{2}\right)_{\odot} & =\begin{bmatrix}\boldsymbol{0} & \boldsymbol{1} & \boldsymbol{0}\\
+0 & 1 & 0\\
+0 & 1 & 0
+\end{bmatrix}\odot\begin{bmatrix}0 & \boldsymbol{1} & 0\\
+0 & \boldsymbol{1} & 0\\
+0 & \boldsymbol{1} & 0
+\end{bmatrix}\\
+\left(M_{R}^{2}\right)_{\odot} & =\begin{bmatrix}0 & \boldsymbol{1} & 0\\
+0 & 1 & 0\\
+0 & 1 & 0
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If you didn't notice, lets look at the first row and column in 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+, in the 2nd cell inside 
+\begin_inset Formula $\left(M_{R}^{2}\right)_{\odot}$
+\end_inset
+
+we multiplied the matrix coordinates as per follows:
+\begin_inset Formula 
+\[
+m_{ij}*m_{jk}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Essentially, we did
+\begin_inset Formula 
+\begin{align*}
+m_{00}*m_{10}+m_{10}*m_{11}+m_{20}*m_{12} & =\left(0,0\right)*\left(1,0\right)+\left(1,0\right)*\left(1,1\right)+\left(2,0\right)*\left(1,2\right)\\
+ & =\left(0*1\right)+\left(1*1\right)+\left(0*1\right)\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, if we have a 
+\begin_inset Formula $1$
+\end_inset
+
+ in a column inside 
+\begin_inset Formula $M_{R}^{2}$
+\end_inset
+
+, then that means there are 
+\begin_inset Quotes eld
+\end_inset
+
+at least
+\begin_inset Quotes erd
+\end_inset
+
+ a 2-link that involves 
+\begin_inset Formula $m_{ij}*m_{jk}$
+\end_inset
+
+.
+ Thus, that column, 
+\begin_inset Formula $m_{ik}$
+\end_inset
+
+ in 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ must also have 
+\begin_inset Quotes eld
+\end_inset
+
+at least
+\begin_inset Quotes erd
+\end_inset
+
+ a 1-link, to satisfy 
+\begin_inset Formula $m_{ik}=m_{ij}*m_{jk}$
+\end_inset
+
+ and be 
+\series bold
+transitive
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+In many cases, we only write 
+\begin_inset Formula $1$
+\end_inset
+
+ even if there are more links in same cell.
+ This is because additional links does not concern us as we only want to
+ know if it satisfies 
+\begin_inset Formula $m_{ik}=m_{ij}*m_{jk}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Digraph
+\series default
+ for transitivity
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If there's an edge directed from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+, and one from 
+\begin_inset Formula $b$
+\end_inset
+
+ to 
+\begin_inset Formula $c$
+\end_inset
+
+, then there MUST be an edge 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Theorem 1: 
+\series default
+If there is a path length 
+\begin_inset Formula $>1$
+\end_inset
+
+ from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+, then there must be a path of length 1 from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R^{n}\subseteq R$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 2
+\series default
+: Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a relation on set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then,
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexivity
+\series default
+ of 
+\begin_inset Formula $r$
+\end_inset
+
+: 
+\begin_inset Formula $a\in R\left(a\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetry
+\series default
+ of 
+\begin_inset Formula $R$
+\end_inset
+
+: 
+\begin_inset Formula $a\in R\left(b\right)$
+\end_inset
+
+ only if 
+\begin_inset Formula $b\in R\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitivity
+\series default
+ of 
+\begin_inset Formula $R$
+\end_inset
+
+: if 
+\begin_inset Formula $b\in R\left(a\right)$
+\end_inset
+
+ , and 
+\begin_inset Formula $c\in R\left(b\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $c\in R\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Equivalence Relations
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Equivalence relation: 
+\series default
+relation that is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Why are they called as so? Check out the reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Clearly some object has to have the same value as itself; thus any equivalence
+ relation fulfils 
+\begin_inset Formula $aRa$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+ (reflexivity).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Just as clearly, if 
+\begin_inset Formula $a$
+\end_inset
+
+ has the same value as 
+\begin_inset Formula $b$
+\end_inset
+
+, then 
+\begin_inset Formula $b$
+\end_inset
+
+ has the same value as 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ That is 
+\begin_inset Formula $aRb\implies bRa$
+\end_inset
+
+ (symmetry).
+ 
+\end_layout
+
+\begin_layout Enumerate
+And of course, if 
+\begin_inset Formula $a$
+\end_inset
+
+ has the same value as 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $b$
+\end_inset
+
+ has the same value as 
+\begin_inset Formula $c$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ has the same value as 
+\begin_inset Formula $c$
+\end_inset
+
+, that is 
+\begin_inset Formula $a\sim b\land b\sim c\implies a\sim c$
+\end_inset
+
+ (transitivity).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Computer Representation
+\end_layout
+
+\begin_layout Subsection
+Matrix representation
+\end_layout
+
+\begin_layout Enumerate
+Represent relations in matrices inside computers
+\end_layout
+
+\begin_layout Enumerate
+Represented as 2-dimensional array, such as: 
+\begin_inset Formula $MAT\left[0,0\right]=0,MAT\left[0,1\right]=1,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Linked Lists
+\end_layout
+
+\begin_layout Enumerate
+Each edge represented by two arrays:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+TAIL
+\series default
+, give beginning (or tail) of the arrow
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+HEAD
+\series default
+, give end (or head) of the arrow
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To combine all edge data into linked list, we use a 
+\series bold
+NEXT
+\series default
+ array to indicate the next edge in path.
+\end_layout
+
+\begin_layout Enumerate
+Very pretty example
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Image
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c4/linked-list-example-digraph.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Linked List
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c4/linked-list-example-linked-list.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Steps:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Mark each edges on the digraph.
+ Order doesn't matter as long as each is unique.
+\end_layout
+
+\begin_layout Enumerate
+List down all the edges in ordered pairs in the 
+\begin_inset Formula $TAIL$
+\end_inset
+
+ and 
+\begin_inset Formula $HEAD$
+\end_inset
+
+ array.
+ Order doesn't matter
+\end_layout
+
+\begin_layout Enumerate
+Pick a starting 
+\begin_inset Formula $TAIL$
+\end_inset
+
+ node, and join it with the same index to the 
+\begin_inset Formula $START$
+\end_inset
+
+ node.
+\end_layout
+
+\begin_layout Enumerate
+Write down all the 
+\begin_inset Quotes eld
+\end_inset
+
+next edge
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\series bold
+indexes
+\series default
+ inside the 
+\begin_inset Formula $NEXT$
+\end_inset
+
+ array.
+ The total count should be the same as the number of elements inside the
+ 
+\begin_inset Formula $TAIL$
+\end_inset
+
+ and 
+\begin_inset Formula $HEAD$
+\end_inset
+
+ array.
+ Ideally you want to finish one node before moving to another, but order
+ doesn't matter (you can jump from one edge to another completely unrelated
+ edge).
+ For the last one, use '0' to mark 
+\begin_inset Formula $END$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+As you can see, there are more than 1 ways to start and end the linked list.
+ However, their 
+\begin_inset Quotes eld
+\end_inset
+
+in-between
+\begin_inset Quotes erd
+\end_inset
+
+ contents don't change a lot.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+\begin_inset Quotes eld
+\end_inset
+
+Better
+\begin_inset Quotes erd
+\end_inset
+
+ Linked-List
+\end_layout
+
+\begin_layout Enumerate
+Improve efficiency, particularly when we want to find the edges that begin/end
+ with a certain vertex.
+ (Example, I challenge you to find edges beginning with vertex 6 in 3 seconds)
+\end_layout
+
+\begin_layout Enumerate
+We add a 
+\series bold
+
+\begin_inset Formula $VERT$
+\end_inset
+
+
+\series default
+ linear array
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For each 
+\begin_inset Quotes eld
+\end_inset
+
+starting
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $TAIL$
+\end_inset
+
+ vertex, 
+\begin_inset Formula $I$
+\end_inset
+
+, their index is 
+\begin_inset Formula $VERT\left[I\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $I$
+\end_inset
+
+ is the offset.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $VERT$
+\end_inset
+
+ contains pointers like 
+\begin_inset Formula $NEXT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For each vertex 
+\begin_inset Formula $I$
+\end_inset
+
+, we using 
+\begin_inset Formula $VERT$
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+start
+\begin_inset Quotes erd
+\end_inset
+
+, and use 
+\begin_inset Quotes eld
+\end_inset
+
+NEXT
+\begin_inset Quotes erd
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+link together
+\begin_inset Quotes erd
+\end_inset
+
+ edges leaving 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The last vertex of a chain leads to 
+\begin_inset Formula $0$
+\end_inset
+
+ in 
+\begin_inset Formula $NEXT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+In a sense, this linked list contains multiple links compared to the single
+ link in the previous one.
+\end_layout
+
+\begin_layout Enumerate
+There are many possible solutions, therefore, as long as you can join all,
+ even if more/less links, it doesn't matter.
+\end_layout
+
+\begin_layout Enumerate
+Steps
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Mark each edges on the digraph.
+ Order doesn't matter as long as each is unique.
+\end_layout
+
+\begin_layout Enumerate
+List down all the edges in ordered pairs in the 
+\begin_inset Formula $TAIL$
+\end_inset
+
+ and 
+\begin_inset Formula $HEAD$
+\end_inset
+
+ array.
+ Order doesn't matter.
+ Join them together horizontally.
+\end_layout
+
+\begin_layout Enumerate
+Identify the 
+\begin_inset Quotes eld
+\end_inset
+
+chains
+\begin_inset Quotes erd
+\end_inset
+
+ in the diagram
+\end_layout
+
+\begin_layout Enumerate
+For each chain:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Create an entry in 
+\begin_inset Formula $VERT$
+\end_inset
+
+ to point to the correct 
+\series bold
+index
+\series default
+ where the vertex resides in 
+\begin_inset Formula $TAIL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Create an entry in 
+\begin_inset Formula $NEXT$
+\end_inset
+
+ 
+\series bold
+directly beside
+\series default
+ the entry, directing towards the next 
+\series bold
+index
+\series default
+ inside the array where the next chain resides.
+\end_layout
+
+\begin_layout Enumerate
+Repeat point A-B, until you reach the end of the chain.
+\end_layout
+
+\begin_layout Enumerate
+Once so, repeat B, but put 
+\begin_inset Formula $0$
+\end_inset
+
+ as 
+\begin_inset Formula $NEXT$
+\end_inset
+
+ index
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Retrace it to check
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+One solution
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c4/linked-list-example-digraph.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c4/linked-list-example-linked-list-enhanced.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Operations on Relations
+\end_layout
+
+\begin_layout Subsection
+Complementary Relation, 
+\begin_inset Formula $\bar{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complement of 
+\begin_inset Formula $R$
+\end_inset
+
+, or relation.
+\end_layout
+
+\begin_layout Enumerate
+Expression: 
+\begin_inset Formula $a\bar{R}b$
+\end_inset
+
+ iff 
+\begin_inset Formula $a\cancel{R}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Matrix
+\series default
+, 
+\begin_inset Formula $M_{\bar{R}}$
+\end_inset
+
+: Obtained from 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+, interchange every 1 and 0 in 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+M_{R} & =\begin{bmatrix}0 & 0\\
+1 & 0
+\end{bmatrix}\\
+M_{\bar{R}} & =\overline{\begin{bmatrix}0 & 0\\
+1 & 0
+\end{bmatrix}}\\
+M_{\bar{R}} & =\begin{bmatrix}1 & 1\\
+0 & 1
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Intersection Relation, 
+\begin_inset Formula $R\cap S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are both relations.
+ 
+\begin_inset Formula $aRb$
+\end_inset
+
+ AND 
+\begin_inset Formula $aSb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Expression
+\series default
+: 
+\begin_inset Formula $R\cap S=aRb\land aSb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Matrix: 
+\begin_inset Formula $M_{R\cap S}=M_{R}\land M_{S}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M_{R} & =\begin{bmatrix}0 & 0\\
+1 & 0
+\end{bmatrix}\\
+M_{S} & =\begin{bmatrix}0 & 1\\
+1 & 0
+\end{bmatrix}\\
+M_{R\cap S} & =\begin{bmatrix}0 & 0\\
+1 & 0
+\end{bmatrix}\land\begin{bmatrix}0 & 1\\
+1 & 0
+\end{bmatrix}\\
+ & =\begin{bmatrix}0\land0 & 0\land1\\
+1\land1 & 0\land0
+\end{bmatrix}\\
+M_{R\cap S} & =\begin{bmatrix}0 & 0\\
+1 & 0
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Union Relation, 
+\begin_inset Formula $R\cup S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Formula $aRb$
+\end_inset
+
+ 
+\series default
+OR 
+\begin_inset Formula $aSb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Expression: 
+\begin_inset Formula $R\cup S=aRb\lor aSb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Matrix: 
+\series default
+
+\begin_inset Formula $M_{R\cup S}=M_{R}\lor M_{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inverse Relation, 
+\begin_inset Formula $R^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Relation from set 
+\begin_inset Formula $B$
+\end_inset
+
+ to set 
+\begin_inset Formula $A$
+\end_inset
+
+ (reverse order of 
+\begin_inset Formula $R$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Expression: 
+\series default
+
+\begin_inset Formula $bR^{-1}a$
+\end_inset
+
+ iff 
+\begin_inset Formula $aRb$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(R^{-1}\right)^{-1}=R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Dom\left(R^{-1}\right)=Ran\left(R\right)$
+\end_inset
+
+ and vice versa.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Matrix: 
+\begin_inset Formula $M_{R^{-1}}=\left(M_{R}\right)^{T}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}0 & 1\\
+0 & 0
+\end{bmatrix}^{T}=\begin{bmatrix}0 & 0\\
+1 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equality & Universal Relation
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=R$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be relation 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\le$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ be relation 
+\begin_inset Formula $\ge A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Complement of 
+\begin_inset Formula $R$
+\end_inset
+
+: 
+\begin_inset Formula $>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complement of 
+\begin_inset Formula $S$
+\end_inset
+
+: 
+\begin_inset Formula $<$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R^{-1}=S,S^{-1}=R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Equality Relation: 
+\series default
+
+\begin_inset Formula $R\cap S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Universal Relation: 
+\series default
+Any 
+\begin_inset Formula $a$
+\end_inset
+
+ related to any 
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem 1: Relationship between relations
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are relations from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R\subseteq S$
+\end_inset
+
+, then 
+\begin_inset Formula $R^{-1}\subseteq S^{-1}$
+\end_inset
+
+: If relation 
+\begin_inset Formula $R$
+\end_inset
+
+ is a subset of relation 
+\begin_inset Formula $S$
+\end_inset
+
+, then their inverses must also be the same.
+ (WHAT
+\begin_inset Quotes erd
+\end_inset
+
+S THIS!)
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R\subseteq S$
+\end_inset
+
+, then 
+\begin_inset Formula $\bar{S}\subseteq\bar{R}$
+\end_inset
+
+: If relation 
+\begin_inset Formula $R$
+\end_inset
+
+ is a subset of relation 
+\begin_inset Formula $S$
+\end_inset
+
+, then their complement must also be the same.
+ (WHAT
+\begin_inset Quotes erd
+\end_inset
+
+S THIS!)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(R\cap S\right)^{-1}=R^{-1}\cap S^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(R\cup S\right)^{-1}=R^{-1}\cup S^{-1}$
+\end_inset
+
+: The inverse (
+\begin_inset Quotes eld
+\end_inset
+
+route-backs
+\begin_inset Quotes erd
+\end_inset
+
+), of the intersection between the set arising from the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ and relation 
+\begin_inset Formula $S$
+\end_inset
+
+ must be the same as the intersection of the set arising from inverses (
+\begin_inset Quotes eld
+\end_inset
+
+route-backs
+\begin_inset Quotes erd
+\end_inset
+
+) of 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ .
+ The same applies for unions.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{R\cap S}=\bar{R}\cup\bar{S}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{R\cup S}=\bar{R}\cap\bar{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If you don't have 
+\begin_inset Formula $R$
+\end_inset
+
+ AND 
+\begin_inset Formula $S$
+\end_inset
+
+, means you don't have 
+\begin_inset Formula $R$
+\end_inset
+
+, or you don't have 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ The opposite must be true too.
+ (Note: DeMorgan's Law apply here)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 2: Reflexivity of relations
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, so is 
+\begin_inset Formula $R^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are reflexive, so are 
+\begin_inset Formula $R\cap S$
+\end_inset
+
+ and 
+\begin_inset Formula $R\cup S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive iff 
+\begin_inset Formula $\bar{R}$
+\end_inset
+
+ is irreflexive.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive if and only if its complement is irreflexive.
+\end_layout
+
+\begin_layout Subsection
+Theorem 3: Symmetry, Antisymmetry, and Asymmetry of 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric iff 
+\begin_inset Formula $R=R^{-1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric if and only if it is the same as its inverse.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is antisymmetric iff 
+\begin_inset Formula $R\cap R^{-1}\subseteq\Delta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ is antisymmetric if and only if its intersection with its inverse is a
+ subset of the equality set, where 
+\begin_inset Formula $\Delta=\left\{ \left(a,a\right),\left(b,b\right),\left(c,c\right),...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+AKA if its the intersection between edges that exists and edges that don't
+ exist forms a symmetry
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is asymmetric iff 
+\begin_inset Formula $R\cap R^{-1}=\varnothing$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ is asymmetric if there only exists 
+\begin_inset Quotes eld
+\end_inset
+
+one-way
+\begin_inset Quotes erd
+\end_inset
+
+ streets.
+\end_layout
+
+\begin_layout Subsection
+Theorem 4: Symmetry of 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric, then 
+\begin_inset Formula $R^{-1}$
+\end_inset
+
+and 
+\begin_inset Formula $\bar{R}$
+\end_inset
+
+ are also symmetric.
+ To understand why, check 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If a relation set is symmetric, then 
+\begin_inset Formula $R\cap S$
+\end_inset
+
+ and 
+\begin_inset Formula $R\cup S$
+\end_inset
+
+ are also symmetric.
+\end_layout
+
+\begin_layout Subsection
+Theorem 5: Transitivity, Equivalence between Relations
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ be relations on 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(R\cap S\right)^{2}\subseteq R^{2}\cap S^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S^{2}=S\times S=\left\{ \left(x_{1},x_{2}\right):x_{1},x_{2}\in S\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are transitive, so is 
+\begin_inset Formula $R\cap S$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If they are both transitive, then a subset of them must also be transitive
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are equivalence relations, then so is 
+\begin_inset Formula $R\cap S$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If they are both equivalent, their subset must also be equivalent
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Reflexive Closure, Symmetric Closure and Transitive Closure
+\end_layout
+
+\begin_layout Subsection
+Closures
+\end_layout
+
+\begin_layout Enumerate
+Some relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ lacks important relational properties (RefSymTrans).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We add pairs to 
+\begin_inset Formula $R$
+\end_inset
+
+ until we get the property.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Closure of 
+\begin_inset Formula $R$
+\end_inset
+
+: 
+\series default
+Smallest relation 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+on 
+\begin_inset Formula $A$
+\end_inset
+
+, which is a superset of 
+\begin_inset Formula $R$
+\end_inset
+
+, possessing the property we desire.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For the below, assume that 
+\begin_inset Formula $R$
+\end_inset
+
+ is neither reflexive nor symmetric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reflexive closure: 
+\series default
+
+\begin_inset Formula $R\cup\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ union with the equality set 
+\begin_inset Formula $\left\{ \left(a,a\right),\left(b,b\right),...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Digraph: 
+\series default
+Add missing loops to each vertex
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Symmetric closure: 
+\series default
+
+\begin_inset Formula $R\cup R^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Digraph: 
+\series default
+All edges made bidrectional
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Compositions
+\end_layout
+
+\begin_layout Enumerate
+Let's say we have 3 sets, set 
+\begin_inset Formula $A$
+\end_inset
+
+, set 
+\begin_inset Formula $B$
+\end_inset
+
+, and set 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then we have a relation 
+\begin_inset Formula $R$
+\end_inset
+
+ from set 
+\begin_inset Formula $A$
+\end_inset
+
+ to set 
+\begin_inset Formula $B$
+\end_inset
+
+, and relation 
+\begin_inset Formula $S$
+\end_inset
+
+ from set 
+\begin_inset Formula $B$
+\end_inset
+
+ to set 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Composition
+\series default
+ of 
+\begin_inset Formula $R\land S=S\circ R$
+\end_inset
+
+.
+ Composition to S from R.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $c\in C$
+\end_inset
+
+, then 
+\begin_inset Formula $a\left(S\circ R\right)c$
+\end_inset
+
+ iff for some 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, we have 
+\begin_inset Formula $aRb$
+\end_inset
+
+ and 
+\begin_inset Formula $bSc$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Take it simply, if we have a composition of relations between three sets,
+ means we have relations among 3 elements in 3 different sets.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Digraph: 
+\begin_inset Graphics
+	filename img/c4/composition-of-relations-digraph.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The red line are the individual relations, the blue line is the 
+\begin_inset Formula $a\left(S\circ R\right)c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Matrices: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ has size of 
+\begin_inset Formula $n*p$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{S}$
+\end_inset
+
+ has size 
+\begin_inset Formula $p*m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}\odot M_{S}=M_{S\circ R}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 6: Composition of Subsets
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a relation from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+ and let 
+\begin_inset Formula $S$
+\end_inset
+
+ be a relation from 
+\begin_inset Formula $B$
+\end_inset
+
+ to 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+is a subset of 
+\begin_inset Formula $A$
+\end_inset
+
+ , then we have
+\begin_inset Formula 
+\[
+\left(S\circ R\right)\left(A_{1}\right)=S\left(R\left(A_{1}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem 7: Associative law on compositions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\circ\left(S\circ R\right)=\left(T\circ S\right)\circ R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem 8: Inverses on compositions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(S\circ R\right)^{-1}=R^{-1}\circ S^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In general, 
+\begin_inset Formula $S\circ R\neq R\circ S$
+\end_inset
+
+ , to understand why: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Finding Compositions: Sets
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Question
+\series default
+: Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $R=\left\{ \left(1,2\right),\left(1,1\right),\left(1,3\right),\left(2,4\right),\left(3,2\right)\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $S=\left\{ \left(1,4\right),\left(1,3\right),\left(2,3\right),\left(3,1\right),\left(4,1\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $S\circ R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Answer
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You want to start from 
+\begin_inset Formula $R$
+\end_inset
+
+, lets go with the first element in 
+\begin_inset Formula $R$
+\end_inset
+
+, labelled 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+r_{0}=\left(1,2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+So, we know that this leads to the 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ So, we find the 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ pair in 
+\begin_inset Formula $S$
+\end_inset
+
+ with 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+ So, we found
+\begin_inset Formula 
+\[
+s_{2}=\left(2,3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since this entry's 
+\begin_inset Formula $y=3$
+\end_inset
+
+, we thus conclude that 
+\begin_inset Formula 
+\[
+\left(S\circ R\right)_{0}=\left(1,3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We can then continue and make the following tuple list
+\begin_inset Formula 
+\[
+S\circ R=\left\{ \left(1,3\right),\left(1,4\right),\left(1,1\right),\left(2,1\right),\left(3,3\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Finding compositions: Matrices
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A=\left\{ a,b,c\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ be relations on 
+\begin_inset Formula $A$
+\end_inset
+
+ whose matrices are
+\begin_inset Formula 
+\[
+M_{R}=\begin{bmatrix}0 & 1\\
+1 & 0
+\end{bmatrix},M_{S}=\begin{bmatrix}1 & 1\\
+1 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{S\circ R}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M_{S\circ R} & =M_{R}\odot M_{S}\\
+ & =\begin{bmatrix}0 & 1\\
+1 & 0
+\end{bmatrix}\odot\begin{bmatrix}1 & 1\\
+1 & 0
+\end{bmatrix}\\
+ & =\begin{bmatrix}0*1+1*1 & 1*1+1*0\\
+1*1+0*1 & 1*1+0*0
+\end{bmatrix}\\
+M_{S\circ R} & =\begin{bmatrix}1 & 1\\
+1 & 1
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Transitive Closure
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R^{\infty}$
+\end_inset
+
+ is transitive closure of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive closure
+\series default
+: 
+\begin_inset Formula $R^{\infty}$
+\end_inset
+
+, all vertices are connected (by paths) to other vertices.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+(Geometric point of view) Connectivity relation: 
+\begin_inset Formula $R^{\infty}$
+\end_inset
+
+
+\series default
+, specify which vertices are connected to other vertices.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R^{*}$
+\end_inset
+
+ reachability relation 
+\begin_inset Formula $=R^{\infty}\cup\Delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Theorem 2
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a set with 
+\begin_inset Formula $\left|A\right|=n$
+\end_inset
+
+, and let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $R^{\infty}=R\cup R^{2}\cup...\cup R^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Transitive Closure using Warshall’s Algorithm
+\end_layout
+
+\begin_layout Enumerate
+Use to compute transitive closure efficiently.
+\end_layout
+
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $W_{0}=M_{R}$
+\end_inset
+
+, then we have sequence 
+\begin_inset Formula $W_{0},W_{1},...,W_{n}$
+\end_inset
+
+ whose first term is 
+\begin_inset Formula $M_{R}$
+\end_inset
+
+ and last term is 
+\begin_inset Formula $M_{R^{\infty}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Steps
+\end_layout
+
+\begin_layout Enumerate
+Transfer to 
+\begin_inset Formula $W_{k}$
+\end_inset
+
+ all 1's in 
+\begin_inset Formula $W_{k-1}$
+\end_inset
+
+.
+ (For 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ you are simply moving 
+\begin_inset Formula $W_{0}$
+\end_inset
+
+ inside)
+\end_layout
+
+\begin_layout Enumerate
+List down the rows & colmns where the entry is 1 in two lists.
+\end_layout
+
+\begin_layout Enumerate
+Find all possible combinations of row & columns from the list your obtained
+ in step 2
+\end_layout
+
+\begin_layout Enumerate
+Make it 1 for each tuple 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ that exists both inside step 3, and 
+\begin_inset Formula $W_{k}$
+\end_inset
+
+ (if not already 1)
+\end_layout
+
+\begin_layout Enumerate
+Repeat until the last row & column inside the matrix.
+\end_layout
+
+\begin_layout Section
+Theorem 3: Equivalence relations between relations
+\end_layout
+
+\begin_layout Enumerate
+The smallest equivalence relation containing both 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ is 
+\begin_inset Formula $\left(R\cup S\right)^{\infty}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{R\cup S}=M_{\left(R\cup S\right)^{\infty}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example on Warshall + Theorem 3
+\end_layout
+
+\begin_layout Subsection
+Question
+\end_layout
+
+\begin_layout Enumerate
+Let:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),(2,1),(2,2),(3,3),(3,4),(4,3),(4,4),(5,5)\right\} $
+\end_inset
+
+ and
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\left\{ (1,1),(2,2),(3,3),(4,4),(4,5),(5,4),(5,5)\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the smallest equivalence relations containing 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+, and compute the partition of 
+\begin_inset Formula $A$
+\end_inset
+
+ it produces.
+\end_layout
+
+\begin_layout Subsection
+Answer
+\end_layout
+
+\begin_layout Enumerate
+Find the two matrices
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R}=\begin{bmatrix}1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 1 & 0\\
+0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{S}=\begin{bmatrix}1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Note: Some of the 
+\begin_inset Formula $W_{n}$
+\end_inset
+
+ are the same as the previous ones, therefore, there is no need to keep
+ redrawing them.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{R\cup S}=M_{R}\lor M_{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $W_{0}=\begin{bmatrix}\boldsymbol{1} & \boldsymbol{1} & \boldsymbol{0} & \boldsymbol{0} & \boldsymbol{0}\\
+\boldsymbol{1} & 1 & 0 & 0 & 0\\
+\boldsymbol{0} & 0 & 1 & 1 & 0\\
+\boldsymbol{0} & 0 & 1 & 1 & 1\\
+\boldsymbol{0} & 0 & 0 & 1 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We start by finding the row & column list for the first row and column (bolded).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{1}:1,2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R_{1}:1,2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then, we find all possible combinations (that do not already exist inside
+ 
+\begin_inset Formula $W_{0}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $W_{1}=W_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $W_{1}=\begin{bmatrix}1 & \boldsymbol{1} & 0 & 0 & 0\\
+\boldsymbol{1} & \boldsymbol{1} & \boldsymbol{0} & \boldsymbol{0} & \boldsymbol{0}\\
+0 & \boldsymbol{0} & 1 & 1 & 0\\
+0 & \boldsymbol{0} & 1 & 1 & 1\\
+0 & \boldsymbol{0} & 0 & 1 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: no need to redraw, purpose is to highlight rows & columns selected.
+ In exam, you can just write 
+\begin_inset Formula $W_{1}=W_{0}$
+\end_inset
+
+ as above.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{1}:1,2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R_{1}:1,2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add 
+\begin_inset Formula $\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $W_{2}=W_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $W_{2}=\begin{bmatrix}1 & 1 & \boldsymbol{0} & 0 & 0\\
+1 & 1 & \boldsymbol{0} & 0 & 0\\
+\boldsymbol{0} & \boldsymbol{0} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{0}\\
+0 & 0 & \boldsymbol{1} & 1 & 1\\
+0 & 0 & \boldsymbol{0} & 1 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C_{3}=3,4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R_{3}=3,4$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left\{ \left(3,3\right),\left(3,4\right),\left(4,3\right),\left(4,4\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $W_{3}=W_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $W_{3}=\begin{bmatrix}1 & 1 & 0 & \boldsymbol{0} & 0\\
+1 & 1 & 0 & \boldsymbol{0} & 0\\
+\boldsymbol{0} & \boldsymbol{0} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{0}\\
+0 & 0 & 1 & \boldsymbol{1} & 1\\
+0 & 0 & 0 & \boldsymbol{1} & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C_{4}=3,4,5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R_{4}=3,4,5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left\{ \left(3,3\right),\left(3,4\right),\boldsymbol{\left(3,5\right)},\left(4,3\right),\left(4,4\right),\left(4,5\right),\boldsymbol{\left(5,3\right)},\left(5,4\right),\left(5,5\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Tuples added are highlighted: 
+\begin_inset Formula $W_{3}=\begin{bmatrix}1 & 1 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 1 & \boldsymbol{1}\\
+0 & 0 & 1 & 1 & 1\\
+0 & 0 & \boldsymbol{1} & 1 & 1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $W_{4}=\begin{bmatrix}1 & 1 & 0 & 0 & \boldsymbol{0}\\
+1 & 1 & 0 & 0 & \boldsymbol{0}\\
+0 & 0 & 1 & 1 & \boldsymbol{1}\\
+0 & 0 & 1 & 1 & \boldsymbol{1}\\
+\boldsymbol{0} & \boldsymbol{0} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C_{5}=3,4,5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R_{5}=3,4,5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add 
+\begin_inset Formula $\left(3,3\right)...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $W_{5}=W_{4}=M_{\left(R\cup S\right)^{\infty}}$
+\end_inset
+
+, The smallest equivalence relation containing 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+literal "false"
+
+\end_inset
+
+Mathematics Stack Exchange.
+ 2020.
+ terminology - why are equivalence relations called so? - Mathematics Stack
+ Exchange.
+ [ONLINE] Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://math.stackexchange.com/questions/1262216/why-are-equivalence-relations-called-so"
+
+\end_inset
+
+.
+ [Accessed 14 January 2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+literal "false"
+
+\end_inset
+
+Mathematics Stack Exchange.
+ 2020.
+ logic - Proof: if $R$ is symmetric then so is $R^{-1}$ - Mathematics Stack
+ Exchange.
+ [ONLINE] Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://math.stackexchange.com/questions/1170879/proof-if-r-is-symmetric-then-so-is-r-1"
+
+\end_inset
+
+.
+ [Accessed 15 January 2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+literal "false"
+
+\end_inset
+
+Mathematics Stack Exchange.
+ 2020.
+ discrete mathematics - Is the complement of a symmetric relation symmetric?
+ - Mathematics Stack Exchange.
+ [ONLINE] Available at: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://math.stackexchange.com/questions/1810687/is-the-complement-of-a-symmetric-relation-symmetric"
+
+\end_inset
+
+.
+ [Accessed 15 January 2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+literal "false"
+
+\end_inset
+
+ Mathematics Stack Exchange.
+ 2020.
+ elementary set theory - Inverse of composition of relation - Mathematics
+ Stack Exchange.
+ [ONLINE] Available at: https://math.stackexchange.com/questions/234891/inverse-of
+-composition-of-relation.
+ [Accessed 15 January 2020].
+\end_layout
+
+\end_body
+\end_document
