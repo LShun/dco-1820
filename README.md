@@ -35,7 +35,7 @@ Most (if not all) of copyrighted materials are already removed. If, for any reas
 - found out that it is placed here verbatim,
 - prefer the resources not to be shared,
 
-after consulting [Malaysia’s Copyright Act 1987](http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act 332 - Copyright Act 1987 Cetakan Semula 2013.pdf), Section 13(2), you are free to contact me (either by e-mail, or by creating an "issue" in GitHub).
+after consulting [Malaysia’s Copyright Act 1987](http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20332%20-%20Copyright%20Act%201987%20Cetakan%20Semula%202013.pdf), Section 13(2), you are free to contact me (either by e-mail, or by creating an "issue" in GitHub).
 
 ## Acknowledgments
 
