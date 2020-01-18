@@ -4,7 +4,7 @@
 
 - Assembler is similar to compiler
 - Assemble-Link-Execute Cycle
-  - ![assemble-link-execute-cycle.png](C:%5CUsers%5Cuser300%5Crepo%5Cdco-1820%5Cy2s2%5Ccsa%5Cnotes%5Cimg%5Cc6%5Cassemble-link-execute-cycle.png)
+  - ![](img/c6/assemble-link-execute-cycle.png)
 
 - Source file extension: .ASM
 

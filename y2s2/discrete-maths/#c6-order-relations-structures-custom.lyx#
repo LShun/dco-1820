@@ -1,0 +1,1065 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+DM Chapter 6 Notes
+\end_layout
+
+\begin_layout Section
+Partially Ordered Sets
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Partial order: 
+\series default
+Reflexive, anti-symmetric, transitive relation set.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Partial order cause elements inside are 
+\begin_inset Quotes eld
+\end_inset
+
+partially
+\begin_inset Quotes erd
+\end_inset
+
+ comparable (ordered).
+ Basically, not all are comparable.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Poset: 
+\series default
+Partially ordered set.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A poset denoted as 
+\begin_inset Formula $\left(A,R\right)$
+\end_inset
+
+ means that it is a partially ordered set derived from set 
+\begin_inset Formula $A$
+\end_inset
+
+ after applying the relation 
+\begin_inset Formula $R$
+\end_inset
+
+, where, 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A:$
+\end_inset
+
+ set
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R:$
+\end_inset
+
+ partial order 
+\begin_inset Formula $R$
+\end_inset
+
+ relation
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Example
+\series default
+: 
+\begin_inset Formula $\left(A,\subseteq\right)$
+\end_inset
+
+ means it is a partially ordered set (poset) derived from set 
+\begin_inset Formula $A$
+\end_inset
+
+ after applying the relation 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ onto set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+However, 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the usual relations with equality 
+\begin_inset Formula $\left(\le,\ge\right)$
+\end_inset
+
+ are posets on 
+\begin_inset Formula $Z^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-equality ones 
+\begin_inset Formula $\left(<,>\right)$
+\end_inset
+
+ are not because they are NOT reflexive.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Duality
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Dual poset
+\series default
+: 
+\begin_inset Formula $\left(A,R^{-1}\right)$
+\end_inset
+
+, if we have a poset 
+\begin_inset Formula $\left(A,R\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Example: 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(A,\ge\right)$
+\end_inset
+
+ 
+\series bold
+on 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ or 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: Unless otherwise specified (like above example), 
+\begin_inset Formula $\le$
+\end_inset
+
+ and 
+\begin_inset Formula $\ge$
+\end_inset
+
+ symbols are used for relations in poset terms.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poset
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dual Poset
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(A,\ge\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(A,\le_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(A,\ge_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(B,\le'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(B,\ge'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comparability
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+ is a poset, elements 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ in set 
+\begin_inset Formula $A$
+\end_inset
+
+ are comparable if
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a\le b$
+\end_inset
+
+, (
+\begin_inset Formula $a$
+\end_inset
+
+ is related to 
+\begin_inset Formula $b$
+\end_inset
+
+, note we use 
+\begin_inset Formula $\le$
+\end_inset
+
+ to replace 
+\begin_inset Formula $R$
+\end_inset
+
+, this is NOT 
+\begin_inset Quotes eld
+\end_inset
+
+less than or equal
+\begin_inset Quotes erd
+\end_inset
+
+ in poset terms) OR,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b\le a$
+\end_inset
+
+ (
+\begin_inset Formula $b$
+\end_inset
+
+ is related to 
+\begin_inset Formula $a$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Example
+\series default
+: 
+\begin_inset Formula $\left(A,\le\right)=\left(Z^{+},|\right)$
+\end_inset
+
+ .
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ sign represents divides.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Comparable example: 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $6$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2\le6$
+\end_inset
+
+ (2 is related to 6) or 
+\begin_inset Formula $2|6$
+\end_inset
+
+ (2 divides 6)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Not comparable example: 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $7$
+\end_inset
+
+ since 
+\begin_inset Formula $2\nmid7$
+\end_inset
+
+ and 
+\begin_inset Formula $7\nmid2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Linear order
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Linearly ordered set: 
+\series default
+A set where every pair of elements are comparable, also known as 
+\series bold
+chain.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Linear order: 
+\series default
+Linearly ordered partial order
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Example
+\series default
+: 
+\begin_inset Formula $\left(Z^{+},\le\right)$
+\end_inset
+
+.
+ Every element pair (remember this time its 
+\begin_inset Formula $Z^{+}$
+\end_inset
+
+) is comparable (less than or equal) to another element.
+\end_layout
+
+\begin_layout Subsection
+Theorem 1: Cartesian product of posets
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(B,\le\right)$
+\end_inset
+
+ are posets, then 
+\begin_inset Formula $\left(A\times B,\le\right)$
+\end_inset
+
+ is a poset, with partial order defined 
+\begin_inset Formula $\le$
+\end_inset
+
+ defined by:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(a,b\right)\le\left(a',b'\right)$
+\end_inset
+
+ 
+\series bold
+if
+\series default
+ 
+\begin_inset Formula $a\le a'$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $b\le b'$
+\end_inset
+
+ in 
+\begin_inset Formula $B$
+\end_inset
+
+ .
+ (Huge if, if it does not satisfy, then it is not the valid)
+\end_layout
+
+\begin_layout Enumerate
+The above reads as: One of the elements in 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ is related to one of the elements in 
+\begin_inset Formula $\left(a',b'\right)$
+\end_inset
+
+, if 
+\begin_inset Formula $a$
+\end_inset
+
+ is related to 
+\begin_inset Formula $a'$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is related to 
+\begin_inset Formula $b'$
+\end_inset
+
+.
+ That is, if each element is related independently, then they must also
+ be (still) related by a certain relation even if we mash them together.
+\end_layout
+
+\begin_layout Enumerate
+The '
+\begin_inset Formula $\le$
+\end_inset
+
+' sign is used to denote 3 distinct partial order (you can see 3 '
+\begin_inset Formula $\le$
+\end_inset
+
+' there).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Product partial order: 
+\series default
+
+\begin_inset Formula $\left(A\times B,\le\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,3,5\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 2,4,8\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $\le_{A}$
+\end_inset
+
+ means 
+\begin_inset Quotes eld
+\end_inset
+
+less than or equal to
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Formula $|$
+\end_inset
+
+ means 
+\begin_inset Quotes eld
+\end_inset
+
+divides
+\begin_inset Quotes erd
+\end_inset
+
+, then 
+\begin_inset Formula $\left(A,\le_{A}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(B,|\right)$
+\end_inset
+
+ are posets.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\times B,\le\right)$
+\end_inset
+
+ is also a poset, as example
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1\le_{A}3,2\mid4$
+\end_inset
+
+ , 
+\begin_inset Formula $\left(1,2\right)\le\left(3,4\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\le_{A}5,4\mid8,\left(3,4\right)\le\left(5,8\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Then, we also have
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(1,2\right)\le\left(5,8\right)$
+\end_inset
+
+ because 
+\begin_inset Formula $1\le_{A}5,2\mid8$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Lexicographic order
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Lexicographic order
+\series default
+: Dictionary order of tuples in posets
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use first element of each tuples as ordering, if 
+\begin_inset Quotes eld
+\end_inset
+
+tie
+\begin_inset Quotes erd
+\end_inset
+
+, then use second elements in each tuples.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Definition
+\series default
+: 
+\begin_inset Formula $\left(A\times B,\prec\right)=$
+\end_inset
+
+
+\begin_inset Formula $\left(a,b\right)\prec\left(a',b'\right)$
+\end_inset
+
+ if 
+\begin_inset Formula $a<a'$
+\end_inset
+
+ or if 
+\begin_inset Formula $a=a'$
+\end_inset
+
+ and 
+\begin_inset Formula $b\le b'$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: suppose 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(B,\le\right)$
+\end_inset
+
+ are posets.
+ They can have different relations, 
+\begin_inset Formula $\le_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\le_{2}$
+\end_inset
+
+, or same.
+\end_layout
+
+\begin_layout Enumerate
+Note 2: Notice that for partial order, w use 
+\begin_inset Formula $a\le a'$
+\end_inset
+
+, or the related sign.
+ but for lexicographic order, we have 
+\begin_inset Formula $a<a'$
+\end_inset
+
+.
+ In lexicographic, NO 2 elements (or tuples) can be exactly the same.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Another reason why we use the '
+\begin_inset Formula $\prec$
+\end_inset
+
+' precedes sign.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Note 3: Lexicographic ordering can be extended to more cartesian products,
+ e.g.
+ 
+\begin_inset Formula $A_{1}\times A_{2}\times A_{3}$
+\end_inset
+
+.
+ In this case, we can extend our first coordinate to 
+\begin_inset Formula $a_{1}=a_{1}'$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}=a_{2}'$
+\end_inset
+
+, and 
+\begin_inset Formula $a_{3}<a_{3}'$
+\end_inset
+
+ or ...
+ (
+\begin_inset Formula $b$
+\end_inset
+
+ part)
+\end_layout
+
+\begin_layout Enumerate
+Note 4: We can also use words, for example 
+\begin_inset Formula $par\boldsymbol{k}\prec par\boldsymbol{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $k$
+\end_inset
+
+ precedes 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Extending lexicographic order to 
+\begin_inset Formula $S^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If we have 
+\begin_inset Formula $x=a_{1}a_{2}a_{3}...a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $y=b_{1}b_{2}b_{3}...b_{k}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\le k$
+\end_inset
+
+ in 
+\begin_inset Formula $S^{*}$
+\end_inset
+
+, we can 
+\begin_inset Quotes eld
+\end_inset
+
+extend
+\begin_inset Quotes erd
+\end_inset
+
+ (extending influence, not characters) 
+\begin_inset Formula $n$
+\end_inset
+
+ to 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We can say that 
+\begin_inset Formula $x\prec y$
+\end_inset
+
+ if 
+\begin_inset Formula $\left(a_{1}a_{2}...a_{n}\right)\prec\left(b_{1}b_{2}...b_{n}\right)$
+\end_inset
+
+, even if 
+\begin_inset Formula $y$
+\end_inset
+
+ has 
+\begin_inset Formula $k$
+\end_inset
+
+ elements which is more than 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+That's because if the front dominates, the back doesn't matter.
+\end_layout
+
+\begin_layout Enumerate
+Example:
+\begin_inset Formula 
+\[
+park\prec\boldsymbol{part}\implies park\prec\boldsymbol{part}ition
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Theorem 2: Partial order digraph cycles
+\end_layout
+
+\begin_layout Enumerate
+Digraph of partial order has no cycle of length greater than 1.
+\end_layout
+
+\begin_layout Enumerate
+This should make sense, because a partial order is 
+\series bold
+antisymmetric
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Hasse Diagram
+\end_layout
+
+\begin_layout Enumerate
+Simplification of digraph
+\end_layout
+
+\begin_layout Enumerate
+Steps:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Omitting all cycles of length 1 (or loops) (imply reflexivity)
+\end_layout
+
+\begin_layout Enumerate
+Omitting all edges implying transitivity
+\end_layout
+
+\begin_layout Enumerate
+Drawing all edges slanting upwards to eliminate arrows, or 'stretch into
+ lines moving upwards'
+\end_layout
+
+\begin_layout Enumerate
+Represent vertices by dots
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Note: Always good to break them into separate levels, for example:
+\end_layout
+
+\begin_layout Section
+Extremal Elements of Partial Ordered Sets
+\end_layout
+
+\begin_layout Section
+Least Upper Bound and Greatest Lower Bound
+\end_layout
+
+\end_body
+\end_document
