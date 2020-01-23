@@ -2186,7 +2186,7 @@ Plug into the function
 8Be^{4x}+16Bxe^{4x}+16Ce^{4x}-3Be^{4x}-12Bxe^{4x}-12Ce^{4x}-18Bxe^{4x}-18Ce^{4x} & =xe^{4x}\\
 16Bxe^{4x}-12Bxe^{4x}-18Bxe^{4x}-12Ce^{4x}-18Ce^{4x}+16Ce^{4x}+8Be^{4x}-3Be^{4x} & =xe^{4x}\\
 16Bxe^{4x}-30Bxe^{4x}-14Ce^{4x}+5Be^{4x} & =xe^{4x}\\
-xe^{4x}\left(-14B\right)-e^{4x}\left(14C+5B\right) & =xe^{4x}
+xe^{4x}\left(-14B\right)-e^{4x}\left(14C-5B\right) & =xe^{4x}
 \end{align*}
 
 \end_inset
@@ -2215,10 +2215,10 @@ B & =-\frac{1}{14}
 
 \begin_inset Formula 
 \begin{align*}
-14C+5B & =0\\
-14C & =-5\left(-\frac{1}{14}\right)\\
-C & =\frac{5}{14}*\frac{1}{14}\\
- & =\frac{5}{196}
+14C-5B & =0\\
+14C & =5\left(-\frac{1}{14}\right)\\
+C & =-\frac{5}{14}*\frac{1}{14}\\
+ & =-\frac{5}{196}
 \end{align*}
 
 \end_inset
@@ -2234,7 +2234,7 @@ Find
 
 \begin_inset Formula 
 \[
-y_{p}=\left(-\frac{1}{14}x+\frac{5}{196}\right)e^{4x}
+y_{p}=\left(-\frac{1}{14}x-\frac{5}{196}\right)e^{4x}
 \]
 
 \end_inset
@@ -2252,7 +2252,8 @@ Find the non-homogeneous D.E.
 
 \begin_inset Formula 
 \begin{align*}
-y & =e^{6x}C_{1}+e^{-3x}C_{2}+\left(-\frac{1}{14}x+\frac{5}{196}\right)e^{4x}
+y & =e^{6x}C_{1}+e^{-3x}C_{2}+\left(-\frac{1}{14}x-\frac{5}{196}\right)e^{4x}\\
+ & =e^{6x}C_{1}+e^{-3x}C_{2}-\frac{1}{14}x-\frac{5}{196}e^{4x}
 \end{align*}
 
 \end_inset

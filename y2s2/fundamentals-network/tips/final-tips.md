@@ -88,7 +88,13 @@
 
 ### Reasons for subnetting
 
+- **Improve network speed**: Reduce size of broadcast domains to reduce amount of broadcast traffic present & improve bandwidth.
+- **Improve device performance:** Reduce size of broadcast domains to improve device performance. Device no longer need to process as many "useless" broadcast packets.
+- **Device grouping:** Allows for different networking policies, security settings according to location, organization unit, and device type.
+
 ### Reasons for VLSM
+
+- **Reduce wastage of addresses in subnet**. Traditional subnetting has fixed amount of IP address per subnet, wastes too much address per subnet.
 
 ### How to Subnet & VLSM
 

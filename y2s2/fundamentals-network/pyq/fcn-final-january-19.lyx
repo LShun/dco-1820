@@ -536,6 +536,162 @@ Given an IP address of 192.168.100.16 and a subnet mask of 255.255.255.0, calcul
 CHAPTER 8
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Start by converting it to binary
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IP Address
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Binary
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AND result
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+192.168.100.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11000000
+\begin_inset Formula $\quad$
+\end_inset
+
+10101000
+\begin_inset Formula $\quad$
+\end_inset
+
+01100100
+\begin_inset Formula $\quad$
+\end_inset
+
+00010000
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11000000
+\begin_inset Formula $\quad$
+\end_inset
+
+10101000
+\begin_inset Formula $\quad$
+\end_inset
+
+01100100
+\begin_inset Formula $\quad$
+\end_inset
+
+00000000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+255.255.255.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11111111
+\begin_inset Formula $\quad$
+\end_inset
+
+11111111
+\begin_inset Formula $\quad$
+\end_inset
+
+11111111
+\begin_inset Formula $\quad$
+\end_inset
+
+00000000
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Convert back to dotted decimal:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+192.168.100.0
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 XYZ Global Inc.
  has an 1Pv4 network based on 172.32.0.0/16 address.
@@ -551,25 +707,60 @@ CHAPTER 8
 How many subnets are needed? (I mark) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+64 subnets
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 How many bits need to be borrowed to support the required subnets? (2 marks)
  
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+6 bits
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 How many usable host addresses per subnct? (2 marks)
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1024-2=1022$
+\end_inset
+
+ hosts
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 What is the decimal value of the new subnct mask? (2 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+255.255.252.0
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Calculate and list the subnets information in the table below.
  Write your answer in dotted decimal format
 \end_layout
 
 \begin_deeper
+\begin_layout Enumerate
+172.32.000010
+\begin_inset space ~
+\end_inset
+
+00.00000000
+\end_layout
+
 \begin_layout Enumerate
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
@@ -640,7 +831,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.0.0
 \end_layout
 
 \end_inset
@@ -649,7 +840,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.0.1
 \end_layout
 
 \end_inset
@@ -658,7 +849,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.3.254
 \end_layout
 
 \end_inset
@@ -667,7 +858,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.3.255
 \end_layout
 
 \end_inset
@@ -687,7 +878,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.4.0
 \end_layout
 
 \end_inset
@@ -696,7 +887,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.4.1
 \end_layout
 
 \end_inset
@@ -705,7 +896,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.7.254
 \end_layout
 
 \end_inset
@@ -714,7 +905,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.7.255
 \end_layout
 
 \end_inset
@@ -734,7 +925,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.8.0
 \end_layout
 
 \end_inset
@@ -743,7 +934,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.8.1
 \end_layout
 
 \end_inset
@@ -752,7 +943,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.11.254
 \end_layout
 
 \end_inset
@@ -761,7 +952,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.11.255
 \end_layout
 
 \end_inset
@@ -781,7 +972,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.12.0
 \end_layout
 
 \end_inset
@@ -790,7 +981,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.12.1
 \end_layout
 
 \end_inset
@@ -799,7 +990,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.15.254
 \end_layout
 
 \end_inset
@@ -808,7 +999,7 @@ Broadcast Address
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+172.32.15.255
 \end_layout
 
 \end_inset
@@ -834,13 +1025,55 @@ List the THREE (3) responsibilities of Transport Layer.
  (3 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Track individual conversations
+\end_layout
+
+\begin_layout Enumerate
+Segment and reassemble data segments (divide data for transmission)
+\end_layout
+
+\begin_layout Enumerate
+Identify applications performing data transmission
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Transport Control Protocol (TCP) is a reliable, full-featured transport
  layer protocol, which ensures that all of the data arrives at the destination.
  Briefly explain THREE (3) basic operations of reliability provided by TCP.
- (6 marks) 
+ (6 marks)
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Ordered delivery
+\series default
+: Use sequence number to identify, keep track, and assemble each segment.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Sequence number & acknowledgement.
+ 
+\series default
+Ensure destination reachable & ready to receive data.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Data loss & retransmission.
+ 
+\series default
+Lost & corrupt segments are retransmitted.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Give the compressed format for each of the following IPv6 addresses.
  
@@ -848,16 +1081,50 @@ Give the compressed format for each of the following IPv6 addresses.
 
 \begin_deeper
 \begin_layout Enumerate
-2001:0db8:85a3:0000:0000:8a2e:0370:7334 (2 marks) 
+2001:0db8:85a3:0000:0000:8a2e:0370:7334 (2 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Step 1, eliminate leading zeroes: 2001:db8:85a3:0000:0000:8a2e:370:7334
 \end_layout
 
 \begin_layout Enumerate
-2001:0db8:0a0b:12f0:0000:0000:0000:0001 (2 marks) 
+Step 2, eliminate one all zero segments: 
+\series bold
+2001:db8:85a3::8a2e:370:7334
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-TCP and UDP maange multiple simultaneous conversations by using port number
+2001:0db8:0a0b:12f0:0000:0000:0000:0001 (2 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Step 1, eliminate leading zeroes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+2001:db8:a0b:12f0:0:0:0:1
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Step 2, eliminate one all zero segments:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+2001:db8:a0b:12f0::1
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+TCP and UDP manange multiple simultaneous conversations by using port number
  that can uniquely identify these applications.
  Complete the following table 3-1.
 \end_layout
@@ -904,7 +1171,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0-1023
 \end_layout
 
 \end_inset
@@ -913,7 +1180,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Well-known ports
 \end_layout
 
 \end_inset
@@ -922,7 +1189,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Reserved for services & applications
 \end_layout
 
 \end_inset
@@ -933,7 +1200,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1024-49151
 \end_layout
 
 \end_inset
@@ -942,7 +1209,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Registered ports
 \end_layout
 
 \end_inset
@@ -951,7 +1218,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Assigned ports to entities
 \end_layout
 
 \end_inset
@@ -962,11 +1229,137 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+49152-65535
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dynamic/private ports
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Temporary ports, assigned to temporarily identify applications
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Question 4 
+\series bold
+CHAPTER 10
+\end_layout
+
+\begin_layout Enumerate
+Distinguish between peer-to-peer network and peer-to-peer application.
+ (6 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P2P Network
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P2P Applications
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Networks providing data sharing without dedicated server
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Applications which utilizes P2P network for data access & sharing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consists of actual hardware devices
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consists of software & interfaces
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usually more costly to implement
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usually cheaper to implement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -994,17 +1387,6 @@ Description
 \end_layout
 
 \end_deeper
-\begin_layout Section
-Question 4 
-\series bold
-CHAPTER 10
-\end_layout
-
-\begin_layout Enumerate
-Distinguish between peer-to-peer network and peer-to-peer application.
- (6 marks) 
-\end_layout
-
 \begin_layout Enumerate
 Discuss each of the following email protocols:
 \end_layout
@@ -1014,20 +1396,79 @@ Discuss each of the following email protocols:
 SMTP (3 marks)
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-NAP (3 marks)
+A protocol allowing users to send & forward e-mails from one mail server
+ to another.
 \end_layout
 
+\begin_layout Enumerate
+Performs the actual delivery of the e-mails.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+IMAP (3 marks)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A protocol to retrieve e-mail addresses from mail servers
+\end_layout
+
+\begin_layout Enumerate
+Contrary to POP protocol, IMAP has a centralized place to store e-mail address,
+ and synchronize changes on the central mail server.
+\end_layout
+
+\begin_layout Enumerate
+New & old (undeleted) messages are available for retrieval.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 POP (3 marks)
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Another protocol to retrieve e-mail addresses from mail servers
+\end_layout
+
+\begin_layout Enumerate
+Contrary to IMAP, POP does not have centralized place to store e-mail addresses.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Only new messages are available for retrieval.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 List any FOUR (4) examples of top-level domains.
  (4 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+.org
+\end_layout
+
+\begin_layout Enumerate
+.com
+\end_layout
+
+\begin_layout Enumerate
+.net
+\end_layout
+
+\begin_layout Enumerate
+.gov
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 HTTP is a request/response protocol.
  When a client, typically a web browser, sends a request to a web server,
@@ -1036,5 +1477,52 @@ HTTP is a request/response protocol.
  (6 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+GET
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Retrieves data from a web server.
+ Usually, the HTML file, scripts, and resources such as pictures are retrieved
+ for display by the web browser.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+POST
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sends data to the server to create a new entity.
+ Often used when uploading files or submitting a web form.
+\end_layout
+
+\begin_layout Enumerate
+POST is NOT idempotent, the same POST statement executed multiple times
+ does not guarantee the same result will be made.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+PUT
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Similar to POST, also sends data to the server to create a new entity.
+ However, PUT is usually used to repalce an existing entity.
+ 
+\end_layout
+
+\begin_layout Enumerate
+PUT is idempotent, the same PUT statement executed multiple times will guarantee
+ the same result.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document

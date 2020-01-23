@@ -363,7 +363,7 @@ Notice that this is a telescoping eries
 \begin_inset Formula 
 \begin{align*}
 \sum\left(\frac{1}{n+1}\right)-\sum\left(\frac{1}{n+3}\right) & =\left(\frac{1}{2}+\frac{1}{3}+\cancel{\frac{1}{4}+..+\frac{1}{\left(n-1\right)+1}+\frac{1}{n+1}}\right)-\left(\cancel{\frac{1}{4}+\frac{1}{5}+...+}\frac{1}{\left(n-1\right)+3}+\frac{1}{n+3}\right)\\
- & =\frac{1}{2}+\frac{1}{3}+\frac{1}{\left(n-1\right)+3}+\frac{1}{n+3}
+ & =\frac{1}{2}+\frac{1}{3}-\frac{1}{\left(n-1\right)+3}-\frac{1}{n+3}
 \end{align*}
 
 \end_inset
@@ -379,7 +379,7 @@ When
  
 \begin_inset Formula 
 \begin{align*}
-S_{\infty} & =\frac{1}{2}+\frac{1}{3}+\frac{1}{\infty}+\frac{1}{\infty}\\
+S_{\infty} & =\frac{1}{2}+\frac{1}{3}-\frac{1}{\infty}-\frac{1}{\infty}\\
  & =\frac{1}{2}+\frac{1}{3}\\
  & =\frac{5}{6}
 \end{align*}
@@ -1147,12 +1147,21 @@ du & =\frac{1}{x}dx
 \end_inset
 
 Subsitute inside
+\end_layout
+
+\begin_layout Enumerate
 \begin_inset Formula 
 \begin{align*}
-\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{u}du\\
+f\left(x\right) & =\frac{1}{x\ln x}\\
+\int_{1}^{\infty}\frac{1}{x\ln x}dx & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx\\
+ & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx\\
+ & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x\ln x}dx\\
+ & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{u}du\\
+ & =\lim_{b\to\infty}\int_{1}^{b}\frac{1}{u}du\\
  & =\lim_{b\to\infty}\left[\ln u\right]_{1}^{b}\\
- & =\lim_{b\to\infty}\left(\ln b-\ln1\right)\\
- & =\lim_{b\to\infty}\ln b\\
+ & =\lim_{b\to\infty}\left[\ln\left(\ln x\right)\right]_{1}^{b}\\
+ & =\lim_{b\to\infty}\left[\ln\left(\ln x\right)\right]_{1}^{b}\\
+ & =\lim_{b\to\infty}\ln\left(\ln b\right)-\ln\left(\ln1\right)\\
  & =\infty
 \end{align*}
 
@@ -1323,7 +1332,10 @@ converge.
 
 \begin_deeper
 \begin_layout Enumerate
-Incorrect (wrong way) solution
+
+\series bold
+Incorrect (wrong way) solution: (Its not wrong, but you won't get marks
+ for because you didn't use 'Limit Comparison Test'
 \end_layout
 
 \begin_layout Enumerate
@@ -1382,7 +1394,7 @@ Correct solution
 
 \begin_inset Formula 
 \[
-b_{n}=\frac{n}{\sqrt[3]{n^{3}}},b_{n}\text{is a convergent}p-series
+b_{n}=\frac{n}{\sqrt[3]{n^{7}}},b_{n}\text{is a convergent}p-series
 \]
 
 \end_inset
@@ -1398,7 +1410,7 @@ p=\frac{4}{3}
 
 \begin_inset Formula 
 \begin{align*}
-\lim_{n\to\infty}\frac{\left(\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}\right)}{\frac{n}{\sqrt[3]{n^{7}}}} & =\lim_{n\to\infty}\left(\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}\cdot\frac{3\sqrt{n^{7}}}{n}\right)\\
+\lim_{n\to\infty}\frac{\left(\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}\right)}{\frac{n}{\sqrt[3]{n^{7}}}} & =\lim_{n\to\infty}\left(\frac{n+7}{\sqrt[3]{n^{7}+n^{2}}}\cdot\frac{\sqrt[3]{n^{7}}}{n}\right)\\
  & =\lim_{n\to\infty}\left(\frac{n+7}{n}\cdot\frac{\sqrt[3]{n^{7}}}{\sqrt[3]{n^{7}+n^{2}}}\right)\\
  & =\lim_{n\to\infty}\left(\left(1+\frac{7}{n}\right)\cdot\sqrt[3]{\frac{1}{1+n^{-5}}}\right)\\
  & =\left(1+0\right)\cdot\sqrt[3]{\frac{1}{1+0}}=1\left(converges\right)
@@ -1433,7 +1445,7 @@ Theorem 3.11
 \begin_inset Formula $b_{n}>0$
 \end_inset
 
- 0 satisfies: 
+satisfies: 
 \end_layout
 
 \begin_layout Quote
@@ -1708,10 +1720,10 @@ converges
 \begin{align*}
 \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\left|\frac{\left(-10\right)^{n+1}}{4^{2\left(n+1\right)+1}\left(\left(n+1\right)+1\right)}\cdot\frac{4^{2n+1}\left(n+1\right)}{\left(-10\right)^{n}}\right|\\
  & =\lim_{n\to\infty}\left|\frac{\left(-10\right)^{\cancel{n}+1}}{4^{\cancel{2n+1}+2\left(1\right)}\left(\left(n+1\right)+1\right)}\cdot\frac{\cancel{4^{2n+1}}\left(n+1\right)}{\cancel{\left(-10\right)^{n}}}\right|\\
- & =\lim_{n\to\infty}-\frac{5\left(n+1\right)}{8\left(n+2\right)}\\
- & =\lim_{n\to\infty}-\frac{\frac{5n}{n}+\frac{5}{n}}{\frac{8n}{n}+\frac{16}{n}}\\
- & =\lim_{n\to\infty}-\frac{5+\frac{5}{n}}{8+\frac{16}{n}}\\
- & =-\frac{5}{8}<1
+ & =\lim_{n\to\infty}\left|-\frac{5\left(n+1\right)}{8\left(n+2\right)}\right|\\
+ & =\lim_{n\to\infty}\frac{\frac{5n}{n}+\frac{5}{n}}{\frac{8n}{n}+\frac{16}{n}}\\
+ & =\lim_{n\to\infty}\frac{5+\frac{5}{n}}{8+\frac{16}{n}}\\
+ & =\frac{5}{8}<1
 \end{align*}
 
 \end_inset
@@ -1959,7 +1971,6 @@ Given solution,
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\sum\frac{1}{n^{3}}$
 \end_inset
@@ -1979,6 +1990,7 @@ Hence,
  is convergent by direct comparison test.
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_body
 \end_document

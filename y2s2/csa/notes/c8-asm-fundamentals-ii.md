@@ -54,7 +54,8 @@
 
 ### `CBW` instruction
 
-- YOUTUBE PLS
+- YOUTUBE PLS (convert byte into word)
+  - Sign-extends (if sign is 1, then extend all 1s, vice versa)
 
 ### Shifting
 

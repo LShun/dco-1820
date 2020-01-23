@@ -90,8 +90,8 @@
 - Initialize address of DS:
 
   ```assembly
-  .MOV AX, @data
-  .MOV DS, AX
+  MOV AX, @data
+  MOV DS, AX
   ```
 
   - Basically, copy data from code -> `AX`, then dump to `DS`.
@@ -100,7 +100,7 @@
 
 - Format: `.CODE	[segment-name]`
 - Default, definition not required: `STACK`, `_DATA`, `_TEXT`. 
-  - Can be overriden
+  - Can be overridden
 
 ### `PROC` Directives
 
@@ -142,7 +142,7 @@
 
 ### Program Template
 
-- No need to memorize, this is just for notes
+- Memorize this
 
 ```assembly
 TITLE 	Program Template

@@ -830,8 +830,8 @@ Evaluate:
 
 \begin_inset Formula 
 \begin{align*}
-\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}1\\
-\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}1\\
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}\frac{1}{n}\\
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}\frac{1}{\infty}\\
 0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le0
 \end{align*}
 
@@ -2192,7 +2192,7 @@ Theorem 3.11
 \begin_inset Formula $b_{n}>0$
 \end_inset
 
- 0 satisfies: 
+ satisfies: 
 \end_layout
 
 \begin_layout Quote

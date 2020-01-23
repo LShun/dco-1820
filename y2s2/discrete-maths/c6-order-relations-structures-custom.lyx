@@ -1765,14 +1765,725 @@ In this case, two finite isomorphic posets must have the same Hasse diagram.Or
  in other words, they got 'relabeled'.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,3,4,6\right\} $
+\end_inset
+
+, let 
+\begin_inset Formula $\le$
+\end_inset
+
+ be the relation 
+\begin_inset Formula $|$
+\end_inset
+
+ (divides)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The poset is 
+\begin_inset Formula $\left(A,|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hasse diagram:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c6/example-hasse-isomorphic-a.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A'=\wp\left(\left\{ a,b\right\} \right)=\left\{ \varnothing,\left\{ a\right\} ,\left\{ b\right\} ,\left\{ a,b\right\} \right\} $
+\end_inset
+
+, let 
+\begin_inset Formula $\le'$
+\end_inset
+
+ be set containment (or subset), 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f:A\to A'$
+\end_inset
+
+ is defined by 
+\begin_inset Formula $f\left(1\right)=\varnothing,f\left(2\right)=\left\{ a\right\} ,f\left(3\right)=\left\{ b\right\} ,f\left(6\right)=\left\{ a,b\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one corresponding.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\series bold
+order preserving
+\series default
+: 
+\begin_inset Formula $x|y\iff f\left(x\right)\subseteq f\left(y\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Therefore, the 'relabeled' hasse diagram of 
+\begin_inset Formula $\left(A',\le'\right)$
+\end_inset
+
+ would be
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/c6/example-hasse-isomorphic-a-prime.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is isomorphism.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Section
 Extremal Elements of Partial Ordered Sets
 \end_layout
 
+\begin_layout Enumerate
+Let's say we have a random poset 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Maximal element
+\series default
+: The maximum element in 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ where no element 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ is 
+\begin_inset Formula $>$
+\end_inset
+
+ 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Minimal element: 
+\series default
+The minimal element in 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An element 
+\begin_inset Formula $b\in A$
+\end_inset
+
+ where no element 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $c<b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There can be multiple max/minimal element if they are not 
+\begin_inset Quotes eld
+\end_inset
+
+connected
+\begin_inset Quotes erd
+\end_inset
+
+ in a Hasse diagram.
+ For example, in this diagram, 
+\begin_inset Formula $a_{1},a_{2},a_{3}$
+\end_inset
+
+ are maximals, and 
+\begin_inset Formula $b_{1},b_{2},b_{3}$
+\end_inset
+
+are minimals
+\begin_inset Graphics
+	filename img/c6/example-hasse-max-min-multiple.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A poset can also have no max/min elements, e.g.
+ the 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Finding Topological Sorting of a Finite Poset 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Theorem: 
+\series default
+A finite, nonempty poset with partial order 
+\begin_inset Formula $\le$
+\end_inset
+
+ has at least 1 max & 1 min element.
+\end_layout
+
+\begin_layout Enumerate
+We can use algorithm to find topological sorting of finite poset 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $B=A–\left\{ a\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $B$
+\end_inset
+
+ is also a poset under the restriction of 
+\begin_inset Formula $\le$
+\end_inset
+
+ to 
+\begin_inset Formula $B\times B$
+\end_inset
+
+ (tuple of values of 
+\begin_inset Formula $B$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+We can produce a linear array SORT by order of increasing index, such that
+ 
+\begin_inset Formula $SORT\left[1\right]\prec SORT\left[2\right]\prec...$
+\end_inset
+
+, AKA topological sorting of 
+\begin_inset Formula $\left(A,\le\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Algorithm:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Step 1: Choose a minimal element of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Step 2: Make a next entry of SORT and replace 
+\begin_inset Formula $A$
+\end_inset
+
+ with 
+\begin_inset Formula $A–\left\{ a\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Step 3: Repeat steps 1 and 2 until 
+\begin_inset Formula $A=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+End
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Greatest & Least Element
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Greatest element
+\series default
+: Largest element in 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x\le a$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Denoted by 
+\begin_inset Formula $1$
+\end_inset
+
+, unit element
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Least element: 
+\series default
+Smallest element in 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a\le x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Denoted by 
+\begin_inset Formula $0$
+\end_inset
+
+, zero element
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 2: 
+\series default
+Can at most have one greatest & one least for each poset, 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: in a power set, the 
+\begin_inset Formula $\varnothing$
+\end_inset
+
+ set is the least element.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Upper Bound & Lower Bound
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Consider a poset 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, a subset of 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Upper bound
+\series default
+: The values bounding the top of subset 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ in 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $b\le a$
+\end_inset
+
+ for all 
+\begin_inset Formula $b\in B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Lower bound: 
+\series default
+The values bounding the bottom of the subset 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ in 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $b\ge a$
+\end_inset
+
+ for all 
+\begin_inset Formula $b\in B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Subset 
+\begin_inset Formula $B$
+\end_inset
+
+ may not have upper/lower bounds in 
+\begin_inset Formula $A$
+\end_inset
+
+, and may not belong to part of the subset.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Least Upper Bound and Greatest Lower Bound
 \end_layout
 
+\begin_layout Enumerate
+
+\series bold
+Least upper bound: 
+\series default
+The upper bound element closest to the subset.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+AKA LUB
+\begin_inset Formula $\left(B\right)$
+\end_inset
+
+: An element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, such that if 
+\begin_inset Formula $a$
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $a\le a'$
+\end_inset
+
+, whenever 
+\begin_inset Formula $a'$
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Hasse Diagram: 
+\series default
+First vertex reachable upwards from 
+\begin_inset Formula $B$
+\end_inset
+
+ elements
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Greatest lower bound: 
+\series default
+The lower bound element closest to the subet.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+AKA GLB
+\begin_inset Formula $\left(B\right)$
+\end_inset
+
+: An element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, such that if 
+\begin_inset Formula $a$
+\end_inset
+
+ is an lower bound of 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $a\ge a'$
+\end_inset
+
+, whenever 
+\begin_inset Formula $a'$
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Hasse Diagram: 
+\series default
+First vertex reachable downward from 
+\begin_inset Formula $B$
+\end_inset
+
+ elements.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Duality:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Upper bounds 
+\series default
+in 
+\begin_inset Formula $\left(A,\le\right)=$
+\end_inset
+
+ lower bounds in 
+\begin_inset Formula $\left(A,\ge\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Lower bounds 
+\series default
+in 
+\begin_inset Formula $\left(A,\le\right)=$
+\end_inset
+
+ upper bounds in 
+\begin_inset Formula $\left(A,\ge\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Same for GLB and LUB
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Theorem 3: Uniqueness of LUB & GLB
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A subset 
+\begin_inset Formula $B$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ (where 
+\begin_inset Formula $A$
+\end_inset
+
+ is a poset) has at most 1 LUB and 1 GLB.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

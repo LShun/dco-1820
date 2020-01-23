@@ -79,8 +79,11 @@
 ### Port Number Groups
 
 - **Well-known Ports**: Reserved for services & applications.
+  - 0-1023
 - **Registered Ports**: Assigned ports to entities
+  - 1024-49151
 - **Dynamic/Private Ports**: Temporary ports, assigned dynamically to identify applications
+  - 49152-65535
 
 ### `netstat` Command
 
