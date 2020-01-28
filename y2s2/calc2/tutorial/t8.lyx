@@ -1958,6 +1958,12 @@ Given solution,
 
 \begin_deeper
 \begin_layout Enumerate
+Solution 1 (Given by lecturer, note this is utilizing direct comparison
+ test, this question is NOT suitable for ratio test)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 \begin_inset Formula $\left|\sin n\right|<1$
 \end_inset
 
@@ -1990,6 +1996,7 @@ Hence,
  is convergent by direct comparison test.
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_deeper
 \end_body

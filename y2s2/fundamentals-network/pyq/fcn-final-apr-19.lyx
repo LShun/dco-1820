@@ -1156,15 +1156,26 @@ Examine the THREE (3) migration techniques that play crucial roles in solving
 
 \begin_deeper
 \begin_layout Enumerate
-Translation: 
+Translation: In a translation migration technique, packets from devices
+ with IPv4 address have to pass through a translation unit, and have their
+ address be converted to IPv6 addresses before being attached to IPv6 packets.
+ The vice versa must also happen.
+ When IPv4 address is translated to IPv6, it utilizes a process called NAT46
+ (Network Address Translation, IPv4 to IPv6), the opposite is called NAT64.
 \end_layout
 
 \begin_layout Enumerate
-Tunneling:
+Tunneling: In a tunneling technique, packets from an IPv4 host are encapsulated
+ into IPv6 packets before being sent to IPv6 hosts, the vice versa happens
+ with IPv6 hosts.
 \end_layout
 
 \begin_layout Enumerate
-Dual-stack:
+Dual-stack: All intermediary devices on a network run both IPv4 and IPv6
+ at the same time.
+ End devices which runs only on IPv4 will be communicated via IPv4, while
+ end devices which runs only IPv6 will be communicated via IPv6.
+ If the device is dual-stack too, then the device can pick either one.
 \end_layout
 
 \end_deeper
@@ -1174,6 +1185,30 @@ Describe the processes of how a router uses the addressing field in an IP
  (6 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+First, the router checks the network prefix of the addressing field in an
+ IP header.
+ If it matches a directly connected network address, then the datagram is
+ delivered directly to the destination IP address over the network link.
+\end_layout
+
+\begin_layout Enumerate
+However, if the network prefix is not found, but the routing table contains
+ a route for the network prefix, then the datagram is sent to the next hop
+ address listed in the routing table.
+\end_layout
+
+\begin_layout Enumerate
+Otherwise, the datagram is sent to the default route, if an default route
+ exist.
+\end_layout
+
+\begin_layout Enumerate
+If all the above fails, a forwarding error mesage is sent to the originator.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Compare between global imicast address and link-local address.
  (4 marks)
@@ -1195,15 +1230,73 @@ TCP/IP uses two common protocols: Transmission Control Protocol (TCP) and
 
 \begin_deeper
 \begin_layout Enumerate
-(i) Discuss THREE (3) main roles of TCP.
+Discuss THREE (3) main roles of TCP.
  (9 marks) 
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-(ii) Describe THREE (3) characteristics of UDP.
+
+\series bold
+Track individual conversation
+\series default
+: TCP is responsible for trackingeach individual conversation flowing between
+ a source and a destination application seperately.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Segment & reassemble data segments
+\series default
+: TCP is responsible for dividing data into segments that are easier to
+ manage and transport.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Identify applications
+\series default
+: TCP is require to ensure all applications on a device receive the correct
+ data even if multiple applications are running.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Describe THREE (3) characteristics of UDP.
  (6 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Connectionless
+\series default
+: No connection is established before data transfer begins.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+No ordered data reconstruction
+\series default
+: Data is reassembled the way they are received, no extra overhead to number
+ individual packets.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+No flow control
+\series default
+: Data is sent on a 'fire-and-forget' basis without taking in account of
+ the maximum data rate receivable by the end device.
+ Unhandled packets are simply dropped instead of retransmitted.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Explain how Domain Name System (DNS) works by using a domain name: www.netacad.com
@@ -1211,11 +1304,55 @@ Explain how Domain Name System (DNS) works by using a domain name: www.netacad.c
  (8 marks) 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+First, the domain name is entered into the address field of the browser.
+ The browser then passes the name, 'www.netacad.com' to a DNS resolver.
+\end_layout
+
+\begin_layout Enumerate
+The DNS resolver sends a DNS request containing the address of www.netacad.com
+ to a DNS server.
+\end_layout
+
+\begin_layout Enumerate
+The servers then searches its record for matching www.netacad.com entries,
+ and resolves the name with a corresponding IP address if found.
+\end_layout
+
+\begin_layout Enumerate
+If the name is not found, the server passes the request to another server
+ to handle the request, this is repeated either until the maximum hops is
+ exceeded, or a valid entry is found.
+\end_layout
+
+\begin_layout Enumerate
+Once a valid entry is found, the DNS server sends the IP address back to
+ the resolver, which passes the IP address back to the client that made
+ the request.
+\end_layout
+
+\begin_layout Enumerate
+The IP address is then used by the client in the encapsulation process as
+ the destination address for packets going to www.netacad.com.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Provide any TWO (2) examples of top level domains.
  (2 marks)
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+.org
+\end_layout
+
+\begin_layout Enumerate
+.com
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
