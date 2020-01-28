@@ -429,14 +429,14 @@ Sunshine Hospital network is created by using Variable Length Subnet Mask
 \begin_layout Enumerate
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="7">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle" tabularwidth="80page%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="12col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -982,11 +982,11 @@ Internet Protocol version 4 (IPv4) consists of three types of addresses
 \begin_layout Enumerate
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle" tabularwidth="20text%">
+<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="20col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
