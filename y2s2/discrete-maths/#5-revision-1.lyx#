@@ -87,12 +87,11 @@
 \begin_body
 
 \begin_layout Title
-Revision 2: Resit Paper
+Revision 1: Final
 \end_layout
 
 \begin_layout Enumerate
-Let 
-\begin_inset Formula $A=\left[\sim\left(p\land q\right)\land r\right]\to\left(q\lor r\right)$
+\begin_inset space ~
 \end_inset
 
 
@@ -100,17 +99,17 @@ Let
 
 \begin_deeper
 \begin_layout Enumerate
-Construct a truth table for expression A.
- Hence, determine whether the expression A is a tautology, contradiction
- or contingency.
-\end_layout
+\begin_inset space ~
+\end_inset
 
-\begin_deeper
-\begin_layout Enumerate
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="8">
+<lyxtabular version="3" rows="9" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -159,7 +158,7 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $p\land q$
+\begin_inset Formula $\sim p$
 \end_inset
 
 
@@ -171,7 +170,7 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim\left(p\land q\right)$
+\begin_inset Formula $\sim p\lor r$
 \end_inset
 
 
@@ -183,19 +182,7 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim\left(p\land q\right)\land r$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $q\lor r$
+\begin_inset Formula $q\to r$
 \end_inset
 
 
@@ -207,7 +194,7 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\left[\sim\left(p\land q\right)\land r\right]\to\left(q\lor r\right)$
+\begin_inset Formula $\left(\sim p\lor r\right)\lor\left(q\to r\right)$
 \end_inset
 
 
@@ -231,89 +218,6 @@ Construct a truth table for expression A.
 
 \begin_layout Plain Layout
 0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
 \end_layout
 
 \end_inset
@@ -378,24 +282,6 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 0
 \end_layout
 
@@ -414,7 +300,16 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
 \end_layout
 
 \end_inset
@@ -461,6 +356,24 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 1
 \end_layout
 
@@ -471,6 +384,44 @@ Construct a truth table for expression A.
 
 \begin_layout Plain Layout
 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
 \end_layout
 
 \end_inset
@@ -553,25 +504,16 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
 \end_layout
 
 \end_inset
@@ -641,15 +583,6 @@ Construct a truth table for expression A.
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -692,15 +625,6 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 0
 \end_layout
 
@@ -719,7 +643,7 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0
 \end_layout
 
 \end_inset
@@ -766,25 +690,16 @@ Construct a truth table for expression A.
 \begin_inset Text
 
 \begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
 \end_layout
 
 \end_inset
@@ -815,36 +730,29 @@ Construct a truth table for expression A.
 
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-Expression A is a Tautology
+Tautology
 \end_layout
 
 \begin_layout Enumerate
-Write the Principal Disjunctive Normal Form (PDNF) and Principal Conjunctive
- Normal Form (PCNF) of A and 
-\begin_inset Formula $\sim A$
+\begin_inset space ~
 \end_inset
 
-.
- (ASK TEACHER, can we just write 
-\begin_inset Formula $t$
-\end_inset
 
- and 
-\begin_inset Formula $c$
-\end_inset
-
- instead of everything?)
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-PDNF of 
+\begin_inset Formula $PDNF$
+\end_inset
+
+ of 
 \begin_inset Formula $A$
 \end_inset
 
 : 
-\begin_inset Formula $t$
+\begin_inset Formula $\bar{p}\bar{q}\bar{r}+\bar{p}\bar{q}r+\bar{p}q\bar{r}+\bar{p}qr+p\bar{q}\bar{r}+p\bar{q}r+pq\bar{r}+pqr$
 \end_inset
 
 
@@ -855,23 +763,18 @@ PCNF of
 \begin_inset Formula $A$
 \end_inset
 
-: 
-\begin_inset Formula $c$
-\end_inset
-
-, Does not exist.
+: DNE
 \end_layout
 
 \begin_layout Enumerate
-PDNF of 
+\begin_inset Formula $PDNF$
+\end_inset
+
+ of 
 \begin_inset Formula $\sim A$
 \end_inset
 
-: 
-\begin_inset Formula $c$
-\end_inset
-
-, Does not exist.
+: DNE
 \end_layout
 
 \begin_layout Enumerate
@@ -880,7 +783,11 @@ PCNF of
 \end_inset
 
 : 
-\begin_inset Formula $t$
+\begin_inset Formula 
+\[
+\left(p+q+r\right)\left(p+q+\bar{r}\right)\left(p+\bar{q}+r\right)\left(p+\bar{q}+\bar{r}\right)\left(\bar{p}+q+r\right)\left(\bar{p}+q+r\right)\left(\bar{p}+\bar{q}+r\right)\left(\bar{p}+\bar{q}+\bar{r}\right)
+\]
+
 \end_inset
 
 
@@ -889,55 +796,7 @@ PCNF of
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
-Let 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $p$
-\end_inset
-
- : It is below freezing.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $q$
-\end_inset
-
- : It is snowing.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Write the following proposition using p, q and logical connectives.
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-Proposition
-\series default
-: If it is not snowing, then it is below freezing.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Answer: 
-\begin_inset Formula $\sim q\to p$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Find the converse, inverse and contrapositive of the answer in part (i).
- Then write your final answers in the most simplified form 
-\series bold
-without connective '
-\begin_inset Formula $\to'$
+\begin_inset space ~
 \end_inset
 
 
@@ -945,14 +804,11 @@ without connective '
 
 \begin_deeper
 \begin_layout Enumerate
-Converse: 
-\begin_inset Formula $p\to\sim q$
-\end_inset
-
-
+Converse
 \begin_inset Formula 
 \begin{align*}
-p\to\sim q & \equiv\boldsymbol{\sim p\lor\sim q}
+ & \sim p\to\left[\sim p\lor\left(\sim q\land r\right)\right]\equiv p\lor\left[\sim p\lor\left(\sim q\land r\right)\right]\\
+ & =
 \end{align*}
 
 \end_inset
@@ -961,15 +817,11 @@ p\to\sim q & \equiv\boldsymbol{\sim p\lor\sim q}
 \end_layout
 
 \begin_layout Enumerate
-Inverse: 
-\begin_inset Formula $q\to\sim p$
-\end_inset
-
-
+Inverse
 \begin_inset Formula 
-\begin{align*}
-q\to\sim p & \equiv\boldsymbol{\sim q\lor\sim p}
-\end{align*}
+\[
+\sim\left[\sim p\lor\left(\sim q\land r\right)\right]\to\sim\left(\sim p\right)\equiv\left[\sim p\lor\left(\sim q\land r\right)\right]\lor p
+\]
 
 \end_inset
 
@@ -977,16 +829,11 @@ q\to\sim p & \equiv\boldsymbol{\sim q\lor\sim p}
 \end_layout
 
 \begin_layout Enumerate
-Contrapositive: 
-\begin_inset Formula $\sim p\to q$
-\end_inset
-
-
+Contrapositive
 \begin_inset Formula 
-\begin{align*}
-\sim p\to q & \equiv\sim\left(\sim p\right)\lor q\\
- & \equiv\boldsymbol{p\lor q}
-\end{align*}
+\[
+\sim\left(\sim p\right)\to\sim\left(\left[\sim p\lor\left(\sim q\land r\right)\right]\right)\equiv\sim p\lor\sim\left(\left[\sim p\lor\left(\sim q\land r\right)\right]\right)
+\]
 
 \end_inset
 
@@ -994,221 +841,160 @@ Contrapositive:
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Enumerate
-Let the universe of discourse be the set of all integers 
-\begin_inset Formula $p$
+\begin_inset space ~
 \end_inset
 
-, 
-\begin_inset Formula $q$
-\end_inset
 
- and 
-\begin_inset Formula $r$
-\end_inset
-
- are denoted as follows:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $p\left(x\right):x$
-\end_inset
-
- is odd
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $q\left(x\right):x$
-\end_inset
-
- is divisible by 
-\begin_inset Formula $3$
+\begin_inset Formula $P\left(x\right):x>0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $r\left(x\right):x$
+\begin_inset Formula $Q\left(x\right)$
 \end_inset
 
- is divisible by 
-\begin_inset Formula $2$
-\end_inset
 
- 
-\begin_inset Newline newline
-\end_inset
-
-Rewrite the following statements formally using quantifiers, variables and
- connectives.
- Then determine their truth values.
- For each false statement, provide a counterexample.
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-If 
-\begin_inset Formula $x$
-\end_inset
-
- is odd, then 
-\begin_inset Formula $x$
-\end_inset
-
- is divisible by 
-\begin_inset Formula $3$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $p\left(x\right)\to q\left(x\right)$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-False
-\series default
-.
- Counterexample: 
-\begin_inset Formula $1$
-\end_inset
-
- is odd but 
-\begin_inset Formula $1$
-\end_inset
-
- is not divisible by 
-\begin_inset Formula $3$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-There exist an even integer divisible by 
-\begin_inset Formula $3$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\exists x\in\mathbb{Z},\sim q\left(x\right)\lor r\left(x\right)$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-True
-\series default
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-If 
-\begin_inset Formula $x$
-\end_inset
-
- is divisible by 
-\begin_inset Formula $2$
-\end_inset
-
-, then 
-\begin_inset Formula $x$
-\end_inset
-
- is even.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $r\left(x\right)\to\sim p\left(x\right)$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-True
-\series default
-.
- OPTIONAL: 
-\begin_inset Formula $\frac{x}{2}=k,x=2k,$
-\end_inset
-
- is even.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Use diagram to check the validity of the following argument.
-\begin_inset Newline newline
-\end_inset
-
-All healthy people eat an apple a day.
- (Unstated: Major premise)
-\begin_inset Newline newline
-\end_inset
-
-Jenny eats an apple a day.(Unstated: Minor premise) 
-\begin_inset Newline newline
-\end_inset
-
-Therefore, Jenny is a healthy person.
- (Unstated: Conclusion)
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Notes: Students may use the following notations, let :
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-A : Set of people who eat an apple a day 
-\end_layout
-
-\begin_layout Enumerate
-B : Set of people who are healthy person 
-\end_layout
-
-\begin_layout Enumerate
-J : Jenny
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 Answer
+\begin_inset Formula 
+\[
+\mathbb{Z}=\left\{ ...,-3,-2,-1,0,1,2,3,...\right\} 
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-The argument is INVALID
+Find the range of 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x\right)=\left\{ 1,2,3,...\right\} 
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-It is also possible that Jenny eats an apple a day but is not a healthy
- person.
- It is also possible that Jenny eats an apple a day and is both a healthy
- and not healthy person (incomplete intersection)
+Find the rnge of 
+\begin_inset Formula $Q\left(x\right)=\left\{ ...-3,-1,1,3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\left(x\right)=\left\{ ...,-3,0,3,6,....\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Part I Answer, There exists a positive integer that is even.
+\begin_inset Formula 
+\[
+\exists x\in\mathbb{Z}\left(P\left(x\right)\land\sim Q\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x=2$
+\end_inset
+
+, the integer is both positive and even.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Part II Answer, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is not divisible by 3.
+\begin_inset Formula 
+\[
+\forall x\in\mathbb{Z}\ni\left(\sim Q\left(x\right)\to\sim T\left(x\right)\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False, counterexample, 
+\begin_inset Formula $6$
+\end_inset
+
+ is even and 
+\begin_inset Formula $6$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Part III Answer, if 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd then 
+\begin_inset Formula $x$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False, counterexample, 
+\begin_inset Formula $1$
+\end_inset
+
+ is odd and 
+\begin_inset Formula $1$
+\end_inset
+
+ is not divisible by 3.
 \end_layout
 
 \end_deeper
@@ -1220,201 +1006,58 @@ Question 2
 
 \begin_deeper
 \begin_layout Enumerate
-Find the greatest common divisor of 509 and 1177 by using Euclidean algorithm.
- Hence, determine the least common multiple of 509 and 1177.
-\begin_inset Formula 
-\begin{align*}
-1177 & =509\left(2\right)+159\\
-529 & =159\left(3\right)+52\\
-159 & =32\left(4\right)+31\\
-32 & =31\left(1\right)+1\\
-31 & =1\left(31\right)+0
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-gcd\left(1177,509\right) & =gcd\left(509,159\right)\\
- & =gcd\left(159,32\right)\\
- & =gcd\left(32,31\right)\\
- & =gcd\left(31,1\right)\\
- & =gcd\left(1,0\right)\\
- & =1
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-lcm\left(1177,609\right)gcd\left(1177,609\right) & =1177*509\\
-lcm\left(1177,609\right) & =\frac{1177*509}{gcd\left(1177,609\right)}\\
- & =\frac{1177*509}{1}\\
- & =599093
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Prove that the sum of any two even integers is even.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-By definition of even integer, 
-\begin_inset Formula 
-\[
-\begin{cases}
-x=2a & ,a\in\mathbb{Z}\\
-y=2b & ,b\in\mathbb{Z}
-\end{cases}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Then
-\begin_inset Formula 
-\begin{align*}
-x+y & =2a+2b\\
- & =2\left(a+b\right),a+b\in\mathbb{Z}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Therefore 
-\begin_inset Formula $x+y$
-\end_inset
-
- is even, the sum of any two even integers is even.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Given 
-\begin_inset Formula $f(x)=2x+1$
-\end_inset
-
-, a function from 
-\begin_inset Formula $X=\left\{ 1,2,3\right\} $
+Let f be a function from 
+\begin_inset Formula $\mathbb{Z}$
 \end_inset
 
  to 
-\begin_inset Formula $Y=\left\{ 3,4,5,6,7\right\} $
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $f(x)=5+2x^{2}$
+\end_inset
+
+ , 
+\begin_inset Formula $x\in\mathbb{Z}$
 \end_inset
 
 .
- Find the domain and range of the function 
+ Determine whether the function 
 \begin_inset Formula $f$
 \end_inset
 
-.
- Hence, determine whether the function is everywhere defined or onto.
- Justify your answers.
+ is a bijective function.
+ Justify your answer.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Graphics
-	filename img/6-revision-2-resit/q2c.png
-	lyxscale 30
-
+\begin_inset Formula $f\left(-1\right)=f\left(1\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $f\left(x\right)=2x+1$
+, BUT 
+\begin_inset Formula $-1\neq1$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $Domain=\left\{ 1,2,3\right\} =X$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $Range=\left\{ 3,5,7\right\} \neq Y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Answer:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
+.
+ Therefore, 
 \begin_inset Formula $f$
 \end_inset
 
- is everywhere defined.
+ is NOT a bijective function.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Explanation:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Domain of 
-\begin_inset Formula $f$
+Let 
+\begin_inset Formula $\rho=\begin{pmatrix}1 & 2 & 3 & 4 & 5 & 6\\
+4 & 6 & 2 & 5 & 1 & 3
+\end{pmatrix}$
 \end_inset
 
- is 
-\begin_inset Formula $X$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $f$
-\end_inset
-
- is not onto 
-\begin_inset Formula $Y$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Let A = 
-\begin_inset Formula $\left\{ b,c,d,e,f,g\right\} $
-\end_inset
-
-, 
-\begin_inset Formula $\rho_{1}=(f,c,g)$
-\end_inset
-
- and 
-\begin_inset Formula $\rho_{2}=(b,d,c,f,e)$
-\end_inset
-
- be permutations of 
-\begin_inset Formula $A$
+ be a permutation of the set 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5,6\right\} $
 \end_inset
 
 .
@@ -1422,22 +1065,141 @@ Let A =
 
 \begin_deeper
 \begin_layout Enumerate
-Compute 
-\begin_inset Formula $\rho_{1}\circ\rho_{2}$
+Write 
+\begin_inset Formula $\rho$
+\end_inset
+
+ as a product of disjoint cycles.
+\begin_inset Formula 
+\[
+\rho=\left(1,4,5\right)\circ\left(2,6,3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write 
+\begin_inset Formula $\rho$
+\end_inset
+
+ as a product of transpositions.
+\begin_inset Formula 
+\[
+\rho=\left(1,5\right)\circ\left(1,4\right)\circ\left(2,3\right)\circ\left(2,6\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine whether 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is even or odd.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\rho$
+\end_inset
+
+ is even.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Use the Euclidean algorithm to find the greatest common divisor of 60 and
+ 36.
+ Write the greatest common divisor in the form of 
+\begin_inset Formula $s60+t36,s,t\in\mathbb{Z}$
 \end_inset
 
 .
+ Hence find the least common multiple of 60 and 36.
 \begin_inset Formula 
 \begin{align*}
-\rho_{1}\circ\rho_{2} & =\begin{pmatrix}b & c & d & e & f & g\\
-b & g & d & e & c & f
-\end{pmatrix}\circ\begin{pmatrix}b & c & d & e & f & g\\
-d & f & c & b & c & g
-\end{pmatrix}\\
- & =\begin{pmatrix}b & c & d & e & f & g\\
-d & c & g & b & e & f
-\end{pmatrix}\\
- & =\left(b,d,g,f,e\right)
+d & =GCD\left(60,36\right)\\
+d & =60s+36t\\
+\ell & =LCM\left(60,36\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+60 & =36\left(1\right)+24\\
+36 & =24\left(1\right)+12\\
+24 & =12\left(2\right)+0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+GCD\left(60,36\right) & =GCD\left(12,0\right)\\
+ & =12
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+LCM
+\begin_inset Formula 
+\begin{align*}
+d\ell & =60*36\\
+\ell & =\frac{60*36}{d}\\
+ & =\frac{60*36}{12}\\
+ & =180
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $x=2a,a\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $x+3=2a+3$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x+3 & =2a+3\\
+ & =2a+2+1\\
+ & =2\left(a+1\right)+1\\
+x+3 & =2b+1\\
+b & =a+1\in\mathbb{Z}
 \end{align*}
 
 \end_inset
@@ -1446,123 +1208,45 @@ d & c & g & b & e & f
 \end_layout
 
 \begin_layout Enumerate
-Compute 
-\begin_inset Formula $\rho_{1}^{-1}$
+Therefore, 
+\begin_inset Formula $x+3$
 \end_inset
 
- and write the result as the product of disjoint cycles.
-\begin_inset Formula 
-\[
-\rho_{1}^{-1}=\left(g,c,f\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Is 
-\begin_inset Formula $\rho_{2}$
-\end_inset
-
- even or odd permutation? Justify your answer.
-\begin_inset Formula 
-\[
-\rho_{2}=\left(b,e\right)\circ\left(b,f\right)\circ\left(b,c\right)\circ\left(b,d\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The number of transpositions is 4
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\rho_{2}$
-\end_inset
-
- is an even permutation
+ is odd.
 \end_layout
 
 \end_deeper
 \end_deeper
-\end_deeper
 \begin_layout Enumerate
-Question 3
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Let R be the relation on 
-\begin_inset Formula $\left\{ 5,6,7,8\right\} $
+\begin_inset space ~
 \end_inset
 
- given by 
-\begin_inset Formula $x$
-\end_inset
-
-R
-\begin_inset Formula $y$
-\end_inset
-
- if and only if 
-\begin_inset Formula $\left|x–y\right|\ge2$
-\end_inset
-
-.
+Let A = {a, b, c, d, e} and let R = {(a, a), (b, b), (c, c), (d, d), (e,
+ e), (a, b), (b, a), (b, c), (c, d), (d, e), (a, e)} be a relation defined
+ on A.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-List the ordered pairs belonging to the relation R.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Formula 
 \[
-R=\left\{ \left(5,7\right),\left(5,8\right),\left(6,8\right),\left(7,5\right),\left(8,5\right),\left(8,6\right)\right\} 
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Draw the digraph of R and represent R in matrix form.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Digraph
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Graphics
-	filename img/6-revision-2-resit/q3aii.png
-	lyxscale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Matrix
-\begin_inset Formula 
-\[
-M_{R}=\begin{array}{c}
-5\\
-6\\
-7\\
-8
-\end{array}\begin{bmatrix}0 & 0 & 1 & 1\\
-0 & 0 & 0 & 1\\
-1 & 0 & 0 & 0\\
-1 & 1 & 0 & 0
+M_{R}=\begin{bmatrix}1 & 1 & 0 & 0 & 1\\
+1 & 1 & 1 & 0 & 0\\
+0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1
 \end{bmatrix}
 \]
 
@@ -1571,42 +1255,16 @@ M_{R}=\begin{array}{c}
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
-Find the domain and range of R.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-Dom\left(R\right) & =\left\{ 5,6,7,8\right\} \\
-Ran\left(R\right) & =\left\{ 5,6,7,8\right\} 
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Compute the in-degree and out degree of each vertex.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset space ~
+Find in-degree and out-degree
+\begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="5">
+<lyxtabular version="3" rows="3" columns="6">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1617,7 +1275,7 @@ Compute the in-degree and out degree of each vertex.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Vertex
 \end_layout
 
 \end_inset
@@ -1626,10 +1284,7 @@ Compute the in-degree and out degree of each vertex.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $5$
-\end_inset
-
-
+a
 \end_layout
 
 \end_inset
@@ -1638,10 +1293,7 @@ Compute the in-degree and out degree of each vertex.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $6$
-\end_inset
-
-
+b
 \end_layout
 
 \end_inset
@@ -1650,10 +1302,16 @@ Compute the in-degree and out degree of each vertex.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $7$
+c
+\end_layout
+
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-
+\begin_layout Plain Layout
+d
 \end_layout
 
 \end_inset
@@ -1662,10 +1320,7 @@ Compute the in-degree and out degree of each vertex.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $8$
-\end_inset
-
-
+e
 \end_layout
 
 \end_inset
@@ -1676,7 +1331,7 @@ Compute the in-degree and out degree of each vertex.
 \begin_inset Text
 
 \begin_layout Plain Layout
-InDegree
+In-degree
 \end_layout
 
 \end_inset
@@ -1694,7 +1349,7 @@ InDegree
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+2
 \end_layout
 
 \end_inset
@@ -1703,7 +1358,16 @@ InDegree
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
 \end_layout
 
 \end_inset
@@ -1712,7 +1376,7 @@ InDegree
 \begin_inset Text
 
 \begin_layout Plain Layout
-2
+3
 \end_layout
 
 \end_inset
@@ -1723,7 +1387,25 @@ InDegree
 \begin_inset Text
 
 \begin_layout Plain Layout
-OutDegree
+Out-degree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
 \end_layout
 
 \end_inset
@@ -1741,16 +1423,7 @@ OutDegree
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
+2
 \end_layout
 
 \end_inset
@@ -1759,7 +1432,7 @@ OutDegree
 \begin_inset Text
 
 \begin_layout Plain Layout
-2
+1
 \end_layout
 
 \end_inset
@@ -1772,273 +1445,111 @@ OutDegree
 
 \end_layout
 
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Let A = {1, 2, 3, 4} and the relation on A is R = {(1, 1), (1, 2), (1, 3),
- (3, 1), (3, 3), (3, 4)}.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Determine whether the relation R is reflexive, irreflexive, symmetric, asymmetri
-c, antisymmetric or transitive.
- Give a counterexample if the answer is “No”.
-\end_layout
-
-\begin_deeper
 \begin_layout Enumerate
 \begin_inset space ~
 \end_inset
 
 
-\begin_inset Formula 
-\[
-M_{R}=\begin{array}{c}
-1\\
-2\\
-3\\
-4
-\end{array}\begin{bmatrix}1 & 1 & 1 & 0\\
-0 & 0 & 0 & 0\\
-1 & 0 & 1 & 1\\
-0 & 0 & 0 & 0
-\end{bmatrix}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Not reflexive, 
-\begin_inset Formula $\left(2,2\right)\notin R$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Not irreflexive, 
-\begin_inset Formula $\left(1,1\right)\in R$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Not symmetric, 
-\begin_inset Formula $\left(1,2\right)\in R$
-\end_inset
-
- but 
-\begin_inset Formula $\left(2,1\right)\notin R$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Not asymmetric, 
-\begin_inset Formula $\left(1,3\right)\in R$
-\end_inset
-
- and 
-\begin_inset Formula $\left(3,1\right)\in R$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Not antisymmetric, 
-\begin_inset Formula $\left(1,3\right)\in R$
-\end_inset
-
- and 
-\begin_inset Formula $\left(3,1\right)\in R$
-\end_inset
-
- but 
-\begin_inset Formula $3\neq1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Not transitive, 
-\begin_inset Formula $\left(1,3\right)\in R$
-\end_inset
-
- and 
-\begin_inset Formula $\left(3,4\right)\in R$
-\end_inset
-
- but 
-\begin_inset Formula $\left(1,4\right)\notin R$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Is R an equivalence relation on A? Justify your answer.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-R is not an equivalence relation on A, because R is not reflexive, not symmetric
-, and not transitive.
+\begin_inset Graphics
+	filename img/5-revision/rev1-q2-aiii-diagram.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not irreflexive since 
+\begin_inset Formula $aRa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not symmetric since 
+\begin_inset Formula $bRc$
+\end_inset
+
+ but 
+\begin_inset Formula $c\cancel{R}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not antisymmetric since 
+\begin_inset Formula $bRa$
+\end_inset
+
+ but 
+\begin_inset Formula $a\cancel{R}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not transitive since 
+\begin_inset Formula $aRb$
+\end_inset
+
+ and 
+\begin_inset Formula $bRc$
+\end_inset
+
+ but 
+\begin_inset Formula $a\cancel{R}c$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
 Let 
-\begin_inset Formula $A=\left\{ a,b,c,d\right\} $
+\begin_inset Formula $W=\left\{ 1,2,3,4\right\} $
 \end_inset
 
  and 
 \begin_inset Formula $R$
 \end_inset
 
- and 
-\begin_inset Formula $S$
-\end_inset
-
  be the relation on 
-\begin_inset Formula $A$
+\begin_inset Formula $W$
 \end_inset
 
- described by the matrics
-\begin_inset Formula 
-\[
-M_{R}=\begin{bmatrix}0 & 1 & 1 & 0\\
-1 & 1 & 0 & 1\\
-1 & 0 & 0 & 0\\
-0 & 0 & 1 & 1
-\end{bmatrix}\text{ and }M_{S}=\begin{bmatrix}0 & 0 & 0 & 1\\
-0 & 1 & 1 & 1\\
-0 & 0 & 1 & 1\\
-0 & 1 & 0 & 0
-\end{bmatrix}
-\]
-
+ where 
+\begin_inset Formula $R=\left\{ (1,2),(2,2),(4,1),(3,3),(2,4)\right\} $
 \end_inset
 
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Compute 
-\begin_inset Formula $M_{S^{-1}}$
-\end_inset
-
-, 
-\begin_inset Formula $M_{\bar{R}}$
-\end_inset
-
-, 
-\begin_inset Formula $M_{R\cap S}$
-\end_inset
-
-, 
-\begin_inset Formula $M_{S\circ R}$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $M_{S^{-1}}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-M_{S^{-1}} & =\begin{bmatrix}0 & 0 & 0 & 1\\
-0 & 1 & 1 & 1\\
-0 & 0 & 1 & 1\\
-0 & 1 & 0 & 0
-\end{bmatrix}^{-1}\\
-M_{S^{-1}} & =\begin{bmatrix}0 & 0 & 0 & 0\\
-0 & 1 & 0 & 1\\
-0 & 1 & 1 & 0\\
-1 & 1 & 1 & 0
-\end{bmatrix}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $M_{\bar{R}}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-M_{R} & =\begin{bmatrix}0 & 1 & 1 & 0\\
-1 & 1 & 0 & 1\\
-1 & 0 & 0 & 0\\
-0 & 0 & 1 & 1
-\end{bmatrix}\\
-M_{\bar{R}} & =\begin{bmatrix}1 & 0 & 0 & 1\\
-0 & 0 & 1 & 0\\
-0 & 1 & 1 & 1\\
-1 & 1 & 0 & 0
-\end{bmatrix}\\
-M_{R\cap S} & =\begin{bmatrix}0 & 0 & 0 & 0\\
-0 & 1 & 0 & 1\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
-\end{bmatrix}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $M_{S\circ R}$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-M_{S\circ R} & =M_{R}\cdot M_{S}\\
- & =\begin{bmatrix}0 & 1 & 1 & 0\\
-1 & 1 & 0 & 1\\
-1 & 0 & 0 & 0\\
-0 & 0 & 1 & 1
-\end{bmatrix}\cdot\begin{bmatrix}0 & 0 & 0 & 1\\
-0 & 1 & 1 & 1\\
-0 & 0 & 1 & 1\\
-0 & 1 & 0 & 0
-\end{bmatrix}\\
-M_{S\circ R} & =\begin{bmatrix}0 & 1 & 1 & 1\\
-0 & 1 & 1 & 1\\
-0 & 0 & 0 & 1\\
-0 & 1 & 1 & 1
-\end{bmatrix}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Use Warshall's algorithm to compute the transitive closure of 
+.
+ Use Warshall’s algorithm to compute the transitive closure of 
 \begin_inset Formula $R$
 \end_inset
 
@@ -2051,71 +1562,115 @@ Use Warshall's algorithm to compute the transitive closure of
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Matrix
 \begin_inset Formula 
 \[
-W_{0}=\begin{bmatrix}\boldsymbol{0} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{0}\\
-\boldsymbol{1} & 1 & 0 & 1\\
-\boldsymbol{1} & 0 & 0 & 0\\
-\boldsymbol{0} & 0 & 1 & 1
+W_{0}=\begin{bmatrix}\boldsymbol{0} & \boldsymbol{1} & \boldsymbol{0} & \boldsymbol{0}\\
+\boldsymbol{0} & 1 & 0 & 1\\
+\boldsymbol{0} & 0 & 1 & 0\\
+\boldsymbol{1} & 0 & 0 & 0
 \end{bmatrix}
 \]
 
-\end_inset
-
-
-\begin_inset Formula $C_{1}:\left\{ b,c\right\} $
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $R_{1}:\left\{ b,c\right\} $
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-ADD: 
-\begin_inset Formula $\left\{ \left(b,b\right),\left(b,c\right),\left(c,b\right),\left(c,c\right)\right\} $
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
+Column: 
+\begin_inset Formula $\left\{ 4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Row:
+\begin_inset Formula $\left\{ 2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left(4,2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 \begin_inset Formula $W_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
 \end_inset
 
 
 \begin_inset Formula 
 \[
-W_{1}=\begin{bmatrix}0 & \boldsymbol{1} & 1 & 0\\
-\boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1}\\
-1 & \boldsymbol{1} & 1 & 1\\
-0 & \boldsymbol{0} & 1 & 1
+W_{1}=\begin{bmatrix}0 & \boldsymbol{1} & 0 & 0\\
+\boldsymbol{0} & \boldsymbol{\boldsymbol{1}} & \boldsymbol{0} & \boldsymbol{1}\\
+0 & \boldsymbol{0} & 1 & 0\\
+1 & \boldsymbol{1} & 0 & 0
 \end{bmatrix}
 \]
 
 \end_inset
 
 
-\begin_inset Formula $C_{1}:\left\{ a,b,c\right\} $
-\end_inset
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $R_{1}:\left\{ a,b,c,d\right\} $
+\begin_layout Enumerate
+Column: 
+\begin_inset Formula $\left\{ 1,2,4\right\} $
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Row: 
+\begin_inset Formula $\left\{ 2,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left\{ \left(1,2\right),\left(1,4\right),\left(2,2\right),\left(2,4\right),\left(4,2\right),\left(4,4\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $W_{2}$
 \end_inset
@@ -2123,30 +1678,44 @@ W_{1}=\begin{bmatrix}0 & \boldsymbol{1} & 1 & 0\\
 
 \begin_inset Formula 
 \[
-W_{2}=\begin{bmatrix}1 & 1 & \boldsymbol{1} & 1\\
-1 & 1 & \boldsymbol{1} & 1\\
-\boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1}\\
-0 & 0 & \boldsymbol{1} & 1
+W_{2}=\begin{bmatrix}0 & 1 & \boldsymbol{0} & 1\\
+0 & 1 & \boldsymbol{0} & 1\\
+\boldsymbol{0} & \boldsymbol{0} & \boldsymbol{1} & \boldsymbol{0}\\
+1 & 1 & \boldsymbol{0} & 1
 \end{bmatrix}
 \]
 
 \end_inset
 
 
-\begin_inset Formula $C_{2}:\left\{ a,b,c,d\right\} $
-\end_inset
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $R_{2}:\left\{ a,b,c,d\right\} $
+\begin_deeper
+\begin_layout Enumerate
+Row: 
+\begin_inset Formula $\left\{ 3\right\} $
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Column: 
+\begin_inset Formula $\left\{ 3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left\{ \left(3,3\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $W_{3}$
 \end_inset
@@ -2154,42 +1723,56 @@ W_{2}=\begin{bmatrix}1 & 1 & \boldsymbol{1} & 1\\
 
 \begin_inset Formula 
 \[
-W_{3}=\begin{bmatrix}1 & 1 & 1 & \boldsymbol{1}\\
-1 & 1 & 1 & \boldsymbol{1}\\
-1 & 1 & 1 & \boldsymbol{1}\\
-\boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1} & \boldsymbol{1}
+W_{3}=\begin{bmatrix}0 & 1 & 0 & \boldsymbol{1}\\
+0 & 1 & 0 & \boldsymbol{1}\\
+0 & 0 & 1 & \boldsymbol{0}\\
+\boldsymbol{1} & \boldsymbol{1} & \boldsymbol{0} & \boldsymbol{1}
 \end{bmatrix}
 \]
 
 \end_inset
 
 
-\begin_inset Formula $C_{3}:\left\{ a,b,c,d\right\} $
-\end_inset
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $R_{4}:\left\{ b,c,d\right\} $
+\begin_deeper
+\begin_layout Enumerate
+Row: 
+\begin_inset Formula $\left\{ 1,2,4\right\} $
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $W_{4}$
+Column: 
+\begin_inset Formula $\left\{ 1,2,4\right\} $
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Add: 
+\begin_inset Formula $\left\{ \left(1,1\right),\left(1,2\right),\left(1,4\right),\left(2,1\right),\left(2,2\right),\left(4,2\right),\left(1,4\right),\left(2,4\right),\left(4,4\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $W_{4},$
+\end_inset
+
+transitive closure
 \begin_inset Formula 
 \[
-W_{4}=\begin{bmatrix}1 & 1 & 1 & 1\\
-1 & 1 & 1 & 1\\
-1 & 1 & 1 & 1\\
-1 & 1 & 1 & 1
-\end{bmatrix}=M_{R^{\infty}}
+M_{R^{\infty}}=W_{4}=\begin{bmatrix}1 & 1 & 0 & 1\\
+1 & 1 & 0 & 1\\
+0 & 0 & 1 & 0\\
+1 & 1 & 0 & 1
+\end{bmatrix}
 \]
 
 \end_inset
@@ -2197,210 +1780,69 @@ W_{4}=\begin{bmatrix}1 & 1 & 1 & 1\\
 
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
-The transitive closure of 
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,6,12\right\} $
+\end_inset
+
+ and let 
 \begin_inset Formula $R$
 \end_inset
 
- is 
-\begin_inset Formula $\left\{ \left(a,a\right),\left(a,b\right),\left(a,c\right),\left(a,d\right),....\right\} $
+ be the relation on 
+\begin_inset Formula $A$
 \end_inset
 
- (note, write everything down).
-\end_layout
-
-\end_deeper
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Question 4
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset space ~
+ defined by 
+\begin_inset Formula $xRy$
 \end_inset
 
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset space ~
+ if and only if 
+\begin_inset Formula $x$
 \end_inset
 
-(Note, please don't draw as framework for Hasse Diagram first, otherwise
- you'll kill yourself with hops)
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Graphics
-	filename img/6-revision-2-resit/q4ai-digraph.png
-	lyxscale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-All nodes have loops (reflexive)
-\end_layout
-
-\begin_layout Enumerate
-If node 
-\begin_inset Formula $a$
-\end_inset
-
- is connected to node 
-\begin_inset Formula $b$
-\end_inset
-
-, and node 
-\begin_inset Formula $b$
-\end_inset
-
- is connected to node 
-\begin_inset Formula $c$
-\end_inset
-
-, then node 
-\begin_inset Formula $a$
-\end_inset
-
- is connected to node 
-\begin_inset Formula $c$
+ divides 
+\begin_inset Formula $y$
 \end_inset
 
 .
- (transitive)
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-If node 
-\begin_inset Formula $a$
+Draw the directed graph of the relation 
+\begin_inset Formula $R$
 \end_inset
 
- and node 
-\begin_inset Formula $b$
-\end_inset
-
- is related, then node 
-\begin_inset Formula $a$
-\end_inset
-
- is node 
-\begin_inset Formula $b$
+ on 
+\begin_inset Formula $A$
 \end_inset
 
 .
- (antisymmetric)
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Hasse Diagram
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Graphics
-	filename img/6-revision-2-resit/q4aii-hasse.png
-	lyxscale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Minimal elements: 
-\begin_inset Formula $\left\{ 1\right\} $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Maximal elements: 
-\begin_inset Formula $\left\{ 18,24\right\} $
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-L&G Element
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Least element: 
-\begin_inset Formula $1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Greatest element: None
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-LUB & GLB of 
-\begin_inset Formula $\left\{ 2,3,6\right\} $
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $LUB:6$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $GLB:1$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Start with LHS, if you want to start with RHS, go ahead
 \begin_inset Formula 
-\begin{align*}
-\left(x\land y\land z\right)\lor\left(x\land z\right) & \equiv xyz+xz\\
- & \equiv xz\left(y+1\right)\\
- & \equiv xz\\
- & \equiv x\land z\\
- & =RHS
-\end{align*}
+\[
+R=\left\{ \left(1,1\right),\left(1,2\right),\left(1,3\right),\left(1,6\right),\left(1,12\right),\left(2,2\right),\left(2,6\right),\left(2,12\right),\left(3,3\right),\left(3,6\right),\left(3,12\right),\left(6,6\right),\left(6,12\right),\left(12,12\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/5-revision/q4a-i.png
 
 \end_inset
 
@@ -2409,19 +1851,156 @@ Start with LHS, if you want to start with RHS, go ahead
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset space ~
+Draw the Hasse diagram of the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/5-revision/q4a-ii-hasse.png
+
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine whether 
+\begin_inset Formula $R$
+\end_inset
+
+ is linearly ordered.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not linearly ordered
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+The Hasse diagram for a partial order set, P, is shown below.
+ Find, if exist(s):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/5-revision/q4b-diag.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+the maximal and minimal element(s) of P;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maximal: 
+\begin_inset Formula $e,i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Minimal: 
+\begin_inset Formula $a,b,g$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the upper bound(s) and lower bound(s) of 
+\begin_inset Formula $\left\{ c,d,f\right\} $
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Upper bounds: 
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lower bounds: 
+\begin_inset Formula $c,a,b$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the Least Upper Bound and Greatest Lower Bound of 
+\begin_inset Formula $\left\{ c,d,f\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+LUB: 
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+GLB: 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f(x,y,z)=(x’y’z’)+(x’yz’)+(xy’z’)+(xyz’)+(xyz)+(x’y’z)$
+\end_inset
+
+.
+ Draw a Karnaugh map and simplify f(x, y, z) to the simplest form.
+ The Karnaugh map can be constructed in the form given below.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="6">
+<lyxtabular version="3" rows="4" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2436,9 +2015,156 @@ Start with LHS, if you want to start with RHS, go ahead
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $z'$
+\begin_inset Formula $y'$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2484,322 +2210,9 @@ Start with LHS, if you want to start with RHS, go ahead
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $x'$
+\begin_inset Formula $z'$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $y'$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $x'$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $y$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $x$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $y$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $x$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $y'$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $w'$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $w$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $w$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $w'$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2815,17 +2228,13 @@ Start with LHS, if you want to start with RHS, go ahead
 
 \begin_deeper
 \begin_layout Enumerate
-Simplified:
-\begin_inset Formula 
-\begin{align*}
-f\left(x,y,z,w\right) & =x'z+w'xy+wxy'
-\end{align*}
-
+\begin_inset Formula $f\left(x,y,z\right)=z'+x'y'+xy$
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_deeper
 \end_body

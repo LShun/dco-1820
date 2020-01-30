@@ -1238,6 +1238,16 @@ Note: You don't have to memoize the karnaugh maps, they are given during
  exams
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Nevermind I take that back,
+\series bold
+ MEMORIZE IT
+\series default
+.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Write 1 for each minterms appearing.

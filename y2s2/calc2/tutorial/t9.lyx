@@ -396,6 +396,33 @@ x^{3}-10x^{2}+6 & =-57-33\left(x-3\right)-\left(x-3\right)^{2}+\left(x-3\right)^
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{cases}
+f^{0}\left(x\right)=x^{-2} & f^{0}\left(-1\right)=\left(-1\right)^{-2}=1\\
+f^{1}\left(x\right)=-2x^{-3} & f^{1}\left(-1\right)=-2\left(-1\right)^{-3}=\frac{-2}{-1}=2\\
+f^{2}\left(x\right)=-3\left(-2\right)x^{-4}=6x^{-4} & f^{2}\left(-1\right)=6\left(-1\right)^{-4}=6\\
+f^{3}\left(x\right)=\left(-4\right)6x^{-5}=-24x^{-5} & f^{3}\left(-1\right)=-24\left(-1\right)^{-5}=24
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =1+2\left(x-\left(-1\right)\right)+\frac{6}{2!}\left(x-\left(-1\right)\right)^{2}+\frac{24}{3!}\left(x-\left(-1\right)\right)^{3}\\
+ & =1+2\left(x+1\right)+3\left(x+1\right)^{2}+4\left(x+1\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Use series to evaluate the following limits:
@@ -407,10 +434,37 @@ Use series to evaluate the following limits:
 \end_inset
 
 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to0}\frac{1-\cos x}{1+x-e^{x}} & \approx\lim_{x\to0}\frac{1-\left(1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}\right)}{1+x-\left(1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}\right)}\\
+ & =\lim_{x\to0}\frac{\frac{x^{2}}{2!}-\frac{x^{4}}{4!}+\frac{x^{6}}{6!}}{1+x-1-x-\frac{x^{2}}{2!}-\frac{x^{3}}{3!}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{2}}{2}-\frac{x^{4}}{24}+\frac{x^{6}}{720}}{-\frac{x^{2}}{2}-\frac{x^{3}}{6}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{2}}{2}\left(1-\frac{x^{2}}{12}+\frac{x^{4}}{360}\right)}{\frac{x^{2}}{2}\left(-1-\frac{x}{3}\right)}\\
+ & =\lim_{x\to0}\frac{1-\frac{x^{2}}{12}+\frac{x^{4}}{360}}{-1-\frac{x}{3}}\\
+ & =\frac{1}{-1}\\
+ & =-1
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\lim_{x\to0}\frac{x-\tan^{-1}x}{x^{3}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to0}\frac{x-\tan^{-1}x}{x^{3}} & =\lim_{x\to0}\frac{x-\left(x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-....\right)}{x^{3}}\\
+ & \approx\lim_{x\to0}\frac{x-x+\frac{x^{3}}{3}-\frac{x^{5}}{5}}{x^{3}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{3}}{3}-\frac{x^{5}}{5}}{x^{3}}\\
+ & =\lim_{x\to0}\frac{\frac{1}{3}-\frac{x^{2}}{5}}{\frac{x^{3}}{x^{3}}}\\
+ & =\lim_{x\to0}\frac{1}{3}\\
+ & =\frac{1}{3}
+\end{align*}
+
 \end_inset
 
 
@@ -423,7 +477,19 @@ Use series to approximate the following definite integral (3 decimal places):
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $\int_{0}^{0.5}\cos\left(x^{2}\right)dx$
+\begin_inset Formula $\int_{0}^{1}\sin\left(x^{2}\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sin x & =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+...\\
+\sin x^{2} & =x^{2}-\frac{x^{6}}{3!}+\frac{x^{10}}{5!}+...\\
+\int_{0}^{1}\sin x^{2}dx & =\int_{0}^{1}x^{2}-\frac{x^{6}}{3!}+\frac{x^{10}}{5!}+...\\
+ & =\left[\frac{1}{3}x^{2}-\frac{1}{42}x^{7}+\frac{1}{1320}x^{11}\right]_{0}^{1}\\
+ & =0.310
+\end{align*}
+
 \end_inset
 
 
@@ -431,6 +497,26 @@ Use series to approximate the following definite integral (3 decimal places):
 
 \begin_layout Enumerate
 \begin_inset Formula $\int_{0}^{0.5}\cos\left(x^{2}\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos x & =1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+...\\
+\cos\left(x^{2}\right) & =1-\frac{\left(x^{2}\right)^{2}}{2!}+\frac{\left(x^{2}\right)^{4}}{4!}-\frac{\left(x^{2}\right)^{6}}{6!}+...\\
+ & =1-\frac{x^{4}}{2}+\frac{x^{8}}{24}-\frac{x^{12}}{720}+...
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{0.5}1-\frac{x^{4}}{2}+\frac{x^{8}}{24}-\frac{x^{12}}{720}+...dx & =\int_{0}^{0.5}1-\frac{x^{4}}{2}+\frac{x^{8}}{24}-\frac{x^{12}}{720}+...dx\\
+ & =\left[x-\frac{x^{5}}{10}+\frac{x^{9}}{216}-\frac{x^{13}}{9360}+...\right]_{0}^{0.5}\\
+ & \approx0.497
+\end{align*}
+
 \end_inset
 
 
@@ -449,9 +535,9 @@ Expand the following functions as a power series:
 
 \begin_inset Formula 
 \begin{align*}
-\frac{1}{\left(1+x\right)^{4}} & =\left(1+x\right)^{-4}\\
- & =1+\left(-4\right)\left(x\right)+\frac{\left(-4\right)\left(-4-1\right)}{2!}x^{2}+\frac{-4\left(-4-1\right)\left(-4-2\right)}{3!}x^{3}+...\\
- & =1-4x+10x^{2}-20x^{3}+..
+f\left(x\right) & =1+na+\frac{n\left(n-1\right)}{2!}a^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}a^{3}+...\\
+ & =1+-4x+\frac{-4\left(-5\right)}{2!}x^{2}+\frac{-4\left(-5\right)\left(-6\right)}{3!}x^{3}+...\\
+ & =1+-4x+10x^{2}-20x^{3}+...
 \end{align*}
 
 \end_inset
@@ -466,11 +552,20 @@ Expand the following functions as a power series:
 
 \begin_inset Formula 
 \begin{align*}
-\sqrt{9-x} & =\sqrt{9\left(1-\frac{x}{9}\right)}\\
- & =\sqrt{9}\left(1-\frac{x}{9}\right)^{\frac{1}{2}}\\
- & =\sqrt{9}\left[1+\left(-\frac{x}{9}\right)\right]^{\frac{1}{2}}\\
- & =3\left(1+\frac{1}{2}\left(\frac{x}{9}\right)+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}\left(-\frac{x}{9}\right)^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}\left(-\frac{x}{9}\right)^{3}+...\right)\\
- & =3-\frac{1}{6}\left(x\right)-\frac{1}{216}x^{2}-\frac{1}{388}x^{3}+...
+\sqrt{9-x} & =\sqrt{9}\left(1-\frac{x}{9}\right)^{\frac{1}{2}}\\
+ & =3\left(1-\frac{x}{9}\right)^{\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =3\left(1+na+\frac{n\left(n-1\right)}{2!}a^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}a^{3}+...\right)\\
+ & =3\left(1+\frac{1}{2}\left(\frac{x}{9}\right)+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}\left(\frac{x}{9}\right)^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}\left(\frac{x}{9}\right)^{3}+...\right)\\
+ & =3\left(1+\frac{1}{18}x-\frac{1}{648}x^{2}+\frac{1}{16}\frac{x^{3}}{729}+...\right)\\
+ & =3+\frac{3}{18}x-\frac{3}{648}x^{2}+\frac{3}{16}\frac{1}{729}x^{3}+...\\
+ & =3+\frac{1}{6}x-\frac{1}{216}x^{2}+\frac{1}{3888}x^{3}+...
 \end{align*}
 
 \end_inset
