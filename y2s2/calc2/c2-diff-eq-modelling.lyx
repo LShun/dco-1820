@@ -4350,7 +4350,7 @@ y=e^{2x}\left(12-27x\right)
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $y_{1}=e^{\left(\alpha+\beta i\right)x},y_{2}=e^{\left(\alpha+\beta i\right)x}$
+\begin_inset Formula $y_{1}=e^{\left(\alpha+\beta i\right)x},y_{2}=e^{\left(\alpha-\beta i\right)x}$
 \end_inset
 
 

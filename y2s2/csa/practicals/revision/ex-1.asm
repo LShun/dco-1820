@@ -4,107 +4,99 @@
 
 .MODEL SMALL
 .STACK 100
-.DATA 
-    c1_txt DB "Enter 1st character: $"
-    c2_txt DB "Enter 2nd character: $"
-    minus DB " - $"
-    equal DB ' = $'
-    
-    c1 DB ?
-    c2 DB ?
-    
-    res DB ?
-    
-    quo DB ?
-    rem DB ?
-    
-    TEN DB 10
-    
-    nl DB 13, 10, '$'
-    
-    
+.DATA
+    IPONE DB "Enter 1st character: $"
+    IPTWO DB "Enter 2nd character: $"
+    MINUS DB " - $"
+    EQUAL DB " = $"
+    QUO   DB ?
+    REM   DB ?
+    CH1   DB ?
+    CH2   DB ?
+    TEN   DB 10
+    NL    DB 13,10,'$'
+    DIFF  DB ?
 .CODE
+
 MAIN PROC
-    MOV AX,@DATA
-    MOV DS,AX
-    
-    ; get 1st char
-    MOV AH, 09h
-    LEA DX, c1_txt
-    INT 21h
-    
-    MOV AH, 01h
-    INT 21h
-    
-    MOV c1, AL
-    
-    CALL newline
-    
-    ; get 2nd char
-    MOV AH, 09h
-    LEA DX, c2_txt
-    INT 21h
-    
-    MOV AH, 01h
-    INT 21h
-    
-    MOV c2, AL
-    
-    CALL newline
-    
-    ; result = 2nd - 1st char
-    MOV BL, c2
-    SUB BL, c1
-    
-    MOV res, BL
-    
-    ; div result by 10
-    MOV AH, 0
-    MOV al, res
-    
-    DIV ten
-    
-    MOV quo, AL      ; quotient
-    MOV rem, AH      ; remainder
+    MOV AX, @DATA
+    MOV DS, AX
 
-    ; display result
-    MOV AH, 02h
-    MOV DL, c2
-    INT 21h
-    
-    MOV AH, 09h
-    LEA DX, minus
-    INT 21h
-    
-    MOV AH, 02h
-    MOV DL, c1
-    INT 21h
-    
-    MOV AH, 09h
-    LEA DX, equal
-    INT 21h
-    
-    MOV AH, 02h
-    MOV DL, quo
-    ADD DL, '0'
-    INT 21h
-    
-    MOV AH, 02h
-    MOV DL, rem
-    ADD DL, '0'
-    INT 21h
-    
-    
-    MOV AX,4C00H
+    ; ask for first char
+    MOV AH, 09H
+    LEA DX, IPONE
     INT 21H
-    
+
+    MOV AH, 01H
+    INT 21H
+
+    MOV CH1, AL
+
+    ; NEWLINE
+    MOV AH, 09H
+    LEA DX, NL
+    INT 21H
+
+    ; ask for 2nd char
+    MOV AH, 09H
+    LEA DX, IPTWO
+    INT 21H
+
+    MOV AH, 01H
+    INT 21H
+    MOV CH2, AL
+
+    ; NEWLINE
+    MOV AH, 09H
+    LEA DX, NL
+    INT 21H
+
+    ; 1st char - 2nd char
+    MOV BL, CH1
+    SUB BL, CH2
+
+    MOV DIFF, BL
+
+    ; display result (note: two digits)
+
+    ; display CH1 - CH2 = 
+    MOV AH, 02H
+    MOV DL, CH1
+    INT 21H
+
+    MOV AH, 09H
+    LEA DX, MINUS
+    INT 21H
+
+    MOV AH, 02H
+    MOV DL, CH2
+    INT 21H
+
+    MOV AH, 09H
+    LEA DX, EQUAL
+    INT 21H
+
+    ; divide by 10
+    MOV AH, 0
+    MOV AL, DIFF
+    DIV TEN
+
+    MOV REM, AH
+    MOV QUO, AL
+
+    ; display AL (ASCII)
+    MOV AH, 02H
+    MOV DL, QUO
+    ADD DL, '0'
+    INT 21H
+
+    ; display AH (ASCII)
+    MOV AH, 02H
+    MOV DL, REM
+    ADD DL, '0'
+    INT 21H
+
+    MOV AX, 4C00H
+    INT 21H
 MAIN ENDP
-
-newline PROC
-    MOV AH, 09h
-    LEA DX, nl
-    INT 21h
-    RET
-newline ENDP
-
 END MAIN
