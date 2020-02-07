@@ -127,7 +127,7 @@
   - I/O module can R/W to memory
   - Conflict avoidance between CPU & I/O
     - Cannot load address into MAR at same time
-    - Cannot transfer on same bus same timeransfer
+    - Cannot transfer on same bus same time transfer
 - Data required:
   - Location of data on device
   - Starting location of data in memory

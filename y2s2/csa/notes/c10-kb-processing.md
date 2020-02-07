@@ -154,7 +154,7 @@ INT 	21H			; Display character
 PARA_LIST 		LABEL	BYTE	; name
 MAX_LEN			DB		20		; max chars
 ACT_LEN			DB		?		; actual chars
-KB_DATA			DB		20	DUP(' ') ; area to store chars
+KB_DATA			DB		20	DUP('$') ; area to store chars
 ```
 
 - Request KB input

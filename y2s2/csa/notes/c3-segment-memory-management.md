@@ -189,7 +189,8 @@
     - OV: Overflow
     - NO: No overflow
   - AF
-    - Carry from 3rd to 4th bit
+    - Set when carry from bit 3 to bit 4 *in 8 bit operation*
+    - Important for BCD addition & subtraction.
     - Auxiliary Carry Flag
     - AC: Auxiliary Carry
     - NA: No auxiliary
@@ -207,10 +208,6 @@
       - PE: Parity Even
       - PO: Parity Odd
     - Use for error checking
-  - AF
-    - Set when carry from bit 3 to bit 4 *in 8 bit operation*
-    - Important for BCD addition & subtraction.
-    - AC: Auxiliary Carry
   - Control flags
     - TF: Single step
     - IF: Interrupt
