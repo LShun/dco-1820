@@ -48,7 +48,6 @@ Needless to say, this repository will house important information that are essen
     - If your company threaten to fail you if you expose them,  speak up. The company will get threatened by UC to give you good marks, or, UC will FAIL THEM and give you good marks.
 - Any action(s) deem illegal, immoral, inconsiderate or
   inappropriate. This applies to the company too, if they do this kind of stuff, they failed and you get good marks.
-- m
 
 ### Staff
 
