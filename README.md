@@ -7,6 +7,12 @@ Custom-made notes, tips, exercises encompassing all around Diploma in Computer S
 
 This resource is free but it is not easy to make. 10 minutes of your reading time = 1 hour of my writing time. If you appreciate my work, you can donate here at <a class="github-button" href="https://donorbox.org/donations-lshun" data-icon="octicon-heart" aria-label="Sponsor ">DonorBox - LShun</a> :dollar:
 
+Donation tiers:
+
+- RM10: Early access to in-development works
+- RM20: All benefits of previous tier + insider resources
+- RM50: All benefits of previous tier + 1 advertising segment on my repo for 6 months
+
 ## Getting Started
 
 **Head inside the respective folders containing materials of your interest.** All folders are marked using shorthand. The first two characters represent the year (Eg: y1 = Year 1) and the second 2 represents the semester (Eg: s1 = Semester 1).
