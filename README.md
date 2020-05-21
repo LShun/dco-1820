@@ -3,6 +3,10 @@ Diploma in Computer Science &amp; Computer Mathematics Year 2018-2020 Materials
 
 Custom-made notes, tips, exercises encompassing all around Diploma in Computer Science & Computer Mathematics in TAR UC from year 2018-2020.
 
+## Donations
+
+This resource is free but it is not easy to make. 10 minutes of your reading time = 1 hour of my writing time. If you appreciate my work, you can donate here at <a class="github-button" href="https://donorbox.org/donations-lshun" data-icon="octicon-heart" aria-label="Sponsor ">DonorBox - LShun</a> :dollar:
+
 ## Getting Started
 
 **Head inside the respective folders containing materials of your interest.** All folders are marked using shorthand. The first two characters represent the year (Eg: y1 = Year 1) and the second 2 represents the semester (Eg: s1 = Semester 1).
@@ -43,3 +47,6 @@ after consulting [Malaysia’s Copyright Act 1987](http://www.agc.gov.my/agcport
 
 * **Billie Thompson** - *Awesome README layout* - [PurpleBooth](https://github.com/PurpleBooth) - [Readme Layout](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * All my coursemates, no point sharing it if no one is going to use it.
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
