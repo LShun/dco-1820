@@ -5,7 +5,7 @@ Custom-made notes, tips, exercises encompassing all around Diploma in Computer S
 
 ## Donations
 
-This resource is free but it is not easy to make. 10 minutes of your reading time = 1 hour of my writing time. If you appreciate my work, you can donate here at <a class="github-button" href="https://donorbox.org/donations-lshun" data-icon="octicon-heart" aria-label="Sponsor ">DonorBox - LShun</a> :dollar:
+This resource is free but it is not easy to make. 10 minutes of your reading time = 1 hour of my writing time. If you appreciate my work, you can donate here at <a class="github-button" href="https://donorbox.org/donations-lshun" data-icon="octicon-heart" aria-label="Sponsor ">DonorBox - LShun</a> :dollar: so I can continue making this kind of resources & don't have to take as much part-time jobs
 
 Donation tiers:
 
