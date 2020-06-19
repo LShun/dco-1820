@@ -20,8 +20,8 @@ so I can continue making this kind of resources & don't have to take as much par
 
 Donation tiers:
 
-- RM10: Early access to in-development works
-- RM20: All benefits of previous tier + insider resources
+- RM10: Early access to un-published works (including my answers on mid-term tests for reference)
+- RM20: All benefits of previous tier + insider resources (including some tips & resources for assignments)
 - RM50: All benefits of previous tier + 1 advertising segment on my repo for 6 months
 
 ## Getting Started
