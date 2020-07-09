@@ -1,7 +1,9 @@
 # dco-1820
 Diploma in Computer Science &amp; Computer Mathematics Year 2018-2020 Materials
 
-Custom-made notes, tips, exercises encompassing all around Diploma in Computer Science & Computer Mathematics in TAR UC from year 2018-2020.
+Custom-made notes, tips, exercises encompassing all around Diploma in Computer Science & Computer Mathematics in TAR UC from year 2018-2020. 
+
+In case you're wondering, I scored 3.99 CGPA in this course using these materials, so I think they are pretty legitimate, but your mileage may vary.
 
 ## Donations
 
@@ -22,7 +24,7 @@ Donation tiers:
 
 - RM10: Early access to un-published works (including my answers on mid-term tests for reference)
 - RM20: All benefits of previous tier + insider resources (including some tips & resources for assignments)
-- RM50: All benefits of previous tier + 1 advertising segment on my repo for 6 months
+- RM50: All benefits of previous tier + private consultation for 2 hours + 1 advertising segment on my repo for 6 months 
 
 ## Getting Started
 
