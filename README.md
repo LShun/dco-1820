@@ -12,7 +12,7 @@ Bank: Public Bank Berhad
 Bank Account Number: 6457056608
 ```
 
-OR (note: not working for now)
+OR (note: should be working now, if not, please send me an email at: hiewlshun@gmail.com)
 
 <a class="github-button" href="https://donorbox.org/donations-lshun" data-icon="octicon-heart" aria-label="Sponsor ">DonorBox - LShun</a> :dollar: 
 
